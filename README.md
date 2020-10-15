@@ -1,4 +1,4 @@
-# TARS-MK1
+# TARS-MK1: `TELEMETRY` Branch
 
 > Mr. Worldwide \
 > -Pitbull
@@ -12,7 +12,7 @@
     - `HYBRID`: Hybrid control system
     - `ACTIVE_CONTROL`: Rocket active control system
     - `MPU`: Microprocessor (BeagleBone)
-    - `TELEMETRY`: Ground communications
+    - `TELEMETRY`: Ground communications <<<<<<<<<< _YOU ARE HERE_
     
 ### Schematic Hierarchy:
 
@@ -40,3 +40,4 @@ Indentations imply child-parent relationships.
 4. Keep updating `verify` branch as needed, with more design reviews
 5. Once confirmed with design review, merge to main
    - Pushing to main means it's ready for production
+
