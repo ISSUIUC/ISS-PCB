@@ -1,11 +1,11 @@
-# TARS-MK1
+# TARS-MK1: `main` Branch
 
 > Mr. Worldwide \
 > -Pitbull
 
 ### Branch Hierarchy:
 
-- `main`: Production-ready and verified design
+- `main`: Production-ready and verified design <<<<<<<<<< _YOU ARE HERE_
   - `verify`: Compiled design to undergo verification
     - `POWER`: Power management and charging system
     - `COTS`: Commercial altimeters
@@ -40,3 +40,4 @@ Indentations imply child-parent relationships.
 4. Keep updating `verify` branch as needed, with more design reviews
 5. Once confirmed with design review, merge to main
    - Pushing to main means it's ready for production
+
