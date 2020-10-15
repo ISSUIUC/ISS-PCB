@@ -5,14 +5,14 @@
 
 ### Branch Hierarchy:
 
-- main: Production-ready and verified design
-  - verify: Compiled design to undergo verification
-    - dev/POWER: Power management and charging system
-    - dev/COTS: Commercial altimeters
-    - dev/HYBRID: Hybrid control system
-    - dev/ACTIVE_CONTROL: Rocket active control system
-    - dev/MPU: Microprocessor (BeagleBone)
-    - dev/TELEMETRY: Ground communications
+- `main`: Production-ready and verified design
+  - `verify`: Compiled design to undergo verification
+    - `dev/POWER`: Power management and charging system
+    - `dev/COTS`: Commercial altimeters
+    - `dev/HYBRID`: Hybrid control system
+    - `dev/ACTIVE_CONTROL`: Rocket active control system
+    - `dev/MPU`: Microprocessor (BeagleBone)
+    - `dev/TELEMETRY`: Ground communications
 
 ### Development Process:
 
