@@ -1,4 +1,4 @@
-# TARS-MK1
+# TARS-MK1: `HYBRID` Branch
 
 > Mr. Worldwide \
 > -Pitbull
@@ -7,12 +7,28 @@
 
 - `main`: Production-ready and verified design
   - `verify`: Compiled design to undergo verification
-    - `dev/POWER`: Power management and charging system
-    - `dev/COTS`: Commercial altimeters
-    - `dev/HYBRID`: Hybrid control system
-    - `dev/ACTIVE_CONTROL`: Rocket active control system
-    - `dev/MPU`: Microprocessor (BeagleBone)
-    - `dev/TELEMETRY`: Ground communications
+    - `POWER`: Power management and charging system
+    - `COTS`: Commercial altimeters
+    - `HYBRID`: Hybrid control system <<<<<<<<<< _YOU ARE HERE_
+    - `ACTIVE_CONTROL`: Rocket active control system
+    - `MPU`: Microprocessor (BeagleBone)
+    - `TELEMETRY`: Ground communications
+    
+### Schematic Hierarchy:
+
+Indentations imply child-parent relationships.
+
+- `TARS-MK1.sch`: Consolidated root schematic
+  - `POWER.sch`: Power management and charging schematic
+  - `COTS.sch`: Commercial altimeter system schematic
+  - `HYBRID.sch`: Hybrid control system schematic
+    - `MCU_HYBRID.sch`: Hybrid control microcontroller(Teensy) schematic \
+    ^ child schematic of HYBRID.sch
+  - `ACTIVE_CONTROL.sch`: Rocket active control system schematic
+    - `MCU_ACTIVE_CONTROL.sch`: Rocket control microcontroller(Teensy) schematic \
+    ^ child schematic of ACTIVE_CONTROL.sch
+  - `MPU.sch`: Microprocessor(BeagleBone) schematic
+  - `TELEMETRY.sch`: Ground communications schematic
 
 ### Development Process:
 
@@ -24,3 +40,4 @@
 4. Keep updating `verify` branch as needed, with more design reviews
 5. Once confirmed with design review, merge to main
    - Pushing to main means it's ready for production
+
