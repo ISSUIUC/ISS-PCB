@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 7
+Sheet 3 9
 Title "TARS-MK1"
 Date ""
 Rev ""
@@ -24,4 +24,10 @@ F 3 "" H 7600 6800 50  0001 C CNN
 	1    7600 6800
 	1    0    0    -1  
 $EndComp
+$Sheet
+S 1500 1500 2450 1200
+U 5F889484
+F0 "MCU_HYBRID" 50
+F1 "MCU_HYBRID.sch" 50
+$EndSheet
 $EndSCHEMATC
