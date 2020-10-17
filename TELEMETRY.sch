@@ -67,4 +67,17 @@ F 3 "https://www.hoperf.com/data/upload/portal/20181127/5bfcbea20e9ef.pdf" H 200
 $EndComp
 Text GLabel 3500 2450 2    50   Input ~ 0
 TLM_3.3V
+NoConn ~ 3000 2850
+NoConn ~ 3000 2750
+NoConn ~ 3000 2650
+NoConn ~ 3000 2950
+NoConn ~ 3000 3150
+NoConn ~ 4000 2650
+NoConn ~ 4000 2850
+NoConn ~ 4000 3050
+NoConn ~ 4000 2950
+NoConn ~ 4000 3350
+NoConn ~ 4000 3250
+NoConn ~ 4000 3150
+NoConn ~ 3500 2450
 $EndSCHEMATC
