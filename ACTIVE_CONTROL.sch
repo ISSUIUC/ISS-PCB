@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 9
+Sheet 1 2
 Title "TARS-MK1"
 Date ""
 Rev ""
@@ -229,4 +229,75 @@ F 3 "" H 8500 2100 50  0001 C CNN
 	1    8500 2100
 	1    0    0    -1  
 $EndComp
+Text Label 6400 2000 0    50   ~ 0
+GND
+Text Label 6400 1250 1    50   ~ 0
+3.3V_IN
+Text Label 6000 1550 2    50   ~ 0
+SPI_MISO1_SENSORS
+Text Label 6000 1650 2    50   ~ 0
+SPI_MOSI1_SENSORS
+Text Label 6000 1750 2    50   ~ 0
+SPI_SCK1_SENSORS
+Text Label 6000 1850 2    50   ~ 0
+SPI_CS1_SENSORS
+$Comp
+L Device:C_Small C1
+U 1 1 5F9168B8
+P 5700 2200
+F 0 "C1" H 5792 2246 50  0000 L CNN
+F 1 "100 nF" H 5792 2155 50  0000 L CNN
+F 2 "" H 5700 2200 50  0001 C CNN
+F 3 "~" H 5700 2200 50  0001 C CNN
+	1    5700 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 2050 6400 2200
+Wire Wire Line
+	6400 2300 5700 2300
+Wire Wire Line
+	5700 2100 5700 2000
+Wire Wire Line
+	5700 2000 5000 2000
+Wire Wire Line
+	5000 2000 5000 1250
+Wire Wire Line
+	5000 1250 6400 1250
+$Comp
+L Sensor_Pressure:MS5611-01BA U2
+U 1 1 5F90F2A4
+P 6400 1650
+F 0 "U2" H 6730 1696 50  0000 L CNN
+F 1 "MS5611-01BA" H 6730 1605 50  0000 L CNN
+F 2 "Package_LGA:LGA-8_3x5mm_P1.25mm" H 6400 1650 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=MS5611-01BA03&DocType=Data+Sheet&DocLang=English" H 6400 1650 50  0001 C CNN
+	1    6400 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 1450 5600 1450
+Wire Wire Line
+	5600 1450 5600 900 
+Wire Wire Line
+	5600 900  7450 900 
+Wire Wire Line
+	7450 900  7450 2200
+Wire Wire Line
+	7450 2200 6400 2200
+Connection ~ 6400 2200
+Wire Wire Line
+	6400 2200 6400 2300
+$Comp
+L power:GND #PWR?
+U 1 1 5F923808
+P 5700 2300
+F 0 "#PWR?" H 5700 2050 50  0001 C CNN
+F 1 "GND" H 5705 2127 50  0000 C CNN
+F 2 "" H 5700 2300 50  0001 C CNN
+F 3 "" H 5700 2300 50  0001 C CNN
+	1    5700 2300
+	1    0    0    -1  
+$EndComp
+Connection ~ 5700 2300
 $EndSCHEMATC
