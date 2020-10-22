@@ -53,36 +53,6 @@ F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/1e/3f/2
 	1    9450 3150
 	1    0    0    -1  
 $EndComp
-Text Label 9550 3950 0    50   ~ 0
-GND
-Text Label 9350 3950 2    50   ~ 0
-GND
-Text Label 10150 3650 0    50   ~ 0
-RES
-Text Label 10150 3550 0    50   ~ 0
-RES
-Text Label 10150 3450 0    50   ~ 0
-RES
-Text Label 10150 3350 0    50   ~ 0
-RES
-Text Label 10150 3250 0    50   ~ 0
-RES
-Text Label 9550 2350 1    50   ~ 0
-3.3V_IN
-Text Label 9450 2350 1    50   ~ 0
-3.3V_IN
-Text Label 8750 2750 2    50   ~ 0
-SPI_SCK1_SENSORS
-Text Label 8750 2850 2    50   ~ 0
-SPI_MOSI1_SENSORS
-Text Label 8750 3150 2    50   ~ 0
-SPI_MISO1_SENSORS
-Text Label 10150 2850 0    50   ~ 0
-SPI_MISO1_SENSORS
-Text Label 8750 3050 2    50   ~ 0
-SPI_CS1_SENSORS
-Text Label 10150 2750 0    50   ~ 0
-SPI_CS1_SENSORS
 NoConn ~ 8750 3250
 NoConn ~ 8750 3350
 NoConn ~ 10150 3050
@@ -212,8 +182,6 @@ $EndComp
 Wire Wire Line
 	9450 2350 9450 1900
 Wire Wire Line
-	9550 2300 9550 1900
-Wire Wire Line
 	8500 1900 9450 1900
 Connection ~ 9450 1900
 Wire Wire Line
@@ -229,18 +197,6 @@ F 3 "" H 8500 2100 50  0001 C CNN
 	1    8500 2100
 	1    0    0    -1  
 $EndComp
-Text Label 6400 2000 0    50   ~ 0
-GND
-Text Label 6400 1250 1    50   ~ 0
-3.3V_IN
-Text Label 6000 1550 2    50   ~ 0
-SPI_MISO1_SENSORS
-Text Label 6000 1650 2    50   ~ 0
-SPI_MOSI1_SENSORS
-Text Label 6000 1750 2    50   ~ 0
-SPI_SCK1_SENSORS
-Text Label 6000 1850 2    50   ~ 0
-SPI_CS1_SENSORS
 $Comp
 L Device:C_Small C1
 U 1 1 5F9168B8
@@ -262,19 +218,6 @@ Wire Wire Line
 	5700 2000 5000 2000
 Wire Wire Line
 	5000 2000 5000 1250
-Wire Wire Line
-	5000 1250 6400 1250
-$Comp
-L Sensor_Pressure:MS5611-01BA U2
-U 1 1 5F90F2A4
-P 6400 1650
-F 0 "U2" H 6730 1696 50  0000 L CNN
-F 1 "MS5611-01BA" H 6730 1605 50  0000 L CNN
-F 2 "Package_LGA:LGA-8_3x5mm_P1.25mm" H 6400 1650 50  0001 C CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=MS5611-01BA03&DocType=Data+Sheet&DocLang=English" H 6400 1650 50  0001 C CNN
-	1    6400 1650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6000 1450 5600 1450
 Wire Wire Line
@@ -300,4 +243,95 @@ F 3 "" H 5700 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 5700 2300
+Text GLabel 6000 1550 0    50   Input ~ 0
+SPI_MISO1_SENSORS
+Text GLabel 6000 1650 0    50   Input ~ 0
+SPI_MOSI1_SENSORS
+Text GLabel 6000 1750 0    50   Input ~ 0
+SPI_SCK1_SENSORS
+Text GLabel 6000 1850 0    50   Input ~ 0
+SPI_CS1_SENSORS
+Text GLabel 6400 1250 1    50   Input ~ 0
+3.3V_IN
+Wire Wire Line
+	5000 1250 6400 1250
+$Comp
+L Sensor_Pressure:MS5611-01BA U2
+U 1 1 5F90F2A4
+P 6400 1650
+F 0 "U2" H 6730 1696 50  0000 L CNN
+F 1 "MS5611-01BA" H 6730 1605 50  0000 L CNN
+F 2 "Package_LGA:LGA-8_3x5mm_P1.25mm" H 6400 1650 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=MS5611-01BA03&DocType=Data+Sheet&DocLang=English" H 6400 1650 50  0001 C CNN
+	1    6400 1650
+	1    0    0    -1  
+$EndComp
+Text GLabel 8500 1800 1    50   Input ~ 0
+3.3V_IN
+Text GLabel 10150 2750 2    50   Input ~ 0
+SPI_CS1_SENSORS
+Text GLabel 10150 2850 2    50   Input ~ 0
+SPI_MISO1_SENSORS
+Text GLabel 8750 3150 0    50   Input ~ 0
+SPI_MISO1_SENSORS
+Text GLabel 8750 3050 0    50   Input ~ 0
+SPI_CS1_SENSORS
+Text GLabel 8750 2850 0    50   Input ~ 0
+SPI_MOSI1_SENSORS
+Text GLabel 8750 2750 0    50   Input ~ 0
+SPI_SCK1_SENSORS
+Wire Wire Line
+	10150 3250 10450 3250
+Wire Wire Line
+	10450 3250 10450 3350
+Wire Wire Line
+	10450 3350 10150 3350
+Wire Wire Line
+	10450 3350 10450 3450
+Wire Wire Line
+	10450 3450 10150 3450
+Connection ~ 10450 3350
+Wire Wire Line
+	10450 3550 10150 3550
+Wire Wire Line
+	10450 3550 10450 3650
+Wire Wire Line
+	10450 3650 10150 3650
+Wire Wire Line
+	10450 3450 10450 3550
+Connection ~ 10450 3450
+Connection ~ 10450 3550
+$Comp
+L power:GND #PWR?
+U 1 1 5F92C6B4
+P 10450 3650
+F 0 "#PWR?" H 10450 3400 50  0001 C CNN
+F 1 "GND" H 10455 3477 50  0000 C CNN
+F 2 "" H 10450 3650 50  0001 C CNN
+F 3 "" H 10450 3650 50  0001 C CNN
+	1    10450 3650
+	1    0    0    -1  
+$EndComp
+Connection ~ 10450 3650
+Wire Wire Line
+	9550 3950 9350 3950
+Wire Wire Line
+	9550 3950 9800 3950
+Connection ~ 9550 3950
+$Comp
+L power:GND #PWR?
+U 1 1 5F92FAAE
+P 9800 3950
+F 0 "#PWR?" H 9800 3700 50  0001 C CNN
+F 1 "GND" H 9805 3777 50  0000 C CNN
+F 2 "" H 9800 3950 50  0001 C CNN
+F 3 "" H 9800 3950 50  0001 C CNN
+	1    9800 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 1800 8500 1900
+Connection ~ 8500 1900
+Wire Wire Line
+	9550 1900 9550 2350
 $EndSCHEMATC
