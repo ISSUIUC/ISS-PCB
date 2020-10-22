@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 2
+Sheet 9 9
 Title "TARS-MK1"
 Date ""
 Rev ""
@@ -22,17 +22,6 @@ F 1 "LOGO" H 7600 6923 60  0001 C CNN
 F 2 "" H 7600 6800 50  0001 C CNN
 F 3 "" H 7600 6800 50  0001 C CNN
 	1    7600 6800
-	1    0    0    -1  
-$EndComp
-$Comp
-L teensy:Teensy3.6 U901
-U 1 1 5F8A0615
-P 3750 3650
-F 0 "U901" H 3750 6087 60  0000 C CNN
-F 1 "Teensy3.6" H 3750 5981 60  0000 C CNN
-F 2 "" H 3750 3700 60  0000 C CNN
-F 3 "" H 3750 3700 60  0000 C CNN
-	1    3750 3650
 	1    0    0    -1  
 $EndComp
 Text HLabel 2600 1800 0    50   Input ~ 0
@@ -60,15 +49,10 @@ SPI_CS1_SENSORS
 Text HLabel 2600 3800 0    50   Input ~ 0
 SPI_SCK1_SENSORS
 NoConn ~ 2600 1500
-NoConn ~ 2600 1900
-NoConn ~ 2600 2000
 NoConn ~ 2600 2100
 NoConn ~ 2600 2400
 NoConn ~ 2600 2300
 NoConn ~ 2600 2500
-NoConn ~ 2600 3000
-NoConn ~ 2600 3100
-NoConn ~ 2600 3200
 NoConn ~ 2600 3300
 NoConn ~ 2600 3400
 NoConn ~ 2600 3500
@@ -133,4 +117,25 @@ NoConn ~ 4900 5600
 NoConn ~ 4900 5700
 NoConn ~ 4900 5800
 NoConn ~ 2600 5400
+$Comp
+L TEENSY:Teensy3.6 U?
+U 1 1 5F90E43C
+P 3750 3650
+F 0 "U?" H 3750 6087 60  0000 C CNN
+F 1 "Teensy3.6" H 3750 5981 60  0000 C CNN
+F 2 "" H 3750 3700 60  0000 C CNN
+F 3 "" H 3750 3700 60  0000 C CNN
+	1    3750 3650
+	1    0    0    -1  
+$EndComp
+Text HLabel 2600 3000 0    50   Input ~ 0
+HYBRID_PT1
+Text HLabel 2600 3100 0    50   Input ~ 0
+HYBRID_PT2
+Text HLabel 2600 3200 0    50   Input ~ 0
+HYBRID_PT3
+Text HLabel 2600 1900 0    50   Input ~ 0
+HYBRID_SERVO1
+Text HLabel 2600 2000 0    50   Input ~ 0
+HYBRID_SERVO2
 $EndSCHEMATC
