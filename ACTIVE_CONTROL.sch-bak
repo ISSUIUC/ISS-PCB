@@ -40,17 +40,6 @@ NoConn ~ 8750 3350
 NoConn ~ 10150 3050
 NoConn ~ 8750 3450
 NoConn ~ 10150 2950
-$Comp
-L Device:C_Small C4
-U 1 1 5F8EA978
-P 8750 1450
-F 0 "C4" H 8842 1496 50  0000 L CNN
-F 1 "100 nF" H 8842 1405 50  0000 L CNN
-F 2 "" H 8750 1450 50  0001 C CNN
-F 3 "~" H 8750 1450 50  0001 C CNN
-	1    8750 1450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9300 1350 9300 1150
 Wire Wire Line
@@ -75,8 +64,6 @@ F 3 "~" H 9300 1450 50  0001 C CNN
 	1    9300 1450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8750 1350 9300 1350
 Connection ~ 9300 1350
 $Comp
 L power:GND #PWR04
@@ -434,5 +421,20 @@ NoConn ~ 7050 5250
 Text GLabel 6550 4550 1    50   Input ~ 0
 3.3V_IN
 Text GLabel 6650 4550 1    50   Input ~ 0
+3.3V_IN
+Wire Wire Line
+	8750 1350 9300 1350
+$Comp
+L Device:C_Small C4
+U 1 1 5F8EA978
+P 8750 1450
+F 0 "C4" H 8842 1496 50  0000 L CNN
+F 1 "100 nF" H 8842 1405 50  0000 L CNN
+F 2 "" H 8750 1450 50  0001 C CNN
+F 3 "~" H 8750 1450 50  0001 C CNN
+	1    8750 1450
+	1    0    0    -1  
+$EndComp
+Text GLabel 9750 1150 1    50   Input ~ 0
 3.3V_IN
 $EndSCHEMATC
