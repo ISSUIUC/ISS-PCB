@@ -269,8 +269,6 @@ Wire Wire Line
 Connection ~ 8700 4500
 Wire Wire Line
 	8700 4500 9250 4500
-Text GLabel 7600 3600 0    50   Output ~ 0
-HYBRID_PT1
 Text GLabel 7600 4100 0    50   Output ~ 0
 HYBRID_PT2
 Text GLabel 7600 4600 0    50   Output ~ 0
@@ -285,113 +283,121 @@ Text GLabel 3950 2400 2    50   Output ~ 0
 HYBRID_SERVO1
 Text GLabel 3950 2500 2    50   Output ~ 0
 HYBRID_SERVO2
-$Comp
-L pspice:DIODE D?
-U 1 1 5F945DB0
-P 3000 4450
-F 0 "D?" H 3000 4715 50  0000 C CNN
-F 1 "DIODE" H 3000 4624 50  0000 C CNN
-F 2 "" H 3000 4450 50  0001 C CNN
-F 3 "~" H 3000 4450 50  0001 C CNN
-	1    3000 4450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector:Screw_Terminal_01x02 J?
-U 1 1 5F947354
-P 3800 4150
-F 0 "J?" V 3672 4230 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" V 3763 4230 50  0000 L CNN
-F 2 "" H 3800 4150 50  0001 C CNN
-F 3 "~" H 3800 4150 50  0001 C CNN
-	1    3800 4150
-	1    0    0    -1  
-$EndComp
-Text GLabel 4350 5100 2    50   Input ~ 0
-24V_Umbelical
-$Comp
-L power:GND #PWR?
-U 1 1 5F94EA93
-P 3400 5600
-F 0 "#PWR?" H 3400 5350 50  0001 C CNN
-F 1 "GND" H 3405 5427 50  0000 C CNN
-F 2 "" H 3400 5600 50  0001 C CNN
-F 3 "" H 3400 5600 50  0001 C CNN
-	1    3400 5600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5F94F0EA
-P 3150 5100
-F 0 "R?" H 3220 5146 50  0000 L CNN
-F 1 "270" H 3220 5055 50  0000 L CNN
-F 2 "" V 3080 5100 50  0001 C CNN
-F 3 "~" H 3150 5100 50  0001 C CNN
-	1    3150 5100
-	0    -1   -1   0   
-$EndComp
-Text GLabel 2250 5400 0    50   Input ~ 0
-GND
-$Comp
-L Device:R R?
-U 1 1 5F95212C
-P 2600 5250
-F 0 "R?" H 2670 5296 50  0000 L CNN
-F 1 "R1000" H 2670 5205 50  0000 L CNN
-F 2 "" V 2530 5250 50  0001 C CNN
-F 3 "~" H 2600 5250 50  0001 C CNN
-	1    2600 5250
-	1    0    0    -1  
-$EndComp
-Text GLabel 2350 5100 0    50   Input ~ 0
+Text GLabel 7600 3600 0    50   Output ~ 0
+HYBRID_PT1
+Text GLabel 2300 4650 0    50   Input ~ 0
 HYBRID_VENT_TRIGGER
-Wire Wire Line
-	2250 5400 2600 5400
-Wire Wire Line
-	2350 5100 2600 5100
-Wire Wire Line
-	3000 5100 2600 5100
-Connection ~ 2600 5100
-Wire Wire Line
-	3400 5600 3400 5400
-Wire Wire Line
-	3400 5400 2600 5400
-Connection ~ 2600 5400
-Wire Wire Line
-	3400 5400 4350 5400
-Connection ~ 3400 5400
 $Comp
-L Transistor_FET:IRF540N Q?
-U 1 1 5F960880
-P 3500 5100
-F 0 "Q?" H 3704 5146 50  0000 L CNN
-F 1 "IRF540N" H 3704 5055 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 3750 5025 50  0001 L CIN
-F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 3500 5100 50  0001 L CNN
-	1    3500 5100
+L Device:R R4
+U 1 1 5F95212C
+P 2550 4900
+F 0 "R4" H 2620 4946 50  0000 L CNN
+F 1 "R1000" H 2620 4855 50  0000 L CNN
+F 2 "" V 2480 4900 50  0001 C CNN
+F 3 "~" H 2550 4900 50  0001 C CNN
+	1    2550 4900
+	1    0    0    -1  
+$EndComp
+Text GLabel 2300 5150 0    50   Input ~ 0
+Teensey_GND
+$Comp
+L Device:R R5
+U 1 1 5F94F0EA
+P 2850 4650
+F 0 "R5" H 2920 4696 50  0000 L CNN
+F 1 "270" H 2920 4605 50  0000 L CNN
+F 2 "" V 2780 4650 50  0001 C CNN
+F 3 "~" H 2850 4650 50  0001 C CNN
+	1    2850 4650
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4900 4350 2    50   Input ~ 0
+24V_Umbilical
+$Comp
+L pspice:DIODE Flyback_Diode1
+U 1 1 5F98184E
+P 2700 4000
+F 0 "Flyback_Diode1" V 2746 3872 50  0000 R CNN
+F 1 "DIODE" V 2655 3872 50  0000 R CNN
+F 2 "Diode_THT:D_A-405_P7.62mm_Horizontal" H 2700 4000 50  0001 C CNN
+F 3 "~" H 2700 4000 50  0001 C CNN
+	1    2700 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 Vent_Solenoid_Connector1
+U 1 1 5F9837DE
+P 3750 4000
+F 0 "Vent_Solenoid_Connector1" H 3830 3992 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 3830 3901 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 3750 4000 50  0001 C CNN
+F 3 "~" H 3750 4000 50  0001 C CNN
+	1    3750 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:IRF540N Q1
+U 1 1 5F98DC20
+P 3450 4650
+F 0 "Q1" H 3654 4696 50  0000 L CNN
+F 1 "IRF540N" H 3654 4605 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 3700 4575 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 3450 4650 50  0001 L CNN
+	1    3450 4650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3400 5400 3400 5300
+	3550 4450 3550 4350
 Wire Wire Line
-	3400 5300 3600 5300
+	2700 4200 2700 4350
 Wire Wire Line
-	3600 4900 3600 4650
+	2700 4350 3550 4350
+Connection ~ 3550 4350
 Wire Wire Line
-	3600 4650 3000 4650
+	3550 4350 3550 4100
 Wire Wire Line
-	3600 4250 3600 4650
-Connection ~ 3600 4650
+	2700 3800 2700 3600
 Wire Wire Line
-	3000 4250 3000 3700
+	2700 3600 3550 3600
 Wire Wire Line
-	3000 3700 3600 3700
+	3550 4000 3550 3600
+Connection ~ 3550 3600
 Wire Wire Line
-	4350 3700 4350 5400
+	3550 3600 4900 3600
 Wire Wire Line
-	3600 4150 3600 3700
-Connection ~ 3600 3700
+	3000 4650 3250 4650
 Wire Wire Line
-	3600 3700 4350 3700
+	2300 4650 2550 4650
+Wire Wire Line
+	2550 4750 2550 4650
+Connection ~ 2550 4650
+Wire Wire Line
+	2550 4650 2700 4650
+Wire Wire Line
+	2550 5050 2550 5150
+Wire Wire Line
+	2550 5150 2300 5150
+$Comp
+L power:GND #PWR0104
+U 1 1 5F9B7B6B
+P 3550 5350
+F 0 "#PWR0104" H 3550 5100 50  0001 C CNN
+F 1 "GND" H 3555 5177 50  0000 C CNN
+F 2 "" H 3550 5350 50  0001 C CNN
+F 3 "" H 3550 5350 50  0001 C CNN
+	1    3550 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 4850 3550 5150
+Wire Wire Line
+	4900 5150 3550 5150
+Wire Wire Line
+	4900 3600 4900 5150
+Connection ~ 3550 5150
+Wire Wire Line
+	3550 5150 3550 5350
+Wire Wire Line
+	2550 5150 3550 5150
+Connection ~ 2550 5150
 $EndSCHEMATC
