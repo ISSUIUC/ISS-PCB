@@ -1,4 +1,4 @@
-update=10/17/2020 4:19:38 PM
+update=10/23/2020 3:47:38 PM
 version=1
 last_client=kicad
 [general]
@@ -25,7 +25,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=TODELETE5.net
+LastNetListRead=../../ISS Avionics/TARS-MK1/TODELETE.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
