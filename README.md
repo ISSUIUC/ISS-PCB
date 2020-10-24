@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # TARS-MK1: `main` Branch
-=======
-# TARS-MK1: `HYBRID` Branch
->>>>>>> eeb37a4296d6f5c2b2b2154ce1f26e86215c22c7
 
 > Mr. Worldwide \
 > -Pitbull
@@ -13,11 +9,7 @@
   - `verify`: Compiled design to undergo verification
     - `POWER`: Power management and charging system
     - `COTS`: Commercial altimeters
-<<<<<<< HEAD
     - `HYBRID`: Hybrid control system
-=======
-    - `HYBRID`: Hybrid control system <<<<<<<<<< _YOU ARE HERE_
->>>>>>> eeb37a4296d6f5c2b2b2154ce1f26e86215c22c7
     - `ACTIVE_CONTROL`: Rocket active control system
     - `MPU`: Microprocessor (BeagleBone)
     - `TELEMETRY`: Ground communications
