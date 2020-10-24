@@ -87,7 +87,7 @@ F 3 "~" H 8500 4500 50  0001 C CNN
 $EndComp
 Connection ~ 8800 3900
 Text GLabel 8700 3100 0    50   Input ~ 0
-12V_PT_supply
+12V_PT_SUPPLY
 $Comp
 L Device:R R1
 U 1 1 5F8DF2F8
@@ -106,12 +106,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0101
 U 1 1 5F8E6085
-P 7700 5300
-F 0 "#PWR0101" H 7700 5050 50  0001 C CNN
-F 1 "GND" H 7705 5127 50  0000 C CNN
-F 2 "" H 7700 5300 50  0001 C CNN
-F 3 "" H 7700 5300 50  0001 C CNN
-	1    7700 5300
+P 7700 4850
+F 0 "#PWR0101" H 7700 4600 50  0001 C CNN
+F 1 "GND" H 7705 4677 50  0000 C CNN
+F 2 "" H 7700 4850 50  0001 C CNN
+F 3 "" H 7700 4850 50  0001 C CNN
+	1    7700 4850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -124,12 +124,12 @@ Connection ~ 7700 4000
 $Comp
 L power:GND #PWR0102
 U 1 1 5F8E6BAB
-P 9150 5350
-F 0 "#PWR0102" H 9150 5100 50  0001 C CNN
-F 1 "GND" H 9155 5177 50  0000 C CNN
-F 2 "" H 9150 5350 50  0001 C CNN
-F 3 "" H 9150 5350 50  0001 C CNN
-	1    9150 5350
+P 9150 4850
+F 0 "#PWR0102" H 9150 4600 50  0001 C CNN
+F 1 "GND" H 9155 4677 50  0000 C CNN
+F 2 "" H 9150 4850 50  0001 C CNN
+F 3 "" H 9150 4850 50  0001 C CNN
+	1    9150 4850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -145,7 +145,7 @@ Wire Wire Line
 	9250 4600 9150 4600
 Connection ~ 9150 4600
 Wire Wire Line
-	9150 4600 9150 5350
+	9150 4600 9150 4850
 Wire Wire Line
 	8700 3100 8800 3100
 Wire Wire Line
@@ -184,8 +184,8 @@ F 3 "" H 8500 2300 50  0001 C CNN
 	1    8500 2300
 	1    0    0    -1  
 $EndComp
-Text GLabel 8450 1150 0    50   Input ~ 0
-5V_PT_supply
+Text GLabel 8200 1150 0    50   Input ~ 0
+HYBRID_SERVO_SUPPLY
 Wire Wire Line
 	8450 1150 8450 1300
 Wire Wire Line
@@ -241,9 +241,6 @@ Wire Wire Line
 	7700 4000 7700 4500
 Wire Wire Line
 	8350 4500 7700 4500
-Connection ~ 7700 4500
-Wire Wire Line
-	7700 4500 7700 5300
 Wire Wire Line
 	8650 4500 8700 4500
 Wire Wire Line
@@ -292,14 +289,12 @@ L Device:R R4
 U 1 1 5F95212C
 P 2900 6150
 F 0 "R4" H 2970 6196 50  0000 L CNN
-F 1 "R1000" H 2970 6105 50  0000 L CNN
+F 1 "1k" H 2970 6105 50  0000 L CNN
 F 2 "" V 2830 6150 50  0001 C CNN
 F 3 "~" H 2900 6150 50  0001 C CNN
 	1    2900 6150
 	1    0    0    -1  
 $EndComp
-Text GLabel 2650 6400 0    50   Input ~ 0
-Teensey_GND
 $Comp
 L Device:R R5
 U 1 1 5F94F0EA
@@ -311,8 +306,8 @@ F 3 "~" H 3200 5900 50  0001 C CNN
 	1    3200 5900
 	0    -1   -1   0   
 $EndComp
-Text GLabel 5250 5600 2    50   Input ~ 0
-24V_Umbilical
+Text GLabel 5400 4850 2    50   Input ~ 0
+24V_UMBILICAL
 $Comp
 L pspice:DIODE Flyback_Diode1
 U 1 1 5F98184E
@@ -375,8 +370,6 @@ Wire Wire Line
 	2900 5900 3050 5900
 Wire Wire Line
 	2900 6300 2900 6400
-Wire Wire Line
-	2900 6400 2650 6400
 $Comp
 L power:GND #PWR0104
 U 1 1 5F9B7B6B
@@ -399,5 +392,12 @@ Wire Wire Line
 	3900 6400 3900 6600
 Wire Wire Line
 	2900 6400 3900 6400
-Connection ~ 2900 6400
+Wire Wire Line
+	5400 4850 5250 4850
+Connection ~ 5250 4850
+Wire Wire Line
+	8450 1150 8200 1150
+Wire Wire Line
+	7700 4850 7700 4500
+Connection ~ 7700 4500
 $EndSCHEMATC

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 9
+Sheet 4 9
 Title "TARS-MK1"
 Date ""
 Rev ""
@@ -125,6 +125,10 @@ F 0 "U?" H 3750 6087 60  0000 C CNN
 F 1 "Teensy3.6" H 3750 5981 60  0000 C CNN
 F 2 "" H 3750 3700 60  0000 C CNN
 F 3 "" H 3750 3700 60  0000 C CNN
+F 4 "X" H 3750 3650 50  0001 C CNN "Spice_Primitive"
+F 5 "Teensy 3.6" H 3750 3650 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 3750 3650 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "libs/teensy_library-master/teensy.lib" H 3750 3650 50  0001 C CNN "Spice_Lib_File"
 	1    3750 3650
 	1    0    0    -1  
 $EndComp
