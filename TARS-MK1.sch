@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 1850 1650 2450 1100
+S 1900 1450 2450 1100
 U 5F8797E0
 F0 "MPU" 50
 F1 "MPU.sch" 50

@@ -1,19 +1,25 @@
-# TARS-MK1: `TELEMETRY` Branch
+
+# TARS-MK1: `main` Branch
 
 > Mr. Worldwide \
 > -Pitbull
 
 ### Branch Hierarchy:
 
-- `main`: Production-ready and verified design
+- `main`: Production-ready and verified design <<<<<<<<<< _YOU ARE HERE_
   - `verify`: Compiled design to undergo verification
     - `POWER`: Power management and charging system
     - `COTS`: Commercial altimeters
+
     - `HYBRID`: Hybrid control system
     - `ACTIVE_CONTROL`: Rocket active control system
     - `MPU`: Microprocessor (BeagleBone)
-    - `TELEMETRY`: Ground communications <<<<<<<<<< _YOU ARE HERE_
-    
+    - `TELEMETRY`: Ground communications
+    - `HYBRID`: Hybrid control system
+    - `ACTIVE_CONTROL`: Rocket active control system
+    - `MPU`: Microprocessor (BeagleBone)
+    - `TELEMETRY`: Ground communications
+
 ### Schematic Hierarchy:
 
 Indentations imply child-parent relationships.
