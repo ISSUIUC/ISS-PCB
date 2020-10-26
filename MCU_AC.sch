@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 10
+Sheet 9 10
 Title "TARS-MK1"
 Date ""
 Rev ""
@@ -24,118 +24,357 @@ F 3 "" H 7600 6800 50  0001 C CNN
 	1    7600 6800
 	1    0    0    -1  
 $EndComp
-Text HLabel 2600 1800 0    50   Input ~ 0
-SERVOS_CCW
-Text HLabel 2600 2200 0    50   Input ~ 0
-SERVOS_CW
-Text HLabel 2600 2900 0    50   Input ~ 0
-3.3V_IN
-Text HLabel 2600 4100 0    50   Input ~ 0
-GND
-Text HLabel 2600 2600 0    50   Input ~ 0
-SPI_CS0_MPU
-Text HLabel 2600 5500 0    50   Input ~ 0
-SPI_SCK0_MPU
-Text HLabel 2600 2700 0    50   Input ~ 0
-SPI_MOSI0_MPU
-Text HLabel 2600 2800 0    50   Input ~ 0
-SPI_MISO0_MPU
-Text HLabel 2600 1600 0    50   Input ~ 0
-SPI_MOSI1_SENSORS
-Text HLabel 2600 1700 0    50   Input ~ 0
-SPI_MISO1_SENSORS
-Text HLabel 2600 3700 0    50   Input ~ 0
-SPI_CS1_SENSORS
-Text HLabel 2600 3800 0    50   Input ~ 0
-SPI_SCK1_SENSORS
-NoConn ~ 2600 1500
-NoConn ~ 2600 2100
-NoConn ~ 2600 2400
-NoConn ~ 2600 2300
-NoConn ~ 2600 2500
-NoConn ~ 2600 3300
-NoConn ~ 2600 3400
-NoConn ~ 2600 3500
-NoConn ~ 2600 3600
-NoConn ~ 2600 3900
-NoConn ~ 2600 4000
-NoConn ~ 2600 4200
-NoConn ~ 2600 4300
-NoConn ~ 2600 4400
-NoConn ~ 2600 4500
-NoConn ~ 2600 4600
-NoConn ~ 2600 4700
-NoConn ~ 2600 4800
-NoConn ~ 2600 4900
-NoConn ~ 2600 5000
-NoConn ~ 2600 5100
-NoConn ~ 2600 5200
-NoConn ~ 2600 5300
-NoConn ~ 2600 5600
-NoConn ~ 2600 5700
-NoConn ~ 2600 5800
-NoConn ~ 4900 1500
-NoConn ~ 4900 1600
-NoConn ~ 4900 1700
-NoConn ~ 4900 1800
-NoConn ~ 4900 1900
-NoConn ~ 4900 2000
-NoConn ~ 4900 2100
-NoConn ~ 4900 2200
-NoConn ~ 4900 2300
-NoConn ~ 4900 2400
-NoConn ~ 4900 2500
-NoConn ~ 4900 2600
-NoConn ~ 4900 2700
-NoConn ~ 4900 2800
-NoConn ~ 4900 2900
-NoConn ~ 4900 3000
-NoConn ~ 4900 3100
-NoConn ~ 4900 3200
-NoConn ~ 4900 3300
-NoConn ~ 4900 3400
-NoConn ~ 4900 3500
-NoConn ~ 4900 3600
-NoConn ~ 4900 3700
-NoConn ~ 4900 3800
-NoConn ~ 4900 3900
-NoConn ~ 4900 4000
-NoConn ~ 4900 4100
-NoConn ~ 4900 4200
-NoConn ~ 4900 4300
-NoConn ~ 4900 4600
-NoConn ~ 4900 4700
-NoConn ~ 4900 4800
-NoConn ~ 4900 4900
-NoConn ~ 4900 5000
-NoConn ~ 4900 5100
-NoConn ~ 4900 5200
-NoConn ~ 4900 5300
-NoConn ~ 4900 5400
-NoConn ~ 4900 5500
-NoConn ~ 4900 5600
-NoConn ~ 4900 5700
-NoConn ~ 4900 5800
-NoConn ~ 2600 5400
+NoConn ~ 3550 1600
+NoConn ~ 3550 2200
+NoConn ~ 3550 2500
+NoConn ~ 3550 2400
+NoConn ~ 3550 3500
+NoConn ~ 3550 3600
+NoConn ~ 3550 3700
+NoConn ~ 3550 4000
+NoConn ~ 3550 4300
+NoConn ~ 3550 4400
+NoConn ~ 3550 4800
+NoConn ~ 3550 4900
+NoConn ~ 3550 5000
+NoConn ~ 3550 5100
+NoConn ~ 3550 5200
+NoConn ~ 3550 5300
+NoConn ~ 3550 5800
+NoConn ~ 3550 5900
+NoConn ~ 5850 1600
+NoConn ~ 5850 1700
+NoConn ~ 5850 1800
+NoConn ~ 5850 1900
+NoConn ~ 5850 2000
+NoConn ~ 5850 2100
+NoConn ~ 5850 2200
+NoConn ~ 5850 2300
+NoConn ~ 5850 2400
+NoConn ~ 5850 2500
+NoConn ~ 5850 2600
+NoConn ~ 5850 2900
+NoConn ~ 5850 3000
+NoConn ~ 5850 3100
+NoConn ~ 5850 3200
+NoConn ~ 5850 3300
+NoConn ~ 5850 3400
+NoConn ~ 5850 3500
+NoConn ~ 5850 3600
+NoConn ~ 5850 3700
+NoConn ~ 5850 3800
+NoConn ~ 5850 3900
+NoConn ~ 5850 4000
+NoConn ~ 5850 4100
+NoConn ~ 5850 4200
+NoConn ~ 5850 4300
+NoConn ~ 5850 4400
+NoConn ~ 5850 4700
+NoConn ~ 5850 4800
+NoConn ~ 5850 4900
+NoConn ~ 5850 5000
+NoConn ~ 5850 5100
+NoConn ~ 5850 5200
+NoConn ~ 5850 5400
+NoConn ~ 5850 5500
+NoConn ~ 5850 5600
+NoConn ~ 5850 5700
+NoConn ~ 5850 5800
+NoConn ~ 5850 5900
 $Comp
 L TEENSY:Teensy3.6 U7
 U 1 1 5F964778
-P 3750 3650
-F 0 "U7" H 3750 6087 60  0000 C CNN
-F 1 "Teensy3.6" H 3750 5981 60  0000 C CNN
-F 2 "" H 3750 3700 60  0000 C CNN
-F 3 "" H 3750 3700 60  0000 C CNN
-	1    3750 3650
+P 4700 3750
+F 0 "U7" H 4700 6187 60  0000 C CNN
+F 1 "Teensy3.6" H 4700 6081 60  0000 C CNN
+F 2 "" H 4700 3800 60  0000 C CNN
+F 3 "" H 4700 3800 60  0000 C CNN
+	1    4700 3750
 	1    0    0    -1  
 $EndComp
-Text HLabel 2600 3000 0    50   Input ~ 0
-HYBRID_PT1
-Text HLabel 2600 3100 0    50   Input ~ 0
-HYBRID_PT2
-Text HLabel 2600 3200 0    50   Input ~ 0
-HYBRID_PT3
-Text HLabel 2600 1900 0    50   Input ~ 0
+Text GLabel 3200 1900 0    50   Input ~ 0
+AC_SERVO_CCW
+Wire Wire Line
+	3200 1900 3550 1900
+Text GLabel 3200 2300 0    50   Input ~ 0
+AC_SERVO_CW
+Wire Wire Line
+	3200 2300 3550 2300
+Text GLabel 3200 2000 0    50   Input ~ 0
 HYBRID_SERVO1
-Text HLabel 2600 2000 0    50   Input ~ 0
+Text GLabel 3200 2100 0    50   Input ~ 0
 HYBRID_SERVO2
+Wire Wire Line
+	3200 2000 3550 2000
+Wire Wire Line
+	3550 2100 3200 2100
+Text GLabel 3200 1700 0    50   Input ~ 0
+SPI1_MOSI
+Text GLabel 3200 1800 0    50   Input ~ 0
+SPI1_MISO
+Wire Wire Line
+	3200 1700 3550 1700
+Wire Wire Line
+	3550 1800 3200 1800
+Text GLabel 3150 2700 0    50   Input ~ 0
+SPI0_CS10
+Text GLabel 3150 2600 0    50   Input ~ 0
+SPI0_CS9
+Text GLabel 3150 2800 0    50   Input ~ 0
+SPI0_MOSI
+Text GLabel 3150 2900 0    50   Input ~ 0
+SPI0_MISO
+Wire Wire Line
+	3150 2700 3550 2700
+Wire Wire Line
+	3150 2800 3550 2800
+Wire Wire Line
+	3550 2900 3150 2900
+Wire Wire Line
+	3150 2600 3550 2600
+Text GLabel 3150 3800 0    50   Input ~ 0
+SPI1_CS31
+Text GLabel 3150 3900 0    50   Input ~ 0
+SPI1_SCK
+Wire Wire Line
+	3150 3800 3550 3800
+Wire Wire Line
+	3550 3900 3150 3900
+Text GLabel 3150 5700 0    50   Input ~ 0
+SPI0_CS15
+Wire Wire Line
+	3150 5700 3550 5700
+Text GLabel 3150 5500 0    50   Input ~ 0
+SPI0_SCK
+Wire Wire Line
+	3150 5500 3550 5500
+NoConn ~ 3550 5600
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5FA58A94
+P 2150 1200
+F 0 "#PWR?" H 2150 1050 50  0001 C CNN
+F 1 "+3V3" H 2050 1350 50  0000 L CNN
+F 2 "" H 2150 1200 50  0001 C CNN
+F 3 "" H 2150 1200 50  0001 C CNN
+	1    2150 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 3000 2150 3000
+Wire Wire Line
+	2150 1200 2150 3000
+Wire Wire Line
+	3550 4100 2150 4100
+Wire Wire Line
+	2150 4100 2150 3000
+Connection ~ 2150 3000
+$Comp
+L power:GND #PWR?
+U 1 1 5FA615B5
+P 2450 6650
+F 0 "#PWR?" H 2450 6400 50  0001 C CNN
+F 1 "GND" V 2455 6522 50  0000 R CNN
+F 2 "" H 2450 6650 50  0001 C CNN
+F 3 "" H 2450 6650 50  0001 C CNN
+	1    2450 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 4200 2450 4200
+Wire Wire Line
+	3550 5400 2450 5400
+Wire Wire Line
+	2450 4200 2450 5400
+Connection ~ 2450 5400
+Wire Wire Line
+	2450 5400 2450 6650
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5FA6B5DE
+P 6900 1050
+F 0 "#PWR?" H 6900 900 50  0001 C CNN
+F 1 "+3V3" H 6800 1200 50  0000 L CNN
+F 2 "" H 6900 1050 50  0001 C CNN
+F 3 "" H 6900 1050 50  0001 C CNN
+	1    6900 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FA6D529
+P 6750 6700
+F 0 "#PWR?" H 6750 6450 50  0001 C CNN
+F 1 "GND" V 6755 6572 50  0000 R CNN
+F 2 "" H 6750 6700 50  0001 C CNN
+F 3 "" H 6750 6700 50  0001 C CNN
+	1    6750 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 1050 6900 2700
+Wire Wire Line
+	6900 2700 5850 2700
+Wire Wire Line
+	6900 2700 6900 5300
+Wire Wire Line
+	6900 5300 5850 5300
+Connection ~ 6900 2700
+Wire Wire Line
+	6750 2800 6750 6700
+Text GLabel 6250 5700 2    50   Input ~ 0
+SPI0_CS20
+Wire Wire Line
+	6250 5700 5850 5700
+Text GLabel 6250 5600 2    50   Input ~ 0
+SPI0_CS21
+Wire Wire Line
+	6250 5600 5850 5600
+Text GLabel 3150 4600 0    50   Input ~ 0
+HYBRID_PT2
+Text GLabel 3150 4500 0    50   Input ~ 0
+HYBRID_PT1
+Text GLabel 3150 4700 0    50   Input ~ 0
+HYBRID_PT3
+Wire Wire Line
+	3150 4600 3550 4600
+Wire Wire Line
+	3150 4700 3550 4700
+Wire Wire Line
+	3150 4500 3550 4500
+$Comp
+L D24V50F5:LED D?
+U 1 1 5FC854ED
+P 900 4350
+F 0 "D?" V 939 4233 50  0000 R CNN
+F 1 "LED" V 848 4233 50  0000 R CNN
+F 2 "" H 900 4350 50  0001 C CNN
+F 3 "~" H 900 4350 50  0001 C CNN
+	1    900  4350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D24V50F5:R_US R?
+U 1 1 5FC8721C
+P 900 3850
+F 0 "R?" H 968 3896 50  0000 L CNN
+F 1 "470" H 968 3805 50  0000 L CNN
+F 2 "" V 940 3840 50  0001 C CNN
+F 3 "~" H 900 3850 50  0001 C CNN
+	1    900  3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  4000 900  4200
+Wire Wire Line
+	900  3700 900  3100
+Wire Wire Line
+	900  3100 3550 3100
+$Comp
+L D24V50F5:LED D?
+U 1 1 5FC9928D
+P 1200 4550
+F 0 "D?" V 1239 4433 50  0000 R CNN
+F 1 "LED" V 1148 4433 50  0000 R CNN
+F 2 "" H 1200 4550 50  0001 C CNN
+F 3 "~" H 1200 4550 50  0001 C CNN
+	1    1200 4550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D24V50F5:R_US R?
+U 1 1 5FC99293
+P 1200 4050
+F 0 "R?" H 1268 4096 50  0000 L CNN
+F 1 "470" H 1268 4005 50  0000 L CNN
+F 2 "" V 1240 4040 50  0001 C CNN
+F 3 "~" H 1200 4050 50  0001 C CNN
+	1    1200 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 4200 1200 4400
+$Comp
+L D24V50F5:LED D?
+U 1 1 5FC9A23C
+P 1500 4800
+F 0 "D?" V 1539 4683 50  0000 R CNN
+F 1 "LED" V 1448 4683 50  0000 R CNN
+F 2 "" H 1500 4800 50  0001 C CNN
+F 3 "~" H 1500 4800 50  0001 C CNN
+	1    1500 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D24V50F5:R_US R?
+U 1 1 5FC9A242
+P 1500 4300
+F 0 "R?" H 1568 4346 50  0000 L CNN
+F 1 "470" H 1568 4255 50  0000 L CNN
+F 2 "" V 1540 4290 50  0001 C CNN
+F 3 "~" H 1500 4300 50  0001 C CNN
+	1    1500 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 4450 1500 4650
+$Comp
+L D24V50F5:LED D?
+U 1 1 5FC9B157
+P 1800 5050
+F 0 "D?" V 1839 4933 50  0000 R CNN
+F 1 "LED" V 1748 4933 50  0000 R CNN
+F 2 "" H 1800 5050 50  0001 C CNN
+F 3 "~" H 1800 5050 50  0001 C CNN
+	1    1800 5050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D24V50F5:R_US R?
+U 1 1 5FC9B15D
+P 1800 4550
+F 0 "R?" H 1868 4596 50  0000 L CNN
+F 1 "470" H 1868 4505 50  0000 L CNN
+F 2 "" V 1840 4540 50  0001 C CNN
+F 3 "~" H 1800 4550 50  0001 C CNN
+	1    1800 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 4700 1800 4900
+Wire Wire Line
+	1200 3900 1200 3200
+Wire Wire Line
+	1200 3200 3550 3200
+Wire Wire Line
+	3550 3300 1500 3300
+Wire Wire Line
+	1500 3300 1500 4150
+Wire Wire Line
+	1800 4350 1800 3400
+Wire Wire Line
+	1800 3400 3550 3400
+Wire Wire Line
+	1800 5200 1800 5400
+Wire Wire Line
+	1800 5400 2450 5400
+Wire Wire Line
+	1800 5400 1500 5400
+Wire Wire Line
+	1500 5400 1500 4950
+Connection ~ 1800 5400
+Wire Wire Line
+	1500 5400 1200 5400
+Connection ~ 1500 5400
+Wire Wire Line
+	1200 5400 1200 4700
+Wire Wire Line
+	900  4500 900  5400
+Wire Wire Line
+	900  5400 1200 5400
+Connection ~ 1200 5400
+Wire Wire Line
+	5850 2800 6750 2800
+Text Notes 1300 5500 0    26   ~ 0
+mmm blinky lights
 $EndSCHEMATC
