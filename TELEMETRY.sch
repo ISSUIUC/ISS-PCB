@@ -24,59 +24,17 @@ F 3 "" H 7600 6800 50  0001 C CNN
 	1    7600 6800
 	1    0    0    -1  
 $EndComp
-Text HLabel 3000 3150 0    50   Input ~ 0
-TLM_RESET
-Text HLabel 3000 2650 0    50   Input ~ 0
-TLM_SCK
-Text HLabel 3000 2750 0    50   Input ~ 0
-TLM_MOSI
-Text HLabel 3000 2850 0    50   Input ~ 0
-TLM_MISO
-Text HLabel 3000 2950 0    50   Input ~ 0
-TLM_NSS
-Text HLabel 4000 2850 2    50   Input ~ 0
-TLM_DIO5
-Text HLabel 4000 2950 2    50   Input ~ 0
-TLM_DIO4
-Text HLabel 4000 3050 2    50   Input ~ 0
-TLM_DIO3
-Text HLabel 4000 3150 2    50   Input ~ 0
-TLM_DIO2
-Text HLabel 4000 3250 2    50   Input ~ 0
-TLM_DIO1
-Text HLabel 4000 3350 2    50   Input ~ 0
-TLM_DIO0
-$Comp
-L RF_Module:RFM95W-868S2 U9
-U 1 1 5F8B4512
-P 3500 2950
-F 0 "U9" H 3500 3631 50  0000 C CNN
-F 1 "RFM95W-868S2" H 3500 3540 50  0000 C CNN
-F 2 "" H 200 4600 50  0001 C CNN
-F 3 "https://www.hoperf.com/data/upload/portal/20181127/5bfcbea20e9ef.pdf" H 200 4600 50  0001 C CNN
-	1    3500 2950
-	1    0    0    -1  
-$EndComp
-Text GLabel 3500 2450 2    50   Input ~ 0
-3.3V_IN
 $Comp
 L power:GND #PWR020
 U 1 1 5F947841
-P 3500 3700
-F 0 "#PWR020" H 3500 3450 50  0001 C CNN
-F 1 "GND" H 3505 3527 50  0000 C CNN
-F 2 "" H 3500 3700 50  0001 C CNN
-F 3 "" H 3500 3700 50  0001 C CNN
-	1    3500 3700
+P 3500 3800
+F 0 "#PWR020" H 3500 3550 50  0001 C CNN
+F 1 "GND" H 3505 3627 50  0000 C CNN
+F 2 "" H 3500 3800 50  0001 C CNN
+F 3 "" H 3500 3800 50  0001 C CNN
+	1    3500 3800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3400 3550 3500 3550
-Connection ~ 3500 3550
-Wire Wire Line
-	3500 3550 3600 3550
-Wire Wire Line
-	3500 3550 3500 3700
 Wire Wire Line
 	4000 2650 4500 2650
 $Comp
@@ -121,9 +79,95 @@ U 1 1 5F94DDFD
 P 4800 2650
 F 0 "X2" H 5030 2696 50  0000 L CNN
 F 1 "SMACONNECTOR" H 5030 2605 50  0000 L CNN
-F 2 "" H 4800 2650 50  0001 C CNN
+F 2 "SMA:SMA90_DIP" H 4800 2650 50  0001 C CNN
 F 3 "" H 4800 2650 50  0001 C CNN
 	1    4800 2650
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:+3V3 #PWR0134
+U 1 1 5F98F509
+P 3500 2050
+F 0 "#PWR0134" H 3500 1900 50  0001 C CNN
+F 1 "+3V3" H 3515 2223 50  0000 C CNN
+F 2 "" H 3500 2050 50  0001 C CNN
+F 3 "" H 3500 2050 50  0001 C CNN
+	1    3500 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 2050 3500 2250
+$Comp
+L D24V50F5:C C10001
+U 1 1 5F991F8E
+P 3900 2250
+F 0 "C10001" V 3648 2250 50  0000 C CNN
+F 1 "0.1uF" V 3739 2250 50  0000 C CNN
+F 2 "" H 3938 2100 50  0001 C CNN
+F 3 "~" H 3900 2250 50  0001 C CNN
+	1    3900 2250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3750 2250 3500 2250
+Connection ~ 3500 2250
+Wire Wire Line
+	3500 2250 3500 2450
+Wire Wire Line
+	4050 2250 4200 2250
+Wire Wire Line
+	4200 2250 4200 3650
+Wire Wire Line
+	4200 3650 3600 3650
+$Comp
+L RF_Module:RFM95W-868S2 U9
+U 1 1 5F8B4512
+P 3500 2950
+F 0 "U9" H 3050 3550 50  0000 C CNN
+F 1 "RFM95W-868S2" H 3050 3450 50  0000 C CNN
+F 2 "" H 200 4600 50  0001 C CNN
+F 3 "https://www.hoperf.com/data/upload/portal/20181127/5bfcbea20e9ef.pdf" H 200 4600 50  0001 C CNN
+	1    3500 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 3550 3400 3650
+Wire Wire Line
+	3400 3650 3500 3650
+Connection ~ 3500 3650
+Wire Wire Line
+	3500 3550 3500 3650
+Wire Wire Line
+	3600 3550 3600 3650
+Connection ~ 3600 3650
+Wire Wire Line
+	3600 3650 3500 3650
+Wire Wire Line
+	3500 3650 3500 3800
+NoConn ~ 4000 2850
+NoConn ~ 4000 2950
+NoConn ~ 4000 3050
+NoConn ~ 4000 3150
+NoConn ~ 4000 3250
+NoConn ~ 4000 3350
+Text GLabel 2600 2850 0    50   Input ~ 0
+MPU_SPI0_MISO
+Wire Wire Line
+	3000 2850 2600 2850
+Text GLabel 2600 2650 0    50   Input ~ 0
+MPU_SPI0_SCLK
+Wire Wire Line
+	2600 2650 3000 2650
+Text GLabel 2600 2950 0    50   Input ~ 0
+MPU_SPI0_CS0
+Wire Wire Line
+	3000 2950 2600 2950
+Text GLabel 2600 2750 0    50   Input ~ 0
+MPU_SPI0_MOSI
+Wire Wire Line
+	2600 2750 3000 2750
+Text GLabel 2600 3150 0    50   Input ~ 0
+TLM_RESET
+Wire Wire Line
+	2600 3150 3000 3150
 $EndSCHEMATC
