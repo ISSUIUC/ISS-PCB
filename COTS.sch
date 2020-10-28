@@ -25,50 +25,6 @@ F 3 "" H 7600 6800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Screw_Terminal_01x02 J5003
-U 1 1 5F97995E
-P 4900 2150
-F 0 "J5003" V 4864 1962 50  0000 R CNN
-F 1 "SL1_TerminalA" V 4773 1962 50  0000 R CNN
-F 2 "" H 4900 2150 50  0001 C CNN
-F 3 "~" H 4900 2150 50  0001 C CNN
-	1    4900 2150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector:Screw_Terminal_01x02 J5004
-U 1 1 5F979E33
-P 5000 1650
-F 0 "J5004" V 4872 1730 50  0000 L CNN
-F 1 "SL1_TerminalD" V 4963 1730 50  0000 L CNN
-F 2 "" H 5000 1650 50  0001 C CNN
-F 3 "~" H 5000 1650 50  0001 C CNN
-	1    5000 1650
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:Screw_Terminal_01x02 J5007
-U 1 1 5F97A0E7
-P 5950 2150
-F 0 "J5007" V 5914 1962 50  0000 R CNN
-F 1 "SL1_TerminalB" V 5823 1962 50  0000 R CNN
-F 2 "" H 5950 2150 50  0001 C CNN
-F 3 "~" H 5950 2150 50  0001 C CNN
-	1    5950 2150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector:Screw_Terminal_01x02 J5008
-U 1 1 5F97A0ED
-P 6050 1650
-F 0 "J5008" V 5922 1730 50  0000 L CNN
-F 1 "SL1_TerminalC" V 6013 1730 50  0000 L CNN
-F 2 "" H 6050 1650 50  0001 C CNN
-F 3 "~" H 6050 1650 50  0001 C CNN
-	1    6050 1650
-	0    1    1    0   
-$EndComp
-$Comp
 L Connector:Conn_01x05_Female J5001
 U 1 1 5F97B036
 P 3550 1450
@@ -78,50 +34,6 @@ F 2 "" H 3550 1450 50  0001 C CNN
 F 3 "~" H 3550 1450 50  0001 C CNN
 	1    3550 1450
 	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector:Screw_Terminal_01x02 J5005
-U 1 1 5F9809A8
-P 5050 4050
-F 0 "J5005" V 5014 3862 50  0000 R CNN
-F 1 "SL2_TerminalA" V 4923 3862 50  0000 R CNN
-F 2 "" H 5050 4050 50  0001 C CNN
-F 3 "~" H 5050 4050 50  0001 C CNN
-	1    5050 4050
-	0    -1   1    0   
-$EndComp
-$Comp
-L Connector:Screw_Terminal_01x02 J5006
-U 1 1 5F9809AE
-P 5150 4550
-F 0 "J5006" V 5022 4630 50  0000 L CNN
-F 1 "SL2_TerminalD" V 5113 4630 50  0000 L CNN
-F 2 "" H 5150 4550 50  0001 C CNN
-F 3 "~" H 5150 4550 50  0001 C CNN
-	1    5150 4550
-	0    1    -1   0   
-$EndComp
-$Comp
-L Connector:Screw_Terminal_01x02 J5009
-U 1 1 5F9809B4
-P 6100 4050
-F 0 "J5009" V 6064 3862 50  0000 R CNN
-F 1 "SL2_TerminalB" V 5973 3862 50  0000 R CNN
-F 2 "" H 6100 4050 50  0001 C CNN
-F 3 "~" H 6100 4050 50  0001 C CNN
-	1    6100 4050
-	0    -1   1    0   
-$EndComp
-$Comp
-L Connector:Screw_Terminal_01x02 J5010
-U 1 1 5F9809BA
-P 6200 4550
-F 0 "J5010" V 6072 4630 50  0000 L CNN
-F 1 "SL2_TerminalC" V 6163 4630 50  0000 L CNN
-F 2 "" H 6200 4550 50  0001 C CNN
-F 3 "~" H 6200 4550 50  0001 C CNN
-	1    6200 4550
-	0    1    -1   0   
 $EndComp
 $Comp
 L Connector:Conn_01x05_Female J5002
@@ -134,44 +46,6 @@ F 3 "~" H 3600 3900 50  0001 C CNN
 	1    3600 3900
 	0    -1   -1   0   
 $EndComp
-$Comp
-L power:GND #PWR0111
-U 1 1 5F98E93A
-P 6050 2600
-F 0 "#PWR0111" H 6050 2350 50  0001 C CNN
-F 1 "GND" H 6055 2427 50  0000 C CNN
-F 2 "" H 6050 2600 50  0001 C CNN
-F 3 "" H 6050 2600 50  0001 C CNN
-	1    6050 2600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0112
-U 1 1 5F98EDA4
-P 6200 5000
-F 0 "#PWR0112" H 6200 4750 50  0001 C CNN
-F 1 "GND" H 6205 4827 50  0000 C CNN
-F 2 "" H 6200 5000 50  0001 C CNN
-F 3 "" H 6200 5000 50  0001 C CNN
-	1    6200 5000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6050 2350 6050 2600
-Wire Wire Line
-	6200 4750 6200 5000
-Text GLabel 5900 5050 0    50   Input ~ 0
-9V_POWER
-Wire Wire Line
-	6100 4750 6100 5050
-Wire Wire Line
-	6100 5050 5900 5050
-Text GLabel 5850 2600 0    50   Input ~ 0
-9V_POWER
-Wire Wire Line
-	5950 2350 5950 2600
-Wire Wire Line
-	5950 2600 5850 2600
 Wire Notes Line
 	3000 3450 7100 3450
 Wire Notes Line
@@ -188,4 +62,64 @@ Wire Notes Line
 	3000 1150 3000 2850
 Wire Notes Line
 	3000 2850 7100 2850
+$Comp
+L StratoLoggerCF:StratoLoggerCF U?
+U 1 1 5F9DEDA6
+P 5650 1750
+F 0 "U?" H 5675 1915 50  0000 C CNN
+F 1 "StratoLoggerCF" H 5675 1824 50  0000 C CNN
+F 2 "StratoLoggerCF:StratologgerCF" H 5650 1150 50  0001 C CNN
+F 3 "" H 5450 1750 50  0001 C CNN
+	1    5650 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F9E39AE
+P 4850 2400
+F 0 "#PWR?" H 4850 2150 50  0001 C CNN
+F 1 "GND" H 4855 2227 50  0000 C CNN
+F 2 "" H 4850 2400 50  0001 C CNN
+F 3 "" H 4850 2400 50  0001 C CNN
+	1    4850 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 2200 4850 2200
+Wire Wire Line
+	4850 2200 4850 2400
+Text GLabel 4750 2100 0    50   Input ~ 0
+SL1_PWR
+Wire Wire Line
+	4750 2100 5000 2100
+$Comp
+L StratoLoggerCF:StratoLoggerCF U?
+U 1 1 5F9E7BE4
+P 5700 4150
+F 0 "U?" H 5725 4315 50  0000 C CNN
+F 1 "StratoLoggerCF" H 5725 4224 50  0000 C CNN
+F 2 "StratoLoggerCF:StratologgerCF" H 5700 3550 50  0001 C CNN
+F 3 "" H 5500 4150 50  0001 C CNN
+	1    5700 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F9E7BEA
+P 4900 4800
+F 0 "#PWR?" H 4900 4550 50  0001 C CNN
+F 1 "GND" H 4905 4627 50  0000 C CNN
+F 2 "" H 4900 4800 50  0001 C CNN
+F 3 "" H 4900 4800 50  0001 C CNN
+	1    4900 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 4600 4900 4600
+Wire Wire Line
+	4900 4600 4900 4800
+Text GLabel 4800 4500 0    50   Input ~ 0
+SL1_PWR
+Wire Wire Line
+	4800 4500 5050 4500
 $EndSCHEMATC
