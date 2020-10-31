@@ -394,10 +394,10 @@ Wire Wire Line
 	3000 5250 3000 5100
 Connection ~ 3000 5100
 $Comp
-L Device:Jumper_NC_Small JP?
+L Device:Jumper_NC_Small JP1
 U 1 1 5F9DF26A
 P 5050 2550
-F 0 "JP?" H 5050 2762 50  0000 C CNN
+F 0 "JP1" H 5050 2762 50  0000 C CNN
 F 1 "Jumper_NC_Small" H 5050 2671 50  0000 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 5050 2550 50  0001 C CNN
 F 3 "~" H 5050 2550 50  0001 C CNN
