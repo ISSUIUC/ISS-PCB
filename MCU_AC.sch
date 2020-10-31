@@ -243,10 +243,6 @@ Wire Wire Line
 	4700 3850 4300 3850
 Text GLabel 4300 3750 0    50   Input ~ 0
 MCU_SPI1_MOSI
-Text GLabel 4350 2250 0    50   Input ~ 0
-MCU_SPI1_MISO
-Wire Wire Line
-	4700 2250 4350 2250
 Wire Wire Line
 	4300 3750 4700 3750
 Text GLabel 7300 3750 2    50   Input ~ 0
@@ -342,4 +338,8 @@ Text GLabel 7300 2350 2    50   Input ~ 0
 HYBRID_VENT_TRIGGER
 Wire Wire Line
 	7300 2350 6900 2350
+Text GLabel 4350 2150 0    50   Input ~ 0
+MCU_SPI1_CS0
+Wire Wire Line
+	4700 2150 4350 2150
 $EndSCHEMATC

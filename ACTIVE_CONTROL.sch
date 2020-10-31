@@ -247,7 +247,7 @@ F 3 "~" H 6400 1300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text GLabel 5450 1750 0    50   Input ~ 0
-SPI0_CS15
+SPI0_CS10
 Text GLabel 5450 1850 0    50   Input ~ 0
 SPI0_MOSI
 Text GLabel 5450 1950 0    50   Input ~ 0
@@ -366,7 +366,7 @@ Wire Wire Line
 Wire Wire Line
 	2000 1250 2550 1250
 Text GLabel 1600 2450 0    50   Input ~ 0
-SPI0_CS20
+SPI0_CS36
 Text GLabel 1600 2250 0    50   Input ~ 0
 SPI0_MOSI
 Text GLabel 1600 2550 0    50   Input ~ 0
@@ -382,7 +382,7 @@ Wire Wire Line
 Wire Wire Line
 	1600 2450 1850 2450
 Text GLabel 3500 2150 2    50   Input ~ 0
-SPI0_CS21
+SPI0_CS37
 Text GLabel 3500 2250 2    50   Input ~ 0
 SPI0_MISO
 Wire Wire Line
