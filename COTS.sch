@@ -89,20 +89,9 @@ Wire Wire Line
 Wire Wire Line
 	4850 2200 4850 2400
 Text GLabel 4750 2100 0    50   Input ~ 0
-SL1_PWR
+SL_PWR
 Wire Wire Line
 	4750 2100 5000 2100
-$Comp
-L StratoLoggerCF:StratoLoggerCF U5002
-U 1 1 5F9E7BE4
-P 5700 4150
-F 0 "U5002" H 5725 4315 50  0000 C CNN
-F 1 "StratoLoggerCF" H 5725 4224 50  0000 C CNN
-F 2 "StratoLoggerCF:StratologgerCF" H 5700 3550 50  0001 C CNN
-F 3 "" H 5500 4150 50  0001 C CNN
-	1    5700 4150
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR05002
 U 1 1 5F9E7BEA
@@ -119,7 +108,18 @@ Wire Wire Line
 Wire Wire Line
 	4900 4600 4900 4800
 Text GLabel 4800 4500 0    50   Input ~ 0
-SL1_PWR
+TM_PWR
 Wire Wire Line
 	4800 4500 5050 4500
+$Comp
+L Telemetrum:Telemetrum U5002
+U 1 1 5FB091BA
+P 5700 4150
+F 0 "U5002" H 5725 4315 50  0000 C CNN
+F 1 "Telemetrum" H 5725 4224 50  0000 C CNN
+F 2 "Telemetrum:Telemetrum" H 5850 3550 50  0001 C CNN
+F 3 "" H 5700 4200 50  0001 C CNN
+	1    5700 4150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
