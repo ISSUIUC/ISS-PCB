@@ -218,7 +218,6 @@ Wire Wire Line
 Connection ~ 3900 6600
 Wire Wire Line
 	3900 6600 4000 6600
-NoConn ~ 1800 2850
 NoConn ~ 1800 3450
 Wire Wire Line
 	1300 3250 1800 3250
@@ -248,14 +247,29 @@ F 3 "" H 7650 6800 50  0001 C CNN
 	1    7650 6800
 	1    0    0    -1  
 $EndComp
-Text GLabel 1600 2250 0    50   Input ~ 0
-MCU_I2C0_SDA
-Text GLabel 1600 2050 0    50   Input ~ 0
-MCU_I2C0_SCL
-Wire Wire Line
-	1600 2050 1800 2050
-Wire Wire Line
-	1800 2250 1600 2250
 Text GLabel 2500 1400 0    50   Input ~ 0
 3V3_MCU_SUPPLY
+Text GLabel 1450 2250 0    50   Input ~ 0
+MCU_SPI0_CS34
+Text GLabel 1450 2650 0    50   Input ~ 0
+MCU_SPI0_MOSI
+Text GLabel 1450 2450 0    50   Input ~ 0
+MCU_SPI0_MISO
+Text GLabel 1450 2050 0    50   Input ~ 0
+MCU_SPI0_SCK
+Wire Wire Line
+	1450 2250 1800 2250
+Wire Wire Line
+	1450 2050 1800 2050
+Wire Wire Line
+	1450 2450 1800 2450
+Wire Wire Line
+	1450 2650 1800 2650
+Wire Wire Line
+	1800 2850 1600 2850
+Wire Wire Line
+	1600 2850 1600 6600
+Wire Wire Line
+	1600 6600 2200 6600
+Connection ~ 2200 6600
 $EndSCHEMATC
