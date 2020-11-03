@@ -64,14 +64,10 @@ NoConn ~ 7650 3800
 NoConn ~ 4000 1700
 NoConn ~ 4000 1900
 NoConn ~ 4000 2000
-NoConn ~ 4000 2100
-NoConn ~ 4000 2200
 NoConn ~ 4000 2500
 NoConn ~ 4000 2700
 NoConn ~ 4000 2800
 NoConn ~ 4000 2900
-NoConn ~ 4000 3000
-NoConn ~ 4000 3100
 NoConn ~ 4000 3200
 NoConn ~ 4000 3600
 $Comp
@@ -310,16 +306,11 @@ NoConn ~ 4500 2100
 NoConn ~ 4500 2200
 NoConn ~ 4500 2300
 NoConn ~ 4500 2500
-NoConn ~ 4500 2700
-NoConn ~ 4500 2800
-NoConn ~ 4500 2900
-NoConn ~ 4500 3000
 NoConn ~ 4500 3100
 NoConn ~ 4500 3200
 NoConn ~ 4500 3300
 NoConn ~ 4500 3400
 NoConn ~ 4500 3500
-NoConn ~ 4500 3600
 Wire Wire Line
 	4900 1800 4500 1800
 $Comp
@@ -401,4 +392,74 @@ Wire Wire Line
 Wire Wire Line
 	4900 1200 3500 1200
 Connection ~ 3500 1200
+Text GLabel 3600 3000 0    50   Input ~ 0
+MPU_SPI1_MOSI
+Wire Wire Line
+	3600 3000 4000 3000
+Text GLabel 3600 3100 0    50   Input ~ 0
+MPU_SPI1_SCLK
+Wire Wire Line
+	3600 3100 4000 3100
+Text GLabel 4900 3000 2    50   Input ~ 0
+MPU_SPI1_MISO
+Wire Wire Line
+	4500 3000 4900 3000
+Text GLabel 4900 2900 2    50   Input ~ 0
+MPU_SPI1_CS0
+Wire Wire Line
+	4500 2900 4900 2900
+Text GLabel 4900 3600 2    50   Input ~ 0
+MPU_SPI1_CS1
+Wire Wire Line
+	4500 3600 4900 3600
+Text GLabel 4600 5800 2    50   Input ~ 0
+MCU_SPI1_SCK
+Text GLabel 4600 5950 2    50   Input ~ 0
+AC_MCU_SPI1_CS1
+Text GLabel 4600 5650 2    50   Input ~ 0
+MCU_SPI1_MISO
+Text GLabel 4600 6100 2    50   Input ~ 0
+HYB_MCU_SPI1_CS1
+Text GLabel 4600 5500 2    50   Input ~ 0
+MCU_SPI1_MOSI
+Text GLabel 3950 5500 0    50   Input ~ 0
+MPU_SPI1_MOSI
+Text GLabel 3950 5800 0    50   Input ~ 0
+MPU_SPI1_SCLK
+Text GLabel 3950 5650 0    50   Input ~ 0
+MPU_SPI1_MISO
+Text GLabel 3950 5950 0    50   Input ~ 0
+MPU_SPI1_CS0
+Text GLabel 3950 6100 0    50   Input ~ 0
+MPU_SPI1_CS1
+Wire Wire Line
+	3950 5500 4600 5500
+Wire Wire Line
+	3950 5650 4600 5650
+Wire Wire Line
+	3950 5800 4600 5800
+Wire Wire Line
+	3950 5950 4600 5950
+Wire Wire Line
+	3950 6100 4600 6100
+Text Notes 3300 5350 0    50   ~ 0
+Master SPI Device
+Text Notes 4600 5350 0    50   ~ 0
+Slave SPI Devices
+Text GLabel 4900 2700 2    50   Input ~ 0
+AC_MCU_RX1
+Text GLabel 4900 2800 2    50   Input ~ 0
+AC_MCU_TX1
+Wire Wire Line
+	4500 2700 4900 2700
+Wire Wire Line
+	4500 2800 4900 2800
+Text GLabel 3600 2200 0    50   Input ~ 0
+HYB_MCU_RX1
+Text GLabel 3600 2100 0    50   Input ~ 0
+HYB_MCU_TX1
+Wire Wire Line
+	4000 2200 3600 2200
+Wire Wire Line
+	4000 2100 3600 2100
 $EndSCHEMATC

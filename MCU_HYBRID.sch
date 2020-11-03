@@ -220,12 +220,8 @@ Wire Wire Line
 	7200 2800 6800 2800
 Wire Wire Line
 	7200 3000 6800 3000
-Text GLabel 7200 4200 2    50   Input ~ 0
-MCU_SPI1_CS38
 Text GLabel 4200 4200 0    50   Input ~ 0
 MCU_SPI1_SCK
-Wire Wire Line
-	7200 4200 6800 4200
 Wire Wire Line
 	4600 4200 4200 4200
 Text GLabel 4200 4100 0    50   Input ~ 0
@@ -325,10 +321,6 @@ Text GLabel 7200 2700 2    50   Input ~ 0
 HYBRID_VENT_TRIGGER
 Wire Wire Line
 	7200 2700 6800 2700
-Text GLabel 4250 2500 0    50   Input ~ 0
-MCU_SPI1_CS0
-Wire Wire Line
-	4600 2500 4250 2500
 Text GLabel 7200 4600 2    50   Input ~ 0
 MCU_SPI0_CS34
 Wire Wire Line
@@ -350,4 +342,16 @@ F 3 "" H 5300 4950 50  0001 C CNN
 	1    5700 4550
 	1    0    0    -1  
 $EndComp
+Text GLabel 7200 4200 2    50   Input ~ 0
+HYB_MCU_SPI1_CS1
+Wire Wire Line
+	6800 4200 7200 4200
+Text GLabel 4250 2500 0    50   Input ~ 0
+HYB_MCU_RX1
+Wire Wire Line
+	4250 2500 4600 2500
+Text GLabel 4250 2600 0    50   Input ~ 0
+HYB_MCU_TX1
+Wire Wire Line
+	4250 2600 4600 2600
 $EndSCHEMATC
