@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ISS_LOGO:LOGO #G7001
-U 1 1 5F87D889
-P 7600 6800
-F 0 "#G7001" H 7600 6647 60  0001 C CNN
-F 1 "LOGO" H 7600 6953 60  0001 C CNN
-F 2 "" H 7600 6800 50  0001 C CNN
-F 3 "" H 7600 6800 50  0001 C CNN
-	1    7600 6800
-	1    0    0    -1  
-$EndComp
-$Comp
 L Sensor_Motion:LSM9DS1 U7001
 U 1 1 5F8DFDD2
 P 2550 2550
@@ -485,4 +474,89 @@ Wire Notes Line
 	850  3900 4250 3900
 Wire Notes Line
 	850  850  4250 850 
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 5FA3A88F
+P 6600 4200
+AR Path="/5F879839/5FA3A88F" Ref="J?"  Part="1" 
+AR Path="/5F87BB2D/5FA3A88F" Ref="J?"  Part="1" 
+F 0 "J?" H 6680 4242 50  0000 L CNN
+F 1 "AC_SERVO1" H 6680 4151 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6600 4200 50  0001 C CNN
+F 3 "~" H 6600 4200 50  0001 C CNN
+	1    6600 4200
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 5FA3A895
+P 6600 4600
+AR Path="/5F879839/5FA3A895" Ref="J?"  Part="1" 
+AR Path="/5F87BB2D/5FA3A895" Ref="J?"  Part="1" 
+F 0 "J?" H 6680 4642 50  0000 L CNN
+F 1 "AC_SERVO2" H 6680 4551 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6600 4600 50  0001 C CNN
+F 3 "~" H 6600 4600 50  0001 C CNN
+	1    6600 4600
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6400 4700 6100 4700
+Wire Wire Line
+	6400 4300 6100 4300
+Wire Wire Line
+	6100 4300 6100 4700
+Text GLabel 6000 4600 0    50   Input ~ 0
+AC_SERVO2
+Text GLabel 6000 4200 0    50   Input ~ 0
+AC_SERVO1
+$Comp
+L power:GND #PWR?
+U 1 1 5FA3A8A0
+P 6100 4950
+AR Path="/5F879839/5FA3A8A0" Ref="#PWR?"  Part="1" 
+AR Path="/5F87BB2D/5FA3A8A0" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6100 4700 50  0001 C CNN
+F 1 "GND" H 6105 4777 50  0000 C CNN
+F 2 "" H 6100 4950 50  0001 C CNN
+F 3 "" H 6100 4950 50  0001 C CNN
+	1    6100 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 4700 6100 4950
+Connection ~ 6100 4700
+Wire Wire Line
+	6000 4500 6400 4500
+Wire Wire Line
+	6000 4100 6400 4100
+Text GLabel 6000 4100 0    50   Input ~ 0
+5V_AC_SERVO0
+Text GLabel 6000 4500 0    50   Input ~ 0
+5V_AC_SERVO1
+Wire Wire Line
+	6000 4600 6400 4600
+Wire Wire Line
+	6400 4200 6000 4200
+$Comp
+L ISS_LOGO:LOGO #G7001
+U 1 1 5F87D889
+P 7600 6800
+F 0 "#G7001" H 7600 6647 60  0001 C CNN
+F 1 "LOGO" H 7600 6953 60  0001 C CNN
+F 2 "" H 7600 6800 50  0001 C CNN
+F 3 "" H 7600 6800 50  0001 C CNN
+	1    7600 6800
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	5300 3900 5300 5250
+Wire Notes Line
+	5300 5250 7200 5250
+Wire Notes Line
+	7200 5250 7200 3900
+Wire Notes Line
+	7200 3900 5300 3900
+Text Notes 5750 3850 0    71   ~ 0
+AC Servo Connectors
 $EndSCHEMATC
