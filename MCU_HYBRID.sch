@@ -25,11 +25,11 @@ F 3 "" H 7600 6800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 4250 3000 0    50   Input ~ 0
-AC_SERVO_CCW
+AC_SERVO1
 Wire Wire Line
 	4250 3000 4600 3000
 Text GLabel 4250 2900 0    50   Input ~ 0
-AC_SERVO_CW
+AC_SERVO0
 Wire Wire Line
 	4250 2900 4600 2900
 Text GLabel 4250 2700 0    50   Input ~ 0

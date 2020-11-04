@@ -507,9 +507,9 @@ Wire Wire Line
 Wire Wire Line
 	6100 4300 6100 4700
 Text GLabel 6000 4600 0    50   Input ~ 0
-AC_SERVO2
-Text GLabel 6000 4200 0    50   Input ~ 0
 AC_SERVO1
+Text GLabel 6000 4200 0    50   Input ~ 0
+AC_SERVO0
 $Comp
 L power:GND #PWR?
 U 1 1 5FA3A8A0
