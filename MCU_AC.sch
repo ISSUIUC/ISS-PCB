@@ -352,4 +352,8 @@ Text GLabel 4250 2850 0    50   Input ~ 0
 AC_MCU_TX1
 Wire Wire Line
 	4250 2850 4600 2850
+Text GLabel 7200 4950 2    50   Input ~ 0
+AC_SERVO2
+Wire Wire Line
+	6800 4950 7200 4950
 $EndSCHEMATC

@@ -479,8 +479,8 @@ L Connector_Generic:Conn_01x03 J?
 U 1 1 5FA3A88F
 P 6600 4200
 AR Path="/5F879839/5FA3A88F" Ref="J?"  Part="1" 
-AR Path="/5F87BB2D/5FA3A88F" Ref="J?"  Part="1" 
-F 0 "J?" H 6680 4242 50  0000 L CNN
+AR Path="/5F87BB2D/5FA3A88F" Ref="J7001"  Part="1" 
+F 0 "J7001" H 6680 4242 50  0000 L CNN
 F 1 "AC_SERVO1" H 6680 4151 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6600 4200 50  0001 C CNN
 F 3 "~" H 6600 4200 50  0001 C CNN
@@ -492,8 +492,8 @@ L Connector_Generic:Conn_01x03 J?
 U 1 1 5FA3A895
 P 6600 4600
 AR Path="/5F879839/5FA3A895" Ref="J?"  Part="1" 
-AR Path="/5F87BB2D/5FA3A895" Ref="J?"  Part="1" 
-F 0 "J?" H 6680 4642 50  0000 L CNN
+AR Path="/5F87BB2D/5FA3A895" Ref="J7002"  Part="1" 
+F 0 "J7002" H 6680 4642 50  0000 L CNN
 F 1 "AC_SERVO2" H 6680 4551 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6600 4600 50  0001 C CNN
 F 3 "~" H 6600 4600 50  0001 C CNN
@@ -513,19 +513,16 @@ AC_SERVO0
 $Comp
 L power:GND #PWR?
 U 1 1 5FA3A8A0
-P 6100 4950
+P 6100 5350
 AR Path="/5F879839/5FA3A8A0" Ref="#PWR?"  Part="1" 
-AR Path="/5F87BB2D/5FA3A8A0" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 6100 4700 50  0001 C CNN
-F 1 "GND" H 6105 4777 50  0000 C CNN
-F 2 "" H 6100 4950 50  0001 C CNN
-F 3 "" H 6100 4950 50  0001 C CNN
-	1    6100 4950
+AR Path="/5F87BB2D/5FA3A8A0" Ref="#PWR04"  Part="1" 
+F 0 "#PWR04" H 6100 5100 50  0001 C CNN
+F 1 "GND" H 6105 5177 50  0000 C CNN
+F 2 "" H 6100 5350 50  0001 C CNN
+F 3 "" H 6100 5350 50  0001 C CNN
+	1    6100 5350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6100 4700 6100 4950
-Connection ~ 6100 4700
 Wire Wire Line
 	6000 4500 6400 4500
 Wire Wire Line
@@ -550,13 +547,42 @@ F 3 "" H 7600 6800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
-	5300 3900 5300 5250
-Wire Notes Line
-	5300 5250 7200 5250
-Wire Notes Line
-	7200 5250 7200 3900
-Wire Notes Line
 	7200 3900 5300 3900
 Text Notes 5750 3850 0    71   ~ 0
 AC Servo Connectors
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 5FA62BBE
+P 6600 5000
+AR Path="/5F879839/5FA62BBE" Ref="J?"  Part="1" 
+AR Path="/5F87BB2D/5FA62BBE" Ref="J7003"  Part="1" 
+F 0 "J7003" H 6680 5042 50  0000 L CNN
+F 1 "AC_SERVO3" H 6680 4951 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6600 5000 50  0001 C CNN
+F 3 "~" H 6600 5000 50  0001 C CNN
+	1    6600 5000
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6400 5100 6100 5100
+Text GLabel 6000 5000 0    50   Input ~ 0
+AC_SERVO2
+Wire Wire Line
+	6100 5100 6100 5350
+Wire Wire Line
+	6000 4900 6400 4900
+Text GLabel 6000 4900 0    50   Input ~ 0
+5V_AC_SERVO2
+Wire Wire Line
+	6000 5000 6400 5000
+Wire Wire Line
+	6100 4700 6100 5100
+Connection ~ 6100 4700
+Connection ~ 6100 5100
+Wire Notes Line
+	7200 5650 5300 5650
+Wire Notes Line
+	5300 3900 5300 5650
+Wire Notes Line
+	7200 3900 7200 5650
 $EndSCHEMATC

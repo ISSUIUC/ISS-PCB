@@ -354,4 +354,8 @@ Text GLabel 4250 2600 0    50   Input ~ 0
 HYB_MCU_TX1
 Wire Wire Line
 	4250 2600 4600 2600
+Text GLabel 7200 4700 2    50   Input ~ 0
+AC_SERVO2
+Wire Wire Line
+	6800 4700 7200 4700
 $EndSCHEMATC
