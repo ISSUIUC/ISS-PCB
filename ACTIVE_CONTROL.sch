@@ -38,7 +38,7 @@ U 1 1 5F8EA121
 P 3700 1500
 F 0 "C7005" H 3792 1546 50  0000 L CNN
 F 1 "10 uF" H 3792 1455 50  0000 L CNN
-F 2 "" H 3700 1500 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3700 1500 50  0001 C CNN
 F 3 "~" H 3700 1500 50  0001 C CNN
 	1    3700 1500
 	1    0    0    -1  
@@ -71,7 +71,7 @@ U 1 1 5F8EC3F9
 P 1750 3300
 F 0 "C7002" H 1842 3346 50  0000 L CNN
 F 1 "100 nF" H 1842 3255 50  0000 L CNN
-F 2 "" H 1750 3300 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 1750 3300 50  0001 C CNN
 F 3 "~" H 1750 3300 50  0001 C CNN
 	1    1750 3300
 	1    0    0    -1  
@@ -82,7 +82,7 @@ U 1 1 5F8ED22B
 P 1550 3300
 F 0 "C7001" H 1642 3346 50  0000 L CNN
 F 1 "10 nF" H 1642 3255 50  0000 L CNN
-F 2 "" H 1550 3300 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 1550 3300 50  0001 C CNN
 F 3 "~" H 1550 3300 50  0001 C CNN
 	1    1550 3300
 	-1   0    0    1   
@@ -104,7 +104,7 @@ U 1 1 5F8EE544
 P 2000 1500
 F 0 "C7003" H 2092 1546 50  0000 L CNN
 F 1 "100 nF" H 2092 1455 50  0000 L CNN
-F 2 "" H 2000 1500 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 2000 1500 50  0001 C CNN
 F 3 "~" H 2000 1500 50  0001 C CNN
 	1    2000 1500
 	1    0    0    -1  
@@ -126,7 +126,7 @@ U 1 1 5F9168B8
 P 9750 1450
 F 0 "C7008" V 9650 1450 50  0000 L CNN
 F 1 "100nF" V 9850 1400 50  0000 L CNN
-F 2 "" H 9750 1450 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 9750 1450 50  0001 C CNN
 F 3 "~" H 9750 1450 50  0001 C CNN
 	1    9750 1450
 	0    1    -1   0   
@@ -178,7 +178,7 @@ U 1 1 5F8EA978
 P 3250 1500
 F 0 "C7004" H 3342 1546 50  0000 L CNN
 F 1 "100 nF" H 3342 1455 50  0000 L CNN
-F 2 "" H 3250 1500 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3250 1500 50  0001 C CNN
 F 3 "~" H 3250 1500 50  0001 C CNN
 	1    3250 1500
 	1    0    0    -1  
@@ -202,7 +202,7 @@ U 1 1 5F913A43
 P 6800 1400
 F 0 "C7007" H 6892 1446 50  0000 L CNN
 F 1 "100nF" H 6892 1355 50  0000 L CNN
-F 2 "" H 6800 1400 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 6800 1400 50  0001 C CNN
 F 3 "~" H 6800 1400 50  0001 C CNN
 	1    6800 1400
 	0    -1   -1   0   
@@ -230,7 +230,7 @@ U 1 1 5F91577E
 P 6550 1300
 F 0 "C7006" H 6642 1346 50  0000 L CNN
 F 1 "100nF" H 6642 1255 50  0000 L CNN
-F 2 "" H 6550 1300 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 6550 1300 50  0001 C CNN
 F 3 "~" H 6550 1300 50  0001 C CNN
 	1    6550 1300
 	0    -1   -1   0   
@@ -391,12 +391,12 @@ Connection ~ 2550 1600
 Connection ~ 2550 1250
 Wire Wire Line
 	2550 1250 2850 1250
-Text GLabel 1850 1250 0    50   Input ~ 0
+Text GLabel 1650 1250 0    50   Input ~ 0
 3V3_MCU_SUPPLY
 Wire Wire Line
 	1850 1250 2000 1250
 Connection ~ 2000 1250
-Text GLabel 6000 1100 0    50   Input ~ 0
+Text GLabel 5800 1100 0    50   Input ~ 0
 3V3_MCU_SUPPLY
 Wire Wire Line
 	6350 1300 6350 1100
@@ -408,10 +408,8 @@ Wire Wire Line
 Connection ~ 6250 1100
 Wire Wire Line
 	6250 1100 6000 1100
-Text GLabel 9550 1100 2    50   Input ~ 0
+Text GLabel 9200 1100 0    50   Input ~ 0
 3V3_MCU_SUPPLY
-Wire Wire Line
-	9550 1100 9400 1100
 Wire Wire Line
 	9950 1450 9950 2450
 Wire Wire Line
@@ -585,4 +583,46 @@ Wire Notes Line
 	5300 3900 5300 5650
 Wire Notes Line
 	7200 3900 7200 5650
+$Comp
+L Device:Jumper_NC_Small JP?
+U 1 1 5FAA6CC6
+P 1750 1250
+AR Path="/5F879839/5FAA6CC6" Ref="JP?"  Part="1" 
+AR Path="/5F8798E6/5FAA6CC6" Ref="JP?"  Part="1" 
+AR Path="/5F87BB2D/5FAA6CC6" Ref="JP2"  Part="1" 
+F 0 "JP2" H 1750 1462 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 1750 1371 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 1750 1250 50  0001 C CNN
+F 3 "~" H 1750 1250 50  0001 C CNN
+	1    1750 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Small JP?
+U 1 1 5FAB9E4B
+P 5900 1100
+AR Path="/5F879839/5FAB9E4B" Ref="JP?"  Part="1" 
+AR Path="/5F8798E6/5FAB9E4B" Ref="JP?"  Part="1" 
+AR Path="/5F87BB2D/5FAB9E4B" Ref="JP3"  Part="1" 
+F 0 "JP3" H 5900 1312 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 5900 1221 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 5900 1100 50  0001 C CNN
+F 3 "~" H 5900 1100 50  0001 C CNN
+	1    5900 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Small JP?
+U 1 1 5FACF499
+P 9300 1100
+AR Path="/5F879839/5FACF499" Ref="JP?"  Part="1" 
+AR Path="/5F8798E6/5FACF499" Ref="JP?"  Part="1" 
+AR Path="/5F87BB2D/5FACF499" Ref="JP4"  Part="1" 
+F 0 "JP4" H 9300 1312 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 9300 1221 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 9300 1100 50  0001 C CNN
+F 3 "~" H 9300 1100 50  0001 C CNN
+	1    9300 1100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

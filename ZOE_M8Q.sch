@@ -247,7 +247,7 @@ F 3 "" H 7650 6800 50  0001 C CNN
 	1    7650 6800
 	1    0    0    -1  
 $EndComp
-Text GLabel 2500 1400 0    50   Input ~ 0
+Text GLabel 2300 1400 0    50   Input ~ 0
 3V3_MCU_SUPPLY
 Text GLabel 1450 2250 0    50   Input ~ 0
 MCU_SPI0_CS34
@@ -272,4 +272,19 @@ Wire Wire Line
 Wire Wire Line
 	1600 6600 2200 6600
 Connection ~ 2200 6600
+$Comp
+L Device:Jumper_NC_Small JP?
+U 1 1 5FAE2E8A
+P 2400 1400
+AR Path="/5F879839/5FAE2E8A" Ref="JP?"  Part="1" 
+AR Path="/5F8798E6/5FAE2E8A" Ref="JP?"  Part="1" 
+AR Path="/5F87BB2D/5FAE2E8A" Ref="JP?"  Part="1" 
+AR Path="/5F87BB2D/5F958D31/5FAE2E8A" Ref="JP5"  Part="1" 
+F 0 "JP5" H 2400 1612 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 2400 1521 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 2400 1400 50  0001 C CNN
+F 3 "~" H 2400 1400 50  0001 C CNN
+	1    2400 1400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
