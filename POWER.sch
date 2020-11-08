@@ -544,7 +544,6 @@ Wire Wire Line
 Connection ~ 3850 4250
 Wire Wire Line
 	3850 4050 3850 4250
-Connection ~ 3250 4250
 Wire Wire Line
 	4100 4250 4100 4050
 $Comp
@@ -570,79 +569,6 @@ Text GLabel 4250 3450 2    50   Output ~ 0
 BATT1_CELL2
 Text GLabel 4250 3300 2    50   Output ~ 0
 BATT1_CELL1
-Connection ~ 3250 3600
-Wire Wire Line
-	3250 3600 3250 2450
-$Comp
-L Regulator_Linear:LM7809_TO220 U6003
-U 1 1 5F965D17
-P 2700 3600
-F 0 "U6003" H 2700 3842 50  0000 C CNN
-F 1 "LM7809_TO220" H 2700 3751 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 2700 3825 50  0001 C CIN
-F 3 "https://www.onsemi.cn/PowerSolutions/document/MC7800-D.PDF" H 2700 3550 50  0001 C CNN
-	1    2700 3600
-	-1   0    0    -1  
-$EndComp
-Text GLabel 1900 3600 0    50   Output ~ 0
-9V_PT_SUPPLY
-$Comp
-L power:GND #PWR06003
-U 1 1 5F96D055
-P 2700 4400
-F 0 "#PWR06003" H 2700 4150 50  0001 C CNN
-F 1 "GND" H 2750 4250 50  0000 R CNN
-F 2 "" H 2700 4400 50  0001 C CNN
-F 3 "" H 2700 4400 50  0001 C CNN
-	1    2700 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L D24V50F5:C C6002
-U 1 1 5F96D7B5
-P 3250 3950
-F 0 "C6002" H 2900 3950 50  0000 L CNN
-F 1 "100nF" H 3000 3850 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3288 3800 50  0001 C CNN
-F 3 "~" H 3250 3950 50  0001 C CNN
-	1    3250 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L D24V50F5:C C6001
-U 1 1 5F970D5D
-P 2200 3950
-F 0 "C6001" H 2315 3996 50  0000 L CNN
-F 1 "100nF" H 2315 3905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 2238 3800 50  0001 C CNN
-F 3 "~" H 2200 3950 50  0001 C CNN
-	1    2200 3950
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1900 3600 2200 3600
-Wire Wire Line
-	2200 3800 2200 3600
-Connection ~ 2200 3600
-Wire Wire Line
-	2200 3600 2400 3600
-Wire Wire Line
-	2200 4100 2200 4250
-Wire Wire Line
-	2200 4250 2700 4250
-Wire Wire Line
-	2700 4250 2700 4400
-Wire Wire Line
-	2700 3900 2700 4250
-Connection ~ 2700 4250
-Wire Wire Line
-	3000 3600 3250 3600
-Wire Wire Line
-	3250 3800 3250 3600
-Wire Wire Line
-	3250 4100 3250 4250
-Wire Wire Line
-	3250 4250 2700 4250
 Connection ~ 2600 2800
 Wire Wire Line
 	2500 2800 2600 2800
@@ -665,7 +591,6 @@ Wire Wire Line
 	2500 1600 2600 1600
 Wire Wire Line
 	2500 1550 2500 1600
-Connection ~ 3250 2450
 Wire Wire Line
 	3000 2450 3250 2450
 Wire Wire Line
@@ -713,9 +638,6 @@ Text Notes 3550 3800 1    24   Italic 0
 4.5v -> 1.8v voltage dividers for MPU ADC
 Wire Wire Line
 	3600 4250 3850 4250
-Wire Wire Line
-	3250 4250 3600 4250
-Connection ~ 3600 4250
 Wire Wire Line
 	3600 4250 3600 4050
 Wire Wire Line
@@ -856,7 +778,7 @@ F 3 "" H 3150 6050 50  0001 C CNN
 $EndComp
 Connection ~ 3500 6450
 Wire Wire Line
-	3500 5200 4400 5200
+	3500 5200 3850 5200
 Connection ~ 3500 5300
 Connection ~ 3500 5400
 Wire Wire Line
@@ -1066,4 +988,86 @@ Wire Wire Line
 Connection ~ 3250 1900
 Wire Wire Line
 	3250 1900 3250 2450
+Text GLabel 3950 7300 0    50   Output ~ 0
+9V_PT_SUPPLY
+$Comp
+L power:GND #PWR0106
+U 1 1 5FAAF85A
+P 4850 6500
+F 0 "#PWR0106" H 4850 6250 50  0001 C CNN
+F 1 "GND" H 4900 6350 50  0000 R CNN
+F 2 "" H 4850 6500 50  0001 C CNN
+F 3 "" H 4850 6500 50  0001 C CNN
+	1    4850 6500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D24V50F5:C C6001
+U 1 1 5FAAF860
+P 4400 5950
+F 0 "C6001" H 4050 5950 50  0000 L CNN
+F 1 "100nF" H 4150 5850 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4438 5800 50  0001 C CNN
+F 3 "~" H 4400 5950 50  0001 C CNN
+	1    4400 5950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D24V50F5:C C6002
+U 1 1 5FAAF866
+P 4400 7000
+F 0 "C6002" H 4515 7046 50  0000 L CNN
+F 1 "100nF" H 4515 6955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4438 6850 50  0001 C CNN
+F 3 "~" H 4400 7000 50  0001 C CNN
+	1    4400 7000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4050 7300 4050 7000
+Wire Wire Line
+	4250 7000 4050 7000
+Connection ~ 4050 7000
+Wire Wire Line
+	4050 7000 4050 6800
+Wire Wire Line
+	4550 7000 4700 7000
+Wire Wire Line
+	4700 7000 4700 6500
+Wire Wire Line
+	4700 6500 4850 6500
+Connection ~ 4700 6500
+Wire Wire Line
+	4050 6200 4050 5950
+Wire Wire Line
+	4250 5950 4050 5950
+Wire Wire Line
+	4550 5950 4700 5950
+Wire Wire Line
+	4700 5950 4700 6500
+Wire Wire Line
+	2950 5950 2900 5950
+Wire Wire Line
+	4050 5950 3850 5950
+Wire Wire Line
+	3850 5950 3850 5200
+Connection ~ 4050 5950
+Connection ~ 3850 5200
+Wire Wire Line
+	3850 5200 4400 5200
+Wire Wire Line
+	3950 7300 4050 7300
+$Comp
+L Regulator_Linear:LM7809_TO220 U6003
+U 1 1 5FAF816C
+P 4050 6500
+F 0 "U6003" V 4004 6605 50  0000 L CNN
+F 1 "LM7809_TO220" V 4095 6605 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4050 6725 50  0001 C CIN
+F 3 "http://www.fairchildsemi.com/ds/LM/LM7805.pdf" H 4050 6450 50  0001 C CNN
+	1    4050 6500
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	4350 6500 4700 6500
 $EndSCHEMATC
