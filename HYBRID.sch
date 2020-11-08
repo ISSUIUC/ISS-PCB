@@ -234,18 +234,16 @@ Wire Notes Line
 	10250 5550 10250 3300
 Wire Notes Line
 	10250 3300 7950 3300
-Text GLabel 2850 3650 0    50   Input ~ 0
-24V_UMBILICAL
 $Comp
 L Connector:Screw_Terminal_01x02 J3001
 U 1 1 5F9837DE
-P 3200 4100
-F 0 "J3001" H 3280 4092 50  0000 L CNN
-F 1 "VENT_VALVE" H 3280 4001 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 3200 4100 50  0001 C CNN
-F 3 "~" H 3200 4100 50  0001 C CNN
-	1    3200 4100
-	1    0    0    -1  
+P 3200 4200
+F 0 "J3001" H 3280 4192 50  0000 L CNN
+F 1 "VENT_VALVE" H 3280 4101 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 3200 4200 50  0001 C CNN
+F 3 "~" H 3200 4200 50  0001 C CNN
+	1    3200 4200
+	1    0    0    1   
 $EndComp
 $Comp
 L D24V50F5:D D3001
@@ -297,19 +295,10 @@ Wire Wire Line
 Connection ~ 3000 4400
 Wire Wire Line
 	3000 4400 3000 4550
-Wire Wire Line
-	2850 3650 3000 3650
-Wire Wire Line
-	3000 3650 3000 3900
-Connection ~ 3000 3900
 Wire Notes Line
 	1900 3450 1900 5550
 Wire Notes Line
-	1900 5550 3750 5550
-Wire Notes Line
-	3750 5550 3750 3450
-Wire Notes Line
-	3750 3450 1900 3450
+	4000 5550 4000 3450
 Text Notes 1900 3400 0    79   ~ 0
 SOLENOID VENT VALVE CONTROL
 Text Notes 4750 3500 0    79   ~ 0
@@ -327,17 +316,6 @@ Wire Wire Line
 Wire Wire Line
 	3000 5250 3000 5100
 Connection ~ 3000 5100
-$Comp
-L Device:Jumper_NC_Small JP1
-U 1 1 5F9DF26A
-P 5050 2550
-F 0 "JP1" H 5050 2762 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 5050 2671 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 5050 2550 50  0001 C CNN
-F 3 "~" H 5050 2550 50  0001 C CNN
-	1    5050 2550
-	1    0    0    -1  
-$EndComp
 $Comp
 L D24V50F5:R_US R3001
 U 1 1 5FA7ABC6
@@ -404,4 +382,39 @@ F 3 "" H 7600 6800 50  0001 C CNN
 	1    7600 6800
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J3007
+U 1 1 5FAF89CB
+P 3450 3600
+F 0 "J3007" H 3530 3592 50  0000 L CNN
+F 1 "UMBILLICAL" H 3530 3501 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 3450 3600 50  0001 C CNN
+F 3 "~" H 3450 3600 50  0001 C CNN
+	1    3450 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5FB09E37
+P 3200 3750
+F 0 "#PWR0105" H 3200 3500 50  0001 C CNN
+F 1 "GND" H 3205 3577 50  0000 C CNN
+F 2 "" H 3200 3750 50  0001 C CNN
+F 3 "" H 3200 3750 50  0001 C CNN
+	1    3200 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 3700 3200 3700
+Wire Wire Line
+	3200 3700 3200 3750
+Wire Wire Line
+	3250 3600 3000 3600
+Wire Wire Line
+	3000 3600 3000 3900
+Connection ~ 3000 3900
+Wire Notes Line
+	1900 3450 4000 3450
+Wire Notes Line
+	1900 5550 4000 5550
 $EndSCHEMATC
