@@ -237,14 +237,10 @@ Text GLabel 4200 4550 0    50   Input ~ 0
 IMU0_INT1
 Text GLabel 4200 4650 0    50   Input ~ 0
 IMU1_INT1
-Text GLabel 4200 4750 0    50   Input ~ 0
-GPS_EXTINT
 Wire Wire Line
 	4200 4550 4600 4550
 Wire Wire Line
 	4600 4650 4200 4650
-Wire Wire Line
-	4200 4750 4600 4750
 Text GLabel 7200 3450 2    50   Input ~ 0
 MCU_I2C0_SDA
 Wire Wire Line
