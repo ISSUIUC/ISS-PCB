@@ -18,3 +18,13 @@ TARS-MK1 PCB/Schematic design buglog:
 	- Pads around Teensy's pin holes are rather small and make it difficult to solder
 		Fix: Increase pad diameter in next iterations.
 
+[12/02/2020]
+	- CS Pin to MS5611 Barometer was not connected on PCB due to a labeling error in the schematic.
+		Fix: Resolve the mistake in label 
+		Workaround: Will connect CS pin of IC to a free digital pin on both Teensys using magnet wire
+
+[12/04/2020]
+	- SPI MOSI and MISO connections going to BBB from LoRa module are reversed.
+		Fix: Reverse SPI data lines
+		Fix2: Possible to invert mosi and miso in device tree (difficult)
+		Workaround: Solder LoRa module on pins, reverse mosi and miso connections from PCB to module using solid core wire.
