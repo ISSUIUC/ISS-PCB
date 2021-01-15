@@ -15,7 +15,6 @@ Indentations imply child-parent relationships.
     - extra fun stuff
   - `FCB.sch`: Flight computation board schematic
     - mission critical 
-    ^ child schematic of ACTIVE_CONTROL.sch
   - `MPU.sch`: Microprocessor unit schematic
     - copied from the PocketBeagle
   - `MCU.sch`: Microcontroller unit schematic
