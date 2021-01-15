@@ -1,4 +1,4 @@
-# TARS-MK2: `main` Branch
+# TARS-MK2
 
 > Don't let me leave Murph!\
 > -Matthew McConaughey
