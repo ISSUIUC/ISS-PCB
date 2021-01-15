@@ -23,5 +23,5 @@ Indentations imply child-parent relationships.
 
 Some notes:
 - Create 4 different schematic files (one for each board), and unify them through one parent
-- Use MPU to refer to the PocketBeagle
-- Use MCU to refer to the Teensy 4.1
+- Use **MPU** to refer to the **PocketBeagle**
+- Use **MCU** to refer to the **Teensy 4.1**
