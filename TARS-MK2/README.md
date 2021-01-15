@@ -25,3 +25,7 @@ In work:
 - `POWER.sch`
 - `Teensy_4_1.sch`
 - `PocketBeagle.sch`
+
+Some notes:
+- Create 4 different schematic files (one for each board), and unify them through one parent
+- Use `Teense_4_1.sch` and `PocketBeagle.sch` as sub-schematics
