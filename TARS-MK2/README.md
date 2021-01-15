@@ -20,3 +20,8 @@ Indentations imply child-parent relationships.
   - `PocketBeagle.sch`: Microprocessor(BeagleBone) schematic
     - In redesign
   - `TELEMETRY.sch`: Ground communications schematic
+  
+In work:
+- `POWER.sch`
+- `Teensy_4_1.sch`
+- `PocketBeagle.sch`
