@@ -12,11 +12,13 @@
   - `ACB.sch`: Advanced computation board schematic 
     - extra fun stuff
   - `FCB.sch`: Flight computation board schematic
-    - mission critical 
-  - `MPU.sch`: Microprocessor unit schematic
-    - copied from the PocketBeagle
-  - `MCU.sch`: Microcontroller unit schematic
-    - copied from the Teensy 4.1
+    - mission critical flight computers
+    - `MPU.sch`: Microprocessor unit sub-schematic
+        - copied from the PocketBeagle
+    - `MCU_AC.sch`: Active Control Microcontroller unit sub-schematic
+        - copied from the Teensy 4.1
+    - `MCU_HYBRID.sch`: Hybrid Microcontroller unit sub-schematic
+        - copied from the Teensy 4.1
 
 ### Some notes:
 - Create 4 different schematic files (one for each board), and unify them through one parent
