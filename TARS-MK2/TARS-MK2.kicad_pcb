@@ -9,9 +9,11 @@
     (nets 1)
   )
 
-  (page A4)
+  (page A3)
   (layers
     (0 F.Cu signal)
+    (1 In1.Cu signal)
+    (2 In2.Cu signal)
     (31 B.Cu signal)
     (32 B.Adhes user)
     (33 F.Adhes user)
@@ -84,9 +86,9 @@
       (subtractmaskfromsilk false)
       (outputformat 1)
       (mirror false)
-      (drillshape 1)
+      (drillshape 0)
       (scaleselection 1)
-      (outputdirectory ""))
+      (outputdirectory "/home/ayberk/Desktop/test/"))
   )
 
   (net 0 "")
@@ -100,12 +102,12 @@
     (uvia_drill 0.1)
   )
 
-  (module ISS_LOGO:ISS_LOGO_small (layer F.Cu) (tedit 0) (tstamp 6002CE54)
-    (at 200.279 172.72)
-    (fp_text reference G*** (at 0 0) (layer Dwgs.User) hide
+  (module ISS_LOGO:ISS_LOGO_small_drawing (layer F.Cu) (tedit 60027350) (tstamp 6002CFC3)
+    (at 323.469 259.842)
+    (fp_text reference G*** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3)))
     )
-    (fp_text value LOGO (at 0.75 0) (layer Dwgs.User) hide
+    (fp_text value LOGO (at 0.75 0) (layer F.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3)))
     )
     (fp_poly (pts (xy 1.196701 -5.488412) (xy 1.954666 -5.484314) (xy 2.687262 -5.477727) (xy 3.375788 -5.468745)
@@ -225,7 +227,7 @@
       (xy -7.391283 -3.901661) (xy -6.79394 -4.33937) (xy -6.503242 -4.51492) (xy -5.691327 -4.914662)
       (xy -4.859152 -5.195165) (xy -3.953433 -5.372697) (xy -3.535971 -5.420685) (xy -3.248352 -5.439776)
       (xy -2.83648 -5.455649) (xy -2.319059 -5.468394) (xy -1.714791 -5.478104) (xy -1.042378 -5.484869)
-      (xy -0.320524 -5.488781) (xy 0.43207 -5.489932) (xy 1.196701 -5.488412)) (layer F.SilkS) (width 0.01))
+      (xy -0.320524 -5.488781) (xy 0.43207 -5.489932) (xy 1.196701 -5.488412)) (layer Dwgs.User) (width 0.01))
     (fp_poly (pts (xy -18.539572 -5.471255) (xy -18.425715 -5.272374) (xy -18.299689 -4.985558) (xy -18.270977 -4.910667)
       (xy -18.10549 -4.466055) (xy -17.978577 -4.150784) (xy -17.864035 -3.937741) (xy -17.735662 -3.799814)
       (xy -17.567253 -3.709891) (xy -17.332606 -3.640859) (xy -17.005518 -3.565606) (xy -16.961171 -3.555416)
@@ -238,10 +240,10 @@
       (xy -20.939117 -2.826582) (xy -21.021878 -2.869345) (xy -21.053548 -2.907801) (xy -21.049196 -2.945175)
       (xy -20.987397 -2.992098) (xy -20.84673 -3.059198) (xy -20.605769 -3.157105) (xy -20.243093 -3.29645)
       (xy -19.896935 -3.42751) (xy -19.177536 -3.699441) (xy -18.955859 -4.622554) (xy -18.835339 -5.082108)
-      (xy -18.731951 -5.387666) (xy -18.647807 -5.533403) (xy -18.621115 -5.545667) (xy -18.539572 -5.471255)) (layer F.SilkS) (width 0.01))
+      (xy -18.731951 -5.387666) (xy -18.647807 -5.533403) (xy -18.621115 -5.545667) (xy -18.539572 -5.471255)) (layer Dwgs.User) (width 0.01))
   )
 
-  (gr_text "ILLINOIS SPACE SOCIETY" (at 199.517 179.578) (layer Dwgs.User)
+  (gr_text "ILLINOIS SPACE SOCIETY" (at 322.58 266.827) (layer Dwgs.User)
     (effects (font (size 1.95 2.15) (thickness 0.22)))
   )
 
