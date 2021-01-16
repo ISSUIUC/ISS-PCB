@@ -4,8 +4,6 @@
 > -Matthew McConaughey
     
 ### Schematic Hierarchy:
-
-Indentations imply child-parent relationships.
 - `TARS-MK2.sch`: Consolidated root schematic
   - `Power.sch`: Power management and charging schematic
     - In redesign
@@ -20,7 +18,8 @@ Indentations imply child-parent relationships.
   - `MCU.sch`: Microcontroller unit schematic
     - copied from the Teensy 4.1
 
-Some notes:
+### Some notes:
 - Create 4 different schematic files (one for each board), and unify them through one parent
-- Use **MPU** to refer to the **PocketBeagle**
-- Use **MCU** to refer to the **Teensy 4.1**
+- Use **MPU** to refer to the **PocketBeagle**, **MCU** to refer to the **Teensy 4.1**
+- Import all libraries into the `./libs` directory for each component used
+
