@@ -36,10 +36,8 @@ Text HLabel 4800 4800 3    50   BiDi ~ 0
 TM_SWITCH_0
 Text HLabel 4900 4800 3    50   BiDi ~ 0
 TM_SWITCH_1
-Text HLabel 5650 2450 2    50   BiDi ~ 0
-SL_DROGUE_0
 Text HLabel 5650 2350 2    50   BiDi ~ 0
-SL_DROGUE_1
+SL_DROGUE_0
 Text HLabel 5300 4800 3    50   BiDi ~ 0
 TM_DROGUE_0
 $Comp
@@ -68,8 +66,6 @@ Text HLabel 4550 2600 0    50   BiDi ~ 0
 SL_POWER_POSITIVE
 Text HLabel 4550 2700 0    50   BiDi ~ 0
 SL_POWER_NEGATIVE
-NoConn ~ 5650 2600
-NoConn ~ 5650 2700
 NoConn ~ 5050 4800
 NoConn ~ 5150 4800
 Text HLabel 4550 4100 0    50   BiDi ~ 0
@@ -78,4 +74,10 @@ Text HLabel 4550 4000 0    50   BiDi ~ 0
 TM_POWER_POSITIVE
 Text HLabel 5400 4800 3    50   BiDi ~ 0
 TM_DROGUE_1
+Text HLabel 5650 2600 2    50   BiDi ~ 0
+SL_MAIN_0
+Text HLabel 5650 2700 2    50   BiDi ~ 0
+SL_MAIN_1
+Text HLabel 5650 2450 2    50   BiDi ~ 0
+SL_DROGUE_1
 $EndSCHEMATC
