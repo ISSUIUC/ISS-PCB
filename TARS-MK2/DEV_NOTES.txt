@@ -1,0 +1,20 @@
+
+[01/15/2020]
+	GENERAL - Ayberk:
+	- Set up a kicad project from scratch for TARS-MK2
+	- Imported ISS logos for schematics and for PCB drawings. Just copied over from MK1
+
+
+[01/17/2020]
+	FCB - Ayberk:
+	- Imported footprint and symbol for the OSD3358-512M-BCB SiP (system in package).
+		Note: I discovered that this particular variant isn't actually what's used on the PocketBeagle.
+		I though the PocketBeagle was using this which integrates eMMC memory onto a single package, but aparrantly they
+		just ditched eMMC altogether and are booting from the SD card alone on the PocketBeagle. This chip integrates eMMC
+		which is much better for us, and there's many available reference designs to work off of.
+	- Imported footprint and symbol for the NXP MIMX1062RT1062DVJA which is the microcontroller used on the Teensy4.1
+		Pad sizes aren't too bad but spacing between pads will be tight for JLCPCB's minimum via diameter.
+	- Imported a library for the TLV75733PDRV LDO IC only to realize Kicad comes with one. Its much more accurate too :)
+	- Began adding simple things like decoupling capacitors and the TLV75733 according to the T4.1 schematic
+	- Following the part labels found on the T4.1 schematic. i.e. a part with label U12 on the schematic from PJRC.com is labeled
+		as U512 or U412 in kicad. 400 or 500 is added because the two MCU schematics have numbers 4 and 5 in the project.
