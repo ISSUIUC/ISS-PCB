@@ -274,4 +274,6 @@ F 3 "" H 5100 4150 50  0001 C CNN
 	1    5100 3750
 	1    0    0    -1  
 $EndComp
+Text Notes 6400 3500 0    50   ~ 0
+check with molex to see if there is a Thru-hole mount\n
 $EndSCHEMATC
