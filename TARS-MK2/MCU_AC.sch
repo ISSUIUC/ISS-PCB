@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 1 1
+Sheet 5 8
 Title "TARS - MK2 Active Control Microcontroller Schematic"
 Date ""
 Rev ""
@@ -1115,4 +1115,74 @@ F 3 "" H 10050 4950 50  0001 C CNN
 	1    10050 4950
 	0    1    1    0   
 $EndComp
+$Comp
+L Memory_Flash:W25Q32JVSS U3
+U 1 1 600992E8
+P 21000 9050
+F 0 "U3" H 21000 9631 50  0000 C CNN
+F 1 "W25Q64JVXGIM" H 21000 9540 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm" H 21000 9050 50  0001 C CNN
+F 3 "http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf" H 21000 9050 50  0001 C CNN
+	1    21000 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20500 8950 18450 8950
+Wire Wire Line
+	20500 9150 20500 9050
+Wire Wire Line
+	20500 9050 18450 9050
+Wire Wire Line
+	21500 8950 21800 8950
+Wire Wire Line
+	21800 8950 21800 9800
+Wire Wire Line
+	21800 9800 20200 9800
+Wire Wire Line
+	20200 9150 18450 9150
+Wire Wire Line
+	20200 9150 20200 9800
+Wire Wire Line
+	21500 8850 21900 8850
+Wire Wire Line
+	21900 8850 21900 9900
+Wire Wire Line
+	21900 9900 20100 9900
+Wire Wire Line
+	20100 9900 20100 9250
+Wire Wire Line
+	20100 9250 18450 9250
+Wire Wire Line
+	21500 9150 21700 9150
+Wire Wire Line
+	21700 9150 21700 9700
+Wire Wire Line
+	21700 9700 20300 9700
+Wire Wire Line
+	20300 9700 20300 9350
+Wire Wire Line
+	20300 9350 18450 9350
+Wire Wire Line
+	21500 9250 21600 9250
+Wire Wire Line
+	21600 9250 21600 9600
+Wire Wire Line
+	21600 9600 20400 9600
+Wire Wire Line
+	20400 9600 20400 9450
+Wire Wire Line
+	20400 9450 18450 9450
+$Comp
+L power:GND #PWR?
+U 1 1 600FF1CA
+P 21000 9450
+F 0 "#PWR?" H 21000 9200 50  0001 C CNN
+F 1 "GND" H 21005 9277 50  0000 C CNN
+F 2 "" H 21000 9450 50  0001 C CNN
+F 3 "" H 21000 9450 50  0001 C CNN
+	1    21000 9450
+	1    0    0    -1  
+$EndComp
+Text Notes 21050 8700 0    50   ~ 0
+POWER
 $EndSCHEMATC

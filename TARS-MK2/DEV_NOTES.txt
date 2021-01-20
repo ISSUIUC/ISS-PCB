@@ -24,15 +24,26 @@
 	- Added schematics for COTS altimeters, yet to connect to battery connectors
 	- Mounting points pulled from local library (ISO 7380 standard) to prevent damage to copper layer of PCB
 
+
 [01/18/2021]
 	FCB - Ayberk:
 	- Added a bunch more decoupling capacitors and passive component related to power.
 	- NOTE: Omitting the TPD3S014 IC as it is only used ESD protection when the Teensy is a USB host, not useful for us.
 	- Added MKL02Z32VFG4 bootloader IC which conveniently comes with Kicad. Did not connect yet.
+
+
 [01/19/2021]
 	FCB - Rohini, Maya, and Kenneth:
-	- Added Micro-SD and the Microcontroler Booth Loader
-	- Note: Still looking for power, it is currently labeled with text (POWER)
-	- Note: Wiring is very ugly 
-	- Still need to find W25Q16JVUXIM (Planning to work on it)
+	- Added Micro-SD and the Microcontroller Booth Loader
+	- NOTE: Still looking for power, it is currently labeled with text ('POWER')
+	- NOTE: Wiring is very ugly 
+	- Still need to find W25Q64JVXGIM (Planning to work on it)
 
+
+[01/20/2021]
+	FCB - Maya, Rohini
+	- Added W25Q64JVXGIM (serial flash memory)
+	- Couldn't find the exact symbol for this component, either in KiCad or online
+	- Used the 32 Mb W25Q32JVSS symbol from the KiCad library and edited the symbol properties
+	- Not sure if that's the correct method, but will check with the rest of the team
+	- NOTE: Wrote in power using text ('POWER')
