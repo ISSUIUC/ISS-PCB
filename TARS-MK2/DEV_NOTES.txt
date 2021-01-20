@@ -1,11 +1,11 @@
 
-[01/15/2020]
+[01/15/2021]
 	GENERAL - Ayberk:
 	- Set up a kicad project from scratch for TARS-MK2
 	- Imported ISS logos for schematics and for PCB drawings. Just copied over from MK1
 
 
-[01/17/2020]
+[01/17/2021]
 	FCB - Ayberk:
 	- Imported footprint and symbol for the OSD3358-512M-BCB SiP (system in package).
 		Note: I discovered that this particular variant isn't actually what's used on the PocketBeagle.
@@ -24,8 +24,15 @@
 	- Added schematics for COTS altimeters, yet to connect to battery connectors
 	- Mounting points pulled from local library (ISO 7380 standard) to prevent damage to copper layer of PCB
 
-[01/18/2020]
+[01/18/2021]
 	FCB - Ayberk:
 	- Added a bunch more decoupling capacitors and passive component related to power.
 	- NOTE: Omitting the TPD3S014 IC as it is only used ESD protection when the Teensy is a USB host, not useful for us.
 	- Added MKL02Z32VFG4 bootloader IC which conveniently comes with Kicad. Did not connect yet.
+[01/19/2021]
+	FCB - Rohini, Maya, and Kenneth:
+	- Added Micro-SD and the Microcontroler Booth Loader
+	- Note: Still looking for power, it is currently labeled with text (POWER)
+	- Note: Wiring is very ugly 
+	- Still need to find W25Q16JVUXIM (Planning to work on it)
+
