@@ -74,17 +74,6 @@ F 3 "" H 19400 2150 50  0001 C CNN
 $EndComp
 $Comp
 L MIMXRT1062:MIMXRT1xxxxVJ U501
-U 5 1 6005F3D5
-P 17800 9650
-F 0 "U501" H 17908 11915 50  0000 C CNN
-F 1 "MIMXRT1xxxxVJ" H 17908 11824 50  0000 C CNN
-F 2 "MIMXRT1062:BGA-196_14x14_12.0x12.0mm" H 17800 6200 50  0001 C CNN
-F 3 "" H 17800 7600 50  0001 C CNN
-	5    17800 9650
-	1    0    0    -1  
-$EndComp
-$Comp
-L MIMXRT1062:MIMXRT1xxxxVJ U501
 U 6 1 6006452D
 P 2450 2500
 F 0 "U501" H 2408 3665 50  0000 C CNN
@@ -600,7 +589,7 @@ Connection ~ 6700 5650
 Wire Wire Line
 	5800 5050 7950 5050
 Text GLabel 20500 6000 2    50   Input ~ 0
-A7
+U505EN
 Wire Wire Line
 	20500 6000 20050 6000
 $Comp
@@ -814,27 +803,15 @@ $EndComp
 Text Notes 19600 7700 0    50   ~ 0
 POWER\n
 Wire Wire Line
-	20050 2100 20900 2100
-Wire Wire Line
-	20900 2100 20850 6300
-Wire Wire Line
 	2950 1700 3550 1700
 Wire Wire Line
 	3550 1700 3550 7350
-Wire Wire Line
-	3550 7350 10850 7350
-Wire Wire Line
-	10850 7350 10850 6100
-Wire Wire Line
-	10850 6100 16700 6100
 Wire Wire Line
 	16700 6100 16700 7450
 Wire Wire Line
 	7950 3750 7050 3750
 Wire Wire Line
 	7050 3750 7050 4150
-Wire Wire Line
-	13900 5850 13900 3550
 Wire Wire Line
 	10400 4950 10050 4950
 $Comp
@@ -989,8 +966,6 @@ F 3 "" H 7100 4600 50  0001 C CNN
 $EndComp
 Connection ~ 10750 5850
 Wire Wire Line
-	10750 5850 13900 5850
-Wire Wire Line
 	9750 5850 10750 5850
 $Comp
 L Device:R_US R6
@@ -1038,78 +1013,8 @@ Wire Wire Line
 	19650 7950 19650 7850
 Wire Wire Line
 	19650 7850 18450 7850
-Text GLabel 12850 7750 0    50   Input ~ 0
-GPIO_AD_BO_04
-Text GLabel 12850 7850 0    50   Input ~ 0
-GPIO_AD_BO_06
-Text GLabel 12850 8050 0    50   Input ~ 0
-GPIO_AD_BO_09
-Text GLabel 12850 7950 0    50   Input ~ 0
-GPIO_AD_BO_10
-Wire Wire Line
-	12850 7750 13150 7750
-Wire Wire Line
-	13150 7850 12850 7850
-Wire Wire Line
-	12850 7950 13150 7950
-Wire Wire Line
-	13150 8050 12850 8050
-Text GLabel 13550 2350 2    50   Input ~ 0
-PTA5
-Text GLabel 13550 3350 2    50   Input ~ 0
-PTA7
-Text GLabel 13550 3450 2    50   Input ~ 0
-PTA6
-Text GLabel 13550 3050 2    50   Input ~ 0
-PTA4
-Wire Wire Line
-	13400 2350 13550 2350
-Wire Wire Line
-	13550 3050 13400 3050
-Wire Wire Line
-	13400 3350 13550 3350
-Wire Wire Line
-	13400 3450 13550 3450
-Text GLabel 13550 3250 2    50   Input ~ 0
-PTB5
-Wire Wire Line
-	13550 3250 13400 3250
-Text GLabel 16000 7850 2    50   Input ~ 0
-GPIO_AD_BO_08
-Text GLabel 16000 7750 2    50   Input ~ 0
-GPIO_BO_13
-Text GLabel 16900 3600 2    50   Input ~ 0
-PTB4
-Wire Wire Line
-	16700 3600 16900 3600
-Wire Wire Line
-	15750 7750 16000 7750
-Wire Wire Line
-	16000 7850 15750 7850
-Text GLabel 16000 7350 2    50   Input ~ 0
-GPIO_AD_BO_07
 Wire Wire Line
 	16700 7450 15750 7450
-Wire Wire Line
-	16000 7350 15750 7350
-Text GLabel 13550 2450 2    50   Input ~ 0
-PTB0
-Wire Wire Line
-	13550 2450 13400 2450
-Wire Wire Line
-	13900 3550 13400 3550
-Wire Wire Line
-	13150 7450 12800 7450
-Wire Wire Line
-	12800 7450 12800 6300
-Wire Wire Line
-	12800 6300 20850 6300
-Wire Wire Line
-	19900 7650 19650 7650
-Wire Wire Line
-	19650 7650 19650 7000
-Text GLabel 19650 7000 0    50   Input ~ 0
-3.3V
 Wire Wire Line
 	19900 8050 19950 8050
 Wire Wire Line
@@ -1140,6 +1045,90 @@ Wire Wire Line
 Wire Wire Line
 	19300 7350 19900 7350
 Connection ~ 19900 7350
+Wire Wire Line
+	12850 7750 13150 7750
+Wire Wire Line
+	13150 7850 12850 7850
+Wire Wire Line
+	12850 7950 13150 7950
+Wire Wire Line
+	13150 8050 12850 8050
+Text GLabel 13550 2350 2    50   Input ~ 0
+PTA5
+Text GLabel 13550 3350 2    50   Input ~ 0
+PTA7
+Text GLabel 13550 3450 2    50   Input ~ 0
+PTA6
+Text GLabel 13550 3050 2    50   Input ~ 0
+PTA4
+Wire Wire Line
+	13400 2350 13550 2350
+Wire Wire Line
+	13550 3050 13400 3050
+Wire Wire Line
+	13400 3350 13550 3350
+Wire Wire Line
+	13400 3450 13550 3450
+Text GLabel 12850 7850 0    50   Input ~ 0
+GPIO_AD_BO_06
+Text GLabel 12850 7950 0    50   Input ~ 0
+GPIO_AD_BO_10
+Text GLabel 12850 8050 0    50   Input ~ 0
+GPIO_AD_BO_09
+Text GLabel 13550 3250 2    50   Input ~ 0
+PTB5
+Wire Wire Line
+	13550 3250 13400 3250
+Text GLabel 12850 7750 0    50   Input ~ 0
+GPIO_AD_BO_04
+Text GLabel 16900 3600 2    50   Input ~ 0
+PTB4
+Wire Wire Line
+	16700 3600 16900 3600
+Text GLabel 16000 7850 2    50   Input ~ 0
+GPIO_AD_BO_08
+Text GLabel 16000 7750 2    50   Input ~ 0
+GPIO_BO_13
+Wire Wire Line
+	15750 7750 16000 7750
+Wire Wire Line
+	16000 7850 15750 7850
+Wire Wire Line
+	16000 7350 15750 7350
+Text GLabel 13550 2450 2    50   Input ~ 0
+PTB0
+Wire Wire Line
+	13550 2450 13400 2450
+Wire Wire Line
+	13900 5850 13900 3550
+Wire Wire Line
+	13900 3550 13400 3550
+Wire Wire Line
+	10750 5850 13900 5850
+Wire Wire Line
+	13150 7450 12800 7450
+Wire Wire Line
+	12800 7450 12800 6300
+Wire Wire Line
+	20900 2100 20850 6300
+Wire Wire Line
+	20050 2100 20900 2100
+Wire Wire Line
+	12800 6300 20850 6300
+Wire Wire Line
+	10850 7350 10850 6100
+Wire Wire Line
+	3550 7350 10850 7350
+Wire Wire Line
+	10850 6100 16700 6100
+Text GLabel 16000 7350 2    50   Input ~ 0
+GPIO_AD_BO_07
+Wire Wire Line
+	19900 7650 19650 7650
+Wire Wire Line
+	19650 7650 19650 7000
+Text GLabel 19650 7000 0    50   Input ~ 0
+VBAT
 $Comp
 L Connector:Micro_SD_Card J502
 U 1 1 60087558
@@ -1151,17 +1140,28 @@ F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 20800 7650 50 
 	1    20800 7650
 	1    0    0    -1  
 $EndComp
+$Comp
+L MIMXRT1062:MIMXRT1xxxxVJ U501
+U 5 1 6005F3D5
+P 17800 9650
+F 0 "U501" H 17908 11915 50  0000 C CNN
+F 1 "MIMXRT1xxxxVJ" H 17908 11824 50  0000 C CNN
+F 2 "MIMXRT1062:BGA-196_14x14_12.0x12.0mm" H 17800 6200 50  0001 C CNN
+F 3 "" H 17800 7600 50  0001 C CNN
+	5    17800 9650
+	1    0    0    -1  
+$EndComp
 Text Notes 19300 6900 0    50   Italic 10
 3.3V OR VBAT?
 $Comp
 L Power_Protection:TPD3S014 U505
 U 1 1 606460A9
-P 5400 4650
-F 0 "U505" H 5400 5017 50  0000 C CNN
-F 1 "TPD3S014" H 5400 4926 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 5400 5000 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tpd3s014.pdf" H 5200 4900 50  0001 C CNN
-	1    5400 4650
+P 5150 4650
+F 0 "U505" H 5150 5017 50  0000 C CNN
+F 1 "TPD3S014" H 5150 4926 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 5150 5000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tpd3s014.pdf" H 4950 4900 50  0001 C CNN
+	1    5150 4650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1188,10 +1188,29 @@ Wire Wire Line
 Wire Wire Line
 	4400 2550 5000 2550
 Wire Wire Line
-	4950 3300 4750 3300
+	4950 3300 4500 3300
 Wire Wire Line
-	4750 3300 4750 4550
+	4500 3300 4500 4550
 Wire Wire Line
-	4750 4550 5000 4550
+	4500 4550 4750 4550
 Connection ~ 4950 3300
+$Comp
+L power:GND #PWR?
+U 1 1 606BA2FA
+P 5150 4950
+F 0 "#PWR?" H 5150 4700 50  0001 C CNN
+F 1 "GND" H 5155 4777 50  0000 C CNN
+F 2 "" H 5150 4950 50  0001 C CNN
+F 3 "" H 5150 4950 50  0001 C CNN
+	1    5150 4950
+	1    0    0    -1  
+$EndComp
+Text GLabel 4600 4750 0    50   Input ~ 0
+EMC_40
+Wire Wire Line
+	4750 4750 4600 4750
+Text GLabel 5700 4550 2    50   Input ~ 0
+VHST
+Wire Wire Line
+	5550 4550 5700 4550
 $EndSCHEMATC
