@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 5 8
+Sheet 1 1
 Title "TARS - MK2 Active Control Microcontroller Schematic"
 Date ""
 Rev ""
@@ -811,8 +811,6 @@ F 3 "" H 19950 7850 50  0001 C CNN
 	1    19950 7850
 	0    1    1    0   
 $EndComp
-Text Notes 19600 7700 0    50   ~ 0
-POWER\n
 Wire Wire Line
 	20050 2100 20900 2100
 Wire Wire Line
@@ -905,8 +903,6 @@ F 3 "" H 21000 9450 50  0001 C CNN
 	1    21000 9450
 	1    0    0    -1  
 $EndComp
-Text Notes 21050 8700 0    50   ~ 0
-POWER
 Connection ~ 7100 4250
 Wire Wire Line
 	6700 4250 7100 4250
@@ -1194,4 +1190,73 @@ Wire Wire Line
 Wire Wire Line
 	4750 4550 5000 4550
 Connection ~ 4950 3300
+$Comp
+L Memory_Flash:W25Q32JVSS U(Optional)
+U 1 1 600B0B39
+P 21900 4500
+F 0 "U(Optional)" H 21900 5081 50  0000 C CNN
+F 1 "PSRAM" H 21900 4990 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm" H 21900 4500 50  0001 C CNN
+F 3 "http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf" H 21900 4500 50  0001 C CNN
+	1    21900 4500
+	1    0    0    -1  
+$EndComp
+Text GLabel 21000 8650 2    50   Input ~ 0
+3.3V
+Text GLabel 21400 4400 0    50   Input ~ 0
+GPIO_EMC_24
+Text GLabel 21400 4600 0    50   Input ~ 0
+GPIO_EMC_25
+Text GLabel 22400 4400 2    50   Input ~ 0
+GPIO_EMC_26
+Text GLabel 22400 4300 2    50   Input ~ 0
+GPIO_EMC_27
+Text GLabel 22400 4600 2    50   Input ~ 0
+GPIO_EMC_28
+Text GLabel 22400 4700 2    50   Input ~ 0
+GPIO_EMC_29
+$Comp
+L power:GND #PWR?
+U 1 1 60174F83
+P 21900 4900
+F 0 "#PWR?" H 21900 4650 50  0001 C CNN
+F 1 "GND" H 21905 4727 50  0000 C CNN
+F 2 "" H 21900 4900 50  0001 C CNN
+F 3 "" H 21900 4900 50  0001 C CNN
+	1    21900 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21900 4100 22300 4100
+Text GLabel 22600 4100 2    50   Input ~ 0
+3.3V
+Connection ~ 22300 4100
+Wire Wire Line
+	22300 4100 22600 4100
+Wire Wire Line
+	22300 4100 22300 3550
+$Comp
+L Device:C_Small C521
+U 1 1 60197EB5
+P 22300 3450
+F 0 "C521" H 22392 3496 50  0000 L CNN
+F 1 "0.22uF" H 22392 3405 50  0000 L CNN
+F 2 "" H 22300 3450 50  0001 C CNN
+F 3 "~" H 22300 3450 50  0001 C CNN
+	1    22300 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	22300 3350 22300 3050
+$Comp
+L power:GND #PWR?
+U 1 1 601A6FB3
+P 22300 3050
+F 0 "#PWR?" H 22300 2800 50  0001 C CNN
+F 1 "GND" H 22305 2877 50  0000 C CNN
+F 2 "" H 22300 3050 50  0001 C CNN
+F 3 "" H 22300 3050 50  0001 C CNN
+	1    22300 3050
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
