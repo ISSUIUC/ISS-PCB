@@ -23,3 +23,14 @@
 	- Added footprints for COTS altimeters, solder points and mounting points included with the silkscreen
 	- Added schematics for COTS altimeters, yet to connect to battery connectors
 	- Mounting points pulled from local library (ISO 7380 standard) to prevent damage to copper layer of PCB
+
+[01/21/2020]
+	ACB - Ayberk:
+	- Imported symbol and footprint libraries from MK1
+	- Found a .step file of Jetson Nano developer kit from Nvidia. Cherry-picked the parts we want including the SODIMM
+		socket and made a separate .step file to include in Kicad 3d library. Looks pretty hot.
+	- Connected power/ground and some input decoupling caps.
+	- Made labels for I2C and SPI connections available
+	TODO:
+	- ESD protection diodes didn't have libraries. Either a library or a substitute needs to be found.
+	- Understand SoM pin logic levels. They could be 1.8V which would require level shifting.
