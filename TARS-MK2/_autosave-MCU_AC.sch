@@ -19,14 +19,14 @@ $Comp
 L ISS_LOGO:LOGO #G?
 U 1 1 60029F10
 P 19400 15050
-AR Path="/60029F10" Ref="#G?"  Part="1" 
-AR Path="/60021DA2/60021F5A/60029F10" Ref="#G5"  Part="1" 
+AR Path="/60029F10" Ref="#G?"  Part="1"
+AR Path="/60021DA2/60021F5A/60029F10" Ref="#G5"  Part="1"
 F 0 "#G5" H 19400 14927 60  0001 C CNN
 F 1 "LOGO" H 19400 15173 60  0001 C CNN
 F 2 "" H 19400 15050 50  0001 C CNN
 F 3 "" H 19400 15050 50  0001 C CNN
 	1    19400 15050
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L MIMXRT1062:MIMXRT1xxxxVJ U501
@@ -37,7 +37,7 @@ F 1 "MIMXRT1xxxxVJ" H 9078 2080 50  0000 L CNN
 F 2 "MIMXRT1062:BGA-196_14x14_12.0x12.0mm" H 8550 -350 50  0001 C CNN
 F 3 "" H 8550 1050 50  0001 C CNN
 	1    8550 3100
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L MIMXRT1062:MIMXRT1xxxxVJ U501
@@ -48,7 +48,7 @@ F 1 "MIMXRT1xxxxVJ" H 12858 5924 50  0000 C CNN
 F 2 "MIMXRT1062:BGA-196_14x14_12.0x12.0mm" H 12750 600 50  0001 C CNN
 F 3 "" H 12750 2000 50  0001 C CNN
 	2    12750 4050
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L MIMXRT1062:MIMXRT1xxxxVJ U501
@@ -59,7 +59,7 @@ F 1 "MIMXRT1xxxxVJ" H 16158 5674 50  0000 C CNN
 F 2 "MIMXRT1062:BGA-196_14x14_12.0x12.0mm" H 16050 450 50  0001 C CNN
 F 3 "" H 16050 1850 50  0001 C CNN
 	3    16050 3900
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L MIMXRT1062:MIMXRT1xxxxVJ U501
@@ -70,7 +70,7 @@ F 1 "MIMXRT1xxxxVJ" H 19508 6574 50  0000 C CNN
 F 2 "MIMXRT1062:BGA-196_14x14_12.0x12.0mm" H 19400 750 50  0001 C CNN
 F 3 "" H 19400 2150 50  0001 C CNN
 	4    19400 4200
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L MIMXRT1062:MIMXRT1xxxxVJ U501
@@ -81,7 +81,7 @@ F 1 "MIMXRT1xxxxVJ" H 17908 11824 50  0000 C CNN
 F 2 "MIMXRT1062:BGA-196_14x14_12.0x12.0mm" H 17800 6200 50  0001 C CNN
 F 3 "" H 17800 7600 50  0001 C CNN
 	5    17800 9650
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L MIMXRT1062:MIMXRT1xxxxVJ U501
@@ -92,7 +92,7 @@ F 1 "MIMXRT1xxxxVJ" H 2408 3574 50  0000 C CNN
 F 2 "MIMXRT1062:BGA-196_14x14_12.0x12.0mm" H 2450 -950 50  0001 C CNN
 F 3 "" H 2450 450 50  0001 C CNN
 	6    2450 2500
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L Regulator_Linear:TLV75733PDRV U504
@@ -103,7 +103,7 @@ F 1 "TLV75733PDRV" H 6250 3651 50  0000 C CNN
 F 2 "Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm" H 6250 3725 50  0001 C CIN
 F 3 "https://www.ti.com/lit/ds/symlink/tlv757p.pdf" H 6250 3450 50  0001 C CNN
 	1    6250 3400
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	7950 2400 7850 2400
@@ -147,7 +147,7 @@ F 1 "GND" H 6255 3627 50  0000 C CNN
 F 2 "" H 6250 3800 50  0001 C CNN
 F 3 "" H 6250 3800 50  0001 C CNN
 	1    6250 3800
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	5950 3400 5800 3400
@@ -162,7 +162,7 @@ F 1 "100K" H 6718 3655 50  0000 L CNN
 F 2 "" V 6690 3690 50  0001 C CNN
 F 3 "~" H 6650 3700 50  0001 C CNN
 	1    6650 3700
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	6650 3850 6650 4100
@@ -187,7 +187,7 @@ F 1 "GND" H 4955 3577 50  0000 C CNN
 F 2 "" H 4950 3750 50  0001 C CNN
 F 3 "" H 4950 3750 50  0001 C CNN
 	1    4950 3750
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L power:GND #PWR0103
@@ -198,7 +198,7 @@ F 1 "GND" H 5405 3577 50  0000 C CNN
 F 2 "" H 5400 3750 50  0001 C CNN
 F 3 "" H 5400 3750 50  0001 C CNN
 	1    5400 3750
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	3800 1600 2950 1600
@@ -212,7 +212,7 @@ F 1 "0.22uF" H 5042 3505 50  0000 L CNN
 F 2 "" H 4950 3550 50  0001 C CNN
 F 3 "~" H 4950 3550 50  0001 C CNN
 	1    4950 3550
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L Device:C_Small C509
@@ -223,7 +223,7 @@ F 1 "0.22uF" H 5492 3505 50  0000 L CNN
 F 2 "" H 5400 3550 50  0001 C CNN
 F 3 "~" H 5400 3550 50  0001 C CNN
 	1    5400 3550
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Connection ~ 5400 3300
 Wire Wire Line
@@ -237,7 +237,7 @@ F 1 "GND" H 7055 1577 50  0001 C CNN
 F 2 "" H 7050 1750 50  0001 C CNN
 F 3 "" H 7050 1750 50  0001 C CNN
 	1    7050 1750
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L power:GND #PWR011
@@ -248,7 +248,7 @@ F 1 "GND" H 7455 1577 50  0001 C CNN
 F 2 "" H 7450 1750 50  0001 C CNN
 F 3 "" H 7450 1750 50  0001 C CNN
 	1    7450 1750
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L Device:C_Small C524
@@ -259,7 +259,7 @@ F 1 "4.7uF" H 7142 1555 50  0000 L CNN
 F 2 "" H 7050 1600 50  0001 C CNN
 F 3 "~" H 7050 1600 50  0001 C CNN
 	1    7050 1600
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L Device:C_Small C519
@@ -270,7 +270,7 @@ F 1 "0.22uF" H 7542 1555 50  0000 L CNN
 F 2 "" H 7450 1600 50  0001 C CNN
 F 3 "~" H 7450 1600 50  0001 C CNN
 	1    7450 1600
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	7450 1700 7450 1750
@@ -285,7 +285,7 @@ F 1 "GND" H 6655 1577 50  0001 C CNN
 F 2 "" H 6650 1750 50  0001 C CNN
 F 3 "" H 6650 1750 50  0001 C CNN
 	1    6650 1750
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L Device:C_Small C532
@@ -296,7 +296,7 @@ F 1 "10uF" H 6742 1555 50  0000 L CNN
 F 2 "" H 6650 1600 50  0001 C CNN
 F 3 "~" H 6650 1600 50  0001 C CNN
 	1    6650 1600
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	6650 1700 6650 1750
@@ -317,7 +317,7 @@ F 1 "120" V 6414 1400 50  0000 C CNN
 F 2 "" H 6300 1400 50  0001 C CNN
 F 3 "~" H 6300 1400 50  0001 C CNN
 	1    6300 1400
-	0    -1   -1   0   
+	0    -1   -1   0
 $EndComp
 Wire Wire Line
 	7850 1900 7850 2000
@@ -341,7 +341,7 @@ F 1 "GND" H 7055 2177 50  0001 C CNN
 F 2 "" H 7050 2350 50  0001 C CNN
 F 3 "" H 7050 2350 50  0001 C CNN
 	1    7050 2350
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L power:GND #PWR012
@@ -352,7 +352,7 @@ F 1 "GND" H 7455 2177 50  0001 C CNN
 F 2 "" H 7450 2350 50  0001 C CNN
 F 3 "" H 7450 2350 50  0001 C CNN
 	1    7450 2350
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L Device:C_Small C511
@@ -363,7 +363,7 @@ F 1 "0.22uF" H 7142 2155 50  0000 L CNN
 F 2 "" H 7050 2200 50  0001 C CNN
 F 3 "~" H 7050 2200 50  0001 C CNN
 	1    7050 2200
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L Device:C_Small C506
@@ -374,7 +374,7 @@ F 1 "10nF" H 7542 2155 50  0000 L CNN
 F 2 "" H 7450 2200 50  0001 C CNN
 F 3 "~" H 7450 2200 50  0001 C CNN
 	1    7450 2200
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	7450 2300 7450 2350
@@ -389,7 +389,7 @@ F 1 "GND" H 6655 2177 50  0001 C CNN
 F 2 "" H 6650 2350 50  0001 C CNN
 F 3 "" H 6650 2350 50  0001 C CNN
 	1    6650 2350
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L Device:C_Small C523
@@ -400,7 +400,7 @@ F 1 "4.7uF" H 6742 2155 50  0000 L CNN
 F 2 "" H 6650 2200 50  0001 C CNN
 F 3 "~" H 6650 2200 50  0001 C CNN
 	1    6650 2200
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	6650 2300 6650 2350
@@ -419,7 +419,7 @@ F 1 "GND" H 6305 2177 50  0001 C CNN
 F 2 "" H 6300 2350 50  0001 C CNN
 F 3 "" H 6300 2350 50  0001 C CNN
 	1    6300 2350
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L Device:C_Small C528
@@ -430,7 +430,7 @@ F 1 "2.2uF" H 6392 2155 50  0000 L CNN
 F 2 "" H 6300 2200 50  0001 C CNN
 F 3 "~" H 6300 2200 50  0001 C CNN
 	1    6300 2200
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	6300 2300 6300 2350
@@ -466,7 +466,7 @@ F 1 "GND" H 6705 6127 50  0001 C CNN
 F 2 "" H 6700 6300 50  0001 C CNN
 F 3 "" H 6700 6300 50  0001 C CNN
 	1    6700 6300
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L power:GND #PWR01
@@ -477,7 +477,7 @@ F 1 "GND" H 5805 6127 50  0001 C CNN
 F 2 "" H 5800 6300 50  0001 C CNN
 F 3 "" H 5800 6300 50  0001 C CNN
 	1    5800 6300
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L Device:C_Small C514
@@ -488,7 +488,7 @@ F 1 "0.22uF" H 6792 6105 50  0000 L CNN
 F 2 "" H 6700 6150 50  0001 C CNN
 F 3 "~" H 6700 6150 50  0001 C CNN
 	1    6700 6150
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L Device:C_Small C513
@@ -499,7 +499,7 @@ F 1 "0.22uF" H 5892 6105 50  0000 L CNN
 F 2 "" H 5800 6150 50  0001 C CNN
 F 3 "~" H 5800 6150 50  0001 C CNN
 	1    5800 6150
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	5800 6250 5800 6300
@@ -514,7 +514,7 @@ F 1 "GND" H 6255 6127 50  0001 C CNN
 F 2 "" H 6250 6300 50  0001 C CNN
 F 3 "" H 6250 6300 50  0001 C CNN
 	1    6250 6300
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L Device:C_Small C526
@@ -525,7 +525,7 @@ F 1 "4.7uF" H 6342 6105 50  0000 L CNN
 F 2 "" H 6250 6150 50  0001 C CNN
 F 3 "~" H 6250 6150 50  0001 C CNN
 	1    6250 6150
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	6250 6250 6250 6300
@@ -538,7 +538,7 @@ F 1 "GND" H 7555 6127 50  0001 C CNN
 F 2 "" H 7550 6300 50  0001 C CNN
 F 3 "" H 7550 6300 50  0001 C CNN
 	1    7550 6300
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L Device:C_Small C516
@@ -549,7 +549,7 @@ F 1 "0.22uF" H 7642 6105 50  0000 L CNN
 F 2 "" H 7550 6150 50  0001 C CNN
 F 3 "~" H 7550 6150 50  0001 C CNN
 	1    7550 6150
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	7550 6250 7550 6300
@@ -562,7 +562,7 @@ F 1 "GND" H 7155 6127 50  0001 C CNN
 F 2 "" H 7150 6300 50  0001 C CNN
 F 3 "" H 7150 6300 50  0001 C CNN
 	1    7150 6300
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L Device:C_Small C525
@@ -573,7 +573,7 @@ F 1 "4.7uF" H 7242 6105 50  0000 L CNN
 F 2 "" H 7150 6150 50  0001 C CNN
 F 3 "~" H 7150 6150 50  0001 C CNN
 	1    7150 6150
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	7150 6250 7150 6300
@@ -612,7 +612,7 @@ F 1 "BAT54C" H 5000 2134 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 5075 2125 50  0001 L CNN
 F 3 "http://www.diodes.com/_files/datasheets/ds11005.pdf" H 4920 2000 50  0001 C CNN
 	1    5000 2000
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	4500 2000 4700 2000
@@ -627,7 +627,7 @@ F 1 "GND" H 5005 2727 50  0001 C CNN
 F 2 "" H 5000 2900 50  0001 C CNN
 F 3 "" H 5000 2900 50  0001 C CNN
 	1    5000 2900
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L Device:C_Small C518
@@ -638,7 +638,7 @@ F 1 "0.22uF" H 5092 2705 50  0000 L CNN
 F 2 "" H 5000 2750 50  0001 C CNN
 F 3 "~" H 5000 2750 50  0001 C CNN
 	1    5000 2750
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	5000 2850 5000 2900
@@ -657,7 +657,7 @@ F 1 "GND" H 5355 6127 50  0001 C CNN
 F 2 "" H 5350 6300 50  0001 C CNN
 F 3 "" H 5350 6300 50  0001 C CNN
 	1    5350 6300
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L Device:C_Small C517
@@ -668,7 +668,7 @@ F 1 "0.22uF" H 5442 6105 50  0000 L CNN
 F 2 "" H 5350 6150 50  0001 C CNN
 F 3 "~" H 5350 6150 50  0001 C CNN
 	1    5350 6150
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	5350 6250 5350 6300
@@ -681,7 +681,7 @@ F 1 "GND" H 4955 6127 50  0001 C CNN
 F 2 "" H 4950 6300 50  0001 C CNN
 F 3 "" H 4950 6300 50  0001 C CNN
 	1    4950 6300
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L Device:C_Small C531
@@ -692,7 +692,7 @@ F 1 "10uF" H 5042 6105 50  0000 L CNN
 F 2 "" H 4950 6150 50  0001 C CNN
 F 3 "~" H 4950 6150 50  0001 C CNN
 	1    4950 6150
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	4950 6250 4950 6300
@@ -725,7 +725,7 @@ F 1 "GND" H 7505 4427 50  0001 C CNN
 F 2 "" H 7500 4600 50  0001 C CNN
 F 3 "" H 7500 4600 50  0001 C CNN
 	1    7500 4600
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L Device:C_Small C505
@@ -736,7 +736,7 @@ F 1 "10nF" H 7592 4405 50  0000 L CNN
 F 2 "" H 7500 4450 50  0001 C CNN
 F 3 "~" H 7500 4450 50  0001 C CNN
 	1    7500 4450
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	7500 4550 7500 4600
@@ -770,7 +770,7 @@ F 1 "4.7uH" V 7650 3850 50  0000 C CNN
 F 2 "" H 7600 3850 50  0001 C CNN
 F 3 "~" H 7600 3850 50  0001 C CNN
 	1    7600 3850
-	0    -1   -1   0   
+	0    -1   -1   0
 $EndComp
 Wire Wire Line
 	7750 3850 7950 3850
@@ -809,7 +809,7 @@ F 1 "GND" V 19955 7722 50  0000 R CNN
 F 2 "" H 19950 7850 50  0001 C CNN
 F 3 "" H 19950 7850 50  0001 C CNN
 	1    19950 7850
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 Wire Wire Line
 	20050 2100 20900 2100
@@ -844,7 +844,7 @@ F 1 "GND" V 10055 4822 50  0000 R CNN
 F 2 "" H 10050 4950 50  0001 C CNN
 F 3 "" H 10050 4950 50  0001 C CNN
 	1    10050 4950
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 Wire Wire Line
 	20500 8950 18450 8950
@@ -901,7 +901,7 @@ F 1 "GND" H 21005 9277 50  0000 C CNN
 F 2 "" H 21000 9450 50  0001 C CNN
 F 3 "" H 21000 9450 50  0001 C CNN
 	1    21000 9450
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Connection ~ 7100 4250
 Wire Wire Line
@@ -922,7 +922,7 @@ F 1 "10uF" H 6442 4405 50  0000 L CNN
 F 2 "" H 6350 4450 50  0001 C CNN
 F 3 "~" H 6350 4450 50  0001 C CNN
 	1    6350 4450
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L power:GND #PWR?
@@ -933,7 +933,7 @@ F 1 "GND" H 6355 4427 50  0001 C CNN
 F 2 "" H 6350 4600 50  0001 C CNN
 F 3 "" H 6350 4600 50  0001 C CNN
 	1    6350 4600
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	6700 4250 6700 4350
@@ -948,7 +948,7 @@ F 1 "4.7uF" H 6792 4405 50  0000 L CNN
 F 2 "" H 6700 4450 50  0001 C CNN
 F 3 "~" H 6700 4450 50  0001 C CNN
 	1    6700 4450
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L power:GND #PWR?
@@ -959,7 +959,7 @@ F 1 "GND" H 6705 4427 50  0001 C CNN
 F 2 "" H 6700 4600 50  0001 C CNN
 F 3 "" H 6700 4600 50  0001 C CNN
 	1    6700 4600
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L Device:C_Small C512
@@ -970,7 +970,7 @@ F 1 "0.22uF" H 7192 4405 50  0000 L CNN
 F 2 "" H 7100 4450 50  0001 C CNN
 F 3 "~" H 7100 4450 50  0001 C CNN
 	1    7100 4450
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L power:GND #PWR?
@@ -981,7 +981,7 @@ F 1 "GND" H 7105 4427 50  0001 C CNN
 F 2 "" H 7100 4600 50  0001 C CNN
 F 3 "" H 7100 4600 50  0001 C CNN
 	1    7100 4600
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Connection ~ 10750 5850
 Wire Wire Line
@@ -997,7 +997,7 @@ F 1 "100K" H 10618 4905 50  0000 L CNN
 F 2 "" V 10590 4940 50  0001 C CNN
 F 3 "~" H 10550 4950 50  0001 C CNN
 	1    10550 4950
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 Wire Wire Line
 	10750 4950 10700 4950
@@ -1017,7 +1017,7 @@ F 1 "MKL02Z32VFG4" H 14450 9440 50  0000 C CNN
 F 2 "Package_DFN_QFN:QFN-16-1EP_3x3mm_P0.5mm_EP1.9x1.9mm" H 14600 6725 50  0001 L TNN
 F 3 "http://www.nxp.com/docs/en/data-sheet/KL02P32M48SF0.pdf" H 14750 7150 50  0001 L BNN
 	1    14450 7950
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L Memory_Flash:W25Q32JVSS U503
@@ -1028,7 +1028,7 @@ F 1 "W25Q64JVXGIM" H 21000 9540 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm" H 21000 9050 50  0001 C CNN
 F 3 "http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf" H 21000 9050 50  0001 C CNN
 	1    21000 9050
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	19650 7950 19650 7850
@@ -1145,7 +1145,7 @@ F 1 "Micro_SD_Card" H 20750 8276 50  0000 C CNN
 F 2 "" H 21950 7950 50  0001 C CNN
 F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 20800 7650 50  0001 C CNN
 	1    20800 7650
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Text Notes 19300 6900 0    50   Italic 10
 3.3V OR VBAT?
@@ -1158,7 +1158,7 @@ F 1 "TPD3S014" H 5400 4926 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-6" H 5400 5000 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tpd3s014.pdf" H 5200 4900 50  0001 C CNN
 	1    5400 4650
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	3800 4150 3800 7650
@@ -1177,7 +1177,7 @@ F 1 "BAT54C" V 4245 2638 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 4275 2675 50  0001 L CNN
 F 3 "http://www.diodes.com/_files/datasheets/ds11005.pdf" H 4120 2550 50  0001 C CNN
 	1    4200 2550
-	0    -1   1    0   
+	0    -1   1    0
 $EndComp
 Wire Wire Line
 	4200 5350 4950 5350
@@ -1199,7 +1199,7 @@ F 1 "PSRAM" H 21900 4990 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm" H 21900 4500 50  0001 C CNN
 F 3 "http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf" H 21900 4500 50  0001 C CNN
 	1    21900 4500
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Text GLabel 21000 8650 2    50   Input ~ 0
 3.3V
@@ -1224,7 +1224,7 @@ F 1 "GND" H 21905 4727 50  0000 C CNN
 F 2 "" H 21900 4900 50  0001 C CNN
 F 3 "" H 21900 4900 50  0001 C CNN
 	1    21900 4900
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	21900 4100 22300 4100
@@ -1244,7 +1244,7 @@ F 1 "0.22uF" H 22392 3405 50  0000 L CNN
 F 2 "" H 22300 3450 50  0001 C CNN
 F 3 "~" H 22300 3450 50  0001 C CNN
 	1    22300 3450
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	22300 3350 22300 3050
@@ -1257,6 +1257,6 @@ F 1 "GND" H 22305 2877 50  0000 C CNN
 F 2 "" H 22300 3050 50  0001 C CNN
 F 3 "" H 22300 3050 50  0001 C CNN
 	1    22300 3050
-	-1   0    0    1   
+	-1   0    0    1
 $EndComp
 $EndSCHEMATC
