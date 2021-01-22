@@ -1,11 +1,11 @@
 
-[01/15/2020]
+[01/15/2021]
 	GENERAL - Ayberk:
 	- Set up a kicad project from scratch for TARS-MK2
 	- Imported ISS logos for schematics and for PCB drawings. Just copied over from MK1
 
 
-[01/17/2020]
+[01/17/2021]
 	FCB - Ayberk:
 	- Imported footprint and symbol for the OSD3358-512M-BCB SiP (system in package).
 		Note: I discovered that this particular variant isn't actually what's used on the PocketBeagle.
@@ -24,6 +24,30 @@
 	- Added schematics for COTS altimeters, yet to connect to battery connectors
 	- Mounting points pulled from local library (ISO 7380 standard) to prevent damage to copper layer of PCB
 
+[01/18/2021]
+	FCB - Ayberk:
+	- Added a bunch more decoupling capacitors and passive component related to power.
+	- NOTE: Omitting the TPD3S014 IC as it is only used ESD protection when the Teensy is a USB host, not useful for us.
+	- Added MKL02Z32VFG4 bootloader IC which conveniently comes with Kicad. Did not connect yet.
+
+
+[01/19/2021]
+	FCB - Rohini, Maya, and Kenneth:
+	- Added Micro-SD and the Microcontroller Booth Loader
+	- NOTE: Still looking for power, it is currently labeled with text ('POWER')
+	- NOTE: Wiring is very ugly 
+	- Still need to find W25Q64JVXGIM (Planning to work on it)
+
+
+[01/20/2021]
+	FCB - Maya, Rohini
+	- Added W25Q64JVXGIM (serial flash memory)
+	- Couldn't find the exact symbol for this component, either in KiCad or online
+	- Used the 32 Mb W25Q32JVSS symbol from the KiCad library and edited the symbol properties
+	- Not sure if that's the correct method, but will check with the rest of the team
+	- NOTE: Wrote in power using text ('POWER')
+
+
 [01/21/2020]
 	ACB - Ayberk:
 	- Imported symbol and footprint libraries from MK1
@@ -34,3 +58,18 @@
 	TODO:
 	- ESD protection diodes didn't have libraries. Either a library or a substitute needs to be found.
 	- Understand SoM pin logic levels. They could be 1.8V which would require level shifting.
+
+	FCB - Ben
+	- Added tags between U502, U501B, and U501C to clean up wire mess
+	- Added 'VBAT' tag to SD Card VDD pin (3.3 volts, double check)
+	- Re-labeled U3 to U503 (flash memory) and J2 to J502 (micro sd)
+
+	FCB - Rohini, Maya
+	- Added PSRAM chip 
+	- Having some issues pushing Rohini's changes; will be resolved shortly
+
+	FCB - Rohini
+	- Added Flash
+	- NOTE:Connected wires to label, so there isn't a junction present in the schematic
+	- Need to change footprint for PSRAM, Flash, and W25Q64JVXGIM
+
