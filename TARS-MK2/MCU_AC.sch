@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 5 8
+Sheet 1 1
 Title "TARS - MK2 Active Control Microcontroller Schematic"
 Date ""
 Rev ""
@@ -800,8 +800,6 @@ F 3 "" H 19950 7850 50  0001 C CNN
 	1    19950 7850
 	0    1    1    0   
 $EndComp
-Text Notes 19600 7700 0    50   ~ 0
-POWER\n
 Wire Wire Line
 	2950 1700 3550 1700
 Wire Wire Line
@@ -882,8 +880,6 @@ F 3 "" H 21000 9450 50  0001 C CNN
 	1    21000 9450
 	1    0    0    -1  
 $EndComp
-Text Notes 21050 8700 0    50   ~ 0
-POWER
 Connection ~ 7100 4250
 Wire Wire Line
 	6700 4250 7100 4250
@@ -1110,10 +1106,6 @@ Wire Wire Line
 Wire Wire Line
 	12800 7450 12800 6300
 Wire Wire Line
-	20900 2100 20850 6300
-Wire Wire Line
-	20050 2100 20900 2100
-Wire Wire Line
 	12800 6300 20850 6300
 Wire Wire Line
 	10850 7350 10850 6100
@@ -1176,4 +1168,168 @@ Wire Wire Line
 	4200 5350 4950 5350
 Wire Wire Line
 	4400 2550 5000 2550
+Text GLabel 21000 8650 2    50   Input ~ 0
+3.3V
+$Comp
+L Memory_Flash:W25Q32JVSS U(Optional)
+U 1 1 600B1CFC
+P 21550 3600
+F 0 "U(Optional)" H 21550 4181 50  0000 C CNN
+F 1 "PSRAM" H 21550 4090 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm" H 21550 3600 50  0001 C CNN
+F 3 "http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf" H 21550 3600 50  0001 C CNN
+	1    21550 3600
+	1    0    0    -1  
+$EndComp
+Text GLabel 21050 3500 0    50   Input ~ 0
+GPIO_EMC_24
+Text GLabel 21050 3700 0    50   Input ~ 0
+GPIO_EMC_25
+Text GLabel 22050 3500 2    50   Input ~ 0
+GPIO_EMC_26
+Text GLabel 22050 3400 2    50   Input ~ 0
+GPIO_EMC_27
+Text GLabel 22050 3700 2    50   Input ~ 0
+GPIO_EMC_28
+Text GLabel 22050 3800 2    50   Input ~ 0
+GPIO_EMC_29
+$Comp
+L power:GND #PWR?
+U 1 1 600B92D1
+P 21550 4000
+F 0 "#PWR?" H 21550 3750 50  0001 C CNN
+F 1 "GND" H 21555 3827 50  0000 C CNN
+F 2 "" H 21550 4000 50  0001 C CNN
+F 3 "" H 21550 4000 50  0001 C CNN
+	1    21550 4000
+	1    0    0    -1  
+$EndComp
+Text GLabel 22350 2500 0    50   Input ~ 0
+3.3V
+Wire Wire Line
+	22350 2500 22350 2850
+Wire Wire Line
+	22350 2850 22000 2850
+$Comp
+L Device:C_Small C521
+U 1 1 600E4A4C
+P 21900 2850
+F 0 "C521" H 21992 2896 50  0000 L CNN
+F 1 "0.22uF" H 21992 2805 50  0000 L CNN
+F 2 "" H 21900 2850 50  0001 C CNN
+F 3 "~" H 21900 2850 50  0001 C CNN
+	1    21900 2850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	21800 2850 21600 2850
+$Comp
+L power:GND #PWR?
+U 1 1 600F6379
+P 21600 2850
+F 0 "#PWR?" H 21600 2600 50  0001 C CNN
+F 1 "GND" V 21605 2722 50  0000 R CNN
+F 2 "" H 21600 2850 50  0001 C CNN
+F 3 "" H 21600 2850 50  0001 C CNN
+	1    21600 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L Memory_Flash:W25Q32JVSS U(Optional)
+U 1 1 600FA636
+P 21850 5600
+F 0 "U(Optional)" H 21850 6250 50  0000 C CNN
+F 1 "Flash" H 21850 6150 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm" H 21850 5600 50  0001 C CNN
+F 3 "http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf" H 21850 5600 50  0001 C CNN
+	1    21850 5600
+	1    0    0    -1  
+$EndComp
+Text GLabel 21350 5500 0    50   Input ~ 0
+GPIO_EMC_22
+Wire Wire Line
+	21550 3200 22350 3200
+Wire Wire Line
+	22350 3200 22350 2850
+Connection ~ 22350 2850
+Wire Wire Line
+	20850 6300 20850 2100
+Wire Wire Line
+	20850 2100 20050 2100
+$Comp
+L power:GND #PWR?
+U 1 1 601F732F
+P 21850 6000
+F 0 "#PWR?" H 21850 5750 50  0001 C CNN
+F 1 "GND" H 21855 5827 50  0000 C CNN
+F 2 "" H 21850 6000 50  0001 C CNN
+F 3 "" H 21850 6000 50  0001 C CNN
+	1    21850 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21350 5700 20400 5700
+Wire Wire Line
+	20400 5700 20400 3700
+Wire Wire Line
+	20400 3700 20500 3700
+Wire Wire Line
+	22350 5500 22800 5500
+Wire Wire Line
+	22800 5500 22800 3500
+Wire Wire Line
+	22800 3500 22600 3500
+Wire Wire Line
+	22350 5400 22850 5400
+Wire Wire Line
+	22850 5400 22850 3400
+Wire Wire Line
+	22850 3400 22600 3400
+Wire Wire Line
+	22350 5700 22700 5700
+Wire Wire Line
+	22700 5700 22700 3700
+Wire Wire Line
+	22700 3700 22600 3700
+Wire Wire Line
+	22350 5800 22750 5800
+Wire Wire Line
+	22750 5800 22750 3800
+Wire Wire Line
+	22750 3800 22600 3800
+Wire Wire Line
+	21850 5200 22350 5200
+Wire Wire Line
+	22350 5200 22350 4800
+Text GLabel 22350 4550 0    50   Input ~ 0
+3.3V
+Connection ~ 22350 4800
+Wire Wire Line
+	22350 4800 22350 4550
+Wire Wire Line
+	22350 4800 21900 4800
+$Comp
+L Device:C_Small C520
+U 1 1 602B1F25
+P 21800 4800
+F 0 "C520" H 21892 4846 50  0000 L CNN
+F 1 "0.22uF" H 21892 4755 50  0000 L CNN
+F 2 "" H 21800 4800 50  0001 C CNN
+F 3 "~" H 21800 4800 50  0001 C CNN
+	1    21800 4800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	21700 4800 21500 4800
+$Comp
+L power:GND #PWR?
+U 1 1 602CEC74
+P 21500 4800
+F 0 "#PWR?" H 21500 4550 50  0001 C CNN
+F 1 "GND" V 21505 4672 50  0000 R CNN
+F 2 "" H 21500 4800 50  0001 C CNN
+F 3 "" H 21500 4800 50  0001 C CNN
+	1    21500 4800
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
