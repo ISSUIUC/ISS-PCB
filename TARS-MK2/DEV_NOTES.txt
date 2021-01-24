@@ -73,3 +73,20 @@
 	- NOTE:Connected wires to label, so there isn't a junction present in the schematic
 	- Need to change footprint for PSRAM, Flash, and W25Q64JVXGIM
 
+[01/22/2020]
+	GENERAL - Ayberk:
+	- Made four different kicad .pro project files for each board. The fact that they share the exact names as the relevant
+		schematic files makes kicad automatically associate the schematic with the project file. pretty nice
+	- Did a project-wide merge. First merged everything into main (resolving a few simple conflicts) then merged main back
+		into every single branch.
+
+	ACB - Ayberk:
+	- Added labels for I2C connections
+	- Added power on led circuitry
+
+[01/23/2020]
+	ACB - Ayberk:
+	- Fixed I2C labeling mistake
+	- Also added another bus called CAM_I2C on the dev kit. It can be used for general purpose too.
+	- Copied 3V3 and 1V8 power supply schematics from the dev kit.
+	- Re-organized jetson nano library folder by throwing all 3d files into one folder.
