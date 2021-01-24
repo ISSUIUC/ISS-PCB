@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 8
+Sheet 1 4
 Title "TARS - MK2 Flight Computation Board"
 Date ""
 Rev ""
