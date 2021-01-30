@@ -89,3 +89,12 @@
 	- Replaced old PSRAM symbol with ESP-PSRAM32 (this one has the correct footprint)
 	- Replaced old flash symbol with W25Q128JVS (this one also has the correct footprint)
 	- Redid connections between these two chips 
+
+[01/30/2021]
+	FCB - Ayberk, Erika
+	- Connected Grounds!
+	- Added power inputs for VIN_AC and VIN_USB ports. May need to investigate power input protection here.
+	- Added SYS_VDD3_3P3V internal rail to power the I/O domains (VDDSHVx pins) and connected to SYS_VDD3_3P3V@x pins
+	- Similarly connected SYS_VDD_1P8V flag to SYS_VDD_1P8V@x pins
+	-Connected VDDS and associated RTC pins to 1.8V power rail (SYS_RTC_1P8V)
+	- Connected VREFP TO SYS_VDD_1P8V, and VREFN to GND. May need to consider resistor/bypass capacitors respectively. 
