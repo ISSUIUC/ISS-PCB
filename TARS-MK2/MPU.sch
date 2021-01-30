@@ -840,4 +840,68 @@ Wire Wire Line
 Wire Wire Line
 	20750 15750 20750 15850
 Connection ~ 20750 15850
+Text HLabel 8250 4400 2    50   Output ~ 0
+SYS_VDD1_3P3V
+NoConn ~ 7400 3650
+Wire Wire Line
+	7400 3850 7800 3850
+Wire Wire Line
+	7800 3850 7800 3950
+Wire Wire Line
+	7800 5350 7400 5350
+Wire Wire Line
+	7400 5250 7800 5250
+Connection ~ 7800 5250
+Wire Wire Line
+	7800 5250 7800 5350
+Wire Wire Line
+	7400 5150 7800 5150
+Connection ~ 7800 5150
+Wire Wire Line
+	7800 5150 7800 5250
+Wire Wire Line
+	7400 5050 7800 5050
+Connection ~ 7800 5050
+Wire Wire Line
+	7800 5050 7800 5150
+Wire Wire Line
+	7400 4850 7800 4850
+Connection ~ 7800 4850
+Wire Wire Line
+	7800 4850 7800 5050
+Wire Wire Line
+	7400 4750 7800 4750
+Connection ~ 7800 4750
+Wire Wire Line
+	7800 4750 7800 4850
+Wire Wire Line
+	7400 4650 7800 4650
+Connection ~ 7800 4650
+Wire Wire Line
+	7800 4650 7800 4750
+Wire Wire Line
+	7400 4550 7800 4550
+Connection ~ 7800 4550
+Wire Wire Line
+	7800 4550 7800 4650
+Wire Wire Line
+	7400 4150 7800 4150
+Connection ~ 7800 4150
+Wire Wire Line
+	7800 4150 7800 4400
+Wire Wire Line
+	7400 4050 7800 4050
+Connection ~ 7800 4050
+Wire Wire Line
+	7800 4050 7800 4150
+Wire Wire Line
+	7400 3950 7800 3950
+Connection ~ 7800 3950
+Wire Wire Line
+	7800 3950 7800 4050
+Wire Wire Line
+	7800 4400 8250 4400
+Connection ~ 7800 4400
+Wire Wire Line
+	7800 4400 7800 4550
 $EndSCHEMATC
