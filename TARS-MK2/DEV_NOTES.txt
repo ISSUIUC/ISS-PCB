@@ -102,3 +102,11 @@
 	- added SD Card symbol to MPU schematic, and wired DATA/GND lines
 	- we do not know the meaning of SW-1 and SW-2 pins, cursory google searches were unhelpful
 	- Data3/CD(Chip Detect) line is hooked up to DATA3, but we may need to connect it to something else as well.
+
+[01/31/2021]
+	FCB - Ayberk
+	- Fixed a couple misalignments in the power connections (purely aesthetic)
+	- Added surface test points for all chip power rails and PMIC status pins.
+	- Added 01x02 pin headers for power and reset buttons in case we weed it for debugging.
+	- Added 01x02 pin header for I2C0 bus. It will only be used for PMIC control, but I exposed it for debug/expansion.
+	- Added power LED on SYS_VDD2_3P3V rail. The rail isn't used for anything else.
