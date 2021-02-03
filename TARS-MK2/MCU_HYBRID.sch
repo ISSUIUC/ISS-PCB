@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 6 4
+Sheet 6 8
 Title "TARS - MK2 Hyrbid Microcontroller Schematic"
 Date ""
 Rev ""

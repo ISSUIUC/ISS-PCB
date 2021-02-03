@@ -108,7 +108,14 @@
 	- Replaced old flash symbol with W25Q128JVS (this one also has the correct footprint)
 	- Redid connections between these two chips 
 
-[01/30/2021]
+[01/30/2021](David's Nephew's Birthday)
+	FCB - David, Maya
+	- added symbol and footprint library to FCB libs, for the SD card (SD_1040310811)
+	- added SD Card symbol to MPU schematic, and wired DATA/GND lines
+	- we do not know the meaning of SW-1 and SW-2 pins, cursory google searches were unhelpful
+	- Data3/CD(Chip Detect) line is hooked up to DATA3, but we may need to connect it to something else as well.
+
+
 	FCB - Ayberk, Erika
 	- Connected Grounds!
 	- Added power inputs for VIN_AC and VIN_USB ports. May need to investigate power input protection here.
@@ -116,3 +123,17 @@
 	- Similarly connected SYS_VDD_1P8V flag to SYS_VDD_1P8V@x pins
 	- Connected VDDS and associated RTC pins to 1.8V power rail (SYS_RTC_1P8V)
 	- Connected VREFP TO SYS_VDD_1P8V, and VREFN to GND. May need to consider resistor/bypass capacitors respectively. 
+	
+	FCB - Ayberk
+	- Fixed labeling mistakes in the MCU_AC schematic.
+	- Rearanged some circuitry in MCU_AC in discrete blocks. Mostly for aesthetics.
+	- Added a pin connection to trigger the MKL02 bootloader in place of the pushbutton found on the Teensy4.1.
+		This was done because pushbuttons can be susceptible to vibrations.
+
+[01/31/2021]
+	FCB - Ayberk
+	- Fixed a couple misalignments in the power connections (purely aesthetic)
+	- Added surface test points for all chip power rails and PMIC status pins.
+	- Added 01x02 pin headers for power and reset buttons in case we weed it for debugging.
+	- Added 01x02 pin header for I2C0 bus. It will only be used for PMIC control, but I exposed it for debug/expansion.
+	- Added power LED on SYS_VDD2_3P3V rail. The rail isn't used for anything else.
