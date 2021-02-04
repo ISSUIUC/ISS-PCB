@@ -1843,7 +1843,6 @@ F 3 "~" H 15500 8000 50  0001 C CNN
 	1    15500 8000
 	1    0    0    -1  
 $EndComp
-Connection ~ 15500 7850
 Wire Wire Line
 	15500 8150 15500 8350
 Wire Wire Line
@@ -1886,9 +1885,6 @@ F 3 "~" H 15200 7350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	15100 7350 15100 7850
-Connection ~ 15100 7850
-Wire Wire Line
-	15100 7850 15500 7850
 Wire Wire Line
 	16150 8150 15900 8150
 Wire Wire Line
