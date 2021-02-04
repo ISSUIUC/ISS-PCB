@@ -1469,4 +1469,131 @@ F 3 "~" H 19550 18550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	19350 18550 19650 18550
+$Comp
+L Connector:TestPoint_Probe TP?
+U 1 1 6024F009
+P 4200 8850
+F 0 "TP?" V 4490 8905 50  0000 C CNN
+F 1 "PWRONRSTN" V 4399 8905 50  0000 C CNN
+F 2 "" H 4400 8850 50  0001 C CNN
+F 3 "~" H 4400 8850 50  0001 C CNN
+	1    4200 8850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4600 8850 4450 8850
+Wire Wire Line
+	4600 8950 4450 8950
+Wire Wire Line
+	4450 8950 4450 8850
+Connection ~ 4450 8850
+Wire Wire Line
+	4450 8850 4200 8850
+Wire Wire Line
+	2650 9700 2650 9550
+Wire Wire Line
+	2450 9700 2650 9700
+Text HLabel 2450 9700 0    50   Output ~ 0
+SYS_VDD1_3P3V
+Wire Wire Line
+	2650 8900 2650 8950
+Wire Wire Line
+	2450 8900 2650 8900
+$Comp
+L power:GND #PWR?
+U 1 1 6039EFE8
+P 2450 8900
+F 0 "#PWR?" H 2450 8650 50  0001 C CNN
+F 1 "GND" V 2455 8772 50  0000 R CNN
+F 2 "" H 2450 8900 50  0001 C CNN
+F 3 "" H 2450 8900 50  0001 C CNN
+	1    2450 8900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3050 9250 3400 9250
+$Comp
+L Connector:TestPoint_Probe TP?
+U 1 1 60616637
+P 1350 9800
+F 0 "TP?" V 1640 9855 50  0000 C CNN
+F 1 "WARMRSTN" V 1549 9855 50  0000 C CNN
+F 2 "" H 1550 9800 50  0001 C CNN
+F 3 "~" H 1550 9800 50  0001 C CNN
+	1    1350 9800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1350 9800 1650 9800
+Wire Wire Line
+	2250 9250 1650 9250
+Wire Wire Line
+	1650 9250 1650 9800
+Connection ~ 1650 9800
+Wire Wire Line
+	1900 8300 1650 8300
+Wire Wire Line
+	2300 8300 3400 8300
+Connection ~ 3400 9250
+Wire Wire Line
+	3400 9250 4600 9250
+Wire Wire Line
+	3400 8300 3400 9250
+$Comp
+L power:GND #PWR?
+U 1 1 609A122D
+P 1650 8650
+F 0 "#PWR?" H 1650 8400 50  0001 C CNN
+F 1 "GND" H 1655 8477 50  0000 C CNN
+F 2 "" H 1650 8650 50  0001 C CNN
+F 3 "" H 1650 8650 50  0001 C CNN
+	1    1650 8650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 8300 1650 8650
+Wire Wire Line
+	3850 9800 3850 9350
+Wire Wire Line
+	3850 9350 4600 9350
+Wire Wire Line
+	1650 9800 3850 9800
+$Comp
+L Switch:SW_MEC_5E SW?
+U 1 1 60AACF5A
+P 2100 8300
+F 0 "SW?" H 2100 8685 50  0000 C CNN
+F 1 "SW_MEC_5E" H 2100 8594 50  0000 C CNN
+F 2 "" H 2100 8600 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 2100 8600 50  0001 C CNN
+	1    2100 8300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 8200 3400 8200
+Wire Wire Line
+	3400 8200 3400 8300
+Connection ~ 3400 8300
+Wire Wire Line
+	1900 8200 1650 8200
+Wire Wire Line
+	1650 8200 1650 8300
+Connection ~ 1650 8300
+Text Notes 2350 8450 2    20   ~ 0
+Need to confirm that this \nmatches the tactile switch \nshown on the C-SiP manual…
+Text Notes 4100 9500 0    50   ~ 0
+?? resistors ??
+$Comp
+L Power_Supervisor:CAT811JTBI-GT3 U?
+U 1 1 6036D816
+P 2650 9250
+F 0 "U?" H 2206 9204 50  0000 R CNN
+F 1 "APX811-31UGSOT" H 2206 9295 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:SOT-143" H 2750 8950 50  0001 L CNN
+F 3 "http://www.onsemi.com/pub/Collateral/CAT811-D.PDF" H 2300 8550 50  0001 C CNN
+	1    2650 9250
+	-1   0    0    1   
+$EndComp
+Text Notes 2750 9700 0    24   ~ 0
+APX811 is the reset circuit for the C-SiP.\nThis supervisor circuit, along with the manual\nreset button are connected between the warm reset \nand the cold reset open drain buffer pin\n
 $EndSCHEMATC
