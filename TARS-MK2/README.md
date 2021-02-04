@@ -12,6 +12,8 @@
   - [ ] add a BNO055 schematic and footprint
   - [ ] **fix** ZOE-M8Q schematic to use I2C and active antenna circuit
   - [ ] add power LEDs for both MCUs
+  - [ ] MPU reset circuitry resistors?
+  - [ ] SD card slot footprint
 
 #### ACB:
   - [ ] stuff
