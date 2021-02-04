@@ -115,7 +115,6 @@
 	- we do not know the meaning of SW-1 and SW-2 pins, cursory google searches were unhelpful
 	- Data3/CD(Chip Detect) line is hooked up to DATA3, but we may need to connect it to something else as well.
 
-
 	FCB - Ayberk, Erika
 	- Connected Grounds!
 	- Added power inputs for VIN_AC and VIN_USB ports. May need to investigate power input protection here.
@@ -137,3 +136,9 @@
 	- Added 01x02 pin headers for power and reset buttons in case we weed it for debugging.
 	- Added 01x02 pin header for I2C0 bus. It will only be used for PMIC control, but I exposed it for debug/expansion.
 	- Added power LED on SYS_VDD2_3P3V rail. The rail isn't used for anything else.
+
+[02/03/2021]
+	FCB - Maya, David
+	- Added footprint for 104031-811 micro-SD card from Mouser
+	- Fully connected micro-SD card symbol to MPU 
+	- Grounded the SW-1 and SW-2 pins
