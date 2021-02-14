@@ -18,7 +18,7 @@
 	- Began adding simple things like decoupling capacitors and the TLV75733 according to the T4.1 schematic
 	- Following the part labels found on the T4.1 schematic. i.e. a part with label U12 on the schematic from PJRC.com is labeled
 		as U512 or U412 in kicad. 400 or 500 is added because the two MCU schematics have numbers 4 and 5 in the project.
-	
+
 	COTS - Kenneth:
 	- Added footprints for COTS altimeters, solder points and mounting points included with the silkscreen
 	- Added schematics for COTS altimeters, yet to connect to battery connectors
@@ -35,7 +35,7 @@
 	FCB - Rohini, Maya, and Kenneth:
 	- Added Micro-SD and the Microcontroller Booth Loader
 	- NOTE: Still looking for power, it is currently labeled with text ('POWER')
-	- NOTE: Wiring is very ugly 
+	- NOTE: Wiring is very ugly
 	- Still need to find W25Q64JVXGIM (Planning to work on it)
 
 
@@ -46,7 +46,7 @@
 	- Used the 32 Mb W25Q32JVSS symbol from the KiCad library and edited the symbol properties
 	- Not sure if that's the correct method, but will check with the rest of the team
 	- NOTE: Wrote in power using text ('POWER')
-	
+
 	POWER - Erika
 	-Re-organized the locations of a few files to properly load the voltage regulators in Kicad
 	-Fixed the orientation of pinholes on the two smaller regulators (D24V50F5 + D36V28F3)
@@ -69,7 +69,7 @@
 	- Re-labeled U3 to U503 (flash memory) and J2 to J502 (micro sd)
 
 	FCB - Rohini, Maya
-	- Added PSRAM chip 
+	- Added PSRAM chip
 	- Having some issues pushing Rohini's changes; will be resolved shortly
 
 	FCB - Rohini
@@ -95,18 +95,21 @@
 	- Copied 3V3 and 1V8 power supply schematics from the dev kit.
 	- Re-organized jetson nano library folder by throwing all 3d files into one folder.
 
+	COTS - Kenneth:
+	- Added 3D files to be included in the footprint for the SL and TM.
+
 [01/24/2021]
 	FCB - Maya, Rohini
 	- Added library for ethernet just in case we ever want it
 	- Added symbol and footprint for W25Q64JVXGIM; replaced old symbol with the new one
 	- Started looking for footprint for PSRAM and flash (optional components)
-	- NOTE: Mouser sometimes has symbols and footprints as ECAD models. These can be installed as long as you don't use Linux.  
+	- NOTE: Mouser sometimes has symbols and footprints as ECAD models. These can be installed as long as you don't use Linux.
 
 [01/27/2021]
 	FCB - Maya
 	- Replaced old PSRAM symbol with ESP-PSRAM32 (this one has the correct footprint)
 	- Replaced old flash symbol with W25Q128JVS (this one also has the correct footprint)
-	- Redid connections between these two chips 
+	- Redid connections between these two chips
 
 [01/30/2021](David's Nephew's Birthday)
 	FCB - David, Maya
@@ -122,8 +125,8 @@
 	- Added SYS_VDD3_3P3V internal rail to power the I/O domains (VDDSHVx pins) and connected to SYS_VDD3_3P3V@x pins
 	- Similarly connected SYS_VDD_1P8V flag to SYS_VDD_1P8V@x pins
 	- Connected VDDS and associated RTC pins to 1.8V power rail (SYS_RTC_1P8V)
-	- Connected VREFP TO SYS_VDD_1P8V, and VREFN to GND. May need to consider resistor/bypass capacitors respectively. 
-	
+	- Connected VREFP TO SYS_VDD_1P8V, and VREFN to GND. May need to consider resistor/bypass capacitors respectively.
+
 	FCB - Ayberk
 	- Fixed labeling mistakes in the MCU_AC schematic.
 	- Rearanged some circuitry in MCU_AC in discrete blocks. Mostly for aesthetics.
