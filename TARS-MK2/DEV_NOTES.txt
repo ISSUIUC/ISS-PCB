@@ -118,7 +118,6 @@
 	- we do not know the meaning of SW-1 and SW-2 pins, cursory google searches were unhelpful
 	- Data3/CD(Chip Detect) line is hooked up to DATA3, but we may need to connect it to something else as well.
 
-
 	FCB - Ayberk, Erika
 	- Connected Grounds!
 	- Added power inputs for VIN_AC and VIN_USB ports. May need to investigate power input protection here.
@@ -141,6 +140,12 @@
 	- Added 01x02 pin header for I2C0 bus. It will only be used for PMIC control, but I exposed it for debug/expansion.
 	- Added power LED on SYS_VDD2_3P3V rail. The rail isn't used for anything else.
 
+[02/03/2021]
+	FCB - Maya, David
+	- Added footprint for 104031-811 micro-SD card from Mouser
+	- Fully connected micro-SD card symbol to MPU
+	- Grounded the SW-1 and SW-2 pins
+
 [02/04/2021]
 	FCB - Ayberk
 	- Imported Kenneth's dxf board outline to FCB pcb project.
@@ -149,7 +154,6 @@
 		Do we even need vias in the ring?
 		Will the board edges be plated? (would be sooo cool)
 
-[02/04/2021]
 	FCB - David, Maya, Rohini
 	- added lib files for usb-a connector, and tps(in Mouser_Imported_Components) that will be used for the usb
 	- initial implementation for usb-a connection
