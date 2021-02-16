@@ -348,4 +348,205 @@ NoConn ~ 3550 5450
 NoConn ~ 3550 5550
 NoConn ~ 2150 5850
 NoConn ~ 2150 5950
+$Comp
+L Sensor_Motion:KX122-1042 U?
+U 1 1 602C4E8A
+P 5800 5550
+F 0 "U?" H 5350 6150 50  0000 C CNN
+F 1 "KX122-1711" H 5350 6050 50  0000 C CNN
+F 2 "Package_LGA:LGA-12_2x2mm_P0.5mm" H 5950 6100 50  0001 L CNN
+F 3 "http://kionixfs.kionix.com/en/datasheet/KX112-1042-Specifications-Rev-6.0.pdf" H 5450 5550 50  0001 C CNN
+	1    5800 5550
+	1    0    0    -1  
+$EndComp
+Text GLabel 5250 4800 0    50   Input ~ 0
+3V3_MCU_SUPPLY
+$Comp
+L D24V50F5:Jumper_NC_Small JP?
+U 1 1 602C7764
+P 5350 4800
+F 0 "JP?" H 5350 5012 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 5350 4921 50  0000 C CNN
+F 2 "" H 5350 4800 50  0001 C CNN
+F 3 "~" H 5350 4800 50  0001 C CNN
+	1    5350 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L D24V50F5:C_Small C?
+U 1 1 602C94C9
+P 6200 4900
+F 0 "C?" V 5971 4900 50  0000 C CNN
+F 1 "100 nF" V 6062 4900 50  0000 C CNN
+F 2 "" H 6200 4900 50  0001 C CNN
+F 3 "~" H 6200 4900 50  0001 C CNN
+	1    6200 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L D24V50F5:C_Small C?
+U 1 1 602CC1EC
+P 6550 5000
+F 0 "C?" V 6321 5000 50  0000 C CNN
+F 1 "100 nF" V 6412 5000 50  0000 C CNN
+F 2 "" H 6550 5000 50  0001 C CNN
+F 3 "~" H 6550 5000 50  0001 C CNN
+	1    6550 5000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5450 4800 5800 4800
+Wire Wire Line
+	5800 4800 5800 5000
+Wire Wire Line
+	5800 5000 6450 5000
+Connection ~ 5800 5000
+Wire Wire Line
+	5800 5000 5800 5050
+Wire Wire Line
+	5800 4800 5900 4800
+Wire Wire Line
+	5900 4800 5900 4900
+Wire Wire Line
+	5900 4900 6100 4900
+Connection ~ 5800 4800
+Wire Wire Line
+	5900 4900 5900 5050
+Connection ~ 5900 4900
+Wire Wire Line
+	6300 4900 6800 4900
+Wire Wire Line
+	6800 4900 6800 5000
+Wire Wire Line
+	6800 5000 6650 5000
+$Comp
+L power:GND #PWR?
+U 1 1 602DE2AC
+P 6150 6200
+F 0 "#PWR?" H 6150 5950 50  0001 C CNN
+F 1 "GND" H 6155 6027 50  0000 C CNN
+F 2 "" H 6150 6200 50  0001 C CNN
+F 3 "" H 6150 6200 50  0001 C CNN
+	1    6150 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 5000 6800 6100
+Wire Wire Line
+	6800 6100 6150 6100
+Wire Wire Line
+	6150 6100 6150 6200
+Connection ~ 6800 5000
+Wire Wire Line
+	6150 6100 5800 6100
+Wire Wire Line
+	5800 6100 5800 6050
+Connection ~ 6150 6100
+Text GLabel 6950 5450 2    50   Input ~ 0
+IMUD_INT1
+Wire Wire Line
+	6950 5450 6300 5450
+NoConn ~ 6300 5750
+Text GLabel 5250 5350 0    50   Input ~ 0
+MCU_SPI0_CS10
+Text GLabel 5250 5450 0    50   Input ~ 0
+MCU_SPI0_MOSI
+Text GLabel 5250 5550 0    50   Input ~ 0
+MCU_SPI0_MISO
+Text GLabel 5250 5650 0    50   Input ~ 0
+MCU_SPI0_SCK
+Wire Wire Line
+	5250 5350 5400 5350
+Wire Wire Line
+	5250 5450 5400 5450
+Wire Wire Line
+	5250 5550 5400 5550
+Wire Wire Line
+	5250 5650 5400 5650
+$Comp
+L Sensor_Pressure:MS5611-01BA U?
+U 1 1 602F3A3E
+P 8800 5350
+F 0 "U?" H 8350 4850 50  0000 L CNN
+F 1 "MS5611-01BA" H 8000 4750 50  0000 L CNN
+F 2 "Package_LGA:LGA-8_3x5mm_P1.25mm" H 8800 5350 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=MS5611-01BA03&DocType=Data+Sheet&DocLang=English" H 8800 5350 50  0001 C CNN
+	1    8800 5350
+	1    0    0    -1  
+$EndComp
+Text GLabel 8550 4650 0    50   Input ~ 0
+3V3_MCU_SUPPLY
+Text GLabel 8150 5250 0    50   Input ~ 0
+MCU_SPI0_MISO
+Text GLabel 8150 5350 0    50   Input ~ 0
+MCU_SPI0_MOSI
+Text GLabel 8150 5450 0    50   Input ~ 0
+MCU_SPI0_SCK
+Text GLabel 8150 5550 0    50   Input ~ 0
+MCU_SPI0_CS35
+$Comp
+L D24V50F5:Jumper_NC_Small JP?
+U 1 1 602F99A3
+P 8650 4650
+F 0 "JP?" H 8650 4862 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 8650 4771 50  0000 C CNN
+F 2 "" H 8650 4650 50  0001 C CNN
+F 3 "~" H 8650 4650 50  0001 C CNN
+	1    8650 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 4650 8800 4650
+Wire Wire Line
+	8800 4650 8800 4900
+$Comp
+L D24V50F5:C_Small C?
+U 1 1 602FBFF3
+P 9150 4900
+F 0 "C?" V 8921 4900 50  0000 C CNN
+F 1 "100 nF" V 9012 4900 50  0000 C CNN
+F 2 "" H 9150 4900 50  0001 C CNN
+F 3 "~" H 9150 4900 50  0001 C CNN
+	1    9150 4900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8800 4900 9050 4900
+Connection ~ 8800 4900
+Wire Wire Line
+	8800 4900 8800 4950
+$Comp
+L power:GND #PWR?
+U 1 1 60300139
+P 8800 5950
+F 0 "#PWR?" H 8800 5700 50  0001 C CNN
+F 1 "GND" H 8805 5777 50  0000 C CNN
+F 2 "" H 8800 5950 50  0001 C CNN
+F 3 "" H 8800 5950 50  0001 C CNN
+	1    8800 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 5950 8800 5800
+Wire Wire Line
+	9250 4900 9250 5800
+Wire Wire Line
+	9250 5800 8800 5800
+Connection ~ 8800 5800
+Wire Wire Line
+	8800 5800 8800 5750
+Wire Wire Line
+	8800 5800 8250 5800
+Wire Wire Line
+	8250 5800 8250 5150
+Wire Wire Line
+	8250 5150 8400 5150
+Wire Wire Line
+	8150 5250 8400 5250
+Wire Wire Line
+	8150 5350 8400 5350
+Wire Wire Line
+	8150 5450 8400 5450
+Wire Wire Line
+	8150 5550 8400 5550
 $EndSCHEMATC
