@@ -19,14 +19,14 @@ $Comp
 L ISS_LOGO:LOGO #G1
 U 1 1 600297E0
 P 7700 6800
-AR Path="/600297E0" Ref="#G1"  Part="1"
-AR Path="/60021DCE/600297E0" Ref="#G7"  Part="1"
+AR Path="/600297E0" Ref="#G1"  Part="1" 
+AR Path="/60021DCE/600297E0" Ref="#G7"  Part="1" 
 F 0 "#G1" H 7700 6677 60  0001 C CNN
 F 1 "LOGO" H 7700 6923 60  0001 C CNN
 F 2 "" H 7700 6800 50  0001 C CNN
 F 3 "" H 7700 6800 50  0001 C CNN
 	1    7700 6800
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L 505575-0271:505575-0271 J1
@@ -37,7 +37,7 @@ F 1 "SL_SWITCH" H 1292 1734 50  0000 C CNN
 F 2 "505575-0271:505575-0271" H 2000 1550 50  0001 C CNN
 F 3 "" H 1350 1650 50  0001 C CNN
 	1    1350 1650
-	-1   0    0    -1
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	2550 1700 1550 1700
@@ -71,27 +71,27 @@ $Comp
 L COTS_Altimeters:StratoLogger A1
 U 1 1 6006399C
 P 3100 1250
-AR Path="/6006399C" Ref="A1"  Part="1"
-AR Path="/60021DCE/6006399C" Ref="A1"  Part="1"
+AR Path="/6006399C" Ref="A1"  Part="1" 
+AR Path="/60021DCE/6006399C" Ref="A1"  Part="1" 
 F 0 "A1" H 3100 1615 50  0000 C CNN
 F 1 "StratoLogger" H 3100 1524 50  0000 C CNN
 F 2 "COTS_Altimeters:StratoLogger" H 3100 1650 50  0001 C CNN
 F 3 "" H 3100 1650 50  0001 C CNN
 	1    3100 1250
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L COTS_Altimeters:TeleMetrum A2
 U 1 1 60064681
 P 3100 3100
-AR Path="/60064681" Ref="A2"  Part="1"
-AR Path="/60021DCE/60064681" Ref="A2"  Part="1"
+AR Path="/60064681" Ref="A2"  Part="1" 
+AR Path="/60021DCE/60064681" Ref="A2"  Part="1" 
 F 0 "A2" H 3578 2713 50  0000 L CNN
 F 1 "TeleMetrum" H 3578 2622 50  0000 L CNN
 F 2 "COTS_Altimeters:TeleMetrum" H 3100 3500 50  0001 C CNN
 F 3 "" H 3100 3500 50  0001 C CNN
 	1    3100 3100
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L 505575-0271:505575-0271 J4
@@ -102,7 +102,7 @@ F 1 "TM_DROGUE" H 2892 5584 50  0000 C CNN
 F 2 "505575-0271:505575-0271" H 3600 5400 50  0001 C CNN
 F 3 "" H 2950 5500 50  0001 C CNN
 	1    2950 5500
-	-1   0    0    -1
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	3300 5550 3150 5550
@@ -125,7 +125,7 @@ F 1 "SL_BATT_0" H 8480 1701 50  0000 L CNN
 F 2 "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" H 8400 1800 50  0001 C CNN
 F 3 "~" H 8400 1800 50  0001 C CNN
 	1    8400 1800
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J8
@@ -136,7 +136,7 @@ F 1 "SL_BATT_1" H 8480 2001 50  0000 L CNN
 F 2 "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" H 8400 2100 50  0001 C CNN
 F 3 "~" H 8400 2100 50  0001 C CNN
 	1    8400 2100
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	7850 1800 8200 1800
@@ -157,7 +157,7 @@ F 1 "TM_BATT_0" H 8480 2951 50  0000 L CNN
 F 2 "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" H 8400 3050 50  0001 C CNN
 F 3 "~" H 8400 3050 50  0001 C CNN
 	1    8400 3050
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	7850 3050 8200 3050
@@ -172,7 +172,7 @@ F 1 "GND" H 8205 2027 50  0000 C CNN
 F 2 "" H 8200 2200 50  0001 C CNN
 F 3 "" H 8200 2200 50  0001 C CNN
 	1    8200 2200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Connection ~ 8200 2200
 $Comp
@@ -184,7 +184,7 @@ F 1 "GND" H 8205 2977 50  0000 C CNN
 F 2 "" H 8200 3150 50  0001 C CNN
 F 3 "" H 8200 3150 50  0001 C CNN
 	1    8200 3150
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Connection ~ 8200 3150
 Wire Notes Line
@@ -208,7 +208,7 @@ F 1 "SL_DROGUE" H 4928 1452 50  0000 L CNN
 F 2 "505575-0271:505575-0271" H 5450 1550 50  0001 C CNN
 F 3 "" H 4800 1650 50  0001 C CNN
 	1    4800 1650
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L 505575-0271:505575-0271 J3
@@ -219,7 +219,7 @@ F 1 "TM_MAIN" H 2642 4834 50  0000 C CNN
 F 2 "505575-0271:505575-0271" H 3350 4650 50  0001 C CNN
 F 3 "" H 2700 4750 50  0001 C CNN
 	1    2700 4750
-	-1   0    0    -1
+	-1   0    0    -1  
 $EndComp
 $Comp
 L 505575-0271:505575-0271 J2
@@ -230,7 +230,7 @@ F 1 "TM_SWITCH" H 2292 4384 50  0000 C CNN
 F 2 "505575-0271:505575-0271" H 3000 4200 50  0001 C CNN
 F 3 "" H 2350 4300 50  0001 C CNN
 	1    2350 4300
-	-1   0    0    -1
+	-1   0    0    -1  
 $EndComp
 $Comp
 L 505575-0271:505575-0271 J5
@@ -241,7 +241,7 @@ F 1 "SL_MAIN" H 3978 1702 50  0000 L CNN
 F 2 "505575-0271:505575-0271" H 4500 1800 50  0001 C CNN
 F 3 "" H 3850 1900 50  0001 C CNN
 	1    3850 1900
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 NoConn ~ 3800 2200
 NoConn ~ 3900 2200

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 3 8
 Title "TARS - MK2 Flight Computation Board"
 Date ""
 Rev ""
@@ -39,7 +39,7 @@ U 1 1 600294C2
 P 7700 6800
 AR Path="/600294C2" Ref="#G1"  Part="1" 
 AR Path="/60021DA2/600294C2" Ref="#G3"  Part="1" 
-F 0 "#G1" H 7700 6677 60  0001 C CNN
+F 0 "#G3" H 7700 6677 60  0001 C CNN
 F 1 "LOGO" H 7700 6923 60  0001 C CNN
 F 2 "" H 7700 6800 50  0001 C CNN
 F 3 "" H 7700 6800 50  0001 C CNN
@@ -99,4 +99,253 @@ Wire Notes Line
 	11000 5550 10100 5550
 Text Notes 10100 6350 0    50   ~ 0
 Connecting ground plane\n  to ESD ground ring
+$Comp
+L Sensor_Motion:LSM9DS1 U?
+U 1 1 602BFCA3
+P 2850 5650
+F 0 "U?" H 1850 6650 50  0000 C CNN
+F 1 "LSM9DS1" H 1850 6500 50  0000 C CNN
+F 2 "Package_LGA:LGA-24L_3x3.5mm_P0.43mm" H 4350 6400 50  0001 C CNN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/1e/3f/2a/d6/25/eb/48/46/DM00103319.pdf/files/DM00103319.pdf/jcr:content/translations/en.DM00103319.pdf" H 2850 5750 50  0001 C CNN
+	1    2850 5650
+	1    0    0    -1  
+$EndComp
+Text GLabel 1950 4350 0    50   Input ~ 0
+3V3_MCU_SUPPLY
+$Comp
+L D24V50F5:Jumper_NC_Small JP?
+U 1 1 602C1D67
+P 2050 4350
+F 0 "JP?" H 2050 4562 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 2050 4471 50  0000 C CNN
+F 2 "" H 2050 4350 50  0001 C CNN
+F 3 "~" H 2050 4350 50  0001 C CNN
+	1    2050 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 602C379F
+P 2350 4700
+F 0 "#PWR?" H 2350 4450 50  0001 C CNN
+F 1 "GND" H 2355 4527 50  0000 C CNN
+F 2 "" H 2350 4700 50  0001 C CNN
+F 3 "" H 2350 4700 50  0001 C CNN
+	1    2350 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 602C3D8C
+P 3450 4700
+F 0 "#PWR?" H 3450 4450 50  0001 C CNN
+F 1 "GND" H 3455 4527 50  0000 C CNN
+F 2 "" H 3450 4700 50  0001 C CNN
+F 3 "" H 3450 4700 50  0001 C CNN
+	1    3450 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 602C3F8F
+P 3950 4700
+F 0 "#PWR?" H 3950 4450 50  0001 C CNN
+F 1 "GND" H 3955 4527 50  0000 C CNN
+F 2 "" H 3950 4700 50  0001 C CNN
+F 3 "" H 3950 4700 50  0001 C CNN
+	1    3950 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 4750 2950 4750
+Wire Wire Line
+	2950 4750 2950 4850
+Wire Wire Line
+	2850 4750 2850 4850
+Wire Wire Line
+	3150 4750 3250 4750
+Wire Wire Line
+	3250 4750 3250 4850
+Wire Wire Line
+	3150 4750 3150 4850
+$Comp
+L D24V50F5:C_Small C?
+U 1 1 602C779E
+P 2350 4600
+F 0 "C?" H 2442 4646 50  0000 L CNN
+F 1 "100 nF" H 2442 4555 50  0000 L CNN
+F 2 "" H 2350 4600 50  0001 C CNN
+F 3 "~" H 2350 4600 50  0001 C CNN
+	1    2350 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L D24V50F5:C_Small C?
+U 1 1 602C9163
+P 3450 4600
+F 0 "C?" H 3542 4646 50  0000 L CNN
+F 1 "100 nF" H 3542 4555 50  0000 L CNN
+F 2 "" H 3450 4600 50  0001 C CNN
+F 3 "~" H 3450 4600 50  0001 C CNN
+	1    3450 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L D24V50F5:C_Small C?
+U 1 1 602C9886
+P 3950 4600
+F 0 "C?" H 4042 4646 50  0000 L CNN
+F 1 "10 uF" H 4042 4555 50  0000 L CNN
+F 2 "" H 3950 4600 50  0001 C CNN
+F 3 "~" H 3950 4600 50  0001 C CNN
+	1    3950 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 4350 2350 4350
+Wire Wire Line
+	3950 4350 3950 4500
+Wire Wire Line
+	3450 4350 3450 4500
+Connection ~ 3450 4350
+Wire Wire Line
+	3450 4350 3950 4350
+Wire Wire Line
+	2350 4350 2350 4500
+Connection ~ 2350 4350
+Wire Wire Line
+	2350 4350 2850 4350
+Wire Wire Line
+	2850 4350 2850 4750
+Connection ~ 2850 4350
+Wire Wire Line
+	2850 4350 3150 4350
+Connection ~ 2850 4750
+Wire Wire Line
+	3150 4350 3150 4750
+Connection ~ 3150 4350
+Wire Wire Line
+	3150 4350 3450 4350
+Connection ~ 3150 4750
+Text GLabel 1650 5250 0    50   Input ~ 0
+MCU_SPI0_SCK
+Text GLabel 1650 5350 0    50   Input ~ 0
+MCU_SPI0_MOSI
+Text GLabel 1650 5550 0    50   Input ~ 0
+MCU_SPI0_CS36
+Text GLabel 1650 5650 0    50   Input ~ 0
+MCU_SPI0_MISO
+Text GLabel 1650 5750 0    50   Input ~ 0
+IMU1_INT1
+Text GLabel 3900 5250 2    50   Input ~ 0
+MCU_SPI0_CS37
+Text GLabel 3900 5350 2    50   Input ~ 0
+MCU_SPI0_MISO
+Wire Wire Line
+	3900 5250 3550 5250
+Wire Wire Line
+	3900 5350 3550 5350
+Wire Wire Line
+	1650 5250 2150 5250
+Wire Wire Line
+	1650 5350 2150 5350
+Wire Wire Line
+	1650 5550 2150 5550
+Wire Wire Line
+	1650 5650 2150 5650
+Wire Wire Line
+	1650 5750 2150 5750
+$Comp
+L power:GND #PWR?
+U 1 1 602CE1E5
+P 2850 7000
+F 0 "#PWR?" H 2850 6750 50  0001 C CNN
+F 1 "GND" H 2855 6827 50  0000 C CNN
+F 2 "" H 2850 7000 50  0001 C CNN
+F 3 "" H 2850 7000 50  0001 C CNN
+	1    2850 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L D24V50F5:C_Small C?
+U 1 1 602CE89F
+P 1700 6600
+F 0 "C?" H 1609 6554 50  0000 R CNN
+F 1 "10 nF" H 1609 6645 50  0000 R CNN
+F 2 "" H 1700 6600 50  0001 C CNN
+F 3 "~" H 1700 6600 50  0001 C CNN
+	1    1700 6600
+	1    0    0    1   
+$EndComp
+$Comp
+L D24V50F5:C_Small C?
+U 1 1 602CEFBA
+P 2000 6600
+F 0 "C?" H 2092 6646 50  0000 L CNN
+F 1 "100 nF" H 2092 6555 50  0000 L CNN
+F 2 "" H 2000 6600 50  0001 C CNN
+F 3 "~" H 2000 6600 50  0001 C CNN
+	1    2000 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 6150 1700 6150
+Wire Wire Line
+	1700 6150 1700 6500
+Wire Wire Line
+	1700 6700 1700 6850
+Wire Wire Line
+	1700 6850 2000 6850
+Wire Wire Line
+	2150 6250 2000 6250
+Wire Wire Line
+	2000 6250 2000 6500
+Wire Wire Line
+	2000 6700 2000 6850
+Connection ~ 2000 6850
+Wire Wire Line
+	2000 6850 2750 6850
+Wire Wire Line
+	2850 6850 2950 6850
+Wire Wire Line
+	3750 6850 3750 6150
+Wire Wire Line
+	3750 5750 3550 5750
+Connection ~ 2850 6850
+Wire Wire Line
+	3550 5850 3750 5850
+Connection ~ 3750 5850
+Wire Wire Line
+	3750 5850 3750 5750
+Wire Wire Line
+	3550 5950 3750 5950
+Connection ~ 3750 5950
+Wire Wire Line
+	3750 5950 3750 5850
+Wire Wire Line
+	3550 6050 3750 6050
+Connection ~ 3750 6050
+Wire Wire Line
+	3750 6050 3750 5950
+Wire Wire Line
+	3550 6150 3750 6150
+Connection ~ 3750 6150
+Wire Wire Line
+	3750 6150 3750 6050
+Wire Wire Line
+	2950 6850 2950 6450
+Connection ~ 2950 6850
+Wire Wire Line
+	2950 6850 3750 6850
+Wire Wire Line
+	2750 6850 2750 6450
+Connection ~ 2750 6850
+Wire Wire Line
+	2750 6850 2850 6850
+Wire Wire Line
+	2850 6850 2850 7000
+NoConn ~ 3550 5450
+NoConn ~ 3550 5550
+NoConn ~ 2150 5850
+NoConn ~ 2150 5950
 $EndSCHEMATC
