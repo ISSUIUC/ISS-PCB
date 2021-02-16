@@ -172,3 +172,7 @@
 	FCB - Ayberk
 	- Switched all global labels in MCU schematics to hierarchical labels. This practice should be followed throughout the project.
 	- Added labels for _all_ GPIO pins to make connecting things easier in the future.
+	- Added ABS07-32.768KHZ-T crystal oscillator for the OSC1 input which is used for RTC. The OSC0 clock is supplied internally.
+	- Added a test point for OSC0_CTL (high when enabled)
+	- Imported CTI 20 pin JTAG header which uses the FTR-110-03-G-D-06 connector and a pin mapping specific to TI debuggers.
+	- Added 3D .step files for the OSD3358, the MIMXRT1062s and the JTAG connector. very nice.
