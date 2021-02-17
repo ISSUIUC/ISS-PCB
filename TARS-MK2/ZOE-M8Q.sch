@@ -1,0 +1,275 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 3750 1050 0    50   Input ~ 0
+3V3_MCU_SUPPLY
+Text GLabel 2950 1750 0    50   Input ~ 0
+MCU_SPID_SCK
+Text GLabel 2950 1950 0    50   Input ~ 0
+MCU_SPI0_CS34
+Text GLabel 2950 2150 0    50   Input ~ 0
+MCU_SPI0_MISO
+Text GLabel 2950 2350 0    50   Input ~ 0
+MCU_SPI0_MOSI
+Text GLabel 2800 2950 0    50   Output ~ 0
+GPS_EXTINT
+$Comp
+L D24V50F5:Jumper_NC_Small JP?
+U 1 1 60368771
+P 4000 1050
+F 0 "JP?" H 4050 1300 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 4100 1150 50  0000 C CNN
+F 2 "" H 4000 1050 50  0001 C CNN
+F 3 "~" H 4000 1050 50  0001 C CNN
+	1    4000 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 1050 3900 1050
+Wire Wire Line
+	4100 1050 4500 1050
+Wire Wire Line
+	4500 1050 4500 1250
+Wire Wire Line
+	4500 1050 4800 1050
+Wire Wire Line
+	4800 1050 4800 1250
+Connection ~ 4500 1050
+Wire Wire Line
+	4800 1050 5100 1050
+Wire Wire Line
+	5100 1050 5100 1250
+Connection ~ 4800 1050
+Wire Wire Line
+	5100 1050 5400 1050
+Wire Wire Line
+	5400 1050 5400 1250
+Connection ~ 5100 1050
+Wire Wire Line
+	2900 1950 3300 1950
+Wire Wire Line
+	3300 2150 2950 2150
+Wire Wire Line
+	2950 2350 3300 2350
+Wire Wire Line
+	2800 2950 3300 2950
+$Comp
+L ZOE-M8Q:ZOE-M8Q U?
+U 1 1 60365269
+P 6300 4950
+F 0 "U?" H 5450 9150 50  0000 C CNN
+F 1 "ZOE-M8Q" H 5500 9000 50  0000 C CNN
+F 2 "ZOE-M8" H 6300 4950 50  0001 L BNN
+F 3 "" H 6300 4950 50  0001 C CNN
+	1    6300 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 1750 3300 1750
+Wire Wire Line
+	5900 1250 5900 900 
+Wire Wire Line
+	5900 900  7600 900 
+Wire Wire Line
+	7600 900  7600 4850
+Wire Wire Line
+	7600 4850 7400 4850
+Wire Wire Line
+	3300 2550 3050 2550
+Wire Wire Line
+	3050 2550 3050 6300
+Wire Wire Line
+	3050 6300 3700 6300
+Wire Wire Line
+	3700 6300 3700 6150
+Wire Wire Line
+	3700 6300 3900 6300
+Wire Wire Line
+	3900 6300 3900 6150
+Connection ~ 3700 6300
+Wire Wire Line
+	3900 6300 4100 6300
+Connection ~ 3900 6300
+Wire Wire Line
+	4100 6150 4100 6300
+Wire Wire Line
+	4100 6300 4300 6300
+Wire Wire Line
+	4300 6300 4300 6150
+Connection ~ 4100 6300
+Wire Wire Line
+	4300 6300 4500 6300
+Wire Wire Line
+	4500 6300 4500 6150
+Connection ~ 4300 6300
+Wire Wire Line
+	4500 6300 4700 6300
+Wire Wire Line
+	4700 6300 4700 6150
+Connection ~ 4500 6300
+Wire Wire Line
+	4700 6300 4900 6300
+Wire Wire Line
+	4900 6300 4900 6150
+Connection ~ 4700 6300
+Wire Wire Line
+	4900 6300 5100 6300
+Wire Wire Line
+	5100 6300 5100 6150
+Connection ~ 4900 6300
+Wire Wire Line
+	5100 6300 5300 6300
+Wire Wire Line
+	5300 6300 5300 6150
+Connection ~ 5100 6300
+Wire Wire Line
+	5500 6300 5500 6150
+Connection ~ 5300 6300
+Wire Wire Line
+	5500 6300 5700 6300
+Wire Wire Line
+	5700 6300 5700 6150
+Connection ~ 5500 6300
+Wire Wire Line
+	5700 6300 5900 6300
+Wire Wire Line
+	5900 6300 5900 6150
+Connection ~ 5700 6300
+Wire Wire Line
+	5900 6300 6100 6300
+Wire Wire Line
+	6100 6300 6100 6150
+Connection ~ 5900 6300
+Wire Wire Line
+	6100 6300 6300 6300
+Wire Wire Line
+	6300 6300 6300 6150
+Connection ~ 6100 6300
+Wire Wire Line
+	6300 6300 6500 6300
+Wire Wire Line
+	6500 6300 6500 6150
+Connection ~ 6300 6300
+Wire Wire Line
+	6500 6300 6700 6300
+Wire Wire Line
+	6700 6300 6700 6150
+Connection ~ 6500 6300
+Wire Wire Line
+	6700 6300 6900 6300
+Wire Wire Line
+	6900 6300 6900 6150
+Connection ~ 6700 6300
+Wire Wire Line
+	6900 6300 7100 6300
+Wire Wire Line
+	7100 6300 7100 6150
+Connection ~ 6900 6300
+$Comp
+L power:GND #PWR?
+U 1 1 6037DC4E
+P 5350 6900
+F 0 "#PWR?" H 5350 6650 50  0001 C CNN
+F 1 "GND" H 5355 6727 50  0000 C CNN
+F 2 "" H 5350 6900 50  0001 C CNN
+F 3 "" H 5350 6900 50  0001 C CNN
+	1    5350 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 6300 5350 6300
+Connection ~ 5350 6300
+Wire Wire Line
+	5350 6300 5500 6300
+Wire Wire Line
+	5350 6300 5350 6900
+NoConn ~ 7400 1950
+NoConn ~ 7400 2850
+NoConn ~ 7400 3150
+NoConn ~ 7400 3650
+NoConn ~ 7400 3850
+NoConn ~ 7400 4050
+NoConn ~ 7400 4250
+NoConn ~ 7400 4450
+NoConn ~ 7400 4650
+NoConn ~ 7400 5050
+NoConn ~ 7400 5250
+NoConn ~ 3300 5450
+NoConn ~ 3300 5050
+NoConn ~ 3300 4550
+NoConn ~ 3300 4350
+NoConn ~ 3300 4150
+NoConn ~ 3300 3950
+NoConn ~ 3300 3750
+NoConn ~ 3300 3550
+NoConn ~ 3300 3150
+$Comp
+L SMACONNECTOR:SMACONNECTOR X?
+U 1 1 60397286
+P 8250 1750
+F 0 "X?" H 8480 1796 50  0000 L CNN
+F 1 "SMACONNECTOR" H 8480 1705 50  0000 L CNN
+F 2 "" H 8250 1750 50  0001 C CNN
+F 3 "" H 8250 1750 50  0001 C CNN
+	1    8250 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 1750 7950 1750
+Wire Wire Line
+	8150 1450 8150 1000
+Wire Wire Line
+	8150 1000 8250 1000
+Wire Wire Line
+	8350 1000 8350 1450
+Wire Wire Line
+	8150 2050 8150 2450
+Wire Wire Line
+	8150 2450 8250 2450
+Wire Wire Line
+	8350 2450 8350 2050
+$Comp
+L power:GND #PWR?
+U 1 1 6039C1A9
+P 8250 850
+F 0 "#PWR?" H 8250 600 50  0001 C CNN
+F 1 "GND" H 8255 677 50  0000 C CNN
+F 2 "" H 8250 850 50  0001 C CNN
+F 3 "" H 8250 850 50  0001 C CNN
+	1    8250 850 
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6039C6A5
+P 8250 2650
+F 0 "#PWR?" H 8250 2400 50  0001 C CNN
+F 1 "GND" H 8255 2477 50  0000 C CNN
+F 2 "" H 8250 2650 50  0001 C CNN
+F 3 "" H 8250 2650 50  0001 C CNN
+	1    8250 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 1000 8250 850 
+Connection ~ 8250 1000
+Wire Wire Line
+	8250 1000 8350 1000
+Wire Wire Line
+	8250 2450 8250 2650
+Connection ~ 8250 2450
+Wire Wire Line
+	8250 2450 8350 2450
+$EndSCHEMATC

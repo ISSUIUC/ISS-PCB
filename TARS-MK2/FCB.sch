@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title "TARS - MK2 Flight Computation Board"
 Date ""
 Rev ""
@@ -579,4 +579,10 @@ Wire Notes Line
 	11350 6800 11350 4750
 Wire Notes Line
 	11350 4750 9200 4750
+$Sheet
+S 14650 6450 500  150 
+U 60364AED
+F0 "ZOE-M8Q" 50
+F1 "ZOE-M8Q.sch" 50
+$EndSheet
 $EndSCHEMATC
