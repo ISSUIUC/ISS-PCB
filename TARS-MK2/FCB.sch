@@ -586,10 +586,10 @@ F0 "ZOE-M8Q" 50
 F1 "ZOE-M8Q.sch" 50
 $EndSheet
 $Comp
-L Sensor_Motion:BNO055 U?
+L Sensor_Motion:BNO055 U104
 U 1 1 603695D0
 P 12550 2600
-F 0 "U?" H 12550 3481 50  0000 C CNN
+F 0 "U104" H 12550 3481 50  0000 C CNN
 F 1 "BNO055" H 12550 3390 50  0000 C CNN
 F 2 "Package_LGA:LGA-28_5.2x3.8mm_P0.5mm" H 12800 1950 50  0001 L CNN
 F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST_BNO055_DS000_14.pdf" H 12550 2800 50  0001 C CNN

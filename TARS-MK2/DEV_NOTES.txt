@@ -176,14 +176,17 @@
 	- Added a test point for OSC0_CTL (high when enabled)
 	- Imported CTI 20 pin JTAG header which uses the FTR-110-03-G-D-06 connector and a pin mapping specific to TI debuggers.
 	- Added 3D .step files for the OSD3358, the MIMXRT1062s and the JTAG connector. very nice.
+
 [02/16/2021]
 	FCB - Henry
 	- Copied LSM9DS1 from MK-1 to FCB on MK-2
 	- NOTE: Labels for capacitors and sensor need to be checked--I didn't name them.
+
 [02/16/2021]
 	FCB - Henry
 	- Copied KX122-1040(which is actually 1711) and MS5611 sensors from MK-1 to MK-2
 	- NOTE: Labels for capacitors, jumpers, and sensors need to be added.
+
 [02/17/2021]
 	FCB - Vincent 
 	- Copied ZOE-M8Q schematic from TARS MK1 to MK2 
@@ -197,8 +200,23 @@
 	FCB - Justin 
 	- Added the BNO055 IMU to the FCB
 
-[02/18/2021/
+[02/18/2021]
 	FCB - Justin and Vincent
 	- We met to discuss how to integrate the BNO055 IMU
 	- Vincent downloaded the file from the SnapEDA and tried to extract it on KICAD but it wouldn't load
 	- We will finish this during Saturday's meeting
+
+[02/20/2021]
+	FCB - Ayberk
+	- Spent a while understanding the hardware of the ZOE-M8Q GPS module.
+	- Added a bunch of solder-jumpers that will allow us to select SPI vs UART+I2C communication.
+	- Added a backup battery (no footprint yet)
+	- Added test points for using with an external programmer if needed. (make these simple pin headers?)
+	- Took the antenna bias tee design from Sparkfun's breakout board. 
+		- Found this reddit thread asking about the bias tee. Using bias tees with passive antennas is big bad.
+		  https://www.reddit.com/r/AskElectronics/comments/lfiivy/help_with_gps_chip_antenna/
+		- SF schematics does not show ferrite bead impedance so I took the 120 Ohm value from the design in the reddit thread.
+	- Also added an LED to the TIMEPULSE pin which will blink at 1Hz presumably when there is a GPS lock. might be pretty
+	- Added RTC crystal with 3.2mmX1.5mm footprint
+	- +input decoupling cap
+	
