@@ -596,4 +596,15 @@ F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST_BNO055_D
 	1    12550 2600
 	1    0    0    -1  
 $EndComp
+$Comp
+L RF_GPS:ublox_SAM-M8Q U105
+U 1 1 60317BCD
+P 13100 7550
+F 0 "U105" H 13100 6961 50  0000 C CNN
+F 1 "ublox_SAM-M8Q" H 13100 6870 50  0000 C CNN
+F 2 "SAM-M8Q:ublox_SAM-M8Q" H 13600 7100 50  0001 C CNN
+F 3 "https://www.u-blox.com/sites/default/files/SAM-M8Q_DataSheet_%28UBX-16012619%29.pdf" H 13100 7550 50  0001 C CNN
+	1    13100 7550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -618,17 +618,6 @@ F 3 "~" H 9250 2900 50  0001 C CNN
 	1    9250 2900
 	1    0    0    -1  
 $EndComp
-$Comp
-L D24V50F5:L_Core_Ferrite_Small FB3
-U 1 1 606ED5F8
-P 9550 2250
-F 0 "FB3" H 9618 2296 50  0000 L CNN
-F 1 "120" H 9618 2205 50  0000 L CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" H 9618 2159 50  0001 L CNN
-F 3 "~" H 9550 2250 50  0001 C CNN
-	1    9550 2250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9550 2350 9550 2700
 Wire Wire Line
@@ -746,4 +735,15 @@ F 3 "~" H 1150 2100 50  0001 C CNN
 $EndComp
 Text Notes 9600 2400 0    20   Italic 0
 0603 120Ohm\nFerrite Bead
+$Comp
+L D24V50F5:L_Core_Ferrite_Small FB3
+U 1 1 606ED5F8
+P 9550 2250
+F 0 "FB3" H 9618 2296 50  0000 L CNN
+F 1 "120" H 9618 2205 50  0000 L CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 9618 2159 50  0001 L CNN
+F 3 "~" H 9550 2250 50  0001 C CNN
+	1    9550 2250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
