@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 5
+Sheet 5 9
 Title ""
 Date ""
 Rev ""
@@ -653,6 +653,7 @@ P 7650 6750
 AR Path="/60746E7B" Ref="#G?"  Part="1" 
 AR Path="/60021DA2/60746E7B" Ref="#G?"  Part="1" 
 AR Path="/60364AED/60746E7B" Ref="#G501"  Part="1" 
+AR Path="/60021DA2/60364AED/60746E7B" Ref="#G501"  Part="1" 
 F 0 "#G501" H 7650 6627 60  0001 C CNN
 F 1 "LOGO" H 7650 6873 60  0001 C CNN
 F 2 "" H 7650 6750 50  0001 C CNN

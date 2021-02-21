@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 5
+Sheet 3 9
 Title "TARS - MK2 Flight Computation Board"
 Date ""
 Rev ""
@@ -39,7 +39,7 @@ U 1 1 600294C2
 P 12500 10200
 AR Path="/600294C2" Ref="#G1"  Part="1" 
 AR Path="/60021DA2/600294C2" Ref="#G3"  Part="1" 
-F 0 "#G1" H 12500 10077 60  0001 C CNN
+F 0 "#G3" H 12500 10077 60  0001 C CNN
 F 1 "LOGO" H 12500 10323 60  0001 C CNN
 F 2 "" H 12500 10200 50  0001 C CNN
 F 3 "" H 12500 10200 50  0001 C CNN
