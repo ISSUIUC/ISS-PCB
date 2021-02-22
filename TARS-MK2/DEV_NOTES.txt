@@ -243,3 +243,19 @@
 		- Micro-USB connectors
 		- USB-A connector
 	- A few small components may still be missing footprints; Rohini and I will fix those on Wednesday 2/24 morning
+
+[02/22/2021]
+	FCB - Ayberk
+	- Added MicroUSB connector for MCU_AC along with a few power components.
+	- Fixed line alignments for the 6pos molex connectors imported earlier today (cosmetic)
+	- Added a 3D .stp file for the 6pos 1.25mm MLPlus connectors
+	- Added the 1.25mm signam MLPlus connectors to the FCB schematic and placed them on to the board layout where it made sense
+	- NOTICE: The MicroUSB for the MPU is duplicated. Seems like another one was accidentally placed instead of connecting a label.
+	- TODO: MCU Crystal oscillator circuity
+		Assigning hierarchical pins to match most of MK1 connections
+		Status LEDs
+		Buzzer?
+		RFM95!!!
+		Maybe add MPU9250 instead of BNO055
+		MCU test points are probably a good idea
+		W25Q64 Flash IC doesn't have a footprint!!!
