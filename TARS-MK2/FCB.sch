@@ -653,10 +653,10 @@ F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/1e/3f/2
 	1    0    0    -1  
 $EndComp
 $Comp
-L Sensor_Motion:MPU-9250 U?
+L Sensor_Motion:MPU-9250 U104
 U 1 1 604AA87B
 P 15100 3850
-F 0 "U?" H 15100 2861 50  0000 C CNN
+F 0 "U104" H 15100 2861 50  0000 C CNN
 F 1 "MPU-9250" H 15100 2770 50  0000 C CNN
 F 2 "Sensor_Motion:InvenSense_QFN-24_3x3mm_P0.4mm" H 15100 2850 50  0001 C CNN
 F 3 "https://store.invensense.com/datasheets/invensense/MPU9250REV1.0.pdf" H 15100 3700 50  0001 C CNN
