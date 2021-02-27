@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 3 5
+Sheet 5 5
 Title "TARS - MK2 Active Control Microcontroller Schematic"
 Date ""
 Rev ""
@@ -2213,4 +2213,10 @@ Wire Wire Line
 	17400 11850 17650 11850
 Wire Wire Line
 	17400 10150 18000 10150
+Text HLabel 16050 7450 0    50   Input ~ 0
+AD_B0_12
+Text HLabel 16550 7450 2    50   Input ~ 0
+T41_24
+Wire Wire Line
+	16550 7450 16050 7450
 $EndSCHEMATC

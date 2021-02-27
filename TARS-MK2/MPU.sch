@@ -2629,4 +2629,14 @@ F 3 "" H 3500 2950 50  0001 C CNN
 	1    3500 2950
 	0    -1   -1   0   
 $EndComp
+Text Notes 15250 11650 0    50   ~ 10
+^ Double check these footprints!
+Wire Notes Line
+	16500 11550 15250 11550
+Wire Notes Line
+	15250 11550 15250 11650
+Wire Notes Line
+	15250 11650 16500 11650
+Wire Notes Line
+	16500 11650 16500 11550
 $EndSCHEMATC

@@ -20,12 +20,6 @@ F0 "MPU" 50
 F1 "MPU.sch" 50
 $EndSheet
 $Sheet
-S 4800 1500 2000 2000
-U 60021F5A
-F0 "MCU_AC" 50
-F1 "MCU_AC.sch" 50
-$EndSheet
-$Sheet
 S 7800 1500 2000 2000
 U 60021F93
 F0 "MCU_HYBRID" 50
@@ -655,12 +649,12 @@ $EndComp
 $Comp
 L Sensor_Motion:MPU-9250 U104
 U 1 1 604AA87B
-P 15100 3850
-F 0 "U104" H 15100 2861 50  0000 C CNN
-F 1 "MPU-9250" H 15100 2770 50  0000 C CNN
-F 2 "Sensor_Motion:InvenSense_QFN-24_3x3mm_P0.4mm" H 15100 2850 50  0001 C CNN
-F 3 "https://store.invensense.com/datasheets/invensense/MPU9250REV1.0.pdf" H 15100 3700 50  0001 C CNN
-	1    15100 3850
+P 12500 2400
+F 0 "U104" H 12500 1411 50  0000 C CNN
+F 1 "MPU-9250" H 12500 1320 50  0000 C CNN
+F 2 "Sensor_Motion:InvenSense_QFN-24_3x3mm_P0.4mm" H 12500 1400 50  0001 C CNN
+F 3 "https://store.invensense.com/datasheets/invensense/MPU9250REV1.0.pdf" H 12500 2250 50  0001 C CNN
+	1    12500 2400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -685,4 +679,24 @@ F 3 "" H 8700 8050 50  0001 C CNN
 	1    8700 8050
 	0    -1   1    0   
 $EndComp
+$Comp
+L Sensor_Motion:BMI160 U?
+U 1 1 603D464F
+P 14200 2450
+F 0 "U?" H 14150 3031 50  0000 C CNN
+F 1 "BMI160" H 14150 2940 50  0000 C CNN
+F 2 "Package_LGA:Bosch_LGA-14_3x2.5mm_P0.5mm" H 14200 2450 50  0001 C CNN
+F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMI160-DS000.pdf" H 13500 3300 50  0001 C CNN
+	1    14200 2450
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 4800 1500 2000 2000
+U 60021F5A
+F0 "MCU_AC" 50
+F1 "MCU_AC.sch" 50
+F2 "T41_24" O R 6800 2200 50 
+$EndSheet
+Text Notes 12700 8400 0    50   ~ 10
+^ ONLY SUPPORTS I2C
 $EndSCHEMATC
