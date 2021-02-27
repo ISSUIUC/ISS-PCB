@@ -663,4 +663,26 @@ F 3 "https://store.invensense.com/datasheets/invensense/MPU9250REV1.0.pdf" H 151
 	1    15100 3850
 	1    0    0    -1  
 $EndComp
+$Comp
+L Molex_MLplus_6pos2.00mm:505578-0671 J105
+U 1 1 603AD439
+P 7100 8050
+F 0 "J105" V 6775 7950 50  0000 C CNN
+F 1 "505578-0671" V 6866 7950 50  0000 C CNN
+F 2 "Molex 6 Circuit 2:505578-0671" H 7750 7950 50  0001 C CNN
+F 3 "" H 7100 8050 50  0001 C CNN
+	1    7100 8050
+	0    1    1    0   
+$EndComp
+$Comp
+L Molex_MLplus_6pos2.00mm:505578-0671 J106
+U 1 1 603AEA79
+P 8700 8050
+F 0 "J106" V 8375 7950 50  0000 C CNN
+F 1 "505578-0671" V 8466 7950 50  0000 C CNN
+F 2 "Molex 6 Circuit 2:505578-0671" H 9350 7950 50  0001 C CNN
+F 3 "" H 8700 8050 50  0001 C CNN
+	1    8700 8050
+	0    -1   1    0   
+$EndComp
 $EndSCHEMATC
