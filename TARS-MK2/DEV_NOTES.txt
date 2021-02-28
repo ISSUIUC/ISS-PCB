@@ -173,6 +173,95 @@
 	- Performed a project-wide merge across all branches to keep things semi synced.
 	- Copied the board outline for the FCB with the ground ring to all the other boards. Looks pretty neat
 
+[02/15/2021]
+	FCB - Ayberk
+	- Switched all global labels in MCU schematics to hierarchical labels. This practice should be followed throughout the project.
+	- Added labels for _all_ GPIO pins to make connecting things easier in the future.
+	- Added ABS07-32.768KHZ-T crystal oscillator for the OSC1 input which is used for RTC. The OSC0 clock is supplied internally.
+	- Added a test point for OSC0_CTL (high when enabled)
+	- Imported CTI 20 pin JTAG header which uses the FTR-110-03-G-D-06 connector and a pin mapping specific to TI debuggers.
+	- Added 3D .step files for the OSD3358, the MIMXRT1062s and the JTAG connector. very nice.
+
+[02/16/2021]
+	FCB - Henry
+	- Copied LSM9DS1 from MK-1 to FCB on MK-2
+	- NOTE: Labels for capacitors and sensor need to be checked--I didn't name them.
+	- Copied KX122-1040(which is actually 1711) and MS5611 sensors from MK-1 to MK-2
+	- NOTE: Labels for capacitors, jumpers, and sensors need to be added.
+
+[02/17/2021]
+	FCB - Vincent
+	- Copied ZOE-M8Q schematic from TARS MK1 to MK2
+
+	FCB - Ayberk
+	- Imported a 3D step file for the ZOE-M8Q
+	- The paths for the footprint libraries Vincent imported earlier didn't show up. Had to re-add them.
+	- Assigned footprints to a bunch (but not all) passives.
+
+
+	FCB - Justin
+	- Added the BNO055 IMU to the FCB
+
+[02/18/2021]
+	FCB - Justin and Vincent
+	- We met to discuss how to integrate the BNO055 IMU
+	- Vincent downloaded the file from the SnapEDA and tried to extract it on KICAD but it wouldn't load
+	- We will finish this during Saturday's meeting
+
+[02/20/2021]
+	FCB - Ayberk
+	- Spent a while understanding the hardware of the ZOE-M8Q GPS module.
+	- Added a bunch of solder-jumpers that will allow us to select SPI vs UART+I2C communication.
+	- Added a backup battery (no footprint yet)
+	- Added test points for using with an external programmer if needed. (make these simple pin headers?)
+	- Took the antenna bias tee design from Sparkfun's breakout board.
+		- Found this reddit thread asking about the bias tee. Using bias tees with passive antennas is big bad.
+		  https://www.reddit.com/r/AskElectronics/comments/lfiivy/help_with_gps_chip_antenna/
+		- SF schematics does not show ferrite bead impedance so I took the 120 Ohm value from the design in the reddit thread.
+	- Also added an LED to the TIMEPULSE pin which will blink at 1Hz presumably when there is a GPS lock. might be pretty
+	- Added RTC crystal with 3.2mmX1.5mm footprint
+	- +input decoupling cap
+
+	FCB - Justin
+	- Deleted the old layout of the FCB
+	- Placed some major components onto the FCB
+	- (Just put the general locations, not fixed)
+
+[02/21/2021]
+	FCB - Ayberk
+	- Added libraries for 1.14" 135x140 IPS TFT Display from Adafruit
+		Adafruit doesn't sell the standalone panel but it can be found here:
+		https://www.displaymodule.com/products/1-14-135x240-ips-tft-display-module-spi?variant=31355292647522
+	- Made a oval cutout for the display's ribbon cable.
+
+	FCB - Ayberk and Henry
+	- Added Footprint and Symbol for 1.25mm Molex connector
+	- Modified Footprint from an 8 connector 1.25mm Molex connecter of the same type found online.
+
+	FCB - Maya, Rohini
+	- Added footprints to components in MPU sheet:
+		- TPD4S012DRYR
+		- TPS2051BDR
+		- Micro-USB connectors
+		- USB-A connector
+	- A few small components may still be missing footprints; Rohini and I will fix those on Wednesday 2/24 morning
+
+[02/22/2021]
+	FCB - Ayberk
+	- Added MicroUSB connector for MCU_AC along with a few power components.
+	- Fixed line alignments for the 6pos molex connectors imported earlier today (cosmetic)
+	- Added a 3D .stp file for the 6pos 1.25mm MLPlus connectors
+	- Added the 1.25mm signam MLPlus connectors to the FCB schematic and placed them on to the board layout where it made sense
+	- NOTICE: The MicroUSB for the MPU is duplicated. Seems like another one was accidentally placed instead of connecting a label.
+	- TODO: MCU Crystal oscillator circuity
+		Assigning hierarchical pins to match most of MK1 connections
+		Status LEDs
+		Buzzer?
+		RFM95!!!
+		Maybe add MPU9250 instead of BNO055
+		MCU test points are probably a good idea
+		W25Q64 Flash IC doesn't have a footprint!!!
+
 [2/24/2021]
 	COTS - Justin
 	- Deleted the old traces on the COTS board
@@ -180,11 +269,19 @@
 	- Added some new traces with the new wire width
 	- Switched the order of connections to avoid overlap
 
+	FCB - Maya, Rohini
+	- Added footprints to a few small components (Ferrite beads)
+
 [2/25/2021]
 	COTS - Justin and Ben
 	-Finished adding traces on COTS board
 	-Via size is too small? (Under stratologger)
 	-We may come back to make it look better (A E S T H E T I C)
+
+[02/26/2021]
+	FCB - Henry! :)
+	- Copied and modified footprint and symbol of 2 circuit 2mm Molex connector to make a 6 circuit 2mm Molex connector.
+	- Created folders for Molex_Connector folder footprints and symbols, made new pathways for footprints.
 
 [2/27/2021]
 	COTS - Ben
