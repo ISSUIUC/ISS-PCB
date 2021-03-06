@@ -690,6 +690,8 @@ F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMI160-D
 	1    14200 2450
 	1    0    0    -1  
 $EndComp
+Text Notes 12700 8400 0    50   ~ 10
+^ ONLY SUPPORTS I2C
 $Sheet
 S 4800 1500 2000 2000
 U 60021F5A
@@ -697,6 +699,4 @@ F0 "MCU_AC" 50
 F1 "MCU_AC.sch" 50
 F2 "T41_24" O R 6800 2200 50 
 $EndSheet
-Text Notes 12700 8400 0    50   ~ 10
-^ ONLY SUPPORTS I2C
 $EndSCHEMATC

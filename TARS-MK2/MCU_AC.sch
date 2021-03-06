@@ -900,19 +900,6 @@ Wire Wire Line
 	7000 6000 7450 6000
 Wire Wire Line
 	7200 3200 7800 3200
-Wire Wire Line
-	17750 4400 17950 4400
-$Comp
-L MIMXRT1062:MIMXRT1xxxxVJ U301
-U 3 1 60058DFE
-P 17100 4700
-F 0 "U301" H 17208 6565 50  0000 C CNN
-F 1 "MIMXRT1xxxxVJ" H 17208 6474 50  0000 C CNN
-F 2 "MIMXRT1062:BGA-196_14x14_12.0x12.0mm" H 17100 1250 50  0001 C CNN
-F 3 "" H 17100 2650 50  0001 C CNN
-	3    17100 4700
-	1    0    0    -1  
-$EndComp
 $Comp
 L MIMXRT1062:MIMXRT1xxxxVJ U301
 U 2 1 60055BD0
@@ -1599,128 +1586,64 @@ Wire Wire Line
 	20100 4900 20350 4900
 Text HLabel 20350 4900 2    50   Input ~ 0
 EMC_23
-Wire Wire Line
-	17750 4500 17950 4500
 Text HLabel 17950 4500 2    50   Input ~ 0
 B0_14
-Wire Wire Line
-	17750 4600 17950 4600
 Text HLabel 17950 4600 2    50   Input ~ 0
 B0_15
-Wire Wire Line
-	17750 3100 17950 3100
-Text HLabel 17950 3100 2    50   Input ~ 0
-B0_00
-Wire Wire Line
-	17750 3200 17950 3200
 Text HLabel 17950 3200 2    50   Input ~ 0
 B0_01
-Wire Wire Line
-	17750 3300 17950 3300
 Text HLabel 17950 3300 2    50   Input ~ 0
 B0_02
-Wire Wire Line
-	17750 3400 17950 3400
 Text HLabel 17950 3400 2    50   Input ~ 0
 B0_03
-Wire Wire Line
-	17750 3500 17950 3500
 Text HLabel 17950 3500 2    50   Input ~ 0
 B0_04
-Wire Wire Line
-	17750 3600 17950 3600
 Text HLabel 17950 3600 2    50   Input ~ 0
 B0_05
-Wire Wire Line
-	17750 3700 17950 3700
 Text HLabel 17950 3700 2    50   Input ~ 0
 B0_06
-Wire Wire Line
-	17750 3800 17950 3800
 Text HLabel 17950 3800 2    50   Input ~ 0
 B0_07
-Wire Wire Line
-	17750 3900 17950 3900
 Text HLabel 17950 3900 2    50   Input ~ 0
 B0_08
-Wire Wire Line
-	17750 4000 17950 4000
 Text HLabel 17950 4000 2    50   Input ~ 0
 B0_09
-Wire Wire Line
-	17750 4100 17950 4100
 Text HLabel 17950 4100 2    50   Input ~ 0
 B0_10
-Wire Wire Line
-	17750 4200 17950 4200
 Text HLabel 17950 4200 2    50   Input ~ 0
 B0_11
-Wire Wire Line
-	17750 4800 17950 4800
 Text HLabel 17950 4800 2    50   Input ~ 0
 B1_00
-Wire Wire Line
-	17750 4900 17950 4900
 Text HLabel 17950 4900 2    50   Input ~ 0
 B1_01
-Wire Wire Line
-	17750 5000 17950 5000
 Text HLabel 17950 5000 2    50   Input ~ 0
 B1_02
-Wire Wire Line
-	17750 5100 17950 5100
 Text HLabel 17950 5100 2    50   Input ~ 0
 B1_03
-Wire Wire Line
-	17750 5200 17950 5200
 Text HLabel 17950 5200 2    50   Input ~ 0
 B1_04
-Wire Wire Line
-	17750 5300 17950 5300
 Text HLabel 17950 5300 2    50   Input ~ 0
 B1_05
-Wire Wire Line
-	17750 5400 17950 5400
 Text HLabel 17950 5400 2    50   Input ~ 0
 B1_06
-Wire Wire Line
-	17750 5500 17950 5500
 Text HLabel 17950 5500 2    50   Input ~ 0
 B1_07
-Wire Wire Line
-	17750 5600 17950 5600
 Text HLabel 17950 5600 2    50   Input ~ 0
 B1_08
-Wire Wire Line
-	17750 5700 17950 5700
 Text HLabel 17950 5700 2    50   Input ~ 0
 B1_09
-Wire Wire Line
-	17750 5800 17950 5800
 Text HLabel 17950 5800 2    50   Input ~ 0
 B1_10
-Wire Wire Line
-	17750 5900 17950 5900
 Text HLabel 17950 5900 2    50   Input ~ 0
 B1_11
-Wire Wire Line
-	17750 6000 17950 6000
 Text HLabel 17950 6000 2    50   Input ~ 0
 B1_12
-Wire Wire Line
-	17750 6100 17950 6100
 Text HLabel 17950 6100 2    50   Input ~ 0
 B1_13
-Wire Wire Line
-	17750 6200 17950 6200
 Text HLabel 17950 6200 2    50   Input ~ 0
 B1_14
-Wire Wire Line
-	17750 6300 17950 6300
 Text HLabel 17950 6300 2    50   Input ~ 0
 B1_15
-Wire Wire Line
-	17750 4300 17950 4300
 Text HLabel 17950 4300 2    50   Input ~ 0
 B0_12
 Wire Wire Line
@@ -2219,4 +2142,81 @@ Text HLabel 16550 7450 2    50   Input ~ 0
 T41_24
 Wire Wire Line
 	16550 7450 16050 7450
+Wire Wire Line
+	17750 6300 17950 6300
+Wire Wire Line
+	17750 6200 17950 6200
+Wire Wire Line
+	17750 6100 17950 6100
+Wire Wire Line
+	17750 6000 17950 6000
+Wire Wire Line
+	17750 5900 17950 5900
+Wire Wire Line
+	17750 5800 17950 5800
+Wire Wire Line
+	17750 5700 17950 5700
+Wire Wire Line
+	17750 5600 17950 5600
+Wire Wire Line
+	17750 5500 17950 5500
+Wire Wire Line
+	17750 5400 17950 5400
+Wire Wire Line
+	17750 5300 17950 5300
+Wire Wire Line
+	17750 5200 17950 5200
+Wire Wire Line
+	17750 5100 17950 5100
+Wire Wire Line
+	17750 5000 17950 5000
+Wire Wire Line
+	17750 4900 17950 4900
+Wire Wire Line
+	17750 4800 17950 4800
+Wire Wire Line
+	17750 4600 17950 4600
+Wire Wire Line
+	17750 4500 17950 4500
+Wire Wire Line
+	17750 4400 17950 4400
+Wire Wire Line
+	17750 4300 17950 4300
+Wire Wire Line
+	17750 4200 17950 4200
+Wire Wire Line
+	17750 4100 17950 4100
+Wire Wire Line
+	17750 4000 17950 4000
+Wire Wire Line
+	17750 3900 17950 3900
+Wire Wire Line
+	17750 3800 17950 3800
+Wire Wire Line
+	17750 3700 17950 3700
+Wire Wire Line
+	17750 3600 17950 3600
+Wire Wire Line
+	17750 3500 17950 3500
+Wire Wire Line
+	17750 3400 17950 3400
+Wire Wire Line
+	17750 3300 17950 3300
+Wire Wire Line
+	17750 3200 17950 3200
+Text HLabel 17950 3100 2    50   Input ~ 0
+B0_00
+Wire Wire Line
+	17750 3100 17950 3100
+$Comp
+L MIMXRT1062:MIMXRT1xxxxVJ U301
+U 3 1 60058DFE
+P 17100 4700
+F 0 "U301" H 17208 6565 50  0000 C CNN
+F 1 "MIMXRT1xxxxVJ" H 17208 6474 50  0000 C CNN
+F 2 "MIMXRT1062:BGA-196_14x14_12.0x12.0mm" H 17100 1250 50  0001 C CNN
+F 3 "" H 17100 2650 50  0001 C CNN
+	3    17100 4700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
