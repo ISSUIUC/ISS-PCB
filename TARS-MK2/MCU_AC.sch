@@ -43,12 +43,12 @@ $EndComp
 $Comp
 L MIMXRT1062:MIMXRT1xxxxVJ U301
 U 4 1 6005B484
-P 19450 4800
-F 0 "U301" H 19558 7265 50  0000 C CNN
-F 1 "MIMXRT1xxxxVJ" H 19558 7174 50  0000 C CNN
-F 2 "MIMXRT1062:BGA-196_14x14_12.0x12.0mm" H 19450 1350 50  0001 C CNN
-F 3 "" H 19450 2750 50  0001 C CNN
-	4    19450 4800
+P 19650 3150
+F 0 "U301" H 19758 5615 50  0000 C CNN
+F 1 "MIMXRT1xxxxVJ" H 19758 5524 50  0000 C CNN
+F 2 "MIMXRT1062:BGA-196_14x14_12.0x12.0mm" H 19650 -300 50  0001 C CNN
+F 3 "" H 19650 1100 50  0001 C CNN
+	4    19650 3150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -903,12 +903,12 @@ Wire Wire Line
 $Comp
 L MIMXRT1062:MIMXRT1xxxxVJ U301
 U 2 1 60055BD0
-P 14600 4750
-F 0 "U301" H 14708 6715 50  0000 C CNN
-F 1 "MIMXRT1xxxxVJ" H 14708 6624 50  0000 C CNN
-F 2 "MIMXRT1062:BGA-196_14x14_12.0x12.0mm" H 14600 1300 50  0001 C CNN
-F 3 "" H 14600 2700 50  0001 C CNN
-	2    14600 4750
+P 14800 3100
+F 0 "U301" H 14908 5065 50  0000 C CNN
+F 1 "MIMXRT1xxxxVJ" H 14908 4974 50  0000 C CNN
+F 2 "MIMXRT1062:BGA-196_14x14_12.0x12.0mm" H 14800 -350 50  0001 C CNN
+F 3 "" H 14800 1050 50  0001 C CNN
+	2    14800 3100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1312,21 +1312,21 @@ F 3 "~" H 17650 12250 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	20100 2700 20350 2700
+	20300 1050 20550 1050
 Wire Wire Line
-	20100 4800 20350 4800
+	20300 3150 20550 3150
 Wire Wire Line
-	20100 5000 20350 5000
+	20300 3350 20550 3350
 Wire Wire Line
-	20100 5100 20350 5100
+	20300 3450 20550 3450
 Wire Wire Line
-	20100 5200 20350 5200
+	20300 3550 20550 3550
 Wire Wire Line
-	20100 5300 20350 5300
+	20300 3650 20550 3650
 Wire Wire Line
-	20100 5400 20350 5400
+	20300 3750 20550 3750
 Wire Wire Line
-	20100 5500 20350 5500
+	20300 3850 20550 3850
 Text Notes 2550 9700 0    126  Italic 0
 MKL02 BOOTLOADER
 Wire Notes Line
@@ -1418,348 +1418,348 @@ Text HLabel 19800 10950 2    50   Input ~ 0
 EMC_27
 Text HLabel 19800 11050 2    50   Input ~ 0
 EMC_26
-Text HLabel 20350 5000 2    50   Input ~ 0
+Text HLabel 20550 3350 2    50   Input ~ 0
 EMC_24
-Text HLabel 20350 5100 2    50   Input ~ 0
+Text HLabel 20550 3450 2    50   Input ~ 0
 EMC_25
-Text HLabel 20350 5500 2    50   Input ~ 0
+Text HLabel 20550 3850 2    50   Input ~ 0
 EMC_29
-Text HLabel 20350 5400 2    50   Input ~ 0
+Text HLabel 20550 3750 2    50   Input ~ 0
 EMC_28
-Text HLabel 20350 5300 2    50   Input ~ 0
+Text HLabel 20550 3650 2    50   Input ~ 0
 EMC_27
-Text HLabel 20350 5200 2    50   Input ~ 0
+Text HLabel 20550 3550 2    50   Input ~ 0
 EMC_26
-Text HLabel 20350 2700 2    50   Input ~ 0
+Text HLabel 20550 1050 2    50   Input ~ 0
 EMC_01
-Text HLabel 20350 4800 2    50   Input ~ 0
+Text HLabel 20550 3150 2    50   Input ~ 0
 EMC_22
-Text HLabel 17950 4400 2    50   Input ~ 0
+Text HLabel 18150 2750 2    50   Input ~ 0
 B0_13
-Text HLabel 15450 3750 2    50   Input ~ 0
+Text HLabel 15650 2100 2    50   Input ~ 0
 AD_B0_04
-Text HLabel 15450 3150 2    50   Input ~ 0
+Text HLabel 15650 1500 2    50   Input ~ 0
 AD_B0_07
-Text HLabel 15450 4250 2    50   Input ~ 0
+Text HLabel 15650 2600 2    50   Input ~ 0
 AD_B0_11
-Text HLabel 15450 4150 2    50   Input ~ 0
+Text HLabel 15650 2500 2    50   Input ~ 0
 AD_B0_10
-Text HLabel 15450 4050 2    50   Input ~ 0
+Text HLabel 15650 2400 2    50   Input ~ 0
 AD_B0_09
-Text HLabel 15450 3950 2    50   Input ~ 0
+Text HLabel 15650 2300 2    50   Input ~ 0
 AD_B0_08
-Text HLabel 15450 3050 2    50   Input ~ 0
+Text HLabel 15650 1400 2    50   Input ~ 0
 AD_B0_06
 Wire Wire Line
-	20100 5600 20350 5600
+	20300 3950 20550 3950
 Wire Wire Line
-	20100 5700 20350 5700
+	20300 4050 20550 4050
 Wire Wire Line
-	20100 5800 20350 5800
+	20300 4150 20550 4150
 Wire Wire Line
-	20100 5900 20350 5900
+	20300 4250 20550 4250
 Wire Wire Line
-	20100 6000 20350 6000
+	20300 4350 20550 4350
 Wire Wire Line
-	20100 6100 20350 6100
-Text HLabel 20350 5600 2    50   Input ~ 0
+	20300 4450 20550 4450
+Text HLabel 20550 3950 2    50   Input ~ 0
 EMC_30
-Text HLabel 20350 5700 2    50   Input ~ 0
+Text HLabel 20550 4050 2    50   Input ~ 0
 EMC_31
-Text HLabel 20350 6100 2    50   Input ~ 0
+Text HLabel 20550 4450 2    50   Input ~ 0
 EMC_35
-Text HLabel 20350 6000 2    50   Input ~ 0
+Text HLabel 20550 4350 2    50   Input ~ 0
 EMC_34
-Text HLabel 20350 5900 2    50   Input ~ 0
+Text HLabel 20550 4250 2    50   Input ~ 0
 EMC_33
-Text HLabel 20350 5800 2    50   Input ~ 0
+Text HLabel 20550 4150 2    50   Input ~ 0
 EMC_32
 Wire Wire Line
-	20100 6200 20350 6200
+	20300 4550 20550 4550
 Wire Wire Line
-	20100 6300 20350 6300
+	20300 4650 20550 4650
 Wire Wire Line
-	20100 6400 20350 6400
+	20300 4750 20550 4750
 Wire Wire Line
-	20100 6500 20350 6500
+	20300 4850 20550 4850
 Wire Wire Line
-	20100 6600 20350 6600
+	20300 4950 20550 4950
 Wire Wire Line
-	20100 6700 20350 6700
-Text HLabel 20350 6200 2    50   Input ~ 0
+	20300 5050 20550 5050
+Text HLabel 20550 4550 2    50   Input ~ 0
 EMC_36
-Text HLabel 20350 6300 2    50   Input ~ 0
+Text HLabel 20550 4650 2    50   Input ~ 0
 EMC_37
-Text HLabel 20350 6700 2    50   Input ~ 0
+Text HLabel 20550 5050 2    50   Input ~ 0
 EMC_41
-Text HLabel 20350 6600 2    50   Input ~ 0
+Text HLabel 20550 4950 2    50   Input ~ 0
 EMC_40
-Text HLabel 20350 6500 2    50   Input ~ 0
+Text HLabel 20550 4850 2    50   Input ~ 0
 EMC_39
-Text HLabel 20350 6400 2    50   Input ~ 0
+Text HLabel 20550 4750 2    50   Input ~ 0
 EMC_38
 Wire Wire Line
-	20100 2600 20350 2600
-Text HLabel 20350 2600 2    50   Input ~ 0
+	20300 950  20550 950 
+Text HLabel 20550 950  2    50   Input ~ 0
 EMC_00
 Wire Wire Line
-	20100 2800 20350 2800
+	20300 1150 20550 1150
 Wire Wire Line
-	20100 2900 20350 2900
+	20300 1250 20550 1250
 Wire Wire Line
-	20100 3000 20350 3000
+	20300 1350 20550 1350
 Wire Wire Line
-	20100 3100 20350 3100
+	20300 1450 20550 1450
 Wire Wire Line
-	20100 3200 20350 3200
+	20300 1550 20550 1550
 Wire Wire Line
-	20100 3300 20350 3300
-Text HLabel 20350 2800 2    50   Input ~ 0
+	20300 1650 20550 1650
+Text HLabel 20550 1150 2    50   Input ~ 0
 EMC_02
-Text HLabel 20350 2900 2    50   Input ~ 0
+Text HLabel 20550 1250 2    50   Input ~ 0
 EMC_03
-Text HLabel 20350 3300 2    50   Input ~ 0
+Text HLabel 20550 1650 2    50   Input ~ 0
 EMC_07
-Text HLabel 20350 3200 2    50   Input ~ 0
+Text HLabel 20550 1550 2    50   Input ~ 0
 EMC_06
-Text HLabel 20350 3100 2    50   Input ~ 0
+Text HLabel 20550 1450 2    50   Input ~ 0
 EMC_05
-Text HLabel 20350 3000 2    50   Input ~ 0
+Text HLabel 20550 1350 2    50   Input ~ 0
 EMC_04
 Wire Wire Line
-	20100 3400 20350 3400
+	20300 1750 20550 1750
 Wire Wire Line
-	20100 3500 20350 3500
+	20300 1850 20550 1850
 Wire Wire Line
-	20100 3600 20350 3600
+	20300 1950 20550 1950
 Wire Wire Line
-	20100 3700 20350 3700
+	20300 2050 20550 2050
 Wire Wire Line
-	20100 3800 20350 3800
+	20300 2150 20550 2150
 Wire Wire Line
-	20100 3900 20350 3900
-Text HLabel 20350 3400 2    50   Input ~ 0
+	20300 2250 20550 2250
+Text HLabel 20550 1750 2    50   Input ~ 0
 EMC_08
-Text HLabel 20350 3500 2    50   Input ~ 0
+Text HLabel 20550 1850 2    50   Input ~ 0
 EMC_09
-Text HLabel 20350 3900 2    50   Input ~ 0
+Text HLabel 20550 2250 2    50   Input ~ 0
 EMC_13
-Text HLabel 20350 3800 2    50   Input ~ 0
+Text HLabel 20550 2150 2    50   Input ~ 0
 EMC_12
-Text HLabel 20350 3700 2    50   Input ~ 0
+Text HLabel 20550 2050 2    50   Input ~ 0
 EMC_11
-Text HLabel 20350 3600 2    50   Input ~ 0
+Text HLabel 20550 1950 2    50   Input ~ 0
 EMC_10
 Wire Wire Line
-	20100 4000 20350 4000
+	20300 2350 20550 2350
 Wire Wire Line
-	20100 4100 20350 4100
+	20300 2450 20550 2450
 Wire Wire Line
-	20100 4200 20350 4200
+	20300 2550 20550 2550
 Wire Wire Line
-	20100 4300 20350 4300
+	20300 2650 20550 2650
 Wire Wire Line
-	20100 4400 20350 4400
+	20300 2750 20550 2750
 Wire Wire Line
-	20100 4500 20350 4500
-Text HLabel 20350 4000 2    50   Input ~ 0
+	20300 2850 20550 2850
+Text HLabel 20550 2350 2    50   Input ~ 0
 EMC_14
-Text HLabel 20350 4100 2    50   Input ~ 0
+Text HLabel 20550 2450 2    50   Input ~ 0
 EMC_15
-Text HLabel 20350 4500 2    50   Input ~ 0
+Text HLabel 20550 2850 2    50   Input ~ 0
 EMC_19
-Text HLabel 20350 4400 2    50   Input ~ 0
+Text HLabel 20550 2750 2    50   Input ~ 0
 EMC_18
-Text HLabel 20350 4300 2    50   Input ~ 0
+Text HLabel 20550 2650 2    50   Input ~ 0
 EMC_17
-Text HLabel 20350 4200 2    50   Input ~ 0
+Text HLabel 20550 2550 2    50   Input ~ 0
 EMC_16
 Wire Wire Line
-	20100 4600 20350 4600
-Text HLabel 20350 4600 2    50   Input ~ 0
+	20300 2950 20550 2950
+Text HLabel 20550 2950 2    50   Input ~ 0
 EMC_20
 Wire Wire Line
-	20100 4700 20350 4700
-Text HLabel 20350 4700 2    50   Input ~ 0
+	20300 3050 20550 3050
+Text HLabel 20550 3050 2    50   Input ~ 0
 EMC_21
 Wire Wire Line
-	20100 4900 20350 4900
-Text HLabel 20350 4900 2    50   Input ~ 0
+	20300 3250 20550 3250
+Text HLabel 20550 3250 2    50   Input ~ 0
 EMC_23
-Text HLabel 17950 4500 2    50   Input ~ 0
+Text HLabel 18150 2850 2    50   Input ~ 0
 B0_14
-Text HLabel 17950 4600 2    50   Input ~ 0
+Text HLabel 18150 2950 2    50   Input ~ 0
 B0_15
-Text HLabel 17950 3200 2    50   Input ~ 0
+Text HLabel 18150 1550 2    50   Input ~ 0
 B0_01
-Text HLabel 17950 3300 2    50   Input ~ 0
+Text HLabel 18150 1650 2    50   Input ~ 0
 B0_02
-Text HLabel 17950 3400 2    50   Input ~ 0
+Text HLabel 18150 1750 2    50   Input ~ 0
 B0_03
-Text HLabel 17950 3500 2    50   Input ~ 0
+Text HLabel 18150 1850 2    50   Input ~ 0
 B0_04
-Text HLabel 17950 3600 2    50   Input ~ 0
+Text HLabel 18150 1950 2    50   Input ~ 0
 B0_05
-Text HLabel 17950 3700 2    50   Input ~ 0
+Text HLabel 18150 2050 2    50   Input ~ 0
 B0_06
-Text HLabel 17950 3800 2    50   Input ~ 0
+Text HLabel 18150 2150 2    50   Input ~ 0
 B0_07
-Text HLabel 17950 3900 2    50   Input ~ 0
+Text HLabel 18150 2250 2    50   Input ~ 0
 B0_08
-Text HLabel 17950 4000 2    50   Input ~ 0
+Text HLabel 18150 2350 2    50   Input ~ 0
 B0_09
-Text HLabel 17950 4100 2    50   Input ~ 0
+Text HLabel 18150 2450 2    50   Input ~ 0
 B0_10
-Text HLabel 17950 4200 2    50   Input ~ 0
+Text HLabel 18150 2550 2    50   Input ~ 0
 B0_11
-Text HLabel 17950 4800 2    50   Input ~ 0
+Text HLabel 18150 3150 2    50   Input ~ 0
 B1_00
-Text HLabel 17950 4900 2    50   Input ~ 0
+Text HLabel 18150 3250 2    50   Input ~ 0
 B1_01
-Text HLabel 17950 5000 2    50   Input ~ 0
+Text HLabel 18150 3350 2    50   Input ~ 0
 B1_02
-Text HLabel 17950 5100 2    50   Input ~ 0
+Text HLabel 18150 3450 2    50   Input ~ 0
 B1_03
-Text HLabel 17950 5200 2    50   Input ~ 0
+Text HLabel 18150 3550 2    50   Input ~ 0
 B1_04
-Text HLabel 17950 5300 2    50   Input ~ 0
+Text HLabel 18150 3650 2    50   Input ~ 0
 B1_05
-Text HLabel 17950 5400 2    50   Input ~ 0
+Text HLabel 18150 3750 2    50   Input ~ 0
 B1_06
-Text HLabel 17950 5500 2    50   Input ~ 0
+Text HLabel 18150 3850 2    50   Input ~ 0
 B1_07
-Text HLabel 17950 5600 2    50   Input ~ 0
+Text HLabel 18150 3950 2    50   Input ~ 0
 B1_08
-Text HLabel 17950 5700 2    50   Input ~ 0
+Text HLabel 18150 4050 2    50   Input ~ 0
 B1_09
-Text HLabel 17950 5800 2    50   Input ~ 0
+Text HLabel 18150 4150 2    50   Input ~ 0
 B1_10
-Text HLabel 17950 5900 2    50   Input ~ 0
+Text HLabel 18150 4250 2    50   Input ~ 0
 B1_11
-Text HLabel 17950 6000 2    50   Input ~ 0
+Text HLabel 18150 4350 2    50   Input ~ 0
 B1_12
-Text HLabel 17950 6100 2    50   Input ~ 0
+Text HLabel 18150 4450 2    50   Input ~ 0
 B1_13
-Text HLabel 17950 6200 2    50   Input ~ 0
+Text HLabel 18150 4550 2    50   Input ~ 0
 B1_14
-Text HLabel 17950 6300 2    50   Input ~ 0
+Text HLabel 18150 4650 2    50   Input ~ 0
 B1_15
-Text HLabel 17950 4300 2    50   Input ~ 0
+Text HLabel 18150 2650 2    50   Input ~ 0
 B0_12
 Wire Wire Line
-	15250 4850 15450 4850
-Text HLabel 15450 4850 2    50   Input ~ 0
+	15450 3200 15650 3200
+Text HLabel 15650 3200 2    50   Input ~ 0
 AD_B1_00
 Wire Wire Line
-	15250 4950 15450 4950
-Text HLabel 15450 4950 2    50   Input ~ 0
+	15450 3300 15650 3300
+Text HLabel 15650 3300 2    50   Input ~ 0
 AD_B1_01
 Wire Wire Line
-	15250 5050 15450 5050
-Text HLabel 15450 5050 2    50   Input ~ 0
+	15450 3400 15650 3400
+Text HLabel 15650 3400 2    50   Input ~ 0
 AD_B1_02
 Wire Wire Line
-	15250 5150 15450 5150
-Text HLabel 15450 5150 2    50   Input ~ 0
+	15450 3500 15650 3500
+Text HLabel 15650 3500 2    50   Input ~ 0
 AD_B1_03
 Wire Wire Line
-	15250 5250 15450 5250
-Text HLabel 15450 5250 2    50   Input ~ 0
+	15450 3600 15650 3600
+Text HLabel 15650 3600 2    50   Input ~ 0
 AD_B1_04
 Wire Wire Line
-	15250 5350 15450 5350
-Text HLabel 15450 5350 2    50   Input ~ 0
+	15450 3700 15650 3700
+Text HLabel 15650 3700 2    50   Input ~ 0
 AD_B1_05
 Wire Wire Line
-	15250 5450 15450 5450
-Text HLabel 15450 5450 2    50   Input ~ 0
+	15450 3800 15650 3800
+Text HLabel 15650 3800 2    50   Input ~ 0
 AD_B1_06
 Wire Wire Line
-	15250 5550 15450 5550
-Text HLabel 15450 5550 2    50   Input ~ 0
+	15450 3900 15650 3900
+Text HLabel 15650 3900 2    50   Input ~ 0
 AD_B1_07
 Wire Wire Line
-	15250 5650 15450 5650
-Text HLabel 15450 5650 2    50   Input ~ 0
+	15450 4000 15650 4000
+Text HLabel 15650 4000 2    50   Input ~ 0
 AD_B1_08
 Wire Wire Line
-	15250 5750 15450 5750
-Text HLabel 15450 5750 2    50   Input ~ 0
+	15450 4100 15650 4100
+Text HLabel 15650 4100 2    50   Input ~ 0
 AD_B1_09
 Wire Wire Line
-	15250 5850 15450 5850
-Text HLabel 15450 5850 2    50   Input ~ 0
+	15450 4200 15650 4200
+Text HLabel 15650 4200 2    50   Input ~ 0
 AD_B1_10
 Wire Wire Line
-	15250 5950 15450 5950
-Text HLabel 15450 5950 2    50   Input ~ 0
+	15450 4300 15650 4300
+Text HLabel 15650 4300 2    50   Input ~ 0
 AD_B1_11
 Wire Wire Line
-	15250 6050 15450 6050
-Text HLabel 15450 6050 2    50   Input ~ 0
+	15450 4400 15650 4400
+Text HLabel 15650 4400 2    50   Input ~ 0
 AD_B1_12
 Wire Wire Line
-	15250 6150 15450 6150
-Text HLabel 15450 6150 2    50   Input ~ 0
+	15450 4500 15650 4500
+Text HLabel 15650 4500 2    50   Input ~ 0
 AD_B1_13
 Wire Wire Line
-	15250 6250 15450 6250
-Text HLabel 15450 6250 2    50   Input ~ 0
+	15450 4600 15650 4600
+Text HLabel 15650 4600 2    50   Input ~ 0
 AD_B1_14
 Wire Wire Line
-	15250 6350 15450 6350
-Text HLabel 15450 6350 2    50   Input ~ 0
+	15450 4700 15650 4700
+Text HLabel 15650 4700 2    50   Input ~ 0
 AD_B1_15
 Wire Wire Line
-	15250 3950 15450 3950
+	15450 2300 15650 2300
 Wire Wire Line
-	15250 4050 15450 4050
+	15450 2400 15650 2400
 Wire Wire Line
-	15250 4150 15450 4150
+	15450 2500 15650 2500
 Wire Wire Line
-	15250 4250 15450 4250
-Text HLabel 15450 4650 2    50   Input ~ 0
+	15450 2600 15650 2600
+Text HLabel 15650 3000 2    50   Input ~ 0
 AD_B0_15
-Text HLabel 15450 4550 2    50   Input ~ 0
+Text HLabel 15650 2900 2    50   Input ~ 0
 AD_B0_14
-Text HLabel 15450 4450 2    50   Input ~ 0
+Text HLabel 15650 2800 2    50   Input ~ 0
 AD_B0_13
-Text HLabel 15450 4350 2    50   Input ~ 0
+Text HLabel 15650 2700 2    50   Input ~ 0
 AD_B0_12
 Wire Wire Line
-	15250 4350 15450 4350
+	15450 2700 15650 2700
 Wire Wire Line
-	15250 4450 15450 4450
+	15450 2800 15650 2800
 Wire Wire Line
-	15250 4550 15450 4550
+	15450 2900 15650 2900
 Wire Wire Line
-	15250 4650 15450 4650
+	15450 3000 15650 3000
 Wire Wire Line
-	15250 3750 15450 3750
-Text HLabel 15450 3850 2    50   Input ~ 0
+	15450 2100 15650 2100
+Text HLabel 15650 2200 2    50   Input ~ 0
 AD_B0_05
 Wire Wire Line
-	15250 3850 15450 3850
+	15450 2200 15650 2200
 Wire Wire Line
-	15250 3050 15450 3050
+	15450 1400 15650 1400
 Wire Wire Line
-	15250 3150 15450 3150
-Text HLabel 15450 3350 2    50   Input ~ 0
+	15450 1500 15650 1500
+Text HLabel 15650 1700 2    50   Input ~ 0
 AD_B0_00
-Text HLabel 15450 3650 2    50   Input ~ 0
+Text HLabel 15650 2000 2    50   Input ~ 0
 AD_B0_03
-Text HLabel 15450 3550 2    50   Input ~ 0
+Text HLabel 15650 1900 2    50   Input ~ 0
 AD_B0_02
 Wire Wire Line
-	15250 3550 15450 3550
+	15450 1900 15650 1900
 Wire Wire Line
-	15250 3650 15450 3650
+	15450 2000 15650 2000
 Wire Wire Line
-	15250 3350 15450 3350
-Text HLabel 15450 3450 2    50   Input ~ 0
+	15450 1700 15650 1700
+Text HLabel 15650 1800 2    50   Input ~ 0
 AD_B0_01
 Wire Wire Line
-	15250 3450 15450 3450
+	15450 1800 15650 1800
 $Comp
 L 10118192-0001LF:10118192-0001LF J?
 U 1 1 6053F703
@@ -2136,87 +2136,245 @@ Wire Wire Line
 	17400 11850 17650 11850
 Wire Wire Line
 	17400 10150 18000 10150
-Text HLabel 16050 7450 0    50   Input ~ 0
-AD_B0_12
-Text HLabel 16550 7450 2    50   Input ~ 0
-T41_24
 Wire Wire Line
-	16550 7450 16050 7450
+	17950 4650 18150 4650
 Wire Wire Line
-	17750 6300 17950 6300
+	17950 4550 18150 4550
 Wire Wire Line
-	17750 6200 17950 6200
+	17950 4450 18150 4450
 Wire Wire Line
-	17750 6100 17950 6100
+	17950 4350 18150 4350
 Wire Wire Line
-	17750 6000 17950 6000
+	17950 4250 18150 4250
 Wire Wire Line
-	17750 5900 17950 5900
+	17950 4150 18150 4150
 Wire Wire Line
-	17750 5800 17950 5800
+	17950 4050 18150 4050
 Wire Wire Line
-	17750 5700 17950 5700
+	17950 3950 18150 3950
 Wire Wire Line
-	17750 5600 17950 5600
+	17950 3850 18150 3850
 Wire Wire Line
-	17750 5500 17950 5500
+	17950 3750 18150 3750
 Wire Wire Line
-	17750 5400 17950 5400
+	17950 3650 18150 3650
 Wire Wire Line
-	17750 5300 17950 5300
+	17950 3550 18150 3550
 Wire Wire Line
-	17750 5200 17950 5200
+	17950 3450 18150 3450
 Wire Wire Line
-	17750 5100 17950 5100
+	17950 3350 18150 3350
 Wire Wire Line
-	17750 5000 17950 5000
+	17950 3250 18150 3250
 Wire Wire Line
-	17750 4900 17950 4900
+	17950 3150 18150 3150
 Wire Wire Line
-	17750 4800 17950 4800
+	17950 2950 18150 2950
 Wire Wire Line
-	17750 4600 17950 4600
+	17950 2850 18150 2850
 Wire Wire Line
-	17750 4500 17950 4500
+	17950 2750 18150 2750
 Wire Wire Line
-	17750 4400 17950 4400
+	17950 2650 18150 2650
 Wire Wire Line
-	17750 4300 17950 4300
+	17950 2550 18150 2550
 Wire Wire Line
-	17750 4200 17950 4200
+	17950 2450 18150 2450
 Wire Wire Line
-	17750 4100 17950 4100
+	17950 2350 18150 2350
 Wire Wire Line
-	17750 4000 17950 4000
+	17950 2250 18150 2250
 Wire Wire Line
-	17750 3900 17950 3900
+	17950 2150 18150 2150
 Wire Wire Line
-	17750 3800 17950 3800
+	17950 2050 18150 2050
 Wire Wire Line
-	17750 3700 17950 3700
+	17950 1950 18150 1950
 Wire Wire Line
-	17750 3600 17950 3600
+	17950 1850 18150 1850
 Wire Wire Line
-	17750 3500 17950 3500
+	17950 1750 18150 1750
 Wire Wire Line
-	17750 3400 17950 3400
+	17950 1650 18150 1650
 Wire Wire Line
-	17750 3300 17950 3300
-Wire Wire Line
-	17750 3200 17950 3200
-Text HLabel 17950 3100 2    50   Input ~ 0
+	17950 1550 18150 1550
+Text HLabel 18150 1450 2    50   Input ~ 0
 B0_00
 Wire Wire Line
-	17750 3100 17950 3100
+	17950 1450 18150 1450
 $Comp
 L MIMXRT1062:MIMXRT1xxxxVJ U301
 U 3 1 60058DFE
-P 17100 4700
-F 0 "U301" H 17208 6565 50  0000 C CNN
-F 1 "MIMXRT1xxxxVJ" H 17208 6474 50  0000 C CNN
-F 2 "MIMXRT1062:BGA-196_14x14_12.0x12.0mm" H 17100 1250 50  0001 C CNN
-F 3 "" H 17100 2650 50  0001 C CNN
-	3    17100 4700
+P 17300 3050
+F 0 "U301" H 17408 4915 50  0000 C CNN
+F 1 "MIMXRT1xxxxVJ" H 17408 4824 50  0000 C CNN
+F 2 "MIMXRT1062:BGA-196_14x14_12.0x12.0mm" H 17300 -400 50  0001 C CNN
+F 3 "" H 17300 1000 50  0001 C CNN
+	3    17300 3050
 	1    0    0    -1  
 $EndComp
+Text HLabel 14450 7600 0    50   Input ~ 0
+AD_B0_04
+Text HLabel 14450 8200 0    50   Input ~ 0
+AD_B0_07
+Text HLabel 14450 7100 0    50   Input ~ 0
+AD_B0_11
+Text HLabel 14450 7200 0    50   Input ~ 0
+AD_B0_10
+Text HLabel 14450 7300 0    50   Input ~ 0
+AD_B0_09
+Text HLabel 14450 7400 0    50   Input ~ 0
+AD_B0_08
+Text HLabel 14450 8300 0    50   Input ~ 0
+AD_B0_06
+Wire Wire Line
+	14650 6500 14450 6500
+Text HLabel 14450 6500 0    50   Input ~ 0
+AD_B1_00
+Wire Wire Line
+	14650 6400 14450 6400
+Text HLabel 14450 6400 0    50   Input ~ 0
+AD_B1_01
+Wire Wire Line
+	14650 6300 14450 6300
+Text HLabel 14450 6300 0    50   Input ~ 0
+AD_B1_02
+Wire Wire Line
+	14650 6200 14450 6200
+Text HLabel 14450 6200 0    50   Input ~ 0
+AD_B1_03
+Wire Wire Line
+	14650 6100 14450 6100
+Text HLabel 14450 6100 0    50   Input ~ 0
+AD_B1_04
+Wire Wire Line
+	14650 6000 14450 6000
+Text HLabel 14450 6000 0    50   Input ~ 0
+AD_B1_05
+Wire Wire Line
+	14650 5900 14450 5900
+Text HLabel 14450 5900 0    50   Input ~ 0
+AD_B1_06
+Wire Wire Line
+	14650 5800 14450 5800
+Text HLabel 14450 5800 0    50   Input ~ 0
+AD_B1_07
+Wire Wire Line
+	14650 5700 14450 5700
+Text HLabel 14450 5700 0    50   Input ~ 0
+AD_B1_08
+Wire Wire Line
+	14650 5600 14450 5600
+Text HLabel 14450 5600 0    50   Input ~ 0
+AD_B1_09
+Wire Wire Line
+	14650 5500 14450 5500
+Text HLabel 14450 5500 0    50   Input ~ 0
+AD_B1_10
+Wire Wire Line
+	14650 5400 14450 5400
+Text HLabel 14450 5400 0    50   Input ~ 0
+AD_B1_11
+Wire Wire Line
+	14650 5300 14450 5300
+Text HLabel 14450 5300 0    50   Input ~ 0
+AD_B1_12
+Wire Wire Line
+	14650 5200 14450 5200
+Text HLabel 14450 5200 0    50   Input ~ 0
+AD_B1_13
+Wire Wire Line
+	14650 5100 14450 5100
+Text HLabel 14450 5100 0    50   Input ~ 0
+AD_B1_14
+Wire Wire Line
+	14650 5000 14450 5000
+Text HLabel 14450 5000 0    50   Input ~ 0
+AD_B1_15
+Wire Wire Line
+	14650 7400 14450 7400
+Wire Wire Line
+	14650 7300 14450 7300
+Wire Wire Line
+	14650 7200 14450 7200
+Wire Wire Line
+	14650 7100 14450 7100
+Text HLabel 14450 6700 0    50   Input ~ 0
+AD_B0_15
+Text HLabel 14450 6800 0    50   Input ~ 0
+AD_B0_14
+Text HLabel 14450 6900 0    50   Input ~ 0
+AD_B0_13
+Text HLabel 14450 7000 0    50   Input ~ 0
+AD_B0_12
+Wire Wire Line
+	14650 7000 14450 7000
+Wire Wire Line
+	14650 6900 14450 6900
+Wire Wire Line
+	14650 6800 14450 6800
+Wire Wire Line
+	14650 6700 14450 6700
+Wire Wire Line
+	14650 7600 14450 7600
+Text HLabel 14450 7500 0    50   Input ~ 0
+AD_B0_05
+Wire Wire Line
+	14650 7500 14450 7500
+Wire Wire Line
+	14650 8300 14450 8300
+Wire Wire Line
+	14650 8200 14450 8200
+Text HLabel 14450 8000 0    50   Input ~ 0
+AD_B0_00
+Text HLabel 14450 7700 0    50   Input ~ 0
+AD_B0_03
+Text HLabel 14450 7800 0    50   Input ~ 0
+AD_B0_02
+Wire Wire Line
+	14650 7800 14450 7800
+Wire Wire Line
+	14650 7700 14450 7700
+Wire Wire Line
+	14650 8000 14450 8000
+Text HLabel 14450 7900 0    50   Input ~ 0
+AD_B0_01
+Wire Wire Line
+	14650 7900 14450 7900
+Text HLabel 14650 5000 2    50   Input ~ 0
+T41_27
+Text HLabel 14650 5100 2    50   Input ~ 0
+T41_26
+Text HLabel 14650 5200 2    50   Input ~ 0
+T41_39
+Text HLabel 14650 5300 2    50   Input ~ 0
+T41_38
+Text HLabel 14650 5400 2    50   Input ~ 0
+T41_21
+Text HLabel 14650 5500 2    50   Input ~ 0
+T41_20
+Text HLabel 14650 5600 2    50   Input ~ 0
+T41_23
+Text HLabel 14650 5700 2    50   Input ~ 0
+T41_22
+Text HLabel 14650 5800 2    50   Input ~ 0
+T41_16
+Text HLabel 14650 5900 2    50   Input ~ 0
+T41_17
+Text HLabel 14650 6000 2    50   Input ~ 0
+T41_41
+Text HLabel 14650 6100 2    50   Input ~ 0
+T41_40
+Text HLabel 14650 6200 2    50   Input ~ 0
+T41_15
+Text HLabel 14650 6300 2    50   Input ~ 0
+T41_14
+Text HLabel 14650 6400 2    50   Input ~ 0
+T41_18
+Text HLabel 14650 6500 2    50   Input ~ 0
+T41_19
+Text HLabel 14650 7000 2    50   Input ~ 0
+T41_24
+Text HLabel 14650 6900 2    50   Input ~ 0
+T41_25
 $EndSCHEMATC
