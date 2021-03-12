@@ -303,49 +303,11 @@ Wire Wire Line
 	8100 5550 7950 5550
 Wire Wire Line
 	8100 5450 8100 5550
-Wire Wire Line
-	7600 5450 8100 5450
-Connection ~ 7200 5450
-Wire Wire Line
-	7200 5450 7200 5600
 Connection ~ 7100 5350
-Wire Wire Line
-	7200 5450 7400 5450
-Wire Wire Line
-	7200 5350 7200 5450
 Wire Wire Line
 	7100 5350 7200 5350
 Wire Wire Line
-	7100 5550 7100 5600
-Connection ~ 7100 5550
-Wire Wire Line
-	7100 5550 7750 5550
-Wire Wire Line
-	7100 5350 7100 5550
-Wire Wire Line
 	6750 5350 7100 5350
-$Comp
-L D24V50F5:C_Small C107
-U 1 1 602CC1EC
-P 7850 5550
-F 0 "C107" V 7621 5550 50  0000 C CNN
-F 1 "100 nF" V 7712 5550 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 7850 5550 50  0001 C CNN
-F 3 "~" H 7850 5550 50  0001 C CNN
-	1    7850 5550
-	0    1    1    0   
-$EndComp
-$Comp
-L D24V50F5:C_Small C106
-U 1 1 602C94C9
-P 7500 5450
-F 0 "C106" V 7271 5450 50  0000 C CNN
-F 1 "100 nF" V 7362 5450 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 7500 5450 50  0001 C CNN
-F 3 "~" H 7500 5450 50  0001 C CNN
-	1    7500 5450
-	0    1    1    0   
-$EndComp
 $Comp
 L D24V50F5:Jumper_NC_Small JP102
 U 1 1 602C7764
@@ -359,34 +321,6 @@ F 3 "~" H 6650 5350 50  0001 C CNN
 $EndComp
 Text GLabel 6550 5350 0    50   Input ~ 0
 3V3_MCU_SUPPLY
-$Comp
-L Sensor_Motion:KX122-1042 U102
-U 1 1 602C4E8A
-P 7100 6100
-F 0 "U102" H 6650 6700 50  0000 C CNN
-F 1 "KX122-1711" H 6650 6600 50  0000 C CNN
-F 2 "Package_LGA:LGA-12_2x2mm_P0.5mm" H 7250 6650 50  0001 L CNN
-F 3 "http://kionixfs.kionix.com/en/datasheet/KX112-1042-Specifications-Rev-6.0.pdf" H 6750 6100 50  0001 C CNN
-	1    7100 6100
-	1    0    0    -1  
-$EndComp
-$Comp
-L RF_GPS:ublox_SAM-M8Q U105
-U 1 1 60317BCD
-P 13100 7550
-F 0 "U105" H 13100 6961 50  0000 C CNN
-F 1 "ublox_SAM-M8Q" H 13100 6870 50  0000 C CNN
-F 2 "SAM-M8Q:ublox_SAM-M8Q" H 13600 7100 50  0001 C CNN
-F 3 "https://www.u-blox.com/sites/default/files/SAM-M8Q_DataSheet_%28UBX-16012619%29.pdf" H 13100 7550 50  0001 C CNN
-	1    13100 7550
-	1    0    0    -1  
-$EndComp
-$Sheet
-S 12800 5150 1150 900 
-U 60364AED
-F0 "ZOE-M8Q" 50
-F1 "ZOE-M8Q.sch" 50
-$EndSheet
 Wire Notes Line
 	5450 4750 1750 4750
 Wire Notes Line
@@ -647,17 +581,6 @@ F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/1e/3f/2
 	1    0    0    -1  
 $EndComp
 $Comp
-L Sensor_Motion:MPU-9250 U104
-U 1 1 604AA87B
-P 12500 2400
-F 0 "U104" H 12500 1411 50  0000 C CNN
-F 1 "MPU-9250" H 12500 1320 50  0000 C CNN
-F 2 "Sensor_Motion:InvenSense_QFN-24_3x3mm_P0.4mm" H 12500 1400 50  0001 C CNN
-F 3 "https://store.invensense.com/datasheets/invensense/MPU9250REV1.0.pdf" H 12500 2250 50  0001 C CNN
-	1    12500 2400
-	1    0    0    -1  
-$EndComp
-$Comp
 L Molex_MLplus_6pos2.00mm:505578-0671 J105
 U 1 1 603AD439
 P 7100 8050
@@ -679,19 +602,6 @@ F 3 "" H 8700 8050 50  0001 C CNN
 	1    8700 8050
 	0    -1   1    0   
 $EndComp
-$Comp
-L Sensor_Motion:BMI160 U?
-U 1 1 603D464F
-P 14200 2450
-F 0 "U?" H 14150 3031 50  0000 C CNN
-F 1 "BMI160" H 14150 2940 50  0000 C CNN
-F 2 "Package_LGA:Bosch_LGA-14_3x2.5mm_P0.5mm" H 14200 2450 50  0001 C CNN
-F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMI160-DS000.pdf" H 13500 3300 50  0001 C CNN
-	1    14200 2450
-	1    0    0    -1  
-$EndComp
-Text Notes 12700 8400 0    50   ~ 10
-^ ONLY SUPPORTS I2C
 $Sheet
 S 4800 1500 2000 2000
 U 60021F5A
@@ -699,4 +609,208 @@ F0 "MCU_AC" 50
 F1 "MCU_AC.sch" 50
 F2 "T41_24" O R 6800 2200 50 
 $EndSheet
+Connection ~ 7100 5550
+Wire Wire Line
+	7100 5350 7100 5550
+Wire Wire Line
+	7100 5550 7100 5600
+Wire Wire Line
+	7200 5350 7200 5450
+Wire Wire Line
+	7200 5450 7200 5600
+Connection ~ 7200 5450
+$Comp
+L Sensor_Motion:KX122-1042 U102
+U 1 1 602C4E8A
+P 7100 6100
+F 0 "U102" H 6650 6700 50  0000 C CNN
+F 1 "KX122-1711" H 6650 6600 50  0000 C CNN
+F 2 "Package_LGA:LGA-12_2x2mm_P0.5mm" H 7250 6650 50  0001 L CNN
+F 3 "http://kionixfs.kionix.com/en/datasheet/KX112-1042-Specifications-Rev-6.0.pdf" H 6750 6100 50  0001 C CNN
+	1    7100 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L D24V50F5:C_Small C106
+U 1 1 602C94C9
+P 7500 5450
+F 0 "C106" V 7271 5450 50  0000 C CNN
+F 1 "100 nF" V 7362 5450 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7500 5450 50  0001 C CNN
+F 3 "~" H 7500 5450 50  0001 C CNN
+	1    7500 5450
+	0    1    1    0   
+$EndComp
+$Comp
+L D24V50F5:C_Small C107
+U 1 1 602CC1EC
+P 7850 5550
+F 0 "C107" V 7621 5550 50  0000 C CNN
+F 1 "100 nF" V 7712 5550 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7850 5550 50  0001 C CNN
+F 3 "~" H 7850 5550 50  0001 C CNN
+	1    7850 5550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7100 5550 7750 5550
+Wire Wire Line
+	7200 5450 7400 5450
+Wire Wire Line
+	7600 5450 8100 5450
+$Sheet
+S 12200 8100 1150 900 
+U 60364AED
+F0 "ZOE-M8Q" 50
+F1 "ZOE-M8Q.sch" 50
+$EndSheet
+Text Notes 10750 9400 0    50   ~ 10
+^ ONLY SUPPORTS I2C
+$Comp
+L RF_GPS:ublox_SAM-M8Q U105
+U 1 1 60317BCD
+P 11150 8550
+F 0 "U105" H 11150 7961 50  0000 C CNN
+F 1 "ublox_SAM-M8Q" H 11150 7870 50  0000 C CNN
+F 2 "SAM-M8Q:ublox_SAM-M8Q" H 11650 8100 50  0001 C CNN
+F 3 "https://www.u-blox.com/sites/default/files/SAM-M8Q_DataSheet_%28UBX-16012619%29.pdf" H 11150 8550 50  0001 C CNN
+	1    11150 8550
+	1    0    0    -1  
+$EndComp
+Text GLabel 12350 5750 0    50   Input ~ 0
+MCU_SPI0_MOSI
+Text GLabel 12350 5850 0    50   Input ~ 0
+MCU_SPI0_MISO
+$Comp
+L D24V50F5:C_Small C110
+U 1 1 6064B712
+P 13900 5050
+F 0 "C110" V 13671 5050 50  0000 C CNN
+F 1 "100 nF" V 13762 5050 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 13900 5050 50  0001 C CNN
+F 3 "~" H 13900 5050 50  0001 C CNN
+	1    13900 5050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14150 5050 14000 5050
+Wire Wire Line
+	12750 4800 13150 4800
+Text GLabel 12550 4800 0    50   Input ~ 0
+3V3_MCU_SUPPLY
+$Comp
+L D24V50F5:Jumper_NC_Small JP104
+U 1 1 6064B725
+P 12650 4800
+F 0 "JP104" H 12650 5012 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 12650 4921 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 12650 4800 50  0001 C CNN
+F 3 "~" H 12650 4800 50  0001 C CNN
+	1    12650 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13350 4800 13150 4800
+Connection ~ 13150 4800
+Wire Wire Line
+	13350 5150 13350 5050
+Wire Wire Line
+	13150 4800 13150 4950
+$Comp
+L D24V50F5:C_Small C109
+U 1 1 6064B718
+P 13550 4950
+F 0 "C109" V 13321 4950 50  0000 C CNN
+F 1 "100 nF" V 13412 4950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 13550 4950 50  0001 C CNN
+F 3 "~" H 13550 4950 50  0001 C CNN
+	1    13550 4950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13650 4950 14150 4950
+Wire Wire Line
+	13450 4950 13150 4950
+Connection ~ 13150 4950
+Wire Wire Line
+	13150 4950 13150 5150
+Wire Wire Line
+	13800 5050 13350 5050
+Connection ~ 13350 5050
+Wire Wire Line
+	13350 5050 13350 4800
+Wire Wire Line
+	13250 7100 13250 7000
+$Comp
+L power:GND #PWR?
+U 1 1 606711D2
+P 13250 7100
+F 0 "#PWR?" H 13250 6850 50  0001 C CNN
+F 1 "GND" H 13255 6927 50  0000 C CNN
+F 2 "" H 13250 7100 50  0001 C CNN
+F 3 "" H 13250 7100 50  0001 C CNN
+	1    13250 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14150 5050 14150 7000
+Wire Wire Line
+	14150 7000 13250 7000
+Connection ~ 13250 7000
+Wire Wire Line
+	13250 7000 13250 6950
+Wire Wire Line
+	14150 4950 14150 5050
+Connection ~ 14150 5050
+Text GLabel 12350 5950 0    50   Input ~ 0
+MCU_SPIO_SCK
+Wire Wire Line
+	12550 5950 12350 5950
+Wire Wire Line
+	12550 5850 12350 5850
+Wire Wire Line
+	12350 5750 12550 5750
+Text GLabel 12350 6050 0    50   Input ~ 0
+MCU_SPIO_CS[TBD]
+Wire Wire Line
+	12550 6050 12350 6050
+$Comp
+L Sensor_Motion:MPU-9250 U104
+U 1 1 604AA87B
+P 13250 6050
+F 0 "U104" H 12150 5400 50  0000 C CNN
+F 1 "MPU-9250" H 12150 5300 50  0000 C CNN
+F 2 "Sensor_Motion:InvenSense_QFN-24_3x3mm_P0.4mm" H 13250 5050 50  0001 C CNN
+F 3 "https://store.invensense.com/datasheets/invensense/MPU9250REV1.0.pdf" H 13250 5900 50  0001 C CNN
+	1    13250 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12550 6250 12550 7000
+Wire Wire Line
+	12550 7000 13250 7000
+NoConn ~ 13950 6050
+NoConn ~ 13950 5950
+Text Notes 14750 6050 2    50   ~ 0
+I2C PINS (UNUSED)
+Text Notes 11950 6500 0    50   ~ 0
+CONNECTED TO GND \nIF UNUSED
+Text GLabel 14350 5750 2    50   Input ~ 0
+IMUD_INT1
+Wire Wire Line
+	14350 5750 13950 5750
+Text Notes 14250 5650 0    50   ~ 0
+DOUBLE CHECK \nINT1 PIN
+Text Notes 12600 4450 0    126  ~ 0
+MPU-9250 IMU
+Wire Notes Line
+	11650 7350 11650 4200
+Wire Notes Line
+	11650 7350 14900 7350
+Wire Notes Line
+	14900 7350 14900 4200
+Wire Notes Line
+	14900 4200 11650 4200
+Text Notes 11750 6200 0    50   ~ 0
+CONFIRM CS PIN
 $EndSCHEMATC
