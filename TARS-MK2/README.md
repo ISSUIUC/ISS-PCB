@@ -43,9 +43,7 @@ TODO for MPU:
 
 
 ## COTS:
-  - [ ] Finalize layout of components.
-  - [ ] Add MLPlus b2b connectors
-  - [ ] Add MLPlus ejection charge/switch connectors
+  - Done
 
 ---
 
