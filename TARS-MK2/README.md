@@ -9,11 +9,11 @@
 - [ ] Finalize overall component locations and begin trace layout
 - [ ] Add RFM95!
 - [ ] Make appropriate connections to b2b (board-to-board) MLPlus connectors
-- [ ] Copy MCU_AC design to MCU_HYBRID
+- [x] Copy MCU_AC design to MCU_HYBRID
 - [ ] Add connectors for pressure transducers (MPLUS 3pos?)
 
 TODO for the MCU specifically:
-- [ ] Associate certain MIMX pins with T4.1 pins so connections match with MK1 design
+- [x] Associate certain MIMX pins with T4.1 pins so connections match with MK1 design
 - [ ] think about pull-up/down resistors on communication busses
 - [ ] add test points for power-up sequence observation (for debugging)
 - [ ] Think about MCU-MCU communication lines
@@ -21,13 +21,13 @@ TODO for the MCU specifically:
 - [ ] Add I2C/UART (+SPI?) expansion ports
 - [ ] Should MCUs be powered by 3V3 or 5V?
 - [ ] SAM-M8Q?
-- [ ] Additional IMU? (Maybe MPU9250 or BMI160 look nice)
+- [x] Additional IMU? (Maybe MPU9250 or BMI160 look nice)
 
 TODO for MPU:
-- [ ] Talk to Octavo systems and see if they can review our design on short notice
+- [x] Talk to Octavo systems and see if they can review our design on short notice
 - [ ] Implement the boot configuration pins according the to C-SiP design manual
 - [ ] Break out necessary I2C and SPI busses
-- [ ] Keep USB host connector
+- [x] Keep USB host connector (probably not)
 
 ## ACB:
   - [ ] Attempt to replace the SODIMM connector with a lower profile one
@@ -43,7 +43,9 @@ TODO for MPU:
 
 
 ## COTS:
-  - Done
+  - [x] Finalize layout of components.
+  - [x] Add MLPlus b2b connectors
+  - [x] Add MLPlus ejection charge/switch connectors
 
 ---
 
