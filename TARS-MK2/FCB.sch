@@ -722,11 +722,11 @@ F0 "MCU_HYBRID" 50
 F1 "MCU_HYBRID.sch" 50
 $EndSheet
 $Sheet
-S 7150 1450 2000 2000
+S 7250 1550 2000 2000
 U 60021F5A
 F0 "MCU_AC" 50
 F1 "MCU_AC.sch" 50
-F2 "T41_24" O R 9150 2150 50 
+F2 "T41_24" O R 9250 2050 50 
 $EndSheet
 $Comp
 L RF_Module:RFM95W-915S2 U106
@@ -1225,4 +1225,46 @@ Wire Wire Line
 	5400 9900 6000 9900
 Text HLabel 6000 9900 2    50   Output ~ 0
 KX122_INT2
+Text HLabel 9250 2550 0    50   Input ~ 0
+B0_02
+Text HLabel 9500 2550 2    50   Input ~ 0
+SNS_SPI_MOSI
+Wire Wire Line
+	9250 2550 9500 2550
+Text HLabel 9250 2750 0    50   Input ~ 0
+B0_01
+Text HLabel 9500 2750 2    50   Input ~ 0
+SNS_SPI_MISO
+Wire Wire Line
+	9250 2750 9500 2750
+Text HLabel 9250 2950 0    50   Input ~ 0
+B0_03
+Text HLabel 9500 2950 2    50   Input ~ 0
+SNS_SPI_SCK
+Wire Wire Line
+	9250 2950 9500 2950
+Text HLabel 9250 3150 0    50   Input ~ 0
+B0_00
+Text HLabel 9500 3150 2    50   Input ~ 0
+LSM9_CS_AG
+Wire Wire Line
+	9250 3150 9500 3150
+Text HLabel 9250 3350 0    50   Input ~ 0
+B1_03
+Text HLabel 9500 3350 2    50   Input ~ 0
+TLM_CS
+Wire Wire Line
+	9250 3350 9500 3350
+Text HLabel 9250 3500 0    50   Input ~ 0
+B1_02
+Text HLabel 9500 3500 2    50   Input ~ 0
+MS5611_CS
+Wire Wire Line
+	9250 3500 9500 3500
+Text HLabel 9250 2350 0    50   Input ~ 0
+AD_B1_04
+Text HLabel 9500 2350 2    50   Input ~ 0
+KX122_CS
+Wire Wire Line
+	9250 2350 9500 2350
 $EndSCHEMATC
