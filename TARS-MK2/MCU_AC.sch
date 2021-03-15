@@ -2214,265 +2214,265 @@ F 3 "" H 17300 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	17700 6500 17900 6500
-Text HLabel 17900 6500 2    50   Input ~ 0
+	17750 6500 17950 6500
+Text HLabel 17950 6500 2    50   Input ~ 0
 AD_B0_03
 Wire Wire Line
-	17700 6600 17900 6600
-Text HLabel 17900 6600 2    50   Input ~ 0
+	17750 6600 17950 6600
+Text HLabel 17950 6600 2    50   Input ~ 0
 AD_B0_02
 Wire Wire Line
-	17700 6700 17900 6700
-Text HLabel 17900 6700 2    50   Input ~ 0
+	17750 6700 17950 6700
+Text HLabel 17950 6700 2    50   Input ~ 0
 EMC_04
 Wire Wire Line
-	17700 6800 17900 6800
-Text HLabel 17900 6800 2    50   Input ~ 0
+	17750 6800 17950 6800
+Text HLabel 17950 6800 2    50   Input ~ 0
 EMC_05
-Text HLabel 17700 6800 0    50   Input ~ 0
+Text HLabel 17750 6800 0    50   Input ~ 0
 T41_03
-Text HLabel 17700 6700 0    50   Input ~ 0
+Text HLabel 17750 6700 0    50   Input ~ 0
 T41_02
-Text HLabel 17700 6600 0    50   Input ~ 0
+Text HLabel 17750 6600 0    50   Input ~ 0
 T41_01
-Text HLabel 17700 6500 0    50   Input ~ 0
+Text HLabel 17750 6500 0    50   Input ~ 0
 T41_00
 Wire Wire Line
-	17700 6900 17900 6900
-Text HLabel 17900 6900 2    50   Input ~ 0
+	17750 6900 17950 6900
+Text HLabel 17950 6900 2    50   Input ~ 0
 EMC_06
 Wire Wire Line
-	17700 7000 17900 7000
-Text HLabel 17900 7000 2    50   Input ~ 0
+	17750 7000 17950 7000
+Text HLabel 17950 7000 2    50   Input ~ 0
 EMC_08
 Wire Wire Line
-	17700 7100 17900 7100
-Text HLabel 17900 7100 2    50   Input ~ 0
+	17750 7100 17950 7100
+Text HLabel 17950 7100 2    50   Input ~ 0
 B0_10
 Wire Wire Line
-	17700 7200 17900 7200
-Text HLabel 17900 7200 2    50   Input ~ 0
+	17750 7200 17950 7200
+Text HLabel 17950 7200 2    50   Input ~ 0
 B1_01
-Text HLabel 17700 7200 0    50   Input ~ 0
+Text HLabel 17750 7200 0    50   Input ~ 0
 T41_07
-Text HLabel 17700 7100 0    50   Input ~ 0
+Text HLabel 17750 7100 0    50   Input ~ 0
 T41_06
-Text HLabel 17700 7000 0    50   Input ~ 0
+Text HLabel 17750 7000 0    50   Input ~ 0
 T41_05
-Text HLabel 17700 6900 0    50   Input ~ 0
+Text HLabel 17750 6900 0    50   Input ~ 0
 T41_04
 Wire Wire Line
-	17700 7300 17900 7300
-Text HLabel 17900 7300 2    50   Input ~ 0
+	17750 7300 17950 7300
+Text HLabel 17950 7300 2    50   Input ~ 0
 B1_00
 Wire Wire Line
-	17700 7400 17900 7400
-Text HLabel 17900 7400 2    50   Input ~ 0
+	17750 7400 17950 7400
+Text HLabel 17950 7400 2    50   Input ~ 0
 B0_11
 Wire Wire Line
-	17700 7500 17900 7500
-Text HLabel 17900 7500 2    50   Input ~ 0
+	17750 7500 17950 7500
+Text HLabel 17950 7500 2    50   Input ~ 0
 B0_00
 Wire Wire Line
-	17700 7600 17900 7600
-Text HLabel 17900 7600 2    50   Input ~ 0
+	17750 7600 17950 7600
+Text HLabel 17950 7600 2    50   Input ~ 0
 B0_02
-Text HLabel 17700 7600 0    50   Input ~ 0
+Text HLabel 17750 7600 0    50   Input ~ 0
 T41_11
-Text HLabel 17700 7500 0    50   Input ~ 0
+Text HLabel 17750 7500 0    50   Input ~ 0
 T41_10
-Text HLabel 17700 7400 0    50   Input ~ 0
+Text HLabel 17750 7400 0    50   Input ~ 0
 T41_09
-Text HLabel 17700 7300 0    50   Input ~ 0
+Text HLabel 17750 7300 0    50   Input ~ 0
 T41_08
 Wire Wire Line
-	17700 7700 17900 7700
-Text HLabel 17900 7700 2    50   Input ~ 0
+	17750 7700 17950 7700
+Text HLabel 17950 7700 2    50   Input ~ 0
 B0_01
 Wire Wire Line
-	17700 7800 17900 7800
-Text HLabel 17900 7800 2    50   Input ~ 0
+	17750 7800 17950 7800
+Text HLabel 17950 7800 2    50   Input ~ 0
 B0_03
 Wire Wire Line
-	17700 7900 17900 7900
-Text HLabel 17900 7900 2    50   Input ~ 0
+	17750 7900 17950 7900
+Text HLabel 17950 7900 2    50   Input ~ 0
 AD_B1_02
 Wire Wire Line
-	17700 8000 17900 8000
-Text HLabel 17900 8000 2    50   Input ~ 0
+	17750 8000 17950 8000
+Text HLabel 17950 8000 2    50   Input ~ 0
 AD_B1_03
-Text HLabel 17700 8000 0    50   Input ~ 0
+Text HLabel 17750 8000 0    50   Input ~ 0
 T41_15
-Text HLabel 17700 7900 0    50   Input ~ 0
+Text HLabel 17750 7900 0    50   Input ~ 0
 T41_14
-Text HLabel 17700 7800 0    50   Input ~ 0
+Text HLabel 17750 7800 0    50   Input ~ 0
 T41_13
-Text HLabel 17700 7700 0    50   Input ~ 0
+Text HLabel 17750 7700 0    50   Input ~ 0
 T41_12
 Wire Wire Line
-	17700 8100 17900 8100
-Text HLabel 17900 8100 2    50   Input ~ 0
+	17750 8100 17950 8100
+Text HLabel 17950 8100 2    50   Input ~ 0
 AD_B1_07
 Wire Wire Line
-	17700 8200 17900 8200
-Text HLabel 17900 8200 2    50   Input ~ 0
+	17750 8200 17950 8200
+Text HLabel 17950 8200 2    50   Input ~ 0
 AD_B1_06
 Wire Wire Line
-	17700 8300 17900 8300
-Text HLabel 17900 8300 2    50   Input ~ 0
+	17750 8300 17950 8300
+Text HLabel 17950 8300 2    50   Input ~ 0
 AD_B1_01
 Wire Wire Line
-	17700 8400 17900 8400
-Text HLabel 17900 8400 2    50   Input ~ 0
+	17750 8400 17950 8400
+Text HLabel 17950 8400 2    50   Input ~ 0
 AD_B1_00
-Text HLabel 17700 8400 0    50   Input ~ 0
+Text HLabel 17750 8400 0    50   Input ~ 0
 T41_19
-Text HLabel 17700 8300 0    50   Input ~ 0
+Text HLabel 17750 8300 0    50   Input ~ 0
 T41_18
-Text HLabel 17700 8200 0    50   Input ~ 0
+Text HLabel 17750 8200 0    50   Input ~ 0
 T41_17
-Text HLabel 17700 8100 0    50   Input ~ 0
+Text HLabel 17750 8100 0    50   Input ~ 0
 T41_16
 Wire Wire Line
-	17700 8500 17900 8500
-Text HLabel 17900 8500 2    50   Input ~ 0
+	17750 8500 17950 8500
+Text HLabel 17950 8500 2    50   Input ~ 0
 AD_B1_10
 Wire Wire Line
-	19200 6500 19400 6500
-Text HLabel 19400 6500 2    50   Input ~ 0
+	19250 6500 19450 6500
+Text HLabel 19450 6500 2    50   Input ~ 0
 AD_B1_11
 Wire Wire Line
-	19200 6600 19400 6600
-Text HLabel 19400 6600 2    50   Input ~ 0
+	19250 6600 19450 6600
+Text HLabel 19450 6600 2    50   Input ~ 0
 AD_B1_08
 Wire Wire Line
-	19200 6700 19400 6700
-Text HLabel 19400 6700 2    50   Input ~ 0
+	19250 6700 19450 6700
+Text HLabel 19450 6700 2    50   Input ~ 0
 AD_B1_09
-Text HLabel 19200 6700 0    50   Input ~ 0
+Text HLabel 19250 6700 0    50   Input ~ 0
 T41_23
-Text HLabel 19200 6600 0    50   Input ~ 0
+Text HLabel 19250 6600 0    50   Input ~ 0
 T41_22
-Text HLabel 19200 6500 0    50   Input ~ 0
+Text HLabel 19250 6500 0    50   Input ~ 0
 T41_21
-Text HLabel 17700 8500 0    50   Input ~ 0
+Text HLabel 17750 8500 0    50   Input ~ 0
 T41_20
 Wire Wire Line
-	19200 6800 19400 6800
-Text HLabel 19400 6800 2    50   Input ~ 0
+	19250 6800 19450 6800
+Text HLabel 19450 6800 2    50   Input ~ 0
 AD_B0_12
 Wire Wire Line
-	19200 6900 19400 6900
-Text HLabel 19400 6900 2    50   Input ~ 0
+	19250 6900 19450 6900
+Text HLabel 19450 6900 2    50   Input ~ 0
 AD_B0_13
 Wire Wire Line
-	19200 7000 19400 7000
-Text HLabel 19400 7000 2    50   Input ~ 0
+	19250 7000 19450 7000
+Text HLabel 19450 7000 2    50   Input ~ 0
 AD_B1_14
 Wire Wire Line
-	19200 7100 19400 7100
-Text HLabel 19400 7100 2    50   Input ~ 0
+	19250 7100 19450 7100
+Text HLabel 19450 7100 2    50   Input ~ 0
 AD_B1_15
-Text HLabel 19200 7100 0    50   Input ~ 0
+Text HLabel 19250 7100 0    50   Input ~ 0
 T41_27
-Text HLabel 19200 7000 0    50   Input ~ 0
+Text HLabel 19250 7000 0    50   Input ~ 0
 T41_26
-Text HLabel 19200 6900 0    50   Input ~ 0
+Text HLabel 19250 6900 0    50   Input ~ 0
 T41_25
-Text HLabel 19200 6800 0    50   Input ~ 0
+Text HLabel 19250 6800 0    50   Input ~ 0
 T41_24
 Wire Wire Line
-	19200 7200 19400 7200
-Text HLabel 19400 7200 2    50   Input ~ 0
+	19250 7200 19450 7200
+Text HLabel 19450 7200 2    50   Input ~ 0
 EMC_32
 Wire Wire Line
-	19200 7300 19400 7300
-Text HLabel 19400 7300 2    50   Input ~ 0
+	19250 7300 19450 7300
+Text HLabel 19450 7300 2    50   Input ~ 0
 EMC_31
 Wire Wire Line
-	19200 7400 19400 7400
-Text HLabel 19400 7400 2    50   Input ~ 0
+	19250 7400 19450 7400
+Text HLabel 19450 7400 2    50   Input ~ 0
 EMC_37
 Wire Wire Line
-	19200 7500 19400 7500
-Text HLabel 19400 7500 2    50   Input ~ 0
+	19250 7500 19450 7500
+Text HLabel 19450 7500 2    50   Input ~ 0
 EMC_36
-Text HLabel 19200 7500 0    50   Input ~ 0
+Text HLabel 19250 7500 0    50   Input ~ 0
 T41_31
-Text HLabel 19200 7400 0    50   Input ~ 0
+Text HLabel 19250 7400 0    50   Input ~ 0
 T41_30
-Text HLabel 19200 7300 0    50   Input ~ 0
+Text HLabel 19250 7300 0    50   Input ~ 0
 T41_29
-Text HLabel 19200 7200 0    50   Input ~ 0
+Text HLabel 19250 7200 0    50   Input ~ 0
 T41_28
 Wire Wire Line
-	19200 7600 19400 7600
-Text HLabel 19400 7600 2    50   Input ~ 0
+	19250 7600 19450 7600
+Text HLabel 19450 7600 2    50   Input ~ 0
 B0_12
 Wire Wire Line
-	19200 7700 19400 7700
-Text HLabel 19400 7700 2    50   Input ~ 0
+	19250 7700 19450 7700
+Text HLabel 19450 7700 2    50   Input ~ 0
 EMC_07
 Wire Wire Line
-	19200 7800 19400 7800
-Text HLabel 19400 7800 2    50   Input ~ 0
+	19250 7800 19450 7800
+Text HLabel 19450 7800 2    50   Input ~ 0
 B1_13
 Wire Wire Line
-	19200 7900 19400 7900
-Text HLabel 19400 7900 2    50   Input ~ 0
+	19250 7900 19450 7900
+Text HLabel 19450 7900 2    50   Input ~ 0
 B1_12
-Text HLabel 19200 7900 0    50   Input ~ 0
+Text HLabel 19250 7900 0    50   Input ~ 0
 T41_35
-Text HLabel 19200 7800 0    50   Input ~ 0
+Text HLabel 19250 7800 0    50   Input ~ 0
 T41_34
-Text HLabel 19200 7700 0    50   Input ~ 0
+Text HLabel 19250 7700 0    50   Input ~ 0
 T41_33
 Wire Wire Line
-	19200 8000 19400 8000
-Text HLabel 19400 8000 2    50   Input ~ 0
+	19250 8000 19450 8000
+Text HLabel 19450 8000 2    50   Input ~ 0
 B1_02
 Wire Wire Line
-	19200 8100 19400 8100
-Text HLabel 19400 8100 2    50   Input ~ 0
+	19250 8100 19450 8100
+Text HLabel 19450 8100 2    50   Input ~ 0
 B1_03
 Wire Wire Line
-	19200 8200 19400 8200
-Text HLabel 19400 8200 2    50   Input ~ 0
+	19250 8200 19450 8200
+Text HLabel 19450 8200 2    50   Input ~ 0
 AD_B1_12
 Wire Wire Line
-	19200 8300 19400 8300
-Text HLabel 19400 8300 2    50   Input ~ 0
+	19250 8300 19450 8300
+Text HLabel 19450 8300 2    50   Input ~ 0
 AD_B1_13
-Text HLabel 19200 8300 0    50   Input ~ 0
+Text HLabel 19250 8300 0    50   Input ~ 0
 T41_39
-Text HLabel 19200 8200 0    50   Input ~ 0
+Text HLabel 19250 8200 0    50   Input ~ 0
 T41_38
-Text HLabel 19200 8100 0    50   Input ~ 0
+Text HLabel 19250 8100 0    50   Input ~ 0
 T41_37
-Text HLabel 19200 8000 0    50   Input ~ 0
+Text HLabel 19250 8000 0    50   Input ~ 0
 T41_36
 Wire Wire Line
-	19200 8400 19400 8400
-Text HLabel 19400 8400 2    50   Input ~ 0
+	19250 8400 19450 8400
+Text HLabel 19450 8400 2    50   Input ~ 0
 AD_B1_04
 Wire Wire Line
-	19200 8500 19400 8500
-Text HLabel 19400 8500 2    50   Input ~ 0
+	19250 8500 19450 8500
+Text HLabel 19450 8500 2    50   Input ~ 0
 AD_B1_05
-Text HLabel 19200 8500 0    50   Input ~ 0
+Text HLabel 19250 8500 0    50   Input ~ 0
 T41_41
-Text HLabel 19200 8400 0    50   Input ~ 0
+Text HLabel 19250 8400 0    50   Input ~ 0
 T41_40
-Text HLabel 19200 7600 0    50   Input ~ 0
+Text HLabel 19250 7600 0    50   Input ~ 0
 T41_32
-Wire Notes Line
-	16950 8950 20350 8950
-Wire Notes Line
-	20350 8950 20350 5800
-Wire Notes Line
-	20350 5800 16950 5800
 Wire Notes Line
 	16950 5800 16950 8950
 Text Notes 17000 6050 0    126  Italic 0
 TEENSY4.1 PIN ASSOCIATIONS
+Wire Notes Line
+	16950 8950 20350 8950
+Wire Notes Line
+	20350 5800 16950 5800
+Wire Notes Line
+	20350 8950 20350 5800
 $EndSCHEMATC
