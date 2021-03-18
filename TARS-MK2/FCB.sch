@@ -720,13 +720,14 @@ S 11900 1450 2000 2000
 U 60021F93
 F0 "MCU_HYBRID" 50
 F1 "MCU_HYBRID.sch" 50
-$EndSheet
-$Sheet
-S 7250 1550 2000 2000
-U 60021F5A
-F0 "MCU_AC" 50
-F1 "MCU_AC.sch" 50
-F2 "T41_24" O R 9250 2050 50 
+F2 "AD_B1_04" I R 13900 2250 50 
+F3 "B0_02" I R 13900 2450 50 
+F4 "B0_01" I R 13900 2650 50 
+F5 "B0_03" I R 13900 2850 50 
+F6 "B0_00" I R 13900 3050 50 
+F7 "B1_03" I R 13900 3250 50 
+F8 "B1_02" I R 13900 3400 50 
+F9 "AD_B1_05" I R 13900 2050 50 
 $EndSheet
 $Comp
 L RF_Module:RFM95W-915S2 U106
@@ -856,8 +857,6 @@ Text HLabel 5800 6600 0    50   Input ~ 0
 SNS_SPI_MOSI
 Text HLabel 5800 6700 0    50   Input ~ 0
 SNS_SPI_MISO
-Text HLabel 5800 6800 0    50   Input ~ 0
-TLM_CS
 Wire Wire Line
 	5800 6500 5950 6500
 Wire Wire Line
@@ -1115,7 +1114,7 @@ SNS_SPI_MISO
 Wire Wire Line
 	2200 6750 2350 6750
 Text HLabel 3900 6350 2    50   Input ~ 0
-LSM9_CS_AG
+LSM9_CS_M
 Wire Wire Line
 	3750 6350 3900 6350
 Text HLabel 3900 6450 2    50   Input ~ 0
@@ -1225,46 +1224,84 @@ Wire Wire Line
 	5400 9900 6000 9900
 Text HLabel 6000 9900 2    50   Output ~ 0
 KX122_INT2
-Text HLabel 9250 2550 0    50   Input ~ 0
-B0_02
-Text HLabel 9500 2550 2    50   Input ~ 0
-SNS_SPI_MOSI
-Wire Wire Line
-	9250 2550 9500 2550
-Text HLabel 9250 2750 0    50   Input ~ 0
-B0_01
-Text HLabel 9500 2750 2    50   Input ~ 0
-SNS_SPI_MISO
-Wire Wire Line
-	9250 2750 9500 2750
-Text HLabel 9250 2950 0    50   Input ~ 0
-B0_03
 Text HLabel 9500 2950 2    50   Input ~ 0
 SNS_SPI_SCK
 Wire Wire Line
 	9250 2950 9500 2950
-Text HLabel 9250 3150 0    50   Input ~ 0
-B0_00
 Text HLabel 9500 3150 2    50   Input ~ 0
 LSM9_CS_AG
 Wire Wire Line
 	9250 3150 9500 3150
-Text HLabel 9250 3350 0    50   Input ~ 0
-B1_03
-Text HLabel 9500 3350 2    50   Input ~ 0
-TLM_CS
 Wire Wire Line
 	9250 3350 9500 3350
-Text HLabel 9250 3500 0    50   Input ~ 0
-B1_02
 Text HLabel 9500 3500 2    50   Input ~ 0
 MS5611_CS
 Wire Wire Line
 	9250 3500 9500 3500
-Text HLabel 9250 2350 0    50   Input ~ 0
-AD_B1_04
 Text HLabel 9500 2350 2    50   Input ~ 0
 KX122_CS
 Wire Wire Line
 	9250 2350 9500 2350
+Text HLabel 9500 2550 2    50   Input ~ 0
+SNS_SPI_MOSI
+Wire Wire Line
+	9500 2550 9250 2550
+Text HLabel 9500 2750 2    50   Input ~ 0
+SNS_SPI_MISO
+Wire Wire Line
+	9250 2750 9500 2750
+Text HLabel 14150 2850 2    50   Input ~ 0
+SNS_SPI_SCK
+Wire Wire Line
+	13900 2850 14150 2850
+Text HLabel 14150 3050 2    50   Input ~ 0
+LSM9_CS_AG
+Wire Wire Line
+	13900 3050 14150 3050
+Text HLabel 14150 3250 2    50   Input ~ 0
+MPU9250_CS
+Wire Wire Line
+	13900 3250 14150 3250
+Text HLabel 14150 3400 2    50   Input ~ 0
+MS5611_CS
+Wire Wire Line
+	13900 3400 14150 3400
+Text HLabel 14150 2250 2    50   Input ~ 0
+KX122_CS
+Wire Wire Line
+	13900 2250 14150 2250
+Text HLabel 14150 2450 2    50   Input ~ 0
+SNS_SPI_MOSI
+Wire Wire Line
+	14150 2450 13900 2450
+Text HLabel 14150 2650 2    50   Input ~ 0
+SNS_SPI_MISO
+Wire Wire Line
+	13900 2650 14150 2650
+Text HLabel 9500 3350 2    50   Input ~ 0
+MPU9250_CS
+Text HLabel 5800 6800 0    50   Input ~ 0
+MPU9250_CS
+Text HLabel 9500 2150 2    50   Input ~ 0
+LSM9_CS_M
+$Sheet
+S 7250 1550 2000 2000
+U 60021F5A
+F0 "MCU_AC" 50
+F1 "MCU_AC.sch" 50
+F2 "B0_02" O R 9250 2550 50 
+F3 "B0_01" I R 9250 2750 50 
+F4 "B0_03" I R 9250 2950 50 
+F5 "B0_00" I R 9250 3150 50 
+F6 "B1_02" I R 9250 3500 50 
+F7 "B1_03" I R 9250 3350 50 
+F8 "AD_B1_04" I R 9250 2350 50 
+F9 "AD_B1_05" I R 9250 2150 50 
+$EndSheet
+Wire Wire Line
+	9500 2150 9250 2150
+Text HLabel 14150 2050 2    50   Input ~ 0
+LSM9_CS_M
+Wire Wire Line
+	14150 2050 13900 2050
 $EndSCHEMATC
