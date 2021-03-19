@@ -1372,26 +1372,26 @@ Text HLabel 7300 2650 0    50   Input ~ 0
 VBAT
 Text HLabel 10500 4250 0    50   Input ~ 0
 AD_B0_11
-Text HLabel 3950 11100 0    50   Input ~ 0
-AD_BO_04
+Text HLabel 3950 11100 0    50   Output ~ 0
+AD_B0_04
 Text HLabel 3950 11200 0    50   Input ~ 0
-AD_BO_06
+AD_B0_06
 Text HLabel 3950 11300 0    50   Input ~ 0
-AD_BO_10
+AD_B0_10
 Text HLabel 3950 11400 0    50   Input ~ 0
-AD_BO_09
+AD_B0_09
 Text HLabel 3950 10800 0    50   Input ~ 0
 EMC_01
 Text HLabel 3050 11000 0    50   Input ~ 0
 AD_B0_11
 Text HLabel 7100 11200 2    50   Input ~ 0
-AD_BO_08
+AD_B0_08
 Text HLabel 7100 11100 2    50   Input ~ 0
-BO_13
+B0_13
 Text HLabel 7100 10800 2    50   Input ~ 0
 POR_B
 Text HLabel 7100 10700 2    50   Input ~ 0
-AD_BO_07
+AD_B0_07
 Text HLabel 8650 9700 2    50   Input ~ 0
 3V3
 Text HLabel 12600 10000 0    50   Input ~ 0
