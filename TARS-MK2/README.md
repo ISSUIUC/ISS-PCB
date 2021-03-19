@@ -6,8 +6,8 @@
 # TODO
 
 ## FCB:
-- [ ] Finalize overall component locations and begin trace layout
-- [ ] Add RFM95!
+- [x] Finalize overall component locations and begin trace layout
+- [x] Add RFM95!
 - [ ] Make appropriate connections to b2b (board-to-board) MLPlus connectors
 - [x] Copy MCU_AC design to MCU_HYBRID
 - [ ] Add connectors for pressure transducers (MPLUS 3pos?)
@@ -20,12 +20,12 @@ TODO for the MCU specifically:
 - [ ] Figure out exactly which peripherals are available with chip-on-board that weren't on the T4.1
 - [ ] Add I2C/UART (+SPI?) expansion ports
 - [ ] Should MCUs be powered by 3V3 or 5V?
-- [ ] SAM-M8Q?
+- [x] SAM-M8Q? (yes pls)
 - [x] Additional IMU? (Maybe MPU9250 or BMI160 look nice)
 
 TODO for MPU:
 - [x] Talk to Octavo systems and see if they can review our design on short notice
-- [ ] Implement the boot configuration pins according the to C-SiP design manual
+- [x] Implement the boot configuration pins according the to C-SiP design manual
 - [ ] Break out necessary I2C and SPI busses
 - [x] Keep USB host connector (probably not)
 
