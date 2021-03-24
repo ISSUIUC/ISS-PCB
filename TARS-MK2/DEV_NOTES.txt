@@ -390,6 +390,14 @@
 	- Attempted to route the MPU's USB connector. It's pads are on the other side of the board so it would make sense to put it on that side instead.
 	- Tried to add MCU power components but the zener diode footprints are wrong :( Also really should understand the powerup sequence alot asap.
 
-[03/22/2021]
 	FCB - Justin Kam
 	-Finished making the connections between the MPU and the 16 resistors on the right
+
+[03/24/2021]
+	FCB - Ayberk
+	- Tweaked the SYSBOOT resistor traces
+	- Moved MPU SD card and USB connector to left side, moved the JTAG to the right. Closer to package pads this way.
+	- Added a jumper to be able to connect MPU EEPROM_WP so the EEPROM can be programmed
+	- Routed MPU 32.768 kHz crystal
+	- Routed MPU ground and power connections. Used copper pours for grounds
+	- JTAG connector wasn't connected in schematic. fixed it
