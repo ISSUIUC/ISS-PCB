@@ -562,19 +562,6 @@ Connection ~ 9500 6300
 Wire Wire Line
 	8600 5700 10750 5700
 $Comp
-L Diode:BAT54C D302
-U 1 1 6016B559
-P 7800 2650
-F 0 "D302" H 7800 2875 50  0000 C CNN
-F 1 "BAT54C" H 7800 2784 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 7875 2775 50  0001 L CNN
-F 3 "http://www.diodes.com/_files/datasheets/ds11005.pdf" H 7720 2650 50  0001 C CNN
-	1    7800 2650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7300 2650 7500 2650
-$Comp
 L power:GND #PWR0112
 U 1 1 601A4BE5
 P 7800 3550
@@ -599,7 +586,7 @@ $EndComp
 Wire Wire Line
 	7800 3500 7800 3550
 Wire Wire Line
-	8100 2650 8800 2650
+	8250 2650 8800 2650
 Connection ~ 8800 2650
 Connection ~ 9450 3950
 Wire Wire Line
@@ -661,8 +648,6 @@ Wire Wire Line
 	10750 2950 10500 2950
 Wire Wire Line
 	10500 3200 7800 3200
-Wire Wire Line
-	7800 2850 7800 3200
 Wire Wire Line
 	10500 2950 10500 3200
 Wire Wire Line
@@ -884,22 +869,9 @@ F 3 "" H 10900 10500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7000 3500 7000 6000
-$Comp
-L Diode:BAT54C D301
-U 1 1 601B530B
-P 7000 3200
-F 0 "D301" V 6954 3288 50  0000 L CNN
-F 1 "BAT54C" V 7045 3288 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 7075 3325 50  0001 L CNN
-F 3 "http://www.diodes.com/_files/datasheets/ds11005.pdf" H 6920 3200 50  0001 C CNN
-	1    7000 3200
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
 	7000 6000 7450 6000
 Wire Wire Line
-	7200 3200 7800 3200
+	7500 3200 7800 3200
 $Comp
 L MIMXRT1062:MIMXRT1xxxxVJ U301
 U 2 1 60055BD0
@@ -1368,8 +1340,6 @@ Wire Wire Line
 Connection ~ 7900 9700
 Text HLabel 4050 2350 2    50   Input ~ 0
 POR_B
-Text HLabel 7300 2650 0    50   Input ~ 0
-VBAT
 Text HLabel 10500 4250 0    50   Input ~ 0
 AD_B0_11
 Text HLabel 3950 11100 0    50   Output ~ 0
@@ -2475,4 +2445,34 @@ Wire Notes Line
 	20350 5800 16950 5800
 Wire Notes Line
 	20350 8950 20350 5800
+$Comp
+L Diode:BAT54J D301
+U 1 1 62BD4BD9
+P 7350 3200
+F 0 "D301" H 7350 2983 50  0000 C CNN
+F 1 "BAT54J" H 7350 3074 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323F" H 7350 3025 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAT54J.pdf" H 7350 3200 50  0001 C CNN
+	1    7350 3200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7200 3200 7000 3200
+Wire Wire Line
+	7000 3200 7000 6000
+$Comp
+L Diode:BAT54J D302
+U 1 1 62D056CF
+P 8100 2650
+F 0 "D302" H 8100 2867 50  0000 C CNN
+F 1 "BAT54J" H 8100 2776 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323F" H 8100 2475 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAT54J.pdf" H 8100 2650 50  0001 C CNN
+	1    8100 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 2650 7800 2650
+Wire Wire Line
+	7800 2650 7800 3200
 $EndSCHEMATC

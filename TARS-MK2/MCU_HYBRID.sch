@@ -1085,21 +1085,6 @@ Connection ~ 8850 7350
 Wire Wire Line
 	7950 6750 10100 6750
 $Comp
-L Diode:BAT54C D?
-U 1 1 60565253
-P 7150 3700
-AR Path="/60021F5A/60565253" Ref="D?"  Part="1" 
-AR Path="/60021F93/60565253" Ref="D502"  Part="1" 
-F 0 "D502" H 7150 3925 50  0000 C CNN
-F 1 "BAT54C" H 7150 3834 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 7225 3825 50  0001 L CNN
-F 3 "http://www.diodes.com/_files/datasheets/ds11005.pdf" H 7070 3700 50  0001 C CNN
-	1    7150 3700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6650 3700 6850 3700
-$Comp
 L power:GND #PWR?
 U 1 1 6056525A
 P 7150 4600
@@ -1128,7 +1113,7 @@ $EndComp
 Wire Wire Line
 	7150 4550 7150 4600
 Wire Wire Line
-	7450 3700 8150 3700
+	7600 3700 8150 3700
 Connection ~ 8150 3700
 Connection ~ 8800 5000
 Wire Wire Line
@@ -1198,8 +1183,6 @@ Wire Wire Line
 	10100 4000 9850 4000
 Wire Wire Line
 	9850 4250 7150 4250
-Wire Wire Line
-	7150 3900 7150 4250
 Wire Wire Line
 	9850 4000 9850 4250
 Wire Wire Line
@@ -1370,24 +1353,9 @@ F 3 "" H 9250 6300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6350 4550 6350 7050
-$Comp
-L Diode:BAT54C D?
-U 1 1 605652DF
-P 6350 4250
-AR Path="/60021F5A/605652DF" Ref="D?"  Part="1" 
-AR Path="/60021F93/605652DF" Ref="D501"  Part="1" 
-F 0 "D501" V 6304 4338 50  0000 L CNN
-F 1 "BAT54C" V 6395 4338 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 6425 4375 50  0001 L CNN
-F 3 "http://www.diodes.com/_files/datasheets/ds11005.pdf" H 6270 4250 50  0001 C CNN
-	1    6350 4250
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
 	6350 7050 6800 7050
 Wire Wire Line
-	6550 4250 7150 4250
+	6900 4250 7150 4250
 Wire Wire Line
 	5600 3300 5600 5800
 Wire Wire Line
@@ -1402,8 +1370,6 @@ Wire Wire Line
 	3400 3400 3150 3400
 Text HLabel 3400 3400 2    50   Input ~ 0
 POR_B
-Text HLabel 6650 3700 0    50   Input ~ 0
-VBAT
 Text HLabel 9850 5300 0    50   Input ~ 0
 AD_B0_11
 $Comp
@@ -2391,4 +2357,38 @@ Wire Wire Line
 	16500 12650 16750 12650
 Wire Wire Line
 	16500 10950 17100 10950
+$Comp
+L Diode:BAT54J D?
+U 1 1 62F123AE
+P 6750 4250
+AR Path="/60021F5A/62F123AE" Ref="D?"  Part="1" 
+AR Path="/60021F93/62F123AE" Ref="D501"  Part="1" 
+F 0 "D501" H 6750 4033 50  0000 C CNN
+F 1 "BAT54J" H 6750 4124 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323F" H 6750 4075 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAT54J.pdf" H 6750 4250 50  0001 C CNN
+	1    6750 4250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6350 4250 6600 4250
+Wire Wire Line
+	6350 4250 6350 7050
+$Comp
+L Diode:BAT54J D?
+U 1 1 6301FFB3
+P 7450 3700
+AR Path="/60021F5A/6301FFB3" Ref="D?"  Part="1" 
+AR Path="/60021F93/6301FFB3" Ref="D502"  Part="1" 
+F 0 "D502" H 7450 3917 50  0000 C CNN
+F 1 "BAT54J" H 7450 3826 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323F" H 7450 3525 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAT54J.pdf" H 7450 3700 50  0001 C CNN
+	1    7450 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 3700 7150 3700
+Wire Wire Line
+	7150 3700 7150 4250
 $EndSCHEMATC

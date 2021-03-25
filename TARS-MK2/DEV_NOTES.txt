@@ -401,3 +401,11 @@
 	- Routed MPU 32.768 kHz crystal
 	- Routed MPU ground and power connections. Used copper pours for grounds
 	- JTAG connector wasn't connected in schematic. fixed it
+
+	FCB - Ayberk (part 2)
+	- Cleaned up MPU schematic a little.
+	- Routed MPU JTAG connections
+	IMPORTANT: Replaced MCU BAT54C diodes with BAT54J. We're not using VBAT so having a dual common cathode diode is unnecessary.
+	- Placed the W25Q128JVS flash chip (probs should have done this sooner)
+	- Placed TLV57533 LDO (also probs shoulda done sooner)
+	- Continued placing various power components around MCU_AC. It's getting very tight and progressing slowly.
