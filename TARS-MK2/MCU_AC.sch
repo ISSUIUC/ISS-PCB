@@ -560,7 +560,7 @@ Wire Wire Line
 	10750 6300 9500 6300
 Connection ~ 9500 6300
 Wire Wire Line
-	8600 5700 10750 5700
+	8600 5700 8950 5700
 $Comp
 L power:GND #PWR0112
 U 1 1 601A4BE5
@@ -647,7 +647,7 @@ Connection ~ 7800 3200
 Wire Wire Line
 	10750 2950 10500 2950
 Wire Wire Line
-	10500 3200 7800 3200
+	10500 3200 8750 3200
 Wire Wire Line
 	10500 2950 10500 3200
 Wire Wire Line
@@ -695,9 +695,9 @@ Wire Wire Line
 Wire Wire Line
 	7800 3300 7800 3200
 Wire Wire Line
-	6250 4750 8600 4750
+	6250 4750 7750 4750
 Wire Wire Line
-	9450 3950 10650 3950
+	9450 3950 10050 3950
 Connection ~ 10650 3950
 $Comp
 L Device:L L301
@@ -1241,7 +1241,7 @@ Connection ~ 17650 11850
 Wire Wire Line
 	18800 11850 18800 11950
 Wire Wire Line
-	17650 11850 18800 11850
+	17650 11850 18100 11850
 Wire Wire Line
 	17650 12150 17650 11850
 Wire Wire Line
@@ -1773,7 +1773,7 @@ $EndComp
 Connection ~ 7450 6000
 Connection ~ 7850 6000
 Wire Wire Line
-	7850 6000 10750 6000
+	7850 6000 10500 6000
 Wire Wire Line
 	7450 6000 7850 6000
 Wire Wire Line
@@ -2475,4 +2475,176 @@ Wire Wire Line
 	7950 2650 7800 2650
 Wire Wire Line
 	7800 2650 7800 3200
+$Comp
+L Connector:TestPoint_Probe TP?
+U 1 1 606F6736
+P 7200 3950
+AR Path="/60021F1B/606F6736" Ref="TP?"  Part="1" 
+AR Path="/60021F5A/606F6736" Ref="TP01"  Part="1" 
+F 0 "TP01" V 7250 4250 50  0000 C CNN
+F 1 "USB_VBUS" V 7200 4250 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7400 3950 50  0001 C CNN
+F 3 "~" H 7400 3950 50  0001 C CNN
+	1    7200 3950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint_Probe TP?
+U 1 1 6076FA59
+P 10500 5900
+AR Path="/60021F1B/6076FA59" Ref="TP?"  Part="1" 
+AR Path="/60021F5A/6076FA59" Ref="TP02"  Part="1" 
+F 0 "TP02" V 10550 6200 50  0000 C CNN
+F 1 "VDD_USB_CAP" V 10500 6200 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10700 5900 50  0001 C CNN
+F 3 "~" H 10700 5900 50  0001 C CNN
+	1    10500 5900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10500 5900 10500 6000
+Connection ~ 10500 6000
+Wire Wire Line
+	10500 6000 10750 6000
+Connection ~ 8750 3200
+Wire Wire Line
+	8750 3200 7800 3200
+$Comp
+L Connector:TestPoint_Probe TP?
+U 1 1 60856C2B
+P 8950 5550
+AR Path="/60021F1B/60856C2B" Ref="TP?"  Part="1" 
+AR Path="/60021F5A/60856C2B" Ref="TP04"  Part="1" 
+F 0 "TP04" V 9000 5850 50  0000 C CNN
+F 1 "VDD_SVNS_CAP" V 8950 5850 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 9150 5550 50  0001 C CNN
+F 3 "~" H 9150 5550 50  0001 C CNN
+	1    8950 5550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8950 5550 8950 5700
+Connection ~ 8950 5700
+Wire Wire Line
+	8950 5700 10750 5700
+$Comp
+L Connector:TestPoint_Probe TP?
+U 1 1 608CC5A1
+P 8900 6300
+AR Path="/60021F1B/608CC5A1" Ref="TP?"  Part="1" 
+AR Path="/60021F5A/608CC5A1" Ref="TP05"  Part="1" 
+F 0 "TP05" V 8950 6600 50  0000 C CNN
+F 1 "NVCC_PLL" V 8900 6600 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 9100 6300 50  0001 C CNN
+F 3 "~" H 9100 6300 50  0001 C CNN
+	1    8900 6300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8900 6300 9050 6300
+Connection ~ 9050 6300
+$Comp
+L Connector:TestPoint_Probe TP?
+U 1 1 60942F7A
+P 9800 6600
+AR Path="/60021F1B/60942F7A" Ref="TP?"  Part="1" 
+AR Path="/60021F5A/60942F7A" Ref="TP06"  Part="1" 
+F 0 "TP06" V 9850 6900 50  0000 C CNN
+F 1 "VDD_HIGH_CAP" V 9800 6900 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10000 6600 50  0001 C CNN
+F 3 "~" H 10000 6600 50  0001 C CNN
+	1    9800 6600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9800 6600 9950 6600
+Connection ~ 9950 6600
+$Comp
+L Connector:TestPoint_Probe TP?
+U 1 1 609B97C9
+P 10050 3800
+AR Path="/60021F1B/609B97C9" Ref="TP?"  Part="1" 
+AR Path="/60021F5A/609B97C9" Ref="TP08"  Part="1" 
+F 0 "TP08" V 10100 4100 50  0000 C CNN
+F 1 "BOARD" V 10050 4100 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10250 3800 50  0001 C CNN
+F 3 "~" H 10250 3800 50  0001 C CNN
+	1    10050 3800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10050 3800 10050 3950
+Connection ~ 10050 3950
+Wire Wire Line
+	10050 3950 10650 3950
+$Comp
+L Connector:TestPoint_Probe TP?
+U 1 1 60A3048F
+P 18100 11650
+AR Path="/60021F1B/60A3048F" Ref="TP?"  Part="1" 
+AR Path="/60021F5A/60A3048F" Ref="TP09"  Part="1" 
+F 0 "TP09" V 18150 11950 50  0000 C CNN
+F 1 "FLASH_MEM" V 18100 11950 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 18300 11650 50  0001 C CNN
+F 3 "~" H 18300 11650 50  0001 C CNN
+	1    18100 11650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	18100 11650 18100 11850
+Connection ~ 18100 11850
+Wire Wire Line
+	18100 11850 18800 11850
+Wire Wire Line
+	9000 4900 9150 4900
+Connection ~ 9150 4900
+Wire Wire Line
+	7200 3950 7400 3950
+Connection ~ 7400 3950
+Wire Wire Line
+	8750 3350 8750 3200
+$Comp
+L Connector:TestPoint_Probe TP?
+U 1 1 607E2398
+P 8750 3350
+AR Path="/60021F1B/607E2398" Ref="TP?"  Part="1" 
+AR Path="/60021F5A/607E2398" Ref="TP03"  Part="1" 
+F 0 "TP03" V 8800 3650 50  0000 C CNN
+F 1 "VDD_SNVS_IN" V 8750 3650 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8950 3350 50  0001 C CNN
+F 3 "~" H 8950 3350 50  0001 C CNN
+	1    8750 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint_Probe TP?
+U 1 1 60BE3B42
+P 7750 4900
+AR Path="/60021F1B/60BE3B42" Ref="TP?"  Part="1" 
+AR Path="/60021F5A/60BE3B42" Ref="TP07"  Part="1" 
+F 0 "TP07" V 7800 5200 50  0000 C CNN
+F 1 "POWER_REG" V 7750 5200 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7950 4900 50  0001 C CNN
+F 3 "~" H 7950 4900 50  0001 C CNN
+	1    7750 4900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7750 4900 7750 4750
+Connection ~ 7750 4750
+Wire Wire Line
+	7750 4750 8600 4750
+$Comp
+L Connector:TestPoint_Probe TP?
+U 1 1 60AA8D80
+P 9000 4900
+AR Path="/60021F1B/60AA8D80" Ref="TP?"  Part="1" 
+AR Path="/60021F5A/60AA8D80" Ref="TP10"  Part="1" 
+F 0 "TP10" V 9050 5200 50  0000 C CNN
+F 1 "CPU" V 9000 5200 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 9200 4900 50  0001 C CNN
+F 3 "~" H 9200 4900 50  0001 C CNN
+	1    9000 4900
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC

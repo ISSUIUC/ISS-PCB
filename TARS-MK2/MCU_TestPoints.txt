@@ -1,0 +1,13 @@
+TEENSY POWER-UP TEST POINTS
+- Step 1 of 8: check that regulator is charged and USB bus is getting power (TP01)
+- Step 2 of 8: check if VDD_USB_CAP is charged to 2.5V (TP02)
+- Step 2 of 8: check if VDD_SNVS_IN receives power (TP03)
+- Step 3 of 8: check if VDD_SNVS_CAP is charged to 1.1V (TP04)
+- Step 4 of 8: check if NVCC_PLL is charged to 1.1V (TP05)
+- Step 4 of 8: check if VDD_HIGH_CAP is charged to 2.5V (TP06)
+- Step 5 of 8: check if PMIC_ON_REQ is high at 1.1V (TP07)
+- Step 6 of 8: check that the board is receiving 3.3V (maybe by TLV75733P regulator?) (TP08)
+- Step 6 of 8: check that LED by flash memory (W25Q16JVUXIM) is on (TP09)
+- Step 8 of 8: check that CPU receives 1.15V power (initially; voltage can change later) (TP10)
+
+Test point footprints from MPU schematic were copied over to MCU; changed size from 1.5 mm (MPU) to 1.0 mm (MCU)
