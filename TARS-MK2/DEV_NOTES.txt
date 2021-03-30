@@ -446,7 +446,15 @@
 	- Added test points to MCU schematic by copying over from MPU schematic and changing footprint size from 1.5 mm to 1.0 mm
 	- Planning on working on layout for test points on Wednesday at 6pm with Ayberk
 
-[03/29/2021]
 	FCB- Vincent
 	-Wired up the Microusb and USB ports on the PCB board
 	-Followed Ayberk's instructions in wiring using the Vias as needed
+
+[03/30/2021]
+	FCB - Ayberk
+	- Traced the peripherals for the SNS_SPI and the MCU-MPU SPI buses. They use LPSPI4 and LPSPI3 respectively.
+	- Added the SPI peripheral mapping to the text labels in the schematic.
+	- Found the LPSPI2 is not being used and available on EMC_00/02/03 pins.
+	- Allocated LPSPI2 to the board-to-board SPI bus (for communicating with Jetson Nano)
+		^ Note: LPSPI2 is NOT used on the T4.1 so we'll likely have to spin our own driver to use it.
+	- Note: Found the LPSPI1 is being used for memory expansion.
