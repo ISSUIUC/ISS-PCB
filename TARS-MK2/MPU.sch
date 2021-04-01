@@ -1493,10 +1493,10 @@ $EndComp
 Text Notes 2750 9700 0    24   ~ 0
 APX811 is the reset circuit for the C-SiP.\nThis supervisor circuit, along with the manual\nreset button are connected between the warm reset \nand the cold reset open drain buffer pin\n
 $Comp
-L NEW_1040310811:104031-0811 J5
+L NEW_1040310811:104031-0811 J5000
 U 1 1 60269250
 P 4550 21350
-F 0 "J5" H 4550 22015 50  0000 C CNN
+F 0 "J5000" H 4550 22015 50  0000 C CNN
 F 1 "104031-0811" H 4550 21924 50  0000 C CNN
 F 2 "SD_NEW_1040310811:NEW_1040310811" H 4550 21350 50  0001 L BNN
 F 3 "" H 4550 21350 50  0001 L BNN
@@ -2980,4 +2980,20 @@ Wire Notes Line
 	7400 22150 7400 19250
 Wire Notes Line
 	7400 19250 3550 19250
+$Comp
+L Connector:Micro_SD_Card J?
+U 1 1 60D160AD
+P 2550 21500
+AR Path="/60021F5A/60D160AD" Ref="J?"  Part="1" 
+AR Path="/60021F93/60D160AD" Ref="J?"  Part="1" 
+AR Path="/60021F1B/60D160AD" Ref="J5"  Part="1" 
+F 0 "J5" H 2500 22217 50  0000 C CNN
+F 1 "Micro_SD_Card" H 2500 22126 50  0000 C CNN
+F 2 "SD_NEW_1040310811:NEW_1040310811" H 3700 21800 50  0001 C CNN
+F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 2550 21500 50  0001 C CNN
+	1    2550 21500
+	-1   0    0    1   
+$EndComp
+Text Notes 2150 22500 0    197  ~ 39
+TODO: SWAP THESE OUT!!
 $EndSCHEMATC
