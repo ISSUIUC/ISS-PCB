@@ -459,7 +459,6 @@
 		^ Note: LPSPI2 is NOT used on the T4.1 so we'll likely have to spin our own driver to use it.
 	- Note: Found the LPSPI1 is being used for memory expansion.
 
-[03/30/2021]
 	FCB - Justin and Ben
 	- Moved the capacitors to the center of the board(Tried editing the footprints but were unsuccessful) :(
 	- On the left MCU, we added multiple connections
@@ -471,12 +470,20 @@
 	- tweaked vias and connections in right mcu
 	- removed some traces from last night (will replace later)
 
-[03/31/2021]
 	FCB - Rohini, Maya and Ayberk
 	- Renamed the test points on the MCU and removed flash memory test points
 	- Put the test points on the PCB layout 
 
-[03/30/2021]
+[03/31/2021]
 	FCB - Ben
 	- Cleaned up frown layers
 	- Wrapped up CS connections for right MCU
+
+	FCB - Ayberk
+	- Swapped out the MLPlus 1.25mm 6pos board-to-board connectors for 8pos versions
+		^ its free real estate
+	- Used the connectors closer to the MCUs for the B2B SPI bus to decrease signal trace lengths.
+	- Adde hierarchical pins for B2B I2C bus and 4x Servos along with a 9V power supply for the pressure transducers that'll be coming from the POWER board.
+	- Added Phoenix MPT screw terminals for PT and solenoid connections.
+		TODO: should add silkscreen labels to these (+/-/shield etc)
+	- moved the silkscreen rectangle around the LCD to the F.CrtYd layer as it wasn't really helping in the silkscreen and kinda hurt the  a e s t h e t i c.
