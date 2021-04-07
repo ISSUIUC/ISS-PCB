@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 4 5
+Sheet 3 5
 Title "TARS - MK2 Hyrbid Microcontroller Schematic"
 Date ""
 Rev ""
@@ -497,19 +497,6 @@ F 3 "" H 20450 3000 50  0001 C CNN
 $EndComp
 $Comp
 L MIMXRT1062:MIMXRT1xxxxVJ U?
-U 1 1 60565135
-P 10700 4800
-AR Path="/60021F5A/60565135" Ref="U?"  Part="1" 
-AR Path="/60021F93/60565135" Ref="U501"  Part="1" 
-F 0 "U501" H 11228 3871 50  0000 L CNN
-F 1 "MIMXRT1xxxxVJ" H 11228 3780 50  0000 L CNN
-F 2 "MIMXRT1062:BGA-196_14x14_12.0x12.0mm" H 10700 1350 50  0001 C CNN
-F 3 "" H 10700 2750 50  0001 C CNN
-	1    10700 4800
-	1    0    0    -1  
-$EndComp
-$Comp
-L MIMXRT1062:MIMXRT1xxxxVJ U?
 U 6 1 6056513B
 P 2650 4200
 AR Path="/60021F5A/6056513B" Ref="U?"  Part="6" 
@@ -750,8 +737,6 @@ $EndComp
 Wire Wire Line
 	8800 3400 8800 3450
 Wire Wire Line
-	10100 3100 9600 3100
-Wire Wire Line
 	8800 3100 8800 3200
 Wire Wire Line
 	9200 3200 9200 3100
@@ -919,8 +904,6 @@ Wire Wire Line
 Connection ~ 8450 3700
 Connection ~ 10000 3700
 Wire Wire Line
-	10000 3700 10000 4100
-Wire Wire Line
 	8150 3700 8150 3100
 $Comp
 L power:GND #PWR?
@@ -1076,14 +1059,8 @@ Wire Wire Line
 	8400 7350 8850 7350
 Wire Wire Line
 	7950 7750 7950 6750
-Wire Wire Line
-	9700 7650 10100 7650
 Connection ~ 9700 7650
-Wire Wire Line
-	10100 7350 8850 7350
 Connection ~ 8850 7350
-Wire Wire Line
-	7950 6750 10100 6750
 $Comp
 L power:GND #PWR?
 U 1 1 6056525A
@@ -1180,8 +1157,6 @@ Wire Wire Line
 	7200 7050 7200 7750
 Connection ~ 7150 4250
 Wire Wire Line
-	10100 4000 9850 4000
-Wire Wire Line
 	9850 4250 7150 4250
 Wire Wire Line
 	9850 4000 9850 4250
@@ -1251,8 +1226,6 @@ F 3 "~" H 9750 5550 50  0001 C CNN
 	1    9750 5550
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	9900 5550 10100 5550
 Wire Wire Line
 	9600 5550 9450 5550
 Wire Wire Line
@@ -1417,8 +1390,6 @@ F 3 "~" H 7300 3000 50  0001 C CNN
 $EndComp
 Connection ~ 6800 7050
 Connection ~ 7200 7050
-Wire Wire Line
-	7200 7050 10100 7050
 Wire Wire Line
 	6800 7050 7200 7050
 Wire Wire Line
@@ -2393,4 +2364,33 @@ Wire Wire Line
 	7300 3700 7150 3700
 Wire Wire Line
 	7150 3700 7150 4250
+Wire Wire Line
+	9700 7650 10100 7650
+Wire Wire Line
+	10100 7350 8850 7350
+Wire Wire Line
+	10100 4000 9850 4000
+Wire Wire Line
+	10000 3700 10000 4100
+Wire Wire Line
+	7950 6750 10100 6750
+Wire Wire Line
+	9900 5550 10100 5550
+Wire Wire Line
+	10100 3100 9600 3100
+Wire Wire Line
+	7200 7050 10100 7050
+$Comp
+L MIMXRT1062:MIMXRT1xxxxVJ U?
+U 1 1 60565135
+P 10700 4800
+AR Path="/60021F5A/60565135" Ref="U?"  Part="1" 
+AR Path="/60021F93/60565135" Ref="U501"  Part="1" 
+F 0 "U501" H 11228 3871 50  0000 L CNN
+F 1 "MIMXRT1xxxxVJ" H 11228 3780 50  0000 L CNN
+F 2 "MIMXRT1062:BGA-196_14x14_12.0x12.0mm" H 10700 1350 50  0001 C CNN
+F 3 "" H 10700 2750 50  0001 C CNN
+	1    10700 4800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
