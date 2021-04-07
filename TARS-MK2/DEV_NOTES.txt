@@ -515,8 +515,15 @@
 	- Made some connections for test points
 	- Some connections weren't showing up with the rat's nest, so those pads were not connected; will be connected later
 
-[04/01/2021]
+[04/07/2021]
 	FCB - Ben and Justin
 	- Started inner MCU connections
 	- Move sensor suite down?
 	- NOTE: FINISH CS PIN CONNECTIONS TO HIGH G IMU AND GPS
+
+	FCB - Ayberk
+	- IMPORTANT: Decided that MCUs will be supplied by 5V from the B2B power connectors or their respective USB connectors. 
+		^ Thought this would be best as it follows the T4.1 power-up sequence exactly.
+	- Made a thicc trace supplying MCU_AC with 5V from the B2B power connector. Probably thicker than it needs to be.
+	- Flipped the right side B2B signal connectors so they're symmetric.
+	- Made MCU to microSD card routing. That stuff is pretty nasty but it is what it is
