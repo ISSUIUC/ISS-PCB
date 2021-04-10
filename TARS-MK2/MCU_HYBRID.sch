@@ -2109,25 +2109,23 @@ Wire Wire Line
 	8300 10500 7550 10500
 Connection ~ 7550 10500
 Text HLabel 3600 11900 0    50   Input ~ 0
-AD_BO_04
+AD_B0_04
 Text HLabel 3600 12000 0    50   Input ~ 0
-AD_BO_06
-Text HLabel 3600 12100 0    50   Input ~ 0
-AD_BO_10
+AD_B0_06
 Text HLabel 3600 12200 0    50   Input ~ 0
-AD_BO_09
+AD_B0_09
 Text HLabel 3600 11600 0    50   Input ~ 0
 EMC_01
 Text HLabel 2700 11800 0    50   Input ~ 0
 AD_B0_11
 Text HLabel 6750 12000 2    50   Input ~ 0
-AD_BO_08
+AD_B0_08
 Text HLabel 6750 11900 2    50   Input ~ 0
-BO_13
+B0_13
 Text HLabel 6750 11600 2    50   Input ~ 0
 POR_B
 Text HLabel 6750 11500 2    50   Input ~ 0
-AD_BO_07
+AD_B0_07
 Text HLabel 8300 10500 2    50   Input ~ 0
 3V3
 $Comp
@@ -2393,4 +2391,6 @@ F 3 "" H 10700 2750 50  0001 C CNN
 	1    10700 4800
 	1    0    0    -1  
 $EndComp
+Text HLabel 3600 12100 0    50   Input ~ 0
+AD_B0_10
 $EndSCHEMATC
