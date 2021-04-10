@@ -99,7 +99,7 @@ Wire Wire Line
 	4400 3450 4600 3450
 Wire Wire Line
 	4400 3650 4600 3650
-Text HLabel 4050 3300 0    50   Output ~ 0
+Text HLabel 4050 3450 0    50   Input ~ 0
 USB5V
 Text HLabel 4050 2850 0    50   Input ~ 0
 VDD5V
@@ -819,15 +819,6 @@ Connection ~ 4400 3550
 Wire Wire Line
 	4400 3550 4400 3650
 Connection ~ 4400 3450
-Wire Wire Line
-	3350 3450 4200 3450
-Wire Wire Line
-	4050 3300 4200 3300
-Wire Wire Line
-	4200 3300 4200 3450
-Connection ~ 4200 3450
-Wire Wire Line
-	4200 3450 4400 3450
 Text Notes 28400 20200 0    79   ~ 0
 NOTES:\n    - Doc recommends 6mil signal, 15 mil power traces\n    - GND1 is ground ring for ESD protection\n
 Connection ~ 7850 3850
@@ -1424,59 +1415,26 @@ Wire Wire Line
 Wire Wire Line
 	1650 9250 1650 9800
 Connection ~ 1650 9800
-Wire Wire Line
-	1900 8300 1650 8300
-Wire Wire Line
-	2300 8300 3400 8300
 Connection ~ 3400 9250
 Wire Wire Line
 	3400 9250 4600 9250
-Wire Wire Line
-	3400 8300 3400 9250
 $Comp
 L power:GND #PWR0136
 U 1 1 609A122D
-P 1650 8650
-F 0 "#PWR0136" H 1650 8400 50  0001 C CNN
-F 1 "GND" H 1655 8477 50  0000 C CNN
-F 2 "" H 1650 8650 50  0001 C CNN
-F 3 "" H 1650 8650 50  0001 C CNN
-	1    1650 8650
+P 3100 8700
+F 0 "#PWR0136" H 3100 8450 50  0001 C CNN
+F 1 "GND" H 3105 8527 50  0000 C CNN
+F 2 "" H 3100 8700 50  0001 C CNN
+F 3 "" H 3100 8700 50  0001 C CNN
+	1    3100 8700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1650 8300 1650 8650
 Wire Wire Line
 	3850 9800 3850 9350
 Wire Wire Line
 	3850 9350 4600 9350
 Wire Wire Line
 	1650 9800 3850 9800
-$Comp
-L FCB-rescue:SW_MEC_5E-Switch SW1
-U 1 1 60AACF5A
-P 2100 8300
-AR Path="/60AACF5A" Ref="SW1"  Part="1" 
-AR Path="/60021F1B/60AACF5A" Ref="SW1"  Part="1" 
-F 0 "SW1" H 2100 8685 50  0000 C CNN
-F 1 "SW_MEC_5E" H 2100 8594 50  0000 C CNN
-F 2 "" H 2100 8600 50  0001 C CNN
-F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 2100 8600 50  0001 C CNN
-	1    2100 8300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2300 8200 3400 8200
-Wire Wire Line
-	3400 8200 3400 8300
-Connection ~ 3400 8300
-Wire Wire Line
-	1900 8200 1650 8200
-Wire Wire Line
-	1650 8200 1650 8300
-Connection ~ 1650 8300
-Text Notes 2350 8450 2    20   ~ 0
-Need to confirm that this \nmatches the tactile switch \nshown on the C-SiP manual…
 Text Notes 4100 9500 0    50   ~ 0
 ?? resistors ??
 $Comp
@@ -1559,7 +1517,7 @@ Wire Wire Line
 Text HLabel 12100 7850 0    50   Input ~ 0
 USB_DC
 Text HLabel 4600 17350 2    50   Input ~ 0
-USB_DC
+USB5V
 Text HLabel 12100 7950 0    50   Input ~ 0
 USB0_DM
 Text HLabel 12100 8050 0    50   Input ~ 0
@@ -1595,8 +1553,8 @@ Wire Wire Line
 	6550 17550 6500 17550
 Wire Wire Line
 	6500 17550 6500 17450
-Text HLabel 6250 17000 0    50   Input ~ 0
-USB_DC
+Text HLabel 6250 17000 0    50   Output ~ 0
+USB5V
 Wire Wire Line
 	6550 18150 6450 18150
 Wire Wire Line
@@ -1978,42 +1936,6 @@ Wire Notes Line
 	7950 13850 3100 13850
 Wire Notes Line
 	3100 13850 3100 16200
-$Comp
-L 10118192-0001LF:10118192-0001LF J1
-U 1 1 6039EE28
-P 3050 3150
-F 0 "J1" H 3278 3196 50  0000 L CNN
-F 1 "10118192-0001LF" H 3278 3105 50  0000 L CNN
-F 2 "MicroUSB_Connector:AMPHENOL_10118192-0001LF" H 3050 3150 50  0001 L BNN
-F 3 "" H 3050 3150 50  0001 L BNN
-F 4 "Amphenol" H 3050 3150 50  0001 L BNN "MANUFACTURER"
-F 5 "Manufacturer Recommendation" H 3050 3150 50  0001 L BNN "STANDARD"
-F 6 "B" H 3050 3150 50  0001 L BNN "PARTREV"
-	1    3050 3150
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3350 2850 3450 2850
-Wire Wire Line
-	3450 2850 3450 2950
-Wire Wire Line
-	3450 3050 3350 3050
-Wire Wire Line
-	3450 2950 3500 2950
-Connection ~ 3450 2950
-Wire Wire Line
-	3450 2950 3450 3050
-$Comp
-L power:GND #PWR0129
-U 1 1 6058C4C0
-P 3500 2950
-F 0 "#PWR0129" H 3500 2700 50  0001 C CNN
-F 1 "GND" V 3505 2822 50  0000 R CNN
-F 2 "" H 3500 2950 50  0001 C CNN
-F 3 "" H 3500 2950 50  0001 C CNN
-	1    3500 2950
-	0    -1   -1   0   
-$EndComp
 $Comp
 L three-way-resistor:R_3WAY_12 R205
 U 1 1 608E0290
@@ -2949,4 +2871,25 @@ Wire Wire Line
 	3750 20750 3600 20750
 Wire Wire Line
 	3600 20750 3600 20850
+Wire Wire Line
+	4050 3450 4400 3450
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 60EC0C99
+P 2800 8600
+F 0 "J1" H 3000 8500 50  0000 C CNN
+F 1 "Power_Button" H 3150 8600 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2800 8600 50  0001 C CNN
+F 3 "~" H 2800 8600 50  0001 C CNN
+	1    2800 8600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3000 8600 3100 8600
+Wire Wire Line
+	3100 8600 3100 8700
+Wire Wire Line
+	3000 8500 3400 8500
+Wire Wire Line
+	3400 8500 3400 9250
 $EndSCHEMATC
