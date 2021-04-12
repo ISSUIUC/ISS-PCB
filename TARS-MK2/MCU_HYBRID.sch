@@ -2393,4 +2393,8 @@ F 3 "" H 10700 2750 50  0001 C CNN
 $EndComp
 Text HLabel 3600 12100 0    50   Input ~ 0
 AD_B0_10
+Text HLabel 4600 2900 0    50   Input ~ 0
+5V_MCU_SUPPLY
+Wire Wire Line
+	4600 2900 4800 2900
 $EndSCHEMATC

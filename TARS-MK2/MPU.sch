@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A1 33110 23386
 encoding utf-8
-Sheet 2 5
+Sheet 5 5
 Title "TARS - MK2 Microprocessor Schematic"
 Date ""
 Rev ""
@@ -2463,7 +2463,7 @@ Wire Wire Line
 	20900 6050 21150 6050
 Text Notes 19600 5900 0    50   ~ 0
 Figure out D0/D1 to \nMOSI/MISO realtionship
-Text HLabel 20900 4450 0    50   Input ~ 0
+Text HLabel 20900 4450 0    50   Output ~ 0
 UART0_TXD
 Text HLabel 20900 4550 0    50   Input ~ 0
 UART0_RXD
@@ -2479,7 +2479,7 @@ Wire Wire Line
 	20900 4650 21150 4650
 Wire Wire Line
 	20900 4750 21150 4750
-Text HLabel 20900 5050 0    50   Input ~ 0
+Text HLabel 20900 5050 0    50   Output ~ 0
 UART1_TXD
 Text HLabel 20900 5150 0    50   Input ~ 0
 UART1_RXD
