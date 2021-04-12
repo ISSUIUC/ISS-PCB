@@ -2892,4 +2892,54 @@ Wire Wire Line
 	3000 8500 3400 8500
 Wire Wire Line
 	3400 8500 3400 9250
+Text Notes 30850 4700 0    79   ~ 16
+SYSBOOT[4:0] SHOULD BE SET TO 11100b\nFIX THIS
+Text HLabel 23900 6950 2    50   Output ~ 0
+GPMC_AD9
+Wire Wire Line
+	23550 6950 23900 6950
+Text Notes 24450 6975 0    39   ~ 0
+(TLM_DIO0)
+Text HLabel 23900 7050 2    50   Output ~ 0
+GPMC_AD10
+Wire Wire Line
+	23550 7050 23900 7050
+Text Notes 24450 7075 0    39   ~ 0
+(TLM_DIO1)
+Wire Wire Line
+	23550 6850 23900 6850
+Text Notes 24450 6875 0    39   ~ 0
+(TLM_RST)
+Text HLabel 23900 6850 2    50   Output ~ 0
+GPMC_AD8
+Text HLabel 23900 7150 2    50   Output ~ 0
+GPMC_AD11
+Wire Wire Line
+	23550 7150 23900 7150
+Text Notes 24450 7175 0    39   ~ 0
+(TLM_DIO2)
+Text HLabel 23900 7250 2    50   Output ~ 0
+GPMC_AD12
+Wire Wire Line
+	23550 7250 23900 7250
+Text Notes 24450 7275 0    39   ~ 0
+(TLM_DIO3)
+Text HLabel 23900 7350 2    50   Output ~ 0
+GPMC_AD13
+Wire Wire Line
+	23550 7350 23900 7350
+Text Notes 24450 7375 0    39   ~ 0
+(TLM_DIO4)
+Text HLabel 23900 7450 2    50   Output ~ 0
+GPMC_AD14
+Wire Wire Line
+	23550 7450 23900 7450
+Text Notes 24450 7475 0    39   ~ 0
+(TLM_DIO5)
+Text HLabel 23900 7550 2    50   Output ~ 0
+GPMC_AD15
+Wire Wire Line
+	23550 7550 23900 7550
+Text Notes 24450 7575 0    39   ~ 0
+(LCD_DC)
 $EndSCHEMATC

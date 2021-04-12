@@ -554,3 +554,8 @@
 	- Made MPU-MCU UART connections on the schematic. still need to be routed.
 	- IMPORTANTE: Noticed that the MCUs' EMC_01 pins are being used for the bootloader and for MCU_MCU communication. We need to try to use a different pin for MCU-MCU comms to not clash with the bootloader functioning.
 	- Connected some the SPI bus lines between the MPU and the LCD + LoRa module in the schematic. There are still extra GPIOs that need to be connected for various functionality.
+
+[04/12/2021]
+	FCB - Ayberk
+	- Made GPIO connections between MPU and the LoRa module for fancy features
+	- Added the necessary circuitry for the TFT LCD display from Adafruit's schematic. They're using an interesting reset IC.
