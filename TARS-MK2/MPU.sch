@@ -2611,7 +2611,7 @@ Wire Wire Line
 Wire Wire Line
 	5800 19350 5550 19350
 Text HLabel 5800 19350 2    50   Input ~ 0
-SYS_VDD3_3PV3
+SYS_VDD3_3P3V
 $Comp
 L power:GND #PWR0106
 U 1 1 61E18840
