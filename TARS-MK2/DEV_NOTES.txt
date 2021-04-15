@@ -590,3 +590,11 @@
 	- SPI BUS DONE
 	- bootloader on left MCU connected (NEEDS GND AND 3.3V CONNECTIONS)
 	- check rightmost connection (B2B_SPI_CS1) on MCU bus. Looks a bit messy coming out of right mcu
+
+	FCB - Ayberk
+	- Tweaked the ZOE-M8Q connections.
+		- Got rid of the jumper pads for choosing between I2C and SPI. Routing I2C up here is much too difficult for its worth. The UART interface is broken out so it can be programmed through that.
+	- Placed and connected memory expansion components for the right MCU
+	- Realized we forgot to include debug LEDs anywhere.
+	aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+	- Tweaked left MCU memory expansion routing.

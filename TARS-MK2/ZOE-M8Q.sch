@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 5
+Sheet 4 5
 Title ""
 Date ""
 Rev ""
@@ -179,58 +179,16 @@ Text Notes 2350 3500 0    39   ~ 0
 I2C + UART\n (default)
 Text HLabel 1500 900  0    50   Input ~ 0
 3V3_SUPPLY
-Text HLabel 2950 1500 0    50   Input ~ 0
+Text HLabel 2950 1750 0    50   Input ~ 0
 SPI_SCK
 Text HLabel 3400 3250 0    50   Output ~ 0
 EXTINT
 Text Notes 3000 3400 0    31   ~ 0
 Programmable interrupt\n trigger pin
-$Comp
-L Jumper:SolderJumper_3_Bridged12 JP603
-U 1 1 603A468F
-P 3250 1300
-F 0 "JP603" V 3204 1367 50  0000 L CNN
-F 1 "D_SEL" V 3295 1367 50  0000 L CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm" H 3250 1300 50  0001 C CNN
-F 3 "~" H 3250 1300 50  0001 C CNN
-	1    3250 1300
-	0    -1   1    0   
-$EndComp
-Text HLabel 2950 1100 0    50   Input ~ 0
-I2C_SCL
-Wire Wire Line
-	2950 1100 3250 1100
-Wire Wire Line
-	2950 1500 3250 1500
-Wire Wire Line
-	3400 1300 3900 1300
-Wire Wire Line
-	3900 1750 4200 1750
-Text HLabel 2950 2000 0    50   Input ~ 0
+Text HLabel 2950 1950 0    50   Input ~ 0
 SPI_CS
-$Comp
-L Jumper:SolderJumper_3_Bridged12 JP604
-U 1 1 603BBD6D
-P 3250 1800
-F 0 "JP604" V 3204 1867 50  0000 L CNN
-F 1 "D_SEL" V 3295 1867 50  0000 L CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm" H 3250 1800 50  0001 C CNN
-F 3 "~" H 3250 1800 50  0001 C CNN
-	1    3250 1800
-	0    -1   1    0   
-$EndComp
-Text HLabel 2950 1600 0    50   Input ~ 0
-I2C_SDA
-Wire Wire Line
-	2950 1600 3250 1600
-Wire Wire Line
-	2950 2000 3250 2000
-Wire Wire Line
-	3400 1800 3800 1800
-Wire Wire Line
-	3800 1950 4200 1950
 Text HLabel 2950 2500 0    50   Input ~ 0
-SPI_MOSI
+SPI_MISO
 $Comp
 L Jumper:SolderJumper_3_Bridged12 JP605
 U 1 1 603E3339
@@ -249,7 +207,7 @@ Wire Wire Line
 Wire Wire Line
 	2950 2500 3250 2500
 Text HLabel 2950 3000 0    50   Input ~ 0
-UART_MOSI
+SPI_MOSI
 $Comp
 L Jumper:SolderJumper_3_Bridged12 JP606
 U 1 1 603E561A
@@ -306,10 +264,6 @@ Wire Wire Line
 	3400 3250 3600 3250
 Wire Wire Line
 	3600 2950 3600 3250
-Wire Wire Line
-	3800 1800 3800 1950
-Wire Wire Line
-	3900 1300 3900 1750
 Connection ~ 5400 900 
 Wire Wire Line
 	5400 900  5400 1250
@@ -420,7 +374,7 @@ Wire Wire Line
 Text HLabel 2550 6150 2    50   Output ~ 0
 UART_TXD
 Text HLabel 2550 6350 2    50   Output ~ 0
-UART_TXD
+UART_RXD
 Text HLabel 2550 5950 2    50   Output ~ 0
 3V3
 Wire Wire Line
@@ -747,4 +701,8 @@ F 3 "~" H 9550 2250 50  0001 C CNN
 	1    9550 2250
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2950 1750 4200 1750
+Wire Wire Line
+	2950 1950 4200 1950
 $EndSCHEMATC
