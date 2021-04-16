@@ -1211,7 +1211,7 @@ Wire Wire Line
 Wire Wire Line
 	5600 5800 7950 5800
 Wire Wire Line
-	8800 5000 10000 5000
+	8800 5000 9200 5000
 Connection ~ 10000 5000
 $Comp
 L Device:L L?
@@ -1894,9 +1894,9 @@ Wire Notes Line
 Wire Notes Line
 	15250 10300 15250 14050
 Text HLabel 12050 10800 0    50   Input ~ 0
-3V3
+3V3_MCU
 Text HLabel 14750 12750 2    50   Input ~ 0
-3V3
+3V3_MCU
 NoConn ~ 11000 12050
 $Comp
 L MCU_NXP_Kinetis:MKL02Z32VFG4 U?
@@ -2127,7 +2127,7 @@ POR_B
 Text HLabel 6750 11500 2    50   Input ~ 0
 AD_B0_07
 Text HLabel 8300 10500 2    50   Input ~ 0
-3V3
+3V3_MCU
 $Comp
 L power:GND #PWR0203
 U 1 1 604F6363
@@ -2275,9 +2275,9 @@ Wire Notes Line
 Text Notes 16100 10500 0    126  Italic 0
 OPTIONAL MEMORY
 Text HLabel 16500 10950 0    50   Input ~ 0
-3V3
+3V3_MCU
 Text HLabel 16500 12650 0    50   Input ~ 0
-3V3
+3V3_MCU
 Text HLabel 17300 13050 0    50   Input ~ 0
 EMC_22
 Text HLabel 17300 13250 0    50   Input ~ 0
@@ -2397,4 +2397,11 @@ Text HLabel 4600 2900 0    50   Input ~ 0
 5V_MCU_SUPPLY
 Wire Wire Line
 	4600 2900 4800 2900
+Text HLabel 9200 4750 2    50   Input ~ 0
+3V3_MCU
+Wire Wire Line
+	9200 4750 9200 5000
+Connection ~ 9200 5000
+Wire Wire Line
+	9200 5000 10000 5000
 $EndSCHEMATC
