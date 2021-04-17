@@ -2865,10 +2865,10 @@ Wire Wire Line
 Text Notes 24450 7575 0    39   ~ 0
 (LCD_DC)
 $Comp
-L Connector:TestPoint_Probe TP501
+L Connector:TestPoint_Probe TP18
 U 1 1 60935A0B
 P 4200 5750
-F 0 "TP501" V 4250 6050 50  0000 C CNN
+F 0 "TP18" V 4250 6050 50  0000 C CNN
 F 1 "PMIC_NRESET" V 4200 6050 50  0000 C CNN
 F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4400 5750 50  0001 C CNN
 F 3 "~" H 4400 5750 50  0001 C CNN
