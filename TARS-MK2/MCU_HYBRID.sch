@@ -570,7 +570,7 @@ $EndComp
 Wire Wire Line
 	8100 5100 7950 5100
 Wire Wire Line
-	7950 5100 7950 5800
+	7950 5100 7950 5450
 $Comp
 L Device:R_US R?
 U 1 1 60565162
@@ -1157,7 +1157,7 @@ Wire Wire Line
 	7200 7050 7200 7750
 Connection ~ 7150 4250
 Wire Wire Line
-	9850 4250 7150 4250
+	9850 4250 8200 4250
 Wire Wire Line
 	9850 4000 9850 4250
 Wire Wire Line
@@ -2371,13 +2371,13 @@ Wire Wire Line
 Wire Wire Line
 	10000 3700 10000 4100
 Wire Wire Line
-	7950 6750 10100 6750
+	7950 6750 8350 6750
 Wire Wire Line
 	9900 5550 10100 5550
 Wire Wire Line
 	10100 3100 9600 3100
 Wire Wire Line
-	7200 7050 10100 7050
+	7200 7050 9200 7050
 $Comp
 L MIMXRT1062:MIMXRT1xxxxVJ U?
 U 1 1 60565135
@@ -2403,5 +2403,168 @@ Wire Wire Line
 	9200 4750 9200 5000
 Connection ~ 9200 5000
 Wire Wire Line
-	9200 5000 10000 5000
+	9200 5000 9750 5000
+$Comp
+L Connector:TestPoint_Probe TP?
+U 1 1 6086F870
+P 6550 5000
+AR Path="/60021F1B/6086F870" Ref="TP?"  Part="1" 
+AR Path="/60021F5A/6086F870" Ref="TP?"  Part="1" 
+AR Path="/60021F93/6086F870" Ref="TP501"  Part="1" 
+F 0 "TP501" V 6600 5300 50  0000 C CNN
+F 1 "USB_VBUS" V 6550 5300 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 6750 5000 50  0001 C CNN
+F 3 "~" H 6750 5000 50  0001 C CNN
+	1    6550 5000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6550 5000 6750 5000
+Connection ~ 6750 5000
+$Comp
+L Connector:TestPoint_Probe TP?
+U 1 1 608D5AC1
+P 9200 6950
+AR Path="/60021F1B/608D5AC1" Ref="TP?"  Part="1" 
+AR Path="/60021F5A/608D5AC1" Ref="TP?"  Part="1" 
+AR Path="/60021F93/608D5AC1" Ref="TP502"  Part="1" 
+F 0 "TP502" V 9250 7250 50  0000 C CNN
+F 1 "VDD_USB_CAP" V 9200 7250 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 9400 6950 50  0001 C CNN
+F 3 "~" H 9400 6950 50  0001 C CNN
+	1    9200 6950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9200 6950 9200 7050
+Connection ~ 9200 7050
+Wire Wire Line
+	9200 7050 10100 7050
+$Comp
+L Connector:TestPoint_Probe TP?
+U 1 1 6093BBC3
+P 8200 4100
+AR Path="/60021F1B/6093BBC3" Ref="TP?"  Part="1" 
+AR Path="/60021F5A/6093BBC3" Ref="TP?"  Part="1" 
+AR Path="/60021F93/6093BBC3" Ref="TP503"  Part="1" 
+F 0 "TP503" V 8250 4400 50  0000 C CNN
+F 1 "VDD_SNVS_IN" V 8200 4400 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8400 4100 50  0001 C CNN
+F 3 "~" H 8400 4100 50  0001 C CNN
+	1    8200 4100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8200 4100 8200 4250
+Connection ~ 8200 4250
+Wire Wire Line
+	8200 4250 7150 4250
+$Comp
+L Connector:TestPoint_Probe TP?
+U 1 1 609A2963
+P 8350 6650
+AR Path="/60021F1B/609A2963" Ref="TP?"  Part="1" 
+AR Path="/60021F5A/609A2963" Ref="TP?"  Part="1" 
+AR Path="/60021F93/609A2963" Ref="TP504"  Part="1" 
+F 0 "TP504" V 8400 6950 50  0000 C CNN
+F 1 "VDD_SNVS_CAP" V 8350 6950 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8550 6650 50  0001 C CNN
+F 3 "~" H 8550 6650 50  0001 C CNN
+	1    8350 6650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8350 6650 8350 6750
+Connection ~ 8350 6750
+Wire Wire Line
+	8350 6750 10100 6750
+$Comp
+L Connector:TestPoint_Probe TP?
+U 1 1 60A0A709
+P 8300 7350
+AR Path="/60021F1B/60A0A709" Ref="TP?"  Part="1" 
+AR Path="/60021F5A/60A0A709" Ref="TP?"  Part="1" 
+AR Path="/60021F93/60A0A709" Ref="TP505"  Part="1" 
+F 0 "TP505" V 8350 7650 50  0000 C CNN
+F 1 "NVCC_PLL" V 8300 7650 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8500 7350 50  0001 C CNN
+F 3 "~" H 8500 7350 50  0001 C CNN
+	1    8300 7350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8300 7350 8400 7350
+Connection ~ 8400 7350
+$Comp
+L Connector:TestPoint_Probe TP?
+U 1 1 60A7378A
+P 9200 7650
+AR Path="/60021F1B/60A7378A" Ref="TP?"  Part="1" 
+AR Path="/60021F5A/60A7378A" Ref="TP?"  Part="1" 
+AR Path="/60021F93/60A7378A" Ref="TP506"  Part="1" 
+F 0 "TP506" V 9250 7950 50  0000 C CNN
+F 1 "VDD_HIGH_CAP" V 9200 7950 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 9400 7650 50  0001 C CNN
+F 3 "~" H 9400 7650 50  0001 C CNN
+	1    9200 7650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9200 7650 9300 7650
+Connection ~ 9300 7650
+$Comp
+L Connector:TestPoint_Probe TP?
+U 1 1 60ADD877
+P 7900 5450
+AR Path="/60021F1B/60ADD877" Ref="TP?"  Part="1" 
+AR Path="/60021F5A/60ADD877" Ref="TP?"  Part="1" 
+AR Path="/60021F93/60ADD877" Ref="TP507"  Part="1" 
+F 0 "TP507" V 7950 5750 50  0000 C CNN
+F 1 "REG_EN" V 7900 5750 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8100 5450 50  0001 C CNN
+F 3 "~" H 8100 5450 50  0001 C CNN
+	1    7900 5450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint_Probe TP?
+U 1 1 60B12418
+P 9750 4900
+AR Path="/60021F1B/60B12418" Ref="TP?"  Part="1" 
+AR Path="/60021F5A/60B12418" Ref="TP?"  Part="1" 
+AR Path="/60021F93/60B12418" Ref="TP508"  Part="1" 
+F 0 "TP508" V 9800 5200 50  0000 C CNN
+F 1 "VDD_HIGH_IN" V 9750 5200 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 9950 4900 50  0001 C CNN
+F 3 "~" H 9950 4900 50  0001 C CNN
+	1    9750 4900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9750 4900 9750 5000
+Connection ~ 9750 5000
+Wire Wire Line
+	9750 5000 10000 5000
+$Comp
+L Connector:TestPoint_Probe TP?
+U 1 1 60B7FED8
+P 8400 5950
+AR Path="/60021F1B/60B7FED8" Ref="TP?"  Part="1" 
+AR Path="/60021F5A/60B7FED8" Ref="TP?"  Part="1" 
+AR Path="/60021F93/60B7FED8" Ref="TP509"  Part="1" 
+F 0 "TP509" V 8450 6250 50  0000 C CNN
+F 1 "VDD_SOC_IN" V 8400 6250 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8600 5950 50  0001 C CNN
+F 3 "~" H 8600 5950 50  0001 C CNN
+	1    8400 5950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8400 5950 8500 5950
+Connection ~ 8500 5950
+Wire Wire Line
+	7900 5450 7950 5450
+Connection ~ 7950 5450
+Wire Wire Line
+	7950 5450 7950 5800
 $EndSCHEMATC
