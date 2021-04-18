@@ -238,7 +238,7 @@ U 1 1 601FB04D
 P 2500 6250
 F 0 "U703" H 2500 6492 50  0000 C CNN
 F 1 "LM7809_TO220" H 2500 6401 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 2500 6475 50  0001 C CIN
+F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 2500 6475 50  0001 C CIN
 F 3 "https://www.onsemi.cn/PowerSolutions/document/MC7800-D.PDF" H 2500 6200 50  0001 C CNN
 	1    2500 6250
 	-1   0    0    -1  
@@ -926,9 +926,9 @@ Text GLabel 5650 4400 0    50   Input ~ 0
 Text GLabel 6350 4400 2    50   Input ~ 0
 6V_AC_SERVO2
 Text GLabel 5650 5250 0    50   Input ~ 0
-6V_AC_SERVO3
+6V_HYBRID_SERVO3
 Text GLabel 6350 5250 2    50   Input ~ 0
-6V_AC_SERVO4
+6V_HYBRID_SERVO4
 Text GLabel 5650 4500 0    50   Input ~ 0
 GND
 Text GLabel 6350 4500 2    50   Input ~ 0
