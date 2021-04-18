@@ -439,17 +439,6 @@ F 3 "~" H 9500 6800 50  0001 C CNN
 	1    9500 6800
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C_Small C313
-U 1 1 603B440A
-P 8600 6800
-F 0 "C313" H 8692 6846 50  0000 L CNN
-F 1 "0.22uF" H 8692 6755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 8600 6800 50  0001 C CNN
-F 3 "~" H 8600 6800 50  0001 C CNN
-	1    8600 6800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8600 6900 8600 6950
 Wire Wire Line
@@ -2645,4 +2634,15 @@ Wire Wire Line
 	9850 3950 10450 3950
 Wire Wire Line
 	9450 3950 9850 3950
+$Comp
+L Device:C_Small C313
+U 1 1 603B440A
+P 8600 6800
+F 0 "C313" H 8692 6846 50  0000 L CNN
+F 1 "0.22uF" H 8692 6755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8600 6800 50  0001 C CNN
+F 3 "~" H 8600 6800 50  0001 C CNN
+	1    8600 6800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
