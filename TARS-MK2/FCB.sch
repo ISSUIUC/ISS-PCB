@@ -1037,11 +1037,11 @@ Wire Wire Line
 Text Notes 20750 3975 0    126  ~ 0
 }
 Text Notes 20875 4000 0    50   ~ 0
-MCU_AC - MPU UART\n    (T41 UART1)
+    MCU_AC - MPU UART\n(T41 UART1) [MIMX LPUART6]
 Text Notes 13550 3975 0    126  ~ 0
 }
-Text Notes 13675 3950 0    50   ~ 0
-MCU_HYB - MPU UART\n    (T41 UART1)
+Text Notes 13650 4000 0    50   ~ 0
+    MCU_HYB - MPU UART\n(T41 UART1) [MIMX LPUART6]
 Text HLabel 19925 3700 2    50   Input ~ 0
 INTER_MCU_UART_RX
 Wire Wire Line
@@ -1051,7 +1051,7 @@ Wire Wire Line
 Text Notes 20750 3725 0    126  ~ 0
 }
 Text Notes 20875 3750 0    50   ~ 0
-MCU_AC - MCU_HYB UART\n    (T41 UART2)
+      INTER MCU UART\n(T41 UART2) [MIMX LPUART4]
 Wire Wire Line
 	12425 3700 12675 3700
 Text HLabel 12675 3600 2    50   Input ~ 0
@@ -1060,8 +1060,8 @@ Wire Wire Line
 	12675 3600 12425 3600
 Text Notes 13550 3725 0    126  ~ 0
 }
-Text Notes 13675 3700 0    50   ~ 0
-MCU_AC - MCU_HYB UART\n    (T41 UART2)
+Text Notes 13650 3750 0    50   ~ 0
+      INTER MCU UART\n(T41 UART2) [MIMX LPUART4]
 Text HLabel 17425 4500 0    50   Input ~ 0
 B2B_SPI_MOSI
 Wire Wire Line
@@ -1094,9 +1094,9 @@ Text HLabel 10175 4800 0    50   Input ~ 0
 B2B_SPI_MISO
 Wire Wire Line
 	10425 4800 10175 4800
-Text Notes 16475 4750 0    236  ~ 0
+Text Notes 16450 4750 0    236  ~ 0
 {
-Text Notes 9175 4750 0    236  ~ 0
+Text Notes 9150 4750 0    236  ~ 0
 {
 Text HLabel 19925 3450 2    50   Input ~ 0
 B2B_I2C_SCL
@@ -1109,7 +1109,7 @@ Wire Wire Line
 Text Notes 20750 3475 0    126  ~ 0
 }
 Text Notes 20875 3500 0    50   ~ 0
-Board-2-Board I2C Bus\n     (T41 I2C0)
+ Board-2-Board I2C Bus\n(T41 I2C0) [MIMX LPI2C1]
 Text HLabel 12675 3450 2    50   Input ~ 0
 B2B_I2C_SCL
 Wire Wire Line
@@ -1121,13 +1121,11 @@ Wire Wire Line
 Text Notes 13550 3475 0    126  ~ 0
 }
 Text Notes 13675 3500 0    50   ~ 0
-Board-2-Board I2C Bus\n     (T41 I2C0)
+ Board-2-Board I2C Bus\n(T41 I2C0) [MIMX LPI2C1]
 Text Notes 13525 4550 0    50   ~ 0
  SENSOR SUITE SPI BUS\n(T41 SPI0) (MIMX LPSPI4)
 Wire Wire Line
 	17675 4050 17425 4050
-Text Notes 16475 4300 0    236  ~ 0
-{
 Wire Wire Line
 	10425 4050 10175 4050
 Text HLabel 10175 4150 0    50   Input ~ 0
@@ -1142,7 +1140,7 @@ Text HLabel 10175 4350 0    50   Input ~ 0
 MCU_HYB_SPI2_MISO
 Wire Wire Line
 	10425 4350 10175 4350
-Text Notes 9225 4300 0    236  ~ 0
+Text Notes 9150 4300 0    236  ~ 0
 {
 $Comp
 L Molex_MLplus_8pos2.00mm:505567-0871 J101
@@ -1946,10 +1944,8 @@ Wire Wire Line
 	5500 4750 5750 4750
 Wire Wire Line
 	5500 4650 5750 4650
-Text Notes 10525 4050 0    39   ~ 8
-EMC_01 IS USED FOR BOOTLOADER\n           FIX THIS!!!
-Text Notes 17725 4050 0    39   ~ 8
-EMC_01 IS USED FOR BOOTLOADER\n           FIX THIS!!!
+Text Notes 18050 4150 0    26   ~ 0
+<--- WARNING:\n        EMC_01 IS USED FOR BOOTLOADER!\n        fix this later
 $Sheet
 S 3500 2850 2000 2000
 U 60021F1B
@@ -2227,11 +2223,7 @@ Text HLabel 15050 9550 2    50   Input ~ 0
 B2B_SPI_MOSI
 Text Notes 8175 4750 0    50   ~ 0
    MCU - ACB SPI BUS\n      [MCU IS SLAVE]\n(T41 SPI1) (MIMX LPSPI3)
-Text Notes 8425 4300 0    50   ~ 0
- [NOT USED]\n   (MIMX LPSPI2)
-Text Notes 15675 4300 0    50   ~ 0
-MCU - ACB SPI BUS\n   [MCU IS SLAVE]\n   (MIMX LPSPI2)
-Text Notes 15525 4750 0    50   ~ 0
+Text Notes 15450 4750 0    50   ~ 0
    MCU - MPU SPI BUS\n      [MCU IS SLAVE]\n(T41 SPI1) (MIMX LPSPI3)
 Text HLabel 10175 3625 0    50   Output ~ 0
 B2B_SERVO1
@@ -2788,4 +2780,12 @@ Wire Wire Line
 Connection ~ 2900 13250
 Wire Wire Line
 	2900 13250 3400 13250
+Text Notes 16450 4300 0    236  ~ 0
+{
+Text Notes 15850 4300 0    50   ~ 0
+ [NOT USED]\n(MIMX LPSPI2)
+Text Notes 8500 4300 0    50   ~ 0
+ [NOT USED]\n(MIMX LPSPI2)
+Text Notes 10800 4150 0    26   ~ 0
+<--- WARNING:\n        EMC_01 IS USED FOR BOOTLOADER!\n        fix this later
 $EndSCHEMATC
