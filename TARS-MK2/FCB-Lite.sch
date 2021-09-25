@@ -28,4 +28,15 @@ F 3 "" H 19350 15050 50  0001 C CNN
 	1    19350 15050
 	1    0    0    -1  
 $EndComp
+$Comp
+L teensy:Teensy4.1 U?
+U 1 1 614F946C
+P 14550 5775
+F 0 "U?" H 14550 8340 50  0000 C CNN
+F 1 "Teensy4.1" H 14550 8249 50  0000 C CNN
+F 2 "" H 14150 6175 50  0001 C CNN
+F 3 "" H 14150 6175 50  0001 C CNN
+	1    14550 5775
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

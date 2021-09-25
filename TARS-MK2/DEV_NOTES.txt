@@ -1,0 +1,162 @@
+
+[01/15/2021]
+	GENERAL - Ayberk:
+	- Set up a kicad project from scratch for TARS-MK2
+	- Imported ISS logos for schematics and for PCB drawings. Just copied over from MK1
+
+
+[01/17/2021]
+	FCB - Ayberk:
+	- Imported footprint and symbol for the OSD3358-512M-BCB SiP (system in package).
+		Note: I discovered that this particular variant isn't actually what's used on the PocketBeagle.
+		I though the PocketBeagle was using this which integrates eMMC memory onto a single package, but aparrantly they
+		just ditched eMMC altogether and are booting from the SD card alone on the PocketBeagle. This chip integrates eMMC
+		which is much better for us, and there's many available reference designs to work off of.
+	- Imported footprint and symbol for the NXP MIMX1062RT1062DVJA which is the microcontroller used on the Teensy4.1
+		Pad sizes aren't too bad but spacing between pads will be tight for JLCPCB's minimum via diameter.
+	- Imported a library for the TLV75733PDRV LDO IC only to realize Kicad comes with one. Its much more accurate too :)
+	- Began adding simple things like decoupling capacitors and the TLV75733 according to the T4.1 schematic
+	- Following the part labels found on the T4.1 schematic. i.e. a part with label U12 on the schematic from PJRC.com is labeled
+		as U512 or U412 in kicad. 400 or 500 is added because the two MCU schematics have numbers 4 and 5 in the project.
+	
+	COTS - Kenneth:
+	- Added footprints for COTS altimeters, solder points and mounting points included with the silkscreen
+	- Added schematics for COTS altimeters, yet to connect to battery connectors
+	- Mounting points pulled from local library (ISO 7380 standard) to prevent damage to copper layer of PCB
+
+[01/18/2021]
+	FCB - Ayberk:
+	- Added a bunch more decoupling capacitors and passive component related to power.
+	- NOTE: Omitting the TPD3S014 IC as it is only used ESD protection when the Teensy is a USB host, not useful for us.
+	- Added MKL02Z32VFG4 bootloader IC which conveniently comes with Kicad. Did not connect yet.
+
+
+[01/19/2021]
+	FCB - Rohini, Maya, and Kenneth:
+	- Added Micro-SD and the Microcontroller Booth Loader
+	- NOTE: Still looking for power, it is currently labeled with text ('POWER')
+	- NOTE: Wiring is very ugly 
+	- Still need to find W25Q64JVXGIM (Planning to work on it)
+
+
+[01/20/2021]
+	FCB - Maya, Rohini
+	- Added W25Q64JVXGIM (serial flash memory)
+	- Couldn't find the exact symbol for this component, either in KiCad or online
+	- Used the 32 Mb W25Q32JVSS symbol from the KiCad library and edited the symbol properties
+	- Not sure if that's the correct method, but will check with the rest of the team
+	- NOTE: Wrote in power using text ('POWER')
+	
+	POWER - Erika
+	-Re-organized the locations of a few files to properly load the voltage regulators in Kicad
+	-Fixed the orientation of pinholes on the two smaller regulators (D24V50F5 + D36V28F3)
+
+
+[01/21/2020]
+	ACB - Ayberk:
+	- Imported symbol and footprint libraries from MK1
+	- Found a .step file of Jetson Nano developer kit from Nvidia. Cherry-picked the parts we want including the SODIMM
+		socket and made a separate .step file to include in Kicad 3d library. Looks pretty hot.
+	- Connected power/ground and some input decoupling caps.
+	- Made labels for I2C and SPI connections available
+	TODO:
+	- ESD protection diodes didn't have libraries. Either a library or a substitute needs to be found.
+	- Understand SoM pin logic levels. They could be 1.8V which would require level shifting.
+
+	FCB - Ben
+	- Added tags between U502, U501B, and U501C to clean up wire mess
+	- Added 'VBAT' tag to SD Card VDD pin (3.3 volts, double check)
+	- Re-labeled U3 to U503 (flash memory) and J2 to J502 (micro sd)
+
+	FCB - Rohini, Maya
+	- Added PSRAM chip 
+	- Having some issues pushing Rohini's changes; will be resolved shortly
+
+	FCB - Rohini
+	- Added Flash
+	- NOTE:Connected wires to label, so there isn't a junction present in the schematic
+	- Need to change footprint for PSRAM, Flash, and W25Q64JVXGIM
+
+[01/22/2020]
+	GENERAL - Ayberk:
+	- Made four different kicad .pro project files for each board. The fact that they share the exact names as the relevant
+		schematic files makes kicad automatically associate the schematic with the project file. pretty nice
+	- Did a project-wide merge. First merged everything into main (resolving a few simple conflicts) then merged main back
+		into every single branch.
+
+	ACB - Ayberk:
+	- Added labels for I2C connections
+	- Added power on led circuitry
+
+[01/23/2020]
+	ACB - Ayberk:
+	- Fixed I2C labeling mistake
+	- Also added another bus called CAM_I2C on the dev kit. It can be used for general purpose too.
+	- Copied 3V3 and 1V8 power supply schematics from the dev kit.
+	- Re-organized jetson nano library folder by throwing all 3d files into one folder.
+
+[01/24/2021]
+	FCB - Maya, Rohini
+	- Added library for ethernet just in case we ever want it
+	- Added symbol and footprint for W25Q64JVXGIM; replaced old symbol with the new one
+	- Started looking for footprint for PSRAM and flash (optional components)
+	- NOTE: Mouser sometimes has symbols and footprints as ECAD models. These can be installed as long as you don't use Linux.  
+
+[01/27/2021]
+	FCB - Maya
+	- Replaced old PSRAM symbol with ESP-PSRAM32 (this one has the correct footprint)
+	- Replaced old flash symbol with W25Q128JVS (this one also has the correct footprint)
+	- Redid connections between these two chips 
+
+[01/30/2021](David's Nephew's Birthday)
+	FCB - David, Maya
+	- added symbol and footprint library to FCB libs, for the SD card (SD_1040310811)
+	- added SD Card symbol to MPU schematic, and wired DATA/GND lines
+	- we do not know the meaning of SW-1 and SW-2 pins, cursory google searches were unhelpful
+	- Data3/CD(Chip Detect) line is hooked up to DATA3, but we may need to connect it to something else as well.
+
+
+	FCB - Ayberk, Erika
+	- Connected Grounds!
+	- Added power inputs for VIN_AC and VIN_USB ports. May need to investigate power input protection here.
+	- Added SYS_VDD3_3P3V internal rail to power the I/O domains (VDDSHVx pins) and connected to SYS_VDD3_3P3V@x pins
+	- Similarly connected SYS_VDD_1P8V flag to SYS_VDD_1P8V@x pins
+	- Connected VDDS and associated RTC pins to 1.8V power rail (SYS_RTC_1P8V)
+	- Connected VREFP TO SYS_VDD_1P8V, and VREFN to GND. May need to consider resistor/bypass capacitors respectively. 
+	
+	FCB - Ayberk
+	- Fixed labeling mistakes in the MCU_AC schematic.
+	- Rearanged some circuitry in MCU_AC in discrete blocks. Mostly for aesthetics.
+	- Added a pin connection to trigger the MKL02 bootloader in place of the pushbutton found on the Teensy4.1.
+		This was done because pushbuttons can be susceptible to vibrations.
+
+[01/31/2021]
+	FCB - Ayberk
+	- Fixed a couple misalignments in the power connections (purely aesthetic)
+	- Added surface test points for all chip power rails and PMIC status pins.
+	- Added 01x02 pin headers for power and reset buttons in case we weed it for debugging.
+	- Added 01x02 pin header for I2C0 bus. It will only be used for PMIC control, but I exposed it for debug/expansion.
+	- Added power LED on SYS_VDD2_3P3V rail. The rail isn't used for anything else.
+
+[02/04/2021]
+	FCB - Ayberk
+	- Imported Kenneth's dxf board outline to FCB pcb project.
+	- Put M3 3.2mm holes with vias exactly where the holes in the dxf file are.
+	- Drew a ground ring on both sides of the board for ESD and EMI protection. I have yet to add spaced vias.
+		Do we even need vias in the ring?
+		Will the board edges be plated? (would be sooo cool)
+
+[02/04/2021]
+	FCB - David, Maya, Rohini
+	- added lib files for usb-a connector, and tps(in Mouser_Imported_Components) that will be used for the usb
+	- initial implementation for usb-a connection
+	- Created Mouser_Imported_Components lib file for components imported with the Mouser library tool
+		Need to copy the .lib file in the Mouser_Imported_Components to your local dummy folder for importing mouser tools
+		and then copy it back to the Mouser_Imported_Components file in order to maintain the symbol library and add your new symbol
+
+[02/10/2021]
+	FCB - David, Maya
+	- Did USB1 HOST schematic
+	- Did USB0 CLIENT schematic
+	- NOTE: used a 0-ohm resistor for USB0 CLIENT USB-DC connection
+	- NOTE: connected chassis ground on USB0 CLIENT to GND1 instead of GND
