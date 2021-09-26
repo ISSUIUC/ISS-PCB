@@ -40,17 +40,6 @@ F 3 "" H 14150 6175 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Sensor_Motion:LSM9DS1 U101
-U 1 1 614FB1FB
-P 6725 11100
-F 0 "U101" H 7850 10175 50  0000 C CNN
-F 1 "LSM9DS1" H 7850 10050 50  0000 C CNN
-F 2 "Package_LGA:LGA-24L_3x3.5mm_P0.43mm" H 8225 11850 50  0001 C CNN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/1e/3f/2a/d6/25/eb/48/46/DM00103319.pdf/files/DM00103319.pdf/jcr:content/translations/en.DM00103319.pdf" H 6725 11200 50  0001 C CNN
-	1    6725 11100
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0101
 U 1 1 614FED31
 P 6725 12225
@@ -101,8 +90,8 @@ $Comp
 L D24V50F5:C C101
 U 1 1 61501319
 P 5400 11975
-F 0 "C101" H 5515 12021 50  0000 L CNN
-F 1 "10 nF" H 5515 11930 50  0000 L CNN
+F 0 "C101" H 5100 12050 50  0000 L CNN
+F 1 "10 nF" H 5075 11950 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5438 11825 50  0001 C CNN
 F 3 "~" H 5400 11975 50  0001 C CNN
 	1    5400 11975
@@ -137,8 +126,6 @@ Wire Wire Line
 Connection ~ 5775 12225
 Wire Wire Line
 	5775 12225 6625 12225
-Text HLabel 5950 9975 0    50   Input ~ 0
-3.3V
 $Comp
 L D24V50F5:Jumper_NC_Small JP101
 U 1 1 61506C80
@@ -151,11 +138,7 @@ F 3 "~" H 6225 9975 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5950 9975 6125 9975
-Wire Wire Line
 	7125 9975 7125 10200
-Wire Wire Line
-	6325 9975 6825 9975
 Wire Wire Line
 	7025 10300 7025 10200
 Wire Wire Line
@@ -175,4 +158,145 @@ Wire Wire Line
 Connection ~ 6825 10200
 Wire Wire Line
 	6825 10200 6825 9975
+Wire Wire Line
+	5950 9975 6125 9975
+Text HLabel 5950 9975 0    50   Input ~ 0
+3.3V
+$Comp
+L Sensor_Motion:LSM9DS1 U101
+U 1 1 614FB1FB
+P 6725 11100
+F 0 "U101" H 7150 10350 50  0000 C CNN
+F 1 "LSM9DS1" H 7150 10250 50  0000 C CNN
+F 2 "Package_LGA:LGA-24L_3x3.5mm_P0.43mm" H 8225 11850 50  0001 C CNN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/1e/3f/2a/d6/25/eb/48/46/DM00103319.pdf/files/DM00103319.pdf/jcr:content/translations/en.DM00103319.pdf" H 6725 11200 50  0001 C CNN
+	1    6725 11100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6325 9975 6400 9975
+$Comp
+L D24V50F5:C_Small C103
+U 1 1 61525081
+P 6400 10100
+F 0 "C103" H 6100 10125 50  0000 L CNN
+F 1 "100 nF" H 6050 10050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6400 10100 50  0001 C CNN
+F 3 "~" H 6400 10100 50  0001 C CNN
+	1    6400 10100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61526A78
+P 6400 10200
+F 0 "#PWR?" H 6400 9950 50  0001 C CNN
+F 1 "GND" H 6405 10027 50  0000 C CNN
+F 2 "" H 6400 10200 50  0001 C CNN
+F 3 "" H 6400 10200 50  0001 C CNN
+	1    6400 10200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 10000 6400 9975
+Connection ~ 6400 9975
+Wire Wire Line
+	6400 9975 6825 9975
+$Comp
+L D24V50F5:C_Small C104
+U 1 1 6152781A
+P 7650 10125
+F 0 "C104" H 7742 10171 50  0000 L CNN
+F 1 "100 nF" H 7742 10080 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7650 10125 50  0001 C CNN
+F 3 "~" H 7650 10125 50  0001 C CNN
+	1    7650 10125
+	1    0    0    -1  
+$EndComp
+$Comp
+L D24V50F5:C_Small C105
+U 1 1 61527C5C
+P 8375 10125
+F 0 "C105" H 8467 10171 50  0000 L CNN
+F 1 "10 uF" H 8467 10080 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8375 10125 50  0001 C CNN
+F 3 "~" H 8375 10125 50  0001 C CNN
+	1    8375 10125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7125 9975 7650 9975
+Wire Wire Line
+	8375 9975 8375 10025
+Connection ~ 7125 9975
+Wire Wire Line
+	7650 9975 7650 10025
+Connection ~ 7650 9975
+Wire Wire Line
+	7650 9975 8375 9975
+$Comp
+L power:GND #PWR?
+U 1 1 6152954D
+P 7650 10225
+F 0 "#PWR?" H 7650 9975 50  0001 C CNN
+F 1 "GND" H 7655 10052 50  0000 C CNN
+F 2 "" H 7650 10225 50  0001 C CNN
+F 3 "" H 7650 10225 50  0001 C CNN
+	1    7650 10225
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61529830
+P 8375 10225
+F 0 "#PWR?" H 8375 9975 50  0001 C CNN
+F 1 "GND" H 8380 10052 50  0000 C CNN
+F 2 "" H 8375 10225 50  0001 C CNN
+F 3 "" H 8375 10225 50  0001 C CNN
+	1    8375 10225
+	1    0    0    -1  
+$EndComp
+Text HLabel 5750 10700 0    50   Input ~ 0
+SNS_SPI_SCK
+Wire Wire Line
+	5750 10700 6025 10700
+Text HLabel 5750 10800 0    50   Input ~ 0
+SNS_SPI_MOSI
+Wire Wire Line
+	5750 10800 6025 10800
+Text HLabel 5750 11000 0    50   Input ~ 0
+LSM9_CS_AG
+Text HLabel 5750 11100 0    50   Input ~ 0
+SNS_SPI_MISO
+Text HLabel 5750 11200 0    50   Output ~ 0
+LSM9_INT1_AG
+Text HLabel 5750 11300 0    50   Output ~ 0
+LMS9_INT2_AG
+Wire Wire Line
+	5750 11000 6025 11000
+Wire Wire Line
+	5750 11100 6025 11100
+Wire Wire Line
+	5750 11200 6025 11200
+Wire Wire Line
+	5750 11300 6025 11300
+Text HLabel 7650 10700 2    50   Input ~ 0
+LSM9_CS_M
+Text HLabel 7650 10800 2    50   Input ~ 0
+SNS_SPI_MISO
+Text HLabel 7650 10900 2    50   Output ~ 0
+LSM9_DRDY_M
+Text HLabel 7650 11000 2    50   Output ~ 0
+LSM9_INT_M
+Wire Wire Line
+	7425 10700 7650 10700
+Wire Wire Line
+	7425 10800 7650 10800
+Wire Wire Line
+	7425 10900 7650 10900
+Wire Wire Line
+	7425 11000 7650 11000
+Text Notes 5975 11425 2    50   ~ 0
+the fuck-lite? ———————————>
+NoConn ~ 6025 11400
 $EndSCHEMATC
