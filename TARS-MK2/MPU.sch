@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A1 33110 23386
 encoding utf-8
-Sheet 5 5
+Sheet 5 9
 Title "TARS - MK2 Microprocessor Schematic"
 Date "2021-01-11"
 Rev "A"
