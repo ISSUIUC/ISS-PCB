@@ -1172,4 +1172,16 @@ Wire Wire Line
 	13650 3450 14150 3450
 Wire Wire Line
 	16700 3450 16350 3450
+Text HLabel 13645 4050 0    50   Input ~ 0
+KX122_INT1
+Wire Wire Line
+	14150 4050 13645 4050
+Text HLabel 13635 4150 0    50   Input ~ 0
+KX122_INT2
+Wire Wire Line
+	14150 4150 13625 4150
+Text HLabel 16700 4050 2    50   Input ~ 0
+LSM9_CS_M
+Wire Wire Line
+	16350 4050 16700 4050
 $EndSCHEMATC
