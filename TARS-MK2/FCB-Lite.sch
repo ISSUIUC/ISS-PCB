@@ -1176,7 +1176,7 @@ Text HLabel 13645 4050 0    50   Input ~ 0
 KX122_INT1
 Wire Wire Line
 	14150 4050 13645 4050
-Text HLabel 13635 4150 0    50   Input ~ 0
+Text HLabel 11875 2050 0    50   Input ~ 0
 KX122_INT2
 Wire Wire Line
 	14150 4150 13625 4150
@@ -1184,4 +1184,26 @@ Text HLabel 16700 4050 2    50   Input ~ 0
 LSM9_CS_M
 Wire Wire Line
 	16350 4050 16700 4050
+Text HLabel 16700 4150 2    50   Input ~ 0
+LSM9_CS_AG
+Wire Wire Line
+	16350 4150 16700 4150
+Text HLabel 13625 4150 0    50   Input ~ 0
+LSM9_INT1_AG
+Text HLabel 11850 2250 0    50   Input ~ 0
+LSM9_INT2_AG
+Wire Notes Line
+	10350 1750 10350 3525
+Wire Notes Line
+	10350 3525 12425 3525
+Wire Notes Line
+	12425 3525 12425 1750
+Wire Notes Line
+	12425 1750 10350 1750
+Text Notes 10425 1875 0    50   ~ 0
+Unused Tags
+Text HLabel 12200 2575 0    50   Input ~ 0
+LSM9_DRDY_M
+Text HLabel 11575 3025 0    50   Input ~ 0
+LSM9_INT_M
 $EndSCHEMATC
