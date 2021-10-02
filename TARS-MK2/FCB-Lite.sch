@@ -29,17 +29,6 @@ F 3 "" H 19350 15050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L teensy:Teensy4.1 U1
-U 1 1 614F946C
-P 14550 5775
-F 0 "U1" H 14550 8340 50  0000 C CNN
-F 1 "Teensy4.1" H 14550 8249 50  0000 C CNN
-F 2 "" H 14150 6175 50  0001 C CNN
-F 3 "" H 14150 6175 50  0001 C CNN
-	1    14550 5775
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0101
 U 1 1 614FED31
 P 6425 11375
@@ -1156,4 +1145,31 @@ Text HLabel 14750 9500 0    50   Input ~ 0
 3V3
 Wire Wire Line
 	15450 9500 14750 9500
+Text HLabel 13650 3250 0    50   Input ~ 0
+KX122_CS
+$Comp
+L teensy:Teensy4.1_bare U?
+U 1 1 6159BA71
+P 15250 4300
+F 0 "U?" H 15250 6955 50  0000 C CNN
+F 1 "Teensy4.1_bare" H 15250 6864 50  0000 C CNN
+F 2 "Teensy:Teensy41_bare" H 15250 6773 50  0000 C CNN
+F 3 "" H 14850 4700 50  0001 C CNN
+	1    15250 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14150 3250 13650 3250
+Text HLabel 13650 3350 0    50   Input ~ 0
+SNS_SPI_MOSI
+Text HLabel 13650 3450 0    50   Input ~ 0
+SNS_SPI_MISO
+Text HLabel 16700 3450 2    50   Input ~ 0
+SNS_SPI_SCK
+Wire Wire Line
+	14150 3350 13650 3350
+Wire Wire Line
+	13650 3450 14150 3450
+Wire Wire Line
+	16700 3450 16350 3450
 $EndSCHEMATC
