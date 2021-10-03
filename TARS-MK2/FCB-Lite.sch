@@ -1705,4 +1705,10 @@ Wire Wire Line
 	16350 3150 16750 3150
 Text Notes 16550 2350 0    50   ~ 0
 !!!DO NOT CONNECT THIS TO THE 3V3 LINE, YOU WILL DESTROY THE TEENSY'S REGULATOR!!!
+Text HLabel 16725 3950 2    50   Input ~ 0
+MPU9250_CS
+Wire Wire Line
+	16725 3950 16350 3950
+Text Notes 17350 3950 0    50   ~ 0
+confirm cs pin placement w/ ayberk later
 $EndSCHEMATC
