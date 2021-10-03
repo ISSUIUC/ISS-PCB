@@ -1314,7 +1314,7 @@ U 1 1 6159BA71
 P 15250 4300
 F 0 "U1" H 15250 6955 50  0000 C CNN
 F 1 "Teensy4.1_bare" H 15250 6864 50  0000 C CNN
-F 2 "Teensy:Teensy41_bare" H 15250 6773 50  0000 C CNN
+F 2 "teensy_library-master:Teensy41_bare" H 15250 6773 50  0000 C CNN
 F 3 "" H 14850 4700 50  0001 C CNN
 	1    15250 4300
 	1    0    0    -1  
