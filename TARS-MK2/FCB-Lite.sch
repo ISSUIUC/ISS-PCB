@@ -1691,10 +1691,8 @@ Wire Wire Line
 	14150 2250 13650 2250
 Wire Wire Line
 	13650 2350 14150 2350
-Text HLabel 16650 2000 2    50   Input ~ 0
+Text HLabel 16700 2150 2    50   Input ~ 0
 5V
-Wire Wire Line
-	16650 2000 16350 2000
 Text HLabel 16750 3050 2    50   Input ~ 0
 B2B_I2C_SDA
 Text HLabel 16750 3150 2    50   Input ~ 0
@@ -1711,4 +1709,6 @@ Wire Wire Line
 	16725 3950 16350 3950
 Text Notes 17350 3950 0    50   ~ 0
 confirm cs pin placement w/ ayberk later
+Wire Wire Line
+	16700 2150 16350 2150
 $EndSCHEMATC
