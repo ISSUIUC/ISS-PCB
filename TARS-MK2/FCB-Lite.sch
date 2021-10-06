@@ -1654,11 +1654,11 @@ Connection ~ 10150 2950
 Text HLabel 9250 3700 0    50   Input ~ 0
 SNS_SPI_MISO
 Text HLabel 9250 3950 0    50   Input ~ 0
-SPI_SNS_MOSI
+SNS_SPI_MOSI
 Text HLabel 9250 4200 0    50   Input ~ 0
-SPI_B2B_MISO
+B2B_SPI_MISO
 Text HLabel 9250 4450 0    50   Input ~ 0
-SPI_B2B_MOSI
+B2B_SPI_MOSI
 Wire Wire Line
 	9250 3700 9650 3700
 Wire Wire Line
@@ -1711,4 +1711,90 @@ Text Notes 17350 3950 0    50   ~ 0
 confirm cs pin placement w/ ayberk later
 Wire Wire Line
 	16700 2150 16350 2150
+Text HLabel 8950 6100 0    50   Input ~ 0
+5V
+Text HLabel 8950 6200 0    50   Input ~ 0
+3V3
+Text HLabel 8950 6300 0    50   Input ~ 0
+GND
+Text HLabel 8950 6400 0    50   Input ~ 0
+SNS_SPI_MOSI
+Text HLabel 8950 6500 0    50   Input ~ 0
+SNS_SPI_MISO
+Text HLabel 8950 6600 0    50   Input ~ 0
+SNS_SPI_SCK
+Text HLabel 8950 7000 0    50   Input ~ 0
+KX122_CS
+Text HLabel 8950 7100 0    50   Input ~ 0
+MPU9250_CS
+Text HLabel 8950 7200 0    50   Input ~ 0
+LSM9_CS_AG
+Text HLabel 8950 7300 0    50   Input ~ 0
+LSM9_CS_M
+Text HLabel 8950 7400 0    50   Input ~ 0
+ZOE_MQ8_BRKT_CS
+Text HLabel 8950 7500 0    50   Input ~ 0
+MS5611_CS
+Text HLabel 8950 7600 0    50   Input ~ 0
+KX122_INT1
+Text HLabel 13650 4250 0    50   Input ~ 0
+MS5611_CS
+Wire Wire Line
+	14150 4250 13650 4250
+Text HLabel 8950 7700 0    50   Input ~ 0
+LSM9_INT1_AG
+$Comp
+L Connector:Conn_01x06_Male J201
+U 1 1 6190B003
+P 9350 6300
+F 0 "J201" H 9322 6274 50  0000 R CNN
+F 1 "Conn_01x06_Male" H 9322 6183 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 9350 6300 50  0001 C CNN
+F 3 "~" H 9350 6300 50  0001 C CNN
+	1    9350 6300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 7700 8950 7700
+Wire Wire Line
+	8950 7600 9150 7600
+Wire Wire Line
+	9150 7500 8950 7500
+Wire Wire Line
+	8950 7400 9150 7400
+Wire Wire Line
+	9150 7300 8950 7300
+Wire Wire Line
+	8950 7200 9150 7200
+Wire Wire Line
+	9150 7100 8950 7100
+Wire Wire Line
+	8950 7000 9150 7000
+$Comp
+L Connector:Conn_01x08_Male J202
+U 1 1 619690B1
+P 9350 7300
+F 0 "J202" H 9322 7274 50  0000 R CNN
+F 1 "Conn_01x08_Male" H 9322 7183 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 9350 7300 50  0001 C CNN
+F 3 "~" H 9350 7300 50  0001 C CNN
+	1    9350 7300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 6100 8950 6100
+Wire Wire Line
+	9150 6200 8950 6200
+Wire Wire Line
+	8950 6300 9150 6300
+Wire Wire Line
+	9150 6400 8950 6400
+Wire Wire Line
+	8950 6500 9150 6500
+Wire Wire Line
+	9150 6600 8950 6600
+Text HLabel 13650 4350 0    50   Input ~ 0
+ZOE_MQ8_BRKT_CS
+Wire Wire Line
+	14150 4350 13650 4350
 $EndSCHEMATC
