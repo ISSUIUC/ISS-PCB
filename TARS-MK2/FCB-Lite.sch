@@ -1797,4 +1797,59 @@ Text HLabel 13650 4350 0    50   Input ~ 0
 ZOE_MQ8_BRKT_CS
 Wire Wire Line
 	14150 4350 13650 4350
+Text HLabel 16750 2950 2    50   Input ~ 0
+I2C_SDA
+Text HLabel 16750 2850 2    50   Input ~ 0
+I2C_SCL
+Wire Wire Line
+	16750 2850 16350 2850
+Wire Wire Line
+	16350 2950 16750 2950
+Text HLabel 13625 3650 0    50   Input ~ 0
+UART_TX6
+Text HLabel 13625 3750 0    50   Input ~ 0
+UART_RX6
+Wire Wire Line
+	13625 3750 14150 3750
+Wire Wire Line
+	13625 3650 14150 3650
+$Comp
+L Connector:Conn_01x08_Male J203
+U 1 1 616A09F2
+P 11475 7300
+F 0 "J203" H 11447 7274 50  0000 R CNN
+F 1 "Conn_01x08_Male" H 11447 7183 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 11475 7300 50  0001 C CNN
+F 3 "~" H 11475 7300 50  0001 C CNN
+	1    11475 7300
+	-1   0    0    -1  
+$EndComp
+Text HLabel 10875 7400 0    50   Input ~ 0
+I2C_SDA
+Text HLabel 10875 7300 0    50   Input ~ 0
+I2C_SCL
+Wire Wire Line
+	10875 7400 11275 7400
+Wire Wire Line
+	11275 7300 10875 7300
+Wire Wire Line
+	10875 7600 11275 7600
+Wire Wire Line
+	10875 7500 11275 7500
+Text HLabel 11075 7000 0    50   Input ~ 0
+5V
+Text HLabel 11075 7100 0    50   Input ~ 0
+3V3
+Text HLabel 11075 7200 0    50   Input ~ 0
+GND
+Wire Wire Line
+	11275 7000 11075 7000
+Wire Wire Line
+	11275 7100 11075 7100
+Wire Wire Line
+	11075 7200 11275 7200
+Text HLabel 10875 7500 0    50   Input ~ 0
+UART_TX6
+Text HLabel 10875 7600 0    50   Input ~ 0
+UART_RX6
 $EndSCHEMATC
