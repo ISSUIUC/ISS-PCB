@@ -289,4 +289,102 @@ Wire Notes Line
 	6650 4075 6650 625 
 Text Notes 6700 825  0    126  Italic 0
 LSM9DS1\n
+$Comp
+L Sensor_Pressure:MS5611-01BA U102
+U 1 1 61C64635
+P 2360 1855
+F 0 "U102" H 2005 2305 50  0000 L CNN
+F 1 "MS5611-01BA" H 1635 2210 50  0000 L CNN
+F 2 "Package_LGA:LGA-8_3x5mm_P1.25mm" H 2360 1855 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=MS5611-01BA03&DocType=Data+Sheet&DocLang=English" H 2360 1855 50  0001 C CNN
+	1    2360 1855
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Small JP102
+U 1 1 61C6664D
+P 2005 1290
+F 0 "JP102" H 2005 1502 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 2005 1411 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 2005 1290 50  0001 C CNN
+F 3 "~" H 2005 1290 50  0001 C CNN
+	1    2005 1290
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2360 1455 2360 1395
+Wire Wire Line
+	2360 1290 2105 1290
+$Comp
+L power:GND #PWR0105
+U 1 1 61C69AA5
+P 2360 2360
+F 0 "#PWR0105" H 2360 2110 50  0001 C CNN
+F 1 "GND" H 2365 2187 50  0000 C CNN
+F 2 "" H 2360 2360 50  0001 C CNN
+F 3 "" H 2360 2360 50  0001 C CNN
+	1    2360 2360
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2360 2255 2360 2290
+Wire Wire Line
+	1960 1655 1880 1655
+Wire Wire Line
+	1880 1655 1880 2290
+Wire Wire Line
+	1880 2290 2360 2290
+Connection ~ 2360 2290
+Wire Wire Line
+	2360 2290 2360 2360
+Text HLabel 1725 1755 0    50   Input ~ 0
+SNS_SPI_MISO
+Text HLabel 1725 1855 0    50   Input ~ 0
+SNS_SPI_MOSI
+Text HLabel 1725 1955 0    50   Input ~ 0
+SNS_SPI_SCK
+Text HLabel 1725 2055 0    50   Input ~ 0
+MS5611_CS
+Wire Wire Line
+	1960 1755 1725 1755
+Wire Wire Line
+	1960 1855 1725 1855
+Wire Wire Line
+	1960 1955 1725 1955
+Wire Wire Line
+	1960 2055 1725 2055
+Text HLabel 1720 1290 0    50   Input ~ 0
+3V3
+Wire Wire Line
+	1905 1290 1720 1290
+$Comp
+L Device:C_Small C106
+U 1 1 61C7B661
+P 2735 1395
+F 0 "C106" V 2506 1395 50  0000 C CNN
+F 1 "C_Small" V 2597 1395 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2735 1395 50  0001 C CNN
+F 3 "~" H 2735 1395 50  0001 C CNN
+	1    2735 1395
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2635 1395 2360 1395
+Connection ~ 2360 1395
+Wire Wire Line
+	2360 1395 2360 1290
+Wire Wire Line
+	2835 2285 2360 2285
+Wire Notes Line
+	3145 600  3145 2695
+Wire Notes Line
+	3145 2695 750  2695
+Wire Notes Line
+	750  600  750  2695
+Wire Notes Line
+	750  600  3145 600 
+Text Notes 775  820  0    126  ~ 0
+MS5611 BAROMETER
+Wire Wire Line
+	2835 1395 2835 2285
 $EndSCHEMATC
