@@ -13,10 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Wire Notes Line
-	825  2350 825  800 
-Text Notes 850  1000 0    118  ~ 0
-Board-to-Board connections
 $Comp
 L Sensor_Motion:LSM9DS1 U101
 U 1 1 61C98081
@@ -293,10 +289,4 @@ Wire Notes Line
 	6650 4075 6650 625 
 Text Notes 6700 825  0    126  Italic 0
 LSM9DS1\n
-Wire Notes Line
-	3550 800  3550 2350
-Wire Notes Line
-	825  800  3550 800 
-Wire Notes Line
-	825  2350 3550 2350
 $EndSCHEMATC
