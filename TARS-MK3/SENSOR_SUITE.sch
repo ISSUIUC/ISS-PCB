@@ -1,0 +1,302 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Notes Line
+	825  2350 825  800 
+Text Notes 850  1000 0    118  ~ 0
+Board-to-Board connections
+$Comp
+L Sensor_Motion:LSM9DS1 U101
+U 1 1 61C98081
+P 8900 2675
+F 0 "U101" H 9300 1925 50  0000 C CNN
+F 1 "LSM9DS1" H 9350 1825 50  0000 C CNN
+F 2 "Package_LGA:LGA-24L_3x3.5mm_P0.43mm" H 10400 3425 50  0001 C CNN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/1e/3f/2a/d6/25/eb/48/46/DM00103319.pdf/files/DM00103319.pdf/jcr:content/translations/en.DM00103319.pdf" H 8900 2775 50  0001 C CNN
+	1    8900 2675
+	1    0    0    -1  
+$EndComp
+Text HLabel 7850 1025 0    50   Input ~ 0
+3V3
+$Comp
+L Device:Jumper_NC_Small JP101
+U 1 1 61C9A29C
+P 8150 1025
+F 0 "JP101" H 8150 1237 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 8150 1146 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 8150 1025 50  0001 C CNN
+F 3 "~" H 8150 1025 50  0001 C CNN
+	1    8150 1025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 1025 8050 1025
+$Comp
+L Device:C C103
+U 1 1 61C9B7D8
+P 8450 1325
+F 0 "C103" H 8565 1371 50  0000 L CNN
+F 1 "100 nF" H 8565 1280 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8488 1175 50  0001 C CNN
+F 3 "~" H 8450 1325 50  0001 C CNN
+	1    8450 1325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 1025 8450 1025
+Wire Wire Line
+	8450 1025 8450 1175
+$Comp
+L power:GND #PWR0101
+U 1 1 61C9D51F
+P 8450 1625
+F 0 "#PWR0101" H 8450 1375 50  0001 C CNN
+F 1 "GND" H 8455 1452 50  0000 C CNN
+F 2 "" H 8450 1625 50  0001 C CNN
+F 3 "" H 8450 1625 50  0001 C CNN
+	1    8450 1625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 1475 8450 1625
+Wire Wire Line
+	8450 1025 9000 1025
+Wire Wire Line
+	9000 1025 9000 1725
+Connection ~ 8450 1025
+Wire Wire Line
+	9000 1725 8900 1725
+Wire Wire Line
+	8900 1725 8900 1875
+Connection ~ 9000 1725
+Wire Wire Line
+	9000 1725 9000 1875
+Wire Wire Line
+	9000 1025 9300 1025
+Wire Wire Line
+	9300 1025 9300 1725
+Connection ~ 9000 1025
+Wire Wire Line
+	9300 1725 9200 1725
+Wire Wire Line
+	9200 1725 9200 1875
+Connection ~ 9300 1725
+Wire Wire Line
+	9300 1725 9300 1875
+$Comp
+L Device:C C104
+U 1 1 61CA318D
+P 10000 1325
+F 0 "C104" H 10115 1371 50  0000 L CNN
+F 1 "100 nF" H 10115 1280 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 10038 1175 50  0001 C CNN
+F 3 "~" H 10000 1325 50  0001 C CNN
+	1    10000 1325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 1025 10000 1025
+Wire Wire Line
+	10000 1025 10000 1175
+Connection ~ 9300 1025
+$Comp
+L power:GND #PWR0103
+U 1 1 61CA4021
+P 10000 1575
+F 0 "#PWR0103" H 10000 1325 50  0001 C CNN
+F 1 "GND" H 10005 1402 50  0000 C CNN
+F 2 "" H 10000 1575 50  0001 C CNN
+F 3 "" H 10000 1575 50  0001 C CNN
+	1    10000 1575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 1475 10000 1575
+$Comp
+L Device:C C105
+U 1 1 61CA49A1
+P 10550 1325
+F 0 "C105" H 10665 1371 50  0000 L CNN
+F 1 "10 uF" H 10665 1280 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 10588 1175 50  0001 C CNN
+F 3 "~" H 10550 1325 50  0001 C CNN
+	1    10550 1325
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 61CA5097
+P 10550 1575
+F 0 "#PWR0104" H 10550 1325 50  0001 C CNN
+F 1 "GND" H 10555 1402 50  0000 C CNN
+F 2 "" H 10550 1575 50  0001 C CNN
+F 3 "" H 10550 1575 50  0001 C CNN
+	1    10550 1575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 1025 10550 1025
+Wire Wire Line
+	10550 1025 10550 1175
+Connection ~ 10000 1025
+Wire Wire Line
+	10550 1475 10550 1575
+Text HLabel 8050 2275 0    50   Input ~ 0
+SNS_SPI_SCK
+Wire Wire Line
+	8050 2275 8200 2275
+Text HLabel 8050 2375 0    50   Input ~ 0
+SNS_SPI_MOSI
+Wire Wire Line
+	8050 2375 8200 2375
+Text HLabel 8050 2575 0    50   Input ~ 0
+LSM9_CS_AG
+Wire Wire Line
+	8050 2575 8200 2575
+Text HLabel 8050 2675 0    50   Input ~ 0
+SNS_SPI_MISO
+Wire Wire Line
+	8050 2675 8200 2675
+Text HLabel 8050 2775 0    50   Input ~ 0
+LSM9_INT1_AG
+Wire Wire Line
+	8050 2775 8200 2775
+Text HLabel 8050 2875 0    50   Input ~ 0
+LSM9_INT2_AG
+Wire Wire Line
+	8050 2875 8200 2875
+NoConn ~ 8200 2975
+Text Notes 6950 3025 0    50   ~ 0
+the fuck - mk3? ------->\n
+Text HLabel 9750 2275 2    50   Input ~ 0
+LSM9_CS_M
+Wire Wire Line
+	9750 2275 9600 2275
+Text HLabel 9750 2375 2    50   Input ~ 0
+SNS_SPI_MISO
+Wire Wire Line
+	9750 2375 9600 2375
+Text HLabel 9750 2475 2    50   Input ~ 0
+LSM9_DRDY_M
+Wire Wire Line
+	9750 2475 9600 2475
+Text HLabel 9750 2575 2    50   Input ~ 0
+LSM9_INT_M
+Wire Wire Line
+	9750 2575 9600 2575
+$Comp
+L power:GND #PWR0102
+U 1 1 61CAC899
+P 8900 3725
+F 0 "#PWR0102" H 8900 3475 50  0001 C CNN
+F 1 "GND" H 8905 3552 50  0000 C CNN
+F 2 "" H 8900 3725 50  0001 C CNN
+F 3 "" H 8900 3725 50  0001 C CNN
+	1    8900 3725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 3500 9000 3725
+Wire Wire Line
+	9000 3725 8900 3725
+Wire Wire Line
+	8800 3475 8800 3725
+Wire Wire Line
+	8800 3725 8900 3725
+Connection ~ 8900 3725
+Wire Wire Line
+	9600 3175 9775 3175
+Wire Wire Line
+	9775 3175 9775 3725
+Wire Wire Line
+	9775 3725 9000 3725
+Connection ~ 9000 3725
+Wire Wire Line
+	9600 3075 9775 3075
+Wire Wire Line
+	9775 3075 9775 3175
+Connection ~ 9775 3175
+Wire Wire Line
+	9600 2975 9775 2975
+Wire Wire Line
+	9775 2975 9775 3075
+Connection ~ 9775 3075
+Wire Wire Line
+	9600 2875 9775 2875
+Wire Wire Line
+	9775 2875 9775 2975
+Connection ~ 9775 2975
+Wire Wire Line
+	9600 2775 9775 2775
+Wire Wire Line
+	9775 2775 9775 2875
+Connection ~ 9775 2875
+$Comp
+L Device:C C102
+U 1 1 61CB1544
+P 8000 3550
+F 0 "C102" H 8115 3596 50  0000 L CNN
+F 1 "100 nF" H 8115 3505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8038 3400 50  0001 C CNN
+F 3 "~" H 8000 3550 50  0001 C CNN
+	1    8000 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C101
+U 1 1 61CB2B97
+P 7450 3550
+F 0 "C101" H 7565 3596 50  0000 L CNN
+F 1 "10 nF" H 7565 3505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7488 3400 50  0001 C CNN
+F 3 "~" H 7450 3550 50  0001 C CNN
+	1    7450 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 3275 8000 3275
+Wire Wire Line
+	8000 3275 8000 3400
+Wire Wire Line
+	8000 3700 8000 3725
+Connection ~ 8800 3725
+Wire Wire Line
+	8200 3175 7450 3175
+Wire Wire Line
+	7450 3175 7450 3400
+Wire Wire Line
+	7450 3700 7450 3725
+Wire Wire Line
+	7450 3725 8000 3725
+Connection ~ 8000 3725
+Wire Wire Line
+	8000 3725 8800 3725
+Wire Notes Line
+	6650 625  11050 625 
+Wire Notes Line
+	11050 625  11050 4075
+Wire Notes Line
+	11050 4075 6650 4075
+Wire Notes Line
+	6650 4075 6650 625 
+Text Notes 6700 825  0    126  Italic 0
+LSM9DS1\n
+Wire Notes Line
+	3550 800  3550 2350
+Wire Notes Line
+	825  800  3550 800 
+Wire Notes Line
+	825  2350 3550 2350
+$EndSCHEMATC
