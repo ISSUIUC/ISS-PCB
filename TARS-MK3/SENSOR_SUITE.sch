@@ -393,4 +393,138 @@ U 61CC44E9
 F0 "ZOE-M8Q.sch" 50
 F1 "ZOE-M8Q.sch" 50
 $EndSheet
+$Comp
+L Sensor_Motion:KX122-1042 U103
+U 1 1 61CCCBE1
+P 4800 1720
+F 0 "U103" H 4315 1445 50  0000 C CNN
+F 1 "KX122-1042" H 4245 1350 50  0000 C CNN
+F 2 "Package_LGA:LGA-12_2x2mm_P0.5mm" H 4950 2270 50  0001 L CNN
+F 3 "http://kionixfs.kionix.com/en/datasheet/KX112-1042-Specifications-Rev-6.0.pdf" H 4450 1720 50  0001 C CNN
+	1    4800 1720
+	1    0    0    -1  
+$EndComp
+Text HLabel 6030 1620 2    50   Input ~ 0
+KX122_INT1
+Text HLabel 6030 1720 2    50   Input ~ 0
+KX122_INT2
+Wire Wire Line
+	5300 1620 6030 1620
+NoConn ~ 5300 1920
+$Comp
+L power:GND #PWR0106
+U 1 1 61CDAD2A
+P 4800 2400
+F 0 "#PWR0106" H 4800 2150 50  0001 C CNN
+F 1 "GND" H 4805 2227 50  0000 C CNN
+F 2 "" H 4800 2400 50  0001 C CNN
+F 3 "" H 4800 2400 50  0001 C CNN
+	1    4800 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 2220 4800 2315
+Wire Wire Line
+	5300 2020 5300 2315
+Wire Wire Line
+	5300 2315 4800 2315
+Connection ~ 4800 2315
+Wire Wire Line
+	4800 2315 4800 2400
+Wire Wire Line
+	4400 1520 3980 1520
+Wire Wire Line
+	4400 1620 3980 1620
+Wire Wire Line
+	4400 1720 3975 1720
+Wire Wire Line
+	4400 1820 3970 1820
+Text HLabel 3980 1520 0    50   Input ~ 0
+KX122_CS
+Text HLabel 3980 1620 0    50   Input ~ 0
+SNS_SPI_MOSI
+Text HLabel 3975 1720 0    50   Input ~ 0
+SNS_SPI_MISO
+Text HLabel 3970 1820 0    50   Input ~ 0
+SNS_SPI_SCK
+$Comp
+L Device:Jumper_NC_Small JP104
+U 1 1 61CEAD33
+P 4255 1120
+F 0 "JP104" H 4255 1332 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 4255 1241 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 4255 1120 50  0001 C CNN
+F 3 "~" H 4255 1120 50  0001 C CNN
+	1    4255 1120
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4355 1120 4800 1120
+Wire Wire Line
+	4800 1120 4800 1170
+Connection ~ 4800 1120
+Wire Wire Line
+	4800 1120 4900 1120
+Wire Wire Line
+	4900 1220 4900 1120
+$Comp
+L Device:C_Small C108
+U 1 1 61CFADBA
+P 5365 940
+F 0 "C108" V 5594 940 50  0000 C CNN
+F 1 "100 nF" V 5503 940 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5365 940 50  0001 C CNN
+F 3 "~" H 5365 940 50  0001 C CNN
+	1    5365 940 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4900 1120 4900 940 
+Wire Wire Line
+	4900 940  5265 940 
+Connection ~ 4900 1120
+Wire Wire Line
+	4800 1170 5260 1170
+Connection ~ 4800 1170
+Wire Wire Line
+	4800 1170 4800 1220
+$Comp
+L Device:C_Small C107
+U 1 1 61D07218
+P 5360 1170
+F 0 "C107" V 5475 1170 50  0000 C CNN
+F 1 "100 nF" V 5540 1175 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5360 1170 50  0001 C CNN
+F 3 "~" H 5360 1170 50  0001 C CNN
+	1    5360 1170
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5300 2020 5780 2020
+Connection ~ 5300 2020
+Wire Wire Line
+	5780 2020 5780 1170
+Wire Wire Line
+	5465 940  5780 940 
+Text HLabel 3975 1120 0    50   Input ~ 0
+3V3
+Wire Wire Line
+	3975 1120 4155 1120
+Wire Notes Line
+	3300 600  6570 600 
+Wire Notes Line
+	6570 600  6570 2730
+Wire Notes Line
+	6570 2730 3300 2730
+Wire Notes Line
+	3300 605  3300 2730
+Text Notes 3355 780  0    118  ~ 0
+KX122 HIGH_G IMU
+Wire Wire Line
+	5300 1720 6030 1720
+Wire Wire Line
+	5460 1170 5780 1170
+Connection ~ 5780 1170
+Wire Wire Line
+	5780 1170 5780 940 
 $EndSCHEMATC
