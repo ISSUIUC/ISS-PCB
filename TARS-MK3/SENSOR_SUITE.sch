@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -387,4 +387,10 @@ Text Notes 775  820  0    126  ~ 0
 MS5611 BAROMETER
 Wire Wire Line
 	2835 1395 2835 2285
+$Sheet
+S 9275 5325 1025 850 
+U 61CC44E9
+F0 "ZOE-M8Q.sch" 50
+F1 "ZOE-M8Q.sch" 50
+$EndSheet
 $EndSCHEMATC
