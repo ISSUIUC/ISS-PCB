@@ -1,0 +1,36 @@
+
+TARS-MK1 PCB/Schematic design buglog:
+
+[11/14/2020]
+	- Pololu 3v3 and 5v step-down regulator footprints have incorrect pin offset relative to mounting holes
+		Fix: Use solid core wires between regulator pads and PCB pads, fix in footprint for next design iteration.	
+	
+	- Stratologger hole locations are slightly wrong
+		Fix: Possibly drill holes out with a dremel? Fix footprint for future design iteration
+
+	- BBB hole locations are positioned slightly wrong
+		Fix: Possibly dremel as before. Mounting holes will not be necessary when the SoC is integrated onto the PCB in future iterations.
+
+	- Ayberk is a dummy and did not flip the BBB footprint
+		Fix: flip the footprint
+		Workaround: Attempting to desolder and relocate the female pin  headers to the other side of the board.
+
+	- Pads around Teensy's pin holes are rather small and make it difficult to solder
+		Fix: Increase pad diameter in next iterations.
+
+[12/02/2020]
+	- CS Pin to MS5611 Barometer was not connected on PCB due to a labeling error in the schematic.
+		Fix: Resolve the mistake in label 
+		Workaround: Will connect CS pin of IC to a free digital pin on both Teensys using magnet wire
+
+[12/04/2020]
+	- SPI MOSI and MISO connections going to BBB from LoRa module are reversed.
+		Fix: Reverse SPI data lines
+		Fix2: Possible to invert mosi and miso in device tree (difficult)
+		Workaround: Solder LoRa module on pins, reverse mosi and miso connections from PCB to module using solid core wire.
+
+[01/16/2020]
+	- Servo pins have signal and power lines reversed.
+		Fix: Swap the signal and power lines such that they align with standard servo connectors.
+		Workaround: Temporarily swap the signal and power lines in the connectors of the servos we will use.
+			    Must not forget to bring them back to their original configuration.
