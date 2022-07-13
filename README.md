@@ -28,15 +28,15 @@ To have your changes reflected on the board, it is important to commit your chan
 
 # Useful Links:
 Here are some links you may find useful as you are building PCBs: 
-```
-[ISS Wiki](https://wiki.illinois.edu/wiki/display/ILSPACESOC/Illinois+Space+Society) (includes various technical guides such as git commands, as well as board documentation) 
 
-[KiCad](https://www.kicad.org/) (software used for designing PCBs)
+[ISS Wiki](https://wiki.illinois.edu/wiki/display/ILSPACESOC/Illinois+Space+Society) - includes various technical guides such as git commands, as well as board documentation 
 
-[Digikey](https://www.digikey.com/) (used for looking up various electronic components)
+[KiCad](https://www.kicad.org/) - software used for designing PCBs 
 
-[Mouser](https://www.mouser.com/) (used for looking up various electronic components)
-```
+[Digikey](https://www.digikey.com/) - used for looking up various electronic components
+
+[Mouser](https://www.mouser.com/) - used for looking up various electronic components 
+
 Thanks for reading, and good luck in building PCBs! 
 
 
