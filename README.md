@@ -6,8 +6,8 @@ Welcome to the Tars-PCB repo!
 * Archive: Contains all past projects that the team has worked on, including Tars Mk1, Mk2, and Mk3
 * Boards: Contains all of the present boards the team is working on
 * Docs: Contains various documents pertaining to PCB designs
-* Libs: Contains various templates that we use when designing PCBs
-* Scripts:Contains various codes used in PCB development
+* Libs: Contains various templates, symbols and footprints that we use when designing PCBs
+* Scripts: Contains various codes used in PCB development
 
 When you commit changes to the repository, they will generally be found in the Boards folder. 
 
