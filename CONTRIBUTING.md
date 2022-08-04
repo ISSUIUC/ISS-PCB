@@ -27,22 +27,30 @@ Below, we can see that the file 'CONTRIBUTING.md' listed as modified (as this is
 
 ![Git Status Check](/images/git-status-check.png)
 
-## 3. Git add only the file you wanted to change
+## 4. Git add only the file you wanted to change
 
 Run `git add [filename]`. Please make sure you only are adding the sheet/board file you actually intended to modify, as KiCad automatically changes other files sometimes. 
 
 For example, in my case, I will run `git add CONTRIBUTING.md` , as this is the only file I intend to modify and push to the repository.
 
-## 4. Make descriptive commit messages
+Here, I recommend that you perform another `git status` check. You should see your modified files ready to be committed and pushed highlighted in green, as shown below.
+
+![Git Status Check Two](/images/git-status-check-two.png)
+
+## 5. Make descriptive commit messages
 
 When you run `git commit -m [message]`, make the message descriptive. It does not have to be a novel, but please avoid messages like "fixed bugs" or "worked on schematic". It is recommended to commit often, as this helps with error recovery in case something goes wrong.
 
 An example of an okay commit message would be `git commit -m "added further steps, details, and images to CONTRIBUTING.md guide"`
 
-## 5. Push to the repo
+## 6. Push to the repo
 
-Run `git push`, and follow any instructions git gives you. 
+Run `git push`, and follow any instructions git gives you.
 
-## 6. Open a Pull Request on GitHub
+Below is an image of the terminal denoting a succesful push to the branch which was originally checked out.
+
+![Sucessful Push](/images/sucessful-push.png)
+
+## 7. Open a Pull Request on GitHub
 
 Open a pull request on github, and make sure that everyone is now aware of that branch that has to be merged. 
