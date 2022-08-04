@@ -3,24 +3,41 @@ Considering that PCBs are more difficult to merge than code, this requires some 
 
 ## 1. Rebase Your branch
 
-You do not have to do this if you are creating a new branch. if you are creating a new branch, just run `git checkout [dev branch name]`, and then `git checkout -b [new branch name]` where new branch name is formatted as `[trello ticket number]/[what you did in 3 words]`. 
+First and foremost, navigate to the directory where you store TARS-PCB. Perform the following steps once you ensure you are inside of this directory.
 
+You do not have to do this if you are creating a new branch. If you are creating a new branch, just run `git checkout [dev branch name]`, and then `git checkout -b [new branch name]` where new branch name is formatted as `[trello ticket number]/[what you did in a few words]`. An example of a new, well-formatted branch name would be something similar to `git checkout -b AV-101/TARS-Power-Schematic`.
 
 This can be accomplished by doing the following:
 
 run `git pull` on both your branch and the centralized dev branch for the project you are working on. Then, `git checkout [branch name]`. Then run `git merge [dev branch name] -X theirs`. Make sure that all your changes from the day before were merged before doing this. 
 
+Below is a simple view of what your terminal may look like after successfully checking out an existing branch.
+
+![Checked Out Branch](/images/checked-out-branch.png)
+
 ## 2. Do changes
 
 Open KiCad, and change what you wanted to. Then save
+
+## 3. Perform a git status check
+
+Performing a `git status` check allows for us to view which files we have modified. 
+
+Below, we can see that the file 'CONTRIBUTING.md' listed as modified (as this is the file that has been edited). Do not be alarmed by any 'untracked files' listed. These are simply just files not presently versioned by Git. As long as you keep track of the files you did modify, and intend to push, then you are good to go.
+
+![Git Status Check](/images/git-status-check.png)
 
 ## 3. Git add only the file you wanted to change
 
 Run `git add [filename]`. Please make sure you only are adding the sheet/board file you actually intended to modify, as KiCad automatically changes other files sometimes. 
 
+For example, in my case, I will run `git add CONTRIBUTING.md` , as this is the only file I intend to modify and push to the repository.
+
 ## 4. Make descriptive commit messages
 
-When you run `git commit -m [message]`, make the message descriptive. It does not have to be a novel but please avoid messages like "fixed bugs". It is recommended to commit often, as this helps with error recovery in case something goes wrong. 
+When you run `git commit -m [message]`, make the message descriptive. It does not have to be a novel, but please avoid messages like "fixed bugs" or "worked on schematic". It is recommended to commit often, as this helps with error recovery in case something goes wrong.
+
+An example of an okay commit message would be `git commit -m "added further steps, details, and images to CONTRIBUTING.md guide"`
 
 ## 5. Push to the repo
 
