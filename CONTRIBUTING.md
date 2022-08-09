@@ -1,7 +1,9 @@
 # Contributing Guide
 Considering that PCBs are more difficult to merge than code, this requires some more specific requirements. Please follow the below steps when making changes:
 
-## 1. Rebase Your branch
+## 1. Rebase your branch
+
+Why branches? Working on branches allows for ISS to manage its workflow in a well-definied manner.
 
 First and foremost, navigate to the directory where you store TARS-PCB. Perform the following steps once you ensure you are inside of this directory.
 
@@ -41,9 +43,9 @@ Here, I recommend that you perform another `git status` check. You should see yo
 
 When you run `git commit -m [message]`, make the message descriptive. It does not have to be a novel, but please avoid messages like "fixed bugs" or "worked on schematic". It is recommended to commit often, as this helps with error recovery in case something goes wrong.
 
-An example of an okay commit message would be `git commit -m "added further steps, details, and images to CONTRIBUTING.md guide"`
+An example of an acceptable commit message would be `git commit -m "added further steps, details, and images to CONTRIBUTING.md guide"`
 
-## 6. Push to the repo
+## 6. Push to the repository
 
 Run `git push`, and follow any instructions git gives you.
 
@@ -54,3 +56,7 @@ Below is an image of the terminal denoting a succesful push to the branch which 
 ## 7. Open a Pull Request on GitHub
 
 Open a pull request on github, and make sure that everyone is now aware of that branch that has to be merged. 
+
+## 8. Additional Resources
+
+If you are looking for further methods on Git, and commands within the terminal, take a look at the ISS Wiki's Technical Guide on Git: https://wiki.illinois.edu/wiki/pages/viewpage.action?pageId=779063487
