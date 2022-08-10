@@ -19,7 +19,7 @@ Below is a simple view of what your terminal may look like after successfully ch
 
 ## 2. Do changes
 
-Open KiCad, and change what you wanted to. Then save
+Open KiCad, and change what you wanted to. Then save. Make sure you close KiCad beforehand. **Please do not use a grid size smaller than 1.27mm when doing schematics**
 
 ## 3. Perform a git status check
 
