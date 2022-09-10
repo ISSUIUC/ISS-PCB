@@ -1,7 +1,7 @@
 (kicad_pcb (version 20211014) (generator pcbnew)
 
   (general
-    (thickness 4.69)
+    (thickness 5.72)
   )
 
   (paper "A4")
@@ -9,6 +9,8 @@
     (0 "F.Cu" signal)
     (1 "In1.Cu" signal)
     (2 "In2.Cu" signal)
+    (3 "In3.Cu" signal)
+    (4 "In4.Cu" signal)
     (31 "B.Cu" signal)
     (32 "B.Adhes" user "B.Adhesive")
     (33 "F.Adhes" user "F.Adhesive")
@@ -50,6 +52,10 @@
       (layer "dielectric 2" (type "core") (thickness 1.51) (material "FR4") (epsilon_r 4.5) (loss_tangent 0.02))
       (layer "In2.Cu" (type "copper") (thickness 0.035))
       (layer "dielectric 3" (type "core") (thickness 1.51) (material "FR4") (epsilon_r 4.5) (loss_tangent 0.02))
+      (layer "In3.Cu" (type "copper") (thickness 0.035))
+      (layer "dielectric 4" (type "prepreg") (thickness 0.48) (material "FR4") (epsilon_r 4.5) (loss_tangent 0.02))
+      (layer "In4.Cu" (type "copper") (thickness 0.035))
+      (layer "dielectric 5" (type "core") (thickness 0.48) (material "FR4") (epsilon_r 4.5) (loss_tangent 0.02))
       (layer "B.Cu" (type "copper") (thickness 0.035))
       (layer "B.Mask" (type "Bottom Solder Mask") (thickness 0.01))
       (layer "B.Paste" (type "Bottom Solder Paste"))
@@ -2659,7 +2665,7 @@
 
   (footprint "Package_TO_SOT_SMD:SOT-23-6" (layer "F.Cu")
     (tedit 5F6F9B37) (tstamp 6afdda71-74ce-4ff0-8b7d-1b6398c92154)
-    (at 121.666 97.282)
+    (at 121.666 94.996)
     (descr "SOT, 6 Pin (https://www.jedec.org/sites/default/files/docs/Mo-178c.PDF variant AB), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOT TO_SOT_SMD")
     (property "Sheetfile" "MCU.kicad_sch")
@@ -5465,7 +5471,7 @@
 
   (footprint "Crystal_TXCO:ECS-TXO-2520-33-400-AN-TR" (layer "F.Cu")
     (tedit 62F9B8AC) (tstamp bffb683c-c8a2-42ec-b2ad-d6be752c6929)
-    (at 121.575 92.964)
+    (at 116.459 106.299)
     (property "Sheetfile" "MCU.kicad_sch")
     (property "Sheetname" "MCU")
     (path "/b88e37e1-be96-45eb-9f50-96ad487b90f5/cbecac18-3aed-45e7-9053-4ab87f2b19b4")
@@ -9158,8 +9164,6 @@
     (style (thickness 0.15) (arrow_length 1.27) (text_position_mode 0) (extension_height 0.58642) (extension_offset 0.5) keep_text_aligned)
   )
 
-  (segment (start 160.45 65.07) (end 160.22 65.3) (width 0.25) (layer "F.Cu") (net 0) (tstamp d98ae824-3371-435f-8ca0-a21a12804f20))
-  (segment (start 162.12 65.07) (end 160.45 65.07) (width 0.25) (layer "F.Cu") (net 0) (tstamp e7d18ef0-3fda-41de-bee8-09bcd775905e))
   (via (at 115.51 132.97) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 0) (tstamp 1a8c80dd-1cb0-4dac-8ef2-d57e5f68b21a))
   (via (at 110.75 132.22) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 0) (tstamp 40c52f21-8c22-4cfd-85a5-a5307d330163))
   (via (at 106.49 129.09) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 0) (tstamp 528b689c-fc59-46df-aea5-e0979cb0b211))
