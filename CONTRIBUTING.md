@@ -99,6 +99,9 @@ The custom parts library used by all the projects in the repository is stored in
 
 There are three main categories of part files.
 
+![KiCad Component File Types](/images/ISS-PCB_Component_File_Types.png)
+
+
 - ### **Symbols**
   - `.kicad_sym`
 - ### **Footprints**
