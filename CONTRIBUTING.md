@@ -19,11 +19,11 @@ How to quickly get started via terminal commands. Recomended Terminal: [Git Bash
 
 1. Create a folder where you'd like to localy store the repository.  
 2. Navigate to that folder.  
-    >`cd /c/Users/Your_PC_Name/Desktop/ISS`
+    `cd /c/Users/Your_PC_Name/Desktop/ISS`
 3. Clone the repository.  
-    >`git clone https://github.com/ISSUIUC/ISS-PCB`
+    `git clone https://github.com/ISSUIUC/ISS-PCB`
 4. Check the status of the repository. *(Optional)*  
-    >`git status`
+    `git status`
 
 ## Pulling
 
