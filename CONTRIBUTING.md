@@ -1,4 +1,4 @@
-# Contributing Guide
+# **Contributing Guide**
 
 KiCad files are more difficult and delicate to merge than standard code. Working with multiple contributors requires a specialized workflow. Please use the following guide below as a reference.
 
@@ -11,7 +11,7 @@ KiCad files are more difficult and delicate to merge than standard code. Working
 
 <br/>
 
-# Quickstart ⚡
+# **Quickstart** ⚡
 
 How to quickly get started via terminal commands. Recomended Terminal: [Git Bash](https://git-scm.com/downloads)
 
@@ -46,11 +46,11 @@ How to quickly get started via terminal commands. Recomended Terminal: [Git Bash
 
 <br/>
 
-# Branches 🌳
+# **Branches** 🌳
 
 There are three commonly used branch types in this repository.
 
-![Branch Hierarchy](images\ISS-PCB_Branch_Hierarchy_Diagram.png)
+![Branch Hierarchy](/images/ISS-PCB_Branch_Hierarchy_Diagram.png)
 
 - ### **Main**
   - The primary branch that only stores finished projects
@@ -70,13 +70,13 @@ There are three commonly used branch types in this repository.
 
 <br/>
 
-# File Structure 🧱
+# **File Structure** 🧱
 
 - Edit files only in project folder
 
 <br/>
 
-# KiCad Libraries 📚
+# **KiCad Libraries** 📚
 
 KiCad has it's own documention on libraries but here's the rundown
 
