@@ -7,7 +7,7 @@ KiCad files are more difficult and delicate to merge than standard code. Working
 - [Quickstart](#quickstart-)
 - [Branches](#branches-)
 - [File Structure](#file-structure-)
-- [KiCad Libraries](#kicad-libraries-)
+- [KiCad Parts Library](#kicad-parts-library-)
 
 <br/>
 
@@ -54,19 +54,35 @@ There are three commonly used branch types in this repository.
 
 - ### **Main**
   - The primary branch that only stores finished projects
+  - Do not directly push to this branch! (Pull requests only!)
   - Example: `Main`
 - ### **Project_Dev**
   - Projects that are being actively developed
+  - Used to review work from Ticket Branches via pull requests
+  - Do not directly push to this branch! (Pull requests only!)
   - Example: `TARS-MK4-dev`
 - ### **Ticket**
-  - Specific tasks for Project_Dev branches sourced from our Trello.
-  - This is where the majority of the development happens.
+  - Specific tasks for Project_Dev branches sourced from our Trello
+  - This is where the majority of the development happens
   - Example: `AV-999/Route-Sensors`
-  
-*Add these*
 
-- Push and merge often
+## **Ticket Branch Rules**
+There are seven rules you must follow when working in ticket branches to avoid merge conflicts and loss of work.
 
+1. ### **Pull Often**
+   - `git pull` before every time you begin working and before pushing. This ensures you have the most recent edits from other contributors on the same branch. As a general rule you can never `git pull` too much.
+2. ### **Merge Often**
+   - Merge your work into the Project_Dev branch with a pull request. Do this after every work session you contribute even if you don't fully finish your ticket. This allows for new ticket branches to have your work, and current ticket branches to rebase with your work.
+3. ### **Rebase Often**
+   - Rebase your ticket branch from the Project_Dev branch before every work session. This ensures you have the most up to date work from other ticket branches editing Project_Dev.
+4. ### **Single File Commits**
+   - Only `git add` one file per `git commit`. However, you may have multiple commits per `git push`. KiCad will ghost edit files even if you don't open them. This will cause `git status` to mark them as edited even though no actual changes were made. In short, never automatically add all the 'edited' files to a commit. You must delibratly `git add` the individual files you opened and edited. This also ensures you don't accidentally add any random files.
+5. ### **One Branch Per File**
+   - There should only be one ticket branch editing a specific file. However a single ticket branch may edit multiple files. This ensures no parallel work is happening on a specific file between multiple branches. This Would cause merge conflicts and some work is almost always lost.
+6. ### **No Simultaneous Editors Per Branch**
+   - Only one person can edit a branch at a time. Co-contributors must coordinate with each other to ensure that only one person is activly editing.
+7. ### **Stay Within Your Branch's Scope**
+   - Do not edit files beyond the scope of your ticket for your project. This includes editing files in other project folders and other files in your project folder. This ensures you don't cause merge conflicts for someone else's work on another branch, and that the Project_Dev branch doesn't accidentally edit other projects in Main or Project_Dev branches. Adding files to the KiCad Parts Library is allowed as long as the parts are related to your work.
 
 <br/>
 
@@ -76,7 +92,7 @@ There are three commonly used branch types in this repository.
 
 <br/>
 
-# **KiCad Libraries** 📚
+# **KiCad Parts Library** 📚
 
 KiCad has it's own documention on libraries but here's the rundown
 
