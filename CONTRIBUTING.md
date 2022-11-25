@@ -15,6 +15,16 @@ KiCad files are more difficult and delicate to merge than standard code. Working
 
 How to quickly get started via terminal commands. Recomended Terminal: [Git Bash](https://git-scm.com/downloads)
 
+## Install KiCad
+
+The Electronic Design Automation (EDA) software used to design our Printed Circuit Boards (PCBs)
+
+1. Download KiCad: [kicad.org/download](https://www.kicad.org/download/)
+
+## GitHub Proficiency
+
+The rest of this guide assumes you are somewhat familiar with Git and GitHub. We're current;y working on a Git and GitHub guide, but there are many online resources and tutorials if you search.
+
 ## Cloning the Repository
 
 1. Create a folder where you'd like to localy store the repository.  
@@ -25,24 +35,7 @@ How to quickly get started via terminal commands. Recomended Terminal: [Git Bash
 4. Check the status of the repository. *(Optional)*  
     `git status`
 
-## Pulling
-
-## Pushing
-
-## Branching
-
-## Merging
-
-## Editors
-
-- Add only 1~2 files per commit
-  - KiCad auto edits files you didn't  
-    open don't add them
-- No backups or exotic file types
-  - .sch, .pcb, .proj only!
-
-- How to pull, push, add, commit, switch branches
-- How to clean and restore
+## 
 
 <br/>
 
@@ -82,28 +75,37 @@ There are seven rules you must follow when working in ticket branches to avoid m
 6. ### **No Simultaneous Editors Per Branch**
    - Only one person can edit a branch at a time. Co-contributors must coordinate with each other to ensure that only one person is activly editing.
 7. ### **Stay Within Your Branch's Scope**
-   - Do not edit files beyond the scope of your ticket for your project. This includes editing files in other project folders and other files in your project folder. This ensures you don't cause merge conflicts for someone else's work on another branch, and that the Project_Dev branch doesn't accidentally edit other projects in Main or Project_Dev branches. Adding files to the KiCad Parts Library is allowed as long as the parts are related to your work.
+   - Do not edit files beyond the scope of your ticket for your project. This includes editing files in other project folders and other files in your project folder. This ensures you don't cause merge conflicts for someone else's work on another branch, and that the Project_Dev branch doesn't accidentally edit other projects in Main or other Project_Dev branches. Adding files to the KiCad Parts Library is allowed as long as the parts are related to your work.
 
 <br/>
 
 # **File Structure** 🧱
 
-- Edit files only in project folder
+- TBD
 
 <br/>
 
 # **KiCad Parts Library** 📚
 
+KiCad has a rich default library of parts but often we need to create custom part files for unique comonents. If the part files can not be found online then custom files can be made 
+
+## **General Library Paths** (TBD)
+When working with multiple contributors you must
+
+
 KiCad has it's own documention on libraries but here's the rundown
 
+- 3x Types
 - Default pathway
 - Project specific symbol
 - Naming
 - File types
 
+<br/><br/><br/><br/>
+
 ----------
 
-# OLD
+# Example Workflow (OLD)
 
 ## 1. Rebase your branch
 
