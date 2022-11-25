@@ -1,5 +1,93 @@
 # Contributing Guide
-Considering that PCBs are more difficult to merge than code, this requires some more specific requirements. Please follow the below steps when making changes:
+
+KiCad files are more difficult and delicate to merge than standard code. Working with multiple contributors requires a specialized workflow. Please use the following guide below as a reference.
+
+## Table of Contents
+
+- [Quickstart](#quickstart-)
+- [Branches](#branches-)
+- [File Structure](#file-structure-)
+- [KiCad Libraries](#kicad-libraries-)
+
+<br/>
+
+# Quickstart ⚡
+
+How to quickly get started via terminal commands. Recomended Terminal: [Git Bash](https://git-scm.com/downloads)
+
+## Cloning the Repository
+
+1. Create a folder where you'd like to localy store the repository.  
+2. Navigate to that folder.  
+    >`cd /c/Users/Your_PC_Name/Desktop/ISS`
+3. Clone the repository.  
+    >`git clone https://github.com/ISSUIUC/ISS-PCB`
+4. Check the status of the repository. *(Optional)*  
+    >`git status`
+
+## Pulling
+
+## Pushing
+
+## Branching
+
+## Merging
+
+## Editors
+
+- Add only 1~2 files per commit
+  - KiCad auto edits files you didn't  
+    open don't add them
+- No backups or exotic file types
+  - .sch, .pcb, .proj only!
+
+- How to pull, push, add, commit, switch branches
+- How to clean and restore
+
+<br/>
+
+# Branches 🌳
+
+There are three commonly used branch types in this repository.
+
+![Branch Hierarchy](images\ISS-PCB_Branch_Hierarchy_Diagram.png)
+
+- ### **Main**
+  - The primary branch that only stores finished projects
+  - Example: `Main`
+- ### **Project_Dev**
+  - Projects that are being actively developed
+  - Example: `TARS-MK4-dev`
+- ### **Ticket**
+  - Specific tasks for Project_Dev branches sourced from our Trello.
+  - This is where the majority of the development happens.
+  - Example: `AV-999/Route-Sensors`
+  
+*Add these*
+
+- Push and merge often
+
+
+<br/>
+
+# File Structure 🧱
+
+- Edit files only in project folder
+
+<br/>
+
+# KiCad Libraries 📚
+
+KiCad has it's own documention on libraries but here's the rundown
+
+- Default pathway
+- Project specific symbol
+- Naming
+- File types
+
+----------
+
+# OLD
 
 ## 1. Rebase your branch
 
