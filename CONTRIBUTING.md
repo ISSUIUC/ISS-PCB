@@ -23,7 +23,7 @@ The Electronic Design Automation (EDA) software used to design our Printed Circu
 
 ## GitHub Proficiency
 
-The rest of this guide assumes you are somewhat familiar with Git and GitHub. We're current;y working on a Git and GitHub guide, but there are many online resources and tutorials if you search.
+The rest of this guide assumes you are somewhat familiar with Git and GitHub. We're currently working on a Git and GitHub guide, but there are many online resources and tutorials if you search.
 
 ## Cloning the Repository
 
@@ -75,7 +75,7 @@ There are seven rules you must follow when working in ticket branches to avoid m
 6. ### **No Simultaneous Editors Per Branch**
    - Only one person can edit a branch at a time. Co-contributors must coordinate with each other to ensure that only one person is activly editing.
 7. ### **Stay Within Your Branch's Scope**
-   - Do not edit files beyond the scope of your ticket for your project. This includes editing files in other project folders and other files in your project folder. This ensures you don't cause merge conflicts for someone else's work on another branch, and that the Project_Dev branch doesn't accidentally edit other projects in Main or other Project_Dev branches. Adding files to the KiCad Parts Library is allowed as long as the parts are related to your work.
+   - Do not edit files beyond the scope of your ticket for your project. This includes editing files in other project folders and other files in your project folder. This ensures you don't cause merge conflicts for someone else's work on another branch, and that the Project_Dev branch doesn't accidentally edit other projects in Main or other Project_Dev branches. Adding files to the KiCad Parts Library is allowed as long as the parts are related to your work. Rule #4 is the best way to ensure compliance.
 
 <br/>
 
@@ -87,7 +87,25 @@ There are seven rules you must follow when working in ticket branches to avoid m
 
 # **KiCad Parts Library** 📚
 
-KiCad has a rich default library of parts but often we need to create custom part files for unique comonents. If the part files can not be found online then custom files can be made 
+KiCad has a rich default library of parts but often we need to create custom part files for unique comonents. If the part files can not be found online then custom files can be made with the built-in symbol editor, footprint editor, and your choice of CAD software.
+
+- [SnapEDA](https://www.snapeda.com/): *Download free symbols, footprints, & 3D models for millions of electronic components.* 
+
+## **Library Directory**
+
+The custom parts library used by all the projects in the repository is stored in the root of the repository under the `.libs` folder. Any new parts should be added here.
+
+## **Files Types**
+
+There are three main categories of part files.
+
+- ### **Symbols**
+  - `.kicad_sym`
+- ### **Footprints**
+  - `.pretty` and `.kicad_mod`
+- ### **3D Models**
+  - `.step` and `.wrl`
+
 
 ## **General Library Paths** (TBD)
 When working with multiple contributors you must
