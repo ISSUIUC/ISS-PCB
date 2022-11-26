@@ -114,10 +114,16 @@ The custom library used by all the projects in this repository is stored in the 
 
 ![KiCad Library Folders](/images/ISS-PCB_Library_Folders.png)
 
-When in doubt reference previous custom libraries or the KiCad libraries for formatting assitance.
+When in doubt reference previous custom libraries or the KiCad libraries for assitance.
 
 ## **General Library Paths** (TBD)
-When working with multiple contributors you must
+
+
+- ### **Accessing Settings**
+  - **Schematics:** Symbol Editor --> Preferences --> Manage Symbol Libraries --> Project Specific Libraries  
+  - **Footprints:** Footprint Editor --> Preferences --> Manage Footprint Libraries --> Project Specific Libraries
+  - **3D Models:** Footprint Editor --> Open Footprint --> File --> Footprint Properties --> 3D Models
+
 
 `${KIPRJMOD}/libs/H3LIS331DL/H3LIS331DL.kicad_sym`
 >${KIPRJMOD}/libs/H3LIS331DL/H3LIS331DL.kicad_sym
