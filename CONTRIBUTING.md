@@ -112,21 +112,26 @@ There are three main categories of part files. When adding new components please
 
 The custom library used by all the projects in this repository is stored in the root of the repository under the `/libs` folder. Any new parts should be added here.
 
+
 ![KiCad Library Folders](/images/ISS-PCB_Library_Folders.png)
 
-When in doubt reference previous custom libraries or the KiCad libraries for assitance.
+## **Relative Library Paths**
 
-## **General Library Paths** (TBD)
-
+When adding custom libraries to a project you must point KiCad to the library file using a relative path linked to the repository and not your local computer or else the library will not load correct when the project is opened by other contributors.
 
 - ### **Accessing Settings**
   - **Schematics:** Symbol Editor --> Preferences --> Manage Symbol Libraries --> Project Specific Libraries  
   - **Footprints:** Footprint Editor --> Preferences --> Manage Footprint Libraries --> Project Specific Libraries
   - **3D Models:** Footprint Editor --> Open Footprint --> File --> Footprint Properties --> 3D Models
+- ### **Setting the Path**
+  - `${KIPRJMOD}/../../` copy this and replace everything before `lib` in the path for the library file
+    - ${KIPRJMOD} tells KiCad to look in the same folder as the project file
+    - /../../ tells KiCad to jump back two folder levels (project --> boards --> root)
+    - KiCad will then search for the `lib` folder and the rest of the file path as normal
+  - This is the same method for all three component file types
+  - Below is a good example with a relative path and a bad example with a user specific path
 
-
-`${KIPRJMOD}/libs/H3LIS331DL/H3LIS331DL.kicad_sym`
->${KIPRJMOD}/libs/H3LIS331DL/H3LIS331DL.kicad_sym
+![KiCad Relative Paths](/images/ISS-PCB_Relative_Library_Paths.PNG)
 
 ## **ISS Library Rules**
 
