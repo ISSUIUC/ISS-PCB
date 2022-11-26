@@ -86,7 +86,7 @@ KiCad has a rich default library of parts but often we need to create custom par
 
 ## **KiCad Library Convention**
 
-The KiCad Library Convention (KLC) is a set of guidelines for contributing to the official KiCad libraries. **You should read over these requirments and follow them when making custom libraries.** Our libraries follow the same guidelines. All libraries should be created with the intent to upstream them to the offficial KiCad Libraries.
+The KiCad Library Convention (KLC) is a set of guidelines for contributing to the official KiCad libraries. **Read over these requirments beforehand and follow them when making custom libraries.** Our libraries follow the same guidelines. All libraries should be created with the intent to upstream them to the offficial KiCad Libraries.
 
 - [KiCad Library Convention](https://klc.kicad.org/): *Library maintainer rules & guidelines*
 
@@ -128,22 +128,23 @@ When adding custom libraries to a project you must point KiCad to the library fi
     - ${KIPRJMOD} tells KiCad to look in the same folder as the project file
     - /../../ tells KiCad to jump back two folder levels (project --> boards --> root)
     - KiCad will then search for the `lib` folder and the rest of the file path as normal
-  - This is the same method for all three component file types
-  - Below is a good example with a relative path and a bad example with a user specific path
+  - This is the same method for all three component file types  
+
+Below is a good example with a relative path and a bad example with a user specific path
 
 ![KiCad Relative Paths](/images/ISS-PCB_Relative_Library_Paths.PNG)
 
-## **ISS Library Rules**
+## **ISS Library Rules** *(TBD)*
 
-KiCad has it's own documention on libraries but here's the rundown
+- Relative pathway always
+- Project Specific Only
+- Include all three types (Symbols, Footprint, Model) for new components
+- Follow the KLC
+  - Name according to KLC
+- Search online first before making custom
+  - Sometimes online autogen symbols are bad!
 
-- 3x Types
-- Default pathway
-- Project specific symbol
-- Naming
-- File types
-
-<br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/>
 
 ----------
 
