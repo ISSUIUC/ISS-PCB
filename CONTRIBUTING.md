@@ -7,6 +7,8 @@ KiCad files are more difficult and delicate to merge than standard code. Working
 - [Quickstart](#quickstart-)
 - [Branches](#branches-)
 - [KiCad Parts Library](#kicad-parts-library-)
+- [Git and GitHub]()
+- [Old Guide](#example-workflow-old)
 
 <br/>
 
@@ -34,8 +36,6 @@ The rest of this guide assumes you are somewhat familiar with Git and GitHub. We
 4. Check the status of the repository. *(Optional)*  
     `git status`
 
-## 
-
 <br/>
 
 # **Branches** 🌳
@@ -45,35 +45,54 @@ There are three commonly used branch types in this repository.
 ![Branch Hierarchy](/images/ISS-PCB_Branch_Hierarchy_Diagram.png)
 
 - ### **Main**
+
   - The primary branch that only stores finished projects
   - Do not directly push to this branch! (Pull requests only!)
   - Example: `main`
+
 - ### **Project_Dev**
+
   - Projects that are being actively developed
   - Used to review work from Ticket Branches via pull requests
   - Do not directly push to this branch! (Pull requests only!)
   - Example: `TARS-MK4-dev`
+
 - ### **Ticket**
+
   - Specific tasks for Project_Dev branches sourced from our Trello
   - This is where the majority of the development happens
   - Example: `AV-999/Route-Sensors`
 
 ## **Ticket Branch Rules**
+
 There are seven rules you must follow when working in ticket branches to avoid merge conflicts and loss of work.
 
 1. ### **Pull Often**
+
    - `git pull` before every time you begin working and before pushing. This ensures you have the most recent edits from other contributors on the same branch. As a general rule you can never `git pull` too much.
+  
 2. ### **Merge Often**
+
    - Merge your work into the Project_Dev branch with a pull request. Do this after every work session you contribute even if you don't fully finish your ticket. This allows for new ticket branches to have your work, and current ticket branches to rebase with your work.
+
 3. ### **Rebase Often**
+
    - Rebase your ticket branch from the Project_Dev branch before every work session. This ensures you have the most up to date work from other ticket branches editing Project_Dev.
+  
 4. ### **Single File Commits**
+
    - Only `git add` one file per `git commit`. However, you may have multiple commits per `git push`. **KiCad will ghost edit files even if you don't open them.** This will cause `git status` to mark them as edited even though no actual changes were made. In short, never automatically add all the 'edited' files to a commit. You must delibratly `git add` the individual files you opened and edited. This also ensures you don't accidentally add any random files.
+  
 5. ### **One Branch Per File**
+
    - There should only be one ticket branch editing a specific file. However a single ticket branch may edit multiple files. This ensures no parallel work is happening on a specific file between multiple branches. This would cause merge conflicts and some work is almost always lost.
+
 6. ### **No Simultaneous Editors Per Branch**
+
    - Only one person can edit a branch at a time. Co-contributors must coordinate with each other to ensure that only one person is activly editing.
+
 7. ### **Stay Within Your Branch's Scope**
+
    - Do not edit files beyond the scope of your ticket for your project. This includes editing files in other project folders and other files in your project folder. This ensures you don't cause merge conflicts for someone else's work on another branch, and that the Project_Dev branch doesn't accidentally edit other projects in Main or other Project_Dev branches. Adding files to the KiCad Parts Library is allowed as long as the parts are related to your work. Rule #4 is the best way to ensure compliance.
 
 <br/>
@@ -97,13 +116,18 @@ There are three main categories of part files. When adding new components please
 ![KiCad Component File Types](/images/ISS-PCB_Component_File_Types.png)
 
 - ### **Symbols**
+
   - Used to create schematics and easily diagram electrical connections
   - `.kicad_sym` : A library file containing multiple unique component symbols.
+
 - ### **Footprints**
+
   - Used to map and route the physical layout of the components
   - `.pretty` : A library folder containing multiple `.kicad_mod` files 
   - `.kicad_mod` : An individual component footprint
+
 - ### **3D Models**
+
   - Used to render 3D images of the boards
   - `.step` : An individual component 3D model
   - `.wrl` : An individual component 3D model with texture data for advanced rendering
@@ -112,7 +136,6 @@ There are three main categories of part files. When adding new components please
 
 The custom library used by all the projects in this repository is stored in the root of the repository under the `/libs` folder. Any new parts should be added here.
 
-
 ![KiCad Library Folders](/images/ISS-PCB_Library_Folders.png)
 
 ## **Relative Library Paths**
@@ -120,17 +143,20 @@ The custom library used by all the projects in this repository is stored in the 
 When adding custom libraries to a project you must point KiCad to the library file using a relative path linked to the repository and not your local computer or else the library will not load correct when the project is opened by other contributors.
 
 - ### **Accessing Settings**
+
   - **Schematics:** Symbol Editor --> Preferences --> Manage Symbol Libraries --> Project Specific Libraries  
   - **Footprints:** Footprint Editor --> Preferences --> Manage Footprint Libraries --> Project Specific Libraries
   - **3D Models:** Footprint Editor --> Open Footprint --> File --> Footprint Properties --> 3D Models
+
 - ### **Setting the Path**
+
   - `${KIPRJMOD}/../../` copy this and replace everything before `lib` in the path for the library file
     - ${KIPRJMOD} tells KiCad to look in the same folder as the project file
     - /../../ tells KiCad to jump back two folder levels (project --> boards --> root)
     - KiCad will then search for the `lib` folder and the rest of the file path as normal
   - This is the same method for all three component file types  
 
-Below is a good example with a relative path and a bad example with a user specific path
+Below is a good example with a relative path and a bad example with a user specific path. The steps to import a library are also shown. Navigating to this window by following the "Accessing Settings" section.
 
 ![KiCad Relative Paths](/images/ISS-PCB_Relative_Library_Paths.PNG)
 
@@ -209,3 +235,18 @@ Open a pull request on github, and make sure that everyone is now aware of that 
 ## 8. Additional Resources
 
 If you are looking for further methods on Git, and commands within the terminal, take a look at the ISS Wiki's Technical Guide on Git: https://wiki.illinois.edu/wiki/pages/viewpage.action?pageId=779063487
+
+<br/><br/><br/><br/><br/><br/>
+
+# Git and GitHub
+
+A guide on the basic usage of Git and GitHub.
+**TBD**
+
+# Misc To-Do
+
+- Don't add Backup files
+- Github tutorial
+- board pdfs and gerbers
+- Schematic and PCB title blocks!
+- Template board guide
