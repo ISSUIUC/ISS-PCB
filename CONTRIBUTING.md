@@ -155,12 +155,15 @@ When adding custom libraries to a project you must point KiCad to the library fi
     - /../../ tells KiCad to jump back two folder levels (project --> boards --> root)
     - KiCad will then search for the `lib` folder and the rest of the file path as normal
   - This is the same method for all three component file types  
+  - Careful! Depending on where your project is located you may need a different amoumt of `/../` in the file path  
 
 Below is a good example with a relative path and a bad example with a user specific path. The steps to import a library are also shown. Navigating to this window by following the "Accessing Settings" section.
 
 ![KiCad Relative Paths](/images/ISS-PCB_Relative_Library_Paths.PNG)
 
-## **ISS Library Rules** *(TBD)*
+## **Creating Custom Libraries** *(TBD)*
+
+
 
 - Relative pathway always
 - Project Specific Only
@@ -171,6 +174,64 @@ Below is a good example with a relative path and a bad example with a user speci
   - Sometimes online autogen symbols are bad!
 
 <br/><br/><br/><br/><br/><br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ----------
 
