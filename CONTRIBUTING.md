@@ -103,8 +103,6 @@ When working within ticket branches the scope of work should stay hyperfocused o
 
 # **Pull Requests** 🧲
 
-<mark/> TBD - still working on it <mark/>
-
 Pull requests (PRs) are how to submit work for peer review and merge into Project_Dev branches or main. Submit pull requests as soon as possible in the development cycle to recieve feedback early.
 
 ## **Peer Review Guidelines**
@@ -118,7 +116,7 @@ Pull requests (PRs) are how to submit work for peer review and merge into Projec
 
 ## **Branch Protection**
 
-The `main` and `Project_Dev` branches should be locked down and require pull requests to add new work.
+The `main` and `Project_Dev` branches should be locked down and require pull requests to add new work. Even admins should have to follow these restrictions.
 
 <br/>
 
