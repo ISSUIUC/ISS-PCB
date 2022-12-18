@@ -6,8 +6,8 @@ KiCad files are more difficult and delicate to merge than standard code. Working
 
 - [Quickstart](#quickstart-)
 - [Branches](#branches-)
+- [Pull Requests](#pull-requests-)
 - [KiCad Parts Library](#kicad-parts-library-)
-- [Git and GitHub]()
 - [Old Guide](#example-workflow-old)
 
 <br/>
@@ -61,7 +61,7 @@ There are three commonly used branch types in this repository.
 
   - Specific tasks for Project_Dev branches sourced from our Trello
   - This is where the majority of the development happens
-  - Example: `AV-999/Route-Sensors`
+  - Example: `AV-999/Route-FCB-Sensors`
 
 ## **Ticket Branch Rules**
 
@@ -94,6 +94,31 @@ There are seven rules you must follow when working in ticket branches to avoid m
 7. ### **Stay Within Your Branch's Scope**
 
    - Do not edit files beyond the scope of your ticket for your project. This includes editing files in other project folders and other files in your project folder. This ensures you don't cause merge conflicts for someone else's work on another branch, and that the Project_Dev branch doesn't accidentally edit other projects in Main or other Project_Dev branches. Adding files to the KiCad Parts Library is allowed as long as the parts are related to your work. Rule #4 is the best way to ensure compliance.
+
+## **Ticket Branch Scope**
+
+When working within ticket branches the scope of work should stay hyperfocused on a specific task and not be generalized. This allows to finish the work on your ticket branch quickly, and then merge into the Project_Dev branch. Overall, this helps reduce merge conflicts later on because your work is more quickly preserved in the dev branch and you transition to newer up to date Ticket branches faster. For example. `Route-FCB-Sensors` is relatively focused, can be completed quickly, and has an easily defined end goal. However, `Finish-FCB` is a bit too broad which doesn't allow it to be quickly finished and merged into the Project_Dev branch. In the end, your work will be safer from merge conflicts the faster you merge into the Project_Dev branch and the newer the Ticket branch is.
+
+<br/>
+
+# **Pull Requests** 🧲
+
+<mark/> TBD - still working on it <mark/>
+
+Pull requests (PRs) are how to submit work for peer review and merge into Project_Dev branches or main. Submit pull requests as soon as possible in the development cycle to recieve feedback early.
+
+## **Peer Review Guidelines**
+
+- Annotate schematics and PCBs before submitting PR's to allow for easier referencing
+- Open "Draft" pull requests to review work that is not yet ready to merge.
+- Two additional contributors not directly involved with the work should review every pull request before merging.
+- Reviews requesting modifications should try to include the component reference number and a checkbox list.
+- Critiques should be directed towards the work and not the individual. Be respectful, everyone at one point knew nothing about KiCad.
+- If you have an open PR check GitHub diligently for new comments. It should be an active discussion section for reviewing work. (You can configure notifications to your exact preferences.)
+
+## **Branch Protection**
+
+The `main` and `Project_Dev` branches should be locked down and require pull requests to add new work.
 
 <br/>
 
@@ -161,17 +186,9 @@ Below is a good example with a relative path and a bad example with a user speci
 
 ![KiCad Relative Paths](/images/ISS-PCB_Relative_Library_Paths.PNG)
 
-## **Creating Custom Libraries** *(TBD)*
+## **Creating Custom Libraries**
 
-
-
-- Relative pathway always
-- Project Specific Only
-- Include all three types (Symbols, Footprint, Model) for new components
-- Follow the KLC
-  - Name according to KLC
-- Search online first before making custom
-  - Sometimes online autogen symbols are bad!
+When creating a library or part you **must follow the KiCad Library Convention.** All of the necessary guidelines are already documented in the KLC. When in doubt always review your parts against a component in the offical KiCad libraries. Here are a few common pitfalls when making new libraries and parts:
 
 <br/><br/><br/><br/><br/><br/>
 
