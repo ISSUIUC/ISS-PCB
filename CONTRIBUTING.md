@@ -8,7 +8,8 @@ KiCad files are more difficult and delicate to merge than standard code. Working
 - [Branches](#branches-)
 - [Pull Requests](#pull-requests-)
 - [KiCad Parts Library](#kicad-parts-library-)
-- [Old Guide](#example-workflow-old)
+- [Merge Conflicts](#merge-conflicts-)
+- [Example Workflow](#example-workflow-️)
 
 <br/>
 
@@ -65,7 +66,7 @@ There are three commonly used branch types in this repository.
 
 ## **Ticket Branch Rules**
 
-There are seven rules you must follow when working in ticket branches to avoid merge conflicts and loss of work.
+There are nine rules you must follow when working in ticket branches to avoid merge conflicts and loss of work.
 
 1. ### **Pull Often**
 
@@ -73,7 +74,7 @@ There are seven rules you must follow when working in ticket branches to avoid m
   
 2. ### **Merge Often**
 
-   - Merge your work into the Project_Dev branch with a pull request. Do this after every work session you contribute even if you don't fully finish your ticket. This allows for new ticket branches to have your work, and current ticket branches to rebase with your work.
+   - Merge your work into the Project_Dev branch with a pull request. This allows for new ticket branches to have your work, and current ticket branches to rebase with your work. **If your work is incomplete create a draft pull request to still receive feedback.**
 
 3. ### **Rebase Often**
 
@@ -95,15 +96,23 @@ There are seven rules you must follow when working in ticket branches to avoid m
 
    - Do not edit files beyond the scope of your ticket for your project. This includes editing files in other project folders and other files in your project folder. This ensures you don't cause merge conflicts for someone else's work on another branch, and that the Project_Dev branch doesn't accidentally edit other projects in Main or other Project_Dev branches. Adding files to the KiCad Parts Library is allowed as long as the parts are related to your work. Rule #4 is the best way to ensure compliance.
 
-## **Ticket Branch Scope**
+8. ### **Focused Ticket Scope**
 
-When working within ticket branches the scope of work should stay hyperfocused on a specific task and not be generalized. This allows to finish the work on your ticket branch quickly, and then merge into the Project_Dev branch. Overall, this helps reduce merge conflicts later on because your work is more quickly preserved in the dev branch and you transition to newer up to date Ticket branches faster. For example. `Route-FCB-Sensors` is relatively focused, can be completed quickly, and has an easily defined end goal. However, `Finish-FCB` is a bit too broad which doesn't allow it to be quickly finished and merged into the Project_Dev branch. In the end, your work will be safer from merge conflicts the faster you merge into the Project_Dev branch and the newer the Ticket branch is.
+   - Ticket branches should be focused on completing a specific task. This allows you to finish the work faster, receive feedback faster, merge the branch into the Project_Dev branch faster, and start work on a newer up to date Ticket branch faster. For example `Route-FCB-Sensors` is relatively focused, but `Finish-FCB` is not and can have a broad interpretation.
+
+9. ### **Branch From Project_Dev**
+
+   - All Ticket branches should be created by branching off of the Project_Dev branch you are working within. Do not make any Ticket branches off of main.
+
+## **Branch Protection**
+
+The `main` and `Project_Dev` branches should be locked down and require pull requests to add new work. Even admins should have to abide by these restrictions.
 
 <br/>
 
 # **Pull Requests** 🧲
 
-Pull requests (PRs) are how to submit work for peer review and merge into Project_Dev branches or main. Submit pull requests as soon as possible in the development cycle to recieve feedback early.
+Pull requests (PRs) are how to submit work for peer review and merge into Project_Dev branches or main. Submit pull requests as soon as possible in the development cycle to recieve feedback early. It is recomended that PRs and comments are made through GitHub.com and not via the command line.
 
 ## **Peer Review Guidelines**
 
@@ -113,10 +122,6 @@ Pull requests (PRs) are how to submit work for peer review and merge into Projec
 - Reviews requesting modifications should try to include the component reference number and a checkbox list.
 - Critiques should be directed towards the work and not the individual. Be respectful, everyone at one point knew nothing about KiCad.
 - If you have an open PR check GitHub diligently for new comments. It should be an active discussion section for reviewing work. (You can configure notifications to your exact preferences.)
-
-## **Branch Protection**
-
-The `main` and `Project_Dev` branches should be locked down and require pull requests to add new work. Even admins should have to follow these restrictions.
 
 <br/>
 
@@ -187,6 +192,38 @@ Below is a good example with a relative path and a bad example with a user speci
 ## **Creating Custom Libraries**
 
 When creating a library or part you **must follow the KiCad Library Convention.** All of the necessary guidelines are already documented in the KLC. When in doubt always review your parts against a component in the offical KiCad libraries. Here are a few common pitfalls when making new libraries and parts:
+
+<br/>
+
+# **Merge Conflicts** ⛔️
+
+If you ever run into merge conflicts which are common with KiCad there are a few methods you can take to resolve them. However, there is always a chance that some work may be lost wich is why following the proactive measures in the sections above is crucial.
+
+1. ### **New Branch:**
+
+    - If you are unable to merge a branch you can create a new branch and then copy over any work from the old branch to the new branch. This is often the best solution for Ticket branches.
+
+2. ### **File Editing:**
+
+   - If you are experienced with KiCad, merge conflict(s) can sometimes be solved by manually editing the files line by line. VSCode or any other text editor should be able to open the files. Be warned that this method is the most complex and likely to cause other issues if done incorrectly. 
+
+   - Fun Fact: You can automate KiCad tasks with Python by editing these text files directly or by using the KiCad Python API. However, there is very little documentation regarding this topic.
+
+3. ### **Fresh Start:**
+
+   - If your entire **local** repository is acting strange and you can not solve it within 20 minutes you can opt to reclone the repository in a new folder. You can delete your old local repository if you have no work that you want to save! It is recomended that you copy and paste any work you want to keep from the old repository to the new local repository, and then delete the old repository.
+
+# **Example Workflow** ⚙️
+
+Here is a demo of a typical workflow when working with Ticket branches.
+
+1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
 
 <br/><br/><br/><br/><br/><br/>
 
@@ -314,15 +351,3 @@ If you are looking for further methods on Git, and commands within the terminal,
 
 <br/><br/><br/><br/><br/><br/>
 
-# Git and GitHub
-
-A guide on the basic usage of Git and GitHub.
-**TBD**
-
-# Misc To-Do
-
-- Don't add Backup files
-- Github tutorial
-- board pdfs and gerbers
-- Schematic and PCB title blocks!
-- Template board guide
