@@ -126,7 +126,7 @@
 
   (footprint "Resistor_SMD:R_0805_2012Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 052305c2-f26b-4807-beda-c0f1374d5938)
-    (at 259.588 85.268)
+    (at 260.35 87.884)
     (descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Sheetfile" "BLACKBOX.kicad_sch")
@@ -225,10 +225,6 @@
       (effects (font (size 0.87376 0.87376) (thickness 0.14224)))
       (tstamp 787e4c9a-f21e-4b35-965c-7d888ed80309)
     )
-    (fp_text user "VLogic/Vcc: 3-5VDC" (at 0.1016 -5.8674) (layer "F.SilkS")
-      (effects (font (size 0.89408 0.89408) (thickness 0.12192)) (justify mirror))
-      (tstamp 82664c53-b8f1-47ec-ac17-f0f317fbd39b)
-    )
     (fp_text user "PS1" (at -1.8034 -23.5204) (layer "F.SilkS")
       (effects (font (size 0.89408 0.89408) (thickness 0.12192)) (justify mirror))
       (tstamp a00a59be-56e1-469f-aa5f-35ad5e2e0acd)
@@ -245,10 +241,6 @@
       (effects (font (size 1.016 1.016) (thickness 0.254)) (justify left bottom))
       (tstamp bf6e8841-f433-439d-a0dc-cd9fbb4ab7c7)
     )
-    (fp_text user "Adv. Inertial \nMeasurement Unit\n9DoF Accel/Gyro/Mag\nQuat. & Euler output\nI2C/UART/SPI Interface" (at -0.0254 -13.4874) (layer "F.SilkS")
-      (effects (font (size 0.97155 0.97155) (thickness 0.17145)) (justify mirror))
-      (tstamp c35f735b-e188-4f3b-9f81-bc573a5a49c2)
-    )
     (fp_text user "VIN" (at -6.2484 -5.8674) (layer "F.SilkS")
       (effects (font (size 0.87376 0.87376) (thickness 0.14224)))
       (tstamp cbf36a16-cc2c-400f-ac5b-f833cb4ba4c9)
@@ -260,14 +252,6 @@
     (fp_text user "P0" (at -3.7338 -26.8986) (layer "F.SilkS")
       (effects (font (size 0.87376 0.87376) (thickness 0.14224)))
       (tstamp e87d87ef-3be2-4686-96db-10efbe549bee)
-    )
-    (fp_text user "BNO08x 9-DoF" (at -0.0254 -18.5674) (layer "F.SilkS")
-      (effects (font (size 1.25222 1.25222) (thickness 0.22098)) (justify mirror))
-      (tstamp faae07f0-10ba-4253-900a-62d726717380)
-    )
-    (fp_text user "BNO08x 9-DoF" (at 0.1016 -23.4569) (layer "F.SilkS")
-      (effects (font (size 1.25222 1.25222) (thickness 0.22098)))
-      (tstamp fbaee10e-f836-4f54-bd38-228d80021522)
     )
     (fp_text user "PS0" (at -5.1054 -23.5204) (layer "F.SilkS")
       (effects (font (size 0.89408 0.89408) (thickness 0.12192)) (justify mirror))
@@ -23474,7 +23458,7 @@
     (pad "1" smd rect (at -3.8354 -20.2574 90) (size 1.075 1) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 37 "unconnected-(U102-Pad1)") (pinfunction "VIN") (pintype "bidirectional") (solder_mask_margin 0.0508) (tstamp 081d0876-eb65-4e37-aa2e-347fb23ad74d))
     (pad "1" thru_hole circle (at -6.2484 -7.5184 90) (size 1.778 1.778) (drill 1) (layers *.Cu *.Mask)
-      (net 37 "unconnected-(U102-Pad1)") (pinfunction "VIN") (pintype "bidirectional") (solder_mask_margin 0.0508) (tstamp 0c8bdefa-2140-4131-9e4a-cbbdcee20928))
+      (net 17 "+3V3") (pinfunction "VIN") (pintype "bidirectional") (solder_mask_margin 0.0508) (tstamp 0c8bdefa-2140-4131-9e4a-cbbdcee20928))
     (pad "1" smd rect (at 8.2416 -20.0804) (size 0.5 0.5) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 37 "unconnected-(U102-Pad1)") (pinfunction "VIN") (pintype "bidirectional") (solder_mask_margin 0.0508) (tstamp 0e8d4fc3-57c7-49db-bb49-fa0d11d7e23e))
     (pad "1" smd rect (at -7.5444 -17.9084) (size 1.55 0.6) (layers "F.Cu" "F.Paste" "F.Mask")
@@ -23538,7 +23522,7 @@
     (pad "2" smd rect (at 7.7476 -15.9084 180) (size 1.55 0.6) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 38 "unconnected-(U102-Pad2)") (pinfunction "3Vo") (pintype "bidirectional") (solder_mask_margin 0.0508) (tstamp a39ba696-202b-4bd8-9def-75eca8398c60))
     (pad "2" thru_hole circle (at -3.7084 -25.2984 90) (size 1.778 1.778) (drill 1) (layers *.Cu *.Mask)
-      (net 38 "unconnected-(U102-Pad2)") (pinfunction "3Vo") (pintype "bidirectional") (solder_mask_margin 0.0508) (tstamp a42c4e6e-ec45-464f-be27-dc3127374a4d))
+      (net 17 "+3V3") (pinfunction "3Vo") (pintype "bidirectional") (solder_mask_margin 0.0508) (tstamp a42c4e6e-ec45-464f-be27-dc3127374a4d))
     (pad "2" smd roundrect (at -5.9944 -21.7424 180) (size 0.762 1.524) (layers "B.Cu") (roundrect_rratio 0.25)
       (net 38 "unconnected-(U102-Pad2)") (pinfunction "3Vo") (pintype "bidirectional") (solder_mask_margin 0.0508) (tstamp a58b2aa3-b07e-4b9f-9872-30f8adbc8fd7))
     (pad "2" smd rect (at 8.9916 -20.0804) (size 0.4 0.5) (layers "F.Cu" "F.Paste" "F.Mask")
@@ -23560,7 +23544,7 @@
     (pad "3" smd rect (at -3.3242 -13.3194 270) (size 0.3048 0.9906) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 39 "unconnected-(U102-Pad3)") (pinfunction "GND") (pintype "bidirectional") (solder_mask_margin 0.0508) (tstamp 32e65234-e762-4bd4-ab88-7b967bc1d478))
     (pad "3" thru_hole circle (at -1.1684 -25.2984 90) (size 1.778 1.778) (drill 1) (layers *.Cu *.Mask)
-      (net 39 "unconnected-(U102-Pad3)") (pinfunction "GND") (pintype "bidirectional") (solder_mask_margin 0.0508) (tstamp 3a784bb8-d5f3-413a-9d81-d4faae2f74d0))
+      (net 17 "+3V3") (pinfunction "GND") (pintype "bidirectional") (solder_mask_margin 0.0508) (tstamp 3a784bb8-d5f3-413a-9d81-d4faae2f74d0))
     (pad "3" smd rect (at -6.9659 -22.0844 180) (size 0.45 0.9) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 39 "unconnected-(U102-Pad3)") (pinfunction "GND") (pintype "bidirectional") (solder_mask_margin 0.0508) (tstamp 51993510-7813-48ac-b7fc-2eae846f5246))
     (pad "3" smd rect (at 7.7476 -16.9084 180) (size 1.55 0.6) (layers "F.Cu" "F.Paste" "F.Mask")
@@ -23568,7 +23552,7 @@
     (pad "3" smd rect (at -2.2109 -17.4839 90) (size 0.25 0.575) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 39 "unconnected-(U102-Pad3)") (pinfunction "GND") (pintype "bidirectional") (solder_mask_margin 0.0508) (tstamp 60e326f5-ee1f-4347-b04f-c192595cc62c))
     (pad "3" thru_hole circle (at -1.1684 -7.5184 90) (size 1.778 1.778) (drill 1) (layers *.Cu *.Mask)
-      (net 39 "unconnected-(U102-Pad3)") (pinfunction "GND") (pintype "bidirectional") (solder_mask_margin 0.0508) (tstamp d5b2784a-809f-4076-a911-e596715db834))
+      (net 4 "GND") (pinfunction "GND") (pintype "bidirectional") (solder_mask_margin 0.0508) (tstamp d5b2784a-809f-4076-a911-e596715db834))
     (pad "3" smd rect (at 9.7416 -20.0804) (size 0.5 0.5) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 39 "unconnected-(U102-Pad3)") (pinfunction "GND") (pintype "bidirectional") (solder_mask_margin 0.0508) (tstamp e2531b29-b060-4566-b5d4-327476211938))
     (pad "3" smd rect (at 6.0261 -19.9399) (size 0.45 0.9) (layers "F.Cu" "F.Paste" "F.Mask")
@@ -23582,9 +23566,9 @@
     (pad "4" smd rect (at 6.9261 -19.9399) (size 0.45 0.9) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 40 "unconnected-(U102-Pad4)") (pinfunction "SCL") (pintype "bidirectional") (solder_mask_margin 0.0508) (tstamp 3358426f-b1ae-4c01-86b3-09ffa116ef27))
     (pad "4" thru_hole circle (at 1.3716 -7.5184 90) (size 1.778 1.778) (drill 1) (layers *.Cu *.Mask)
-      (net 40 "unconnected-(U102-Pad4)") (pinfunction "SCL") (pintype "bidirectional") (solder_mask_margin 0.0508) (tstamp 51acb8d3-56a3-4913-9454-5e106deb886b))
+      (net 16 "/SCK") (pinfunction "SCL") (pintype "bidirectional") (solder_mask_margin 0.0508) (tstamp 51acb8d3-56a3-4913-9454-5e106deb886b))
     (pad "4" thru_hole circle (at 1.3716 -25.2984 90) (size 1.778 1.778) (drill 1) (layers *.Cu *.Mask)
-      (net 40 "unconnected-(U102-Pad4)") (pinfunction "SCL") (pintype "bidirectional") (solder_mask_margin 0.0508) (tstamp 66a26a0c-a13b-4caa-8eb4-f9772bf23fe2))
+      (net 8 "/BNO_RST") (pinfunction "SCL") (pintype "bidirectional") (solder_mask_margin 0.0508) (tstamp 66a26a0c-a13b-4caa-8eb4-f9772bf23fe2))
     (pad "4" smd rect (at 6.2221 -17.8989 90) (size 0.45 0.9) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 40 "unconnected-(U102-Pad4)") (pinfunction "SCL") (pintype "bidirectional") (solder_mask_margin 0.0508) (tstamp 6b5e45eb-a34e-4c66-a1af-f2e0c9305f07))
     (pad "4" smd rect (at 9.7416 -21.8804) (size 0.5 0.5) (layers "F.Cu" "F.Paste" "F.Mask")
@@ -23604,7 +23588,7 @@
     (pad "5" smd rect (at 8.9916 -21.8804) (size 0.4 0.5) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 41 "unconnected-(U102-Pad5)") (pinfunction "SDA") (pintype "bidirectional") (solder_mask_margin 0.0508) (tstamp 162b7eb1-1ede-42e8-9a66-6e08f46e0521))
     (pad "5" thru_hole circle (at 3.9116 -7.5184 90) (size 1.778 1.778) (drill 1) (layers *.Cu *.Mask)
-      (net 41 "unconnected-(U102-Pad5)") (pinfunction "SDA") (pintype "bidirectional") (solder_mask_margin 0.0508) (tstamp 17b358a8-c2ab-4a06-a8bc-f9356cd45bda))
+      (net 15 "/MISO") (pinfunction "SDA") (pintype "bidirectional") (solder_mask_margin 0.0508) (tstamp 17b358a8-c2ab-4a06-a8bc-f9356cd45bda))
     (pad "5" smd rect (at -5.2658 -12.1514 270) (size 0.55 1.2) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 41 "unconnected-(U102-Pad5)") (pinfunction "SDA") (pintype "bidirectional") (solder_mask_margin 0.0508) (tstamp 232eb06b-f557-4880-a79c-8a86a98f6762))
     (pad "5" smd rect (at -2.2109 -16.4839 90) (size 0.25 0.575) (layers "F.Cu" "F.Paste" "F.Mask")
@@ -23614,13 +23598,13 @@
     (pad "5" smd rect (at -7.8659 -20.3844 180) (size 0.45 0.9) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 41 "unconnected-(U102-Pad5)") (pinfunction "SDA") (pintype "bidirectional") (solder_mask_margin 0.0508) (tstamp 6eb16b9b-cf4e-495a-b5aa-35ce3bdc4606))
     (pad "5" thru_hole circle (at 3.9116 -25.2984 90) (size 1.778 1.778) (drill 1) (layers *.Cu *.Mask)
-      (net 41 "unconnected-(U102-Pad5)") (pinfunction "SDA") (pintype "bidirectional") (solder_mask_margin 0.0508) (tstamp 704c4ced-aef4-4aa6-9098-d0ef69b71e53))
+      (net 14 "/MOSI") (pinfunction "SDA") (pintype "bidirectional") (solder_mask_margin 0.0508) (tstamp 704c4ced-aef4-4aa6-9098-d0ef69b71e53))
     (pad "5" smd rect (at 4.5221 -17.8989 90) (size 0.45 0.9) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 41 "unconnected-(U102-Pad5)") (pinfunction "SDA") (pintype "bidirectional") (solder_mask_margin 0.0508) (tstamp ed8841c3-0f94-4400-925c-b279f19aa06b))
     (pad "6" smd rect (at 6.0261 -21.6399) (size 0.45 0.9) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 42 "unconnected-(U102-Pad6)") (pinfunction "INT") (pintype "bidirectional") (solder_mask_margin 0.0508) (tstamp 34dfa96d-34e0-403b-8a1b-fad44fda72f8))
     (pad "6" thru_hole circle (at 6.4516 -7.5184 90) (size 1.778 1.778) (drill 1) (layers *.Cu *.Mask)
-      (net 42 "unconnected-(U102-Pad6)") (pinfunction "INT") (pintype "bidirectional") (solder_mask_margin 0.0508) (tstamp 34e2d18c-ff3a-4a6a-b9bc-739afd127d09))
+      (net 12 "/BNO_INT") (pinfunction "INT") (pintype "bidirectional") (solder_mask_margin 0.0508) (tstamp 34e2d18c-ff3a-4a6a-b9bc-739afd127d09))
     (pad "6" smd rect (at 4.5221 -16.9989 90) (size 0.45 0.9) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 42 "unconnected-(U102-Pad6)") (pinfunction "INT") (pintype "bidirectional") (solder_mask_margin 0.0508) (tstamp 4fbe6982-649e-4872-9df6-a0fb313b209b))
     (pad "6" smd rect (at 8.2416 -21.8804) (size 0.5 0.5) (layers "F.Cu" "F.Paste" "F.Mask")
@@ -23632,7 +23616,7 @@
     (pad "6" smd rect (at -2.1484 -15.6714) (size 0.25 0.675) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 42 "unconnected-(U102-Pad6)") (pinfunction "INT") (pintype "bidirectional") (solder_mask_margin 0.0508) (tstamp d906ecdf-4e0a-4699-9854-1c72e4899ac1))
     (pad "6" thru_hole circle (at 6.4516 -25.2984 90) (size 1.778 1.778) (drill 1) (layers *.Cu *.Mask)
-      (net 42 "unconnected-(U102-Pad6)") (pinfunction "INT") (pintype "bidirectional") (solder_mask_margin 0.0508) (tstamp f44dfe7e-67c8-43e5-b607-ba4f4b36577c))
+      (net 13 "/BNO_CS") (pinfunction "INT") (pintype "bidirectional") (solder_mask_margin 0.0508) (tstamp f44dfe7e-67c8-43e5-b607-ba4f4b36577c))
     (pad "7" smd rect (at 4.5221 -16.1989 90) (size 0.45 0.9) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 43 "unconnected-(U102-Pad7)") (pinfunction "BT") (pintype "bidirectional") (solder_mask_margin 0.0508) (tstamp 05b4bac2-0120-4976-baa4-326ab38bd40e))
     (pad "7" smd rect (at -6.1659 -20.3844 180) (size 0.45 0.9) (layers "F.Cu" "F.Paste" "F.Mask")
@@ -23736,7 +23720,7 @@
     (zone (net 0) (net_name "") (layer "F.Cu") (tstamp 27b97673-ac92-4a6f-9c11-d4dc3e2725ca) (hatch edge 0.508)
       (connect_pads (clearance 0))
       (min_thickness 0.254)
-      (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed) (copperpour not_allowed) (footprints allowed))
+      (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed ) (copperpour not_allowed) (footprints allowed))
       (fill (thermal_gap 0.508) (thermal_bridge_width 0.508))
       (polygon
         (pts
@@ -23822,7 +23806,7 @@
     (zone (net 0) (net_name "") (layer "F.Cu") (tstamp 35043d63-22ea-45ce-ab0f-521f7fd65dfd) (hatch edge 0.508)
       (connect_pads (clearance 0))
       (min_thickness 0.254)
-      (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed) (copperpour not_allowed) (footprints allowed))
+      (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed ) (copperpour not_allowed) (footprints allowed))
       (fill (thermal_gap 0.508) (thermal_bridge_width 0.508))
       (polygon
         (pts
@@ -23908,7 +23892,7 @@
     (zone (net 0) (net_name "") (layer "F.Cu") (tstamp aac599fd-1e14-4a1e-9927-5f1f812b5fda) (hatch edge 0.508)
       (connect_pads (clearance 0))
       (min_thickness 0.254)
-      (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed) (copperpour not_allowed) (footprints allowed))
+      (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed ) (copperpour not_allowed) (footprints allowed))
       (fill (thermal_gap 0.508) (thermal_bridge_width 0.508))
       (polygon
         (pts
@@ -23994,7 +23978,7 @@
     (zone (net 0) (net_name "") (layer "F.Cu") (tstamp b93602e0-d5d0-40c2-ae89-7ba10411602b) (hatch edge 0.508)
       (connect_pads (clearance 0))
       (min_thickness 0.254)
-      (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed) (copperpour not_allowed) (footprints allowed))
+      (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed ) (copperpour not_allowed) (footprints allowed))
       (fill (thermal_gap 0.508) (thermal_bridge_width 0.508))
       (polygon
         (pts
@@ -24080,7 +24064,7 @@
     (zone (net 0) (net_name "") (layer "B.Cu") (tstamp 3ec93cde-028e-4f4b-989f-a1285330a1d2) (hatch edge 0.508)
       (connect_pads (clearance 0))
       (min_thickness 0.254)
-      (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed) (copperpour not_allowed) (footprints allowed))
+      (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed ) (copperpour not_allowed) (footprints allowed))
       (fill (thermal_gap 0.508) (thermal_bridge_width 0.508))
       (polygon
         (pts
@@ -24166,7 +24150,7 @@
     (zone (net 0) (net_name "") (layer "B.Cu") (tstamp 5638098f-dc57-487c-bac0-a33de7df962d) (hatch edge 0.508)
       (connect_pads (clearance 0))
       (min_thickness 0.254)
-      (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed) (copperpour not_allowed) (footprints allowed))
+      (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed ) (copperpour not_allowed) (footprints allowed))
       (fill (thermal_gap 0.508) (thermal_bridge_width 0.508))
       (polygon
         (pts
@@ -24252,7 +24236,7 @@
     (zone (net 0) (net_name "") (layer "B.Cu") (tstamp 9370b1c5-627f-43bd-a209-debad5df02b1) (hatch edge 0.508)
       (connect_pads (clearance 0))
       (min_thickness 0.254)
-      (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed) (copperpour not_allowed) (footprints allowed))
+      (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed ) (copperpour not_allowed) (footprints allowed))
       (fill (thermal_gap 0.508) (thermal_bridge_width 0.508))
       (polygon
         (pts
@@ -24338,7 +24322,7 @@
     (zone (net 0) (net_name "") (layer "B.Cu") (tstamp 9db8d71d-1533-4219-ac8d-e781e5cf4d36) (hatch edge 0.508)
       (connect_pads (clearance 0))
       (min_thickness 0.254)
-      (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed) (copperpour not_allowed) (footprints allowed))
+      (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed ) (copperpour not_allowed) (footprints allowed))
       (fill (thermal_gap 0.508) (thermal_bridge_width 0.508))
       (polygon
         (pts
@@ -24610,7 +24594,7 @@
     (zone (net 0) (net_name "") (layer "F.Cu") (tstamp 197a69d6-034a-4708-9a93-9438a5a47598) (hatch full 0.508)
       (connect_pads (clearance 0))
       (min_thickness 0.254)
-      (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed) (copperpour not_allowed) (footprints not_allowed))
+      (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed ) (copperpour not_allowed) (footprints not_allowed))
       (fill (thermal_gap 0.508) (thermal_bridge_width 0.508))
       (polygon
         (pts
@@ -24624,7 +24608,7 @@
     (zone (net 0) (net_name "") (layer "F.Cu") (tstamp 5440d2ea-119a-48d8-9345-12d7f52a45f8) (hatch full 0.508)
       (connect_pads (clearance 0))
       (min_thickness 0.254)
-      (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed) (copperpour not_allowed) (footprints not_allowed))
+      (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed ) (copperpour not_allowed) (footprints not_allowed))
       (fill (thermal_gap 0.508) (thermal_bridge_width 0.508))
       (polygon
         (pts
@@ -24638,7 +24622,7 @@
     (zone (net 0) (net_name "") (layer "F.Cu") (tstamp 707d3b07-a7c7-4b3f-a972-f056808ef8f5) (hatch full 0.508)
       (connect_pads (clearance 0))
       (min_thickness 0.254)
-      (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed) (copperpour not_allowed) (footprints not_allowed))
+      (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed ) (copperpour not_allowed) (footprints not_allowed))
       (fill (thermal_gap 0.508) (thermal_bridge_width 0.508))
       (polygon
         (pts
@@ -24652,7 +24636,7 @@
     (zone (net 0) (net_name "") (layer "F.Cu") (tstamp 87665377-53d2-4eab-8533-e307fb3a9293) (hatch full 0.508)
       (connect_pads (clearance 0))
       (min_thickness 0.254)
-      (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed) (copperpour not_allowed) (footprints not_allowed))
+      (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed ) (copperpour not_allowed) (footprints not_allowed))
       (fill (thermal_gap 0.508) (thermal_bridge_width 0.508))
       (polygon
         (pts
@@ -24666,7 +24650,7 @@
     (zone (net 0) (net_name "") (layer "F.Cu") (tstamp ef088564-238f-4bed-8698-99f5ebf35475) (hatch full 0.508)
       (connect_pads (clearance 0))
       (min_thickness 0.254)
-      (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed) (copperpour not_allowed) (footprints not_allowed))
+      (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed ) (copperpour not_allowed) (footprints not_allowed))
       (fill (thermal_gap 0.508) (thermal_bridge_width 0.508))
       (polygon
         (pts
@@ -24746,7 +24730,7 @@
 
   (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 48d7a671-5f9b-4db6-aabd-2df11aff94f5)
-    (at 268.224 94.234)
+    (at 276.418 98.044)
     (descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "BLACKBOX.kicad_sch")
@@ -25003,7 +24987,7 @@
 
   (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 7887d03f-813b-45fc-9e70-6c7164ca5a7d)
-    (at 268.224 97.244)
+    (at 268.544 100.076)
     (descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "BLACKBOX.kicad_sch")
@@ -25087,7 +25071,7 @@
 
   (footprint "KX134:KX134-1211" (layer "F.Cu")
     (tedit 0) (tstamp 8e5e2c26-9e69-4a1a-8f2c-832662388e43)
-    (at 259.7094 96.0094)
+    (at 259.842 96.774)
     (property "Sheetfile" "BLACKBOX.kicad_sch")
     (property "Sheetname" "")
     (path "/6de0a046-3eb7-4d19-8d7f-5fcf919f5958")
@@ -25331,7 +25315,7 @@
 
   (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 953a56cc-a56e-42d4-ba49-1ef9829d6541)
-    (at 272.674 91.224)
+    (at 275.844 89.916)
     (descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "BLACKBOX.kicad_sch")
