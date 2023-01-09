@@ -78,7 +78,7 @@ There are nine rules you must follow when working in ticket branches to avoid me
 
 3. ### **Rebase Often**
 
-   - Rebase your ticket branch from the Project_Dev branch before every work session. This ensures you have the most up to date work from other ticket branches editing Project_Dev.
+   - Rebase your ticket branch from the Project_Dev branch before every work session. This ensures you have the most up to date work from other ticket branches editing Project_Dev. You could alternativly merge your old work and then make a new branch.
   
 4. ### **Single File Commits**
 
@@ -106,7 +106,7 @@ There are nine rules you must follow when working in ticket branches to avoid me
 
 ## **Branch Protection**
 
-The `main` and `Project_Dev` branches should be locked down and require pull requests to add new work. Even admins should have to abide by these restrictions.
+The `main` and `Project_Dev` branches should be locked down and require pull requests and peer review to add new work. Even admins should have to abide by these restrictions.
 
 <br/>
 
@@ -157,7 +157,7 @@ There are three main categories of part files. When adding new components please
 - ### **3D Models**
 
   - Used to render 3D images of the boards
-  - `.3dshapes`: A library folder contating multiple .step and .wrl files 
+  - `.3dshapes`: A library folder contating multiple `.step` and `.wrl` files 
   - `.step` : An individual component 3D model
   - `.wrl` : An individual component 3D model with texture data for advanced rendering *(Optional)*
 
@@ -186,6 +186,14 @@ When adding custom libraries to a project you must point KiCad to the library fi
   - This is the same method for all three component file types!
   - Replace all \ with / in file paths
   - **Careful! Depending on where your project is located you may need a different amoumt of `/../` in the file path**
+
+- ### **Library Table**
+
+  Every time you import a new custom library to a specific project you must save and push the following files or else your library and relative path won't be imported!
+
+   - `sym-lib-table`: Table of custom imported symbol libraries
+   - `fp-lib-table`: Table of custom imported footprint libraries
+   - `fp-info-cache`: GARBAGE! DO NOT PUSH THIS. It's a local cache of your libraries for faster loading on your PC. It's safe to delete but will be regenerated.
 
 Below is a good example with a relative path and a bad example with a user specific path. The steps to import a library are also shown. Navigating to this window by following the "Accessing Settings" section.
 
@@ -217,139 +225,25 @@ If you ever run into merge conflicts which are common with KiCad there are a few
 
 # **Example Workflow** ⚙️
 
-Here is a demo of a typical workflow when working with Ticket branches.
+Here is a barebones demo of a typical workflow when working with Ticket branches.
 
-1. 
-2. 
-3. 
-4. 
-5. 
-6. 
-7. 
+1. Run `git pull` to make sure you have the latest version
+2. Make sure you are on the correct branch; If not run `git checkout BRANCH_NAME`
+3. Do some work
+4. Run `git status` to see the files you've edited
+5. Run `git add FILE_PATH/FILE_NAME` for every individual file you'd like to add
+6. Run `git status` to make sure you added the correct files.
+7. Run `git commit -m "Type Your Comment Here"` to make a commit with your changes
+8. Run `git push` to upload your changes to GitHub
 
-<br/><br/><br/><br/><br/><br/>
+### **Cleaning Local Repositories**
 
+You can clean your repository by running the following commands just make sure you commit and push and unsaved work first! We suggest doing this after every time you push to ensure you don't build a heap of untracked and modified files that'll make it more confusing when running `git add`.
 
+- `git clean -d -n` a dry run of what untracked files your about to permantely delete
 
+- `git clean -d -f` nukes every untracked directory 
 
+<br/><br/><br/>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-----------
-
-# Example Workflow (OLD)
-
-## 1. Rebase your branch
-
-Why branches? Working on branches allows for ISS to manage its workflow in a well-definied manner.
-
-First and foremost, navigate to the directory where you store TARS-PCB. Perform the following steps once you ensure you are inside of this directory.
-
-You do not have to do this if you are creating a new branch. If you are creating a new branch, just run `git checkout [dev branch name]`, and then `git checkout -b [new branch name]` where new branch name is formatted as `[trello ticket number]/[what you did in a few words]`. An example of a new, well-formatted branch name would be something similar to `git checkout -b AV-101/TARS-Power-Schematic`.
-
-This can be accomplished by doing the following:
-
-run `git pull` on both your branch and the centralized dev branch for the project you are working on. Then, `git checkout [branch name]`. Then run `git merge [dev branch name] -X theirs`. Make sure that all your changes from the day before were merged before doing this. 
-
-Below is a simple view of what your terminal may look like after successfully checking out an existing branch.
-
-![Checked Out Branch](/images/checked-out-branch.png)
-
-## 2. Do changes
-
-Open KiCad, and change what you wanted to. Then save. Make sure you close KiCad beforehand. **Please do not use a grid size smaller than 1.27mm when doing schematics**
-
-## 3. Perform a git status check
-
-Performing a `git status` check allows for us to view which files we have modified. 
-
-Below, we can see that the file 'CONTRIBUTING.md' listed as modified (as this is the file that has been edited). Do not be alarmed by any 'untracked files' listed. These are simply just files not presently versioned by Git. As long as you keep track of the files you did modify, and intend to push, then you are good to go.
-
-![Git Status Check](/images/git-status-check.png)
-
-## 4. Git add only the file you wanted to change
-
-Run `git add [filename]`. Please make sure you only are adding the sheet/board file you actually intended to modify, as KiCad automatically changes other files sometimes. 
-
-For example, in my case, I will run `git add CONTRIBUTING.md` , as this is the only file I intend to modify and push to the repository.
-
-Here, I recommend that you perform another `git status` check. You should see your modified files ready to be committed and pushed highlighted in green, as shown below.
-
-![Git Status Check Two](/images/git-status-check-two.png)
-
-## 5. Make descriptive commit messages
-
-When you run `git commit -m [message]`, make the message descriptive. It does not have to be a novel, but please avoid messages like "fixed bugs" or "worked on schematic". It is recommended to commit often, as this helps with error recovery in case something goes wrong.
-
-An example of an acceptable commit message would be `git commit -m "added further steps, details, and images to CONTRIBUTING.md guide"`
-
-## 6. Push to the repository
-
-Run `git push`, and follow any instructions git gives you.
-
-Below is an image of the terminal denoting a succesful push to the branch which was originally checked out.
-
-![Sucessful Push](/images/sucessful-push.png)
-
-## 7. Open a Pull Request on GitHub
-
-Open a pull request on github, and make sure that everyone is now aware of that branch that has to be merged. 
-
-## 8. Additional Resources
-
-If you are looking for further methods on Git, and commands within the terminal, take a look at the ISS Wiki's Technical Guide on Git: https://wiki.illinois.edu/wiki/pages/viewpage.action?pageId=779063487
-
-<br/><br/><br/><br/><br/><br/>
-
+*See a typo? Think we left some vital information out? Make a branch and edit this file!*
