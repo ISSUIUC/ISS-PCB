@@ -157,8 +157,9 @@ There are three main categories of part files. When adding new components please
 - ### **3D Models**
 
   - Used to render 3D images of the boards
+  - `.3dshapes`: A library folder contating multiple .step and .wrl files 
   - `.step` : An individual component 3D model
-  - `.wrl` : An individual component 3D model with texture data for advanced rendering
+  - `.wrl` : An individual component 3D model with texture data for advanced rendering *(Optional)*
 
 ## **Library Directory**
 
@@ -174,16 +175,17 @@ When adding custom libraries to a project you must point KiCad to the library fi
 
   - **Schematics:** Symbol Editor --> Preferences --> Manage Symbol Libraries --> Project Specific Libraries  
   - **Footprints:** Footprint Editor --> Preferences --> Manage Footprint Libraries --> Project Specific Libraries
-  - **3D Models:** Footprint Editor --> Open Footprint --> File --> Footprint Properties --> 3D Models
+  - **3D Models:** Footprint Editor --> Open Footprint --> File --> Footprint Properties --> 3D Models  
 
 - ### **Setting the Path**
 
-  - `${KIPRJMOD}/../../` copy this and replace everything before `lib` in the path for the library file
+  - `${KIPRJMOD}/../../../` copy this and replace everything before `lib` in the path for the library file
     - ${KIPRJMOD} tells KiCad to look in the same folder as the project file
-    - /../../ tells KiCad to jump back two folder levels (project --> boards --> root)
+    - /../../../ tells KiCad to jump back three folder levels (TARS-MK4-FCB --> TARS-Mk4 --> boards --> root)
     - KiCad will then search for the `lib` folder and the rest of the file path as normal
-  - This is the same method for all three component file types  
-  - Careful! Depending on where your project is located you may need a different amoumt of `/../` in the file path  
+  - This is the same method for all three component file types!
+  - Replace all \ with / in file paths
+  - **Careful! Depending on where your project is located you may need a different amoumt of `/../` in the file path**
 
 Below is a good example with a relative path and a bad example with a user specific path. The steps to import a library are also shown. Navigating to this window by following the "Accessing Settings" section.
 
