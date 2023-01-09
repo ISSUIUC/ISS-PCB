@@ -45,6 +45,8 @@ There are three commonly used branch types in this repository.
 
 ![Branch Hierarchy](/images/ISS-PCB_Branch_Hierarchy_Diagram.png)
 
+
+
 - ### **Main**
 
   - The primary branch that only stores finished projects
@@ -107,6 +109,18 @@ There are nine rules you must follow when working in ticket branches to avoid me
 ## **Branch Protection**
 
 The `main` and `Project_Dev` branches should be locked down and require pull requests and peer review to add new work. Even admins should have to abide by these restrictions.
+
+## **Naming Branches**
+
+Keep the naming of branches consistent between each other.
+- **Project_Dev:** `PROJECT_NAME-dev` ➡ `TARS-MK4-dev`
+- **Ticket Branch:** `TEAM-NUMBER/TITLE` ➡ `AV-884/Route-FCB`
+  - The team currently employs a ticketing system where members are assigned to a ticket with a serialized number to complete tasks. *(Trello usually works well for this)*
+  - Teams: AV (Avionics), PAY (Payload), REC (Recovery), STR (Structures)
+  - **If you merge your ticket branch but are still working on the same ticket make a new branch with that number but a different** `/TITLE`
+    - Ticket #884 Make FCB ➡ `AV-884/FCB-Schematic` ➡ `AV-884/FCB-Routing`
+- **Other Branches:** Name them according to their task/purpose
+  - The branch this contributing guide was made on was called `Contributing`
 
 <br/>
 
@@ -173,15 +187,15 @@ When adding custom libraries to a project you must point KiCad to the library fi
 
 - ### **Accessing Settings**
 
-  - **Schematics:** Symbol Editor --> Preferences --> Manage Symbol Libraries --> Project Specific Libraries  
-  - **Footprints:** Footprint Editor --> Preferences --> Manage Footprint Libraries --> Project Specific Libraries
-  - **3D Models:** Footprint Editor --> Open Footprint --> File --> Footprint Properties --> 3D Models  
+  - **Schematics:** Symbol Editor ➡ Preferences ➡ Manage Symbol Libraries ➡ Project Specific Libraries  
+  - **Footprints:** Footprint Editor ➡ Preferences ➡ Manage Footprint Libraries ➡ Project Specific Libraries
+  - **3D Models:** Footprint Editor ➡ Open Footprint ➡ File ➡ Footprint Properties ➡ 3D Models  
 
 - ### **Setting the Path**
 
   - `${KIPRJMOD}/../../../` copy this and replace everything before `lib` in the path for the library file
     - ${KIPRJMOD} tells KiCad to look in the same folder as the project file
-    - /../../../ tells KiCad to jump back three folder levels (TARS-MK4-FCB --> TARS-Mk4 --> boards --> root)
+    - /../../../ tells KiCad to jump back three folder levels (TARS-MK4-FCB ➡ TARS-Mk4 ➡ boards ➡ root)
     - KiCad will then search for the `lib` folder and the rest of the file path as normal
   - This is the same method for all three component file types!
   - Replace all \ with / in file paths
