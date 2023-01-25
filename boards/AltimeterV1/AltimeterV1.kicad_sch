@@ -6,8 +6,11 @@
 
   (title_block
     (title "Altimeter V1")
+    (date "2023-01-24")
+    (rev "A")
     (company "The Illinois Space Society")
-    (comment 4 "Contributors: Eisha Peyyeti, Rishi Patel, Daniel Baker, Sasha Kaplich, Jack Vulich")
+    (comment 3 "Peter Giannetos, Eisha Peyyeti, Rishi Patel")
+    (comment 4 "Contributors: Daniel Baker, Sasha Kaplich, Jack Vulich ")
   )
 
   (lib_symbols
@@ -2054,7 +2057,6 @@
       )
     )
   )
-
 
   (junction (at 38.608 49.022) (diameter 0) (color 0 0 0 0)
     (uuid 016c5fdb-7181-4211-abcd-dd3ae194e26d)
@@ -4160,11 +4162,6 @@
     (effects (font (size 2 2) (thickness 0.4) bold) (justify left bottom))
     (uuid 0d4ba4bb-bb24-4139-8bdd-774c2ac49145)
   )
-  (text "**do we need/want an external crystal? an internal one does \nexist, however the frequency of this internal oscillator is \nnot well defined or controlled, varying from chip to chip, \nas well as with different supply voltages and temperatures, \nso it is recommended to use a stable external frequency source"
-    (at 251.333 163.068 0)
-    (effects (font (size 2 2)) (justify left bottom))
-    (uuid 132b1db8-bdea-4375-8edf-31eabc942019)
-  )
   (text "Altimeter switch" (at 448.31 46.736 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 14c76350-c78e-4bc2-982d-18af89fff214)
@@ -4291,11 +4288,6 @@
     (effects (font (size 2 2) (thickness 0.4) bold) (justify left bottom))
     (uuid dd63ed00-ea4a-4fdd-9f68-18090ec9ca64)
   )
-  (text "NOTES: \n- add debug methods (LEDs & test pins) \n- ensure all parts are in inventory or available through jlc assembly\n- ensure labels are consistent\n- check power consumption and battery need\n- verify rp2040 correctly\n- ensure routing to pin headers"
-    (at 20.066 278.003 0)
-    (effects (font (size 3 3)) (justify left bottom))
-    (uuid ec526b98-9d4d-4fb6-950a-dc822fff6211)
-  )
   (text "0.65mA Max Consumption" (at 149.098 73.66 0)
     (effects (font (size 1 1) italic) (justify left bottom))
     (uuid ecda8e57-67a1-4245-80d9-3d972426a2db)
@@ -4312,12 +4304,6 @@
   (text "MCU" (at 274.0406 204.5462 0)
     (effects (font (size 3.2004 3.2004) (thickness 0.6401) bold) (justify left bottom))
     (uuid f9aabb8d-c483-46d2-b19d-1fe73b2c38d3)
-  )
-
-  (label "Need to place these pin labels from the sensors on the MCU (or headers?)"
-    (at 539.242 196.596 0)
-    (effects (font (size 1.5 1.5)) (justify right bottom))
-    (uuid 1a850169-b521-4a2e-82fb-55ecbb7ecd6d)
   )
 
   (hierarchical_label "LSM6DSLTR_INT2" (shape output) (at 148.59 50.292 0)
