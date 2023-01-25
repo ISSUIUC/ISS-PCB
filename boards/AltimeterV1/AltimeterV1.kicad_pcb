@@ -229,8 +229,13 @@
       (net 52 "/TELEM_GPIO_1") (pinfunction "DIO1") (pintype "bidirectional") (tstamp 4ee711d8-5e71-4ad8-bbe2-37010eec5245))
     (pad "16" smd rect (at 8 -7 180) (size 2 1) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 53 "/TELEM_GPIO_2") (pinfunction "DIO2") (pintype "bidirectional") (tstamp 5938d602-6aff-46e2-be4b-2092bd3140a9))
-    (model "${KICAD6_3DMODEL_DIR}/RF_Module.3dshapes/HOPERF_RFM9XW_SMD.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/RF_Module.3dshapes/HOPERF_RFM9XW_SMD.wrl" hide
       (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "${KIPRJMOD}/../../libs/3d_models/RF_Module.3dshapes/RFM96W.step"
+      (offset (xyz -8 -8 1))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
@@ -530,6 +535,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model "${KIPRJMOD}/../../libs/3d_models/Connector_Coax.3dshapes/732511153.stp"
+      (offset (xyz -14 0 0.5))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (footprint "MountingHole:MountingHole_2.7mm" (layer "F.Cu")
@@ -694,19 +704,19 @@
     (attr exclude_from_pos_files exclude_from_bom)
     (fp_text reference "REF**" (at 0 -3.7) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
-      (tstamp bb1064b3-6e26-4975-88f1-6b27b30727b8)
+      (tstamp 9c9f40b2-46ab-44d0-b92f-1c98c2af078d)
     )
     (fp_text value "MountingHole_2.7mm" (at 0 3.7) (layer "F.Fab")
       (effects (font (size 1 1) (thickness 0.15)))
-      (tstamp c19f3434-7a8f-4af8-9716-d1ea39695605)
+      (tstamp 84fdef58-254f-4d19-96c5-b37d735d8620)
     )
     (fp_text user "${REFERENCE}" (at 0 0) (layer "F.Fab")
       (effects (font (size 1 1) (thickness 0.15)))
-      (tstamp 17ca97d1-d9b2-412c-9282-a851299db208)
+      (tstamp 725a8b8e-6f67-4bbc-986e-fdd65b9659ae)
     )
-    (fp_circle (center 0 0) (end 2.7 0) (layer "Cmts.User") (width 0.15) (fill none) (tstamp 2425c928-f8fa-4535-ab00-6d6e3d5f80f0))
-    (fp_circle (center 0 0) (end 2.95 0) (layer "F.CrtYd") (width 0.05) (fill none) (tstamp 8e3cf8dd-4ee5-49a9-84a5-e99347d9eaf8))
-    (pad "" np_thru_hole circle (at 0 0) (size 2.7 2.7) (drill 2.7) (layers *.Cu *.Mask) (tstamp 317d5855-632d-479b-912f-8e4a1d9971c6))
+    (fp_circle (center 0 0) (end 2.7 0) (layer "Cmts.User") (width 0.15) (fill none) (tstamp aed5bb63-d4c9-4413-ab75-c3eeeea02229))
+    (fp_circle (center 0 0) (end 2.95 0) (layer "F.CrtYd") (width 0.05) (fill none) (tstamp 011b7123-9102-47c4-8821-283965553d81))
+    (pad "" np_thru_hole circle (at 0 0) (size 2.7 2.7) (drill 2.7) (layers *.Cu *.Mask) (tstamp 44d55110-bea0-4d2a-a7b0-6a6fff410d4d))
   )
 
   (footprint "Capacitor_SMD:C_0603_1608Metric" (layer "F.Cu")
@@ -838,6 +848,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model "C:/Users/Rishi/Desktop/ISS/ISS-PCB/libs/3d_models/Buzzer.3dshapes/PUI_AUDIO_AT-0927-TT-6-R.step"
+      (offset (xyz 2 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 90))
+    )
   )
 
   (footprint "Connector_Card:microSD_HC_Hirose_DM3AT-SF-PEJM5" (layer "F.Cu")
@@ -927,7 +942,7 @@
     (zone (net 0) (net_name "") (layer "F.Cu") (tstamp 4b8a330d-c406-44d7-8177-effda44ee273) (hatch full 0.508)
       (connect_pads (clearance 0))
       (min_thickness 0.254)
-      (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed ) (copperpour not_allowed) (footprints not_allowed))
+      (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed) (copperpour not_allowed) (footprints not_allowed))
       (fill (thermal_gap 0.508) (thermal_bridge_width 0.508))
       (polygon
         (pts
@@ -941,7 +956,7 @@
     (zone (net 0) (net_name "") (layer "F.Cu") (tstamp 832e54de-e213-43ec-9e8a-ef42739d25b2) (hatch full 0.508)
       (connect_pads (clearance 0))
       (min_thickness 0.254)
-      (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed ) (copperpour not_allowed) (footprints not_allowed))
+      (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed) (copperpour not_allowed) (footprints not_allowed))
       (fill (thermal_gap 0.508) (thermal_bridge_width 0.508))
       (polygon
         (pts
@@ -955,7 +970,7 @@
     (zone (net 0) (net_name "") (layer "F.Cu") (tstamp b3532fa4-6085-4012-bdae-faccd4beceb9) (hatch full 0.508)
       (connect_pads (clearance 0))
       (min_thickness 0.254)
-      (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed ) (copperpour not_allowed) (footprints not_allowed))
+      (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed) (copperpour not_allowed) (footprints not_allowed))
       (fill (thermal_gap 0.508) (thermal_bridge_width 0.508))
       (polygon
         (pts
@@ -969,7 +984,7 @@
     (zone (net 0) (net_name "") (layer "F.Cu") (tstamp d4b7f99b-b072-48dd-a9ff-430f0e5d0b65) (hatch full 0.508)
       (connect_pads (clearance 0))
       (min_thickness 0.254)
-      (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed ) (copperpour not_allowed) (footprints not_allowed))
+      (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed) (copperpour not_allowed) (footprints not_allowed))
       (fill (thermal_gap 0.508) (thermal_bridge_width 0.508))
       (polygon
         (pts
@@ -983,7 +998,7 @@
     (zone (net 0) (net_name "") (layer "F.Cu") (tstamp d4eeca34-084e-4ea9-b489-5ab66b98ea85) (hatch full 0.508)
       (connect_pads (clearance 0))
       (min_thickness 0.254)
-      (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed ) (copperpour not_allowed) (footprints not_allowed))
+      (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed) (copperpour not_allowed) (footprints not_allowed))
       (fill (thermal_gap 0.508) (thermal_bridge_width 0.508))
       (polygon
         (pts
@@ -994,8 +1009,13 @@
         )
       )
     )
-    (model "${KICAD6_3DMODEL_DIR}/Connector_Card.3dshapes/microSD_HC_Hirose_DM3AT-SF-PEJM5.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Connector_Card.3dshapes/microSD_HC_Hirose_DM3AT-SF-PEJM5.wrl" hide
       (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "${KIPRJMOD}/../../libs/3d_models/DM3AT-SF-PEJM5.stp"
+      (offset (xyz 0 0 1))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
@@ -1095,19 +1115,19 @@
     (attr exclude_from_pos_files exclude_from_bom)
     (fp_text reference "REF**" (at 0 -3.7) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
-      (tstamp bb1064b3-6e26-4975-88f1-6b27b30727b8)
+      (tstamp 90db8ad3-526b-4586-9157-e0446400e55a)
     )
     (fp_text value "MountingHole_2.7mm" (at 0 3.7) (layer "F.Fab")
       (effects (font (size 1 1) (thickness 0.15)))
-      (tstamp c19f3434-7a8f-4af8-9716-d1ea39695605)
+      (tstamp 46006682-7d2f-4229-8cc0-62e74c805b35)
     )
     (fp_text user "${REFERENCE}" (at 0 0) (layer "F.Fab")
       (effects (font (size 1 1) (thickness 0.15)))
-      (tstamp 17ca97d1-d9b2-412c-9282-a851299db208)
+      (tstamp 760803b9-0cee-40e2-ac3b-7855cef6e76c)
     )
-    (fp_circle (center 0 0) (end 2.7 0) (layer "Cmts.User") (width 0.15) (fill none) (tstamp 2425c928-f8fa-4535-ab00-6d6e3d5f80f0))
-    (fp_circle (center 0 0) (end 2.95 0) (layer "F.CrtYd") (width 0.05) (fill none) (tstamp 8e3cf8dd-4ee5-49a9-84a5-e99347d9eaf8))
-    (pad "" np_thru_hole circle (at 0 0) (size 2.7 2.7) (drill 2.7) (layers *.Cu *.Mask) (tstamp 317d5855-632d-479b-912f-8e4a1d9971c6))
+    (fp_circle (center 0 0) (end 2.7 0) (layer "Cmts.User") (width 0.15) (fill none) (tstamp 46c8c50c-f302-48c8-a2c6-fcf3043dbfc3))
+    (fp_circle (center 0 0) (end 2.95 0) (layer "F.CrtYd") (width 0.05) (fill none) (tstamp 99817f54-f871-4c1a-8108-23b98257f591))
+    (pad "" np_thru_hole circle (at 0 0) (size 2.7 2.7) (drill 2.7) (layers *.Cu *.Mask) (tstamp 764ad5a6-1137-4137-845c-fdbd4098b17c))
   )
 
   (footprint "MountingHole:MountingHole_2.7mm" (layer "F.Cu")
@@ -1118,19 +1138,19 @@
     (attr exclude_from_pos_files exclude_from_bom)
     (fp_text reference "REF**" (at 0 -3.7) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
-      (tstamp bb1064b3-6e26-4975-88f1-6b27b30727b8)
+      (tstamp ecc4b856-d0fa-4e73-8764-dc7a212e4d93)
     )
     (fp_text value "MountingHole_2.7mm" (at 0 3.7) (layer "F.Fab")
       (effects (font (size 1 1) (thickness 0.15)))
-      (tstamp c19f3434-7a8f-4af8-9716-d1ea39695605)
+      (tstamp 859831d2-4d3a-4ad1-bf12-037169926e01)
     )
     (fp_text user "${REFERENCE}" (at 0 0) (layer "F.Fab")
       (effects (font (size 1 1) (thickness 0.15)))
-      (tstamp 17ca97d1-d9b2-412c-9282-a851299db208)
+      (tstamp 33edb36e-5dee-4f1d-b78d-860dc6436d03)
     )
-    (fp_circle (center 0 0) (end 2.7 0) (layer "Cmts.User") (width 0.15) (fill none) (tstamp 2425c928-f8fa-4535-ab00-6d6e3d5f80f0))
-    (fp_circle (center 0 0) (end 2.95 0) (layer "F.CrtYd") (width 0.05) (fill none) (tstamp 8e3cf8dd-4ee5-49a9-84a5-e99347d9eaf8))
-    (pad "" np_thru_hole circle (at 0 0) (size 2.7 2.7) (drill 2.7) (layers *.Cu *.Mask) (tstamp 317d5855-632d-479b-912f-8e4a1d9971c6))
+    (fp_circle (center 0 0) (end 2.7 0) (layer "Cmts.User") (width 0.15) (fill none) (tstamp 4fa0a12f-5722-4c98-a4cf-8faf00c4a50f))
+    (fp_circle (center 0 0) (end 2.95 0) (layer "F.CrtYd") (width 0.05) (fill none) (tstamp dc5b5375-317d-4029-8f0f-d521d64f0272))
+    (pad "" np_thru_hole circle (at 0 0) (size 2.7 2.7) (drill 2.7) (layers *.Cu *.Mask) (tstamp 9fae3782-4af0-4d03-aa4c-064f16ac3963))
   )
 
   (footprint "Resistor_SMD:R_0805_2012Metric" (layer "F.Cu")
@@ -1682,6 +1702,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model "${KICAD6_3DMODEL_DIR}/Connector_USB.3dshapes/USB_Micro-B_Molex_47346-0001.step"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (footprint "Capacitor_SMD:C_0603_1608Metric" (layer "F.Cu")
@@ -1819,7 +1844,7 @@
       (net 64 "/QSPI_SD3") (pinfunction "IO3") (pintype "bidirectional") (tstamp b1cd5c58-b5fb-40d3-8f07-e841f86f143c))
     (pad "8" smd roundrect (at 3.6 -1.905 90) (size 1.6 0.6) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
       (net 12 "/3V3") (pinfunction "VCC") (pintype "power_in") (tstamp 258b2adb-68cf-4467-ae99-7b5d0b2508fd))
-    (model "${KICAD6_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_5.23x5.23mm_P1.27mm.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_5.275x5.275mm_P1.27mm.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2931,10 +2956,15 @@
       (net 3 "Net-(J4-Pad1)") (pinfunction "Pin_2") (pintype "passive") (tstamp 58c984f3-b106-45e1-8fc8-39f7ee36a17b))
     (pad "MP" smd roundrect (at -3.35 1.95 180) (size 1.8 3.8) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1388888889) (tstamp 136a74ae-7cbf-49cc-a4b3-a7da9d9c9759))
     (pad "MP" smd roundrect (at 3.35 1.95 180) (size 1.8 3.8) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1388888889) (tstamp cc75eaed-b5c3-422c-a29c-9816429d1deb))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_CLIK-Mate_502494-0270_1x02-1MP_P2.00mm_Horizontal.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_CLIK-Mate_502494-0270_1x02-1MP_P2.00mm_Horizontal.wrl" hide
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
+    )
+    (model "${KIPRJMOD}/../../libs/3d_models/Connector_Molex_CLIK.3dshapes/5024940270.stp"
+      (offset (xyz 0 -4 3.5))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 180))
     )
   )
 
