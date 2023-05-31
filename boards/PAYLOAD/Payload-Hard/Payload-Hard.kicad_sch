@@ -5,7 +5,12 @@
   (paper "A4")
 
   (title_block
-    (title "My Dick is Hard 4 U")
+    (title "Payload Hard")
+    (date "05/30/22")
+    (rev "V1")
+    (company "Illinois Space Society")
+    (comment 1 "Philip Zolfaghari")
+    (comment 2 "Rishi Gottumukkala")
   )
 
   (lib_symbols
@@ -1104,6 +1109,7 @@
     )
   )
 
+
   (junction (at 165.735 144.78) (diameter 0) (color 0 0 0 0)
     (uuid 006a9d6f-bdda-4036-a783-8fa326b08460)
   )
@@ -1927,7 +1933,7 @@
   (symbol (lib_id "Amplifier_Operational:LM358") (at 94.0816 175.641 0) (unit 3)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 4f80ff6d-df41-4992-ba86-f12541220d37)
-    (property "Reference" "U?" (id 0) (at 92.5576 174.3709 0)
+    (property "Reference" "U101" (id 0) (at 92.5576 174.3709 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "LM358" (id 1) (at 92.5576 176.9109 0)
@@ -1952,7 +1958,7 @@
   (symbol (lib_id "Amplifier_Operational:LM358") (at 62.23 158.75 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 51ad441d-8209-4491-b8fb-dbe0a29eee44)
-    (property "Reference" "U?" (id 0) (at 62.23 148.082 0))
+    (property "Reference" "U101" (id 0) (at 62.23 148.082 0))
     (property "Value" "LM358" (id 1) (at 62.23 150.622 0))
     (property "Footprint" "Package_DIP:DIP-8_W10.16mm" (id 2) (at 62.23 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -1973,7 +1979,7 @@
   (symbol (lib_id "Amplifier_Operational:LM358") (at 154.305 154.305 0) (unit 2)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 53bc31ee-b669-4dc2-81f5-0e8bb0051201)
-    (property "Reference" "U?" (id 0) (at 154.305 144.5006 0))
+    (property "Reference" "U101" (id 0) (at 154.305 144.5006 0))
     (property "Value" "LM358" (id 1) (at 154.305 147.0406 0))
     (property "Footprint" "" (id 2) (at 154.305 154.305 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -1994,7 +2000,7 @@
   (symbol (lib_id "power:GND") (at 91.5416 183.261 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 77661e9b-b852-4519-ba11-9b41a5d8adac)
-    (property "Reference" "#PWR?" (id 0) (at 91.5416 189.611 0)
+    (property "Reference" "#PWR0110" (id 0) (at 91.5416 189.611 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 91.5416 187.706 0))
@@ -2358,7 +2364,7 @@
       (reference "#PWR0109") (unit 1) (value "GND") (footprint "")
     )
     (path "/77661e9b-b852-4519-ba11-9b41a5d8adac"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+      (reference "#PWR0110") (unit 1) (value "GND") (footprint "")
     )
     (path "/a91a09ae-7da8-46f5-893f-cfe40ca8737a"
       (reference "A101") (unit 1) (value "Arduino_Nano_v3.x") (footprint "Module:Arduino_Nano")
@@ -2411,17 +2417,17 @@
     (path "/2a4fc409-e0b4-4d3d-9f51-9b6d5ca0ec54"
       (reference "R108") (unit 1) (value "R_US") (footprint "Resistor_SMD:R_0805_2012Metric")
     )
-    (path "/325b982e-7665-4281-8762-9f7b5f3809a1"
-      (reference "U102") (unit 1) (value "3SP_SO2_20") (footprint "Sensor:3SP_SO2_20")
-    )
     (path "/51ad441d-8209-4491-b8fb-dbe0a29eee44"
-      (reference "U?") (unit 1) (value "LM358") (footprint "Package_DIP:DIP-8_W10.16mm")
+      (reference "U101") (unit 1) (value "LM358") (footprint "Package_DIP:DIP-8_W10.16mm")
     )
     (path "/53bc31ee-b669-4dc2-81f5-0e8bb0051201"
-      (reference "U?") (unit 2) (value "LM358") (footprint "")
+      (reference "U101") (unit 2) (value "LM358") (footprint "")
     )
     (path "/4f80ff6d-df41-4992-ba86-f12541220d37"
-      (reference "U?") (unit 3) (value "LM358") (footprint "")
+      (reference "U101") (unit 3) (value "LM358") (footprint "")
+    )
+    (path "/325b982e-7665-4281-8762-9f7b5f3809a1"
+      (reference "U102") (unit 1) (value "3SP_SO2_20") (footprint "Sensor:3SP_SO2_20")
     )
   )
 )
