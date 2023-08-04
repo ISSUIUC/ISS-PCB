@@ -45,7 +45,7 @@ The rest of this guide assumes you are somewhat familiar with Git and GitHub. We
 
 There are three commonly used branch types in this repository.
 
-![Branch Hierarchy](/images/ISS-PCB_Branch_Hierarchy_Diagram.png)
+![Branch Hierarchy](/images/ISS-PCB-Branch-Hierarchy-Diagram.png)
 
 
 
@@ -157,7 +157,7 @@ The KiCad Library Convention (KLC) is a set of guidelines for contributing to th
 
 There are three main categories of part files. When adding new components please ensure you source or create all three types.
 
-![KiCad Component File Types](/images/ISS-PCB_Component_File_Types.png)
+![KiCad Component File Types](/images/ISS-PCB-Component-File-Types.png)
 
 - ### **Symbols**
 
@@ -181,7 +181,7 @@ There are three main categories of part files. When adding new components please
 
 The custom library used by all the projects in this repository is stored in the root of the repository under the `/libs` folder. Any new parts should be added here.
 
-![KiCad Library Folders](/images/ISS-PCB_Library_Folders.png)
+![KiCad Library Folders](/images/ISS-PCB-Library-Folders.png)
 
 ## **Relative Library Paths**
 
@@ -213,7 +213,7 @@ When adding custom libraries to a project you must point KiCad to the library fi
 
 Below is a good example with a relative path and a bad example with a user specific path. The steps to import a library are also shown. Navigating to this window by following the "Accessing Settings" section.
 
-![KiCad Relative Paths](/images/ISS-PCB_Relative_Library_Paths.PNG)
+![KiCad Relative Paths](/images/ISS-PCB-Relative-Library-Paths.PNG)
 
 ## **Creating Custom Libraries**
 
