@@ -1,7 +1,5 @@
 # **Contributing Guide**
 
-*Author(s): Peter Giannetos*
-
 KiCad files are more difficult and delicate to merge than standard code. Working with multiple contributors requires a specialized workflow. Please use the following guide below as a reference.
 
 ## Table of Contents
@@ -45,7 +43,7 @@ The rest of this guide assumes you are somewhat familiar with Git and GitHub. We
 
 There are three commonly used branch types in this repository.
 
-![Branch Hierarchy](/images/ISS-PCB_Branch_Hierarchy_Diagram.png)
+![Branch Hierarchy](/images/ISS-PCB-Repository_Structure.png)
 
 
 
