@@ -1,13 +1,16 @@
+> [!NOTE]  
+> WORK IN PROGRESS
+
 # **GitHub Guide**
 
 *Author(s): Peter Giannetos*
 
-GitHub is the file sharing service we use to share project files. The following guide is a basic intro to Git, GitHub, and Git Bash.
+GitHub is the file sharing service we use to share project files. The following guide is a basic intro to Git and GitHub.
 
 ## Table of Contents
 
-- [Quickstart](#quickstart-)
-- [Branches](#branches-)
+- [Intro](#Intro-)
+- [Repositories](#Repositories-)
 - [Pull Requests](#pull-requests-)
 - [KiCad Parts Library](#kicad-parts-library-)
 - [Merge Conflicts](#merge-conflicts-)
@@ -17,62 +20,75 @@ GitHub is the file sharing service we use to share project files. The following 
 
 # **Intro**
 
-## Commands
+### Git
 
-> [!NOTE]  
-> Highlights information that users should take into account, even when skimming.
+Git is an open source version control system used to track changes to projects. It's a very popular source code management (SCM) tool used at the foundation of GitHub.<br/>
+[git-scm.com](https://git-scm.com/)
 
-[!NOTE]
-Highlights information that users should take into account, even when skimming.
+### GitHub
 
-> [!IMPORTANT]  
-> Crucial information necessary for users to succeed.
-
-> [!WARNING]
-> Critical content demanding immediate user attention due to potential risks.
-
-## Commands
-
+GitHub is a cloud based file sharing service that uses Git to manage content.<br/>
+[github.com](https://github.com/)
 
 <br/>
 
-# **Quickstart**
+# **Repositories**
 
-How to quickly get started via terminal commands. Recomended Terminal: [Git Bash](https://git-scm.com/downloads)
+Repositories are the project folders of Git. A remote repository stored in the cloud is cloned to your local machine workspace. Next you add any changed files to a staging area. Then you save and describe what changes you made. Finally, you push your changes back to the remote repository to share with others.
 
 ![Repository Structure](/images/ISS-PCB-Repository-Structure.png)
 
+# **Branches**
 
-## Commands
-
-1. Create a folder where you'd like to localy store the repository.  
-2. Navigate to that folder.  
-    `cd /c/Users/Your_PC_Name/Desktop/ISS`
-3. Clone the repository.  
-    `git clone https://github.com/ISSUIUC/ISS-PCB`
-4. Check the status of the repository. *(Optional)*  
-    `git status`
-
-<br/>
+Branches are different version of a repository used to develope in isolation. The `main` branch is the primary version of a repository. Project and feature branches are a modified copy of `main`. When development is completed the branch is merged into it's parent branch, which is most likely `main`.
 
 # **Reference Sheet**
 
-| Command                   | Description                        |
-| ------------------------- | ---------------------------------- |
-| `git pull`                | Get changes to remote repository   |
-| `git add [File-Name]`     | Add a file to the staging aera     |
-| `git commit -m "Commnet"` | Finalize and describe changes made |
-| `git push`                | Save changes to remote repository  |
-|                           |
-| `git clean -d -f`         | Force clean repository             |
-| `git restore`             | Force clean repository             |
-|                           |
-| `git status`              | Check status of files changed      |
-| `cd`                      | Change file path                   |
-| `git status` | List all *new or modified* files |
-| `git diff` | Show file differences that **haven't been** staged |
+| Command (Generic)            | Description                                         |
+| ---------------------------- | --------------------------------------------------- |
+| `git clone [Link]`           | Downloads remote repository to your local computer  |
+| `git status`                 | Show state of local repository and staging area     |
+| `git log`                    | Displays recent commits to the current branch       |
+| `cd [C:/Desktop/File/Path/]` | Change directory to specified file path in terminal |
+| `cd ..`                      | Change directory back to parent file path           |
+
+| Command (Contributing)    | Description                                              |
+| ------------------------- | -------------------------------------------------------- |
+| `git pull`                | Download new changes from the remote repository          |
+| `git add [File-Name]`     | Stages a specified file to be committed                  |
+| `git add -u`              | Stages all modified files to be committed                |
+| `git add -A`              | Stages all created, edited, delted files to be committed |
+| `git commit -m "Commnet"` | Save and describe incremental changes made               |
+| `git push`                | Upload changes to remote repository                      |
+
+| Command (Branching)                 | Description                                          |
+| ----------------------------------- | ---------------------------------------------------- |
+| `git branch`                        | List current and all other branches, Press Q to Quit |
+| `git checkout [Destination Branch]` | Switch to the destination branch                     |
+| `git checkout -b [New Branch Name]` | Create and switch to a new branch                    |
+| `git merge [Branch to Merge]`       | Merge specified branch to current branch             |
+
+| Command (Cleaning) | Description                                  |
+| ------------------ | -------------------------------------------- |
+| `git clean -d -f`  | Force remove untracked repository (Careful!) |
+| `git clean -d -n`  | Dry run remove untracked repository          |
+| `git reset`        | Force clean repository                       |
+| `git restore`      | Force clean repository                       |
 
 
+
+	
+
+
+| `git stash`                         | Save local changes                         |
+
+
+
+
+# **GUI**
+
+
+# **Additional Learning**
 
 
 
@@ -82,6 +98,17 @@ https://www.w3schools.com/git/git_intro.asp?remote=github
 https://training.github.com/downloads/github-git-cheat-sheet/
 
 Use the website UI to create branches and submit pull requests
+https://stackoverflow.com/questions/19520844/difference-between-git-reset-vs-git-clean
+
+
+> [!NOTE]  
+> Highlights information that users should take into account, even when skimming.
+
+> [!IMPORTANT]  
+> Crucial information necessary for users to succeed.
+
+> [!WARNING]
+> Critical content demanding immediate user attention due to potential risks.
 
 
 
