@@ -1,6 +1,3 @@
-> [!NOTE]  
-> WORK IN PROGRESS
-
 # **GitHub Guide**
 
 *Author(s): Peter Giannetos*
@@ -11,9 +8,9 @@ GitHub is the file sharing service we use to share project files. The following 
 
 - [Intro](#Intro-)
 - [Repositories](#Repositories-)
-- [Pull Requests](#pull-requests-)
-- [KiCad Parts Library](#kicad-parts-library-)
-- [Merge Conflicts](#merge-conflicts-)
+- [Branches](#Branches-)
+- [Reference Sheet](#Reference-Sheet-)
+- [Interfaces](#Interfaces-)
 - [Example Workflow](#example-workflow-️)
 
 <br/>
@@ -38,21 +35,38 @@ Repositories are the project folders of Git. A remote repository stored in the c
 
 ![Repository Structure](/images/ISS-PCB-Repository-Structure.png)
 
+<br/>
+
 # **Branches**
 
 Branches are different version of a repository used to develope in isolation. The `main` branch is the primary version of a repository. Project and feature branches are a modified copy of `main`. When development is completed the branch is merged into it's parent branch, which is most likely `main`.
 
+![Repository Structure](/images/ISS-PCB-Branch-Structure.png)
+
+<br/>
+
+# **Interfaces**
+
+There exist many different terminal and GUI style interfaces. Git Bash is a very popular terminal command line interface while GitHub Desktop is a popular GUI interface. Linux and MacOS computer may already have command line interfaces. Download Git and Git Bash at minimum to get started with GitHub.
+
+- Git Bash: [git-scm.com/downloads](https://git-scm.com/downloads)
+- GitHub Desktop: [desktop.github.com](https://desktop.github.com/)
+
+*Note: Git Bash comes packaged with Git*
+
+<br/>
+
 # **Reference Sheet**
 
-| Command (Generic)            | Description                                         |
-| ---------------------------- | --------------------------------------------------- |
-| `git clone [Link]`           | Downloads remote repository to your local computer  |
-| `git status`                 | Show state of local repository and staging area     |
-| `git log`                    | Displays recent commits to the current branch       |
-| `cd [C:/Desktop/File/Path/]` | Change directory to specified file path in terminal |
-| `cd ..`                      | Change directory back to parent file path           |
+| Commands (Generic)           | Description                                        |
+| ---------------------------- | -------------------------------------------------- |
+| `git clone [Link]`           | Downloads remote repository to your local computer |
+| `git status`                 | Show state of local repository and staging area    |
+| `git log`                    | Displays recent commits to the current branch      |
+| `cd [C:/Desktop/File/Path/]` | Change directory to specified file path            |
+| `cd ..`                      | Go back one file path layer                        |
 
-| Command (Contributing)    | Description                                              |
+| Commands (Contributing)   | Description                                              |
 | ------------------------- | -------------------------------------------------------- |
 | `git pull`                | Download new changes from the remote repository          |
 | `git add [File-Name]`     | Stages a specified file to be committed                  |
@@ -61,56 +75,29 @@ Branches are different version of a repository used to develope in isolation. Th
 | `git commit -m "Commnet"` | Save and describe incremental changes made               |
 | `git push`                | Upload changes to remote repository                      |
 
-| Command (Branching)                 | Description                                          |
+| Commands (Branching)                | Description                                          |
 | ----------------------------------- | ---------------------------------------------------- |
 | `git branch`                        | List current and all other branches, Press Q to Quit |
 | `git checkout [Destination Branch]` | Switch to the destination branch                     |
 | `git checkout -b [New Branch Name]` | Create and switch to a new branch                    |
 | `git merge [Branch to Merge]`       | Merge specified branch to current branch             |
 
-| Command (Cleaning) | Description                                  |
-| ------------------ | -------------------------------------------- |
-| `git clean -d -f`  | Force remove untracked repository (Careful!) |
-| `git clean -d -n`  | Dry run remove untracked repository          |
-| `git reset`        | Force clean repository                       |
-| `git restore`      | Force clean repository                       |
+| Commands (Cleaning) | Description                                                    |
+| ------------------- | -------------------------------------------------------------- |
+| `git clean -d -f`   | Remove all untracked files (Careful!)                          |
+| `git clean -d -n`   | Dry run remove all untracked files                             |
+| `git restore *`     | Remove all uncommitted local changes                           |
+| `git stash`         | Temporarily save changes in order to switch to a new directory |
+| `git stash pop`     | Restore statshed changes                                       |
 
-
-
-	
-
-
-| `git stash`                         | Save local changes                         |
-
-
-
-
-# **GUI**
-
+<br/>
 
 # **Additional Learning**
 
-
-
-https://githubtraining.github.io/training-manual/#/01_getting_ready_for_class
-https://www.w3schools.com/git/git_intro.asp?remote=github
-
-https://training.github.com/downloads/github-git-cheat-sheet/
-
-Use the website UI to create branches and submit pull requests
-https://stackoverflow.com/questions/19520844/difference-between-git-reset-vs-git-clean
-
-
-> [!NOTE]  
-> Highlights information that users should take into account, even when skimming.
-
-> [!IMPORTANT]  
-> Crucial information necessary for users to succeed.
-
-> [!WARNING]
-> Critical content demanding immediate user attention due to potential risks.
-
-
+- [GitHub: GitHub Docs](https://docs.github.com/en)
+- [GitHub: Git Cheat Sheet](https://training.github.com/downloads/github-git-cheat-sheet/)
+- [GitHub: GitHub Training Manual](https://githubtraining.github.io/training-manual/#/01_getting_ready_for_class)
+- [W3 Schools: Git and GitHub Introduction](https://www.w3schools.com/git/git_intro.asp?remote=github)
 
 <br/><br/><br/>
 
