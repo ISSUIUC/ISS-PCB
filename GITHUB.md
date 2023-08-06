@@ -6,12 +6,17 @@ GitHub is the file sharing service we use to share project files. The following 
 
 ## Table of Contents
 
-- [Intro](#Intro-)
-- [Repositories](#Repositories-)
-- [Branches](#Branches-)
-- [Reference Sheet](#Reference-Sheet-)
-- [Interfaces](#Interfaces-)
-- [Example Workflow](#example-workflow-️)
+- [**GitHub Guide**](#github-guide)
+  - [Table of Contents](#table-of-contents)
+- [**Intro**](#intro)
+    - [Git](#git)
+    - [GitHub](#github)
+- [**Repositories**](#repositories)
+- [**Branches**](#branches)
+- [**Interfaces**](#interfaces)
+- [**Reference Sheet**](#reference-sheet)
+- [**Additional Learning**](#additional-learning)
+- [**Example**](#example)
 
 <br/>
 
@@ -98,6 +103,11 @@ There exist many different terminal and GUI style interfaces. Git Bash is a very
 - [GitHub: Git Cheat Sheet](https://training.github.com/downloads/github-git-cheat-sheet/)
 - [GitHub: GitHub Training Manual](https://githubtraining.github.io/training-manual/#/01_getting_ready_for_class)
 - [W3 Schools: Git and GitHub Introduction](https://www.w3schools.com/git/git_intro.asp?remote=github)
+
+# **Example**
+
+An example worflow of navigating to your working directory and pushing a file to GitHub with the Git Bash termninal.
+
 
 <br/><br/><br/>
 
