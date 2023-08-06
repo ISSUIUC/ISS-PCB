@@ -6,17 +6,13 @@ GitHub is the file sharing service we use to share project files. The following 
 
 ## Table of Contents
 
-- [**GitHub Guide**](#github-guide)
-  - [Table of Contents](#table-of-contents)
-- [**Intro**](#intro)
-    - [Git](#git)
-    - [GitHub](#github)
-- [**Repositories**](#repositories)
-- [**Branches**](#branches)
-- [**Interfaces**](#interfaces)
-- [**Reference Sheet**](#reference-sheet)
-- [**Additional Learning**](#additional-learning)
-- [**Example**](#example)
+- [Intro](#intro)
+- [Repositories](#repositories)
+- [Branches](#branches)
+- [Interfaces](#interfaces)
+- [Reference Sheet](#reference-sheet)
+- [Additional Learning](#additional-learning)
+- [Example](#example)
 
 <br/>
 
@@ -38,7 +34,7 @@ GitHub is a cloud based file sharing service that uses Git to manage content.<br
 
 Repositories are the project folders of Git. A remote repository stored in the cloud is cloned to your local machine workspace. Next you add any changed files to a staging area. Then you save and describe what changes you made to your local repository. Finally, you push your changes back to the remote repository to share with others.
 
-![Repository Structure](/images/ISS-PCB-Repository-Structure.png)
+![ISS-PCB-Repository-Structure](/images/ISS-PCB-Repository-Structure.png)
 
 <br/>
 
@@ -46,7 +42,7 @@ Repositories are the project folders of Git. A remote repository stored in the c
 
 Branches are different version of a repository used to develope in isolation. The `main` branch is the primary version of a repository. Project and feature branches are a modified copy of `main`. When development is completed the branch is merged into it's parent branch, which is most likely `main`.
 
-![Repository Structure](/images/ISS-PCB-Branch-Structure.png)
+![ISS-PCB-Branch-Structure](/images/ISS-PCB-Branch-Structure.png)
 
 <br/>
 
@@ -95,6 +91,8 @@ There exist many different terminal and GUI style interfaces. Git Bash is a very
 | `git stash`         | Temporarily save changes in order to switch to a new directory |
 | `git stash pop`     | Restore statshed changes                                       |
 
+*Note: Use TAB to auto fill file paths/names*
+
 <br/>
 
 # **Additional Learning**
@@ -106,8 +104,9 @@ There exist many different terminal and GUI style interfaces. Git Bash is a very
 
 # **Example**
 
-An example worflow of navigating to your working directory and pushing a file to GitHub with the Git Bash termninal.
+An example worflow of navigating to your working directory "ISS-PCB" and pushing a file to GitHub with the Git Bash termninal. *Tip: Use `git status` to check if each command worked correctly.*
 
+![Git-Bash-Terminal-Example](/images/Git-Bash-Terminal-Example.png)
 
 <br/><br/><br/>
 
