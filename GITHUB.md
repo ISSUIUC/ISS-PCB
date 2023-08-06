@@ -31,7 +31,7 @@ GitHub is a cloud based file sharing service that uses Git to manage content.<br
 
 # **Repositories**
 
-Repositories are the project folders of Git. A remote repository stored in the cloud is cloned to your local machine workspace. Next you add any changed files to a staging area. Then you save and describe what changes you made. Finally, you push your changes back to the remote repository to share with others.
+Repositories are the project folders of Git. A remote repository stored in the cloud is cloned to your local machine workspace. Next you add any changed files to a staging area. Then you save and describe what changes you made to your local repository. Finally, you push your changes back to the remote repository to share with others.
 
 ![Repository Structure](/images/ISS-PCB-Repository-Structure.png)
 

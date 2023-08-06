@@ -262,7 +262,3 @@ You can clean your repository by running the following commands just make sure y
 <br/><br/><br/>
 
 *See a typo? Think we left some vital information out? Make a branch and edit this file!*
-
-To Do
-### **KiCAD Quality Standards**
-### **Junk Files**
