@@ -212,7 +212,7 @@ When adding custom libraries to a project you must point KiCad to the library fi
 
 Below is a good example with a relative path and a bad example with a user specific path. The steps to import a library are also shown. Navigating to this window by following the "Accessing Settings" section.
 
-![KiCad Relative Paths](/images/ISS-PCB-Relative-Library-Paths.PNG)
+![KiCad Relative Paths](/images/ISS-PCB-Relative-Library-Paths.png)
 
 ## **Creating Custom Libraries**
 
