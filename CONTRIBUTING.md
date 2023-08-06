@@ -27,7 +27,8 @@ The Electronic Design Automation (EDA) software used to design our Printed Circu
 
 ## GitHub Proficiency
 
-The rest of this guide assumes you are somewhat familiar with Git and GitHub. We're currently working on a Git and GitHub guide, but there are many online resources and tutorials if you search.
+The rest of this guide assumes you are somewhat familiar with Git and GitHub. Below is a link to our GitHub guide, but there are also many other online resources and tutorials if you search.  
+[GitHub Guide](/GITHUB.md)
 
 ## Cloning the Repository
 
@@ -45,9 +46,7 @@ The rest of this guide assumes you are somewhat familiar with Git and GitHub. We
 
 There are three commonly used branch types in this repository.
 
-![Branch Hierarchy](/images/ISS-PCB-Branch-Hierarchy-Diagram.png)
-
-
+![Branch Hierarchy](/images/ISS-PCB-Branch-Types.png)
 
 - ### **Main**
 
@@ -263,3 +262,7 @@ You can clean your repository by running the following commands just make sure y
 <br/><br/><br/>
 
 *See a typo? Think we left some vital information out? Make a branch and edit this file!*
+
+To Do
+### **KiCAD Quality Standards**
+### **Junk Files**
