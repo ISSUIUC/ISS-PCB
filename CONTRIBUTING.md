@@ -6,12 +6,12 @@ KiCad files are more difficult and delicate to merge than standard code. Working
 
 ## Table of Contents
 
-- [Quickstart](#quickstart-)
-- [Branches](#branches-)
-- [Pull Requests](#pull-requests-)
-- [KiCad Parts Library](#kicad-parts-library-)
-- [Merge Conflicts](#merge-conflicts-)
-- [Example Workflow](#example-workflow-️)
+- [Quickstart](#Quickstart-⚡-)
+- [Branches](#Branches-🌳-)
+- [Pull Requests](#Pull-Requests-🧲-)
+- [KiCad Parts Library](#KiCad-Parts-Library-📚-)
+- [Merge Conflicts](#Merge-Conflicts-⛔️-)
+- [Example Workflow](#Example-Workflow-⚙️-)
 
 <br/>
 
@@ -262,3 +262,10 @@ You can clean your repository by running the following commands just make sure y
 <br/><br/><br/>
 
 *See a typo? Think we left some vital information out? Make a branch and edit this file!*
+
+<!---
+To Do:
+New files and folder naming: use - not _
+Potentially garbage KiCAD files
+Warning about uneatness will not be added to the repo
+-->
