@@ -6,16 +6,16 @@ KiCad files are more difficult and delicate to merge than standard code. Working
 
 ## Table of Contents
 
-- [Quickstart](#quickstart-⚡)
-- [Branches](#branches-🌳)
-- [Pull Requests](#pull-requests-🧲)
-- [KiCad Parts Library](#kicad-parts-library-📚)
-- [Merge Conflicts](#merge-conflicts-⛔️)
-- [Example Workflow](#example-workflow-⚙️)
+- [Quickstart](#quickstart)
+- [Branches](#branches)
+- [Pull Requests](#pull-requests)
+- [KiCad Parts Library](#kicad-parts-library)
+- [Merge Conflicts](#merge-conflicts)
+- [Example Workflow](#example-workflow)
 
 <br/>
 
-# **Quickstart** ⚡
+# **Quickstart**
 
 How to quickly get started via terminal commands. Recomended Terminal: [Git Bash](https://git-scm.com/downloads)
 
@@ -42,7 +42,7 @@ The rest of this guide assumes you are somewhat familiar with Git and GitHub. Be
 
 <br/>
 
-# **Branches** 🌳
+# **Branches**
 
 There are three commonly used branch types in this repository.
 
@@ -125,7 +125,7 @@ Keep the naming of branches consistent between each other.
 
 <br/>
 
-# **Pull Requests** 🧲
+# **Pull Requests**
 
 Pull requests (PRs) are how to submit work for peer review and merge into Project_Dev branches or main. Submit pull requests as soon as possible in the development cycle to recieve feedback early. It is recomended that PRs and comments are made through GitHub.com and not via the command line.
 
@@ -140,7 +140,7 @@ Pull requests (PRs) are how to submit work for peer review and merge into Projec
 
 <br/>
 
-# **KiCad Parts Library** 📚
+# **KiCad Parts Library**
 
 KiCad has a rich default library of parts but often we need to create custom part files for unique comonents. If the part files can not be found online then custom files can be made with the built-in symbol editor, footprint editor, and your choice of CAD software.
 
@@ -220,7 +220,7 @@ When creating a library or part you **must follow the KiCad Library Convention.*
 
 <br/>
 
-# **Merge Conflicts** ⛔️
+# **Merge Conflicts**
 
 If you ever run into merge conflicts which are common with KiCad there are a few methods you can take to resolve them. However, there is always a chance that some work may be lost wich is why following the proactive measures in the sections above is crucial.
 
@@ -238,7 +238,7 @@ If you ever run into merge conflicts which are common with KiCad there are a few
 
    - If your entire **local** repository is acting strange and you can not solve it within 20 minutes you can opt to reclone the repository in a new folder. You can delete your old local repository if you have no work that you want to save! It is recomended that you copy and paste any work you want to keep from the old repository to the new local repository, and then delete the old repository.
 
-# **Example Workflow** ⚙️
+# **Example Workflow**
 
 Here is a barebones demo of a typical workflow when working with Ticket branches.
 
