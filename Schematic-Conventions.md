@@ -6,7 +6,11 @@ A non-exhaustive guide of how to create neat KiCAD schematics. Schematics that d
 
 ## Table of Contents
 
-- [Intro](#Intro-)
+- [Intro](#intro)
+- [Consistency](#consistency)
+- [Wires & Labels](#wires--labels)
+- [Symbols](#symbols)
+- [Structure](#structure)
 
 
 <br/>
@@ -15,9 +19,9 @@ A non-exhaustive guide of how to create neat KiCAD schematics. Schematics that d
 
 You are a graphic designer that works with electrons.
 
-# **Consistancy**
+# **Consistency**
 
-# Templates
+Whenever making a formatting decision, it is vital to maintain consistency across the schematic with whatever formatting convention you choose. Essentially, pick something and stick with it.
 
 # **Wires & Labels**
 
@@ -103,18 +107,45 @@ Always use "R_US" resistors and not the rectuanglar "R" resistors.
 
 Use regular sized components and not their alternative small symbols.
 
+### Units
+
+Use the value field in passive components to display their characteristics.   
+Note: There shouldn't be a space between the numeric value and the prefix/unit.   
+*Example: `5pF` = 5 pico-ferrites*
+
+| Prefixes | Description       |
+| -------- | ----------------- |
+| `p`      | Pico: $10^{-12}$  |
+| `n`      | Nano: $10^{-9}$   |
+| `u`      | Micro: $10^{-6}$  |
+| `m`      | Milli: $10^{-3}$  |
+| `k`      | Kilo: $10^{3}$    |
+| `M`      | Mega: $10^{6}$    |
+
+| Units    | Description                          |
+| -------- | ------------------------------------ |
+| ` `      | Ohm: Resistance (No symbol in KiCAD) |
+| `F`      | Ferrite : Capacitance                |
+| `H`      | Henry: Inductance                    |
+
 ### Connectors
 
 <img src="images/ISS-PCB-KiCAD-Conventions-Connectors.png" alt="Connectors" width="200">
 
 Use the generic yellow solid fill connectors and not the other male/female types.
 
+<br/><br/><br/>
+
+*See a typo? Think we left some vital information out? Make a branch and edit this file!*
+
+<!--
+TO DO:
+# **Templates**
+
 ## MPN
 
 <img src="images/ISS-PCB-KiCAD-Conventions-MPN.png" alt="MPN" width="500">
 
+Add an extra field called MPN (Manufacturer Part Number) to each symbol and then respond 
 
-
-<br/><br/><br/>
-
-*See a typo? Think we left some vital information out? Make a branch and edit this file!*
+-->

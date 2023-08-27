@@ -256,7 +256,6 @@ Here is a barebones demo of a typical workflow when working with Ticket branches
 You can clean your repository by running the following commands just make sure you commit and push and unsaved work first! We suggest doing this after every time you push to ensure you don't build a heap of untracked and modified files that'll make it more confusing when running `git add`.
 
 - `git clean -d -n` a dry run of what untracked files your about to permantely delete
-
 - `git clean -d -f` nukes every untracked directory 
 
 <br/><br/><br/>
