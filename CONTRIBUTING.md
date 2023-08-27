@@ -6,12 +6,12 @@ KiCad files are more difficult and delicate to merge than standard code. Working
 
 ## Table of Contents
 
-- [Quickstart](#Quickstart-⚡-)
-- [Branches](#Branches-🌳-)
-- [Pull Requests](#Pull-Requests-🧲-)
-- [KiCad Parts Library](#KiCad-Parts-Library-📚-)
-- [Merge Conflicts](#Merge-Conflicts-⛔️-)
-- [Example Workflow](#Example-Workflow-⚙️-)
+- [Quickstart](#quickstart-⚡)
+- [Branches](#branches-🌳)
+- [Pull Requests](#pull-requests-🧲)
+- [KiCad Parts Library](#kicad-parts-library-📚)
+- [Merge Conflicts](#merge-conflicts-⛔️)
+- [Example Workflow](#example-workflow-⚙️)
 
 <br/>
 

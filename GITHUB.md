@@ -6,13 +6,13 @@ GitHub is the file sharing service we use to share project files. The following 
 
 ## Table of Contents
 
-- [Intro](#Intro-)
-- [Repositories](#Repositories-)
-- [Branches](#Branches-)
-- [Interfaces](#Interfaces-)
-- [Reference Sheet](#Reference-Sheet-)
-- [Additional Learning](#Additional-Learning-)
-- [Example](#Example-)
+- [Intro](#intro)
+- [Repositories](#repositories)
+- [Branches](#branches)
+- [Interfaces](#interfaces)
+- [Reference Sheet](#reference-sheet)
+- [Additional Learning](#additional-learning)
+- [Example](#example)
 
 <br/>
 
