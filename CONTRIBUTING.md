@@ -1,19 +1,21 @@
 # **Contributing Guide**
 
+*Author(s): Peter Giannetos*
+
 KiCad files are more difficult and delicate to merge than standard code. Working with multiple contributors requires a specialized workflow. Please use the following guide below as a reference.
 
 ## Table of Contents
 
-- [Quickstart](#quickstart-)
-- [Branches](#branches-)
-- [Pull Requests](#pull-requests-)
-- [KiCad Parts Library](#kicad-parts-library-)
-- [Merge Conflicts](#merge-conflicts-)
-- [Example Workflow](#example-workflow-️)
+- [Quickstart](#quickstart)
+- [Branches](#branches)
+- [Pull Requests](#pull-requests)
+- [KiCad Parts Library](#kicad-parts-library)
+- [Merge Conflicts](#merge-conflicts)
+- [Example Workflow](#example-workflow)
 
 <br/>
 
-# **Quickstart** ⚡
+# **Quickstart**
 
 How to quickly get started via terminal commands. Recomended Terminal: [Git Bash](https://git-scm.com/downloads)
 
@@ -25,7 +27,8 @@ The Electronic Design Automation (EDA) software used to design our Printed Circu
 
 ## GitHub Proficiency
 
-The rest of this guide assumes you are somewhat familiar with Git and GitHub. We're currently working on a Git and GitHub guide, but there are many online resources and tutorials if you search.
+The rest of this guide assumes you are somewhat familiar with Git and GitHub. Below is a link to our GitHub guide, but there are also many other online resources and tutorials if you search.  
+[GitHub Guide](/GITHUB.md)
 
 ## Cloning the Repository
 
@@ -39,13 +42,11 @@ The rest of this guide assumes you are somewhat familiar with Git and GitHub. We
 
 <br/>
 
-# **Branches** 🌳
+# **Branches**
 
 There are three commonly used branch types in this repository.
 
-![Branch Hierarchy](/images/ISS-PCB_Branch_Hierarchy_Diagram.png)
-
-
+![Branch Hierarchy](/images/ISS-PCB-Branch-Types.png)
 
 - ### **Main**
 
@@ -124,7 +125,7 @@ Keep the naming of branches consistent between each other.
 
 <br/>
 
-# **Pull Requests** 🧲
+# **Pull Requests**
 
 Pull requests (PRs) are how to submit work for peer review and merge into Project_Dev branches or main. Submit pull requests as soon as possible in the development cycle to recieve feedback early. It is recomended that PRs and comments are made through GitHub.com and not via the command line.
 
@@ -139,7 +140,7 @@ Pull requests (PRs) are how to submit work for peer review and merge into Projec
 
 <br/>
 
-# **KiCad Parts Library** 📚
+# **KiCad Parts Library**
 
 KiCad has a rich default library of parts but often we need to create custom part files for unique comonents. If the part files can not be found online then custom files can be made with the built-in symbol editor, footprint editor, and your choice of CAD software.
 
@@ -155,7 +156,7 @@ The KiCad Library Convention (KLC) is a set of guidelines for contributing to th
 
 There are three main categories of part files. When adding new components please ensure you source or create all three types.
 
-![KiCad Component File Types](/images/ISS-PCB_Component_File_Types.png)
+![KiCad Component File Types](/images/ISS-PCB-Component-File-Types.png)
 
 - ### **Symbols**
 
@@ -179,7 +180,7 @@ There are three main categories of part files. When adding new components please
 
 The custom library used by all the projects in this repository is stored in the root of the repository under the `/libs` folder. Any new parts should be added here.
 
-![KiCad Library Folders](/images/ISS-PCB_Library_Folders.png)
+![KiCad Library Folders](/images/ISS-PCB-Library-Folders.png)
 
 ## **Relative Library Paths**
 
@@ -211,7 +212,7 @@ When adding custom libraries to a project you must point KiCad to the library fi
 
 Below is a good example with a relative path and a bad example with a user specific path. The steps to import a library are also shown. Navigating to this window by following the "Accessing Settings" section.
 
-![KiCad Relative Paths](/images/ISS-PCB_Relative_Library_Paths.PNG)
+![KiCad Relative Paths](/images/ISS-PCB-Relative-Library-Paths.png)
 
 ## **Creating Custom Libraries**
 
@@ -219,7 +220,7 @@ When creating a library or part you **must follow the KiCad Library Convention.*
 
 <br/>
 
-# **Merge Conflicts** ⛔️
+# **Merge Conflicts**
 
 If you ever run into merge conflicts which are common with KiCad there are a few methods you can take to resolve them. However, there is always a chance that some work may be lost wich is why following the proactive measures in the sections above is crucial.
 
@@ -237,7 +238,7 @@ If you ever run into merge conflicts which are common with KiCad there are a few
 
    - If your entire **local** repository is acting strange and you can not solve it within 20 minutes you can opt to reclone the repository in a new folder. You can delete your old local repository if you have no work that you want to save! It is recomended that you copy and paste any work you want to keep from the old repository to the new local repository, and then delete the old repository.
 
-# **Example Workflow** ⚙️
+# **Example Workflow**
 
 Here is a barebones demo of a typical workflow when working with Ticket branches.
 
@@ -255,9 +256,15 @@ Here is a barebones demo of a typical workflow when working with Ticket branches
 You can clean your repository by running the following commands just make sure you commit and push and unsaved work first! We suggest doing this after every time you push to ensure you don't build a heap of untracked and modified files that'll make it more confusing when running `git add`.
 
 - `git clean -d -n` a dry run of what untracked files your about to permantely delete
-
 - `git clean -d -f` nukes every untracked directory 
 
 <br/><br/><br/>
 
 *See a typo? Think we left some vital information out? Make a branch and edit this file!*
+
+<!---
+To Do:
+New files and folder naming: use - not _
+Potentially garbage KiCAD files
+Warning about uneatness will not be added to the repo
+-->
