@@ -184,8 +184,14 @@ The custom library used by all the projects in this repository is stored in the 
 
 ## **Relative Library Paths**
 
-When adding custom libraries to a project you must point KiCad to the library file using a relative path linked to the repository and not your local computer or else the library will not load correct when the project is opened by other contributors.
+When adding custom libraries to a project, you must point KiCad to the library file using a relative path linked to the repository and not your local computer or else the library will not load correct when the project is opened by other contributors.
 
+- ### **Creating Paths**
+
+  - In KiCad, locate Preferences ➡ Configure Paths
+  - Create new variables: `ISS_SYMBOL_DIR`, `ISS_FOOTPRINT_DIR`, and `ISS_3DMODEL_DIR`
+  - Set the locations to those of the `symbols`, `footprints`, and `3d_models` folders within the `lib` folder of your local repository. 
+  
 - ### **Accessing Settings**
 
   - **Schematics:** Symbol Editor ➡ Preferences ➡ Manage Symbol Libraries ➡ Project Specific Libraries  
@@ -194,13 +200,11 @@ When adding custom libraries to a project you must point KiCad to the library fi
 
 - ### **Setting the Path**
 
-  - `${KIPRJMOD}/../../../` copy this and replace everything before `lib` in the path for the library file
-    - ${KIPRJMOD} tells KiCad to look in the same folder as the project file
-    - /../../../ tells KiCad to jump back three folder levels (TARS-MK4-FCB ➡ TARS-Mk4 ➡ boards ➡ root)
-    - KiCad will then search for the `lib` folder and the rest of the file path as normal
-  - This is the same method for all three component file types!
+  - **Symbols:** `${ISS_SYMBOL_DIR}` copy this and replace everything before the `.kicad_sym` file in the path for the library file
+  - **Footprints:** `${ISS_FOOTPRINT_DIR}` copy this and replace everything before the `.pretty` folder in the path for the library file
+  - **3D Models:** `${ISS_3DMODEL_DIR}` copy this and replace everything before the `.3dshapes` folder in the path for the library file
+  - ${ } tells KiCad to look in the folders pointed to by the previously created variables. KiCad will then search for the rest of the file path as normal.
   - Replace all \ with / in file paths
-  - **Careful! Depending on where your project is located you may need a different amoumt of `/../` in the file path**
 
 - ### **Library Table**
 
