@@ -200,11 +200,11 @@ When adding custom libraries to a project, you must point KiCad to the library f
 
 - ### **Setting the Path**
 
-  - (KiCad may autofill the path if you set it up correctly.)
-  - **Symbols:** `${ISS_SYMBOL_DIR}` copy this and replace everything before the `.kicad_sym` file in the path for the library file
-  - **Footprints:** `${ISS_FOOTPRINT_DIR}` copy this and replace everything before the `.pretty` folder in the path for the library file
-  - **3D Models:** `${ISS_3DMODEL_DIR}` copy this and replace everything before the `.3dshapes` folder in the path for the library file
-  - ${ } tells KiCad to look in the folders pointed to by the previously created variables. KiCad will then search for the rest of the file path as normal.
+    (KiCad may autofill the path if you set it up correctly.)
+  - **Symbols:** `${ISS_SYMBOL_DIR}` copy this and replace everything before the `file.kicad_sym` file in the path for the library file
+  - **Footprints:** `${ISS_FOOTPRINT_DIR}` copy this and replace everything before the `file.pretty` folder in the path for the library file
+  - **3D Models:** `${ISS_3DMODEL_DIR}` copy this and replace everything before the `file.3dshapes` folder in the path for the library file
+  - ${ } tells KiCad to look in the folders specified by the path variable. KiCad then searches for the rest of the file path as normal.
   - Replace all \ with / in file paths
 
 - ### **Library Table**
