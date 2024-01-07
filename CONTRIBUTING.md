@@ -46,7 +46,7 @@ The rest of this guide assumes you are somewhat familiar with Git and GitHub. Be
 
 There are three commonly used branch types in this repository.
 
-![Branch Hierarchy](/images/ISS-PCB-Branch-Types.png)
+![Branch Hierarchy](/images/ISS-PCB-Contributing-Branch-Types.png)
 
 - ### **Main**
 
@@ -156,7 +156,7 @@ The KiCad Library Convention (KLC) is a set of guidelines for contributing to th
 
 There are three main categories of part files. When adding new components please ensure you source or create all three types.
 
-![KiCad Component File Types](/images/ISS-PCB-Component-File-Types.png)
+![KiCad Component File Types](/images/ISS-PCB-Contributing-Component-File-Types.png)
 
 - ### **Symbols**
 
@@ -180,11 +180,11 @@ There are three main categories of part files. When adding new components please
 
 The custom library used by all the projects in this repository is stored in the root of the repository under the `/libs` folder. Any new parts should be added here.
 
-![KiCad Library Folders](/images/ISS-PCB-Library-Folders.png)
+![KiCad Library Folders](/images/ISS-PCB-Contributing-Library-Folders.png)
 
-## **Relative Library Paths**
+## **Custom Library Paths**
 
-When adding custom libraries to a project, you must point KiCad to the library file using a relative path linked to the repository and not your local computer or else the library will not load correct when the project is opened by other contributors.
+When adding custom libraries to a project, you must point KiCad to the library file using a path linked to the repository and not your local computer, or else the library will not load correctly when the project is opened by other contributors.
 
 - ### **Creating Paths**
 
@@ -200,6 +200,7 @@ When adding custom libraries to a project, you must point KiCad to the library f
 
 - ### **Setting the Path**
 
+  - (KiCad may autofill the path if you set it up correctly.)
   - **Symbols:** `${ISS_SYMBOL_DIR}` copy this and replace everything before the `.kicad_sym` file in the path for the library file
   - **Footprints:** `${ISS_FOOTPRINT_DIR}` copy this and replace everything before the `.pretty` folder in the path for the library file
   - **3D Models:** `${ISS_3DMODEL_DIR}` copy this and replace everything before the `.3dshapes` folder in the path for the library file
@@ -216,7 +217,7 @@ When adding custom libraries to a project, you must point KiCad to the library f
 
 Below is a good example with a relative path and a bad example with a user specific path. The steps to import a library are also shown. Navigating to this window by following the "Accessing Settings" section.
 
-![KiCad Relative Paths](/images/ISS-PCB-Relative-Library-Paths.png)
+![KiCad Relative Paths](/images/ISS-PCB-Contributing-Custom-Library-Paths.png)
 
 ## **Creating Custom Libraries**
 
