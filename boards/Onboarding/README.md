@@ -13,4 +13,5 @@ Printable PDF schematics can be found in the folders for their respective boards
 
 # Renders
 
+![555-Timer-Render](/boards/Onboarding/images/555-Timer-Demo-Circuit-Render.png)
 ![L1-Altimeter-Render](/boards/Onboarding/images/L1-Altimeter-Render.png)
