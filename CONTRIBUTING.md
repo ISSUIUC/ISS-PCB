@@ -219,10 +219,6 @@ Below is a good example with a relative path and a bad example with a user speci
 
 ![KiCad Relative Paths](/images/ISS-PCB-Contributing-Custom-Library-Paths.png)
 
-## **Creating Custom Libraries**
-
-When creating a library or part you **must follow the KiCad Library Convention.** All of the necessary guidelines are already documented in the KLC. When in doubt always review your parts against a component in the offical KiCad libraries. Here are a few common pitfalls when making new libraries and parts:
-
 <br/>
 
 # **Merge Conflicts**
