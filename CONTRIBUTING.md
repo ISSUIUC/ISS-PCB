@@ -1,6 +1,6 @@
 # **Contributing Guide**
 
-*Author(s): Peter Giannetos*
+*Author(s): Peter Giannetos, Thomas McManamen*
 
 KiCad files are more difficult and delicate to merge than standard code. Working with multiple contributors requires a specialized workflow. Please use the following guide below as a reference.
 
@@ -17,7 +17,7 @@ KiCad files are more difficult and delicate to merge than standard code. Working
 
 # **Quickstart**
 
-How to quickly get started via terminal commands. Recomended Terminal: [Git Bash](https://git-scm.com/downloads)
+How to quickly get started via terminal commands. Recommended Terminal: [Git Bash](https://git-scm.com/downloads)
 
 ## Install KiCad
 
@@ -77,11 +77,11 @@ There are nine rules you must follow when working in ticket branches to avoid me
   
 2. ### **Merge Often**
 
-   - Merge your work into the Project_Dev branch with a pull request. This allows for new ticket branches to have your work, and current ticket branches to rebase with your work. **If your work is incomplete create a draft pull request to still receive feedback.**
+   - Merge your work into the Project_Dev branch with a pull request. This allows for new ticket branches to have your work and current ticket branches to rebase with your work. **If your work is incomplete, create a draft pull request to still receive feedback.**
 
 3. ### **Rebase Often**
 
-   - Rebase your ticket branch from the Project_Dev branch before every work session. This ensures you have the most up to date work from other ticket branches editing Project_Dev. You could alternativly merge your old work and then make a new branch.
+   - Rebase your ticket branch from the Project_Dev branch before every work session. This ensures you have the most up to date work from other ticket branches editing Project_Dev. You could alternatively merge your old work and then make a new branch.
   
 4. ### **Single File Commits**
 
@@ -136,13 +136,13 @@ Pull requests (PRs) are how to submit work for peer review and merge into Projec
 - Two additional contributors not directly involved with the work should review every pull request before merging.
 - Reviews requesting modifications should try to include the component reference number and a checkbox list.
 - Critiques should be directed towards the work and not the individual. Be respectful, everyone at one point knew nothing about KiCad.
-- If you have an open PR check GitHub diligently for new comments. It should be an active discussion section for reviewing work. (You can configure notifications to your exact preferences.)
+- If you have an open PR, check GitHub diligently for new comments. It should be an active discussion section for reviewing work. (You can configure notifications to your exact preferences.)
 
 <br/>
 
 # **KiCad Parts Library**
 
-KiCad has a rich default library of parts but often we need to create custom part files for unique comonents. If the part files can not be found online then custom files can be made with the built-in symbol editor, footprint editor, and your choice of CAD software.
+KiCad has a rich default library of parts but often we need to create custom part files for unique components. If the part files can not be found online then custom files can be made with the built-in symbol editor, footprint editor, and your choice of CAD software.
 
 - [SnapEDA](https://www.snapeda.com/): *Download free symbols, footprints, & 3D models for millions of electronic components.* 
 
@@ -215,7 +215,7 @@ When adding custom libraries to a project, you must point KiCad to the library f
    - `fp-lib-table`: Table of custom imported footprint libraries
    - `fp-info-cache`: GARBAGE! DO NOT PUSH THIS. It's a local cache of your libraries for faster loading on your PC. It's safe to delete but will be regenerated.
 
-Below is a good example with a relative path and a bad example with a user specific path. The steps to import a library are also shown. Navigating to this window by following the "Accessing Settings" section.
+Below is a good example with a relative path and a bad example with a user specific path. The steps to import a library are also shown. Navigate to this window by following the "Accessing Settings" section.
 
 ![KiCad Relative Paths](/images/ISS-PCB-Contributing-Custom-Library-Paths.png)
 
@@ -223,11 +223,11 @@ Below is a good example with a relative path and a bad example with a user speci
 
 # **Merge Conflicts**
 
-If you ever run into merge conflicts which are common with KiCad there are a few methods you can take to resolve them. However, there is always a chance that some work may be lost wich is why following the proactive measures in the sections above is crucial.
+If you ever run into merge conflicts, which are common with KiCad, there are a few methods you can take to resolve them. However, there is always a chance that some work may be lost, which is why following the proactive measures in the sections above is crucial.
 
 1. ### **New Branch:**
 
-    - If you are unable to merge a branch you can create a new branch and then copy over any work from the old branch to the new branch. This is often the best solution for Ticket branches.
+    - If you are unable to merge a branch, you can create a new branch and then copy over any work from the old branch to the new branch. This is often the best solution for Ticket branches.
 
 2. ### **File Editing:**
 
@@ -237,7 +237,7 @@ If you ever run into merge conflicts which are common with KiCad there are a few
 
 3. ### **Fresh Start:**
 
-   - If your entire **local** repository is acting strange and you can not solve it within 20 minutes you can opt to reclone the repository in a new folder. You can delete your old local repository if you have no work that you want to save! It is recomended that you copy and paste any work you want to keep from the old repository to the new local repository, and then delete the old repository.
+   - If your entire **local** repository is acting strange and you can not solve it within 20 minutes, you can opt to reclone the repository in a new folder. You can delete your old local repository if you have no work that you want to save! It is recomended that you copy and paste any work you want to keep from the old repository to the new local repository, and then delete the old repository.
 
 # **Example Workflow**
 
@@ -254,7 +254,7 @@ Here is a barebones demo of a typical workflow when working with Ticket branches
 
 ### **Cleaning Local Repositories**
 
-You can clean your repository by running the following commands just make sure you commit and push and unsaved work first! We suggest doing this after every time you push to ensure you don't build a heap of untracked and modified files that'll make it more confusing when running `git add`.
+You can clean your repository by running the following commands. Just make sure you commit and push any unsaved work first! We suggest doing this after every time you push to ensure you don't build a heap of untracked and modified files that'll make it more confusing when running `git add`.
 
 - `git clean -d -n` a dry run of what untracked files your about to permantely delete
 - `git clean -d -f` nukes every untracked directory 
