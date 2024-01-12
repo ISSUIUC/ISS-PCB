@@ -1,6 +1,6 @@
 # **Contributing Guide**
 
-*Author(s): Peter Giannetos*
+*Author(s): Peter Giannetos, Thomas McManamen*
 
 KiCad files are more difficult and delicate to merge than standard code. Working with multiple contributors requires a specialized workflow. Please use the following guide below as a reference.
 
