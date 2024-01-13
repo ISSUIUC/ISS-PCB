@@ -34,7 +34,7 @@ GitHub is a cloud based file sharing service that uses Git to manage content.<br
 
 Repositories are the project folders of Git. A remote repository stored in the cloud is cloned to your local machine workspace. Next you add any changed files to a staging area. Then you save and describe what changes you made to your local repository. Finally, you push your changes back to the remote repository to share with others.
 
-![ISS-PCB-Repository-Structure](/images/ISS-PCB-Repository-Structure.png)
+![ISS-PCB-Repository-Structure](/images/ISS-PCB-Contributing-Repository-Structure.png)
 
 <br/>
 
@@ -42,7 +42,7 @@ Repositories are the project folders of Git. A remote repository stored in the c
 
 Branches are different version of a repository used to develope in isolation. The `main` branch is the primary version of a repository. Project and feature branches are a modified copy of `main`. When development is completed the branch is merged into it's parent branch, which is most likely `main`.
 
-![ISS-PCB-Branch-Structure](/images/ISS-PCB-Branch-Structure.png)
+![ISS-PCB-Branch-Structure](/images/ISS-PCB-Contributing-Branch-Structure.png)
 
 <br/>
 
@@ -72,8 +72,8 @@ There exist many different terminal and GUI style interfaces. Git Bash is a very
 | `git pull`                | Download new changes from the remote repository          |
 | `git add [File-Name]`     | Stages a specified file to be committed                  |
 | `git add -u`              | Stages all modified files to be committed                |
-| `git add -A`              | Stages all created, edited, delted files to be committed |
-| `git commit -m "Commnet"` | Save and describe incremental changes made               |
+| `git add -A`              | Stages all created, edited, deleted files to be committed |
+| `git commit -m "Comment"` | Save and describe incremental changes made               |
 | `git push`                | Upload changes to remote repository                      |
 
 | Commands (Branching)                | Description                                          |
@@ -89,7 +89,7 @@ There exist many different terminal and GUI style interfaces. Git Bash is a very
 | `git clean -d -n`   | Dry run remove all untracked files                             |
 | `git restore *`     | Remove all uncommitted local changes                           |
 | `git stash`         | Temporarily save changes in order to switch to a new directory |
-| `git stash pop`     | Restore statshed changes                                       |
+| `git stash pop`     | Restore stashed changes                                       |
 
 *Note: Use TAB to auto fill file paths/names*
 
@@ -104,9 +104,9 @@ There exist many different terminal and GUI style interfaces. Git Bash is a very
 
 # **Example**
 
-An example worflow of navigating to your working directory "ISS-PCB" and pushing a file to GitHub with the Git Bash termninal. *Tip: Use `git status` to check if each command worked correctly.*
+An example workflow of navigating to your working directory "ISS-PCB" and pushing a file to GitHub with the Git Bash terminal. *Tip: Use `git status` to check if each command worked correctly.*
 
-![Git-Bash-Terminal-Example](/images/Git-Bash-Terminal-Example.png)
+![Git-Bash-Terminal-Example](/images/ISS-PCB-GitHub-Git-Bash-Terminal-Example.png)
 
 <br/><br/><br/>
 
