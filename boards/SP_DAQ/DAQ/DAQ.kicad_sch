@@ -3013,15 +3013,6 @@
   (no_connect (at 394.97 77.47) (uuid f8ff402e-a85b-4d3a-9f17-63d76bfeb3f7))
   (no_connect (at 394.97 92.71) (uuid fa5b4576-c202-4fd6-8928-3dd8795af50f))
 
-  (bus_entry (at 425.45 457.2) (size 2.54 2.54)
-    (stroke (width 0) (type default))
-    (uuid 69c72f0a-76e3-4359-845b-b09105a2c2de)
-  )
-  (bus_entry (at 424.18 457.2) (size 2.54 2.54)
-    (stroke (width 0) (type default))
-    (uuid e3dc36bf-6570-4dd8-8fce-2477704b588f)
-  )
-
   (wire (pts (xy 105.41 66.04) (xy 91.44 66.04))
     (stroke (width 0) (type default))
     (uuid 0083fd4b-7b38-4a67-8fb6-d1bc55be3734)
@@ -4325,7 +4316,7 @@
     (fill (type none))
     (uuid 2a379820-1c81-40d3-91ad-e227518fb871)
   )
-  (rectangle (start 19.05 290.068) (end 91.44 403.098)
+  (rectangle (start 15.24 289.56) (end 91.44 403.098)
     (stroke (width 0) (type default))
     (fill (type none))
     (uuid 4a74735c-f37d-4fec-bad1-5ab5914d1e5e)
@@ -4411,6 +4402,13 @@
     (effects (font (size 1.27 1.27) bold) (justify left top))
     (uuid 3ffc9b2e-f178-4368-9493-716c908b049a)
   )
+  (text_box "366.3 ideal. 370 is a compromise to keep full pressure range at slight expense in resolution."
+    (at 15.24 302.26 0) (size 17.78 19.05)
+    (stroke (width 0) (type default))
+    (fill (type none))
+    (effects (font (size 1.27 1.27)) (justify left top))
+    (uuid 4b41359c-c8fb-4256-82fb-d01cc8028a46)
+  )
   (text_box "Ambient temperature sensor. Extremely accurate, reliable, and self-referencing. One is to be placed in the cold junction at each screw terminal."
     (at 142.24 233.68 0) (size 24.13 16.51)
     (stroke (width 0) (type default))
@@ -4461,7 +4459,7 @@
     (uuid be154733-0750-4244-bc4a-9479d0f69538)
   )
   (text_box "Gain setting Resistor. \nG = 1+(50k/x)\n"
-    (at 29.21 292.608 0) (size 22.86 8.89)
+    (at 29.21 292.608 0) (size 22.86 9.652)
     (stroke (width 0) (type default))
     (fill (type none))
     (effects (font (size 1.27 1.27)) (justify left top))
@@ -4474,7 +4472,7 @@
     (effects (font (size 1.27 1.27)) (justify left top))
     (uuid d9a0b2ba-1bcd-4c79-b611-d73d60802105)
   )
-  (text_box "For use with temperature sensors"
+  (text_box "For use with temperature sensors and amplifiers\n"
     (at 675.386 227.584 0) (size 46.99 11.43)
     (stroke (width 0) (type default))
     (fill (type none))
@@ -5002,7 +5000,7 @@
     (property "Reference" "R13" (at 40.64 304.038 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "367" (at 38.1 304.038 90)
+    (property "Value" "370" (at 38.1 304.038 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 39.116 310.642 90)
