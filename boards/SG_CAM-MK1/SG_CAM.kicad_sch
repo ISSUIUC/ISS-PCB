@@ -1101,16 +1101,16 @@
       )
     )
     (symbol "Interface_CAN_LIN:TCAN337G" (in_bom yes) (on_board yes)
-      (property "Reference" "U1" (at -10.16 10.16 0)
+      (property "Reference" "U" (at -10.16 8.89 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
-      (property "Value" "TCAN337G" (at 2.54 -10.16 0)
+      (property "Value" "TCAN337G" (at 2.54 8.89 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
-      (property "Footprint" "Package_TO_SOT_SMD:SOT-23-8" (at 0 -22.86 0)
+      (property "Footprint" "" (at 0 -12.7 0)
         (effects (font (size 1.27 1.27) italic) hide)
       )
-      (property "Datasheet" "http://www.ti.com/lit/ds/symlink/tcan337.pdf" (at 0 -26.67 0)
+      (property "Datasheet" "http://www.ti.com/lit/ds/symlink/tcan337.pdf" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_keywords" "High-Speed CAN Transceiver" (at 0 0 0)
@@ -2775,6 +2775,9 @@
   (junction (at 259.08 248.92) (diameter 0) (color 0 0 0 0)
     (uuid 2cb1e3d5-efee-4d77-852c-15e73b1db935)
   )
+  (junction (at 97.79 64.77) (diameter 0) (color 0 0 0 0)
+    (uuid 34310eff-ca97-494a-8ff3-81a886e4bce3)
+  )
   (junction (at 49.53 170.18) (diameter 0) (color 0 0 0 0)
     (uuid 3a495362-911e-421a-add6-4e0c09d872c2)
   )
@@ -2996,6 +2999,9 @@
   )
   (junction (at 170.18 137.16) (diameter 0) (color 0 0 0 0)
     (uuid df9d5d9a-1a0a-4178-83b5-12db8afa8f60)
+  )
+  (junction (at 113.03 50.8) (diameter 0) (color 0 0 0 0)
+    (uuid e23dfc0e-e78d-476a-ac47-e0fd55e49b40)
   )
   (junction (at 261.62 106.68) (diameter 0) (color 0 0 0 0)
     (uuid e4330dc6-c0c3-4282-9081-e57d1cefb1a6)
@@ -4006,6 +4012,10 @@
     (stroke (width 0) (type default))
     (uuid 74702829-9354-4efd-881f-38ca5605c689)
   )
+  (wire (pts (xy 97.79 64.77) (xy 99.06 64.77))
+    (stroke (width 0) (type default))
+    (uuid 749681df-cfe0-4ddc-bf60-fa7fd7999dd3)
+  )
   (wire (pts (xy 350.52 114.3) (xy 336.55 114.3))
     (stroke (width 0) (type default))
     (uuid 74b1f637-aa7f-40fd-ae05-4ba5e98df160)
@@ -4066,9 +4076,13 @@
     (stroke (width 0) (type default))
     (uuid 7ac88503-22ae-4e61-9e94-8e3a2a6b0b5d)
   )
-  (wire (pts (xy 96.52 64.77) (xy 99.06 64.77))
+  (wire (pts (xy 96.52 64.77) (xy 97.79 64.77))
     (stroke (width 0) (type default))
     (uuid 7b963915-fd03-4daa-ab26-63b9d066e02c)
+  )
+  (wire (pts (xy 97.79 64.77) (xy 97.79 50.8))
+    (stroke (width 0) (type default))
+    (uuid 7b971c08-b2a9-42f9-acc2-0f01f878fa2e)
   )
   (wire (pts (xy 240.03 106.68) (xy 240.03 109.22))
     (stroke (width 0) (type default))
@@ -4129,6 +4143,10 @@
   (wire (pts (xy 142.24 64.77) (xy 143.51 64.77))
     (stroke (width 0) (type default))
     (uuid 80abfe2d-3035-4879-a032-1232b841ee71)
+  )
+  (wire (pts (xy 113.03 50.8) (xy 111.76 50.8))
+    (stroke (width 0) (type default))
+    (uuid 829be648-ca41-4b05-a339-ca8e58a39b7d)
   )
   (wire (pts (xy 20.32 80.01) (xy 20.32 82.55))
     (stroke (width 0) (type default))
@@ -4470,10 +4488,6 @@
     (stroke (width 0) (type default))
     (uuid a7f4c93a-faa9-419b-9295-433e0c244176)
   )
-  (wire (pts (xy 111.76 50.8) (xy 118.11 50.8))
-    (stroke (width 0) (type default))
-    (uuid a823ed85-0a45-437f-a4f2-72c336f43587)
-  )
   (wire (pts (xy 229.87 198.12) (xy 231.14 198.12))
     (stroke (width 0) (type default))
     (uuid a8281979-8239-480b-bc00-0bc82ae952c1)
@@ -4609,6 +4623,10 @@
   (wire (pts (xy 267.97 198.12) (xy 267.97 203.2))
     (stroke (width 0) (type default))
     (uuid bdc61f7a-97d6-4f85-9464-40e1c6476435)
+  )
+  (wire (pts (xy 113.03 50.8) (xy 118.11 50.8))
+    (stroke (width 0) (type default))
+    (uuid bddc8115-f677-493c-bece-5557fcf6f2c1)
   )
   (wire (pts (xy 78.105 257.81) (xy 78.105 261.62))
     (stroke (width 0) (type default))
@@ -4882,6 +4900,10 @@
     (stroke (width 0) (type default))
     (uuid df376cf0-6c0c-4b78-a94f-dc88abc3db0e)
   )
+  (wire (pts (xy 97.79 50.8) (xy 100.33 50.8))
+    (stroke (width 0) (type default))
+    (uuid dfa02a5e-cfec-4a63-8937-e5f53f32149b)
+  )
   (wire (pts (xy 254 96.52) (xy 261.62 96.52))
     (stroke (width 0) (type default))
     (uuid dfa62cc6-0214-41f5-8f79-049e602df9e5)
@@ -5022,7 +5044,7 @@
     (stroke (width 0) (type default))
     (uuid eda2cbe1-a810-4f68-8935-9cdbf2c24dc6)
   )
-  (wire (pts (xy 111.76 50.8) (xy 111.76 44.45))
+  (wire (pts (xy 113.03 50.8) (xy 113.03 44.45))
     (stroke (width 0) (type default))
     (uuid eebd0ef0-2f16-403a-a160-3d796591d046)
   )
@@ -5061,6 +5083,10 @@
   (wire (pts (xy 336.55 44.45) (xy 336.55 45.72))
     (stroke (width 0) (type default))
     (uuid f33ede1a-af9d-445d-9cc6-85e08c8e28b2)
+  )
+  (wire (pts (xy 107.95 50.8) (xy 111.76 50.8))
+    (stroke (width 0) (type default))
+    (uuid f3770401-2de2-4a5b-9195-2975f6ec2b47)
   )
   (wire (pts (xy 127 59.69) (xy 127 69.85))
     (stroke (width 0) (type default))
@@ -5947,7 +5973,7 @@
   (symbol (lib_id "Device:R_US") (at 259.08 259.08 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0ae0d1e0-96e2-4f9e-be10-7a006722dcd7)
-    (property "Reference" "R128" (at 260.35 257.81 0)
+    (property "Reference" "R129" (at 260.35 257.81 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "140k" (at 260.35 260.35 0)
@@ -5964,7 +5990,7 @@
     (instances
       (project "SG_CAM"
         (path "/4bc9b637-9962-4b5d-99ac-40a862ac606f"
-          (reference "R128") (unit 1)
+          (reference "R129") (unit 1)
         )
       )
     )
@@ -5998,7 +6024,7 @@
   (symbol (lib_id "Device:R_US") (at 252.73 203.2 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0cc14eee-597e-4a23-b938-c3b9fe0f08dd)
-    (property "Reference" "R124" (at 252.73 200.66 90)
+    (property "Reference" "R125" (at 252.73 200.66 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "20k" (at 252.73 205.74 90)
@@ -6015,7 +6041,7 @@
     (instances
       (project "SG_CAM"
         (path "/4bc9b637-9962-4b5d-99ac-40a862ac606f"
-          (reference "R124") (unit 1)
+          (reference "R125") (unit 1)
         )
       )
     )
@@ -6302,6 +6328,32 @@
     )
   )
 
+  (symbol (lib_id "Device:R_US") (at 104.14 50.8 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 19e85851-64c3-470d-b53e-e1a0c696ff6f)
+    (property "Reference" "R111" (at 102.87 48.26 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Value" "10k" (at 107.95 48.26 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 103.886 51.816 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 104.14 50.8 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 3a34933b-a508-4cf0-ae61-f7b86ce7f4ec))
+    (pin "2" (uuid 0b22d954-3aa6-4a0f-bb3a-d2196bd71e72))
+    (instances
+      (project "SG_CAM"
+        (path "/4bc9b637-9962-4b5d-99ac-40a862ac606f"
+          (reference "R111") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:GND") (at 393.7 34.29 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1a4b052d-369d-4587-a1d5-edad2f839bc3)
@@ -6366,7 +6418,7 @@
   (symbol (lib_id "Device:R_US") (at 154.94 137.16 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1cb4d2a2-507e-461f-b525-9d3abe302d1d)
-    (property "Reference" "R114" (at 152.4 139.7 90)
+    (property "Reference" "R115" (at 152.4 139.7 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "22k" (at 157.48 139.7 90)
@@ -6383,7 +6435,7 @@
     (instances
       (project "SG_CAM"
         (path "/4bc9b637-9962-4b5d-99ac-40a862ac606f"
-          (reference "R114") (unit 1)
+          (reference "R115") (unit 1)
         )
       )
     )
@@ -6392,7 +6444,7 @@
   (symbol (lib_id "Device:R_US") (at 280.67 60.96 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1e850557-3a67-4324-8c0a-daf753146d6a)
-    (property "Reference" "R132" (at 276.86 63.5 90)
+    (property "Reference" "R133" (at 276.86 63.5 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "27.4" (at 283.21 63.5 90)
@@ -6409,7 +6461,7 @@
     (instances
       (project "SG_CAM"
         (path "/4bc9b637-9962-4b5d-99ac-40a862ac606f"
-          (reference "R132") (unit 1)
+          (reference "R133") (unit 1)
         )
       )
     )
@@ -6540,7 +6592,7 @@
   (symbol (lib_id "Device:R_US") (at 111.76 243.84 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 27f3105b-e530-4dbe-a7d8-d6a7faa09594)
-    (property "Reference" "R112" (at 113.665 242.57 0)
+    (property "Reference" "R113" (at 113.665 242.57 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "18.7k" (at 113.665 245.11 0)
@@ -6557,7 +6609,7 @@
     (instances
       (project "SG_CAM"
         (path "/4bc9b637-9962-4b5d-99ac-40a862ac606f"
-          (reference "R112") (unit 1)
+          (reference "R113") (unit 1)
         )
       )
       (project "MIDAS-MK1"
@@ -6721,7 +6773,7 @@
   (symbol (lib_id "Device:R_US") (at 280.67 58.42 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 325192b0-1b77-49a5-af88-45232f2bb339)
-    (property "Reference" "R131" (at 276.86 55.88 90)
+    (property "Reference" "R132" (at 276.86 55.88 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "27.4" (at 283.21 55.88 90)
@@ -6738,7 +6790,7 @@
     (instances
       (project "SG_CAM"
         (path "/4bc9b637-9962-4b5d-99ac-40a862ac606f"
-          (reference "R131") (unit 1)
+          (reference "R132") (unit 1)
         )
       )
     )
@@ -6834,7 +6886,7 @@
   (symbol (lib_id "Device:R_US") (at 237.49 160.02 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 36eaa18e-dbd6-4f63-9831-b49609e48ea6)
-    (property "Reference" "R121" (at 238.76 158.75 0)
+    (property "Reference" "R122" (at 238.76 158.75 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "2.2k" (at 238.76 161.29 0)
@@ -6851,7 +6903,7 @@
     (instances
       (project "SG_CAM"
         (path "/4bc9b637-9962-4b5d-99ac-40a862ac606f"
-          (reference "R121") (unit 1)
+          (reference "R122") (unit 1)
         )
       )
       (project "MIDAS-MK1"
@@ -7022,7 +7074,7 @@
   (symbol (lib_id "Device:R_US") (at 250.19 59.69 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp yes)
     (uuid 409f1b59-1529-4cfd-9e61-919dc02b4a3a)
-    (property "Reference" "R123" (at 246.38 58.42 0)
+    (property "Reference" "R124" (at 246.38 58.42 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10k" (at 246.38 60.96 0)
@@ -7039,7 +7091,7 @@
     (instances
       (project "SG_CAM"
         (path "/4bc9b637-9962-4b5d-99ac-40a862ac606f"
-          (reference "R123") (unit 1)
+          (reference "R124") (unit 1)
         )
       )
     )
@@ -7123,7 +7175,7 @@
   (symbol (lib_id "Device:R_US") (at 354.33 165.1 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 435e3f05-fbec-41ff-961c-98df53ffb02c)
-    (property "Reference" "R134" (at 355.6 166.37 0)
+    (property "Reference" "R135" (at 355.6 166.37 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "2.2k" (at 355.6 163.83 0)
@@ -7140,7 +7192,7 @@
     (instances
       (project "SG_CAM"
         (path "/4bc9b637-9962-4b5d-99ac-40a862ac606f"
-          (reference "R134") (unit 1)
+          (reference "R135") (unit 1)
         )
       )
       (project "MIDAS-MK1"
@@ -7297,7 +7349,7 @@
   (symbol (lib_id "Device:R_US") (at 163.83 123.19 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4a5bcd79-95a6-4782-939f-0dc2583265f4)
-    (property "Reference" "R116" (at 162.56 121.92 0)
+    (property "Reference" "R117" (at 162.56 121.92 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "100k" (at 162.56 124.46 0)
@@ -7314,7 +7366,7 @@
     (instances
       (project "SG_CAM"
         (path "/4bc9b637-9962-4b5d-99ac-40a862ac606f"
-          (reference "R116") (unit 1)
+          (reference "R117") (unit 1)
         )
       )
     )
@@ -7353,7 +7405,7 @@
   (symbol (lib_id "Device:R_US") (at 345.44 165.1 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4c9f9d21-1e93-4022-8724-92573d1a9392)
-    (property "Reference" "R133" (at 344.17 166.37 0)
+    (property "Reference" "R134" (at 344.17 166.37 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "2.2k" (at 344.17 163.83 0)
@@ -7370,7 +7422,7 @@
     (instances
       (project "SG_CAM"
         (path "/4bc9b637-9962-4b5d-99ac-40a862ac606f"
-          (reference "R133") (unit 1)
+          (reference "R134") (unit 1)
         )
       )
       (project "MIDAS-MK1"
@@ -7465,7 +7517,7 @@
   (symbol (lib_id "Device:R_US") (at 259.08 269.24 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 55b2754a-7c14-4a19-a9ee-7bf87726c767)
-    (property "Reference" "R129" (at 260.35 267.97 0)
+    (property "Reference" "R130" (at 260.35 267.97 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10k" (at 260.35 270.51 0)
@@ -7482,7 +7534,7 @@
     (instances
       (project "SG_CAM"
         (path "/4bc9b637-9962-4b5d-99ac-40a862ac606f"
-          (reference "R129") (unit 1)
+          (reference "R130") (unit 1)
         )
       )
     )
@@ -7652,7 +7704,7 @@
   (symbol (lib_id "Device:R_US") (at 370.84 198.12 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 59c145b2-38fe-42a0-8c77-9407947adbc2)
-    (property "Reference" "R135" (at 370.84 191.77 90)
+    (property "Reference" "R136" (at 370.84 191.77 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "470" (at 370.84 194.31 90)
@@ -7669,7 +7721,7 @@
     (instances
       (project "SG_CAM"
         (path "/4bc9b637-9962-4b5d-99ac-40a862ac606f"
-          (reference "R135") (unit 1)
+          (reference "R136") (unit 1)
         )
       )
       (project "MIDAS-MK1"
@@ -7714,7 +7766,7 @@
   (symbol (lib_id "Device:R_US") (at 223.52 269.24 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5d01cd45-1318-48f2-abaf-7daffe2e8aa4)
-    (property "Reference" "R119" (at 223.52 266.7 90)
+    (property "Reference" "R120" (at 223.52 266.7 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100k" (at 223.52 271.78 90)
@@ -7731,7 +7783,7 @@
     (instances
       (project "SG_CAM"
         (path "/4bc9b637-9962-4b5d-99ac-40a862ac606f"
-          (reference "R119") (unit 1)
+          (reference "R120") (unit 1)
         )
       )
     )
@@ -7740,7 +7792,7 @@
   (symbol (lib_id "Device:R_US") (at 370.84 210.82 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6009ce3e-10b9-4304-aa52-53022b3b76e5)
-    (property "Reference" "R136" (at 370.84 204.47 90)
+    (property "Reference" "R137" (at 370.84 204.47 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "470" (at 370.84 207.01 90)
@@ -7757,7 +7809,7 @@
     (instances
       (project "SG_CAM"
         (path "/4bc9b637-9962-4b5d-99ac-40a862ac606f"
-          (reference "R136") (unit 1)
+          (reference "R137") (unit 1)
         )
       )
       (project "MIDAS-MK1"
@@ -7898,7 +7950,7 @@
   (symbol (lib_id "Device:R_US") (at 223.52 217.17 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 67af29fe-e6e0-41e0-a430-094b3f1dce25)
-    (property "Reference" "R118" (at 223.52 214.63 90)
+    (property "Reference" "R119" (at 223.52 214.63 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100k" (at 223.52 219.71 90)
@@ -7915,7 +7967,7 @@
     (instances
       (project "SG_CAM"
         (path "/4bc9b637-9962-4b5d-99ac-40a862ac606f"
-          (reference "R118") (unit 1)
+          (reference "R119") (unit 1)
         )
       )
     )
@@ -8105,26 +8157,26 @@
     )
   )
 
-  (symbol (lib_id "power:+3V3") (at 111.76 44.45 0) (unit 1)
+  (symbol (lib_id "power:+3V3") (at 113.03 44.45 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 71bb8812-9bd7-454a-8277-394006f944e7)
-    (property "Reference" "#PWR0114" (at 111.76 48.26 0)
+    (property "Reference" "#PWR0115" (at 113.03 48.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+3V3" (at 111.76 40.64 0)
+    (property "Value" "+3V3" (at 113.03 40.64 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 111.76 44.45 0)
+    (property "Footprint" "" (at 113.03 44.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 111.76 44.45 0)
+    (property "Datasheet" "" (at 113.03 44.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 2e4fc819-8c97-4c94-8ee5-58a6c6bd46da))
     (instances
       (project "SG_CAM"
         (path "/4bc9b637-9962-4b5d-99ac-40a862ac606f"
-          (reference "#PWR0114") (unit 1)
+          (reference "#PWR0115") (unit 1)
         )
       )
     )
@@ -8133,7 +8185,7 @@
   (symbol (lib_id "Device:R_US") (at 154.94 147.32 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 738bbb6d-b1e9-4636-ad25-0799f437f5c1)
-    (property "Reference" "R115" (at 152.4 149.86 90)
+    (property "Reference" "R116" (at 152.4 149.86 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1k" (at 157.48 149.86 90)
@@ -8150,7 +8202,7 @@
     (instances
       (project "SG_CAM"
         (path "/4bc9b637-9962-4b5d-99ac-40a862ac606f"
-          (reference "R115") (unit 1)
+          (reference "R116") (unit 1)
         )
       )
     )
@@ -8337,7 +8389,7 @@
   (symbol (lib_id "Device:R_US") (at 370.84 223.52 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7e2e7716-b41d-4e69-af6f-b54f1ae4008e)
-    (property "Reference" "R137" (at 370.84 217.17 90)
+    (property "Reference" "R138" (at 370.84 217.17 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "470" (at 370.84 219.71 90)
@@ -8354,7 +8406,7 @@
     (instances
       (project "SG_CAM"
         (path "/4bc9b637-9962-4b5d-99ac-40a862ac606f"
-          (reference "R137") (unit 1)
+          (reference "R138") (unit 1)
         )
       )
       (project "MIDAS-MK1"
@@ -8527,7 +8579,7 @@
   (symbol (lib_id "Device:R_US") (at 132.08 69.85 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp yes)
     (uuid 8171a62f-39b3-4fe1-8042-d4d0c53b3c19)
-    (property "Reference" "R113" (at 127 72.39 90)
+    (property "Reference" "R114" (at 127 72.39 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "120" (at 137.16 72.39 90)
@@ -8544,7 +8596,7 @@
     (instances
       (project "SG_CAM"
         (path "/4bc9b637-9962-4b5d-99ac-40a862ac606f"
-          (reference "R113") (unit 1)
+          (reference "R114") (unit 1)
         )
       )
       (project "MIDAS-MK1.1"
@@ -8660,7 +8712,7 @@
   (symbol (lib_id "Device:R_US") (at 259.08 208.28 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 87d957da-f027-482e-b359-754a8c32298d)
-    (property "Reference" "R126" (at 260.35 207.01 0)
+    (property "Reference" "R127" (at 260.35 207.01 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "45.3k" (at 260.35 209.55 0)
@@ -8677,7 +8729,7 @@
     (instances
       (project "SG_CAM"
         (path "/4bc9b637-9962-4b5d-99ac-40a862ac606f"
-          (reference "R126") (unit 1)
+          (reference "R127") (unit 1)
         )
       )
     )
@@ -8912,7 +8964,7 @@
   (symbol (lib_id "Device:R_US") (at 109.22 127 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9a547f80-0c93-4bca-bbad-4e094d316283)
-    (property "Reference" "R111" (at 109.22 124.46 90)
+    (property "Reference" "R112" (at 109.22 124.46 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100k" (at 109.22 129.54 90)
@@ -8929,7 +8981,7 @@
     (instances
       (project "SG_CAM"
         (path "/4bc9b637-9962-4b5d-99ac-40a862ac606f"
-          (reference "R111") (unit 1)
+          (reference "R112") (unit 1)
         )
       )
       (project "MIDAS-MK1"
@@ -9380,7 +9432,7 @@
   (symbol (lib_id "Device:R_US") (at 370.84 234.95 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b757b6b4-4857-4890-8e33-4dbbefa706c9)
-    (property "Reference" "R138" (at 370.84 228.6 90)
+    (property "Reference" "R139" (at 370.84 228.6 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "470" (at 370.84 231.14 90)
@@ -9397,7 +9449,7 @@
     (instances
       (project "SG_CAM"
         (path "/4bc9b637-9962-4b5d-99ac-40a862ac606f"
-          (reference "R138") (unit 1)
+          (reference "R139") (unit 1)
         )
       )
       (project "MIDAS-MK1"
@@ -9441,7 +9493,7 @@
   (symbol (lib_id "Device:R_US") (at 245.11 160.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b991d3a1-066f-484c-bdc2-48cf7feb885a)
-    (property "Reference" "R122" (at 246.38 158.75 0)
+    (property "Reference" "R123" (at 246.38 158.75 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "2.2k" (at 246.38 161.29 0)
@@ -9458,7 +9510,7 @@
     (instances
       (project "SG_CAM"
         (path "/4bc9b637-9962-4b5d-99ac-40a862ac606f"
-          (reference "R122") (unit 1)
+          (reference "R123") (unit 1)
         )
       )
       (project "MIDAS-MK1"
@@ -9732,7 +9784,7 @@
   (symbol (lib_id "Device:R_US") (at 236.855 74.93 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c5856ead-287c-491d-9c63-03cb4aa2a551)
-    (property "Reference" "R120" (at 236.855 69.85 90)
+    (property "Reference" "R121" (at 236.855 69.85 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1k" (at 236.855 72.39 90)
@@ -9749,7 +9801,7 @@
     (instances
       (project "SG_CAM"
         (path "/4bc9b637-9962-4b5d-99ac-40a862ac606f"
-          (reference "R120") (unit 1)
+          (reference "R121") (unit 1)
         )
       )
     )
@@ -9845,7 +9897,7 @@
   (symbol (lib_id "Device:R_US") (at 275.59 106.68 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c935d4bc-17d8-41ea-8be7-95bc59711bb6)
-    (property "Reference" "R130" (at 275.59 101.6 90)
+    (property "Reference" "R131" (at 275.59 101.6 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1k" (at 275.59 104.14 90)
@@ -9862,7 +9914,7 @@
     (instances
       (project "SG_CAM"
         (path "/4bc9b637-9962-4b5d-99ac-40a862ac606f"
-          (reference "R130") (unit 1)
+          (reference "R131") (unit 1)
         )
       )
     )
@@ -10070,7 +10122,7 @@
   (symbol (lib_id "Device:R_US") (at 252.73 254 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d4d668bb-9a11-42fb-8446-6cdd59042152)
-    (property "Reference" "R125" (at 252.73 251.46 90)
+    (property "Reference" "R126" (at 252.73 251.46 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "20k" (at 252.73 256.54 90)
@@ -10087,7 +10139,7 @@
     (instances
       (project "SG_CAM"
         (path "/4bc9b637-9962-4b5d-99ac-40a862ac606f"
-          (reference "R125") (unit 1)
+          (reference "R126") (unit 1)
         )
       )
     )
@@ -10312,7 +10364,7 @@
   (symbol (lib_id "Device:R_US") (at 176.53 128.27 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e79548ae-158d-43cd-bb0f-4eb76131c780)
-    (property "Reference" "R117" (at 179.07 127 0)
+    (property "Reference" "R118" (at 179.07 127 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100" (at 179.07 129.54 0)
@@ -10329,7 +10381,7 @@
     (instances
       (project "SG_CAM"
         (path "/4bc9b637-9962-4b5d-99ac-40a862ac606f"
-          (reference "R117") (unit 1)
+          (reference "R118") (unit 1)
         )
       )
     )
@@ -10606,7 +10658,7 @@
   (symbol (lib_id "power:GND") (at 111.76 73.66 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f7e7d8c6-b455-4c73-8133-aa20e719140a)
-    (property "Reference" "#PWR0115" (at 111.76 80.01 0)
+    (property "Reference" "#PWR0114" (at 111.76 80.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 111.76 77.47 0)
@@ -10622,7 +10674,7 @@
     (instances
       (project "SG_CAM"
         (path "/4bc9b637-9962-4b5d-99ac-40a862ac606f"
-          (reference "#PWR0115") (unit 1)
+          (reference "#PWR0114") (unit 1)
         )
       )
       (project "MIDAS-MK1.1"
@@ -10738,7 +10790,7 @@
   (symbol (lib_id "Device:R_US") (at 259.08 218.44 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fb482eee-bb7e-4ded-bdb4-77cb34e0917d)
-    (property "Reference" "R127" (at 260.35 217.17 0)
+    (property "Reference" "R128" (at 260.35 217.17 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10k" (at 260.35 219.71 0)
@@ -10755,7 +10807,7 @@
     (instances
       (project "SG_CAM"
         (path "/4bc9b637-9962-4b5d-99ac-40a862ac606f"
-          (reference "R127") (unit 1)
+          (reference "R128") (unit 1)
         )
       )
     )
