@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/home/lain/personal/school/clubs/ehardware/ISS-PCB/boards/SP_DAQ/DAQ/DAQ.kicad_sch</source>
-    <date>Mon 05 Feb 2024 08:52:07 PM CST</date>
+    <date>Mon 05 Feb 2024 09:53:01 PM CST</date>
     <tool>Eeschema 7.0.10</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -69,26 +69,28 @@ Raspberry Pi Zero WH (Zero W with Headers)
       <tstamps>b322ed63-0d14-458e-9a86-37c6bb123c6a</tstamps>
     </comp>
     <comp ref="C1">
-      <value>C1608X5R1C335K080AC</value>
-      <footprint>DAQ:CAP_1608_TDK</footprint>
-      <datasheet>https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_commercial_general_en.pdf</datasheet>
-      <libsource lib="2023-10-08_20-10-01" part="C1608X5R1C335K080AC" description=""/>
+      <value>33uF</value>
+      <footprint>DAQ:TPSD336M020R0200_AVX</footprint>
+      <datasheet>https://datasheets.kyocera-avx.com/TPS.pdf</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="DAQ.kicad_sch"/>
-      <property name="ki_keywords" value="C1608X5R1C335K080AC"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>4c7f7075-f285-4487-a7e6-d6039b7cd580</tstamps>
+      <tstamps>dd86121f-13fc-4ce0-9ab0-90ed2cb1ebbd</tstamps>
     </comp>
     <comp ref="C2">
-      <value>C1608X5R1C335K080AC</value>
-      <footprint>DAQ:CAP_1608_TDK</footprint>
-      <datasheet>https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_commercial_general_en.pdf</datasheet>
-      <libsource lib="2023-10-08_20-10-01" part="C1608X5R1C335K080AC" description=""/>
+      <value>33uF</value>
+      <footprint>DAQ:TPSD336M020R0200_AVX</footprint>
+      <datasheet>https://datasheets.kyocera-avx.com/TPS.pdf</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="DAQ.kicad_sch"/>
-      <property name="ki_keywords" value="C1608X5R1C335K080AC"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>8fb34a86-b20e-4bc7-920a-8e8c7834ff7d</tstamps>
+      <tstamps>38f9081c-fad8-487b-92fd-e74f6d326a71</tstamps>
     </comp>
     <comp ref="C3">
       <value>0.1uF</value>
@@ -281,7 +283,7 @@ Raspberry Pi Zero WH (Zero W with Headers)
       <tstamps>2a29bdb3-4c98-42bb-b382-67c05ae1be71</tstamps>
     </comp>
     <comp ref="D1">
-      <value>1A,20V</value>
+      <value>300mA,40V</value>
       <footprint>Diode_SMD:D_0603_1608Metric</footprint>
       <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
       <property name="Sheetname" value=""/>
@@ -597,6 +599,17 @@ Raspberry Pi Zero WH (Zero W with Headers)
       <sheetpath names="/" tstamps="/"/>
       <tstamps>122f9c46-47a4-4772-9db6-ee45176ab2f4</tstamps>
     </comp>
+    <comp ref="TP6">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Loop_D3.80mm_Drill2.0mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="DAQ.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>22eb53ab-d2db-4b99-935b-685c69066b73</tstamps>
+    </comp>
     <comp ref="U1">
       <value>TPS61089RNRR</value>
       <footprint>DAQ:RNR0011A</footprint>
@@ -644,7 +657,7 @@ Raspberry Pi Zero WH (Zero W with Headers)
     <comp ref="U5">
       <value>LM2664M6X/NOPB</value>
       <footprint>DAQ:DBV0006A_N</footprint>
-      <datasheet>LM2664M6X/NOPB</datasheet>
+      <datasheet>https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&amp;gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Flm2664</datasheet>
       <libsource lib="2023-10-08_19-24-11" part="LM2664M6X_NOPB" description=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="DAQ.kicad_sch"/>
@@ -762,24 +775,6 @@ Raspberry Pi Zero WH (Zero W with Headers)
         <pin num="4" name="SD_N" type="input"/>
         <pin num="5" name="V+" type="power_in"/>
         <pin num="6" name="CAP+" type="power_in"/>
-      </pins>
-    </libpart>
-    <libpart lib="2023-10-08_20-10-01" part="C1608X5R1C335K080AC">
-      <docs>C1608X5R1C335K080AC</docs>
-      <footprints>
-        <fp>CAP_1608_TDK</fp>
-        <fp>CAP_1608_TDK-M</fp>
-        <fp>CAP_1608_TDK-L</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">C</field>
-        <field name="Value">C1608X5R1C335K080AC</field>
-        <field name="Footprint">CAP_1608_TDK</field>
-        <field name="Datasheet">C1608X5R1C335K080AC</field>
-      </fields>
-      <pins>
-        <pin num="1" name="" type="unspecified"/>
-        <pin num="2" name="" type="unspecified"/>
       </pins>
     </libpart>
     <libpart lib="2023-10-08_20-12-06" part="TMP126NDCKR">
@@ -1280,9 +1275,6 @@ Raspberry Pi Zero WH (Zero W with Headers)
     <library logical="2023-10-08_19-24-11">
       <uri>/home/lain/personal/school/clubs/ehardware/ISS-PCB/boards/SP_DAQ/DAQ/../../../libs/symbols/2023-10-08_19-24-11.kicad_sym</uri>
     </library>
-    <library logical="2023-10-08_20-10-01">
-      <uri>/home/lain/personal/school/clubs/ehardware/ISS-PCB/boards/SP_DAQ/DAQ/../../../libs/symbols/2023-10-08_20-10-01.kicad_sym</uri>
-    </library>
     <library logical="2023-10-08_20-12-06">
       <uri>/home/lain/personal/school/clubs/ehardware/ISS-PCB/boards/SP_DAQ/DAQ/../../../libs/symbols/2023-10-08_20-12-06.kicad_sym</uri>
     </library>
@@ -1370,7 +1362,8 @@ Raspberry Pi Zero WH (Zero W with Headers)
       <node ref="U10" pin="7" pinfunction="FB" pintype="unspecified"/>
     </net>
     <net code="4" name="-5V">
-      <node ref="C2" pin="2" pintype="unspecified"/>
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="TP6" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U11" pin="5" pinfunction="-VS" pintype="power_in"/>
       <node ref="U2" pin="5" pinfunction="-VS" pintype="power_in"/>
       <node ref="U3" pin="27" pinfunction="VSS" pintype="power_out"/>
@@ -1482,6 +1475,7 @@ Raspberry Pi Zero WH (Zero W with Headers)
       <node ref="A1" pin="30" pinfunction="GND[6]" pintype="power_in"/>
       <node ref="B1" pin="3" pinfunction="3" pintype="unspecified"/>
       <node ref="B1" pin="4" pinfunction="4" pintype="unspecified"/>
+      <node ref="C1" pin="1" pintype="passive"/>
       <node ref="C10" pin="1" pintype="passive"/>
       <node ref="C11" pin="1" pintype="passive"/>
       <node ref="C12" pin="1" pintype="passive"/>
@@ -1490,7 +1484,6 @@ Raspberry Pi Zero WH (Zero W with Headers)
       <node ref="C17" pin="1" pintype="passive"/>
       <node ref="C18" pin="2" pintype="passive"/>
       <node ref="C19" pin="2" pintype="passive"/>
-      <node ref="C2" pin="1" pintype="unspecified"/>
       <node ref="C21" pin="2" pintype="passive"/>
       <node ref="C4" pin="2" pintype="passive"/>
       <node ref="C5" pin="2" pintype="passive"/>
@@ -1731,11 +1724,11 @@ Raspberry Pi Zero WH (Zero W with Headers)
       <node ref="U9" pin="2" pinfunction="OUT" pintype="output"/>
     </net>
     <net code="81" name="Net-(U5-CAP+)">
-      <node ref="C1" pin="2" pintype="unspecified"/>
+      <node ref="C2" pin="2" pintype="passive"/>
       <node ref="U5" pin="6" pinfunction="CAP+" pintype="power_in"/>
     </net>
     <net code="82" name="Net-(U5-CAP-)">
-      <node ref="C1" pin="1" pintype="unspecified"/>
+      <node ref="C2" pin="1" pintype="passive"/>
       <node ref="U5" pin="3" pinfunction="CAP-" pintype="power_in"/>
     </net>
     <net code="83" name="Net-(U10-COMP)">
