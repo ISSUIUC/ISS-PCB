@@ -1,0 +1,60 @@
+* sensors
+** Thermocouples
+Max of 16 possible thermocouples routed through multiplexers to a single instrumentation op-amp that feeds into a 12-bit ADC.
+*** Range
+-68C<->+725C RELATIVE TO BOARD TEMPERATURE
+**** Calculation
+The range is affected by the gain and reference on the instrumentational amplifier.
+The system was designed with Type-K thermocouples in mind.
+
+Gain is defined as the multiplier of the total difference in voltage between the negetive and positive inputs of the instrumentational op-amp
+Designed gain is ideally (1 + 50k/R) with R = 500+-0.1%, resulting in a gain range of 101.1 to 100.9.
+
+The reference of the Op-Amp is what it defines as ground, so it will produce a voltage of [(Gain * V_in) + reference = V_out]. The designed reference voltage is a 3.3V signal put through a voltage divider where R1 = 15.6k+-0.5% and R2 = 1.3k+-0.5%. Using the voltage divider equation, this gives us a reference range of 0.256V 0.252V.
+
+The range of the ADC is 3.3V<->0V, so using the equation [(Gain * V_in) + reference = V_out], we can find that the range of V_in, assuming a reference of 0.254 and a gain of 101, is −2.51mV <-> 30.16mV.
+
+Using a Type-K lookup table, this gives us a temperature range of: -68C<->+725C RELATIVE TO BOARD TEMPERATURE
+*** Speed
+20,000 readings per second. This is split up between all active thermocouples.
+**** Calculation
+Taken from page 16 of the following datasheet: https://www.ti.com/lit/ds/symlink/ina819.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&ts=1697232709484&ref_url=https%253A%252F%252Fwww.mouser.com%252F   we see that the total harmonic distortion and Noise of the amplifier remain relatively constant at G=100 up to a frequency of 20kHz.
+
+on page 17, we see an output rise time of about 75mV per 1uS. Since we are aiming for a max of 3.3V, this would requre a worst case time of 44uS for a complete amplitude shift. Using 1S/(Rise_time) = Hz, this gives us a max worst-case scenario frequency of 22kHz
+
+From both of these, we can see that we can expect about 20,000 accurate readings per second.
+
+The ADC has been discounted as it can handle a minimum of 50kHz samples per input.
+The multiplexer has been discounted from this calculation due to its exceedingly quick rise time making its contribution insignificant.
+*** Granularity
+Max of +-1C accuracy with the realistic accuracy probably nearer to +-2C or 3C.
+**** Calculation
+The ADC is 12 bit, giving 4096 discrete measurement zones over the 3.3V range. Assuming a linear relationship in temperature and voltage over the temperature range, we get an ideal accuracy of +-0.2C, but this is unreasonable to assume due to noise and cold-junction heteroginity as these measurements are relative to the temperature readings of an on-board absolute-temperature sensors that have 0 +-0.5C accuracy and can only read the temperature near themselves within the cold-junctions. As such, to play it safe, we will assume a max of +-1C accuracy with the realistic accuracy probably nearer to +-2C or 3C.
+** Pressure Transmitter
+A single presure transmitter that acts as a current source emitting between 4mA and 20mA converted to 0.66V to 3.3V by a 165 ohm resistor. This voltage is read by a 12-bit ADC.
+
+RELATIVE TO ATMOSPHERIC PRESSURE
+*** Range
+The pressure Transmitter can read up to 0<->1500 PSI relative to atmospheric pressure.
+*** Granularity
+0.5PSI with a max error of 8PSI over range
+**** Calculation
+The ADC has 3351 discrete measurement points between 0.66V and 3.3V
+Given the range of 0 <-> 1500 PSI, we get a granularity of 0.447 PSI or about 0.5 PSI. The manufacture recognizes a non-linearity in readings of about 0.5%, so the actual accuracy would be more like a max error of 8PSI
+*** Speed
+ADC can handle 50kHz minimum per pin, so at least 50kHz however there is the option of up to 200kHz if you only care about the pressure transmitter's readings.
+** Load cell
+*** Range
+1.5T :  0<->14715N Calculation(1500kg*9.81m/s^2 = 14715N)
+**** Calculation
+1500Kg * 9.81m/s^2 = 14715N
+*** Granularity
+3.65N max.
+**** Calculation
+The load cell can produce up to 2mV per 1V of excitation. Given 12V of excitation, this gives us an output of 24mv max. There is also a "zero balance" voltage of 1.5%, so we lose 1.5% of the total range of our ADC leaving 4034 useful discrete reading levels. Given the max range of 14715N, we get 3.65N per level.
+
+Given the sensor's max error of about 3N, this means that our granularity limit in in the ADC at 3.65N per level.
+*** Speed
+20kHz
+**** Calculation
+Due to the use of the same model of Instrumentational op-amp as the thermocouples, we can conclude a max accurate reading frequency of 20kHz. The ADC can handle 50kHz minimum.
