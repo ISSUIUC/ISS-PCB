@@ -1016,6 +1016,41 @@
         )
       )
     )
+    (symbol "Mechanical:MountingHole_Pad" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "H" (at 0 6.35 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "MountingHole_Pad" (at 0 4.445 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "mounting hole" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Mounting Hole with connection" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "MountingHole*Pad*" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "MountingHole_Pad_0_1"
+        (circle (center 0 1.27) (radius 1.27)
+          (stroke (width 1.27) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "MountingHole_Pad_1_1"
+        (pin input line (at 0 -2.54 90) (length 2.54)
+          (name "1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "Power_eFuse:TPS25947" (in_bom yes) (on_board yes)
       (property "Reference" "U" (at -13.97 12.7 0)
         (effects (font (size 1.27 1.27)))
@@ -2614,6 +2649,11 @@
     (uuid fff02957-9da9-4735-befe-6b85641d3395)
   )
 
+  (rectangle (start 181.61 153.67) (end 209.55 184.15)
+    (stroke (width 0) (type default))
+    (fill (type none))
+    (uuid 00b6420f-6081-4a14-8862-ddff1a96c617)
+  )
   (rectangle (start 38.735 198.12) (end 38.735 198.12)
     (stroke (width 0) (type default))
     (fill (type none))
@@ -2718,6 +2758,10 @@
   (text "AD5252" (at 15.24 20.32 0)
     (effects (font (size 1.5 1.5) italic) (justify left bottom))
     (uuid 2b2c6e38-eb48-4392-853d-d506b01c6a70)
+  )
+  (text "Mounting Holes\n" (at 182.245 156.21 0)
+    (effects (font (face "KiCad Font") (size 1.27 1.27) (thickness 0.254) bold) (justify left bottom))
+    (uuid 323541bc-7c9d-4b4d-a67b-6bb2cbada0ec)
   )
   (text "CURRENT LIMIT 5.5A\nOVLO 13.8V\nUVLO 6.5V" (at 403.86 21.59 0)
     (effects (font (size 1.27 1.27)) (justify right bottom))
@@ -3278,6 +3322,31 @@
     (uuid ff2897c1-1dfc-4679-8dc9-65973643574a)
   )
 
+  (symbol (lib_id "Mechanical:MountingHole_Pad") (at 188.595 167.005 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 019be3c4-678d-44bf-bcf3-aec837e7edab)
+    (property "Reference" "H102" (at 191.77 164.465 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "MountingHole_Pad" (at 191.77 167.005 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via" (at 188.595 167.005 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 188.595 167.005 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 8fc9a944-df7b-471f-9bfa-2c81fe52e9ea))
+    (instances
+      (project "SPARK-MK1"
+        (path "/9ed31ef1-850d-4612-a113-88d01cf221f5"
+          (reference "H102") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Device:C") (at 317.5 210.82 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0376e895-37df-4455-b1a2-518145aa3c88)
@@ -3335,6 +3404,31 @@
       (project "TARS-MK4.1-PMB"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
           (reference "R103") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Mechanical:MountingHole_Pad") (at 188.595 160.02 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 0603ec4c-5215-48cd-b95c-28684ceb2eeb)
+    (property "Reference" "H101" (at 191.77 157.48 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "MountingHole_Pad" (at 191.77 160.02 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via" (at 188.595 160.02 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 188.595 160.02 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid c5f30916-3455-4f5d-b0e1-f9f9039845c2))
+    (instances
+      (project "SPARK-MK1"
+        (path "/9ed31ef1-850d-4612-a113-88d01cf221f5"
+          (reference "H101") (unit 1)
         )
       )
     )
@@ -3484,6 +3578,31 @@
       (project "SPARK-MK1"
         (path "/9ed31ef1-850d-4612-a113-88d01cf221f5"
           (reference "C101") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Mechanical:MountingHole_Pad") (at 188.595 173.99 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 1a6717cd-970b-43f1-bd5d-229a3287e5fc)
+    (property "Reference" "H103" (at 191.77 171.45 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "MountingHole_Pad" (at 191.77 173.99 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via" (at 188.595 173.99 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 188.595 173.99 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 1ab2f2ad-ac5a-40a6-a31f-065c026e8602))
+    (instances
+      (project "SPARK-MK1"
+        (path "/9ed31ef1-850d-4612-a113-88d01cf221f5"
+          (reference "H103") (unit 1)
         )
       )
     )
@@ -3750,9 +3869,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 66559381-c04e-4436-ae8d-ce45a095ebed))
-    (pin "4" (uuid 03bdeb40-1434-4b95-85e9-c19b297e20e0))
     (pin "2" (uuid 587cc7b2-4338-4fde-aabd-0018eaea751c))
     (pin "3" (uuid d6f45f6f-4bb1-4e26-847c-7d97fb8efaa1))
+    (pin "4" (uuid 03bdeb40-1434-4b95-85e9-c19b297e20e0))
     (instances
       (project "SPARK-MK1"
         (path "/9ed31ef1-850d-4612-a113-88d01cf221f5"
@@ -3808,9 +3927,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid f65a0bad-bdf1-4634-946d-fcba45924b94))
-    (pin "4" (uuid 04eebcf2-4c3f-47bf-b2ec-3706f7d6c7f3))
     (pin "2" (uuid 19ed6f14-da2d-46e1-92c0-89e9007ccd19))
     (pin "3" (uuid f02016f3-3109-42e2-b793-11dcf3413551))
+    (pin "4" (uuid 04eebcf2-4c3f-47bf-b2ec-3706f7d6c7f3))
     (instances
       (project "SPARK-MK1"
         (path "/9ed31ef1-850d-4612-a113-88d01cf221f5"
@@ -3835,9 +3954,9 @@
     (property "Datasheet" "~" (at 246.38 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "3" (uuid 677095b7-e499-4f1d-8caa-32d8e4fb6262))
     (pin "1" (uuid 5d85b759-154c-4caa-91f0-6db8ac8fbb90))
     (pin "2" (uuid 14eb3594-a247-44d5-ba12-d39f4573c98f))
+    (pin "3" (uuid 677095b7-e499-4f1d-8caa-32d8e4fb6262))
     (instances
       (project "SPARK-MK1"
         (path "/9ed31ef1-850d-4612-a113-88d01cf221f5"
@@ -4184,9 +4303,9 @@
     (property "Datasheet" "~" (at 246.38 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "3" (uuid 028292e8-3fdd-441b-a606-62519ef33ffc))
     (pin "1" (uuid 3e22bb8a-e878-4849-9b01-c41e98fa181f))
     (pin "2" (uuid ec5e79b8-d30f-44f9-b1f1-52ad34f0234f))
+    (pin "3" (uuid 028292e8-3fdd-441b-a606-62519ef33ffc))
     (instances
       (project "SPARK-MK1"
         (path "/9ed31ef1-850d-4612-a113-88d01cf221f5"
@@ -5034,9 +5153,9 @@
     (property "Datasheet" "~" (at 246.38 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "3" (uuid 4433c028-4c80-4b8b-aa9d-18227212571d))
     (pin "1" (uuid 8b001d69-9ea3-46cd-ad34-224c7d24d33b))
     (pin "2" (uuid 69540889-f577-46ab-b1b1-d4adcd2e4b9e))
+    (pin "3" (uuid 4433c028-4c80-4b8b-aa9d-18227212571d))
     (instances
       (project "SPARK-MK1"
         (path "/9ed31ef1-850d-4612-a113-88d01cf221f5"
@@ -5092,9 +5211,9 @@
     (property "Datasheet" "~" (at 246.38 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "3" (uuid 3e7d08fc-641a-4887-927a-e62f2f93b3c5))
     (pin "1" (uuid ad8e625f-8a40-4857-abc4-1f1aa50bc154))
     (pin "2" (uuid 881a56cf-8700-4e28-bac8-54c52feb3ffe))
+    (pin "3" (uuid 3e7d08fc-641a-4887-927a-e62f2f93b3c5))
     (instances
       (project "SPARK-MK1"
         (path "/9ed31ef1-850d-4612-a113-88d01cf221f5"
@@ -5571,9 +5690,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid af91579f-da03-46fd-9e35-f1873ad95174))
-    (pin "4" (uuid 27bbdb1d-2a9b-4f5d-bc44-a055b6e564b0))
     (pin "2" (uuid 81138a42-0e42-4dd8-bbff-e210d050cc3d))
     (pin "3" (uuid 8cebdbda-c786-4f42-b055-6e9a3b82ba5a))
+    (pin "4" (uuid 27bbdb1d-2a9b-4f5d-bc44-a055b6e564b0))
     (instances
       (project "SPARK-MK1"
         (path "/9ed31ef1-850d-4612-a113-88d01cf221f5"
@@ -5609,6 +5728,31 @@
       (project "TARS-MK4.1-PMB"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
           (reference "C106") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Mechanical:MountingHole_Pad") (at 188.595 180.975 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid cb67844c-89ae-45a5-b2c4-ceca18dd2fa7)
+    (property "Reference" "H104" (at 191.77 178.435 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "MountingHole_Pad" (at 191.77 180.975 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via" (at 188.595 180.975 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 188.595 180.975 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 5b52d88f-6071-4fb6-a457-59d718695394))
+    (instances
+      (project "SPARK-MK1"
+        (path "/9ed31ef1-850d-4612-a113-88d01cf221f5"
+          (reference "H104") (unit 1)
         )
       )
     )
