@@ -24,7 +24,7 @@ There are many ways to contribute to the PCBs that we build for the rocket and i
 
 Every part of constructing a PCB is hands-on, and there are lots of ways to get involved. 
 
-To have your changes reflected on the board, it is important to commit your changes to the Github repository. To learn how to commit changes, check out the [Contributing Guide](https://github.com/ISSUIUC/ISS-PCB/blob/main/CONTRIBUTING.md).
+To have your changes reflected on the board, it is important to commit your changes to the Github repository. To learn how to commit changes, check out the [Contributing Guide](\CONTRIBUTING.md).
 
 
 # Useful Links:
