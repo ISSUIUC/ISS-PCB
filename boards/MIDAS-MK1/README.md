@@ -1,8 +1,8 @@
 # MIDAS MK1
 
-MIDAS MK1 is the fifth generation of SRAD ISS avionics systems and the first to serve as a full rocketry altimeter. Combining the functionality of TARS and advanced pyrotechnic circuitry into a smaller form factor, MIDAS facilitates data collection, telemetry, and execution of inflight events. More than just a single unit, MIDAS is intended for placement on multiple stages of a rocket and can serve as a center of more complex avionics systems.
+MIDAS MK1 is the fifth generation of SRAD ISS avionics systems and the first to serve as a full rocketry altimeter. Combining the functionality of TARS together with the advanced pyrotechnic circuitry seen on many commercial models into a smaller form factor, MIDAS facilitates data collection, telemetry, and execution of inflight events. More than just a single unit, MIDAS is intended for placement on multiple stages of a rocket and can serve as a center of more complex avionics networks such as our onboard live video system.
 
-Three MIDAS boards have been produced, flying to over forty-five thousand feet and providing continuous telemetry for straightforward rocket retrieval.
+Three MIDAS boards have been produced, flying over forty-four thousand feet to a new UIUC altitude record on Kairos II. MIDAS was instrumental during the launch, providing continuous telemetry that allowed for successful retrieval of both stages.
 
 Future iterations of MIDAS will optimize operation and reliability at exceedingly high ranges and altitudes, creating a space-capable altimeter that will take our team to the Kármán line.
 
