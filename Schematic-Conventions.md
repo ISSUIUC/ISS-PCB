@@ -2,7 +2,7 @@
 
 *Author(s): Peter Giannetos*
 
-A non-exhaustive guide of how to create neat KiCAD schematics. Schematics that do not adhear to these guidelines will not be permitted to merged to main.
+A non-exhaustive guide of how to create neat KiCAD schematics. Schematics that do not adhere to these guidelines will not be permitted to merged to main.
 
 ## Table of Contents
 
@@ -31,7 +31,7 @@ Net names should be capitalized and contain no spaces. Use "_" instead of spaces
 
 ### **Labels**
 
-Don't use global labels unless necessiary. Heirarchical labels are the prefered label in most situations.
+Don't use global labels unless necessary. Hierarchical labels are the prefered label in most situations.
 
 <!---
 Three label image idea with names as label
@@ -39,13 +39,13 @@ Three label image idea with names as label
 
 ### **Power Rails**
 
-Power flags should always face upwards, and GND flags should face downwards. Whenever a voltage has a decimal it should be repalced with "V" (Ex: 3.3V = 3V3) Power *labels* may face sideways if a power flag can not be used. Input and output power components such as regulators may have sidways power labels. (Flags are not the same as labels)
+Power flags should always face upwards, and GND flags should face downwards. Whenever a voltage has a decimal it should be replaced with "V" (Ex: 3.3V = 3V3) Power *labels* may face sideways if a power flag can not be used. Input and output power components such as regulators may have sidways power labels. (Flags are not the same as labels)
 
 <img src="images/ISS-PCB-KiCAD-Conventions-Power-Flags.png" alt="Power-Flags" width="100">
 
 ### **Wire Crossing**
 
-Four way intersections are ambigous. At most intersections should be limited to three wires. If there is no green dot then the wires are not connected and just passing over. But unconnected wire crossing should also be avoided if possible.
+Four way intersections are ambiguous. At most intersections should be limited to three wires. If there is no green dot then the wires are not connected and just passing over. But unconnected wire crossing should also be avoided if possible.
 
 <img src="images/ISS-PCB-KiCAD-Conventions-Four-Wire-Connections.png" alt="Four-Wire-Connections" width="200">
 
@@ -59,9 +59,9 @@ Text width should be no smaller than 1.27mm in order to be readable if printed. 
 
 ### Partitions
 
-Components should be sectioned off and grouped based on functionaility. The box title describes the general functionality while the subtitle describes the main component partnumber or other design defining information. Sometimes a subtitle isn't needed. Alterantivly some schematics drawn lines across the full length of the schematic to divide sections. Regardless of the method, always find a way to consitently group similar circuits together and clearly annotate them.
+Components should be sectioned off and grouped based on functionaility. The box title describes the general functionality while the subtitle describes the main component partnumber or other design defining information. Sometimes a subtitle isn't needed. Alternatively some schematics draw lines across the full length of the schematic to divide sections. Regardless of the method, always find a way to consistently group similar circuits together and clearly annotate them.
 
-- Box Boarder: 0 Width (Default)
+- Box Border: 0 Width (Default)
 - Box Title: 2mm Bold
 - Box Subtitle: 2mm Italic
 
@@ -76,7 +76,7 @@ Always fill out the Title Block and add Contributors, Date, Revision, and a Proj
 
 ### Grid Size
 
-Keep the grid size as large a possible. The typical size is 1.27mm for components and wires. Text, labels, and graphics may be placed on a 0.64mm grid for better alignment. The grid size can sometimes be found at a corner of the schematic.
+Keep the grid size as large as possible. The typical size is 1.27mm for components and wires. Text, labels, and graphics may be placed on a 0.64mm grid for better alignment. The grid size can sometimes be found at a corner of the schematic.
 
 <img src="images/ISS-PCB-KiCAD-Conventions-Grid-Size.png" alt="MPN" width="200">
 
@@ -99,7 +99,7 @@ When making custom libraries look towards similar symbols for general formatting
 
 <img src="images/ISS-PCB-KiCAD-Conventions-Resistors.png" alt="Resistors" width="200">
 
-Always use "R_US" resistors and not the rectuanglar "R" resistors.
+Always use "R_US" resistors and not the rectangular "R" resistors.
 
 ### Small Components
 
