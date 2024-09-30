@@ -21,7 +21,7 @@ How to quickly get started via terminal commands. Recommended Terminal: [Git Bas
 
 ## Install KiCad
 
-The Electronic Design Automation (EDA) software used to design our Printed Circuit Boards (PCBs). Install the latest stable release of Kicad v6 and up. This guide was written for KiCad v6.
+The Electronic Design Automation (EDA) software used to design our Printed Circuit Boards (PCBs). Install the latest stable release of KiCad v6 and up. This guide was originally written for KiCad v6 but applies to later versions as well.
 
 1. Download KiCad: [kicad.org/download](https://www.kicad.org/download/)
 
