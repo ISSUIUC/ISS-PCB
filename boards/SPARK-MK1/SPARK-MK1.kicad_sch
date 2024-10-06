@@ -5311,6 +5311,16 @@
 	)
 	(wire
 		(pts
+			(xy 218.44 125.73) (xy 215.9 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7edd2f12-4d46-49cd-ab94-5c4dcf3829d2")
+	)
+	(wire
+		(pts
 			(xy 39.37 137.16) (xy 41.91 137.16)
 		)
 		(stroke
@@ -5671,6 +5681,16 @@
 	)
 	(wire
 		(pts
+			(xy 215.9 130.81) (xy 215.9 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a27a38aa-8e61-4954-9b70-9093dcd6a618")
+	)
+	(wire
+		(pts
 			(xy 375.92 81.28) (xy 375.92 85.09)
 		)
 		(stroke
@@ -5768,6 +5788,16 @@
 			(type default)
 		)
 		(uuid "ab9fefb4-2483-4d68-a4b3-2f55d6e01654")
+	)
+	(wire
+		(pts
+			(xy 215.9 125.73) (xy 215.9 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "acb7a490-8714-4c4a-8d96-b2ea799f25ea")
 	)
 	(wire
 		(pts
@@ -6188,6 +6218,16 @@
 			(type default)
 		)
 		(uuid "ca538414-f713-457f-abe7-a6e981868b7c")
+	)
+	(wire
+		(pts
+			(xy 215.9 128.27) (xy 218.44 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca9498fe-b1bd-4ed2-9ea0-7acafa2cfe27")
 	)
 	(wire
 		(pts
@@ -7176,6 +7216,18 @@
 		(uuid 0b54348a-2608-4890-96e3-9410c87bc9ca)
 	)
 	(rectangle
+		(start 203.2 113.03)
+		(end 236.855 138.43)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 1e76a56b-cd8e-4805-8cd8-fa961132d0d1)
+	)
+	(rectangle
 		(start 157.48 171.45)
 		(end 157.48 171.45)
 		(stroke
@@ -7566,6 +7618,18 @@
 		)
 		(uuid "8f11cff3-6f91-4b06-adbb-3ba39fd1b975")
 	)
+	(text "2.54mm Pin Headers"
+		(exclude_from_sim no)
+		(at 236.22 137.795 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+			)
+			(justify right bottom)
+		)
+		(uuid "9a88f8e0-762d-49e9-a33a-18111a81da43")
+	)
 	(text "Digital Potentiometer (B)\n"
 		(exclude_from_sim no)
 		(at 76.835 17.78 0)
@@ -7625,7 +7689,7 @@
 		(effects
 			(font
 				(size 2 2)
-				(thickness 0.254)
+				(thickness 0.4)
 				(bold yes)
 			)
 			(justify left bottom)
@@ -7677,6 +7741,19 @@
 			(justify right bottom)
 		)
 		(uuid "cba5562d-cc5b-4318-b47d-2d746c42b553")
+	)
+	(text "Power Debug Pin\n\n"
+		(exclude_from_sim no)
+		(at 203.835 120.015 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "cf6492b4-1717-4734-ab28-91c01061080a")
 	)
 	(text "2.54mm Pin Headers"
 		(exclude_from_sim no)
@@ -13738,6 +13815,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 223.52 125.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7d54444d-50ce-4108-90ba-7ebbad7d9540")
+		(property "Reference" "J112"
+			(at 223.52 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 223.52 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
+			(at 223.52 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 223.52 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 223.52 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1b7bc9f7-8546-4085-b182-2ef6459dc8ba")
+		)
+		(pin "2"
+			(uuid "102da0e3-0882-4075-9774-86bbc8177b90")
+		)
+		(instances
+			(project "SPARK-MK1"
+				(path "/9ed31ef1-850d-4612-a113-88d01cf221f5"
+					(reference "J112")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 110.49 96.52 0)
 		(unit 1)
@@ -14752,6 +14897,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 215.9 130.81 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ca81e069-aca0-4cee-8dc6-485f9762e082")
+		(property "Reference" "#PWR0123"
+			(at 215.9 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 215.9 135.255 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 215.9 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 215.9 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e9055a8f-1b43-4c3c-b21d-998389992936")
+		)
+		(instances
+			(project "SPARK-MK1"
+				(path "/9ed31ef1-850d-4612-a113-88d01cf221f5"
+					(reference "#PWR0123")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
 		(at 187.96 143.51 0)
 		(unit 1)
@@ -14813,6 +15025,72 @@
 			(project "SPARK-MK1"
 				(path "/9ed31ef1-850d-4612-a113-88d01cf221f5"
 					(reference "H104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 215.9 123.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cb8724f8-bcd2-4805-a423-3f349779af27")
+		(property "Reference" "#PWR0122"
+			(at 215.9 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 215.9 119.0569 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 215.9 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 215.9 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5b125120-31fa-4155-9a70-15795526250b")
+		)
+		(instances
+			(project "SPARK-MK1"
+				(path "/9ed31ef1-850d-4612-a113-88d01cf221f5"
+					(reference "#PWR0122")
 					(unit 1)
 				)
 			)
