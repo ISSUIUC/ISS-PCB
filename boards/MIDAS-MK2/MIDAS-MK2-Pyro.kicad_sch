@@ -842,7 +842,7 @@
 				)
 			)
 		)
-		(symbol "Isolator:ISO1643DWR"
+		(symbol "Isolator:ISO1644DWR"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -854,7 +854,7 @@
 					)
 				)
 			)
-			(property "Value" "ISO1643DWR"
+			(property "Value" "ISO1644DWR"
 				(at 10.16 -13.97 0)
 				(effects
 					(font
@@ -871,7 +871,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/iso1643.pdf"
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/iso1644.pdf"
 				(at -2.54 -30.48 0)
 				(effects
 					(font
@@ -880,7 +880,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "I2C Isolator with Bidirectional Clock and Data and two 2/0 Auxiliary GPIOs, SOIC-16"
+			(property "Description" "I2C Isolator with Bidirectional Clock and Data and three 2/1 Auxiliary GPIOs, SOIC-16"
 				(at 0 0 0)
 				(effects
 					(font
@@ -907,7 +907,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "ISO1643DWR_1_1"
+			(symbol "ISO1644DWR_1_1"
 				(rectangle
 					(start -7.62 12.7)
 					(end 7.62 -12.7)
@@ -1015,6 +1015,18 @@
 						(type outline)
 					)
 				)
+				(polyline
+					(pts
+						(xy 0.635 -6.985) (xy 0.635 -8.255) (xy -0.381 -7.62) (xy 0.635 -6.985)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(pin power_in line
 					(at -2.54 15.24 270)
 					(length 2.54)
@@ -1033,10 +1045,10 @@
 						)
 					)
 				)
-				(pin no_connect line
-					(at 7.62 10.16 180)
-					(length 2.54) hide
-					(name "NC"
+				(pin input line
+					(at 10.16 -7.62 180)
+					(length 2.54)
+					(name "INC"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1123,10 +1135,10 @@
 						)
 					)
 				)
-				(pin no_connect line
-					(at 7.62 -10.16 180)
+				(pin passive line
+					(at 2.54 -15.24 90)
 					(length 2.54) hide
-					(name "NC"
+					(name "GND2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1159,10 +1171,10 @@
 						)
 					)
 				)
-				(pin no_connect line
-					(at -7.62 10.16 0)
-					(length 2.54) hide
-					(name "NC"
+				(pin power_in line
+					(at -2.54 -15.24 90)
+					(length 2.54)
+					(name "GND1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1249,10 +1261,10 @@
 						)
 					)
 				)
-				(pin no_connect line
-					(at -7.62 -10.16 0)
-					(length 2.54) hide
-					(name "NC"
+				(pin output line
+					(at -10.16 -7.62 0)
+					(length 2.54)
+					(name "OUT"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1267,9 +1279,9 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin passive line
 					(at -2.54 -15.24 90)
-					(length 2.54)
+					(length 2.54) hide
 					(name "GND1"
 						(effects
 							(font
@@ -2747,6 +2759,16 @@
 	)
 	(wire
 		(pts
+			(xy 219.71 222.25) (xy 223.52 222.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b967300-46b1-4e6f-ae85-34a7bf3d526f")
+	)
+	(wire
+		(pts
 			(xy 223.52 123.19) (xy 232.41 123.19)
 		)
 		(stroke
@@ -3467,6 +3489,16 @@
 	)
 	(wire
 		(pts
+			(xy 243.84 222.25) (xy 247.65 222.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6b59f71-ae1b-4aed-b394-f02dd96b3150")
+	)
+	(wire
+		(pts
 			(xy 195.58 133.35) (xy 195.58 135.89)
 		)
 		(stroke
@@ -3947,6 +3979,18 @@
 		)
 		(uuid "9dbfb801-48c5-47cb-9a53-bd67481d1d04")
 	)
+	(hierarchical_label "EXP_INT0"
+		(shape output)
+		(at 219.71 222.25 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9ecd94b1-9918-42c8-b0dc-c2b3b7e07c1d")
+	)
 	(hierarchical_label "VBAT_PYRO"
 		(shape input)
 		(at 30.48 27.94 180)
@@ -4141,13 +4185,13 @@
 	)
 	(hierarchical_label "EXP_INT01"
 		(shape output)
-		(at 218.44 233.68 180)
+		(at 247.65 222.25 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "f1e44524-bb87-4c87-8692-63fa05ac96ce")
 	)
@@ -6471,7 +6515,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Isolator:ISO1643DWR")
+		(lib_id "Isolator:ISO1644DWR")
 		(at 233.68 214.63 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6480,21 +6524,19 @@
 		(dnp no)
 		(uuid "ab4ab1af-9d90-4ec7-b8c6-a1f1f0993ea1")
 		(property "Reference" "U3"
-			(at 225.806 200.66 0)
+			(at 240.03 200.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "ISO1643DWR"
-			(at 238.252 200.152 0)
+		(property "Value" "ISO1644DWR"
+			(at 243.84 228.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm"
@@ -6506,7 +6548,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/iso1643.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/iso1644.pdf"
 			(at 231.14 245.11 0)
 			(effects
 				(font
@@ -6515,7 +6557,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "I2C Isolator with Bidirectional Clock and Data and two 2/0 Auxiliary GPIOs, SOIC-16"
+		(property "Description" "I2C Isolator with Bidirectional Clock and Data and three 2/1 Auxiliary GPIOs, SOIC-16"
 			(at 233.68 214.63 0)
 			(effects
 				(font
