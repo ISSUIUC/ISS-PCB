@@ -7017,126 +7017,6 @@
 				)
 			)
 		)
-		(symbol "power:+3.3V"
-			(power)
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+3.3V"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+3.3V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+3.3V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "power:+3V3"
 			(power)
 			(pin_names
@@ -8268,7 +8148,7 @@
 	)
 	(wire
 		(pts
-			(xy 311.15 229.87) (xy 318.77 229.87)
+			(xy 314.96 229.87) (xy 322.58 229.87)
 		)
 		(stroke
 			(width 0)
@@ -9898,7 +9778,7 @@
 	)
 	(wire
 		(pts
-			(xy 318.77 234.95) (xy 309.88 234.95)
+			(xy 322.58 234.95) (xy 313.69 234.95)
 		)
 		(stroke
 			(width 0)
@@ -10058,7 +9938,7 @@
 	)
 	(wire
 		(pts
-			(xy 309.88 234.95) (xy 309.88 237.49)
+			(xy 313.69 234.95) (xy 313.69 237.49)
 		)
 		(stroke
 			(width 0)
@@ -12257,7 +12137,7 @@
 		(uuid 5c5ffcf2-c7f3-407c-bf7a-6f0c1b7c3d86)
 	)
 	(rectangle
-		(start 14.224 241.3)
+		(start 15.24 241.3)
 		(end 44.45 259.08)
 		(stroke
 			(width 0)
@@ -12389,7 +12269,7 @@
 		(uuid b2a35b94-3a4f-4759-bfe2-a52ac442f4df)
 	)
 	(rectangle
-		(start 297.18 220.98)
+		(start 302.26 220.98)
 		(end 337.82 243.84)
 		(stroke
 			(width 0)
@@ -12998,7 +12878,7 @@
 	)
 	(text "PIEZO BUZZER\n"
 		(exclude_from_sim no)
-		(at 297.815 224.155 0)
+		(at 302.895 224.155 0)
 		(effects
 			(font
 				(face "KiCad Font")
@@ -13009,6 +12889,28 @@
 			(justify left bottom)
 		)
 		(uuid "f845e8ef-d0cf-4afd-ac40-972a46a2125b")
+	)
+	(label "D-"
+		(at 49.53 113.03 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "188cef64-4ce9-470a-b3ad-345dd2fd31a6")
+	)
+	(label "D+"
+		(at 49.53 105.41 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9d877d8a-c7ea-4ff7-8d6b-2709a6cf6cfc")
 	)
 	(hierarchical_label "BOOT_SW"
 		(shape input)
@@ -13300,7 +13202,7 @@
 	)
 	(hierarchical_label "BUZZER"
 		(shape input)
-		(at 311.15 229.87 180)
+		(at 314.96 229.87 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -16338,71 +16240,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 130.81 88.9 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3c290a52-fa24-42be-af70-8e430373b219")
-		(property "Reference" "#PWR0125"
-			(at 130.81 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 130.81 84.836 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 130.81 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 130.81 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 130.81 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7774d0c8-a94b-45a8-beaa-2fa674f696f3")
-		)
-		(instances
-			(project "CAM-MK2"
-				(path "/4bc9b637-9962-4b5d-99ac-40a862ac606f"
-					(reference "#PWR0125")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
 		(at 379.73 139.7 0)
 		(unit 1)
@@ -17063,7 +16900,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 183.134 56.134 90)
 			(effects
 				(font
@@ -18408,7 +18245,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 183.134 59.944 90)
 			(effects
 				(font
@@ -19183,6 +19020,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 125.73 205.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "74a015e1-a68f-4ac5-937d-5fd138cae856")
+		(property "Reference" "#PWR0132"
+			(at 125.73 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 125.73 201.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 125.73 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 125.73 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 125.73 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0c18bca0-d69e-456e-9cd1-ef8999f3f600")
+		)
+		(instances
+			(project "CAM-MK2"
+				(path "/4bc9b637-9962-4b5d-99ac-40a862ac606f"
+					(reference "#PWR0132")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 50.8 213.36 0)
 		(unit 1)
@@ -19625,7 +19527,7 @@
 	)
 	(symbol
 		(lib_id "Device:Buzzer")
-		(at 321.31 232.41 0)
+		(at 325.12 232.41 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19634,7 +19536,7 @@
 		(fields_autoplaced yes)
 		(uuid "828910b5-79bf-4ce7-9d22-f62fac918b69")
 		(property "Reference" "BZ101"
-			(at 325.755 231.14 0)
+			(at 329.565 231.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19643,7 +19545,7 @@
 			)
 		)
 		(property "Value" "Buzzer"
-			(at 325.755 233.68 0)
+			(at 329.565 233.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19652,7 +19554,7 @@
 			)
 		)
 		(property "Footprint" "Buzzer_Beeper:MagneticBuzzer_PUI_AT-0927-TT-6-R"
-			(at 320.675 229.87 90)
+			(at 324.485 229.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19661,7 +19563,7 @@
 			)
 		)
 		(property "Datasheet" "https://api.puiaudio.com/file/563336a2-22a4-46b1-90d7-2afc60580aa4.pdf"
-			(at 320.675 229.87 90)
+			(at 324.485 229.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19670,7 +19572,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 321.31 232.41 0)
+			(at 325.12 232.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20071,7 +19973,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 309.88 237.49 0)
+		(at 313.69 237.49 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -20080,7 +19982,7 @@
 		(fields_autoplaced yes)
 		(uuid "936c8c69-9fdc-4d2c-b34a-579a634ef6f0")
 		(property "Reference" "#PWR0139"
-			(at 309.88 243.84 0)
+			(at 313.69 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20089,7 +19991,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 309.88 242.57 0)
+			(at 313.69 242.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20098,7 +20000,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 309.88 237.49 0)
+			(at 313.69 237.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20107,7 +20009,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 309.88 237.49 0)
+			(at 313.69 237.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20116,7 +20018,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 309.88 237.49 0)
+			(at 313.69 237.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21789,6 +21691,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 200.66 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c2986a4e-8b3f-41cc-81bd-f8864081d684")
+		(property "Reference" "#PWR0125"
+			(at 200.66 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 200.66 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 200.66 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 200.66 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2e2ca63c-3f2f-49c6-81dc-e242f88a7de4")
+		)
+		(instances
+			(project "CAM-MK2"
+				(path "/4bc9b637-9962-4b5d-99ac-40a862ac606f"
+					(reference "#PWR0125")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 58.42 172.72 0)
 		(unit 1)
@@ -22141,72 +22108,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 125.73 205.74 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c8148d3a-2188-4fee-b91d-bb52d6ede671")
-		(property "Reference" "#PWR0123"
-			(at 125.73 209.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 125.73 200.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 125.73 205.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 125.73 205.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 125.73 205.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cf0af5bd-b0d3-40e9-91f7-5f735f11c51d")
-		)
-		(instances
-			(project ""
-				(path "/4bc9b637-9962-4b5d-99ac-40a862ac606f"
-					(reference "#PWR0123")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 20.32 64.77 0)
 		(mirror y)
@@ -22347,6 +22248,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 130.81 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cf597ed3-4427-468e-8de5-1e7865914987")
+		(property "Reference" "#PWR0123"
+			(at 130.81 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 130.81 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 130.81 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130.81 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 130.81 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2210fff1-16ba-4ad0-a41a-1f6c680346e4")
+		)
+		(instances
+			(project "CAM-MK2"
+				(path "/4bc9b637-9962-4b5d-99ac-40a862ac606f"
+					(reference "#PWR0123")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 129.54 161.29 0)
 		(unit 1)
@@ -22479,71 +22445,6 @@
 			(project "CAM-MK2"
 				(path "/4bc9b637-9962-4b5d-99ac-40a862ac606f"
 					(reference "R109")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 200.66 95.25 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d3e8398b-e78e-4fcf-a8e9-c8035b284385")
-		(property "Reference" "#PWR0132"
-			(at 200.66 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 200.66 91.186 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 200.66 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 200.66 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 200.66 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9be7d928-b727-4b2a-92a7-161cfb041565")
-		)
-		(instances
-			(project "CAM-MK2"
-				(path "/4bc9b637-9962-4b5d-99ac-40a862ac606f"
-					(reference "#PWR0132")
 					(unit 1)
 				)
 			)
@@ -22719,7 +22620,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 183.134 67.564 90)
 			(effects
 				(font
@@ -23717,7 +23618,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 183.134 63.754 90)
 			(effects
 				(font
