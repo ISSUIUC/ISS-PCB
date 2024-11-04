@@ -374,6 +374,26 @@
 					)
 				)
 			)
+			(symbol "ADS122C04IRTE_1_1"
+				(pin passive line
+					(at 2.54 -15.24 90)
+					(length 2.54) hide
+					(name "EP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
 		)
 		(symbol "Device:C"
 			(pin_numbers hide)
@@ -8377,100 +8397,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET_Diodes:DMNH6022SSDQ")
-		(at 220.98 68.58 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2ecf48c3-e790-4127-bdf9-73f8d5857af1")
-		(property "Reference" "Q?"
-			(at 223.647 67.3679 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "DMNH6022SSDQ"
-			(at 223.647 69.7921 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SO-8_3.9x4.9mm_P1.27mm"
-			(at 220.98 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMNH6022SSDQ.pdf"
-			(at 220.98 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 220.98 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "db9cae61-58a8-4a92-942a-8a062f336594")
-		)
-		(pin "2"
-			(uuid "5f3660c0-eacc-4710-bef7-c332cced82ae")
-		)
-		(pin "7"
-			(uuid "271a92cb-4e4d-49fc-8931-a82b17a549e8")
-		)
-		(pin "8"
-			(uuid "f234bad5-4600-4de8-9f4e-2dac4fb113c6")
-		)
-		(pin "3"
-			(uuid "262d8519-6254-4768-b3b1-4e2d5f775cf1")
-		)
-		(pin "4"
-			(uuid "22ed3ebf-cfd5-4f47-9dfa-1457ddb26319")
-		)
-		(pin "5"
-			(uuid "ddef9190-0da6-4271-a054-dbbf20c0c7a2")
-		)
-		(pin "6"
-			(uuid "3b5fcd28-65c9-4542-a79b-a55775fd8d6d")
-		)
-		(instances
-			(project "MIDAS-MK2-Pyro"
-				(path "/25e87aab-0877-4568-a426-1d554c854643"
-					(reference "Q?")
-					(unit 1)
-				)
-			)
-			(project "MIDAS-MK2"
-				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "Q205")
-					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_US")
 		(at 101.6 104.14 0)
 		(unit 1)
@@ -8793,6 +8719,9 @@
 		)
 		(pin "10"
 			(uuid "0fb259c8-6130-4fc9-bddb-becd37d3b456")
+		)
+		(pin "17"
+			(uuid "15213d71-f7a7-439f-95df-df4fa4b6c620")
 		)
 		(instances
 			(project ""
@@ -9218,6 +9147,93 @@
 			(project "MIDAS-MK2"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
 					(reference "U201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET_Diodes:DMNH6022SSDQ")
+		(at 139.7 31.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5439f582-873a-47d9-ba11-d9716a10d491")
+		(property "Reference" "Q202"
+			(at 142.24 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "DMNH6022SSDQ"
+			(at 142.24 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SO-8_3.9x4.9mm_P1.27mm"
+			(at 139.7 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMNH6022SSDQ.pdf"
+			(at 139.7 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "22.6A Id, 60Vd, N-Channel MOSFET, SO-8"
+			(at 139.7 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "a19983bc-d3a4-4bf8-8ac0-64a33aaec67d")
+		)
+		(pin "2"
+			(uuid "ff06d93b-31ad-4a8d-bcf1-cc98858faaa6")
+		)
+		(pin "3"
+			(uuid "51f508a8-1d3b-413d-a80a-6276aac29aa0")
+		)
+		(pin "1"
+			(uuid "61ced308-0469-4a4c-bd33-6a9cbd9dbe52")
+		)
+		(pin "8"
+			(uuid "e5d1cc69-39dc-4690-9851-8da26a617526")
+		)
+		(pin "4"
+			(uuid "73cf10fe-a15e-4311-b1fc-ecfed32931c5")
+		)
+		(pin "5"
+			(uuid "e62e09ca-9e50-405a-872c-c432f0a72c2b")
+		)
+		(pin "7"
+			(uuid "7c40dc32-d9f9-4d6f-88a6-05057051ed6b")
+		)
+		(instances
+			(project ""
+				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
+					(reference "Q202")
 					(unit 1)
 				)
 			)
@@ -10223,110 +10239,15 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET_Diodes:DMNH6022SSDQ")
-		(at 220.98 31.75 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7c7be156-843e-4afc-a93a-96ab7afe34cf")
-		(property "Reference" "Q?"
-			(at 223.647 30.5379 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "DMNH6022SSDQ"
-			(at 223.647 32.9621 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SO-8_3.9x4.9mm_P1.27mm"
-			(at 220.98 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMNH6022SSDQ.pdf"
-			(at 220.98 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 220.98 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "db9cae61-58a8-4a92-942a-8a062f336595")
-		)
-		(pin "2"
-			(uuid "5f3660c0-eacc-4710-bef7-c332cced82af")
-		)
-		(pin "7"
-			(uuid "271a92cb-4e4d-49fc-8931-a82b17a549e9")
-		)
-		(pin "8"
-			(uuid "f234bad5-4600-4de8-9f4e-2dac4fb113c7")
-		)
-		(pin "3"
-			(uuid "dfc20870-f9e5-4ba0-a7ef-f04454ab0676")
-		)
-		(pin "4"
-			(uuid "1f070c16-4288-4548-89bf-b5931a6cab2c")
-		)
-		(pin "5"
-			(uuid "7b41f5ac-050a-4605-9d82-c0b6314abbe8")
-		)
-		(pin "6"
-			(uuid "c60f2279-71ea-4fb7-ba0b-2c95afc31bad")
-		)
-		(instances
-			(project "MIDAS-MK2-Pyro"
-				(path "/25e87aab-0877-4568-a426-1d554c854643"
-					(reference "Q?")
-					(unit 1)
-				)
-			)
-			(project "MIDAS-MK2"
-				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "Q204")
-					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET_Diodes:DMNH6022SSDQ")
 		(at 139.7 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7f6276ec-f55f-4b99-88ac-b816431a6591")
-		(property "Reference" "Q?"
-			(at 142.367 67.3679 0)
+		(uuid "86f79a11-1779-4bf2-96ed-390622052982")
+		(property "Reference" "Q203"
+			(at 142.24 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10335,7 +10256,7 @@
 			)
 		)
 		(property "Value" "DMNH6022SSDQ"
-			(at 142.367 69.7921 0)
+			(at 142.24 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10344,15 +10265,6 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SO-8_3.9x4.9mm_P1.27mm"
-			(at 139.7 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMNH6022SSDQ.pdf"
 			(at 139.7 76.2 0)
 			(effects
 				(font
@@ -10361,7 +10273,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMNH6022SSDQ.pdf"
+			(at 139.7 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "22.6A Id, 60Vd, N-Channel MOSFET, SO-8"
 			(at 139.7 68.58 0)
 			(effects
 				(font
@@ -10371,39 +10292,120 @@
 			)
 		)
 		(pin "1"
-			(uuid "148887ad-994b-43ed-9e4c-513c48171837")
-		)
-		(pin "2"
-			(uuid "0949ae83-50da-4da1-ab7b-8a2fa464ff4f")
-		)
-		(pin "7"
-			(uuid "f191f3e7-374c-4789-bec6-116457e33fb8")
+			(uuid "a6543131-2e77-4ac1-9ea1-333e899f28e6")
 		)
 		(pin "8"
-			(uuid "29212ddd-a901-42e3-9de3-1b0686dab108")
+			(uuid "83fe3f20-647c-4e92-8cea-9c83ca068195")
 		)
 		(pin "3"
-			(uuid "8477f01e-d846-474d-bd87-0cbdd74d84c2")
+			(uuid "82336a76-ed25-4b1a-bb66-760d969f07a2")
 		)
-		(pin "4"
-			(uuid "18dd6e25-f41d-4137-9204-63e651dad0f0")
+		(pin "2"
+			(uuid "a361e2b0-d0f3-4d13-873c-31b8a3ec84b4")
 		)
 		(pin "5"
-			(uuid "5a4abd8b-d2be-43c1-b866-959b463a9eef")
+			(uuid "ca2fca84-8b4a-4324-8b64-5972e1194125")
+		)
+		(pin "4"
+			(uuid "f4299757-1d20-40a3-9afb-4bd0f3368932")
 		)
 		(pin "6"
-			(uuid "46d09c03-bb0b-4d04-90ba-1fb6caf4d928")
+			(uuid "6ac55e6a-da3b-49db-80fc-23c42ed1087d")
+		)
+		(pin "7"
+			(uuid "04b568e3-0e9e-4193-9ed8-8522c500414b")
 		)
 		(instances
-			(project "MIDAS-MK2-Pyro"
-				(path "/25e87aab-0877-4568-a426-1d554c854643"
-					(reference "Q?")
+			(project ""
+				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
+					(reference "Q203")
 					(unit 1)
 				)
 			)
-			(project "MIDAS-MK2"
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET_Diodes:DMNH6022SSDQ")
+		(at 220.98 31.75 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9d514159-36ab-4176-b20c-a10a4448e82b")
+		(property "Reference" "Q202"
+			(at 223.52 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "DMNH6022SSDQ"
+			(at 223.52 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SO-8_3.9x4.9mm_P1.27mm"
+			(at 220.98 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMNH6022SSDQ.pdf"
+			(at 220.98 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "22.6A Id, 60Vd, N-Channel MOSFET, SO-8"
+			(at 220.98 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "a19983bc-d3a4-4bf8-8ac0-64a33aaec67d")
+		)
+		(pin "2"
+			(uuid "ff06d93b-31ad-4a8d-bcf1-cc98858faaa6")
+		)
+		(pin "3"
+			(uuid "51f508a8-1d3b-413d-a80a-6276aac29aa0")
+		)
+		(pin "1"
+			(uuid "61ced308-0469-4a4c-bd33-6a9cbd9dbe52")
+		)
+		(pin "8"
+			(uuid "e5d1cc69-39dc-4690-9851-8da26a617526")
+		)
+		(pin "4"
+			(uuid "73cf10fe-a15e-4311-b1fc-ecfed32931c5")
+		)
+		(pin "5"
+			(uuid "e62e09ca-9e50-405a-872c-c432f0a72c2b")
+		)
+		(pin "7"
+			(uuid "7c40dc32-d9f9-4d6f-88a6-05057051ed6b")
+		)
+		(instances
+			(project ""
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "Q203")
+					(reference "Q202")
 					(unit 2)
 				)
 			)
@@ -10496,100 +10498,6 @@
 			(project "MIDAS-MK2"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
 					(reference "Q201")
-					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET_Diodes:DMNH6022SSDQ")
-		(at 139.7 31.75 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a49e4533-0deb-41de-aa48-6657e6548a6e")
-		(property "Reference" "Q?"
-			(at 142.367 30.5379 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "DMNH6022SSDQ"
-			(at 142.367 32.9621 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SO-8_3.9x4.9mm_P1.27mm"
-			(at 139.7 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMNH6022SSDQ.pdf"
-			(at 139.7 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 139.7 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "db9cae61-58a8-4a92-942a-8a062f336597")
-		)
-		(pin "2"
-			(uuid "5f3660c0-eacc-4710-bef7-c332cced82b1")
-		)
-		(pin "7"
-			(uuid "271a92cb-4e4d-49fc-8931-a82b17a549eb")
-		)
-		(pin "8"
-			(uuid "f234bad5-4600-4de8-9f4e-2dac4fb113c9")
-		)
-		(pin "3"
-			(uuid "9146d368-7a89-419e-a6d6-76e7d891dd93")
-		)
-		(pin "4"
-			(uuid "9f8dc2ac-4046-4ea4-ba93-21ef356047fb")
-		)
-		(pin "5"
-			(uuid "897f0338-2cec-4f85-8ba4-3eca2cc48e4c")
-		)
-		(pin "6"
-			(uuid "4775ebae-2993-40f0-87a7-003dad748c1c")
-		)
-		(instances
-			(project "MIDAS-MK2-Pyro"
-				(path "/25e87aab-0877-4568-a426-1d554c854643"
-					(reference "Q?")
-					(unit 1)
-				)
-			)
-			(project "MIDAS-MK2"
-				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "Q202")
 					(unit 2)
 				)
 			)
@@ -11005,7 +10913,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm"
+		(property "Footprint" "Package_SO:VSSOP-8_3x3mm_P0.65mm"
 			(at 99.06 153.34 0)
 			(effects
 				(font
@@ -11150,6 +11058,93 @@
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
 					(reference "R211")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET_Diodes:DMNH6022SSDQ")
+		(at 220.98 68.58 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ce60b32a-200d-412f-a1a6-b545def083cf")
+		(property "Reference" "Q203"
+			(at 223.52 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "DMNH6022SSDQ"
+			(at 223.52 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SO-8_3.9x4.9mm_P1.27mm"
+			(at 220.98 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMNH6022SSDQ.pdf"
+			(at 220.98 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "22.6A Id, 60Vd, N-Channel MOSFET, SO-8"
+			(at 220.98 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a6543131-2e77-4ac1-9ea1-333e899f28e6")
+		)
+		(pin "8"
+			(uuid "83fe3f20-647c-4e92-8cea-9c83ca068195")
+		)
+		(pin "3"
+			(uuid "82336a76-ed25-4b1a-bb66-760d969f07a2")
+		)
+		(pin "2"
+			(uuid "a361e2b0-d0f3-4d13-873c-31b8a3ec84b4")
+		)
+		(pin "5"
+			(uuid "ca2fca84-8b4a-4324-8b64-5972e1194125")
+		)
+		(pin "4"
+			(uuid "f4299757-1d20-40a3-9afb-4bd0f3368932")
+		)
+		(pin "6"
+			(uuid "6ac55e6a-da3b-49db-80fc-23c42ed1087d")
+		)
+		(pin "7"
+			(uuid "04b568e3-0e9e-4193-9ed8-8522c500414b")
+		)
+		(instances
+			(project ""
+				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
+					(reference "Q203")
+					(unit 2)
 				)
 			)
 		)
