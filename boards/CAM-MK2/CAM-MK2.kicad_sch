@@ -7848,16 +7848,6 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 251.46) (xy 29.21 251.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "01136e83-211c-4326-ac60-1b2abbdacd64")
-	)
-	(wire
-		(pts
 			(xy 119.38 166.37) (xy 119.38 167.64)
 		)
 		(stroke
@@ -8818,6 +8808,16 @@
 	)
 	(wire
 		(pts
+			(xy 29.21 248.92) (xy 31.75 248.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b8fb5e5-4713-4fef-83cb-e663929f08bb")
+	)
+	(wire
+		(pts
 			(xy 95.25 38.1) (xy 95.25 39.37)
 		)
 		(stroke
@@ -8975,16 +8975,6 @@
 			(type default)
 		)
 		(uuid "48412503-ebe1-4e8e-96d7-4e0ca7c51743")
-	)
-	(wire
-		(pts
-			(xy 19.05 248.92) (xy 19.05 251.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4852f3b2-c04d-451b-a9f8-f4aca9896f3e")
 	)
 	(wire
 		(pts
@@ -11018,16 +11008,6 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 248.92) (xy 19.05 248.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c167e87c-80b1-4b38-92e1-dd7af159d2b8")
-	)
-	(wire
-		(pts
 			(xy 349.25 59.69) (xy 353.06 59.69)
 		)
 		(stroke
@@ -11035,6 +11015,16 @@
 			(type default)
 		)
 		(uuid "c26fd274-780c-451f-8a19-e68c1bacf02f")
+	)
+	(wire
+		(pts
+			(xy 29.21 252.73) (xy 29.21 251.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c278b602-0b04-4d08-a73a-12be07de6542")
 	)
 	(wire
 		(pts
@@ -11928,6 +11918,16 @@
 	)
 	(wire
 		(pts
+			(xy 29.21 251.46) (xy 31.75 251.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb11bd8a-19fb-4c2e-b57c-4fb48eaaaa1c")
+	)
+	(wire
+		(pts
 			(xy 265.43 200.66) (xy 278.13 200.66)
 		)
 		(stroke
@@ -12410,7 +12410,7 @@
 	)
 	(rectangle
 		(start 15.24 241.3)
-		(end 44.45 259.08)
+		(end 50.8 259.08)
 		(stroke
 			(width 0)
 			(type dash)
@@ -12750,9 +12750,9 @@
 		)
 		(uuid "37ec49b6-0b4d-439c-943a-8ce2b2e984a9")
 	)
-	(text "Connector: JST PH S2B-K"
+	(text "Connector: Molex Micro-Lock Plus"
 		(exclude_from_sim no)
-		(at 44.196 258.826 0)
+		(at 50.165 258.445 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12977,7 +12977,7 @@
 	)
 	(text "Connectors: Molex Micro-Lock Plus"
 		(exclude_from_sim no)
-		(at 267.462 54.864 0)
+		(at 267.335 55.245 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13339,6 +13339,18 @@
 			(justify left)
 		)
 		(uuid "1276666d-e3bb-4872-85fd-51b3f8883c3f")
+	)
+	(hierarchical_label "VBAT"
+		(shape output)
+		(at 29.21 248.92 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1506a210-4f94-4076-8ffc-6bc811e8b34a")
 	)
 	(hierarchical_label "USB_D+"
 		(shape bidirectional)
@@ -13867,18 +13879,6 @@
 			(justify right)
 		)
 		(uuid "894fcbe3-f8e8-4ab1-a84e-dfacccf9214c")
-	)
-	(hierarchical_label "VBAT"
-		(shape output)
-		(at 26.67 251.46 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "9073b7c9-2b24-4d20-827c-d718ce52c72a")
 	)
 	(hierarchical_label "SPI_MISO"
 		(shape output)
@@ -14886,6 +14886,76 @@
 			(project "MIDAS-MK1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/6a3d8d20-17ea-4f21-96e4-14cd4e641450"
 					(reference "R304")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 36.83 248.92 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "13631878-7e58-44b5-a25d-a3c4dbb4b8ea")
+		(property "Reference" "J102"
+			(at 38.735 250.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2157601002"
+			(at 30.48 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_Molex_Micro-Lock-Plus:Molex_Micro-Lock_2200980271_1x02_P1.25mm_Horizontal"
+			(at 36.83 248.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 36.83 248.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 36.83 248.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c13b40bd-a55d-4af1-a193-36ef85b202d1")
+		)
+		(pin "2"
+			(uuid "e81f9951-7f80-4dd2-91d1-2e853633fdd8")
+		)
+		(instances
+			(project "CAM-MK2"
+				(path "/4bc9b637-9962-4b5d-99ac-40a862ac606f"
+					(reference "J102")
 					(unit 1)
 				)
 			)
@@ -17929,7 +17999,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 19.05 251.46 0)
+		(at 29.21 252.73 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17937,7 +18007,7 @@
 		(dnp no)
 		(uuid "61557e15-536e-4b46-960b-53e70d7e5ed9")
 		(property "Reference" "#PWR0101"
-			(at 19.05 257.81 0)
+			(at 29.21 259.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17946,7 +18016,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 22.86 254 0)
+			(at 33.02 255.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17955,7 +18025,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 19.05 251.46 0)
+			(at 29.21 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17964,7 +18034,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 19.05 251.46 0)
+			(at 29.21 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17973,7 +18043,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 19.05 251.46 0)
+			(at 29.21 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24003,83 +24073,6 @@
 			(project "CAM-MK2"
 				(path "/4bc9b637-9962-4b5d-99ac-40a862ac606f"
 					(reference "C118")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 34.29 251.46 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "db13e427-0f04-48a6-8aa1-5d58be71b557")
-		(property "Reference" "J102"
-			(at 36.195 250.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2157601002"
-			(at 27.94 254 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal"
-			(at 34.29 251.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 34.29 251.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 34.29 251.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0663045b-6801-4905-b037-d4a6d461b307")
-		)
-		(pin "2"
-			(uuid "11b62b20-d6d3-4d3d-ab14-46302477c081")
-		)
-		(instances
-			(project "CAM-MK2"
-				(path "/4bc9b637-9962-4b5d-99ac-40a862ac606f"
-					(reference "J102")
-					(unit 1)
-				)
-			)
-			(project "SPARK-MK1"
-				(path "/9ed31ef1-850d-4612-a113-88d01cf221f5"
-					(reference "J101")
 					(unit 1)
 				)
 			)
