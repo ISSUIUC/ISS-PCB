@@ -6,7 +6,7 @@
 	(paper "A3")
 	(title_block
 		(title "Stargazer Camera Board MK2")
-		(date "2024-01-31")
+		(date "2024-12-01")
 		(rev "A")
 		(company "Illinois Space Society")
 		(comment 3 "Michael Griegel, Rohan Das, Shiv Bahl, Thomas McManamen")
@@ -7797,15 +7797,15 @@
 		(uuid "4e45fc77-3393-4296-9dd5-ab281253a249")
 	)
 	(no_connect
-		(at 379.73 142.24)
+		(at 344.17 146.05)
 		(uuid "4f6f6762-b257-4934-abe7-3eb5f02a9e36")
 	)
 	(no_connect
-		(at 379.73 135.89)
+		(at 344.17 139.7)
 		(uuid "68492046-8bed-4855-a651-772cbc830760")
 	)
 	(no_connect
-		(at 379.73 129.54)
+		(at 344.17 133.35)
 		(uuid "798abbae-8823-44c0-bbe4-e0a807c2f835")
 	)
 	(no_connect
@@ -7825,7 +7825,7 @@
 		(uuid "bc9a6fc5-2625-4b95-b07f-7c6d8125e433")
 	)
 	(no_connect
-		(at 379.73 148.59)
+		(at 344.17 152.4)
 		(uuid "d9765163-e5ef-4626-bf23-34bfdcefdb31")
 	)
 	(no_connect
@@ -8678,6 +8678,16 @@
 	)
 	(wire
 		(pts
+			(xy 379.73 137.16) (xy 383.54 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35129e09-2991-485c-84f9-4426462aea03")
+	)
+	(wire
+		(pts
 			(xy 177.8 35.56) (xy 177.8 38.1)
 		)
 		(stroke
@@ -8735,6 +8745,16 @@
 			(type default)
 		)
 		(uuid "37f5a890-21e0-4efd-8280-39fcc905fe65")
+	)
+	(wire
+		(pts
+			(xy 379.73 134.62) (xy 383.54 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3807a638-979b-4719-82b2-45bdf7bd424a")
 	)
 	(wire
 		(pts
@@ -9465,6 +9485,16 @@
 			(type default)
 		)
 		(uuid "64b7ca76-209a-4c87-911a-88d95727a02d")
+	)
+	(wire
+		(pts
+			(xy 379.73 139.7) (xy 383.54 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65c7d4d9-a990-48b2-b179-53a319f349a8")
 	)
 	(wire
 		(pts
@@ -12421,8 +12451,8 @@
 		(uuid 628df699-4b0e-4b33-bdd9-16f7bffc76a7)
 	)
 	(rectangle
-		(start 374.65 119.38)
-		(end 400.05 149.86)
+		(start 339.09 123.19)
+		(end 363.22 153.67)
 		(stroke
 			(width 0)
 			(type dash)
@@ -12503,6 +12533,18 @@
 			(type none)
 		)
 		(uuid 912253ad-0dcb-46f8-a658-5ce83a3740a4)
+	)
+	(rectangle
+		(start 364.49 123.19)
+		(end 400.05 149.86)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid a63fc18c-b556-4b27-9ee9-0950fc012ed1)
 	)
 	(rectangle
 		(start 167.64 142.24)
@@ -12937,6 +12979,19 @@
 		)
 		(uuid "7b8ac2b8-c8e3-4da0-8355-f46d119aea75")
 	)
+	(text "SPI Debug Pins\n\n"
+		(exclude_from_sim no)
+		(at 364.998 127.762 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "7dd360e1-8e88-48f9-a225-1d07f8d778e9")
+	)
 	(text "Power Debug Pins\n\n"
 		(exclude_from_sim no)
 		(at 339.598 159.512 0)
@@ -13087,7 +13142,7 @@
 	)
 	(text "Mounting Holes"
 		(exclude_from_sim no)
-		(at 375.285 122.555 0)
+		(at 339.725 126.365 0)
 		(effects
 			(font
 				(face "KiCad Font")
@@ -13099,7 +13154,7 @@
 		)
 		(uuid "d100d3b2-87a4-4205-9eb6-08800c3675a1")
 	)
-	(text "Connector: Molex PicoBlade"
+	(text "Connector: JST B3B-PH-K-S"
 		(exclude_from_sim no)
 		(at 337.185 217.17 0)
 		(effects
@@ -13930,7 +13985,7 @@
 	)
 	(hierarchical_label "CANH"
 		(shape bidirectional)
-		(at 167.64 57.15 180)
+		(at 167.64 64.77 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13975,6 +14030,18 @@
 			(justify right)
 		)
 		(uuid "9922c92b-e18c-4a87-bc9e-b825b59b55af")
+	)
+	(hierarchical_label "SPI_SCK"
+		(shape bidirectional)
+		(at 379.73 134.62 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9c07c8df-f0d3-4cff-be1c-39c4afeafce7")
 	)
 	(hierarchical_label "VTX_POW"
 		(shape input)
@@ -14047,6 +14114,18 @@
 			(justify right)
 		)
 		(uuid "a82bb35e-3b58-4111-8503-238c9ae52de6")
+	)
+	(hierarchical_label "SPI_MISO"
+		(shape bidirectional)
+		(at 379.73 137.16 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "aaa0da95-ee31-4078-985e-36e5f09fb272")
 	)
 	(hierarchical_label "VIDEO_1"
 		(shape input)
@@ -14134,7 +14213,7 @@
 	)
 	(hierarchical_label "CANL"
 		(shape bidirectional)
-		(at 167.64 64.77 180)
+		(at 167.64 57.15 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -14203,6 +14282,18 @@
 			(justify right)
 		)
 		(uuid "c14eeae1-dfa9-4471-8ac4-b7514351d2b7")
+	)
+	(hierarchical_label "SPI_MOSI"
+		(shape bidirectional)
+		(at 379.73 139.7 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c3a0c1c1-5914-434f-acf0-41bb8a7d9449")
 	)
 	(hierarchical_label "VIDEO_OUT"
 		(shape output)
@@ -16670,7 +16761,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 379.73 139.7 0)
+		(at 344.17 143.51 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16679,7 +16770,7 @@
 		(fields_autoplaced yes)
 		(uuid "3e45d106-30af-41b2-8306-e56cec061313")
 		(property "Reference" "H103"
-			(at 382.905 138.43 0)
+			(at 347.345 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16688,7 +16779,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 382.905 140.97 0)
+			(at 347.345 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16697,7 +16788,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
-			(at 379.73 139.7 0)
+			(at 344.17 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16706,7 +16797,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 379.73 139.7 0)
+			(at 344.17 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16715,7 +16806,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 379.73 139.7 0)
+			(at 344.17 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17025,7 +17116,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 379.73 146.05 0)
+		(at 344.17 149.86 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17034,7 +17125,7 @@
 		(fields_autoplaced yes)
 		(uuid "45c70dbb-0b4d-4d08-b648-9ba54e2fb673")
 		(property "Reference" "H104"
-			(at 382.905 144.78 0)
+			(at 347.345 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17043,7 +17134,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 382.905 147.32 0)
+			(at 347.345 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17052,7 +17143,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
-			(at 379.73 146.05 0)
+			(at 344.17 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17061,7 +17152,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 379.73 146.05 0)
+			(at 344.17 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17070,7 +17161,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 379.73 146.05 0)
+			(at 344.17 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21966,7 +22057,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 379.73 127 0)
+		(at 344.17 130.81 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21975,7 +22066,7 @@
 		(fields_autoplaced yes)
 		(uuid "b345db0c-680e-4b50-b731-ae9a26a39af7")
 		(property "Reference" "H101"
-			(at 382.905 125.73 0)
+			(at 347.345 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21984,7 +22075,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 382.905 128.27 0)
+			(at 347.345 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21993,7 +22084,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
-			(at 379.73 127 0)
+			(at 344.17 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22002,7 +22093,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 379.73 127 0)
+			(at 344.17 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22011,7 +22102,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 379.73 127 0)
+			(at 344.17 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25389,6 +25480,79 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 388.62 137.16 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f6d0e90e-6c28-41ed-bba6-a6992771a43d")
+		(property "Reference" "J109"
+			(at 391.16 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x03"
+			(at 391.16 138.4299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x03_P1.00mm_Vertical"
+			(at 388.62 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 388.62 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 388.62 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a2caf509-b8ad-4e9e-98b9-9d8246317b9c")
+		)
+		(pin "2"
+			(uuid "61af61f9-b524-4d64-8e0c-7d0c26fb322b")
+		)
+		(pin "3"
+			(uuid "d4945895-f81e-4e15-a6c5-fbd7ee3322db")
+		)
+		(instances
+			(project ""
+				(path "/4bc9b637-9962-4b5d-99ac-40a862ac606f"
+					(reference "J109")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 111.76 55.88 0)
 		(unit 1)
@@ -25649,7 +25813,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 379.73 133.35 0)
+		(at 344.17 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -25658,7 +25822,7 @@
 		(fields_autoplaced yes)
 		(uuid "fa3fd01b-dd23-41e4-afff-cdcf597af041")
 		(property "Reference" "H102"
-			(at 382.905 132.08 0)
+			(at 347.345 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25667,7 +25831,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 382.905 134.62 0)
+			(at 347.345 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25676,7 +25840,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
-			(at 379.73 133.35 0)
+			(at 344.17 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25685,7 +25849,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 379.73 133.35 0)
+			(at 344.17 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25694,7 +25858,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 379.73 133.35 0)
+			(at 344.17 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
