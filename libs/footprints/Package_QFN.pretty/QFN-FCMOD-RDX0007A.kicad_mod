@@ -68,34 +68,6 @@
 	(attr through_hole)
 	(fp_poly
 		(pts
-			(xy -1.899999 -1.799999) (xy -1.799999 -1.899999) (xy -0.924999 -1.900001) (xy -0.825 -1.799999)
-			(xy -0.825 -1.634) (xy -0.796 -1.562999) (xy -0.506999 -1.274) (xy -0.436001 -1.244999) (xy -0.389999 -1.245001)
-			(xy -0.289999 -1.144999) (xy -0.289999 -0.825) (xy -0.389999 -0.725) (xy -1.799999 -0.725) (xy -1.899999 -0.825)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill solid)
-		(layer "F.Cu")
-		(uuid "b75f0c97-4eec-4188-9d05-8d6a7ad441c9")
-	)
-	(fp_poly
-		(pts
-			(xy 1.900001 -1.799999) (xy 1.799999 -1.899999) (xy 0.924999 -1.899999) (xy 0.825 -1.799999) (xy 0.825 -1.634)
-			(xy 0.796 -1.562999) (xy 0.506999 -1.274) (xy 0.435999 -1.244999) (xy 0.389999 -1.245001) (xy 0.289999 -1.144999)
-			(xy 0.289999 -0.825) (xy 0.389999 -0.725) (xy 1.799999 -0.725) (xy 1.899999 -0.825)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill solid)
-		(layer "F.Cu")
-		(uuid "c6d31100-8c0b-4523-bfad-12da2c204701")
-	)
-	(fp_poly
-		(pts
 			(xy -1.849999 -1.575001) (xy -1.799999 -1.625001) (xy -1.45 -1.625001) (xy -1.4 -1.575001) (xy -1.4 -1.425001)
 			(xy -1.45 -1.375001) (xy -1.799999 -1.375001) (xy -1.849999 -1.425001)
 		)
@@ -487,142 +459,82 @@
 			)
 		)
 	)
-	(pad "1" smd circle
+	(pad "1" smd custom
 		(at -1.312499 -1.312499)
 		(size 1.024989 1.024989)
 		(layers "F.Cu")
+		(options
+			(clearance outline)
+			(anchor circle)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy -0.5875 -0.4875) (xy -0.4875 -0.5875) (xy 0.3875 -0.587502) (xy 0.487499 -0.4875) (xy 0.487499 -0.321501)
+					(xy 0.516499 -0.2505) (xy 0.8055 0.038499) (xy 0.876498 0.0675) (xy 0.9225 0.067498) (xy 1.0225 0.1675)
+					(xy 1.0225 0.487499) (xy 0.9225 0.587499) (xy -0.4875 0.587499) (xy -0.5875 0.487499)
+				)
+				(width 0)
+				(fill yes)
+			)
+		)
 		(uuid "6153fb17-f8f9-44fa-a17b-588b545105f1")
 	)
-	(pad "2" thru_hole circle
-		(at -1.649999 0.165001)
-		(size 0.499999 0.499999)
-		(drill 0.2032)
-		(layers "*.Cu" "*.Mask")
-		(remove_unused_layers no)
-		(uuid "784e0ec6-47a4-4928-8eee-931d4cbb5e62")
-	)
-	(pad "2" thru_hole circle
-		(at -1.649999 0.665)
-		(size 0.499999 0.499999)
-		(drill 0.2032)
-		(layers "*.Cu" "*.Mask")
-		(remove_unused_layers no)
-		(uuid "6dbc0343-ad9f-4b50-9bfb-5ba816afb3eb")
-	)
-	(pad "2" thru_hole circle
-		(at -1.649999 1.164999)
-		(size 0.499999 0.499999)
-		(drill 0.2032)
-		(layers "*.Cu" "*.Mask")
-		(remove_unused_layers no)
-		(uuid "40ac98b7-fe92-477e-9f94-931eb6be557a")
-	)
-	(pad "2" smd rect
+	(pad "2" smd roundrect
 		(at -1.15 0.675)
 		(size 1.5 2.3)
 		(layers "F.Cu")
+		(roundrect_rratio 0.1)
 		(uuid "8bba1fc3-0382-41d1-bd55-31ebe3a55792")
 	)
-	(pad "2" thru_hole circle
-		(at -0.650001 0.165001)
-		(size 0.499999 0.499999)
-		(drill 0.2032)
-		(layers "*.Cu" "*.Mask")
-		(remove_unused_layers no)
-		(uuid "3a628c5d-397d-4555-9481-297f28eca525")
-	)
-	(pad "2" thru_hole circle
-		(at -0.650001 0.665)
-		(size 0.499999 0.499999)
-		(drill 0.2032)
-		(layers "*.Cu" "*.Mask")
-		(remove_unused_layers no)
-		(uuid "8eb0662f-9f7b-49b7-ba2e-5691d6ea0fb5")
-	)
-	(pad "2" thru_hole circle
-		(at -0.650001 1.164999)
-		(size 0.499999 0.499999)
-		(drill 0.2032)
-		(layers "*.Cu" "*.Mask")
-		(remove_unused_layers no)
-		(uuid "755cd770-ac26-4b1b-ac62-733288545bed")
-	)
-	(pad "3" thru_hole circle
-		(at 0.650001 0.165001)
-		(size 0.499999 0.499999)
-		(drill 0.2032)
-		(layers "*.Cu" "*.Mask")
-		(remove_unused_layers no)
-		(uuid "7d015af4-39c7-49ae-9905-eefb417cba9d")
-	)
-	(pad "3" thru_hole circle
-		(at 0.650001 0.665)
-		(size 0.499999 0.499999)
-		(drill 0.2032)
-		(layers "*.Cu" "*.Mask")
-		(remove_unused_layers no)
-		(uuid "f9ff1104-27b0-46f3-b8be-621bdcfe95f3")
-	)
-	(pad "3" thru_hole circle
-		(at 0.650001 1.164999)
-		(size 0.499999 0.499999)
-		(drill 0.2032)
-		(layers "*.Cu" "*.Mask")
-		(remove_unused_layers no)
-		(uuid "5841b903-2479-4bbe-80cc-9b58cdc1976a")
-	)
-	(pad "3" smd rect
+	(pad "3" smd roundrect
 		(at 1.15 0.675)
 		(size 1.5 2.3)
 		(layers "F.Cu")
+		(roundrect_rratio 0.1)
 		(uuid "3dbcc165-6727-481b-8a33-71b06b00a43b")
 	)
-	(pad "3" thru_hole circle
-		(at 1.649999 0.165001)
-		(size 0.499999 0.499999)
-		(drill 0.2032)
-		(layers "*.Cu" "*.Mask")
-		(remove_unused_layers no)
-		(uuid "b604edc6-ca08-4237-886e-3d87e69beaa8")
-	)
-	(pad "3" thru_hole circle
-		(at 1.649999 0.665)
-		(size 0.499999 0.499999)
-		(drill 0.2032)
-		(layers "*.Cu" "*.Mask")
-		(remove_unused_layers no)
-		(uuid "13aaca1c-8744-48ce-9d51-a87781b3a52a")
-	)
-	(pad "3" thru_hole circle
-		(at 1.649999 1.164999)
-		(size 0.499999 0.499999)
-		(drill 0.2032)
-		(layers "*.Cu" "*.Mask")
-		(remove_unused_layers no)
-		(uuid "a54bcf29-e458-474c-9f0d-04905725e31a")
-	)
-	(pad "4" smd circle
+	(pad "4" smd custom
 		(at 1.281405 -1.275778)
 		(size 0.991403 0.991403)
 		(layers "F.Cu")
+		(options
+			(clearance outline)
+			(anchor circle)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy 0.618596 -0.524221) (xy 0.518594 -0.624221) (xy -0.356406 -0.624221) (xy -0.456405 -0.524221)
+					(xy -0.456405 -0.358222) (xy -0.485405 -0.287221) (xy -0.774406 0.001778) (xy -0.845406 0.030779)
+					(xy -0.891406 0.030777) (xy -0.991406 0.130779) (xy -0.991406 0.450778) (xy -0.891406 0.550778)
+					(xy 0.518594 0.550778) (xy 0.618594 0.450778)
+				)
+				(width 0)
+				(fill yes)
+			)
+		)
 		(uuid "fd19e800-a2d6-4715-a4e4-6e9f65b53f2e")
 	)
-	(pad "5" smd rect
+	(pad "5" smd roundrect
 		(at 0.499999 -1.899999)
 		(size 0.22 0.599999)
 		(layers "F.Cu" "F.Paste")
+		(roundrect_rratio 0.25)
 		(uuid "a87de3c9-e2c0-4f6f-98d3-373dee6bd267")
 	)
-	(pad "6" smd rect
+	(pad "6" smd roundrect
 		(at 0 -1.899999)
 		(size 0.22 0.599999)
 		(layers "F.Cu" "F.Paste")
+		(roundrect_rratio 0.25)
 		(uuid "fab80861-bc23-4805-a7f7-cc3702a30474")
 	)
-	(pad "7" smd rect
+	(pad "7" smd roundrect
 		(at -0.499999 -1.899999)
 		(size 0.22 0.599999)
 		(layers "F.Cu" "F.Paste")
+		(roundrect_rratio 0.25)
 		(uuid "970238de-07ad-4f39-afab-3978f8c53eeb")
 	)
 	(zone
@@ -640,7 +552,7 @@
 			(tracks not_allowed)
 			(vias not_allowed)
 			(pads not_allowed)
-			(copperpour allowed)
+			(copperpour not_allowed)
 			(footprints allowed)
 		)
 		(fill
