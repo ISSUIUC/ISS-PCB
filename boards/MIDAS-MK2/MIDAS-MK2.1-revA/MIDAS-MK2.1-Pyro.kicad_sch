@@ -790,6 +790,151 @@
 				)
 			)
 		)
+		(symbol "Device:D_Schottky"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D_Schottky"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Schottky diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode Schottky"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_Schottky_0_1"
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_Schottky_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:FerriteBead"
 			(pin_numbers hide)
 			(pin_names
@@ -2572,224 +2717,6 @@
 				)
 			)
 		)
-		(symbol "Power_Ideal_Diode:LM74670-Q1"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at -11.43 12.7 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Value" "LM74670-Q1"
-				(at 3.81 12.7 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Footprint" "Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm"
-				(at 44.45 -94.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://www.ti.com/lit/gpn/lm74670-q1"
-				(at 44.45 -194.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Description" "0.48V to 42V, zero IQ automotive ideal diode rectifier controller with 70uA gate drive"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "0.48V to 42V zero IQ automotive ideal diode rectifier controller 70uA gate drive"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "LM74670-Q1_1_1"
-				(rectangle
-					(start -13.97 10.16)
-					(end 13.97 -10.16)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin bidirectional line
-					(at 5.08 -12.7 90)
-					(length 2.54)
-					(name "VCAPL"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 1.27 12.7 270)
-					(length 2.54)
-					(name "GATE_PULL_DOWN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at -16.51 2.54 0)
-					(length 2.54) hide
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -16.51 7.62 0)
-					(length 2.54)
-					(name "ANODE"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at -16.51 2.54 0)
-					(length 2.54) hide
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at -1.27 12.7 270)
-					(length 2.54)
-					(name "GATE_DRIVE"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -5.08 -12.7 90)
-					(length 2.54)
-					(name "VCAPH"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 16.51 7.62 180)
-					(length 2.54)
-					(name "CATHODE"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Sensor_Power_Texas:INA745x"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -3928,12 +3855,6 @@
 		(uuid "1f9960eb-646d-4b92-85f6-9eb05940e42c")
 	)
 	(junction
-		(at 53.34 43.815)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "27f941a7-d50b-49b4-a315-7625ee212f23")
-	)
-	(junction
 		(at 139.7 24.13)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4048,12 +3969,6 @@
 		(uuid "72a8c1a2-a54e-419b-bb2e-37da79c41b3b")
 	)
 	(junction
-		(at 81.28 33.02)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "757679a6-1a91-485e-919a-8de958f623e5")
-	)
-	(junction
 		(at 175.26 134.62)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4082,12 +3997,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "820cc672-b99e-49ce-9689-ad193b88ec49")
-	)
-	(junction
-		(at 35.56 33.02)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "884dcec6-9a2b-47ad-b6b8-4f1d7a3ebce0")
 	)
 	(junction
 		(at 45.72 142.24)
@@ -4433,6 +4342,16 @@
 	)
 	(wire
 		(pts
+			(xy 57.15 33.02) (xy 66.04 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c86d01d-254d-42b0-8b48-30c5b298f0fe")
+	)
+	(wire
+		(pts
 			(xy 101.6 100.33) (xy 101.6 97.79)
 		)
 		(stroke
@@ -4530,16 +4449,6 @@
 			(type default)
 		)
 		(uuid "1a37cadb-b277-4d5b-a35f-50b213099479")
-	)
-	(wire
-		(pts
-			(xy 53.34 43.815) (xy 55.88 43.815)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1b06d4d4-2282-4175-a647-e56769661a64")
 	)
 	(wire
 		(pts
@@ -4653,17 +4562,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 43.815) (xy 53.34 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "20a0e3c7-d5fd-4848-a0c1-a9ae54712937")
-	)
-	(wire
-		(pts
-			(xy 81.28 33.02) (xy 86.36 33.02)
+			(xy 76.2 33.02) (xy 86.36 33.02)
 		)
 		(stroke
 			(width 0)
@@ -5253,26 +5152,6 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 71.12) (xy 49.53 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "605d4f85-93ec-4003-bf8c-fda86ed928ed")
-	)
-	(wire
-		(pts
-			(xy 53.34 40.64) (xy 53.34 43.815)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "607d14cb-6642-408e-a964-4e6881c8c2a1")
-	)
-	(wire
-		(pts
 			(xy 222.25 115.57) (xy 224.79 115.57)
 		)
 		(stroke
@@ -5303,16 +5182,6 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 76.2) (xy 58.42 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "639cefcf-3318-473f-a34a-6db6a293f7df")
-	)
-	(wire
-		(pts
 			(xy 297.18 24.13) (xy 297.18 26.67)
 		)
 		(stroke
@@ -5320,16 +5189,6 @@
 			(type default)
 		)
 		(uuid "650ad43d-8fc4-4863-862b-aeca79546dd7")
-	)
-	(wire
-		(pts
-			(xy 49.53 76.2) (xy 50.8 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "65aea221-e29a-4f72-b398-350fed7db0c8")
 	)
 	(wire
 		(pts
@@ -5473,16 +5332,6 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 45.72) (xy 55.88 43.815)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6fed008e-590d-4fa2-b1f9-70b9e03b8d0d")
-	)
-	(wire
-		(pts
 			(xy 165.1 134.62) (xy 165.1 135.89)
 		)
 		(stroke
@@ -5530,16 +5379,6 @@
 			(type default)
 		)
 		(uuid "7502e331-86ed-4c44-8879-b5ec65687e79")
-	)
-	(wire
-		(pts
-			(xy 76.2 33.02) (xy 81.28 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "75d0d055-5652-4b02-8a7e-0f1a577528e5")
 	)
 	(wire
 		(pts
@@ -5650,16 +5489,6 @@
 			(type default)
 		)
 		(uuid "82cff513-4498-4cb4-b737-8a3db2b5734e")
-	)
-	(wire
-		(pts
-			(xy 59.69 71.12) (xy 59.69 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "835b476a-a6e0-4fe5-9258-5b15871fc554")
 	)
 	(wire
 		(pts
@@ -5903,16 +5732,6 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 50.8) (xy 38.1 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a059fe1d-ed5f-4ec5-9ea1-74c2da971516")
-	)
-	(wire
-		(pts
 			(xy 45.72 106.68) (xy 45.72 109.22)
 		)
 		(stroke
@@ -6020,16 +5839,6 @@
 			(type default)
 		)
 		(uuid "af4bbfeb-e7d2-4e05-860f-865bb8fe80e0")
-	)
-	(wire
-		(pts
-			(xy 71.12 50.8) (xy 81.28 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b09b4ef8-2bfb-4749-93e9-3e7844eba714")
 	)
 	(wire
 		(pts
@@ -6443,16 +6252,6 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 33.02) (xy 35.56 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d4c7f84b-4f18-4e03-a6bf-609f36ad2e34")
-	)
-	(wire
-		(pts
 			(xy 279.4 36.83) (xy 284.48 36.83)
 		)
 		(stroke
@@ -6490,16 +6289,6 @@
 			(type default)
 		)
 		(uuid "d88cd775-4207-430f-b0c9-8ad8b1155a3d")
-	)
-	(wire
-		(pts
-			(xy 58.42 33.02) (xy 66.04 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d892c56d-cc13-4168-89ae-6022baeb599d")
 	)
 	(wire
 		(pts
@@ -6643,7 +6432,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 33.02) (xy 35.56 33.02)
+			(xy 30.48 33.02) (xy 49.53 33.02)
 		)
 		(stroke
 			(width 0)
@@ -6710,16 +6499,6 @@
 			(type default)
 		)
 		(uuid "eeea797a-d046-4377-a0b5-f09613b16575")
-	)
-	(wire
-		(pts
-			(xy 81.28 33.02) (xy 81.28 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ef473cf8-34cf-4923-a476-2a3bc46e2487")
 	)
 	(wire
 		(pts
@@ -6880,16 +6659,6 @@
 			(type default)
 		)
 		(uuid "fc71db30-feb2-4b92-be7b-cc3cdfd1c79b")
-	)
-	(wire
-		(pts
-			(xy 35.56 33.02) (xy 48.26 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fce1a70b-2b27-4b7e-9b35-93ec8c51a080")
 	)
 	(wire
 		(pts
@@ -9554,87 +9323,6 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 54.61 76.2 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "418ce644-2af8-47e9-a2aa-7d76fcc113ec")
-		(property "Reference" "C?"
-			(at 52.705 77.47 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1uF"
-			(at 56.515 77.47 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 58.42 75.2348 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 54.61 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 54.61 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "07069da4-6882-4bd4-b6f7-c199772d90af")
-		)
-		(pin "2"
-			(uuid "e0ab0d0e-9de8-42b2-b655-d6f5e81fba64")
-		)
-		(instances
-			(project "MIDAS-MK2-Pyro"
-				(path "/25e87aab-0877-4568-a426-1d554c854643"
-					(reference "C?")
-					(unit 1)
-				)
-			)
-			(project "MIDAS-MK1"
-				(path "/38da65c3-d556-49ac-8c54-119866b5cf28"
-					(reference "C1")
-					(unit 1)
-				)
-			)
-			(project "MIDAS-MK2.1"
-				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "C202")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
 		(at 195.58 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11915,6 +11603,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 53.34 33.02 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9b9c81e5-480b-420d-b42f-5090eb9f1a49")
+		(property "Reference" "D201"
+			(at 53.6575 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RSX501LAM20"
+			(at 53.6575 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-128"
+			(at 53.34 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://fscdn.rohm.com/en/products/databook/datasheet/discrete/diode/schottky_barrier/rsx501lam20tr-e.pdf"
+			(at 53.34 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Schottky diode"
+			(at 53.34 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7ec8d951-4349-4a24-b588-7bc49b17f59c")
+		)
+		(pin "1"
+			(uuid "a8d0a839-9cd0-4e69-9444-174e1201c0d6")
+		)
+		(instances
+			(project ""
+				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
+					(reference "D201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Transistor_FET_Diodes:DMNH6022SSDQ")
 		(at 139.7 31.75 0)
 		(unit 2)
@@ -12062,98 +11818,6 @@
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
 					(reference "#PWR0229")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET_Diodes:DMNH6022SSDQ")
-		(at 53.34 33.02 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a28c51bd-7d2b-4c30-ae0a-32539e4a2bdd")
-		(property "Reference" "Q?"
-			(at 53.34 29.083 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "DMNH6022SSDQ"
-			(at 53.34 26.543 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SO-8_3.9x4.9mm_P1.27mm"
-			(at 43.18 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMNH6022SSDQ.pdf"
-			(at 45.72 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 53.34 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c00ffde1-0d93-4b99-8a3a-0c4e0fe33c74")
-		)
-		(pin "2"
-			(uuid "4c6c5e7b-c5f2-4fec-89e2-7692d5d9399e")
-		)
-		(pin "7"
-			(uuid "7ac7521d-35da-48a7-9c85-e570ffe3e1dd")
-		)
-		(pin "8"
-			(uuid "3adb38a0-1961-4552-b7fc-e892b7c7a65e")
-		)
-		(pin "3"
-			(uuid "dabd4821-344c-4461-a2f9-ff5bb0dc10c8")
-		)
-		(pin "4"
-			(uuid "ebaa68c1-cf05-41b9-9297-59adc1c96cbf")
-		)
-		(pin "5"
-			(uuid "482fe5cb-3677-4ae7-a1bb-b8c24dc8ab3b")
-		)
-		(pin "6"
-			(uuid "90597013-283c-48e4-b67c-f45694d98c81")
-		)
-		(instances
-			(project "MIDAS-MK2-Pyro"
-				(path "/25e87aab-0877-4568-a426-1d554c854643"
-					(reference "Q?")
-					(unit 1)
-				)
-			)
-			(project "MIDAS-MK2.1"
-				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "Q201")
-					(unit 2)
 				)
 			)
 		)
@@ -12809,101 +12473,6 @@
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
 					(reference "#PWR0205")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Power_Ideal_Diode:LM74670-Q1")
-		(at 54.61 58.42 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c0c70c50-02b9-460c-aea3-84b459945531")
-		(property "Reference" "U?"
-			(at 41.91 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "LM74670-Q1"
-			(at 61.595 70.485 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:VSSOP-8_3x3mm_P0.65mm"
-			(at 99.06 153.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/lm74670-q1"
-			(at 99.06 253.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 54.61 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "44124491-6d4b-41f1-b698-04dba1f8b6e5")
-		)
-		(pin "2"
-			(uuid "dbd3f69f-a62f-48fb-bd30-d16ebdf0331d")
-		)
-		(pin "3"
-			(uuid "499dc032-e5de-4c81-8a81-04ef24bd07d4")
-		)
-		(pin "4"
-			(uuid "a4aca748-1e12-442f-b7c2-5cfff4412475")
-		)
-		(pin "5"
-			(uuid "2ce863f8-97cf-44fc-8ec7-436d047a48fb")
-		)
-		(pin "6"
-			(uuid "ce5d8243-50c3-43a6-bf44-c232869893d7")
-		)
-		(pin "7"
-			(uuid "206b168a-6754-4bf4-a9ad-59091581de60")
-		)
-		(pin "8"
-			(uuid "3e86812f-80db-4449-9063-f7d28b5244a8")
-		)
-		(instances
-			(project "MIDAS-MK2-Pyro"
-				(path "/25e87aab-0877-4568-a426-1d554c854643"
-					(reference "U?")
-					(unit 1)
-				)
-			)
-			(project "MIDAS-MK2.1"
-				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "U202")
 					(unit 1)
 				)
 			)
