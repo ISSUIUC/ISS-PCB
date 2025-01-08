@@ -13,6 +13,243 @@
 		(comment 4 "Contributers: Annika Kmiecik, Charlie Fedder, Chethan Karandikar, Everitt C, Ishani Sahu,")
 	)
 	(lib_symbols
+		(symbol "Analog_Switch:ADG752BRT"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -5.08 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "ADG752BRT"
+				(at 7.62 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+				(at 0 -22.86 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADG752.pdf"
+				(at 0 -25.4 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "ADG752BRT, CMOS, Low Voltage, RF, Video, SPDT, SOT-23"
+				(at 0 -27.94 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Low voltage RF/video SPDT switch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "RJ_6_ADI RJ_6_ADI-M RJ_6_ADI-L"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "ADG752BRT_1_1"
+				(rectangle
+					(start -5.08 6.35)
+					(end 5.08 -6.35)
+					(stroke
+						(width -0.0001)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -6.35) (xy 5.08 -6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 6.35) (xy -5.08 -6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -6.35) (xy 5.08 6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 6.35) (xy -5.08 6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin bidirectional line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 8.89 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "S1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 3.81 0)
+					(length 2.54)
+					(name "IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -8.89 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -7.62 -3.81 0)
+					(length 2.54)
+					(name "S2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Connector:TestPoint"
 			(pin_numbers hide)
 			(pin_names
@@ -6953,254 +7190,6 @@
 				)
 			)
 		)
-		(symbol "Video_MUX:ADG752BRTZ-REEL7"
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at -13.716 11.43 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Value" "ADG752BRTZ-REEL7"
-				(at -14.986 8.89 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Footprint" "RJ_6_ADI"
-				(at -12.446 15.24 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "ADG752BRTZ-REEL7"
-				(at -12.446 15.24 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at -12.446 15.24 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "ADG752BRTZ-REEL7"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "RJ_6_ADI RJ_6_ADI-M RJ_6_ADI-L"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "ADG752BRTZ-REEL7_1_1"
-				(rectangle
-					(start -5.08 6.35)
-					(end 5.08 -6.35)
-					(stroke
-						(width -0.0001)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 -6.35) (xy 5.08 -6.35)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 6.35) (xy -5.08 -6.35)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 -6.35) (xy 5.08 6.35)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 6.35) (xy -5.08 6.35)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin unspecified line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 0 8.89 270)
-					(length 2.54)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name "S1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -7.62 3.81 0)
-					(length 2.54)
-					(name "IN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 0 -8.89 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -7.62 -3.81 0)
-					(length 2.54)
-					(name "S2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "power:+12V"
 			(power)
 			(pin_numbers hide)
@@ -7929,12 +7918,6 @@
 		(uuid "898b9137-eda0-4ce1-9000-7786e94ea802")
 	)
 	(junction
-		(at 195.58 154.94)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8cbdae0b-b309-4786-9121-6c5497d63c03")
-	)
-	(junction
 		(at 491.49 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8047,6 +8030,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ba6e4f3e-2476-43a1-a1de-99296add4483")
+	)
+	(junction
+		(at 195.58 157.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bcf52702-cd1f-4d20-8e28-025a059b23b2")
 	)
 	(junction
 		(at 109.22 172.72)
@@ -8493,6 +8482,16 @@
 			(type default)
 		)
 		(uuid "0d61dc53-0aa3-461c-b799-f16bae2fcb7a")
+	)
+	(wire
+		(pts
+			(xy 195.58 157.48) (xy 195.58 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d6c523a-8b71-4f51-a2e1-5995ebfcbe84")
 	)
 	(wire
 		(pts
@@ -9236,16 +9235,6 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 156.21) (xy 205.74 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2ed69cda-6c4c-4bed-bd3c-8ecc24f8dfad")
-	)
-	(wire
-		(pts
 			(xy 248.92 58.42) (xy 250.19 58.42)
 		)
 		(stroke
@@ -9956,6 +9945,16 @@
 	)
 	(wire
 		(pts
+			(xy 209.55 158.75) (xy 209.55 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "502d11cd-83f6-42e1-b65d-fb4dd4ae8e2d")
+	)
+	(wire
+		(pts
 			(xy 375.92 38.1) (xy 387.35 38.1)
 		)
 		(stroke
@@ -10043,6 +10042,16 @@
 			(type default)
 		)
 		(uuid "5660d356-ae5c-4e97-b4b2-87b256c20f4f")
+	)
+	(wire
+		(pts
+			(xy 209.55 157.48) (xy 208.28 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "570ada4e-9fd1-45a4-8e47-dbcc47573fd6")
 	)
 	(wire
 		(pts
@@ -10636,7 +10645,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 153.67) (xy 195.58 154.94)
+			(xy 195.58 154.94) (xy 195.58 157.48)
 		)
 		(stroke
 			(width 0)
@@ -11126,16 +11135,6 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 154.94) (xy 195.58 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8bda7c04-702e-4fb6-85d7-add7c022cee2")
-	)
-	(wire
-		(pts
 			(xy 260.35 33.02) (xy 264.16 33.02)
 		)
 		(stroke
@@ -11223,16 +11222,6 @@
 			(type default)
 		)
 		(uuid "8e493aea-722f-416a-97fb-942e3199bccb")
-	)
-	(wire
-		(pts
-			(xy 195.58 154.94) (xy 195.58 160.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8edb42be-492f-47a2-bc46-f7cb5ce4987b")
 	)
 	(wire
 		(pts
@@ -13113,6 +13102,16 @@
 			(type default)
 		)
 		(uuid "eee78827-5a2f-41ad-a241-28db037e5322")
+	)
+	(wire
+		(pts
+			(xy 195.58 157.48) (xy 200.66 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef3b64d0-85e8-4238-b38e-b01c6b11c707")
 	)
 	(wire
 		(pts
@@ -17590,8 +17589,8 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 205.74 160.02 0)
-		(mirror y)
+		(at 204.47 157.48 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17599,7 +17598,7 @@
 		(dnp no)
 		(uuid "32772cd3-0db8-4ec4-8588-1a1f85e5a381")
 		(property "Reference" "C128"
-			(at 208.28 158.9786 0)
+			(at 198.12 156.21 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17608,7 +17607,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 208.28 161.29 0)
+			(at 205.74 156.21 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17617,7 +17616,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 204.7748 163.83 0)
+			(at 208.28 158.4452 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17626,7 +17625,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 205.74 160.02 0)
+			(at 204.47 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17635,7 +17634,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 205.74 160.02 0)
+			(at 204.47 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21198,7 +21197,7 @@
 	(symbol
 		(lib_name "GND_1")
 		(lib_id "power:GND")
-		(at 205.74 163.83 0)
+		(at 209.55 158.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21207,7 +21206,7 @@
 		(fields_autoplaced yes)
 		(uuid "6b6a545f-4820-4be7-bc15-36045d3c5793")
 		(property "Reference" "#PWR0132"
-			(at 205.74 170.18 0)
+			(at 209.55 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21216,7 +21215,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 205.74 168.91 0)
+			(at 209.55 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21225,7 +21224,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 205.74 163.83 0)
+			(at 209.55 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21234,7 +21233,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 205.74 163.83 0)
+			(at 209.55 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21243,7 +21242,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 205.74 163.83 0)
+			(at 209.55 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27426,7 +27425,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 195.58 153.67 0)
+		(at 195.58 154.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -27434,7 +27433,7 @@
 		(dnp no)
 		(uuid "ff6ee17c-f3c2-45d3-9ca2-b3564bf09146")
 		(property "Reference" "#PWR0123"
-			(at 195.58 157.48 0)
+			(at 195.58 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27443,7 +27442,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 195.58 149.86 0)
+			(at 195.58 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27451,7 +27450,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 195.58 153.67 0)
+			(at 195.58 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27460,7 +27459,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 195.58 153.67 0)
+			(at 195.58 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27469,7 +27468,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 195.58 153.67 0)
+			(at 195.58 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27558,7 +27557,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Video_MUX:ADG752BRTZ-REEL7")
+		(lib_id "Analog_Switch:ADG752BRT")
 		(at 195.58 168.91 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -27567,15 +27566,15 @@
 		(dnp no)
 		(uuid "fffd0534-2eaa-4193-930a-fb1e8758f173")
 		(property "Reference" "U106"
-			(at 186.944 158.496 0)
+			(at 190.5 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "ADG752BRTZ"
-			(at 186.944 161.036 0)
+		(property "Value" "ADG752BRT"
+			(at 203.2 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27583,7 +27582,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-			(at 173.736 145.034 0)
+			(at 195.58 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27593,7 +27592,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADG752.pdf"
-			(at 173.736 147.32 0)
+			(at 195.58 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27602,8 +27601,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 181.61 167.64 0)
+		(property "Description" "ADG752BRT, CMOS, Low Voltage, RF, Video, SPDT, SOT-23"
+			(at 195.58 196.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
