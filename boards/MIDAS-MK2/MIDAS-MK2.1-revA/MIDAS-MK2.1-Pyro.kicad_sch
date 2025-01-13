@@ -3367,7 +3367,7 @@
 				)
 			)
 		)
-		(symbol "Transistor_FET_Diodes:DMNH6022SSDQ"
+		(symbol "Transistor_FET_Vishay:Si7232DN"
 			(pin_names hide)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -3381,7 +3381,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "DMNH6022SSDQ"
+			(property "Value" "Si7232DN"
 				(at 2.54 1.27 0)
 				(effects
 					(font
@@ -3390,7 +3390,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_SO:SO-8_3.9x4.9mm_P1.27mm"
+			(property "Footprint" "Transistor_FET_Vishay:Vishay_PowerPAK_1212-8_Dual"
 				(at 0 -7.62 0)
 				(effects
 					(font
@@ -3399,7 +3399,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMNH6022SSDQ.pdf"
+			(property "Datasheet" "https://www.vishay.com/docs/68986/si7232dn.pdf"
 				(at 0 -10.16 0)
 				(effects
 					(font
@@ -3408,8 +3408,8 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "22.6A Id, 60Vd, N-Channel MOSFET, SO-8"
-				(at 0 0 0)
+			(property "Description" "25A Id, 20Vd, Dual N-Channel MOSFET, PowerPak 1212-8"
+				(at 0 -12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3425,7 +3425,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "22.6A Id 60Vd N-Channel MOSFET SO-8 Diodes Incorporated"
+			(property "ki_keywords" "Vishay Si7232DN Dual N-Channel 20V 25A MOSFET"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3434,7 +3434,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "DMNH6022SSDQ_0_1"
+			(symbol "Si7232DN_0_1"
 				(circle
 					(center -0.889 0)
 					(radius 2.794)
@@ -3601,7 +3601,7 @@
 					)
 				)
 			)
-			(symbol "DMNH6022SSDQ_1_0"
+			(symbol "Si7232DN_1_0"
 				(pin passive line
 					(at 0 -5.08 90)
 					(length 2.54)
@@ -3648,25 +3648,7 @@
 							)
 						)
 					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 5.08 270)
-					(length 2.54) hide
-					(name "D1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3675,7 +3657,7 @@
 					)
 				)
 			)
-			(symbol "DMNH6022SSDQ_2_0"
+			(symbol "Si7232DN_2_0"
 				(pin passive line
 					(at 0 -5.08 90)
 					(length 2.54)
@@ -3723,24 +3705,6 @@
 						)
 					)
 					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 5.08 270)
-					(length 2.54) hide
-					(name "D2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -8918,6 +8882,168 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_FET_Vishay:Si7232DN")
+		(at 220.98 31.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0f9e60b0-c3be-4c3e-a21f-4dddc825b6a1")
+		(property "Reference" "Q201"
+			(at 223.52 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Si7232DN"
+			(at 223.52 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Transistor_FET_Vishay:Vishay_PowerPAK_1212-8_Dual"
+			(at 220.98 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/68986/si7232dn.pdf"
+			(at 220.98 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "25A Id, 20Vd, Dual N-Channel MOSFET, PowerPak 1212-8"
+			(at 220.98 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "286e0dc6-3f11-4dda-b025-80dc2f7c3585")
+		)
+		(pin "3"
+			(uuid "79f71083-0064-4d17-a0b1-687047c6f3ef")
+		)
+		(pin "6"
+			(uuid "c703ffb2-38e3-4d9c-8272-8d740229dcb1")
+		)
+		(pin "1"
+			(uuid "3971e70b-5c22-48a9-a809-d1fcfc0ad115")
+		)
+		(pin "5"
+			(uuid "3cd46e76-03d4-4364-8ea4-1af78a546d30")
+		)
+		(pin "2"
+			(uuid "f35edefd-bd1e-44ff-976f-4d3491f4814e")
+		)
+		(instances
+			(project ""
+				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
+					(reference "Q201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET_Vishay:Si7232DN")
+		(at 220.98 68.58 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1172d569-3c3e-4e26-8978-0d8ddea9fc29")
+		(property "Reference" "Q202"
+			(at 223.52 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Si7232DN"
+			(at 223.52 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Transistor_FET_Vishay:Vishay_PowerPAK_1212-8_Dual"
+			(at 220.98 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/68986/si7232dn.pdf"
+			(at 220.98 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "25A Id, 20Vd, Dual N-Channel MOSFET, PowerPak 1212-8"
+			(at 220.98 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1dfc9863-f9a3-4314-be87-8b535706b02a")
+		)
+		(pin "3"
+			(uuid "40f932d9-0400-45f7-880f-84fcb51dab35")
+		)
+		(pin "1"
+			(uuid "94aea2af-7b80-44e1-9760-ab27bee61a5d")
+		)
+		(pin "5"
+			(uuid "3e84cb35-8229-424e-afbe-95e9e13ae4ee")
+		)
+		(pin "6"
+			(uuid "ea792b2e-ef72-4b99-8109-ba76fc47bab1")
+		)
+		(pin "4"
+			(uuid "5ebd6a12-68d2-4180-bb51-59ab22d76554")
+		)
+		(instances
+			(project ""
+				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
+					(reference "Q202")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 308.61 24.13 90)
 		(unit 1)
@@ -9607,6 +9733,87 @@
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
 					(reference "#PWR0220")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET_Vishay:Si7232DN")
+		(at 139.7 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "324c1d38-e92b-4525-947b-9ef850ca096f")
+		(property "Reference" "Q202"
+			(at 142.24 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Si7232DN"
+			(at 142.24 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Transistor_FET_Vishay:Vishay_PowerPAK_1212-8_Dual"
+			(at 139.7 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/68986/si7232dn.pdf"
+			(at 139.7 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "25A Id, 20Vd, Dual N-Channel MOSFET, PowerPak 1212-8"
+			(at 139.7 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1dfc9863-f9a3-4314-be87-8b535706b02a")
+		)
+		(pin "3"
+			(uuid "40f932d9-0400-45f7-880f-84fcb51dab35")
+		)
+		(pin "1"
+			(uuid "94aea2af-7b80-44e1-9760-ab27bee61a5d")
+		)
+		(pin "5"
+			(uuid "3e84cb35-8229-424e-afbe-95e9e13ae4ee")
+		)
+		(pin "6"
+			(uuid "ea792b2e-ef72-4b99-8109-ba76fc47bab1")
+		)
+		(pin "4"
+			(uuid "5ebd6a12-68d2-4180-bb51-59ab22d76554")
+		)
+		(instances
+			(project ""
+				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
+					(reference "Q202")
 					(unit 1)
 				)
 			)
@@ -10533,93 +10740,6 @@
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
 					(reference "U201")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET_Diodes:DMNH6022SSDQ")
-		(at 220.98 31.75 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5439f582-873a-47d9-ba11-d9716a10d491")
-		(property "Reference" "Q201"
-			(at 223.52 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "DMNH6022SSDQ"
-			(at 223.52 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SO-8_3.9x4.9mm_P1.27mm"
-			(at 220.98 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMNH6022SSDQ.pdf"
-			(at 220.98 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "22.6A Id, 60Vd, N-Channel MOSFET, SO-8"
-			(at 220.98 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "a19983bc-d3a4-4bf8-8ac0-64a33aaec67d")
-		)
-		(pin "2"
-			(uuid "ff06d93b-31ad-4a8d-bcf1-cc98858faaa6")
-		)
-		(pin "3"
-			(uuid "51f508a8-1d3b-413d-a80a-6276aac29aa0")
-		)
-		(pin "1"
-			(uuid "61ced308-0469-4a4c-bd33-6a9cbd9dbe52")
-		)
-		(pin "8"
-			(uuid "e5d1cc69-39dc-4690-9851-8da26a617526")
-		)
-		(pin "4"
-			(uuid "73cf10fe-a15e-4311-b1fc-ecfed32931c5")
-		)
-		(pin "5"
-			(uuid "e62e09ca-9e50-405a-872c-c432f0a72c2b")
-		)
-		(pin "7"
-			(uuid "7c40dc32-d9f9-4d6f-88a6-05057051ed6b")
-		)
-		(instances
-			(project "MIDAS-MK2.1"
-				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "Q201")
 					(unit 1)
 				)
 			)
@@ -12281,93 +12401,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET_Diodes:DMNH6022SSDQ")
-		(at 139.7 68.58 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "86f79a11-1779-4bf2-96ed-390622052982")
-		(property "Reference" "Q202"
-			(at 142.24 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "DMNH6022SSDQ"
-			(at 142.24 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SO-8_3.9x4.9mm_P1.27mm"
-			(at 139.7 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMNH6022SSDQ.pdf"
-			(at 139.7 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "22.6A Id, 60Vd, N-Channel MOSFET, SO-8"
-			(at 139.7 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a6543131-2e77-4ac1-9ea1-333e899f28e6")
-		)
-		(pin "8"
-			(uuid "83fe3f20-647c-4e92-8cea-9c83ca068195")
-		)
-		(pin "3"
-			(uuid "82336a76-ed25-4b1a-bb66-760d969f07a2")
-		)
-		(pin "2"
-			(uuid "a361e2b0-d0f3-4d13-873c-31b8a3ec84b4")
-		)
-		(pin "5"
-			(uuid "ca2fca84-8b4a-4324-8b64-5972e1194125")
-		)
-		(pin "4"
-			(uuid "f4299757-1d20-40a3-9afb-4bd0f3368932")
-		)
-		(pin "6"
-			(uuid "6ac55e6a-da3b-49db-80fc-23c42ed1087d")
-		)
-		(pin "7"
-			(uuid "04b568e3-0e9e-4193-9ed8-8522c500414b")
-		)
-		(instances
-			(project "MIDAS-MK2.1"
-				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "Q202")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:Earth")
 		(at 242.57 45.72 0)
 		(unit 1)
@@ -12495,93 +12528,6 @@
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
 					(reference "D201")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET_Diodes:DMNH6022SSDQ")
-		(at 139.7 31.75 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9d514159-36ab-4176-b20c-a10a4448e82b")
-		(property "Reference" "Q201"
-			(at 142.24 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "DMNH6022SSDQ"
-			(at 142.24 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SO-8_3.9x4.9mm_P1.27mm"
-			(at 139.7 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMNH6022SSDQ.pdf"
-			(at 139.7 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "22.6A Id, 60Vd, N-Channel MOSFET, SO-8"
-			(at 139.7 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "a19983bc-d3a4-4bf8-8ac0-64a33aaec67e")
-		)
-		(pin "2"
-			(uuid "ff06d93b-31ad-4a8d-bcf1-cc98858faaa7")
-		)
-		(pin "3"
-			(uuid "51f508a8-1d3b-413d-a80a-6276aac29aa1")
-		)
-		(pin "1"
-			(uuid "61ced308-0469-4a4c-bd33-6a9cbd9dbe53")
-		)
-		(pin "8"
-			(uuid "e5d1cc69-39dc-4690-9851-8da26a617527")
-		)
-		(pin "4"
-			(uuid "73cf10fe-a15e-4311-b1fc-ecfed32931c6")
-		)
-		(pin "5"
-			(uuid "e62e09ca-9e50-405a-872c-c432f0a72c2c")
-		)
-		(pin "7"
-			(uuid "7c40dc32-d9f9-4d6f-88a6-05057051ed6c")
-		)
-		(instances
-			(project "MIDAS-MK2.1"
-				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "Q201")
-					(unit 2)
 				)
 			)
 		)
@@ -13560,93 +13506,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET_Diodes:DMNH6022SSDQ")
-		(at 220.98 68.58 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ce60b32a-200d-412f-a1a6-b545def083cf")
-		(property "Reference" "Q202"
-			(at 223.52 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "DMNH6022SSDQ"
-			(at 223.52 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SO-8_3.9x4.9mm_P1.27mm"
-			(at 220.98 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMNH6022SSDQ.pdf"
-			(at 220.98 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "22.6A Id, 60Vd, N-Channel MOSFET, SO-8"
-			(at 220.98 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a6543131-2e77-4ac1-9ea1-333e899f28e7")
-		)
-		(pin "8"
-			(uuid "83fe3f20-647c-4e92-8cea-9c83ca068196")
-		)
-		(pin "3"
-			(uuid "82336a76-ed25-4b1a-bb66-760d969f07a3")
-		)
-		(pin "2"
-			(uuid "a361e2b0-d0f3-4d13-873c-31b8a3ec84b5")
-		)
-		(pin "5"
-			(uuid "ca2fca84-8b4a-4324-8b64-5972e1194126")
-		)
-		(pin "4"
-			(uuid "f4299757-1d20-40a3-9afb-4bd0f3368933")
-		)
-		(pin "6"
-			(uuid "6ac55e6a-da3b-49db-80fc-23c42ed1087e")
-		)
-		(pin "7"
-			(uuid "04b568e3-0e9e-4193-9ed8-8522c500414c")
-		)
-		(instances
-			(project "MIDAS-MK2.1"
-				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "Q202")
-					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:Earth")
 		(at 237.49 128.27 0)
 		(unit 1)
@@ -14278,6 +14137,87 @@
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
 					(reference "R217")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET_Vishay:Si7232DN")
+		(at 139.7 31.75 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e676d118-a962-426a-96df-ada053c25c55")
+		(property "Reference" "Q201"
+			(at 142.24 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Si7232DN"
+			(at 142.24 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Transistor_FET_Vishay:Vishay_PowerPAK_1212-8_Dual"
+			(at 139.7 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/68986/si7232dn.pdf"
+			(at 139.7 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "25A Id, 20Vd, Dual N-Channel MOSFET, PowerPak 1212-8"
+			(at 139.7 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "286e0dc6-3f11-4dda-b025-80dc2f7c3585")
+		)
+		(pin "3"
+			(uuid "79f71083-0064-4d17-a0b1-687047c6f3ef")
+		)
+		(pin "6"
+			(uuid "c703ffb2-38e3-4d9c-8272-8d740229dcb1")
+		)
+		(pin "1"
+			(uuid "3971e70b-5c22-48a9-a809-d1fcfc0ad115")
+		)
+		(pin "5"
+			(uuid "3cd46e76-03d4-4364-8ea4-1af78a546d30")
+		)
+		(pin "2"
+			(uuid "f35edefd-bd1e-44ff-976f-4d3491f4814e")
+		)
+		(instances
+			(project ""
+				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
+					(reference "Q201")
+					(unit 2)
 				)
 			)
 		)
