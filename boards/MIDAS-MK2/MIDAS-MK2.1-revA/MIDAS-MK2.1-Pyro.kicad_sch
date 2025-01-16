@@ -6,10 +6,10 @@
 	(paper "A3")
 	(title_block
 		(title "MIDAS Pyro Circuitry MK2.1")
-		(date "2024-11-29")
+		(date "2025-01-16")
 		(rev "A")
 		(company "Illinois Space Society")
-		(comment 3 "Samuel Wang, Ajay Nagi Reddy Kumdam, Thomas McManamen")
+		(comment 3 "Samuel Wang, Ajay Nagi Reddy Kumdam, Arnav Goyal, Thomas McManamen")
 		(comment 4 "Contributors: Dylan Gasaway, Jackie Li, Linus Mitchell, Lucas Lessard, Rithik Mehta, ")
 	)
 	(lib_symbols
@@ -774,6 +774,151 @@
 					(at 0 -3.81 90)
 					(length 2.794)
 					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:D_Schottky"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D_Schottky"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Schottky diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode Schottky"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_Schottky_0_1"
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_Schottky_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2572,49 +2717,47 @@
 				)
 			)
 		)
-		(symbol "Power_Ideal_Diode:LM74670-Q1"
+		(symbol "Power_Management:NPC45560-H"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at -11.43 12.7 0)
+			(property "Reference" "U1"
+				(at 2.1941 -12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
+					(justify left)
 				)
 			)
-			(property "Value" "LM74670-Q1"
-				(at 3.81 12.7 0)
+			(property "Value" "NPC45560-H"
+				(at 2.1941 -15.24 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
+					(justify left)
 				)
 			)
-			(property "Footprint" "Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm"
-				(at 44.45 -94.92 0)
+			(property "Footprint" "Package_DFN_QFN:DFN-12-1EP_3x3mm_P0.5mm_EP2.05x2.86mm"
+				(at 0 13.97 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://www.ti.com/lit/gpn/lm74670-q1"
-				(at 44.45 -194.92 0)
+			(property "Datasheet" "http://www.onsemi.com/pub/Collateral/NCP45560-D.PDF"
+				(at 0 13.97 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
 					(hide yes)
 				)
 			)
-			(property "Description" "0.48V to 42V, zero IQ automotive ideal diode rectifier controller with 70uA gate drive"
+			(property "Description" "Controlled load switch with low Ron, DFN-12"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2623,7 +2766,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "0.48V to 42V zero IQ automotive ideal diode rectifier controller 70uA gate drive"
+			(property "ki_keywords" "load switch"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2632,10 +2775,19 @@
 					(hide yes)
 				)
 			)
-			(symbol "LM74670-Q1_1_1"
+			(property "ki_fp_filters" "DFN*1EP?3x3mm?P0.5mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "NPC45560-H_0_1"
 				(rectangle
-					(start -13.97 10.16)
-					(end 13.97 -10.16)
+					(start -10.16 10.16)
+					(end 10.16 -10.16)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -2644,10 +2796,12 @@
 						(type background)
 					)
 				)
-				(pin bidirectional line
-					(at 5.08 -12.7 90)
+			)
+			(symbol "NPC45560-H_1_1"
+				(pin power_in line
+					(at -12.7 5.08 0)
 					(length 2.54)
-					(name "VCAPL"
+					(name "VIN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2662,10 +2816,82 @@
 						)
 					)
 				)
-				(pin output line
-					(at 1.27 12.7 270)
+				(pin passive line
+					(at 12.7 5.08 180)
+					(length 2.54) hide
+					(name "VOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 5.08 180)
+					(length 2.54) hide
+					(name "VOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 12.7 5.08 180)
 					(length 2.54)
-					(name "GATE_PULL_DOWN"
+					(name "VOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 5.08 0)
+					(length 2.54) hide
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 0 0)
+					(length 2.54)
+					(name "EN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2680,10 +2906,10 @@
 						)
 					)
 				)
-				(pin no_connect line
-					(at -16.51 2.54 0)
-					(length 2.54) hide
-					(name "NC"
+				(pin power_in line
+					(at 0 12.7 270)
+					(length 2.54)
+					(name "VCC"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2699,9 +2925,9 @@
 					)
 				)
 				(pin power_in line
-					(at -16.51 7.62 0)
+					(at 0 -12.7 90)
 					(length 2.54)
-					(name "ANODE"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2716,10 +2942,10 @@
 						)
 					)
 				)
-				(pin no_connect line
-					(at -16.51 2.54 0)
-					(length 2.54) hide
-					(name "NC"
+				(pin input line
+					(at -12.7 -2.54 0)
+					(length 2.54)
+					(name "SR"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2734,10 +2960,10 @@
 						)
 					)
 				)
-				(pin output line
-					(at -1.27 12.7 270)
+				(pin open_collector line
+					(at -12.7 -5.08 0)
 					(length 2.54)
-					(name "GATE_DRIVE"
+					(name "PG"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2752,10 +2978,10 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at -5.08 -12.7 90)
+				(pin input line
+					(at 12.7 -5.08 180)
 					(length 2.54)
-					(name "VCAPH"
+					(name "BLEED"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2770,10 +2996,10 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 16.51 7.62 180)
-					(length 2.54)
-					(name "CATHODE"
+				(pin passive line
+					(at 12.7 5.08 180)
+					(length 2.54) hide
+					(name "VOUT"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2781,6 +3007,24 @@
 						)
 					)
 					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 5.08 180)
+					(length 2.54) hide
+					(name "VOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3123,7 +3367,7 @@
 				)
 			)
 		)
-		(symbol "Transistor_FET_Diodes:DMNH6022SSDQ"
+		(symbol "Transistor_FET_Vishay:Si7232DN"
 			(pin_names hide)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -3137,7 +3381,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "DMNH6022SSDQ"
+			(property "Value" "Si7232DN"
 				(at 2.54 1.27 0)
 				(effects
 					(font
@@ -3146,7 +3390,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_SO:SO-8_3.9x4.9mm_P1.27mm"
+			(property "Footprint" "Transistor_FET_Vishay:Vishay_PowerPAK_1212-8_Dual"
 				(at 0 -7.62 0)
 				(effects
 					(font
@@ -3155,7 +3399,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMNH6022SSDQ.pdf"
+			(property "Datasheet" "https://www.vishay.com/docs/68986/si7232dn.pdf"
 				(at 0 -10.16 0)
 				(effects
 					(font
@@ -3164,8 +3408,8 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "22.6A Id, 60Vd, N-Channel MOSFET, SO-8"
-				(at 0 0 0)
+			(property "Description" "25A Id, 20Vd, Dual N-Channel MOSFET, PowerPak 1212-8"
+				(at 0 -12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3181,7 +3425,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "22.6A Id 60Vd N-Channel MOSFET SO-8 Diodes Incorporated"
+			(property "ki_keywords" "Vishay Si7232DN Dual N-Channel 20V 25A MOSFET"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3190,7 +3434,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "DMNH6022SSDQ_0_1"
+			(symbol "Si7232DN_0_1"
 				(circle
 					(center -0.889 0)
 					(radius 2.794)
@@ -3357,7 +3601,7 @@
 					)
 				)
 			)
-			(symbol "DMNH6022SSDQ_1_0"
+			(symbol "Si7232DN_1_0"
 				(pin passive line
 					(at 0 -5.08 90)
 					(length 2.54)
@@ -3404,25 +3648,7 @@
 							)
 						)
 					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 5.08 270)
-					(length 2.54) hide
-					(name "D1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3431,7 +3657,7 @@
 					)
 				)
 			)
-			(symbol "DMNH6022SSDQ_2_0"
+			(symbol "Si7232DN_2_0"
 				(pin passive line
 					(at 0 -5.08 90)
 					(length 2.54)
@@ -3479,24 +3705,6 @@
 						)
 					)
 					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 5.08 270)
-					(length 2.54) hide
-					(name "D2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3928,12 +4136,6 @@
 		(uuid "1f9960eb-646d-4b92-85f6-9eb05940e42c")
 	)
 	(junction
-		(at 53.34 43.815)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "27f941a7-d50b-49b4-a315-7625ee212f23")
-	)
-	(junction
 		(at 139.7 24.13)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3944,6 +4146,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2d6c8b78-6f03-4d67-8078-fac19dcd9256")
+	)
+	(junction
+		(at 289.56 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2df43544-8352-47fa-baef-a728c136b752")
 	)
 	(junction
 		(at 386.08 24.13)
@@ -4000,6 +4208,12 @@
 		(uuid "51389c60-ef16-4c5c-af8e-9a02527dde78")
 	)
 	(junction
+		(at 298.45 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "539d0c1e-6c20-4404-94e1-1bf05806a0b8")
+	)
+	(junction
 		(at 165.1 134.62)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4024,6 +4238,12 @@
 		(uuid "5d416bff-405f-46ad-9bfe-0aa120be97f7")
 	)
 	(junction
+		(at 298.45 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5e6e7f81-f33a-4557-9ecd-d5cc9bb23e47")
+	)
+	(junction
 		(at 220.98 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4046,12 +4266,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "72a8c1a2-a54e-419b-bb2e-37da79c41b3b")
-	)
-	(junction
-		(at 81.28 33.02)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "757679a6-1a91-485e-919a-8de958f623e5")
 	)
 	(junction
 		(at 175.26 134.62)
@@ -4082,12 +4296,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "820cc672-b99e-49ce-9689-ad193b88ec49")
-	)
-	(junction
-		(at 35.56 33.02)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "884dcec6-9a2b-47ad-b6b8-4f1d7a3ebce0")
 	)
 	(junction
 		(at 45.72 142.24)
@@ -4210,6 +4418,24 @@
 		(uuid "eba1fd13-34fc-4c9f-a1d3-db514fea288f")
 	)
 	(junction
+		(at 280.67 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ec64c4f1-ba87-47cd-a6f3-2e4821531f17")
+	)
+	(junction
+		(at 289.56 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ee6d7f02-3714-4cc3-800b-29b69da1bf6e")
+	)
+	(junction
+		(at 59.69 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f0534b38-84f0-480c-bcd3-5059fae2287a")
+	)
+	(junction
 		(at 220.98 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4220,6 +4446,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f5790b8a-e347-47c4-8eca-69cf2687bcb0")
+	)
+	(junction
+		(at 76.2 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f68a7174-6790-4a2e-bc6d-162e693750a6")
 	)
 	(junction
 		(at 101.6 111.76)
@@ -4240,10 +4472,6 @@
 		(uuid "70c9b5dc-a215-4e19-9511-3d2eb1f6d7a9")
 	)
 	(no_connect
-		(at 309.88 52.07)
-		(uuid "733146b1-f0cb-46c8-9f5f-7abc6e653d52")
-	)
-	(no_connect
 		(at 309.88 64.77)
 		(uuid "7b64c9df-2192-4781-8d6e-36096b7f98a3")
 	)
@@ -4254,6 +4482,10 @@
 	(no_connect
 		(at 309.88 59.69)
 		(uuid "9be76ac4-7349-49ef-8ee2-061a0a06d2ae")
+	)
+	(no_connect
+		(at 46.99 53.34)
+		(uuid "a2c77831-24e3-4a41-89b7-d3c68a0227a2")
 	)
 	(no_connect
 		(at 309.88 69.85)
@@ -4423,7 +4655,7 @@
 	)
 	(wire
 		(pts
-			(xy 274.32 101.6) (xy 274.32 99.06)
+			(xy 27.94 166.37) (xy 27.94 163.83)
 		)
 		(stroke
 			(width 0)
@@ -4483,16 +4715,6 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 22.86) (xy 73.66 22.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "174c5cac-54f2-4ad1-8fa5-1ba4740a7b06")
-	)
-	(wire
-		(pts
 			(xy 137.16 116.84) (xy 140.97 116.84)
 		)
 		(stroke
@@ -4530,16 +4752,6 @@
 			(type default)
 		)
 		(uuid "1a37cadb-b277-4d5b-a35f-50b213099479")
-	)
-	(wire
-		(pts
-			(xy 53.34 43.815) (xy 55.88 43.815)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1b06d4d4-2282-4175-a647-e56769661a64")
 	)
 	(wire
 		(pts
@@ -4653,17 +4865,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 43.815) (xy 53.34 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "20a0e3c7-d5fd-4848-a0c1-a9ae54712937")
-	)
-	(wire
-		(pts
-			(xy 81.28 33.02) (xy 86.36 33.02)
+			(xy 72.39 45.72) (xy 76.2 45.72)
 		)
 		(stroke
 			(width 0)
@@ -4690,6 +4892,16 @@
 			(type default)
 		)
 		(uuid "23d9eea1-32ad-4b4b-8ffa-b0756fcbbb69")
+	)
+	(wire
+		(pts
+			(xy 276.86 110.49) (xy 280.67 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2647e072-eae9-466a-9842-783629de9340")
 	)
 	(wire
 		(pts
@@ -4793,13 +5005,33 @@
 	)
 	(wire
 		(pts
-			(xy 309.88 49.53) (xy 312.42 49.53)
+			(xy 76.2 45.72) (xy 76.2 46.99)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "30194bd7-a9aa-4d0d-a561-b426fd3ced05")
+		(uuid "2fe173e0-07e2-40f4-8af5-4b6c13bc0439")
+	)
+	(wire
+		(pts
+			(xy 280.67 100.33) (xy 280.67 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30312108-d5b4-4161-ab0f-1bb3e951e26f")
+	)
+	(wire
+		(pts
+			(xy 276.86 115.57) (xy 298.45 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30b89909-19e9-4191-ab3b-7b1a4588db54")
 	)
 	(wire
 		(pts
@@ -4903,6 +5135,16 @@
 	)
 	(wire
 		(pts
+			(xy 276.86 113.03) (xy 289.56 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "383b39f6-8c5a-4324-b8c9-3ac08f52e768")
+	)
+	(wire
+		(pts
 			(xy 367.03 62.23) (xy 367.03 59.69)
 		)
 		(stroke
@@ -4973,6 +5215,16 @@
 	)
 	(wire
 		(pts
+			(xy 289.56 97.79) (xy 298.45 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "410af7f4-8325-40c8-8cba-3cd5a4b4988c")
+	)
+	(wire
+		(pts
 			(xy 185.42 134.62) (xy 185.42 135.89)
 		)
 		(stroke
@@ -5003,7 +5255,7 @@
 	)
 	(wire
 		(pts
-			(xy 274.32 104.14) (xy 276.86 104.14)
+			(xy 27.94 168.91) (xy 30.48 168.91)
 		)
 		(stroke
 			(width 0)
@@ -5083,6 +5335,16 @@
 	)
 	(wire
 		(pts
+			(xy 45.72 64.77) (xy 59.69 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b1d957b-edda-4f00-aa45-59f401b45a07")
+	)
+	(wire
+		(pts
 			(xy 384.81 36.83) (xy 386.08 36.83)
 		)
 		(stroke
@@ -5153,6 +5415,16 @@
 	)
 	(wire
 		(pts
+			(xy 34.29 50.8) (xy 46.99 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55feeb80-067a-4739-a1b0-8b50d72e2b4b")
+	)
+	(wire
+		(pts
 			(xy 349.25 35.56) (xy 349.25 36.83)
 		)
 		(stroke
@@ -5213,6 +5485,16 @@
 	)
 	(wire
 		(pts
+			(xy 59.69 64.77) (xy 59.69 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ca9d911-a59f-4c68-bc92-efc5ae08722b")
+	)
+	(wire
+		(pts
 			(xy 165.1 60.96) (xy 161.29 60.96)
 		)
 		(stroke
@@ -5253,26 +5535,6 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 71.12) (xy 49.53 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "605d4f85-93ec-4003-bf8c-fda86ed928ed")
-	)
-	(wire
-		(pts
-			(xy 53.34 40.64) (xy 53.34 43.815)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "607d14cb-6642-408e-a964-4e6881c8c2a1")
-	)
-	(wire
-		(pts
 			(xy 222.25 115.57) (xy 224.79 115.57)
 		)
 		(stroke
@@ -5303,16 +5565,6 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 76.2) (xy 58.42 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "639cefcf-3318-473f-a34a-6db6a293f7df")
-	)
-	(wire
-		(pts
 			(xy 297.18 24.13) (xy 297.18 26.67)
 		)
 		(stroke
@@ -5323,13 +5575,13 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 76.2) (xy 50.8 76.2)
+			(xy 298.45 97.79) (xy 298.45 100.33)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "65aea221-e29a-4f72-b398-350fed7db0c8")
+		(uuid "653e05d3-52ab-4a96-a074-832044b295af")
 	)
 	(wire
 		(pts
@@ -5473,13 +5725,13 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 45.72) (xy 55.88 43.815)
+			(xy 280.67 110.49) (xy 302.26 110.49)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6fed008e-590d-4fa2-b1f9-70b9e03b8d0d")
+		(uuid "7182ce75-2c76-4ee5-a985-7f5a7ca0ec87")
 	)
 	(wire
 		(pts
@@ -5530,16 +5782,6 @@
 			(type default)
 		)
 		(uuid "7502e331-86ed-4c44-8879-b5ec65687e79")
-	)
-	(wire
-		(pts
-			(xy 76.2 33.02) (xy 81.28 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "75d0d055-5652-4b02-8a7e-0f1a577528e5")
 	)
 	(wire
 		(pts
@@ -5653,16 +5895,6 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 71.12) (xy 59.69 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "835b476a-a6e0-4fe5-9258-5b15871fc554")
-	)
-	(wire
-		(pts
 			(xy 128.27 68.58) (xy 132.08 68.58)
 		)
 		(stroke
@@ -5753,6 +5985,16 @@
 	)
 	(wire
 		(pts
+			(xy 289.56 97.79) (xy 280.67 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b7163b5-f159-4ae2-bf60-310fdcbf0aed")
+	)
+	(wire
+		(pts
 			(xy 45.72 142.24) (xy 45.72 144.78)
 		)
 		(stroke
@@ -5760,6 +6002,16 @@
 			(type default)
 		)
 		(uuid "8cb3d3a1-dcd4-41a6-809c-7859fe5342d4")
+	)
+	(wire
+		(pts
+			(xy 45.72 55.88) (xy 46.99 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e67d7e8-b30e-4532-b2cb-83a5847d8503")
 	)
 	(wire
 		(pts
@@ -5780,6 +6032,16 @@
 			(type default)
 		)
 		(uuid "91de8582-2b17-471c-9cb7-91e06b8e795b")
+	)
+	(wire
+		(pts
+			(xy 298.45 107.95) (xy 298.45 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9347a85e-f9c7-4039-b7b2-70484f2a4238")
 	)
 	(wire
 		(pts
@@ -5903,16 +6165,6 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 50.8) (xy 38.1 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a059fe1d-ed5f-4ec5-9ea1-74c2da971516")
-	)
-	(wire
-		(pts
 			(xy 45.72 106.68) (xy 45.72 109.22)
 		)
 		(stroke
@@ -5960,6 +6212,16 @@
 			(type default)
 		)
 		(uuid "a79515bc-e598-46f7-b914-7de54d00f2a5")
+	)
+	(wire
+		(pts
+			(xy 59.69 35.56) (xy 59.69 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a815651c-54b8-487f-99b6-380280a3a0f4")
 	)
 	(wire
 		(pts
@@ -6023,16 +6285,6 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 50.8) (xy 81.28 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b09b4ef8-2bfb-4749-93e9-3e7844eba714")
-	)
-	(wire
-		(pts
 			(xy 349.25 26.67) (xy 349.25 27.94)
 		)
 		(stroke
@@ -6090,6 +6342,16 @@
 			(type default)
 		)
 		(uuid "b82a373f-483c-4ec9-b104-e3379f75a06c")
+	)
+	(wire
+		(pts
+			(xy 289.56 113.03) (xy 302.26 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b89a82cb-079d-4232-ab00-590812d27ac9")
 	)
 	(wire
 		(pts
@@ -6163,6 +6425,16 @@
 	)
 	(wire
 		(pts
+			(xy 289.56 97.79) (xy 289.56 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bdcbf316-aa6b-4913-861c-0c0562cd8019")
+	)
+	(wire
+		(pts
 			(xy 351.79 62.23) (xy 367.03 62.23)
 		)
 		(stroke
@@ -6203,6 +6475,16 @@
 	)
 	(wire
 		(pts
+			(xy 298.45 96.52) (xy 298.45 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c03c29dc-f7c4-4e94-b9d4-f71b58ce5ff5")
+	)
+	(wire
+		(pts
 			(xy 124.46 97.79) (xy 127 97.79)
 		)
 		(stroke
@@ -6220,6 +6502,16 @@
 			(type default)
 		)
 		(uuid "c3341081-a6da-4907-85b5-ada2ec080691")
+	)
+	(wire
+		(pts
+			(xy 59.69 63.5) (xy 59.69 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c369cfe8-167f-4723-926b-65465485041f")
 	)
 	(wire
 		(pts
@@ -6443,13 +6735,13 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 33.02) (xy 35.56 50.8)
+			(xy 76.2 45.72) (xy 82.55 45.72)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d4c7f84b-4f18-4e03-a6bf-609f36ad2e34")
+		(uuid "d554b47e-92cc-4ee0-85c7-62d67ccb2f55")
 	)
 	(wire
 		(pts
@@ -6460,6 +6752,26 @@
 			(type default)
 		)
 		(uuid "d5e7965a-faf1-4ff7-922c-e25b21227e0d")
+	)
+	(wire
+		(pts
+			(xy 44.45 45.72) (xy 46.99 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d654da1c-91ea-48dd-963b-6926c930f39d")
+	)
+	(wire
+		(pts
+			(xy 280.67 107.95) (xy 280.67 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6ef9567-86be-4469-9ebf-1792083650e2")
 	)
 	(wire
 		(pts
@@ -6490,16 +6802,6 @@
 			(type default)
 		)
 		(uuid "d88cd775-4207-430f-b0c9-8ad8b1155a3d")
-	)
-	(wire
-		(pts
-			(xy 58.42 33.02) (xy 66.04 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d892c56d-cc13-4168-89ae-6022baeb599d")
 	)
 	(wire
 		(pts
@@ -6560,6 +6862,16 @@
 			(type default)
 		)
 		(uuid "e080a6f6-04cf-4cea-9204-672b6b04d32a")
+	)
+	(wire
+		(pts
+			(xy 45.72 55.88) (xy 45.72 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0ded2f5-1bfa-461e-a4b1-11d1c8c1ecb8")
 	)
 	(wire
 		(pts
@@ -6643,7 +6955,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 33.02) (xy 35.56 33.02)
+			(xy 34.29 45.72) (xy 36.83 45.72)
 		)
 		(stroke
 			(width 0)
@@ -6660,6 +6972,16 @@
 			(type default)
 		)
 		(uuid "e6dcf03f-3740-4fad-9e84-137e025f65c8")
+	)
+	(wire
+		(pts
+			(xy 289.56 107.95) (xy 289.56 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8cc5798-0b5d-433a-8b88-32c4b271923e")
 	)
 	(wire
 		(pts
@@ -6703,6 +7025,16 @@
 	)
 	(wire
 		(pts
+			(xy 298.45 115.57) (xy 302.26 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eebb6794-74e4-4940-9b6a-919edb71d944")
+	)
+	(wire
+		(pts
 			(xy 119.38 139.7) (xy 119.38 142.24)
 		)
 		(stroke
@@ -6710,16 +7042,6 @@
 			(type default)
 		)
 		(uuid "eeea797a-d046-4377-a0b5-f09613b16575")
-	)
-	(wire
-		(pts
-			(xy 81.28 33.02) (xy 81.28 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ef473cf8-34cf-4923-a476-2a3bc46e2487")
 	)
 	(wire
 		(pts
@@ -6763,6 +7085,16 @@
 	)
 	(wire
 		(pts
+			(xy 309.88 52.07) (xy 312.42 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f255f563-43d5-49da-833e-949df19ab430")
+	)
+	(wire
+		(pts
 			(xy 349.25 26.67) (xy 367.03 26.67)
 		)
 		(stroke
@@ -6770,6 +7102,16 @@
 			(type default)
 		)
 		(uuid "f28bc019-f783-4551-993d-d987e94453f5")
+	)
+	(wire
+		(pts
+			(xy 72.39 55.88) (xy 76.2 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f30fb929-f2ae-4b2f-9a29-98fe573b1517")
 	)
 	(wire
 		(pts
@@ -6823,6 +7165,16 @@
 	)
 	(wire
 		(pts
+			(xy 76.2 55.88) (xy 76.2 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f58a74c0-eaa3-4f41-b62e-e45a0e586371")
+	)
+	(wire
+		(pts
 			(xy 63.5 110.49) (xy 63.5 106.68)
 		)
 		(stroke
@@ -6843,13 +7195,23 @@
 	)
 	(wire
 		(pts
-			(xy 274.32 106.68) (xy 274.32 104.14)
+			(xy 27.94 171.45) (xy 27.94 168.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "faf70bcc-f48d-4ce8-b031-ad41fa9e6551")
+	)
+	(wire
+		(pts
+			(xy 309.88 49.53) (xy 312.42 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc127111-4cd2-419f-b803-adcf35c8a3a5")
 	)
 	(wire
 		(pts
@@ -6883,26 +7245,6 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 33.02) (xy 48.26 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fce1a70b-2b27-4b7e-9b35-93ec8c51a080")
-	)
-	(wire
-		(pts
-			(xy 71.12 25.4) (xy 71.12 22.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fd2a8bc0-777f-4be9-8cb1-645e4518f2d3")
-	)
-	(wire
-		(pts
 			(xy 101.6 111.76) (xy 106.68 111.76)
 		)
 		(stroke
@@ -6913,7 +7255,7 @@
 	)
 	(wire
 		(pts
-			(xy 276.86 101.6) (xy 274.32 101.6)
+			(xy 30.48 166.37) (xy 27.94 166.37)
 		)
 		(stroke
 			(width 0)
@@ -6968,6 +7310,18 @@
 		(uuid 160a835e-46a7-40ac-9c18-45acdf8e675e)
 	)
 	(rectangle
+		(start 261.62 88.9)
+		(end 317.5 120.65)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 1a71b2ed-0f1e-4c4d-b000-e4015acedbee)
+	)
+	(rectangle
 		(start 209.55 88.9)
 		(end 259.08 138.43)
 		(stroke
@@ -6992,8 +7346,8 @@
 		(uuid 2af45f0f-5b37-4e87-92e3-a872eccd6d8e)
 	)
 	(rectangle
-		(start 261.62 88.9)
-		(end 295.275 114.3)
+		(start 15.24 153.67)
+		(end 48.895 179.07)
 		(stroke
 			(width 0)
 			(type dash)
@@ -7128,7 +7482,7 @@
 	)
 	(text "ISO Power Debug Pin\n\n"
 		(exclude_from_sim no)
-		(at 262.255 95.885 0)
+		(at 15.875 160.655 0)
 		(effects
 			(font
 				(size 2 2)
@@ -7176,7 +7530,7 @@
 		)
 		(uuid "610cb9cb-eb27-4934-b087-0b54612f7e69")
 	)
-	(text "Reverse Polarity Protection"
+	(text "Global Enable & Reverse Polarity Protection"
 		(exclude_from_sim no)
 		(at 15.875 19.05 0)
 		(effects
@@ -7201,6 +7555,19 @@
 			(justify left bottom)
 		)
 		(uuid "6e1b85be-3474-4ef1-8465-a6785572eec7")
+	)
+	(text "Pull-Up Resistors"
+		(exclude_from_sim no)
+		(at 262.255 92.71 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "79eb3c45-0263-4777-bb36-eedf61158349")
 	)
 	(text "TCAL9539-Q1\n"
 		(exclude_from_sim no)
@@ -7229,7 +7596,7 @@
 	)
 	(text "2.54mm Pin Headers"
 		(exclude_from_sim no)
-		(at 294.64 113.665 0)
+		(at 48.26 178.435 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7466,30 +7833,6 @@
 		(uuid "19e9f7eb-87a5-4bf8-b760-bccbbe198b5e")
 	)
 	(hierarchical_label "PYRO_EN"
-		(shape input)
-		(at 73.66 22.86 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "1ced36c8-a322-4b5a-9129-8fffac4f3440")
-	)
-	(hierarchical_label "ADC_DRDY"
-		(shape input)
-		(at 312.42 49.53 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "1fd7f773-1a07-43b9-a1b6-60e3fe808124")
-	)
-	(hierarchical_label "PYRO_EN"
 		(shape output)
 		(at 312.42 46.99 0)
 		(fields_autoplaced yes)
@@ -7512,6 +7855,18 @@
 			(justify left)
 		)
 		(uuid "27374262-c114-40f1-a2f2-6daf527ea7cb")
+	)
+	(hierarchical_label "ISO_SCL"
+		(shape bidirectional)
+		(at 276.86 113.03 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "27fec626-7cde-4cdb-98db-63d17af746a8")
 	)
 	(hierarchical_label "ISO_SDA"
 		(shape bidirectional)
@@ -7548,6 +7903,30 @@
 			(justify left)
 		)
 		(uuid "45d9056c-5137-4fb2-b068-56abd7304a0d")
+	)
+	(hierarchical_label "PYRO_EN"
+		(shape input)
+		(at 34.29 50.8 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "471065a5-761f-4b5f-b6db-a6d515bac4d6")
+	)
+	(hierarchical_label "ADC_DRDY"
+		(shape input)
+		(at 312.42 52.07 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4ee6872f-49e4-4fa0-b8c0-4c44ed1270ad")
 	)
 	(hierarchical_label "ISO_SDA"
 		(shape bidirectional)
@@ -7657,6 +8036,30 @@
 		)
 		(uuid "7958335f-da5a-463b-b891-9346da5820ef")
 	)
+	(hierarchical_label "ADC_RST_ISO"
+		(shape bidirectional)
+		(at 302.26 115.57 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7b765a5d-fa2a-4902-a28b-b34b05d85882")
+	)
+	(hierarchical_label "ISO_SDA"
+		(shape bidirectional)
+		(at 302.26 110.49 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7c6a0beb-f8b8-4fd3-b1d6-c57160f5ac7e")
+	)
 	(hierarchical_label "ADC_RESET"
 		(shape input)
 		(at 100.33 119.38 180)
@@ -7669,6 +8072,18 @@
 		)
 		(uuid "7e6c73b4-3dca-4ff2-a3c5-dff6a63e9f60")
 	)
+	(hierarchical_label "ADC_RST_ISO"
+		(shape output)
+		(at 312.42 49.53 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8208f0e2-684b-43f9-8880-2703910cdef1")
+	)
 	(hierarchical_label "PYRO_B"
 		(shape input)
 		(at 190.5 24.13 180)
@@ -7680,6 +8095,18 @@
 			(justify right)
 		)
 		(uuid "85a3c0db-b6e9-40bd-8cfd-20446b11e336")
+	)
+	(hierarchical_label "ISO_SCL"
+		(shape bidirectional)
+		(at 302.26 113.03 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8af2e958-4fde-4523-ab79-e17ffa5c2e8a")
 	)
 	(hierarchical_label "EXP_INT_ISO"
 		(shape output)
@@ -7755,7 +8182,7 @@
 	)
 	(hierarchical_label "V_PYRO_ZONE"
 		(shape input)
-		(at 30.48 33.02 180)
+		(at 34.29 45.72 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7803,7 +8230,7 @@
 	)
 	(hierarchical_label "V_PYRO"
 		(shape output)
-		(at 86.36 33.02 0)
+		(at 82.55 45.72 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7969,6 +8396,18 @@
 		)
 		(uuid "e1beecac-2a0a-4998-988e-a8ec6ac1b940")
 	)
+	(hierarchical_label "ADC_RST_ISO"
+		(shape bidirectional)
+		(at 276.86 115.57 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e31a2ef1-7c87-43ff-8694-a6485a91c8ac")
+	)
 	(hierarchical_label "SENSE_C"
 		(shape input)
 		(at 387.35 52.07 0)
@@ -8029,6 +8468,18 @@
 		)
 		(uuid "ef0c95c4-f9cb-48ce-b7d4-07348feaa46e")
 	)
+	(hierarchical_label "ISO_SDA"
+		(shape bidirectional)
+		(at 276.86 110.49 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f8e77fbb-29c9-43ff-a0b6-213cc00d17a7")
+	)
 	(hierarchical_label "EXP_INT_ISO"
 		(shape input)
 		(at 139.7 124.46 0)
@@ -8071,7 +8522,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "20k"
+		(property "Value" "30k"
 			(at 244.475 76.2 0)
 			(effects
 				(font
@@ -8128,7 +8579,7 @@
 			)
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "R218")
+					(reference "R219")
 					(unit 1)
 				)
 			)
@@ -8203,7 +8654,7 @@
 			)
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "C207")
+					(reference "C206")
 					(unit 1)
 				)
 			)
@@ -8226,7 +8677,7 @@
 				)
 			)
 		)
-		(property "Value" "5k"
+		(property "Value" "100k"
 			(at 153.67 65.405 90)
 			(effects
 				(font
@@ -8282,7 +8733,7 @@
 			)
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "R208")
+					(reference "R209")
 					(unit 1)
 				)
 			)
@@ -8298,7 +8749,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0e57aeab-d106-440d-ab49-c88bde27a831")
-		(property "Reference" "#PWR0224"
+		(property "Reference" "#PWR0226"
 			(at 280.67 68.58 0)
 			(effects
 				(font
@@ -8348,7 +8799,7 @@
 		(instances
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "#PWR0224")
+					(reference "#PWR0226")
 					(unit 1)
 				)
 			)
@@ -8424,8 +8875,170 @@
 			)
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "R219")
+					(reference "R221")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET_Vishay:Si7232DN")
+		(at 220.98 31.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0f9e60b0-c3be-4c3e-a21f-4dddc825b6a1")
+		(property "Reference" "Q201"
+			(at 223.52 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Si7232DN"
+			(at 223.52 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Transistor_FET_Vishay:Vishay_PowerPAK_1212-8_Dual"
+			(at 220.98 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/68986/si7232dn.pdf"
+			(at 220.98 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "25A Id, 20Vd, Dual N-Channel MOSFET, PowerPak 1212-8"
+			(at 220.98 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "286e0dc6-3f11-4dda-b025-80dc2f7c3585")
+		)
+		(pin "3"
+			(uuid "79f71083-0064-4d17-a0b1-687047c6f3ef")
+		)
+		(pin "6"
+			(uuid "c703ffb2-38e3-4d9c-8272-8d740229dcb1")
+		)
+		(pin "1"
+			(uuid "3971e70b-5c22-48a9-a809-d1fcfc0ad115")
+		)
+		(pin "5"
+			(uuid "3cd46e76-03d4-4364-8ea4-1af78a546d30")
+		)
+		(pin "2"
+			(uuid "f35edefd-bd1e-44ff-976f-4d3491f4814e")
+		)
+		(instances
+			(project ""
+				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
+					(reference "Q201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET_Vishay:Si7232DN")
+		(at 220.98 68.58 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1172d569-3c3e-4e26-8978-0d8ddea9fc29")
+		(property "Reference" "Q202"
+			(at 223.52 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Si7232DN"
+			(at 223.52 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Transistor_FET_Vishay:Vishay_PowerPAK_1212-8_Dual"
+			(at 220.98 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/68986/si7232dn.pdf"
+			(at 220.98 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "25A Id, 20Vd, Dual N-Channel MOSFET, PowerPak 1212-8"
+			(at 220.98 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1dfc9863-f9a3-4314-be87-8b535706b02a")
+		)
+		(pin "3"
+			(uuid "40f932d9-0400-45f7-880f-84fcb51dab35")
+		)
+		(pin "1"
+			(uuid "94aea2af-7b80-44e1-9760-ab27bee61a5d")
+		)
+		(pin "5"
+			(uuid "3e84cb35-8229-424e-afbe-95e9e13ae4ee")
+		)
+		(pin "6"
+			(uuid "ea792b2e-ef72-4b99-8109-ba76fc47bab1")
+		)
+		(pin "4"
+			(uuid "5ebd6a12-68d2-4180-bb51-59ab22d76554")
+		)
+		(instances
+			(project ""
+				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
+					(reference "Q202")
+					(unit 2)
 				)
 			)
 		)
@@ -8439,7 +9052,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "11e82d12-4f7d-4a7d-bf89-42911fc6af0e")
-		(property "Reference" "C211"
+		(property "Reference" "C210"
 			(at 303.53 22.86 90)
 			(effects
 				(font
@@ -8491,7 +9104,7 @@
 		(instances
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "C211")
+					(reference "C210")
 					(unit 1)
 				)
 			)
@@ -8506,7 +9119,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "13040dbd-b716-460a-abcf-1d46c90b7c53")
-		(property "Reference" "#PWR0206"
+		(property "Reference" "#PWR0210"
 			(at 124.46 151.13 0)
 			(effects
 				(font
@@ -8556,7 +9169,7 @@
 		(instances
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "#PWR0206")
+					(reference "#PWR0210")
 					(unit 1)
 				)
 			)
@@ -8635,7 +9248,7 @@
 			)
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "R214")
+					(reference "R215")
 					(unit 1)
 				)
 			)
@@ -8651,7 +9264,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "210ba0aa-9f05-4eca-9b4d-176bd47cc434")
-		(property "Reference" "#PWR0219"
+		(property "Reference" "#PWR0223"
 			(at 240.665 104.14 0)
 			(effects
 				(font
@@ -8701,7 +9314,7 @@
 		(instances
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "#PWR0219")
+					(reference "#PWR0223")
 					(unit 1)
 				)
 			)
@@ -8724,7 +9337,7 @@
 				)
 			)
 		)
-		(property "Value" "5k"
+		(property "Value" "100k"
 			(at 153.67 28.575 90)
 			(effects
 				(font
@@ -8780,40 +9393,41 @@
 			)
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "R207")
+					(reference "R208")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET_Diodes:DMNH6022SSDQ")
-		(at 71.12 33.02 90)
-		(mirror x)
+		(lib_id "Device:R_US")
+		(at 76.2 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "24847a73-a7af-42f1-92bb-41f1579de3c0")
-		(property "Reference" "Q?"
-			(at 71.12 36.83 90)
+		(uuid "27ef4e76-2608-4093-b7fe-c6735f6e4a13")
+		(property "Reference" "R202"
+			(at 77.47 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "DMNH6022SSDQ"
-			(at 71.12 38.735 90)
+		(property "Value" "1k"
+			(at 77.47 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SO-8_3.9x4.9mm_P1.27mm"
-			(at 81.28 33.02 0)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 77.216 51.054 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8821,8 +9435,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMNH6022SSDQ.pdf"
-			(at 78.74 33.02 0)
+		(property "Datasheet" "~"
+			(at 76.2 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8831,7 +9445,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 71.12 33.02 0)
+			(at 76.2 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8840,39 +9454,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "4610436b-e1fa-4e78-b7f5-6daf3ae191c9")
+			(uuid "cf815659-f36f-4dc1-a7c4-f3951cc5789d")
 		)
 		(pin "2"
-			(uuid "1a9fd0c1-6920-4370-94de-50e5908f8404")
-		)
-		(pin "7"
-			(uuid "059ee8bb-2e2e-4349-8cb4-d10a0ca33962")
-		)
-		(pin "8"
-			(uuid "3646c291-6e59-4a61-8738-40fd1acbcc9c")
-		)
-		(pin "3"
-			(uuid "38406d60-9e2f-497e-b182-69e37081ff5e")
-		)
-		(pin "4"
-			(uuid "13a17ba6-1818-422c-ac69-a7a19859f3fd")
-		)
-		(pin "5"
-			(uuid "771215ea-1c0a-42c1-9a41-aa050074a862")
-		)
-		(pin "6"
-			(uuid "db371431-3e4f-4f21-972d-04723ab7414d")
+			(uuid "49aa2177-7d54-4b69-ac7b-5850fa36c9c3")
 		)
 		(instances
-			(project "MIDAS-MK2-Pyro"
-				(path "/25e87aab-0877-4568-a426-1d554c854643"
-					(reference "Q?")
-					(unit 1)
-				)
-			)
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "Q201")
+					(reference "R202")
 					(unit 1)
 				)
 			)
@@ -9017,7 +9607,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2f19806f-6506-4ecf-ac58-1e75194b4217")
-		(property "Reference" "R202"
+		(property "Reference" "R203"
 			(at 100.33 102.87 0)
 			(effects
 				(font
@@ -9071,7 +9661,7 @@
 		(instances
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "R202")
+					(reference "R203")
 					(unit 1)
 				)
 			)
@@ -9142,7 +9732,88 @@
 			)
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "#PWR0216")
+					(reference "#PWR0220")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET_Vishay:Si7232DN")
+		(at 139.7 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "324c1d38-e92b-4525-947b-9ef850ca096f")
+		(property "Reference" "Q202"
+			(at 142.24 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Si7232DN"
+			(at 142.24 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Transistor_FET_Vishay:Vishay_PowerPAK_1212-8_Dual"
+			(at 139.7 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/68986/si7232dn.pdf"
+			(at 139.7 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "25A Id, 20Vd, Dual N-Channel MOSFET, PowerPak 1212-8"
+			(at 139.7 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1dfc9863-f9a3-4314-be87-8b535706b02b")
+		)
+		(pin "3"
+			(uuid "40f932d9-0400-45f7-880f-84fcb51dab36")
+		)
+		(pin "1"
+			(uuid "94aea2af-7b80-44e1-9760-ab27bee61a5e")
+		)
+		(pin "5"
+			(uuid "3e84cb35-8229-424e-afbe-95e9e13ae4ef")
+		)
+		(pin "6"
+			(uuid "ea792b2e-ef72-4b99-8109-ba76fc47bab2")
+		)
+		(pin "4"
+			(uuid "5ebd6a12-68d2-4180-bb51-59ab22d76555")
+		)
+		(instances
+			(project ""
+				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
+					(reference "Q202")
 					(unit 1)
 				)
 			)
@@ -9157,7 +9828,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "326421cf-2af4-42f8-b6c9-4995a2d8e32f")
-		(property "Reference" "#PWR0215"
+		(property "Reference" "#PWR0219"
 			(at 195.58 133.35 0)
 			(effects
 				(font
@@ -9207,7 +9878,7 @@
 		(instances
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "#PWR0215")
+					(reference "#PWR0219")
 					(unit 1)
 				)
 			)
@@ -9222,7 +9893,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "38ebbb6b-a476-4ebf-bcaa-12549c58ba60")
-		(property "Reference" "#PWR0230"
+		(property "Reference" "#PWR0233"
 			(at 388.62 46.99 0)
 			(effects
 				(font
@@ -9272,7 +9943,7 @@
 		(instances
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "#PWR0230")
+					(reference "#PWR0233")
 					(unit 1)
 				)
 			)
@@ -9353,7 +10024,7 @@
 			)
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "R204")
+					(reference "R205")
 					(unit 1)
 				)
 			)
@@ -9554,87 +10225,6 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 54.61 76.2 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "418ce644-2af8-47e9-a2aa-7d76fcc113ec")
-		(property "Reference" "C?"
-			(at 52.705 77.47 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1uF"
-			(at 56.515 77.47 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 58.42 75.2348 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 54.61 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 54.61 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "07069da4-6882-4bd4-b6f7-c199772d90af")
-		)
-		(pin "2"
-			(uuid "e0ab0d0e-9de8-42b2-b655-d6f5e81fba64")
-		)
-		(instances
-			(project "MIDAS-MK2-Pyro"
-				(path "/25e87aab-0877-4568-a426-1d554c854643"
-					(reference "C?")
-					(unit 1)
-				)
-			)
-			(project "MIDAS-MK1"
-				(path "/38da65c3-d556-49ac-8c54-119866b5cf28"
-					(reference "C1")
-					(unit 1)
-				)
-			)
-			(project "MIDAS-MK2.1"
-				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "C202")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
 		(at 195.58 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9702,7 +10292,7 @@
 			)
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "C208")
+					(reference "C207")
 					(unit 1)
 				)
 			)
@@ -9718,7 +10308,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "466f8309-794b-44f0-9eab-4b5640cbdd8d")
-		(property "Reference" "#PWR0226"
+		(property "Reference" "#PWR0229"
 			(at 299.72 25.4 0)
 			(effects
 				(font
@@ -9768,7 +10358,7 @@
 		(instances
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "#PWR0226")
+					(reference "#PWR0229")
 					(unit 1)
 				)
 			)
@@ -9783,7 +10373,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "473e5603-9a21-4520-8c20-8c646aea3193")
-		(property "Reference" "#PWR0210"
+		(property "Reference" "#PWR0214"
 			(at 161.29 52.07 0)
 			(effects
 				(font
@@ -9833,7 +10423,7 @@
 		(instances
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "#PWR0210")
+					(reference "#PWR0214")
 					(unit 1)
 				)
 			)
@@ -9849,7 +10439,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4bb78fa4-daf1-4135-b293-f066fd8b78b9")
-		(property "Reference" "#PWR0228"
+		(property "Reference" "#PWR0231"
 			(at 372.11 25.4 0)
 			(effects
 				(font
@@ -9899,7 +10489,7 @@
 		(instances
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "#PWR0228")
+					(reference "#PWR0231")
 					(unit 1)
 				)
 			)
@@ -9914,7 +10504,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4d1007b8-01cc-4134-b2a3-6713e5033bae")
-		(property "Reference" "#PWR0211"
+		(property "Reference" "#PWR0215"
 			(at 161.29 88.9 0)
 			(effects
 				(font
@@ -9964,7 +10554,7 @@
 		(instances
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "#PWR0211")
+					(reference "#PWR0215")
 					(unit 1)
 				)
 			)
@@ -10036,7 +10626,7 @@
 			)
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "#PWR0213")
+					(reference "#PWR0217")
 					(unit 1)
 				)
 			)
@@ -10156,93 +10746,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET_Diodes:DMNH6022SSDQ")
-		(at 220.98 31.75 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5439f582-873a-47d9-ba11-d9716a10d491")
-		(property "Reference" "Q202"
-			(at 223.52 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "DMNH6022SSDQ"
-			(at 223.52 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SO-8_3.9x4.9mm_P1.27mm"
-			(at 220.98 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMNH6022SSDQ.pdf"
-			(at 220.98 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "22.6A Id, 60Vd, N-Channel MOSFET, SO-8"
-			(at 220.98 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "a19983bc-d3a4-4bf8-8ac0-64a33aaec67d")
-		)
-		(pin "2"
-			(uuid "ff06d93b-31ad-4a8d-bcf1-cc98858faaa6")
-		)
-		(pin "3"
-			(uuid "51f508a8-1d3b-413d-a80a-6276aac29aa0")
-		)
-		(pin "1"
-			(uuid "61ced308-0469-4a4c-bd33-6a9cbd9dbe52")
-		)
-		(pin "8"
-			(uuid "e5d1cc69-39dc-4690-9851-8da26a617526")
-		)
-		(pin "4"
-			(uuid "73cf10fe-a15e-4311-b1fc-ecfed32931c5")
-		)
-		(pin "5"
-			(uuid "e62e09ca-9e50-405a-872c-c432f0a72c2b")
-		)
-		(pin "7"
-			(uuid "7c40dc32-d9f9-4d6f-88a6-05057051ed6b")
-		)
-		(instances
-			(project "MIDAS-MK2.1"
-				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "Q202")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 175.26 104.14 0)
 		(unit 1)
@@ -10311,7 +10814,7 @@
 			)
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "C204")
+					(reference "C203")
 					(unit 1)
 				)
 			)
@@ -10390,7 +10893,7 @@
 			)
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "R213")
+					(reference "R214")
 					(unit 1)
 				)
 			)
@@ -10461,7 +10964,7 @@
 			)
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "#PWR0204")
+					(reference "#PWR0208")
 					(unit 1)
 				)
 			)
@@ -10542,7 +11045,7 @@
 			)
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "R203")
+					(reference "R204")
 					(unit 1)
 				)
 			)
@@ -10558,7 +11061,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5be43e03-bec7-49b6-86f2-a15f6b1b7811")
-		(property "Reference" "#PWR0214"
+		(property "Reference" "#PWR0218"
 			(at 195.58 120.65 0)
 			(effects
 				(font
@@ -10608,7 +11111,7 @@
 		(instances
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "#PWR0214")
+					(reference "#PWR0218")
 					(unit 1)
 				)
 			)
@@ -10624,7 +11127,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5c00a432-c501-45da-8abb-d916f4eab882")
-		(property "Reference" "#PWR0208"
+		(property "Reference" "#PWR0212"
 			(at 140.97 114.3 0)
 			(effects
 				(font
@@ -10674,7 +11177,7 @@
 		(instances
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "#PWR0208")
+					(reference "#PWR0212")
 					(unit 1)
 				)
 			)
@@ -10689,7 +11192,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5f8d8a6d-b32b-4a20-a492-258b93d05e58")
-		(property "Reference" "#PWR0225"
+		(property "Reference" "#PWR0227"
 			(at 297.18 87.63 0)
 			(effects
 				(font
@@ -10739,7 +11242,7 @@
 		(instances
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "#PWR0225")
+					(reference "#PWR0227")
 					(unit 1)
 				)
 			)
@@ -10754,7 +11257,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "60f1200c-81e7-45b0-94a5-9d600f5fde0f")
-		(property "Reference" "#PWR0231"
+		(property "Reference" "#PWR0234"
 			(at 397.51 41.91 0)
 			(effects
 				(font
@@ -10804,7 +11307,7 @@
 		(instances
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "#PWR0231")
+					(reference "#PWR0234")
 					(unit 1)
 				)
 			)
@@ -10962,7 +11465,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "62f236c5-f821-4f15-8362-625138875fea")
-		(property "Reference" "#PWR0202"
+		(property "Reference" "#PWR0204"
 			(at 45.72 104.14 0)
 			(effects
 				(font
@@ -11012,7 +11515,142 @@
 		(instances
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "#PWR0202")
+					(reference "#PWR0204")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "+3V3_1")
+		(lib_id "power:+3V3")
+		(at 59.69 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "62fabba0-5601-4562-b0d3-6a5715735bda")
+		(property "Reference" "#PWR0206"
+			(at 59.69 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3_ISO"
+			(at 59.69 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 59.69 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 59.69 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 59.69 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ac94307d-ddb4-406e-b995-4ee923512dba")
+		)
+		(instances
+			(project "MIDAS-MK2.1"
+				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
+					(reference "#PWR0206")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 280.67 104.14 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "632c15af-b06d-4c2d-bf0d-91f35e0b89d7")
+		(property "Reference" "R220"
+			(at 281.94 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 281.94 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 279.654 103.886 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 280.67 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 280.67 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "66453494-d9d0-42b5-9945-aa7267bab2ee")
+		)
+		(pin "2"
+			(uuid "7848f9f3-7df8-4b93-8f97-edb4745ea706")
+		)
+		(instances
+			(project "MIDAS-MK2.1"
+				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
+					(reference "R220")
 					(unit 1)
 				)
 			)
@@ -11036,7 +11674,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "20k"
+		(property "Value" "30k"
 			(at 244.475 39.37 0)
 			(effects
 				(font
@@ -11093,7 +11731,7 @@
 			)
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "R217")
+					(reference "R218")
 					(unit 1)
 				)
 			)
@@ -11116,7 +11754,7 @@
 				)
 			)
 		)
-		(property "Value" "5k"
+		(property "Value" "100k"
 			(at 234.95 28.575 90)
 			(effects
 				(font
@@ -11172,7 +11810,7 @@
 			)
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "R215")
+					(reference "R216")
 					(unit 1)
 				)
 			)
@@ -11247,7 +11885,7 @@
 			)
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "C203")
+					(reference "C202")
 					(unit 1)
 				)
 			)
@@ -11271,7 +11909,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "20k"
+		(property "Value" "30k"
 			(at 163.195 39.37 0)
 			(effects
 				(font
@@ -11328,7 +11966,7 @@
 			)
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "R209")
+					(reference "R210")
 					(unit 1)
 				)
 			)
@@ -11407,7 +12045,7 @@
 			)
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "R206")
+					(reference "R207")
 					(unit 1)
 				)
 			)
@@ -11496,7 +12134,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "20k"
+		(property "Value" "30k"
 			(at 163.195 76.2 0)
 			(effects
 				(font
@@ -11553,7 +12191,7 @@
 			)
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "R210")
+					(reference "R211")
 					(unit 1)
 				)
 			)
@@ -11641,7 +12279,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7aeb4f31-4f89-4a38-87de-21dfca56032f")
-		(property "Reference" "#PWR0227"
+		(property "Reference" "#PWR0230"
 			(at 314.96 33.02 0)
 			(effects
 				(font
@@ -11691,7 +12329,7 @@
 		(instances
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "#PWR0227")
+					(reference "#PWR0230")
 					(unit 1)
 				)
 			)
@@ -11699,15 +12337,15 @@
 	)
 	(symbol
 		(lib_id "power:Earth")
-		(at 274.32 106.68 0)
+		(at 27.94 171.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "7ced2903-8305-4433-a83f-ca9339b9c67d")
-		(property "Reference" "#PWR0223"
-			(at 274.32 113.03 0)
+		(property "Reference" "#PWR0203"
+			(at 27.94 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11716,7 +12354,7 @@
 			)
 		)
 		(property "Value" "PYRO_GND"
-			(at 274.32 110.49 0)
+			(at 27.94 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11724,7 +12362,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 274.32 106.68 0)
+			(at 27.94 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11733,7 +12371,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 274.32 106.68 0)
+			(at 27.94 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11742,7 +12380,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 274.32 106.68 0)
+			(at 27.94 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11756,94 +12394,7 @@
 		(instances
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "#PWR0223")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET_Diodes:DMNH6022SSDQ")
-		(at 139.7 68.58 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "86f79a11-1779-4bf2-96ed-390622052982")
-		(property "Reference" "Q203"
-			(at 142.24 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "DMNH6022SSDQ"
-			(at 142.24 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SO-8_3.9x4.9mm_P1.27mm"
-			(at 139.7 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMNH6022SSDQ.pdf"
-			(at 139.7 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "22.6A Id, 60Vd, N-Channel MOSFET, SO-8"
-			(at 139.7 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a6543131-2e77-4ac1-9ea1-333e899f28e6")
-		)
-		(pin "8"
-			(uuid "83fe3f20-647c-4e92-8cea-9c83ca068195")
-		)
-		(pin "3"
-			(uuid "82336a76-ed25-4b1a-bb66-760d969f07a2")
-		)
-		(pin "2"
-			(uuid "a361e2b0-d0f3-4d13-873c-31b8a3ec84b4")
-		)
-		(pin "5"
-			(uuid "ca2fca84-8b4a-4324-8b64-5972e1194125")
-		)
-		(pin "4"
-			(uuid "f4299757-1d20-40a3-9afb-4bd0f3368932")
-		)
-		(pin "6"
-			(uuid "6ac55e6a-da3b-49db-80fc-23c42ed1087d")
-		)
-		(pin "7"
-			(uuid "04b568e3-0e9e-4193-9ed8-8522c500414b")
-		)
-		(instances
-			(project "MIDAS-MK2.1"
-				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "Q203")
+					(reference "#PWR0203")
 					(unit 1)
 				)
 			)
@@ -11858,7 +12409,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8c0a6e55-159b-4adc-85c6-1e62f72b4f4f")
-		(property "Reference" "#PWR0220"
+		(property "Reference" "#PWR0224"
 			(at 242.57 52.07 0)
 			(effects
 				(font
@@ -11908,50 +12459,39 @@
 		(instances
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "#PWR0220")
+					(reference "#PWR0224")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET_Diodes:DMNH6022SSDQ")
-		(at 139.7 31.75 0)
-		(unit 2)
+		(lib_id "Device:D_Schottky")
+		(at 40.64 45.72 180)
+		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "9d514159-36ab-4176-b20c-a10a4448e82b")
-		(property "Reference" "Q202"
-			(at 142.24 30.48 0)
+		(uuid "9b9c81e5-480b-420d-b42f-5090eb9f1a49")
+		(property "Reference" "D201"
+			(at 40.64 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "DMNH6022SSDQ"
-			(at 142.24 33.02 0)
+		(property "Value" "RSX501LAM20"
+			(at 40.64 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SO-8_3.9x4.9mm_P1.27mm"
-			(at 139.7 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMNH6022SSDQ.pdf"
-			(at 139.7 41.91 0)
+		(property "Footprint" "Diode_SMD:D_SOD-128"
+			(at 40.64 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11959,8 +12499,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "22.6A Id, 60Vd, N-Channel MOSFET, SO-8"
-			(at 139.7 31.75 0)
+		(property "Datasheet" "https://fscdn.rohm.com/en/products/databook/datasheet/discrete/diode/schottky_barrier/rsx501lam20tr-e.pdf"
+			(at 40.64 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11968,35 +12508,26 @@
 				(hide yes)
 			)
 		)
-		(pin "6"
-			(uuid "a19983bc-d3a4-4bf8-8ac0-64a33aaec67e")
+		(property "Description" "Schottky diode"
+			(at 40.64 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "2"
-			(uuid "ff06d93b-31ad-4a8d-bcf1-cc98858faaa7")
-		)
-		(pin "3"
-			(uuid "51f508a8-1d3b-413d-a80a-6276aac29aa1")
+			(uuid "7ec8d951-4349-4a24-b588-7bc49b17f59c")
 		)
 		(pin "1"
-			(uuid "61ced308-0469-4a4c-bd33-6a9cbd9dbe53")
-		)
-		(pin "8"
-			(uuid "e5d1cc69-39dc-4690-9851-8da26a617527")
-		)
-		(pin "4"
-			(uuid "73cf10fe-a15e-4311-b1fc-ecfed32931c6")
-		)
-		(pin "5"
-			(uuid "e62e09ca-9e50-405a-872c-c432f0a72c2c")
-		)
-		(pin "7"
-			(uuid "7c40dc32-d9f9-4d6f-88a6-05057051ed6c")
+			(uuid "a8d0a839-9cd0-4e69-9444-174e1201c0d6")
 		)
 		(instances
-			(project "MIDAS-MK2.1"
+			(project ""
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "Q202")
-					(unit 2)
+					(reference "D201")
+					(unit 1)
 				)
 			)
 		)
@@ -12010,7 +12541,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a151d421-92ce-4a6b-9eab-0b422aac70de")
-		(property "Reference" "#PWR0229"
+		(property "Reference" "#PWR0232"
 			(at 372.11 71.12 0)
 			(effects
 				(font
@@ -12060,100 +12591,8 @@
 		(instances
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "#PWR0229")
+					(reference "#PWR0232")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET_Diodes:DMNH6022SSDQ")
-		(at 53.34 33.02 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a28c51bd-7d2b-4c30-ae0a-32539e4a2bdd")
-		(property "Reference" "Q?"
-			(at 53.34 29.083 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "DMNH6022SSDQ"
-			(at 53.34 26.543 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SO-8_3.9x4.9mm_P1.27mm"
-			(at 43.18 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMNH6022SSDQ.pdf"
-			(at 45.72 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 53.34 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c00ffde1-0d93-4b99-8a3a-0c4e0fe33c74")
-		)
-		(pin "2"
-			(uuid "4c6c5e7b-c5f2-4fec-89e2-7692d5d9399e")
-		)
-		(pin "7"
-			(uuid "7ac7521d-35da-48a7-9c85-e570ffe3e1dd")
-		)
-		(pin "8"
-			(uuid "3adb38a0-1961-4552-b7fc-e892b7c7a65e")
-		)
-		(pin "3"
-			(uuid "dabd4821-344c-4461-a2f9-ff5bb0dc10c8")
-		)
-		(pin "4"
-			(uuid "ebaa68c1-cf05-41b9-9297-59adc1c96cbf")
-		)
-		(pin "5"
-			(uuid "482fe5cb-3677-4ae7-a1bb-b8c24dc8ab3b")
-		)
-		(pin "6"
-			(uuid "90597013-283c-48e4-b67c-f45694d98c81")
-		)
-		(instances
-			(project "MIDAS-MK2-Pyro"
-				(path "/25e87aab-0877-4568-a426-1d554c854643"
-					(reference "Q?")
-					(unit 1)
-				)
-			)
-			(project "MIDAS-MK2.1"
-				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "Q201")
-					(unit 2)
 				)
 			)
 		)
@@ -12168,7 +12607,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a42a88ab-815c-4f82-9506-56b368e8b467")
-		(property "Reference" "C212"
+		(property "Reference" "C211"
 			(at 389.89 26.67 0)
 			(effects
 				(font
@@ -12222,7 +12661,7 @@
 		(instances
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "C212")
+					(reference "C211")
 					(unit 1)
 				)
 			)
@@ -12237,7 +12676,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a6c6a341-8f5b-4bf0-9d6f-a40f7dfa5b55")
-		(property "Reference" "C213"
+		(property "Reference" "C212"
 			(at 397.51 26.67 0)
 			(effects
 				(font
@@ -12291,7 +12730,7 @@
 		(instances
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "C213")
+					(reference "C212")
 					(unit 1)
 				)
 			)
@@ -12307,7 +12746,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a70f0436-5a3a-44bb-ad6a-9a0cd5d99ef2")
-		(property "Reference" "#PWR0207"
+		(property "Reference" "#PWR0211"
 			(at 127 100.33 0)
 			(effects
 				(font
@@ -12357,7 +12796,7 @@
 		(instances
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "#PWR0207")
+					(reference "#PWR0211")
 					(unit 1)
 				)
 			)
@@ -12520,7 +12959,7 @@
 			)
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "#PWR0217")
+					(reference "#PWR0221")
 					(unit 1)
 				)
 			)
@@ -12592,7 +13031,7 @@
 			)
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "#PWR0212")
+					(reference "#PWR0216")
 					(unit 1)
 				)
 			)
@@ -12668,7 +13107,109 @@
 			)
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "C209")
+					(reference "C208")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Power_Management:NPC45560-H")
+		(at 59.69 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b4a36472-4195-44aa-9e98-e8997ac8327e")
+		(property "Reference" "U202"
+			(at 49.53 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "NPC45560-H"
+			(at 60.96 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:DFN-12-1EP_3x3mm_P0.5mm_EP2.05x2.86mm"
+			(at 59.69 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.onsemi.com/pub/Collateral/NCP45560-D.PDF"
+			(at 59.69 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Controlled load switch with low Ron, DFN-12"
+			(at 59.69 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "e5a978ee-2b4e-48a6-9cbd-24b1ec7c766c")
+		)
+		(pin "7"
+			(uuid "4c0c6411-5ce2-4080-aefa-9117a497d86e")
+		)
+		(pin "4"
+			(uuid "06a43f3b-961d-4f49-9f31-03e860ab5369")
+		)
+		(pin "10"
+			(uuid "a6f6dba2-5e41-4f0a-9077-66d1955509b6")
+		)
+		(pin "11"
+			(uuid "5b2cc574-4cd1-4bb6-95b6-0bac6aa82b9c")
+		)
+		(pin "9"
+			(uuid "ab6eec4e-7f90-4721-ad5c-d07345edf9fa")
+		)
+		(pin "3"
+			(uuid "844421e7-42cd-49b7-9a22-d1b98cbcedc4")
+		)
+		(pin "12"
+			(uuid "ede8f11f-210c-4957-902f-1280351352ab")
+		)
+		(pin "2"
+			(uuid "4e932919-0108-476d-8e07-710f68e8778c")
+		)
+		(pin "1"
+			(uuid "82535071-a863-4f16-97c6-82fe8178cf4e")
+		)
+		(pin "5"
+			(uuid "58d8f29c-3f78-4654-b3d8-9d843bc423fa")
+		)
+		(pin "13"
+			(uuid "fda78e99-a293-4643-8bf1-3c2a02ccd5a7")
+		)
+		(pin "8"
+			(uuid "55c8115b-6c71-4ab6-9105-49730f1a1b06")
+		)
+		(instances
+			(project ""
+				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
+					(reference "U202")
 					(unit 1)
 				)
 			)
@@ -12676,7 +13217,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 281.94 101.6 0)
+		(at 35.56 166.37 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12684,7 +13225,7 @@
 		(dnp no)
 		(uuid "b5998e25-e8bb-48f3-9d72-cdfc1f31dcd7")
 		(property "Reference" "J201"
-			(at 281.94 99.06 0)
+			(at 35.56 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12692,7 +13233,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02"
-			(at 281.94 106.68 0)
+			(at 35.56 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12701,7 +13242,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
-			(at 281.94 101.6 0)
+			(at 35.56 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12710,7 +13251,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 281.94 101.6 0)
+			(at 35.56 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12719,7 +13260,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 281.94 101.6 0)
+			(at 35.56 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12808,61 +13349,59 @@
 			)
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "#PWR0205")
+					(reference "#PWR0209")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Power_Ideal_Diode:LM74670-Q1")
-		(at 54.61 58.42 0)
+		(lib_id "Device:R_US")
+		(at 289.56 104.14 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "c0c70c50-02b9-460c-aea3-84b459945531")
-		(property "Reference" "U?"
-			(at 41.91 46.99 0)
+		(uuid "c4b57a3a-1a84-45f6-b448-aaf225771e32")
+		(property "Reference" "R222"
+			(at 290.83 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "LM74670-Q1"
-			(at 61.595 70.485 0)
+		(property "Value" "4.7k"
+			(at 290.83 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Footprint" "Package_SO:VSSOP-8_3x3mm_P0.65mm"
-			(at 99.06 153.34 0)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 288.544 103.886 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/lm74670-q1"
-			(at 99.06 253.34 0)
+		(property "Datasheet" "~"
+			(at 289.56 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Description" ""
-			(at 54.61 58.42 0)
+			(at 289.56 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12871,39 +13410,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "44124491-6d4b-41f1-b698-04dba1f8b6e5")
+			(uuid "ec31cde4-ec3b-479b-a896-d286be3ad0e6")
 		)
 		(pin "2"
-			(uuid "dbd3f69f-a62f-48fb-bd30-d16ebdf0331d")
-		)
-		(pin "3"
-			(uuid "499dc032-e5de-4c81-8a81-04ef24bd07d4")
-		)
-		(pin "4"
-			(uuid "a4aca748-1e12-442f-b7c2-5cfff4412475")
-		)
-		(pin "5"
-			(uuid "2ce863f8-97cf-44fc-8ec7-436d047a48fb")
-		)
-		(pin "6"
-			(uuid "ce5d8243-50c3-43a6-bf44-c232869893d7")
-		)
-		(pin "7"
-			(uuid "206b168a-6754-4bf4-a9ad-59091581de60")
-		)
-		(pin "8"
-			(uuid "3e86812f-80db-4449-9063-f7d28b5244a8")
+			(uuid "4e0a047c-f47f-4f31-937e-da25a343c33a")
 		)
 		(instances
-			(project "MIDAS-MK2-Pyro"
-				(path "/25e87aab-0877-4568-a426-1d554c854643"
-					(reference "U?")
-					(unit 1)
-				)
-			)
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "U202")
+					(reference "R222")
 					(unit 1)
 				)
 			)
@@ -12984,95 +13499,8 @@
 			)
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "R211")
+					(reference "R212")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET_Diodes:DMNH6022SSDQ")
-		(at 220.98 68.58 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ce60b32a-200d-412f-a1a6-b545def083cf")
-		(property "Reference" "Q203"
-			(at 223.52 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "DMNH6022SSDQ"
-			(at 223.52 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SO-8_3.9x4.9mm_P1.27mm"
-			(at 220.98 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMNH6022SSDQ.pdf"
-			(at 220.98 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "22.6A Id, 60Vd, N-Channel MOSFET, SO-8"
-			(at 220.98 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a6543131-2e77-4ac1-9ea1-333e899f28e7")
-		)
-		(pin "8"
-			(uuid "83fe3f20-647c-4e92-8cea-9c83ca068196")
-		)
-		(pin "3"
-			(uuid "82336a76-ed25-4b1a-bb66-760d969f07a3")
-		)
-		(pin "2"
-			(uuid "a361e2b0-d0f3-4d13-873c-31b8a3ec84b5")
-		)
-		(pin "5"
-			(uuid "ca2fca84-8b4a-4324-8b64-5972e1194126")
-		)
-		(pin "4"
-			(uuid "f4299757-1d20-40a3-9afb-4bd0f3368933")
-		)
-		(pin "6"
-			(uuid "6ac55e6a-da3b-49db-80fc-23c42ed1087e")
-		)
-		(pin "7"
-			(uuid "04b568e3-0e9e-4193-9ed8-8522c500414c")
-		)
-		(instances
-			(project "MIDAS-MK2.1"
-				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "Q203")
-					(unit 2)
 				)
 			)
 		)
@@ -13086,7 +13514,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d20be238-038d-4e98-9df6-625bd812e613")
-		(property "Reference" "#PWR0218"
+		(property "Reference" "#PWR0222"
 			(at 237.49 134.62 0)
 			(effects
 				(font
@@ -13136,7 +13564,7 @@
 		(instances
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "#PWR0218")
+					(reference "#PWR0222")
 					(unit 1)
 				)
 			)
@@ -13145,15 +13573,15 @@
 	(symbol
 		(lib_name "+3V3_1")
 		(lib_id "power:+3V3")
-		(at 274.32 99.06 0)
+		(at 27.94 163.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "d27d2ef8-96d5-44a0-9af7-45606536d4cb")
-		(property "Reference" "#PWR0222"
-			(at 274.32 102.87 0)
+		(property "Reference" "#PWR0202"
+			(at 27.94 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13162,7 +13590,7 @@
 			)
 		)
 		(property "Value" "+3V3_ISO"
-			(at 274.32 95.25 0)
+			(at 27.94 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13170,7 +13598,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 274.32 99.06 0)
+			(at 27.94 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13179,7 +13607,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 274.32 99.06 0)
+			(at 27.94 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13188,7 +13616,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 274.32 99.06 0)
+			(at 27.94 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13202,7 +13630,7 @@
 		(instances
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "#PWR0222")
+					(reference "#PWR0202")
 					(unit 1)
 				)
 			)
@@ -13277,7 +13705,73 @@
 			)
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "C206")
+					(reference "C205")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "+3V3_1")
+		(lib_id "power:+3V3")
+		(at 298.45 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d880753b-10ef-4c0d-a99f-c7cb20cd49bc")
+		(property "Reference" "#PWR0228"
+			(at 298.45 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3_ISO"
+			(at 298.45 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 298.45 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 298.45 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 298.45 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0ad42ca4-ccbe-4b26-9ef6-c5d7e5c7a77b")
+		)
+		(instances
+			(project "MIDAS-MK2.1"
+				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
+					(reference "#PWR0228")
 					(unit 1)
 				)
 			)
@@ -13292,7 +13786,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "dc32fd2a-8066-4241-aefa-cc245ca9f5af")
-		(property "Reference" "#PWR0209"
+		(property "Reference" "#PWR0213"
 			(at 143.51 120.65 0)
 			(effects
 				(font
@@ -13342,7 +13836,7 @@
 		(instances
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "#PWR0209")
+					(reference "#PWR0213")
 					(unit 1)
 				)
 			)
@@ -13357,7 +13851,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "dd65a7dc-1eba-42bb-a14f-af28d58615a8")
-		(property "Reference" "#PWR0203"
+		(property "Reference" "#PWR0205"
 			(at 45.72 151.13 0)
 			(effects
 				(font
@@ -13407,7 +13901,7 @@
 		(instances
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "#PWR0203")
+					(reference "#PWR0205")
 					(unit 1)
 				)
 			)
@@ -13486,7 +13980,7 @@
 			)
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "R205")
+					(reference "R206")
 					(unit 1)
 				)
 			)
@@ -13585,7 +14079,7 @@
 				)
 			)
 		)
-		(property "Value" "5k"
+		(property "Value" "100k"
 			(at 234.95 65.405 90)
 			(effects
 				(font
@@ -13641,8 +14135,89 @@
 			)
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "R216")
+					(reference "R217")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET_Vishay:Si7232DN")
+		(at 139.7 31.75 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e676d118-a962-426a-96df-ada053c25c55")
+		(property "Reference" "Q201"
+			(at 142.24 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Si7232DN"
+			(at 142.24 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Transistor_FET_Vishay:Vishay_PowerPAK_1212-8_Dual"
+			(at 139.7 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/68986/si7232dn.pdf"
+			(at 139.7 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "25A Id, 20Vd, Dual N-Channel MOSFET, PowerPak 1212-8"
+			(at 139.7 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "286e0dc6-3f11-4dda-b025-80dc2f7c3586")
+		)
+		(pin "3"
+			(uuid "79f71083-0064-4d17-a0b1-687047c6f3f0")
+		)
+		(pin "6"
+			(uuid "c703ffb2-38e3-4d9c-8272-8d740229dcb2")
+		)
+		(pin "1"
+			(uuid "3971e70b-5c22-48a9-a809-d1fcfc0ad116")
+		)
+		(pin "5"
+			(uuid "3cd46e76-03d4-4364-8ea4-1af78a546d31")
+		)
+		(pin "2"
+			(uuid "f35edefd-bd1e-44ff-976f-4d3491f4814f")
+		)
+		(instances
+			(project ""
+				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
+					(reference "Q201")
+					(unit 2)
 				)
 			)
 		)
@@ -13722,7 +14297,72 @@
 			)
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "R212")
+					(reference "R213")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 59.69 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e8997733-bed3-47de-ad9e-b93de0dc2b45")
+		(property "Reference" "#PWR0207"
+			(at 59.69 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PYRO_GND"
+			(at 59.69 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 59.69 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 59.69 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 59.69 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "25290570-1047-4e23-a9f7-a503abee4194")
+		)
+		(instances
+			(project "MIDAS-MK2.1"
+				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
+					(reference "#PWR0207")
 					(unit 1)
 				)
 			)
@@ -13737,7 +14377,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ebb37ead-2af3-437d-b535-0bf4bdeb1ce0")
-		(property "Reference" "R220"
+		(property "Reference" "R224"
 			(at 350.52 33.02 0)
 			(effects
 				(font
@@ -13791,7 +14431,7 @@
 		(instances
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "R220")
+					(reference "R224")
 					(unit 1)
 				)
 			)
@@ -13866,7 +14506,7 @@
 			)
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "C205")
+					(reference "C204")
 					(unit 1)
 				)
 			)
@@ -13881,7 +14521,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f68bc1aa-bc79-488e-9364-8de0c8f00dd1")
-		(property "Reference" "#PWR0221"
+		(property "Reference" "#PWR0225"
 			(at 242.57 88.9 0)
 			(effects
 				(font
@@ -13931,7 +14571,76 @@
 		(instances
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "#PWR0221")
+					(reference "#PWR0225")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 298.45 104.14 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f6ca1596-4bda-4420-a29a-2959dd4c6b1f")
+		(property "Reference" "R223"
+			(at 299.72 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k"
+			(at 299.72 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 297.434 103.886 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 298.45 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 298.45 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7a2d02e6-925a-4bce-8ef9-e0769bb1271f")
+		)
+		(pin "2"
+			(uuid "0f36ee93-56b7-46a1-a2e2-99cc7c88ecf3")
+		)
+		(instances
+			(project "MIDAS-MK2.1"
+				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
+					(reference "R223")
 					(unit 1)
 				)
 			)
@@ -14006,7 +14715,7 @@
 			)
 			(project "MIDAS-MK2.1"
 				(path "/6007cf46-4651-4a02-8f98-d5846f3575c7/0ab16d88-f6eb-4621-a891-ff67bc2800ab"
-					(reference "C210")
+					(reference "C209")
 					(unit 1)
 				)
 			)
