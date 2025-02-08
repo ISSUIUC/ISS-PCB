@@ -606,6 +606,108 @@
 				)
 			)
 		)
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole with connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Regulator_Switching:TPS563300"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1067,12 +1169,6 @@
 		(uuid "00b1cdfb-3588-46ba-be68-c76805c0fb4c")
 	)
 	(junction
-		(at 81.28 144.78)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "04e2418b-fb90-40f9-8b39-1c76fbb8e163")
-	)
-	(junction
 		(at 186.69 138.43)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1149,12 +1245,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3b732558-960a-4420-ac0c-785f35afe7dd")
-	)
-	(junction
-		(at 81.28 161.29)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3dcaf302-7316-4950-9884-1269261f6907")
 	)
 	(junction
 		(at 222.25 72.39)
@@ -1259,12 +1349,6 @@
 		(uuid "d4a546f8-1cde-4f30-bb1a-cf1771cf2a4f")
 	)
 	(junction
-		(at 55.88 158.75)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d98df8f6-680b-4e04-80fa-244d27119326")
-	)
-	(junction
 		(at 102.87 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1295,16 +1379,14 @@
 		(uuid "f1c5930c-df53-48e4-bf4e-88fb5444516a")
 	)
 	(junction
-		(at 55.88 137.16)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f7d2a314-7d7c-40d0-83d6-8c28c9f48907")
-	)
-	(junction
 		(at 134.62 151.13)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f9938dc3-d8a8-4e30-90ae-8c23645974fb")
+	)
+	(no_connect
+		(at 50.8 31.75)
+		(uuid "b1c2d339-413b-4902-a723-cc244a754e3c")
 	)
 	(no_connect
 		(at 127 133.35)
@@ -1313,6 +1395,10 @@
 	(no_connect
 		(at 128.27 49.53)
 		(uuid "bbb4cfa9-dcb3-4082-891a-19ac90509082")
+	)
+	(no_connect
+		(at 50.8 40.64)
+		(uuid "e96aac04-cf32-42b3-8197-8a842c179f58")
 	)
 	(no_connect
 		(at 129.54 87.63)
@@ -1361,17 +1447,6 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 158.75) (xy 55.88 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 255 0 0 1)
-		)
-		(uuid "0ac333b4-2dab-4433-baca-8c4031bae4a9")
-	)
-	(wire
-		(pts
 			(xy 128.27 46.99) (xy 102.87 46.99)
 		)
 		(stroke
@@ -1413,17 +1488,6 @@
 			(color 0 0 0 1)
 		)
 		(uuid "13d1ef31-c42d-4d78-b191-2eeefe824816")
-	)
-	(wire
-		(pts
-			(xy 81.28 175.26) (xy 121.92 175.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(uuid "15c78c88-0d65-4dbe-b523-515cb1c1afcf")
 	)
 	(wire
 		(pts
@@ -1566,17 +1630,6 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 161.29) (xy 81.28 175.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(uuid "34e36192-9054-49f1-b70d-b5d4714c4a08")
-	)
-	(wire
-		(pts
 			(xy 158.75 41.91) (xy 163.83 41.91)
 		)
 		(stroke
@@ -1584,17 +1637,6 @@
 			(type default)
 		)
 		(uuid "407d99b6-e2a1-48ee-ae30-5d27e70eefcf")
-	)
-	(wire
-		(pts
-			(xy 55.88 172.72) (xy 121.92 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 255 0 0 1)
-		)
-		(uuid "45f2877f-abd7-48f6-92ce-b264e3293cbc")
 	)
 	(wire
 		(pts
@@ -1999,17 +2041,6 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 158.75) (xy 121.92 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 255 0 0 1)
-		)
-		(uuid "8f7e9fdb-4bd0-4e1f-b861-a56996bbe65a")
-	)
-	(wire
-		(pts
 			(xy 81.28 99.06) (xy 81.28 144.78)
 		)
 		(stroke
@@ -2113,17 +2144,6 @@
 			(type default)
 		)
 		(uuid "a5a507bd-078e-42b5-8c0e-9c736d3fb767")
-	)
-	(wire
-		(pts
-			(xy 81.28 144.78) (xy 81.28 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(uuid "a63c9ca8-6e34-4f0c-ac96-eb2adc95ee2b")
 	)
 	(wire
 		(pts
@@ -2251,17 +2271,6 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 172.72) (xy 55.88 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 255 0 0 1)
-		)
-		(uuid "bf9887d2-d861-4f5c-9bc3-2b9c8c1ab4c4")
-	)
-	(wire
-		(pts
 			(xy 185.42 102.87) (xy 189.23 102.87)
 		)
 		(stroke
@@ -2269,17 +2278,6 @@
 			(type default)
 		)
 		(uuid "c2ae19d8-f2b0-40ee-ab35-088fedcf5f2c")
-	)
-	(wire
-		(pts
-			(xy 81.28 161.29) (xy 121.92 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(uuid "c41b2350-0702-4398-8329-20603eabaa9b")
 	)
 	(wire
 		(pts
@@ -2515,16 +2513,6 @@
 		)
 		(uuid "036493e6-be4f-4ba3-8035-72fd21388331")
 	)
-	(text "Batt -\n"
-		(exclude_from_sim no)
-		(at 127.254 178.816 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "0cc72497-82a1-470b-8c41-b5cb1b4a102e")
-	)
 	(text "12v +\n"
 		(exclude_from_sim no)
 		(at 233.68 51.562 0)
@@ -2564,26 +2552,6 @@
 			)
 		)
 		(uuid "3a62382e-6216-475f-b157-5867c5dc0997")
-	)
-	(text "Raw battery power for motors (2x)"
-		(exclude_from_sim no)
-		(at 107.442 167.132 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "47dff64a-3738-48c6-b6e6-aa154f6d07ec")
-	)
-	(text "Batt +\n"
-		(exclude_from_sim no)
-		(at 127.254 169.926 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "49658fae-5a3a-4fe2-9ac7-ab392afa41b2")
 	)
 	(text "5v +"
 		(exclude_from_sim no)
@@ -2645,16 +2613,6 @@
 		)
 		(uuid "83e91b35-3c64-4351-8b98-3b8e452fb376")
 	)
-	(text "Batt -\n"
-		(exclude_from_sim no)
-		(at 124.714 163.83 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "97bae9b3-4242-48cc-9d44-be898e1e44f1")
-	)
 	(text "2A 12v (for camera transmitter [6-36v <1w] and actual camera [5-20v ~2.5w])"
 		(exclude_from_sim no)
 		(at 138.684 32.258 0)
@@ -2664,16 +2622,6 @@
 			)
 		)
 		(uuid "a89052fc-969f-44e4-ae0f-6e2959c095bb")
-	)
-	(text "Batt +\n"
-		(exclude_from_sim no)
-		(at 124.714 155.956 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "b22ef877-f350-4d4e-886c-45b7439247c4")
 	)
 	(text "0v (ground)"
 		(exclude_from_sim no)
@@ -3385,76 +3333,6 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 127 172.72 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5cdf9c16-f592-4b7c-a5cd-96539d756a27")
-		(property "Reference" "J5"
-			(at 129.54 172.7199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Screw_Terminal_01x02"
-			(at 129.54 175.2599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_TE_Terminal-Block:TE_282837-2"
-			(at 127 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 127 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 127 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0c38d9b4-1973-4c19-a86a-acac9e6d8d2b")
-		)
-		(pin "2"
-			(uuid "8df6bd35-07f0-4a23-b960-8a576903b826")
-		)
-		(instances
-			(project "drone_power"
-				(path "/d57d17ab-494b-4c11-a4da-cdc1a6c16e8e"
-					(reference "J5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Screw_Terminal_01x02")
 		(at 233.68 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3664,6 +3542,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 50.8 29.21 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "785330cc-c6a7-4770-92b6-fc7807bade91")
+		(property "Reference" "H1"
+			(at 53.34 26.6699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 53.34 29.2099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3mm_Pad_Via"
+			(at 50.8 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 50.8 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c2a47211-b8cc-4eae-9c8b-43d21caa99b3")
+		)
+		(instances
+			(project ""
+				(path "/d57d17ab-494b-4c11-a4da-cdc1a6c16e8e"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Regulator_Switching:TPS563300")
 		(at 135.89 54.61 0)
 		(unit 1)
@@ -3744,6 +3689,73 @@
 			(project ""
 				(path "/d57d17ab-494b-4c11-a4da-cdc1a6c16e8e"
 					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 50.8 38.1 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "81534a88-2d64-484f-8250-d537a19eda54")
+		(property "Reference" "H2"
+			(at 53.34 35.5599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 53.34 38.0999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3mm_Pad_Via"
+			(at 50.8 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 50.8 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7ca075b8-2aaf-4058-88a4-a0b70ee61db2")
+		)
+		(instances
+			(project "drone_power"
+				(path "/d57d17ab-494b-4c11-a4da-cdc1a6c16e8e"
+					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -4088,76 +4100,6 @@
 			(project ""
 				(path "/d57d17ab-494b-4c11-a4da-cdc1a6c16e8e"
 					(reference "C1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 127 158.75 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b5fb0f2b-a1cb-4d08-be27-0b371bf83fea")
-		(property "Reference" "J6"
-			(at 129.54 158.7499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Screw_Terminal_01x02"
-			(at 129.54 161.2899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_TE_Terminal-Block:TE_282837-2"
-			(at 127 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 127 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 127 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "032649f3-b42e-45dd-b283-51745e58c22e")
-		)
-		(pin "2"
-			(uuid "00d0a8b8-07c9-4861-87a2-929476396c22")
-		)
-		(instances
-			(project "drone_power"
-				(path "/d57d17ab-494b-4c11-a4da-cdc1a6c16e8e"
-					(reference "J6")
 					(unit 1)
 				)
 			)
