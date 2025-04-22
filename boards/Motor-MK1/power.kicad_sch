@@ -4,6 +4,14 @@
 	(generator_version "8.0")
 	(uuid "04504271-c96e-4ce0-be2d-b3b098673ba7")
 	(paper "A4")
+	(title_block
+		(title "MotorBoard MK1")
+		(date "2025-04-21")
+		(rev "A")
+		(company "Illinois Space Society")
+		(comment 3 "Ben Wang, Nicholas Phillips, Thomas McManamen, Quinn Athas")
+		(comment 4 "Contributors: Lucas Lessard, Jackie Li, Chethan Karandikar, Himesh Nasaka, Linus Mitchell,")
+	)
 	(lib_symbols
 		(symbol "Device:C"
 			(pin_numbers hide)
@@ -125,6 +133,175 @@
 					(at 0 -3.81 90)
 					(length 2.794)
 					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:LED"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -969,6 +1146,12 @@
 		(uuid "03cd6284-1eb5-4140-a027-12b1e900c1be")
 	)
 	(junction
+		(at 83.82 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "096a69c6-4afd-4afd-ba21-7d0e607746b4")
+	)
+	(junction
 		(at 66.04 139.7)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1024,6 +1207,16 @@
 	)
 	(wire
 		(pts
+			(xy 83.82 66.04) (xy 83.82 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "049fc1a5-14fd-41f1-add4-a914f361aea9")
+	)
+	(wire
+		(pts
 			(xy 95.25 111.76) (xy 96.52 111.76)
 		)
 		(stroke
@@ -1041,6 +1234,16 @@
 			(type default)
 		)
 		(uuid "0f6f92cc-4bd0-4585-9af7-a5e53c9bd17a")
+	)
+	(wire
+		(pts
+			(xy 83.82 55.88) (xy 83.82 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15f50440-331c-4f8a-97db-c8e3e457459c")
 	)
 	(wire
 		(pts
@@ -1144,6 +1347,16 @@
 	)
 	(wire
 		(pts
+			(xy 83.82 45.72) (xy 72.39 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6393850b-f439-4a6d-a3c5-17fb86665767")
+	)
+	(wire
+		(pts
 			(xy 106.68 106.68) (xy 106.68 139.7)
 		)
 		(stroke
@@ -1151,6 +1364,16 @@
 			(type default)
 		)
 		(uuid "67ffdabf-d9f6-47a5-8536-76522c2e34ce")
+	)
+	(wire
+		(pts
+			(xy 83.82 43.18) (xy 83.82 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68025c2a-4099-4667-b71d-be2bb2bb1ad5")
 	)
 	(wire
 		(pts
@@ -1224,16 +1447,6 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 45.72) (xy 72.39 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9e36cf7c-8322-4730-93ad-36c80680e0ae")
-	)
-	(wire
-		(pts
 			(xy 76.2 139.7) (xy 96.52 139.7)
 		)
 		(stroke
@@ -1281,6 +1494,16 @@
 			(type default)
 		)
 		(uuid "c69a19e5-6e83-4d38-9993-692be06813c3")
+	)
+	(wire
+		(pts
+			(xy 83.82 45.72) (xy 83.82 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8350db3-6d3e-4741-a7e8-16553b7a4e43")
 	)
 	(wire
 		(pts
@@ -1345,6 +1568,7 @@
 	(hierarchical_label "VBAT"
 		(shape input)
 		(at 57.15 106.68 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1356,6 +1580,7 @@
 	(hierarchical_label "SYS_Power"
 		(shape input)
 		(at 38.1 45.72 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1367,6 +1592,7 @@
 	(hierarchical_label "USB_POWER"
 		(shape input)
 		(at 40.64 88.9 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1378,6 +1604,7 @@
 	(hierarchical_label "SYS_Power"
 		(shape output)
 		(at 96.52 88.9 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1473,7 +1700,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uf"
+		(property "Value" "10uF"
 			(at 50.038 51.816 0)
 			(effects
 				(font
@@ -1526,7 +1753,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 76.2 45.72 270)
+		(at 83.82 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1534,7 +1761,7 @@
 		(dnp no)
 		(uuid "1cd9e7f7-d636-45cd-9519-c922bd0e40e1")
 		(property "Reference" "#PWR027"
-			(at 72.39 45.72 0)
+			(at 83.82 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1543,7 +1770,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 79.756 45.212 0)
+			(at 83.312 39.624 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1551,7 +1778,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 76.2 45.72 0)
+			(at 83.82 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1560,7 +1787,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 76.2 45.72 0)
+			(at 83.82 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1569,7 +1796,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 76.2 45.72 0)
+			(at 83.82 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1653,6 +1880,75 @@
 			(project "Motor-MK1"
 				(path "/adda155f-fa88-4bd8-ae95-585cc8042b51/cca39aa4-9809-4c03-8078-d836d0e65304"
 					(reference "R14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 83.82 52.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "37451294-ab58-4bb2-9dc1-cbe972f23c08")
+		(property "Reference" "R201"
+			(at 85.09 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "470 ohms"
+			(at 85.09 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 84.836 52.324 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 83.82 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 83.82 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "fa5a3441-a2ed-49b4-8767-914bb47793d6")
+		)
+		(pin "1"
+			(uuid "b6d04e0d-54cb-48d5-b003-8022cdd4c01f")
+		)
+		(instances
+			(project "Motor-MK1"
+				(path "/adda155f-fa88-4bd8-ae95-585cc8042b51/cca39aa4-9809-4c03-8078-d836d0e65304"
+					(reference "R201")
 					(unit 1)
 				)
 			)
@@ -2276,6 +2572,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 83.82 62.23 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "aedaf286-9a00-4410-9ec8-cebe30a63a92")
+		(property "Reference" "D201"
+			(at 87.63 60.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RED LED"
+			(at 85.09 63.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 83.82 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 83.82 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 83.82 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3da26105-bf44-4e14-918a-42340b5895c1")
+		)
+		(pin "2"
+			(uuid "93684040-96e2-48cf-9f9a-65373269d67f")
+		)
+		(instances
+			(project "Motor-MK1"
+				(path "/adda155f-fa88-4bd8-ae95-585cc8042b51/cca39aa4-9809-4c03-8078-d836d0e65304"
+					(reference "D201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 48.26 93.98 0)
 		(unit 1)
@@ -2640,6 +3004,73 @@
 			(project "Motor-MK1"
 				(path "/adda155f-fa88-4bd8-ae95-585cc8042b51/cca39aa4-9809-4c03-8078-d836d0e65304"
 					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 83.82 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e6b9cd65-9cd6-4e8a-9f5e-43625326d798")
+		(property "Reference" "#PWR0201"
+			(at 83.82 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 83.82 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 83.82 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7a90d52a-289f-4032-b57f-104e014182ec")
+		)
+		(instances
+			(project "Motor-MK1"
+				(path "/adda155f-fa88-4bd8-ae95-585cc8042b51/cca39aa4-9809-4c03-8078-d836d0e65304"
+					(reference "#PWR0201")
 					(unit 1)
 				)
 			)

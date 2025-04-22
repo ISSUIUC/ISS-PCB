@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.2
         }
       },
       "diff_pair_dimensions": [
@@ -56,9 +56,21 @@
           "gap": 0.0,
           "via_gap": 0.0,
           "width": 0.0
+        },
+        {
+          "gap": 0.127,
+          "via_gap": 0.0,
+          "width": 0.23
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "hole_clearance|157470000|91030000|09bc2797-1b6e-4554-a0b7-88a766464c48|0d595905-c70c-4047-9bc4-52e26a64fbb3",
+        "hole_clearance|157470000|91030000|09bc2797-1b6e-4554-a0b7-88a766464c48|e51e1cb2-5313-4a76-a65f-3fbe98e903d4",
+        "hole_clearance|157470000|97130000|b20eee71-0506-4f17-ba8c-5f5cb2a6ff16|93dee8c8-b42e-4401-92e6-0ad24434518d",
+        "hole_clearance|157470000|97130000|b20eee71-0506-4f17-ba8c-5f5cb2a6ff16|a7964ec4-dd6b-4062-be84-46cde07a5838",
+        "lib_footprint_mismatch|185575000|102820000|1f6a1282-9396-4f18-ba52-436499e71ab1|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_mismatch|199782220|95340000|39908358-8362-42d3-a2d4-26d82ee9cdf6|00000000-0000-0000-0000-000000000000"
+      ],
       "meta": {
         "version": 2
       },
@@ -116,8 +128,8 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
-        "min_connection": 0.0,
+        "min_clearance": 0.1,
+        "min_connection": 0.1,
         "min_copper_edge_clearance": 0.5,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
@@ -128,9 +140,9 @@
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.0,
-        "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.5,
+        "min_track_width": 0.1,
+        "min_via_annular_width": 0.05,
+        "min_via_diameter": 0.4,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -181,6 +193,7 @@
         0.0,
         0.127,
         0.2,
+        0.23,
         0.4,
         0.5,
         0.6
@@ -562,8 +575,8 @@
       "filter_string": "",
       "group_symbols": true,
       "name": "",
-      "sort_asc": true,
-      "sort_field": "Reference"
+      "sort_asc": false,
+      "sort_field": "Datasheet"
     },
     "connection_grid_size": 50.0,
     "drawing": {
