@@ -10,6 +10,6 @@ Read more about CAM, MIDAS and the surrounding avionics systems in the [MIDAS MK
 
 Printable PDF schematics, diagrams, and layouts for CAM MK2.1 revA can be found in the PDFs and images folders.
 
-# Renders
+# Graphics
 
-![CAM-MK2.1-revA-render](/boards/CAM-MK2/images/CAM-MK2.1.png)
+![CAM-MK2.1-revA-graphic](/boards/CAM-MK2/images/CAM-MK2.1-Photo.png)

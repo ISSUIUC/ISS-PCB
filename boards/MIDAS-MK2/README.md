@@ -10,6 +10,6 @@ Read more about MIDAS and the surrounding avionics systems in the [MIDAS MK2 Rep
 
 Printable PDF schematics, diagrams, and layouts for MIDAS MK2.1 revA can be found in the PDFs and images folders.
 
-# Renders
+# Graphics
 
-![MIDAS-MK2.1-revA-render](/boards/MIDAS-MK2/images/MIDAS-MK2.1.png)
+![MIDAS-MK2.1-revA-graphic](/boards/MIDAS-MK2/images/MIDAS-MK2.1-Photo.png)
