@@ -10,4 +10,4 @@ Printable PDF schematics and layouts for MotorBoard can be found in the PDFs and
 
 # Photos
 
-![Motor-Board-photo](/boards/Feather_Duo/images/MotorBoard.JPG)
+![Motor-Board-photo](/boards/Motor-MK1/images/MotorBoard.JPG)
