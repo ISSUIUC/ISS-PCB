@@ -26,7 +26,7 @@
 			)
 		)
 		(property "Footprint" "WSON10_DLH_TEX"
-			(at -25.4 6.35 0)
+			(at -17.78 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36,7 +36,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/gpn/bq25185"
-			(at -25.4 6.35 0)
+			(at -21.59 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -80,118 +80,21 @@
 				(hide yes)
 			)
 		)
-		(symbol "BQ25185DLHR_0_1"
-			(pin power_in line
-				(at -25.4 6.35 0)
-				(length 7.62)
-				(name "SYS"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
+		(symbol "BQ25185DLHR_1_1"
+			(rectangle
+				(start -10.16 11.43)
+				(end 10.16 -24.13)
+				(stroke
+					(width 0)
+					(type solid)
 				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -25.4 3.81 0)
-				(length 7.62)
-				(name "BAT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at -25.4 1.27 0)
-				(length 7.62)
-				(name "STAT2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
+				(fill
+					(type background)
 				)
 			)
 			(pin input line
-				(at -25.4 -1.27 0)
-				(length 7.62)
-				(name "/CE"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
-				(at 0 -19.05 90)
-				(length 7.62)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at 25.4 6.35 180)
-				(length 7.62)
-				(name "EPAD"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "11"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 25.4 3.81 180)
-				(length 7.62)
+				(at -12.7 7.62 0)
+				(length 2.54)
 				(name "IN"
 					(effects
 						(font
@@ -208,8 +111,8 @@
 				)
 			)
 			(pin output line
-				(at 25.4 1.27 180)
-				(length 7.62)
+				(at -12.7 -7.62 0)
+				(length 2.54)
 				(name "STAT1"
 					(effects
 						(font
@@ -225,17 +128,17 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 25.4 -1.27 180)
-				(length 7.62)
-				(name "ISET"
+			(pin output line
+				(at -12.7 -12.7 0)
+				(length 2.54)
+				(name "STAT2"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "8"
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -244,8 +147,8 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 -3.81 180)
-				(length 7.62)
+				(at -12.7 -17.78 0)
+				(length 2.54)
 				(name "ILIM/VSET"
 					(effects
 						(font
@@ -262,8 +165,98 @@
 				)
 			)
 			(pin bidirectional line
-				(at 25.4 -6.35 180)
-				(length 7.62)
+				(at -12.7 -21.59 0)
+				(length 2.54)
+				(name "ISET"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 0 -26.67 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 12.7 7.62 180)
+				(length 2.54)
+				(name "SYS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 12.7 -7.62 180)
+				(length 2.54)
+				(name "BAT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 12.7 -12.7 180)
+				(length 2.54)
+				(name "~{CE}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 -21.59 180)
+				(length 2.54)
 				(name "TS/MR"
 					(effects
 						(font
@@ -277,19 +270,6 @@
 							(size 1.27 1.27)
 						)
 					)
-				)
-			)
-		)
-		(symbol "BQ25185DLHR_1_1"
-			(rectangle
-				(start -17.78 11.43)
-				(end 17.78 -11.43)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type background)
 				)
 			)
 		)
