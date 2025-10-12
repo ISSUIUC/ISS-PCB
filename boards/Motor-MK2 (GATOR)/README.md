@@ -1,10 +1,15 @@
 # Motorboard MK2 - GATOR
 
-G - Grounded
-A - Arieal
-T - Tracer
-O - for Our
-R - Rocket
+G - Grounded 
+
+A - Arieal 
+
+T - Tracer 
+
+O - for Our 
+
+R - Rocket 
+
 
 # MK2
 
