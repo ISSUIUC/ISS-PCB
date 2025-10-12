@@ -64,12 +64,30 @@
         }
       ],
       "drc_exclusions": [
-        "hole_clearance|157470000|91030000|09bc2797-1b6e-4554-a0b7-88a766464c48|0d595905-c70c-4047-9bc4-52e26a64fbb3",
-        "hole_clearance|157470000|91030000|09bc2797-1b6e-4554-a0b7-88a766464c48|e51e1cb2-5313-4a76-a65f-3fbe98e903d4",
-        "hole_clearance|157470000|97130000|b20eee71-0506-4f17-ba8c-5f5cb2a6ff16|93dee8c8-b42e-4401-92e6-0ad24434518d",
-        "hole_clearance|157470000|97130000|b20eee71-0506-4f17-ba8c-5f5cb2a6ff16|a7964ec4-dd6b-4062-be84-46cde07a5838",
-        "lib_footprint_mismatch|185575000|102820000|1f6a1282-9396-4f18-ba52-436499e71ab1|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_mismatch|199782220|95340000|39908358-8362-42d3-a2d4-26d82ee9cdf6|00000000-0000-0000-0000-000000000000"
+        [
+          "hole_clearance|157470000|91030000|09bc2797-1b6e-4554-a0b7-88a766464c48|0d595905-c70c-4047-9bc4-52e26a64fbb3",
+          ""
+        ],
+        [
+          "hole_clearance|157470000|91030000|09bc2797-1b6e-4554-a0b7-88a766464c48|e51e1cb2-5313-4a76-a65f-3fbe98e903d4",
+          ""
+        ],
+        [
+          "hole_clearance|157470000|97130000|b20eee71-0506-4f17-ba8c-5f5cb2a6ff16|93dee8c8-b42e-4401-92e6-0ad24434518d",
+          ""
+        ],
+        [
+          "hole_clearance|157470000|97130000|b20eee71-0506-4f17-ba8c-5f5cb2a6ff16|a7964ec4-dd6b-4062-be84-46cde07a5838",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|185575000|102820000|1f6a1282-9396-4f18-ba52-436499e71ab1|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|199782220|95340000|39908358-8362-42d3-a2d4-26d82ee9cdf6|00000000-0000-0000-0000-000000000000",
+          ""
+        ]
       ],
       "meta": {
         "version": 2
@@ -81,16 +99,19 @@
         "copper_edge_clearance": "error",
         "copper_sliver": "warning",
         "courtyards_overlap": "error",
+        "creepage": "error",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
         "drill_out_of_range": "error",
         "duplicate_footprints": "warning",
         "extra_footprint": "warning",
         "footprint": "error",
+        "footprint_filters_mismatch": "ignore",
         "footprint_symbol_mismatch": "warning",
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
         "hole_near_hole": "error",
+        "hole_to_hole": "error",
         "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "warning",
@@ -101,9 +122,11 @@
         "lib_footprint_mismatch": "warning",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
+        "mirrored_text_on_front_layer": "warning",
         "missing_courtyard": "ignore",
         "missing_footprint": "warning",
         "net_conflict": "warning",
+        "nonmirrored_text_on_back_layer": "warning",
         "npth_inside_courtyard": "ignore",
         "padstack": "warning",
         "pth_inside_courtyard": "ignore",
@@ -115,10 +138,13 @@
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
         "text_height": "warning",
+        "text_on_edge_cuts": "error",
         "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
+        "track_angle": "error",
         "track_dangling": "warning",
+        "track_segment_length": "error",
         "track_width": "error",
         "tracks_crossing": "error",
         "unconnected_items": "error",
@@ -131,6 +157,7 @@
         "min_clearance": 0.1,
         "min_connection": 0.1,
         "min_copper_edge_clearance": 0.5,
+        "min_groove_width": 0.0,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.2,
@@ -148,10 +175,11 @@
       },
       "teardrop_options": [
         {
-          "td_onpadsmd": true,
+          "td_onpthpad": true,
           "td_onroundshapesonly": false,
+          "td_onsmdpad": true,
           "td_ontrackend": false,
-          "td_onviapad": true
+          "td_onvia": true
         }
       ],
       "teardrop_parameters": [
