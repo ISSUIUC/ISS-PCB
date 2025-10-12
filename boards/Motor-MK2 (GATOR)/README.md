@@ -4,7 +4,7 @@ G - Grounded
 
 A - Arieal 
 
-T - Tracer 
+T - Tracker 
 
 O - for Our 
 
