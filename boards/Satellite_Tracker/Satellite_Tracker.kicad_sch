@@ -4867,7 +4867,7 @@
 	)
 	(symbol
 		(lib_id "RF_Satellite_Iridium:Iridium_9603N")
-		(at 227.33 109.22 0)
+		(at 118.11 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4876,7 +4876,7 @@
 		(fields_autoplaced yes)
 		(uuid "438cbc66-be04-4b8d-b24b-330f827d2571")
 		(property "Reference" "U102"
-			(at 226.695 87.63 0)
+			(at 117.475 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4884,7 +4884,7 @@
 			)
 		)
 		(property "Value" "Iridium_9603N"
-			(at 226.695 90.17 0)
+			(at 117.475 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4892,7 +4892,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 227.33 109.22 0)
+			(at 118.11 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4901,7 +4901,7 @@
 			)
 		)
 		(property "Datasheet" "https://telemetry.groupcls.com/wp-content/uploads/2018/12/Iridium-9603-9603N_Developers-Guide.pdf#page=18"
-			(at 225.806 90.17 0)
+			(at 116.586 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4910,7 +4910,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 227.33 109.22 0)
+			(at 118.11 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6254,8 +6254,8 @@
 		)
 	)
 	(sheet
-		(at 208.28 130.81)
-		(size 43.18 24.13)
+		(at 205.74 116.84)
+		(size 43.18 41.91)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -6270,7 +6270,7 @@
 		)
 		(uuid "ab8f0b85-feaf-477f-b8ba-1409f197e5a2")
 		(property "Sheetname" "Power"
-			(at 208.28 130.0984 0)
+			(at 205.74 116.1284 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6279,12 +6279,92 @@
 			)
 		)
 		(property "Sheetfile" "Satellite_Tracker-Power.kicad_sch"
-			(at 208.28 155.5246 0)
+			(at 205.74 159.3346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "INA_ALERT" output
+			(at 205.74 120.65 180)
+			(uuid "0969d210-0e5d-4015-902d-370c9c56d6fe")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SCap_CS" input
+			(at 205.74 151.13 180)
+			(uuid "2350a4f1-ecf0-4832-a404-21ba0da03573")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SCap_PwrGd" output
+			(at 205.74 153.67 180)
+			(uuid "91305741-ca03-41a8-b9f2-ee4878328e3d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SCap_VSEL" input
+			(at 248.92 156.21 0)
+			(uuid "2aaa2dca-52c0-4823-9141-c5a9c71f24b4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SYS_POWER" input
+			(at 248.92 153.67 0)
+			(uuid "1668ef0d-93d5-473e-8622-65e6b2c4d313")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "USB_POWER" input
+			(at 248.92 149.86 0)
+			(uuid "39d1dad4-8531-4840-89e5-9801079c6656")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VBAT" input
+			(at 248.92 147.32 0)
+			(uuid "138b62f5-2095-4f7d-88c9-bab8050a1b5a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VREG_IN" input
+			(at 248.92 143.51 0)
+			(uuid "f42eed6b-b76c-4511-a0c3-63d4541660e4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
