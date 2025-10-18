@@ -1224,7 +1224,7 @@
 					)
 				)
 				(pin power_in line
-					(at 22.86 2.54 270)
+					(at 20.32 2.54 270)
 					(length 7.62)
 					(name "VDDA"
 						(effects
@@ -1244,7 +1244,6 @@
 				(pin power_in line
 					(at 22.86 2.54 270)
 					(length 7.62)
-					(hide yes)
 					(name "VBAT"
 						(effects
 							(font
@@ -1253,25 +1252,6 @@
 						)
 					)
 					(number "18"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 22.86 2.54 270)
-					(length 7.62)
-					(hide yes)
-					(name "VDDSMPS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "20"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2171,6 +2151,24 @@
 						)
 					)
 				)
+				(pin power_in line
+					(at 25.4 2.54 270)
+					(length 7.62)
+					(name "VDDSMPS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin bidirectional line
 					(at 45.72 -8.89 180)
 					(length 7.62)
@@ -2436,8 +2434,8 @@
 		(uuid 105322ac-e163-4a23-92f3-8180688b6a9d)
 	)
 	(rectangle
-		(start 35.56 139.7)
-		(end 82.55 162.56)
+		(start 15.24 153.67)
+		(end 62.23 176.53)
 		(stroke
 			(width 0)
 			(type dash)
@@ -2460,8 +2458,8 @@
 		(uuid 55ca3213-9305-4d9d-9a96-4cd0b882d664)
 	)
 	(rectangle
-		(start 15.24 139.7)
-		(end 33.02 185.42)
+		(start 71.12 102.87)
+		(end 88.9 151.13)
 		(stroke
 			(width 0)
 			(type dash)
@@ -2485,7 +2483,7 @@
 	)
 	(rectangle
 		(start 15.24 102.87)
-		(end 88.9 137.16)
+		(end 68.58 151.13)
 		(stroke
 			(width 0)
 			(type dash)
@@ -2509,7 +2507,7 @@
 	)
 	(text "STM32 w/Bluetooth"
 		(exclude_from_sim no)
-		(at 31.242 18.034 0)
+		(at 30.734 17.526 0)
 		(effects
 			(font
 				(size 2 2)
@@ -2529,7 +2527,7 @@
 	)
 	(text "Coin Cell Battery"
 		(exclude_from_sim no)
-		(at 24.13 141.986 0)
+		(at 80.01 105.156 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2559,7 +2557,7 @@
 	)
 	(text "User and Reset Button"
 		(exclude_from_sim no)
-		(at 47.244 141.986 0)
+		(at 26.924 155.956 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2568,14 +2566,32 @@
 		(uuid "97aeb34d-ba0f-43bb-8d85-a69464cc37f5")
 	)
 	(junction
-		(at 63.5 124.46)
+		(at 30.48 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2a2fda62-2450-4e28-865c-c9a91c013574")
+	)
+	(junction
+		(at 53.34 124.46)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3bbe6892-7453-4e54-90b8-f4708b5638b5")
 	)
+	(junction
+		(at 30.48 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "45cee8c4-fbf8-4bdf-86d7-f607094222b0")
+	)
+	(junction
+		(at 30.48 121.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c85f56f2-2bbc-46c0-894e-0ff2ffb36e0b")
+	)
 	(wire
 		(pts
-			(xy 19.05 167.64) (xy 19.05 172.72)
+			(xy 74.93 130.81) (xy 74.93 137.16)
 		)
 		(stroke
 			(width 0)
@@ -2585,23 +2601,23 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 116.84) (xy 35.56 116.84)
+			(xy 30.48 121.92) (xy 30.48 130.81)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "35836afa-fa95-4435-8dc9-d6993ba2a3d1")
+		(uuid "3c3c9785-ee21-40f5-bf75-08dccc211f4e")
 	)
 	(wire
 		(pts
-			(xy 21.59 124.46) (xy 35.56 124.46)
+			(xy 30.48 130.81) (xy 41.91 130.81)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5ecec6da-4580-44d0-b361-574e05e88c67")
+		(uuid "61d93aa4-dfad-49a6-8820-f2a88b0a0cb2")
 	)
 	(wire
 		(pts
@@ -2615,6 +2631,16 @@
 	)
 	(wire
 		(pts
+			(xy 19.05 121.92) (xy 30.48 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6acd6a78-e8fd-4f1e-8fb7-0fc43ac7887c")
+	)
+	(wire
+		(pts
 			(xy 104.14 152.4) (xy 101.6 152.4)
 		)
 		(stroke
@@ -2625,7 +2651,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 36.83) (xy 25.4 39.37)
+			(xy 25.4 41.91) (xy 25.4 44.45)
 		)
 		(stroke
 			(width 0)
@@ -2635,7 +2661,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 152.4) (xy 60.96 152.4)
+			(xy 35.56 166.37) (xy 40.64 166.37)
 		)
 		(stroke
 			(width 0)
@@ -2655,7 +2681,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 124.46) (xy 77.47 124.46)
+			(xy 53.34 124.46) (xy 53.34 138.43)
 		)
 		(stroke
 			(width 0)
@@ -2675,7 +2701,7 @@
 	)
 	(wire
 		(pts
-			(xy 19.05 154.94) (xy 19.05 160.02)
+			(xy 74.93 118.11) (xy 74.93 123.19)
 		)
 		(stroke
 			(width 0)
@@ -2685,7 +2711,17 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 124.46) (xy 63.5 124.46)
+			(xy 30.48 110.49) (xy 30.48 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba3e7c4c-f964-4d70-a145-2d5f79f52ac5")
+	)
+	(wire
+		(pts
+			(xy 53.34 110.49) (xy 53.34 124.46)
 		)
 		(stroke
 			(width 0)
@@ -2695,7 +2731,27 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 154.94) (xy 60.96 154.94)
+			(xy 19.05 130.81) (xy 30.48 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e59b5057-5295-41c2-92c7-16aa5e5ef0f9")
+	)
+	(wire
+		(pts
+			(xy 19.05 114.3) (xy 30.48 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6b9afc0-7bcd-4075-9cd0-023a0c434f7f")
+	)
+	(wire
+		(pts
+			(xy 29.21 168.91) (xy 40.64 168.91)
 		)
 		(stroke
 			(width 0)
@@ -2705,7 +2761,7 @@
 	)
 	(global_label "MCU_GND"
 		(shape input)
-		(at 49.53 154.94 180)
+		(at 29.21 168.91 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2715,7 +2771,7 @@
 		)
 		(uuid "02038bd5-dfd2-43a2-b015-40a99bbdc9d9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 37.6548 154.94 0)
+			(at 17.3348 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2727,7 +2783,7 @@
 	)
 	(global_label "MCU_GND"
 		(shape input)
-		(at 49.53 124.46 270)
+		(at 53.34 110.49 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2737,7 +2793,7 @@
 		)
 		(uuid "0ccfbf8f-23d6-4a95-8ca3-e73184bb847f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 49.53 136.3352 90)
+			(at 41.4648 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2749,7 +2805,7 @@
 	)
 	(global_label "MCU_GND"
 		(shape input)
-		(at 19.05 172.72 270)
+		(at 74.93 137.16 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2759,7 +2815,7 @@
 		)
 		(uuid "1992e0e7-9744-49c4-b9d6-ad2467a24059")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 19.05 184.5952 90)
+			(at 74.93 149.0352 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2815,39 +2871,39 @@
 	)
 	(global_label "MCU_GND"
 		(shape input)
-		(at 35.56 124.46 270)
+		(at 48.26 92.71 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
-		)
-		(uuid "6c6f2241-bd43-4a82-a5a7-f05dfde7d028")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 35.56 136.3352 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "MCU_GND"
-		(shape input)
-		(at 48.26 87.63 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "96589277-4660-4dfd-997d-1b0c09135985")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 48.26 99.5052 90)
+			(at 60.1352 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "MCU_V"
+		(shape input)
+		(at 30.48 110.49 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ed72c0bc-1a1c-478f-b8cc-5ccda9c6bc6e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 21.3867 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2859,51 +2915,7 @@
 	)
 	(global_label "MCU_V"
 		(shape input)
-		(at 48.26 25.4 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "9678b758-4d5f-454d-961b-82ddea2ce38f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 48.26 16.3067 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "MCU_V"
-		(shape input)
-		(at 21.59 116.84 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ed72c0bc-1a1c-478f-b8cc-5ccda9c6bc6e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 21.59 107.7467 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "MCU_V"
-		(shape input)
-		(at 19.05 154.94 90)
+		(at 74.93 118.11 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2913,7 +2925,7 @@
 		)
 		(uuid "f38d110b-a9cb-49be-a571-11c82f41867e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 19.05 145.8467 90)
+			(at 74.93 109.0167 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2925,7 +2937,7 @@
 	)
 	(hierarchical_label "Boot"
 		(shape output)
-		(at 71.12 39.37 0)
+		(at 71.12 44.45 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2936,7 +2948,7 @@
 	)
 	(hierarchical_label "Switch_1"
 		(shape input)
-		(at 109.22 31.75 180)
+		(at 107.95 29.21 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2947,7 +2959,7 @@
 	)
 	(hierarchical_label "Switch_1"
 		(shape output)
-		(at 71.12 46.99 0)
+		(at 71.12 52.07 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2955,6 +2967,17 @@
 			(justify left)
 		)
 		(uuid "1b645ab6-b6a4-40e3-9cdc-22302111f125")
+	)
+	(hierarchical_label "VBAT"
+		(shape input)
+		(at 48.26 30.48 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1d624f5a-96b2-4fda-99d9-a26f8b065f1f")
 	)
 	(hierarchical_label "Boot"
 		(shape output)
@@ -2969,7 +2992,7 @@
 	)
 	(hierarchical_label "GPIO_Clock"
 		(shape input)
-		(at 109.22 96.52 180)
+		(at 107.95 93.98 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2980,7 +3003,7 @@
 	)
 	(hierarchical_label "Switch_4"
 		(shape input)
-		(at 109.22 78.74 180)
+		(at 107.95 76.2 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2991,7 +3014,7 @@
 	)
 	(hierarchical_label "Switch_3"
 		(shape input)
-		(at 109.22 63.5 180)
+		(at 107.95 60.96 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3002,7 +3025,7 @@
 	)
 	(hierarchical_label "GPIO_Clock"
 		(shape input)
-		(at 109.22 111.76 180)
+		(at 107.95 109.22 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3013,7 +3036,7 @@
 	)
 	(hierarchical_label "SWCLK"
 		(shape output)
-		(at 25.4 67.31 180)
+		(at 25.4 72.39 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3024,7 +3047,7 @@
 	)
 	(hierarchical_label "PB1"
 		(shape input)
-		(at 63.5 116.84 90)
+		(at 60.96 124.46 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3035,7 +3058,7 @@
 	)
 	(hierarchical_label "SWDIO"
 		(shape output)
-		(at 25.4 69.85 180)
+		(at 25.4 74.93 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3046,7 +3069,7 @@
 	)
 	(hierarchical_label "PB2"
 		(shape output)
-		(at 71.12 62.23 0)
+		(at 71.12 67.31 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3057,7 +3080,7 @@
 	)
 	(hierarchical_label "Switch_3"
 		(shape output)
-		(at 71.12 52.07 0)
+		(at 71.12 57.15 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3079,7 +3102,7 @@
 	)
 	(hierarchical_label "PB0"
 		(shape input)
-		(at 49.53 116.84 90)
+		(at 60.96 110.49 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3090,7 +3113,7 @@
 	)
 	(hierarchical_label "Switch_2"
 		(shape input)
-		(at 109.22 46.99 180)
+		(at 107.95 44.45 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3101,7 +3124,7 @@
 	)
 	(hierarchical_label "Switch_4"
 		(shape output)
-		(at 71.12 54.61 0)
+		(at 71.12 59.69 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3112,7 +3135,7 @@
 	)
 	(hierarchical_label "Switch_5"
 		(shape output)
-		(at 71.12 57.15 0)
+		(at 71.12 62.23 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3123,7 +3146,7 @@
 	)
 	(hierarchical_label "Switch_2"
 		(shape output)
-		(at 71.12 49.53 0)
+		(at 71.12 54.61 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3134,7 +3157,7 @@
 	)
 	(hierarchical_label "GPIO_Clock"
 		(shape input)
-		(at 109.22 81.28 180)
+		(at 107.95 78.74 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3145,7 +3168,7 @@
 	)
 	(hierarchical_label "NRST"
 		(shape input)
-		(at 60.96 149.86 180)
+		(at 40.64 163.83 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3156,7 +3179,7 @@
 	)
 	(hierarchical_label "GPIO_Clock"
 		(shape input)
-		(at 109.22 49.53 180)
+		(at 107.95 46.99 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3167,7 +3190,7 @@
 	)
 	(hierarchical_label "Switch_5"
 		(shape input)
-		(at 109.22 93.98 180)
+		(at 107.95 91.44 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3178,7 +3201,7 @@
 	)
 	(hierarchical_label "Switch_6"
 		(shape output)
-		(at 71.12 69.85 0)
+		(at 71.12 74.93 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3187,9 +3210,20 @@
 		)
 		(uuid "a6310550-07f6-4a75-9205-9e9e4ac51e0f")
 	)
+	(hierarchical_label "VBAT"
+		(shape output)
+		(at 30.48 138.43 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a6cc1ec1-c781-4e0b-ae8a-81cc9b3b4cd9")
+	)
 	(hierarchical_label "GPIO_Clock"
 		(shape input)
-		(at 109.22 34.29 180)
+		(at 107.95 31.75 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3200,7 +3234,7 @@
 	)
 	(hierarchical_label "GPIO_Clock"
 		(shape output)
-		(at 71.12 72.39 0)
+		(at 71.12 77.47 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3211,7 +3245,7 @@
 	)
 	(hierarchical_label "PB1"
 		(shape output)
-		(at 71.12 67.31 0)
+		(at 71.12 72.39 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3222,7 +3256,7 @@
 	)
 	(hierarchical_label "GPIO_Clock"
 		(shape input)
-		(at 109.22 66.04 180)
+		(at 107.95 63.5 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3233,7 +3267,7 @@
 	)
 	(hierarchical_label "PB0"
 		(shape output)
-		(at 71.12 64.77 0)
+		(at 71.12 69.85 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3242,9 +3276,20 @@
 		)
 		(uuid "c24c2dbf-ab6d-4255-98cf-0c39a64bf185")
 	)
+	(hierarchical_label "VDDA"
+		(shape input)
+		(at 45.72 30.48 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cd130063-9553-4ef4-93c3-50298cff75b6")
+	)
 	(hierarchical_label "PB1"
 		(shape input)
-		(at 48.26 152.4 180)
+		(at 27.94 166.37 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3253,9 +3298,31 @@
 		)
 		(uuid "ce3ce0fc-1c10-45f4-ad1a-3e95ee05df86")
 	)
+	(hierarchical_label "VDDSMPS"
+		(shape input)
+		(at 50.8 30.48 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d6648d5d-f81a-46a5-9d2e-9aa0501a2ef1")
+	)
+	(hierarchical_label "VDDA"
+		(shape output)
+		(at 19.05 138.43 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d7310032-be4e-486d-9aaa-c5336a837a61")
+	)
 	(hierarchical_label "Switch_6"
 		(shape input)
-		(at 109.22 109.22 180)
+		(at 107.95 106.68 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3264,9 +3331,20 @@
 		)
 		(uuid "f4bdae6c-0d91-4240-90ff-6b7a127bb35e")
 	)
+	(hierarchical_label "VDDSMPS"
+		(shape output)
+		(at 41.91 138.43 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f78f5408-b98f-4716-b42d-1efaa1c45238")
+	)
 	(hierarchical_label "NRST"
 		(shape output)
-		(at 71.12 36.83 0)
+		(at 71.12 41.91 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3277,7 +3355,7 @@
 	)
 	(hierarchical_label "PB2"
 		(shape input)
-		(at 77.47 116.84 90)
+		(at 60.96 138.43 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3288,7 +3366,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 21.59 120.65 0)
+		(at 19.05 118.11 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3297,7 +3375,7 @@
 		(fields_autoplaced yes)
 		(uuid "0dff7e5b-37a4-49c7-b6f9-22d8904354c9")
 		(property "Reference" "C6"
-			(at 25.4 119.3799 0)
+			(at 22.86 116.8399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3306,7 +3384,7 @@
 			)
 		)
 		(property "Value" "4.8u"
-			(at 25.4 121.9199 0)
+			(at 22.86 119.3799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3315,7 +3393,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 22.5552 124.46 0)
+			(at 20.0152 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3324,7 +3402,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 21.59 120.65 0)
+			(at 19.05 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3333,7 +3411,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 21.59 120.65 0)
+			(at 19.05 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3358,16 +3436,16 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 49.53 120.65 0)
+		(at 41.91 134.62 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "3953af01-6d00-490a-b20c-664da7296dbc")
-		(property "Reference" "C9"
-			(at 53.34 119.3799 0)
+		(uuid "18eba319-816c-4c32-b9c0-e547452d5161")
+		(property "Reference" "C14"
+			(at 45.72 133.3499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3375,8 +3453,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.7p"
-			(at 53.34 121.9199 0)
+		(property "Value" "100n"
+			(at 45.72 135.8899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3385,7 +3463,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 50.4952 124.46 0)
+			(at 42.8752 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3394,7 +3472,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 49.53 120.65 0)
+			(at 41.91 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3403,7 +3481,76 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 49.53 120.65 0)
+			(at 41.91 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1e4c45b3-18d3-47c0-bdcc-559302dba384")
+		)
+		(pin "2"
+			(uuid "d4299757-edd6-4af5-9ea3-1e10bd43032d")
+		)
+		(instances
+			(project "Switch_Board"
+				(path "/27fcebe4-2fb8-4847-92ca-f98a7b250261"
+					(reference "C14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 57.15 110.49 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3953af01-6d00-490a-b20c-664da7296dbc")
+		(property "Reference" "C9"
+			(at 55.245 114.9349 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2.7p"
+			(at 55.245 117.4749 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 53.34 111.4552 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 57.15 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 57.15 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3428,7 +3575,7 @@
 	)
 	(symbol
 		(lib_id "Device:Battery_Cell")
-		(at 19.05 165.1 0)
+		(at 74.93 128.27 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3436,7 +3583,7 @@
 		(dnp no)
 		(uuid "4e0230ad-99a8-4712-9b26-708a6ee98f3a")
 		(property "Reference" "BT1"
-			(at 27.94 160.528 0)
+			(at 83.82 123.698 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3445,7 +3592,7 @@
 			)
 		)
 		(property "Value" "Coin Cell"
-			(at 30.734 158.242 0)
+			(at 86.614 121.412 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3454,7 +3601,7 @@
 			)
 		)
 		(property "Footprint" "Battery:BatteryHolder_MYOUNG_BS-07-A1BJ001_CR2032"
-			(at 19.05 163.576 90)
+			(at 74.93 126.746 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3463,7 +3610,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 19.05 163.576 90)
+			(at 74.93 126.746 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3472,7 +3619,7 @@
 			)
 		)
 		(property "Description" "Single-cell battery"
-			(at 19.05 165.1 0)
+			(at 74.93 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3497,7 +3644,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
-		(at 66.04 152.4 0)
+		(at 45.72 166.37 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3506,7 +3653,7 @@
 		(fields_autoplaced yes)
 		(uuid "560e6e17-398a-44ba-bf82-7508308bf226")
 		(property "Reference" "J7"
-			(at 68.58 151.1299 0)
+			(at 48.26 165.0999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3515,7 +3662,7 @@
 			)
 		)
 		(property "Value" "Conn_01x03"
-			(at 68.58 153.6699 0)
+			(at 48.26 167.6399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3524,7 +3671,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 66.04 152.4 0)
+			(at 45.72 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3533,7 +3680,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 66.04 152.4 0)
+			(at 45.72 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3542,7 +3689,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 66.04 152.4 0)
+			(at 45.72 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3638,7 +3785,7 @@
 	)
 	(symbol
 		(lib_id "MCU_STM32WB1MMCH6TR:STM32WB1MMCH6TR")
-		(at 25.4 27.94 0)
+		(at 25.4 33.02 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3646,7 +3793,7 @@
 		(dnp no)
 		(uuid "68b5ea3b-8b20-4106-bcdd-dda9e818c668")
 		(property "Reference" "U1"
-			(at 56.642 26.924 0)
+			(at 56.642 32.004 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -3654,7 +3801,7 @@
 			)
 		)
 		(property "Value" "STM32WB1MMCH6TR"
-			(at 66.802 29.718 0)
+			(at 66.802 34.798 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -3662,7 +3809,7 @@
 			)
 		)
 		(property "Footprint" "MCU_STM32:LGA77_6P5X10_STM"
-			(at 49.276 12.446 0)
+			(at 49.276 17.526 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3672,7 +3819,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32wb1mmc.pdf"
-			(at 47.498 14.478 0)
+			(at 47.498 19.558 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3682,7 +3829,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 25.4 27.94 0)
+			(at 25.4 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3932,7 +4079,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 35.56 120.65 0)
+		(at 30.48 118.11 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3941,7 +4088,7 @@
 		(fields_autoplaced yes)
 		(uuid "a7ba5eaa-bd4e-4a9d-81a9-9733c67d4fc9")
 		(property "Reference" "C7"
-			(at 39.37 119.3799 0)
+			(at 34.29 116.8399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3950,7 +4097,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 39.37 121.9199 0)
+			(at 34.29 119.3799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3959,7 +4106,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 36.5252 124.46 0)
+			(at 31.4452 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3968,7 +4115,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 35.56 120.65 0)
+			(at 30.48 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3977,7 +4124,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 35.56 120.65 0)
+			(at 30.48 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4146,16 +4293,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 77.47 120.65 0)
+		(at 57.15 138.43 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "bca505fe-6e00-4386-85b9-744043095771")
 		(property "Reference" "C11"
-			(at 81.28 119.3799 0)
+			(at 55.245 142.8749 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4164,7 +4310,7 @@
 			)
 		)
 		(property "Value" "2.7p"
-			(at 81.28 121.9199 0)
+			(at 55.245 145.4149 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4173,7 +4319,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 78.4352 124.46 0)
+			(at 53.34 139.3952 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4182,7 +4328,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 77.47 120.65 0)
+			(at 57.15 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4191,7 +4337,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 77.47 120.65 0)
+			(at 57.15 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4216,16 +4362,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 63.5 120.65 0)
+		(at 57.15 124.46 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "be203b2c-2aa1-4133-bbfd-632ab25defb3")
 		(property "Reference" "C10"
-			(at 67.31 119.3799 0)
+			(at 55.245 128.9049 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4234,7 +4379,7 @@
 			)
 		)
 		(property "Value" "2.7p"
-			(at 67.31 121.9199 0)
+			(at 55.245 131.4449 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4243,7 +4388,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 64.4652 124.46 0)
+			(at 53.34 125.4252 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4252,7 +4397,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 63.5 120.65 0)
+			(at 57.15 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4261,7 +4406,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 63.5 120.65 0)
+			(at 57.15 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4286,7 +4431,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 52.07 152.4 90)
+		(at 31.75 166.37 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4294,7 +4439,7 @@
 		(dnp no)
 		(uuid "d5f66f2b-f7e7-4148-bac6-a3098febdae7")
 		(property "Reference" "R24"
-			(at 51.816 149.86 90)
+			(at 31.496 163.83 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4302,7 +4447,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 52.07 147.828 90)
+			(at 31.75 161.798 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4310,7 +4455,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 52.324 151.384 90)
+			(at 32.004 165.354 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4319,7 +4464,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 52.07 152.4 0)
+			(at 31.75 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4328,7 +4473,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 52.07 152.4 0)
+			(at 31.75 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4351,8 +4496,147 @@
 			)
 		)
 	)
+	(symbol
+		(lib_id "Device:C")
+		(at 19.05 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f4c523ab-ab6a-4d3e-9508-9f184092f0b1")
+		(property "Reference" "C12"
+			(at 22.86 133.3499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 22.86 135.8899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 20.0152 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 19.05 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 19.05 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f8112ed7-1e85-45d8-8de3-4df7176dc691")
+		)
+		(pin "2"
+			(uuid "cb5f45de-e5e8-4740-b606-561f872aa5f0")
+		)
+		(instances
+			(project "Switch_Board"
+				(path "/27fcebe4-2fb8-4847-92ca-f98a7b250261"
+					(reference "C12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 30.48 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fd6ad5d8-ad8b-4dd7-932a-a3bd097b39eb")
+		(property "Reference" "C13"
+			(at 34.29 133.3499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 34.29 135.8899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 31.4452 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 30.48 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 30.48 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7173acb0-2c08-43d5-adbe-0ecee050641b")
+		)
+		(pin "2"
+			(uuid "15add7ec-6b92-4b73-8412-64c573083153")
+		)
+		(instances
+			(project "Switch_Board"
+				(path "/27fcebe4-2fb8-4847-92ca-f98a7b250261"
+					(reference "C13")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(sheet
-		(at 109.22 91.44)
+		(at 107.95 88.9)
 		(size 43.18 7.62)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4368,7 +4652,7 @@
 		)
 		(uuid "0ac322e4-151b-4a9f-b39e-a207455d52d0")
 		(property "Sheetname" "Isolated Flip Flops + Switch 5"
-			(at 109.22 90.7284 0)
+			(at 107.95 88.1884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4377,7 +4661,7 @@
 			)
 		)
 		(property "Sheetfile" "IsolatedFlipFlopsSwitch.kicad_sch"
-			(at 109.22 99.6446 0)
+			(at 107.95 97.1046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4386,7 +4670,7 @@
 			)
 		)
 		(pin "Clock" input
-			(at 109.22 96.52 180)
+			(at 107.95 93.98 180)
 			(uuid "9d62cbe0-236b-4d7c-af72-d4182fd91a75")
 			(effects
 				(font
@@ -4396,7 +4680,7 @@
 			)
 		)
 		(pin "Data" input
-			(at 109.22 93.98 180)
+			(at 107.95 91.44 180)
 			(uuid "bce2cb19-f45e-4b21-8730-3b60b67290f1")
 			(effects
 				(font
@@ -4414,7 +4698,7 @@
 		)
 	)
 	(sheet
-		(at 109.22 44.45)
+		(at 107.95 41.91)
 		(size 43.18 7.62)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4430,7 +4714,7 @@
 		)
 		(uuid "22315eb0-74dc-4cbd-8bc5-2b5a239cef41")
 		(property "Sheetname" "Isolated Flip Flops + Switch 2"
-			(at 109.22 43.7384 0)
+			(at 107.95 41.1984 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4439,7 +4723,7 @@
 			)
 		)
 		(property "Sheetfile" "IsolatedFlipFlopsSwitch.kicad_sch"
-			(at 109.22 52.6546 0)
+			(at 107.95 50.1146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4448,7 +4732,7 @@
 			)
 		)
 		(pin "Clock" input
-			(at 109.22 49.53 180)
+			(at 107.95 46.99 180)
 			(uuid "0af26683-1839-4dac-856b-8dddd538635f")
 			(effects
 				(font
@@ -4458,7 +4742,7 @@
 			)
 		)
 		(pin "Data" input
-			(at 109.22 46.99 180)
+			(at 107.95 44.45 180)
 			(uuid "dfaf5c51-9508-44e5-ab65-0332a1f6c82e")
 			(effects
 				(font
@@ -4476,7 +4760,7 @@
 		)
 	)
 	(sheet
-		(at 109.22 29.21)
+		(at 107.95 26.67)
 		(size 43.18 7.62)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4492,7 +4776,7 @@
 		)
 		(uuid "7883bc24-035c-4803-95ad-0f695f6f0510")
 		(property "Sheetname" "Isolated Flip Flops + Switch 1"
-			(at 109.22 28.4984 0)
+			(at 107.95 25.9584 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4501,7 +4785,7 @@
 			)
 		)
 		(property "Sheetfile" "IsolatedFlipFlopsSwitch.kicad_sch"
-			(at 109.22 37.4146 0)
+			(at 107.95 34.8746 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4510,7 +4794,7 @@
 			)
 		)
 		(pin "Clock" input
-			(at 109.22 34.29 180)
+			(at 107.95 31.75 180)
 			(uuid "cd8436aa-37b1-42ae-b657-9819f02651b8")
 			(effects
 				(font
@@ -4520,7 +4804,7 @@
 			)
 		)
 		(pin "Data" input
-			(at 109.22 31.75 180)
+			(at 107.95 29.21 180)
 			(uuid "9fa036a6-f2ec-4ab6-9525-2dc6cd54fc3a")
 			(effects
 				(font
@@ -4538,7 +4822,7 @@
 		)
 	)
 	(sheet
-		(at 109.22 60.96)
+		(at 107.95 58.42)
 		(size 43.18 7.62)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4554,7 +4838,7 @@
 		)
 		(uuid "9a8757b7-59d4-4710-8d66-ccd12e8d4244")
 		(property "Sheetname" "Isolated Flip Flops + Switch 3"
-			(at 109.22 60.2484 0)
+			(at 107.95 57.7084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4563,7 +4847,7 @@
 			)
 		)
 		(property "Sheetfile" "IsolatedFlipFlopsSwitch.kicad_sch"
-			(at 109.22 69.1646 0)
+			(at 107.95 66.6246 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4572,7 +4856,7 @@
 			)
 		)
 		(pin "Clock" input
-			(at 109.22 66.04 180)
+			(at 107.95 63.5 180)
 			(uuid "736b83e1-45a4-497a-ad32-6d1b9e0b515c")
 			(effects
 				(font
@@ -4582,7 +4866,7 @@
 			)
 		)
 		(pin "Data" input
-			(at 109.22 63.5 180)
+			(at 107.95 60.96 180)
 			(uuid "90565b5c-9753-420e-a375-b14d81a974aa")
 			(effects
 				(font
@@ -4600,7 +4884,7 @@
 		)
 	)
 	(sheet
-		(at 109.22 106.68)
+		(at 107.95 104.14)
 		(size 43.18 7.62)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4616,7 +4900,7 @@
 		)
 		(uuid "c1721fd8-e05c-4e88-a7d4-aa7e24310545")
 		(property "Sheetname" "Isolated Flip Flops + Switch 6"
-			(at 109.22 105.9684 0)
+			(at 107.95 103.4284 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4625,7 +4909,7 @@
 			)
 		)
 		(property "Sheetfile" "IsolatedFlipFlopsSwitch.kicad_sch"
-			(at 109.22 114.8846 0)
+			(at 107.95 112.3446 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4634,7 +4918,7 @@
 			)
 		)
 		(pin "Clock" input
-			(at 109.22 111.76 180)
+			(at 107.95 109.22 180)
 			(uuid "766b44fc-298d-4e77-8575-15584afa33fe")
 			(effects
 				(font
@@ -4644,7 +4928,7 @@
 			)
 		)
 		(pin "Data" input
-			(at 109.22 109.22 180)
+			(at 107.95 106.68 180)
 			(uuid "d3813b64-2c85-4f06-9e49-86efbf869f7c")
 			(effects
 				(font
@@ -4662,7 +4946,7 @@
 		)
 	)
 	(sheet
-		(at 109.22 76.2)
+		(at 107.95 73.66)
 		(size 43.18 7.62)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4678,7 +4962,7 @@
 		)
 		(uuid "c95baff8-5754-4c60-b8c7-1f7ffe4a1015")
 		(property "Sheetname" "Isolated Flip Flops + Switch 4"
-			(at 109.22 75.4884 0)
+			(at 107.95 72.9484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4687,7 +4971,7 @@
 			)
 		)
 		(property "Sheetfile" "IsolatedFlipFlopsSwitch.kicad_sch"
-			(at 109.22 84.4046 0)
+			(at 107.95 81.8646 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4696,7 +4980,7 @@
 			)
 		)
 		(pin "Clock" input
-			(at 109.22 81.28 180)
+			(at 107.95 78.74 180)
 			(uuid "55ed7ed4-c4ba-4055-aa43-f5d46aa7019d")
 			(effects
 				(font
@@ -4706,7 +4990,7 @@
 			)
 		)
 		(pin "Data" input
-			(at 109.22 78.74 180)
+			(at 107.95 76.2 180)
 			(uuid "04198855-15c7-44ce-ba5c-b593207ec626")
 			(effects
 				(font
