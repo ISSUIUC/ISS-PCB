@@ -9,8 +9,8 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
-			(at 27.94 10.16 0)
+		(property "Reference" "U1"
+			(at 31.242 1.016 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -18,7 +18,7 @@
 			)
 		)
 		(property "Value" "STM32WB1MMCH6TR"
-			(at 44.45 2.286 0)
+			(at 41.402 -1.778 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -26,7 +26,7 @@
 			)
 		)
 		(property "Footprint" "MCU_STM32:LGA77_6P5X10_STM"
-			(at 42.926 9.398 0)
+			(at 23.876 15.494 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36,7 +36,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32wb1mmc.pdf"
-			(at 64.008 5.842 0)
+			(at 22.098 13.462 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -377,27 +377,10 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 17.78 -59.69 90)
+			(pin passive line
+				(at 22.86 2.54 270)
 				(length 7.62)
-				(name "VSSRF"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 20.32 2.54 270)
-				(length 7.62)
+				(hide yes)
 				(name "VDDA"
 					(effects
 						(font
@@ -414,25 +397,7 @@
 				)
 			)
 			(pin power_in line
-				(at 21.59 -59.69 90)
-				(length 7.62)
-				(name "VSSRF"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 24.13 2.54 270)
+				(at 22.86 2.54 270)
 				(length 7.62)
 				(name "VBAT"
 					(effects
@@ -449,8 +414,27 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 25.4 -59.69 90)
+			(pin passive line
+				(at 22.86 2.54 270)
+				(length 7.62)
+				(hide yes)
+				(name "VDDSMPS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 22.86 -59.69 90)
 				(length 7.62)
 				(hide yes)
 				(name "VSS"
@@ -468,8 +452,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 25.4 -59.69 90)
+			(pin passive line
+				(at 22.86 -59.69 90)
 				(length 7.62)
 				(hide yes)
 				(name "VSS"
@@ -487,8 +471,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 25.4 -59.69 90)
+			(pin passive line
+				(at 22.86 -59.69 90)
 				(length 7.62)
 				(hide yes)
 				(name "VSS"
@@ -507,7 +491,7 @@
 				)
 			)
 			(pin power_in line
-				(at 25.4 -59.69 90)
+				(at 22.86 -59.69 90)
 				(length 7.62)
 				(name "VSS"
 					(effects
@@ -524,8 +508,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 25.4 -59.69 90)
+			(pin passive line
+				(at 22.86 -59.69 90)
 				(length 7.62)
 				(hide yes)
 				(name "VSS"
@@ -543,8 +527,27 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 25.4 -59.69 90)
+			(pin passive line
+				(at 22.86 -59.69 90)
+				(length 7.62)
+				(hide yes)
+				(name "VSSSMPS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 22.86 -59.69 90)
 				(length 7.62)
 				(hide yes)
 				(name "VSS"
@@ -562,8 +565,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 25.4 -59.69 90)
+			(pin passive line
+				(at 22.86 -59.69 90)
 				(length 7.62)
 				(hide yes)
 				(name "VSS"
@@ -581,8 +584,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 25.4 -59.69 90)
+			(pin passive line
+				(at 22.86 -59.69 90)
 				(length 7.62)
 				(hide yes)
 				(name "VSS"
@@ -600,8 +603,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 25.4 -59.69 90)
+			(pin passive line
+				(at 22.86 -59.69 90)
 				(length 7.62)
 				(hide yes)
 				(name "VSS"
@@ -619,8 +622,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 25.4 -59.69 90)
+			(pin passive line
+				(at 22.86 -59.69 90)
 				(length 7.62)
 				(hide yes)
 				(name "VSS"
@@ -638,8 +641,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 25.4 -59.69 90)
+			(pin passive line
+				(at 22.86 -59.69 90)
 				(length 7.62)
 				(hide yes)
 				(name "VSS"
@@ -657,8 +660,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 25.4 -59.69 90)
+			(pin passive line
+				(at 22.86 -59.69 90)
 				(length 7.62)
 				(hide yes)
 				(name "VSS"
@@ -676,8 +679,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 25.4 -59.69 90)
+			(pin passive line
+				(at 22.86 -59.69 90)
 				(length 7.62)
 				(hide yes)
 				(name "VSS"
@@ -695,8 +698,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 25.4 -59.69 90)
+			(pin passive line
+				(at 22.86 -59.69 90)
 				(length 7.62)
 				(hide yes)
 				(name "VSS"
@@ -714,8 +717,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 25.4 -59.69 90)
+			(pin passive line
+				(at 22.86 -59.69 90)
 				(length 7.62)
 				(hide yes)
 				(name "VSS"
@@ -733,8 +736,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 25.4 -59.69 90)
+			(pin passive line
+				(at 22.86 -59.69 90)
 				(length 7.62)
 				(hide yes)
 				(name "VSS"
@@ -752,8 +755,27 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 25.4 -59.69 90)
+			(pin passive line
+				(at 22.86 -59.69 90)
+				(length 7.62)
+				(hide yes)
+				(name "VSSRF"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 22.86 -59.69 90)
 				(length 7.62)
 				(hide yes)
 				(name "VSS"
@@ -771,8 +793,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 25.4 -59.69 90)
+			(pin passive line
+				(at 22.86 -59.69 90)
 				(length 7.62)
 				(hide yes)
 				(name "VSS"
@@ -790,8 +812,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 25.4 -59.69 90)
+			(pin passive line
+				(at 22.86 -59.69 90)
 				(length 7.62)
 				(hide yes)
 				(name "VSS"
@@ -809,8 +831,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 25.4 -59.69 90)
+			(pin passive line
+				(at 22.86 -59.69 90)
 				(length 7.62)
 				(hide yes)
 				(name "VSS"
@@ -828,8 +850,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 25.4 -59.69 90)
+			(pin passive line
+				(at 22.86 -59.69 90)
 				(length 7.62)
 				(hide yes)
 				(name "VSS"
@@ -847,8 +869,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 25.4 -59.69 90)
+			(pin passive line
+				(at 22.86 -59.69 90)
 				(length 7.62)
 				(hide yes)
 				(name "VSS"
@@ -866,8 +888,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 25.4 -59.69 90)
+			(pin passive line
+				(at 22.86 -59.69 90)
 				(length 7.62)
 				(hide yes)
 				(name "VSS"
@@ -885,8 +907,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 25.4 -59.69 90)
+			(pin passive line
+				(at 22.86 -59.69 90)
 				(length 7.62)
 				(hide yes)
 				(name "VSS"
@@ -904,8 +926,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 25.4 -59.69 90)
+			(pin passive line
+				(at 22.86 -59.69 90)
 				(length 7.62)
 				(hide yes)
 				(name "VSS"
@@ -923,8 +945,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 25.4 -59.69 90)
+			(pin passive line
+				(at 22.86 -59.69 90)
 				(length 7.62)
 				(hide yes)
 				(name "VSS"
@@ -942,8 +964,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 25.4 -59.69 90)
+			(pin passive line
+				(at 22.86 -59.69 90)
 				(length 7.62)
 				(hide yes)
 				(name "VSS"
@@ -961,8 +983,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 25.4 -59.69 90)
+			(pin passive line
+				(at 22.86 -59.69 90)
 				(length 7.62)
 				(hide yes)
 				(name "VSS"
@@ -980,8 +1002,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 25.4 -59.69 90)
+			(pin passive line
+				(at 22.86 -59.69 90)
 				(length 7.62)
 				(hide yes)
 				(name "VSS"
@@ -999,8 +1021,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 25.4 -59.69 90)
+			(pin passive line
+				(at 22.86 -59.69 90)
 				(length 7.62)
 				(hide yes)
 				(name "VSS"
@@ -1018,8 +1040,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 25.4 -59.69 90)
+			(pin passive line
+				(at 22.86 -59.69 90)
 				(length 7.62)
 				(hide yes)
 				(name "VSS"
@@ -1037,8 +1059,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 25.4 -59.69 90)
+			(pin passive line
+				(at 22.86 -59.69 90)
 				(length 7.62)
 				(hide yes)
 				(name "VSS"
@@ -1056,8 +1078,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 25.4 -59.69 90)
+			(pin passive line
+				(at 22.86 -59.69 90)
 				(length 7.62)
 				(hide yes)
 				(name "VSS"
@@ -1075,8 +1097,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 25.4 -59.69 90)
+			(pin passive line
+				(at 22.86 -59.69 90)
 				(length 7.62)
 				(hide yes)
 				(name "VSS"
@@ -1094,8 +1116,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 25.4 -59.69 90)
+			(pin passive line
+				(at 22.86 -59.69 90)
 				(length 7.62)
 				(hide yes)
 				(name "VSS"
@@ -1113,8 +1135,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 25.4 -59.69 90)
+			(pin passive line
+				(at 22.86 -59.69 90)
 				(length 7.62)
 				(hide yes)
 				(name "VSS"
@@ -1132,8 +1154,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 25.4 -59.69 90)
+			(pin passive line
+				(at 22.86 -59.69 90)
 				(length 7.62)
 				(hide yes)
 				(name "VSS"
@@ -1151,8 +1173,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 25.4 -59.69 90)
+			(pin passive line
+				(at 22.86 -59.69 90)
 				(length 7.62)
 				(hide yes)
 				(name "VSS"
@@ -1170,8 +1192,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 25.4 -59.69 90)
+			(pin passive line
+				(at 22.86 -59.69 90)
 				(length 7.62)
 				(hide yes)
 				(name "VSS"
@@ -1189,8 +1211,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 25.4 -59.69 90)
+			(pin passive line
+				(at 22.86 -59.69 90)
 				(length 7.62)
 				(hide yes)
 				(name "VSS"
@@ -1208,8 +1230,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 25.4 -59.69 90)
+			(pin passive line
+				(at 22.86 -59.69 90)
 				(length 7.62)
 				(hide yes)
 				(name "VSS"
@@ -1227,8 +1249,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 25.4 -59.69 90)
+			(pin passive line
+				(at 22.86 -59.69 90)
 				(length 7.62)
 				(hide yes)
 				(name "VSS"
@@ -1246,8 +1268,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 25.4 -59.69 90)
+			(pin passive line
+				(at 22.86 -59.69 90)
 				(length 7.62)
 				(hide yes)
 				(name "VSS"
@@ -1265,8 +1287,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 25.4 -59.69 90)
+			(pin passive line
+				(at 22.86 -59.69 90)
 				(length 7.62)
 				(hide yes)
 				(name "VSS"
@@ -1284,35 +1306,18 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 27.94 2.54 270)
+			(pin passive line
+				(at 22.86 -59.69 90)
 				(length 7.62)
-				(name "VDDSMPS"
+				(hide yes)
+				(name "VSSRF"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "20"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 29.21 -59.69 90)
-				(length 7.62)
-				(name "VSSSMPS"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "21"
+				(number "8"
 					(effects
 						(font
 							(size 1.27 1.27)
