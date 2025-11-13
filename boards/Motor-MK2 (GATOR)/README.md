@@ -14,6 +14,7 @@ R - Rocket
 # MK2
 
 MK2 now includes an onboard LoRa reciever and GPS, removing the need for another MIDAS to act as a ground station.
+It now also includes Qwiic connectors for additional I2C support and an IMU for orientation correction if needed.
 
 # MK1
 
