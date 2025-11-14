@@ -2564,8 +2564,8 @@
 		(uuid 2530b770-d09d-4cf7-b264-145d1a8ce229)
 	)
 	(rectangle
-		(start 66.04 156.21)
-		(end 100.33 167.64)
+		(start 66.04 153.67)
+		(end 100.33 165.1)
 		(stroke
 			(width 0)
 			(type dash)
@@ -2576,8 +2576,8 @@
 		(uuid 3ed772ff-36c0-46fd-8a43-accf6ceaa92d)
 	)
 	(rectangle
-		(start 49.53 179.07)
-		(end 85.09 189.23)
+		(start 50.8 180.34)
+		(end 86.36 190.5)
 		(stroke
 			(width 0)
 			(type dash)
@@ -2647,6 +2647,18 @@
 		)
 		(uuid bb162bfb-c64e-4932-97db-b320ee4d1c11)
 	)
+	(rectangle
+		(start 66.04 166.37)
+		(end 100.33 177.8)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid f81283de-3d98-47d8-b938-eb6039198bf2)
+	)
 	(text "STM32 w/Bluetooth"
 		(exclude_from_sim no)
 		(at 30.734 17.526 0)
@@ -2659,7 +2671,7 @@
 	)
 	(text "UART"
 		(exclude_from_sim no)
-		(at 66.802 158.242 0)
+		(at 66.802 155.702 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2667,6 +2679,17 @@
 			(justify left)
 		)
 		(uuid "2027c866-bf8d-4efe-9b74-c0dada3b5208")
+	)
+	(text "I2C"
+		(exclude_from_sim no)
+		(at 66.802 168.402 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2d7cacb5-2c58-443e-bcea-c23685690ac7")
 	)
 	(text "Filtering Capacitors"
 		(exclude_from_sim no)
@@ -2711,7 +2734,7 @@
 	)
 	(text "Boot Pin"
 		(exclude_from_sim no)
-		(at 54.356 181.102 0)
+		(at 55.626 182.372 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2886,7 +2909,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 184.15) (xy 64.77 184.15)
+			(xy 63.5 185.42) (xy 66.04 185.42)
 		)
 		(stroke
 			(width 0)
@@ -2906,7 +2929,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 184.15) (xy 74.93 184.15)
+			(xy 73.66 185.42) (xy 76.2 185.42)
 		)
 		(stroke
 			(width 0)
@@ -3080,7 +3103,7 @@
 	)
 	(global_label "MCU_V"
 		(shape input)
-		(at 62.23 184.15 180)
+		(at 63.5 185.42 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3090,7 +3113,7 @@
 		)
 		(uuid "1d58fb42-27fc-4354-b80a-3de33b2503e4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 53.1367 184.15 0)
+			(at 54.4067 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3278,7 +3301,7 @@
 	)
 	(hierarchical_label "Boot"
 		(shape output)
-		(at 74.93 184.15 0)
+		(at 76.2 185.42 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3286,6 +3309,28 @@
 			(justify left)
 		)
 		(uuid "1e9fd0c9-54b2-4b70-b7d5-a5f6b980d373")
+	)
+	(hierarchical_label "I2C_SCL"
+		(shape output)
+		(at 74.93 69.85 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1edbf80f-9e81-4e3e-9d80-b8a3219ce6f6")
+	)
+	(hierarchical_label "I2C_SDA"
+		(shape output)
+		(at 74.93 72.39 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1fe292d2-af93-41a2-8abe-e90345d5dff0")
 	)
 	(hierarchical_label "GPIO_Clock"
 		(shape input)
@@ -3308,6 +3353,17 @@
 			(justify right)
 		)
 		(uuid "33ca332f-45ab-4dd0-866b-cb518f58211a")
+	)
+	(hierarchical_label "I2C_SDA"
+		(shape input)
+		(at 78.74 173.99 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3b714111-4683-4be8-91e8-d11b4b956612")
 	)
 	(hierarchical_label "Switch_2"
 		(shape output)
@@ -3397,6 +3453,17 @@
 		)
 		(uuid "6235731a-c5d0-4843-950b-0c72f4c14596")
 	)
+	(hierarchical_label "I2C_SCL"
+		(shape input)
+		(at 78.74 171.45 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6813fe6b-b536-403d-bb4e-1f0581b56d53")
+	)
 	(hierarchical_label "Debug_LED"
 		(shape output)
 		(at 74.93 64.77 0)
@@ -3454,7 +3521,7 @@
 	)
 	(hierarchical_label "UART_TX"
 		(shape input)
-		(at 78.74 163.83 180)
+		(at 78.74 161.29 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3553,7 +3620,7 @@
 	)
 	(hierarchical_label "UART_RX"
 		(shape input)
-		(at 78.74 161.29 180)
+		(at 78.74 158.75 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3836,7 +3903,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 83.82 161.29 0)
+		(at 83.82 158.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3845,7 +3912,7 @@
 		(fields_autoplaced yes)
 		(uuid "4a9668ba-e609-4737-9d67-8ab18bbf544b")
 		(property "Reference" "J9"
-			(at 86.36 161.2899 0)
+			(at 86.36 158.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3854,7 +3921,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02"
-			(at 86.36 163.8299 0)
+			(at 86.36 161.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3863,7 +3930,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical"
-			(at 83.82 161.29 0)
+			(at 83.82 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3872,7 +3939,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 83.82 161.29 0)
+			(at 83.82 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3881,7 +3948,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 83.82 161.29 0)
+			(at 83.82 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4694,7 +4761,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 68.58 184.15 90)
+		(at 69.85 185.42 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4702,7 +4769,7 @@
 		(dnp no)
 		(uuid "b6a65c83-99d9-4d0f-bb60-12a149acba71")
 		(property "Reference" "R3"
-			(at 68.326 181.61 90)
+			(at 69.596 182.88 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4710,7 +4777,7 @@
 			)
 		)
 		(property "Value" "NC"
-			(at 68.58 186.182 90)
+			(at 69.85 187.452 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4718,7 +4785,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 68.834 183.134 90)
+			(at 70.104 184.404 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4727,7 +4794,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 68.58 184.15 0)
+			(at 69.85 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4736,7 +4803,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 68.58 184.15 0)
+			(at 69.85 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4754,6 +4821,76 @@
 			(project "Switch_Board"
 				(path "/27fcebe4-2fb8-4847-92ca-f98a7b250261"
 					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 83.82 171.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bb937f73-5327-4d76-a970-3c1a31c4b4f3")
+		(property "Reference" "J10"
+			(at 86.36 171.4499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 86.36 173.9899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical"
+			(at 83.82 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 83.82 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 83.82 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "01001f92-a269-4d54-8b7c-d0065a48a552")
+		)
+		(pin "1"
+			(uuid "97fbad9c-be82-4e02-b143-b69eefbee182")
+		)
+		(instances
+			(project "Switch_Board"
+				(path "/27fcebe4-2fb8-4847-92ca-f98a7b250261"
+					(reference "J10")
 					(unit 1)
 				)
 			)
