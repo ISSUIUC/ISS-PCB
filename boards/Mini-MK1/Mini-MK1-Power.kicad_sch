@@ -2248,6 +2248,18 @@
 		)
 		(uuid f44c8017-581b-4ecf-87c0-219fb7412ab7)
 	)
+	(text "VCOMP (Highest voltage mode)\n(V_{OV} - V_{DIODE}) * R_{BOT} / (R_{BOT} + R_{TOP}) = 1.06V\nV_{OV} = 1.06 * (5k + 16.9k) / 5k + 0.9 = 5.54V\nI_{LM} = 65.2 / R_{ILM}(k)^{0.861} = 65.2 / 21.5^{0.861} = 4.64A"
+		(exclude_from_sim no)
+		(at 15.875 94.615 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify left bottom)
+		)
+		(uuid "0d491a42-a9c3-47aa-bad4-4149b5ef6682")
+	)
 	(text "t = ~0.45s\nt = C(V_{max}−V_{min})/I\nI = ~200 mA (based on MIDAS MK2.1)"
 		(exclude_from_sim no)
 		(at 130.175 94.615 0)
@@ -2272,17 +2284,6 @@
 			(justify left bottom)
 		)
 		(uuid "1daf9758-cb50-4442-8919-d1c5816c4ad9")
-	)
-	(text "USB_Power OV: 5.54V\nVBAT OV: 5.54V\nOC: ~4.5A"
-		(exclude_from_sim no)
-		(at 126.365 22.225 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "52589d99-7226-40c8-8ba5-79a700f8f0e5")
 	)
 	(text "3V3 Voltage Regulator"
 		(exclude_from_sim no)
@@ -2372,7 +2373,7 @@
 	)
 	(text "If not using diode add jumper\nand recalculate resistor voltage dividers"
 		(exclude_from_sim no)
-		(at 15.875 94.615 0)
+		(at 15.875 86.36 0)
 		(effects
 			(font
 				(size 1.27 1.27)
