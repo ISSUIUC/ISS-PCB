@@ -1,6 +1,8 @@
 * Data Dumpster Mark 2:
 Due to damage sustained during modification to the Data Dumpster Mark 1, a new revision board was designed. Modification goals include removing known issues and accomodating modifications.
 
+** Extra Mounting Holes
+Due to experiences with explosion last year, extra screw holes were added for increases mounting security
 ** OP-AMP revisions - done
 In order to increase the reliability of the op-amps, modifications were made to provide drainage paths and the voltage supplies were made higher powered
 *** Thermocouple amp
@@ -12,30 +14,38 @@ Changed multiplication factor for ~1000 C + ambient range
 Changed Multiplication factor to 285 (3.3V/12mV = 285)
 Increased positive supply to 12 V
 Changed multiplication factor for 1mv/V sensitivity
-** New High-Voltage Line
+** New High-Voltage Line - done
 Due to the high-voltage supply required by the pressure transmitter, a 
-** Existing Power Supply Revamp
-In order to accomodate the new and higher power draw of our system, the -5V, 5V, and 12V power supplies were revisited
-** Extra Mounting Holes
-Due to experiences with explosion last year, extra screw holes were added for increases mounting security
 
-** Raspberry Pi Modifications - Partially done, need more pins for LORA
+
+
+** Raspberry Pi Modifications - Done
 Changing pins to acommodate multiple SPI lines
 ** Labeling Changes - Done during routing
 New name, changed labels around Pressure Transmitter and Load Cell for factuality, efficiency, and size.
 ** Pressure Transmitter Modifications - Need to confirm voltage division, 4th pin
 New screw terminals, a few resistors to get readings down to what we want
 
-** Battery Hook-Up Modification - need to pick connector
+** Battery Hook-Up Modification - done
 Removed battery holder
 Removed reverse-polarity protection circuit
 Removed battery voltage->ADC interface
+Installed 2 JST VH male slots for connecting batteries. Allows for high continous current and multiple batteries installed at once
 ** ADC reads 12V line - Done
 Due to fluctuations in the 12V line in operation and the direct correlation between those fluctuations and our readings, the ADC line previously dedicated to battery voltage reading was reassigned to the 12V line.
 
 12V -> 300kohm -> read ->100kohm -> gnd    VOLTAGE DIVIDER added
 ** Multiplexer Power Supply Revision - done
 5V VDD supply changed to 12V due to tendency of -5V to have voltage drops
+** Existing Power Supply Revamp - done
+In order to accomodate the new and higher power draw of our system, the -5V, 5V, and 12V power supplies were revisited
+*** 5V
+Increased input current limit to 9.4 Amps, aiming for >25 W of power on 5V line in worst case
+New inductor chosen based upon manufacturer reccomendations
+Frequency brought closer to 500khz
+*** 12V
+Changed capacitor sizes according to manufacturer specifications
+
 ** BOM
 For manufacturability, a new BOM was made and fleshed out.
 
