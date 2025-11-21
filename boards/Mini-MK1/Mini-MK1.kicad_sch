@@ -9135,16 +9135,6 @@
 	)
 	(wire
 		(pts
-			(xy 294.64 99.06) (xy 292.1 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "140952a5-2493-4d2f-818d-a5116c6fdc40")
-	)
-	(wire
-		(pts
 			(xy 212.09 158.75) (xy 222.25 158.75)
 		)
 		(stroke
@@ -10595,16 +10585,6 @@
 	)
 	(wire
 		(pts
-			(xy 292.1 96.52) (xy 294.64 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7c0a5728-0eb0-4f38-badc-a31f894e646d")
-	)
-	(wire
-		(pts
 			(xy 204.47 198.12) (xy 210.82 198.12)
 		)
 		(stroke
@@ -11172,16 +11152,6 @@
 			(type default)
 		)
 		(uuid "a5309f92-87c6-44a2-89ca-d4abf77a385b")
-	)
-	(wire
-		(pts
-			(xy 292.1 93.98) (xy 294.64 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a6b8fd5b-a1b9-4fce-866d-3cb2440ebc6d")
 	)
 	(wire
 		(pts
@@ -12495,17 +12465,6 @@
 		)
 		(uuid "17800d3f-c818-418f-ae90-9687e77b827a")
 	)
-	(hierarchical_label "BNO086_CS"
-		(shape input)
-		(at 294.64 91.44 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "1b7a1b5b-50a6-47b5-aa0d-ab0f6e862450")
-	)
 	(hierarchical_label "PYRO_D"
 		(shape output)
 		(at 173.355 198.12 0)
@@ -13199,17 +13158,6 @@
 		)
 		(uuid "7d70ed8e-8ed8-4cf7-9904-b8f939c7b6f4")
 	)
-	(hierarchical_label "BNO086_WAKE"
-		(shape input)
-		(at 294.64 96.52 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "7e0ec458-8be3-47e8-a10d-320910957f42")
-	)
 	(hierarchical_label "SENSE_A"
 		(shape input)
 		(at 66.675 135.89 0)
@@ -13507,6 +13455,17 @@
 		)
 		(uuid "b4f0fb13-9967-43ce-9a25-82306eb139f6")
 	)
+	(hierarchical_label "MMC_CS"
+		(shape input)
+		(at 294.64 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b522db94-dea8-4de6-a4f0-1a4f8a2edcb1")
+	)
 	(hierarchical_label "MS5611_CS"
 		(shape output)
 		(at 110.49 140.97 180)
@@ -13661,17 +13620,6 @@
 		)
 		(uuid "d1c0548c-b414-45db-a9d3-719475790ae7")
 	)
-	(hierarchical_label "BNO086_RESET"
-		(shape input)
-		(at 294.64 93.98 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d1ccf10a-2492-4884-b639-63c051994955")
-	)
 	(hierarchical_label "I2C_SDA"
 		(shape bidirectional)
 		(at 204.47 198.12 180)
@@ -13726,17 +13674,6 @@
 			(justify right)
 		)
 		(uuid "d815f0ec-0d26-4514-8bdf-796ad0cf547e")
-	)
-	(hierarchical_label "BNO086_BOOT"
-		(shape input)
-		(at 294.64 99.06 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "daa5a487-600e-48f0-9638-1840930480ce")
 	)
 	(hierarchical_label "E22_RESET"
 		(shape input)
@@ -14105,7 +14042,7 @@
 		(fields_autoplaced yes)
 		(uuid "0404e495-6fd7-42aa-8f70-4f43e1baddfe")
 		(property "Reference" "H104"
-			(at 266.065 172.7199 0)
+			(at 266.7 172.7199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14113,8 +14050,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "M2"
-			(at 266.065 175.2599 0)
+		(property "Value" "M3"
+			(at 266.7 175.2599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14122,7 +14059,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad_Via"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
 			(at 263.525 175.26 0)
 			(effects
 				(font
@@ -17246,74 +17183,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint_Small")
-		(at 292.1 96.52 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "792d618b-6700-4ba1-98cc-6acf8ccb2659")
-		(property "Reference" "TP104"
-			(at 290.83 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Small"
-			(at 289.56 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 287.02 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 287.02 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 292.1 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3328a4e0-1eb7-4c70-ad42-e7d3133df914")
-		)
-		(instances
-			(project "Mini-MK1"
-				(path "/0941d445-abe5-4c4a-84ea-6134de0a1f2b"
-					(reference "TP104")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "RF_GPS:SAM-M8Q")
 		(at 208.28 109.22 0)
 		(unit 1)
@@ -20089,74 +19958,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint_Small")
-		(at 292.1 99.06 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c8c8a8b2-1d13-4c2a-aeed-f1936e47c70f")
-		(property "Reference" "TP105"
-			(at 290.83 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Small"
-			(at 289.56 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 287.02 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 287.02 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 292.1 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "70fe649d-a38c-4948-b6e7-5ec9499caa88")
-		)
-		(instances
-			(project "Mini-MK1"
-				(path "/0941d445-abe5-4c4a-84ea-6134de0a1f2b"
-					(reference "TP105")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
 		(at 263.525 167.64 0)
 		(unit 1)
@@ -20167,7 +19968,7 @@
 		(fields_autoplaced yes)
 		(uuid "cb2445a8-511d-448d-bcf7-17c32a3df174")
 		(property "Reference" "H103"
-			(at 266.065 165.0999 0)
+			(at 266.7 165.0999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20175,8 +19976,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "M2"
-			(at 266.065 167.6399 0)
+		(property "Value" "M3"
+			(at 266.7 167.6399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20184,7 +19985,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad_Via"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
 			(at 263.525 167.64 0)
 			(effects
 				(font
@@ -20971,7 +20772,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "M2"
+		(property "Value" "M3"
 			(at 255.905 175.2599 0)
 			(effects
 				(font
@@ -20980,7 +20781,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad_Via"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
 			(at 253.365 175.26 0)
 			(effects
 				(font
@@ -21953,74 +21754,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint_Small")
-		(at 292.1 93.98 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f18c2550-f842-4842-8eb7-443f816de1ca")
-		(property "Reference" "TP103"
-			(at 290.83 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Small"
-			(at 289.56 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 287.02 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 287.02 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 292.1 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c40c65ba-2b19-48c8-9b32-46ce836dcf72")
-		)
-		(instances
-			(project "Mini-MK1"
-				(path "/0941d445-abe5-4c4a-84ea-6134de0a1f2b"
-					(reference "TP103")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:D")
 		(at 39.37 184.15 180)
 		(unit 1)
@@ -22258,7 +21991,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "M2"
+		(property "Value" "M3"
 			(at 255.905 167.6399 0)
 			(effects
 				(font
@@ -22267,7 +22000,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad_Via"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
 			(at 253.365 167.64 0)
 			(effects
 				(font
