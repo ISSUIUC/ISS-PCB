@@ -7,7 +7,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -8.89 8.89 0)
+			(at -10.16 8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15,7 +15,7 @@
 			)
 		)
 		(property "Value" "TCA4307"
-			(at 5.715 -7.62 0)
+			(at 6.35 -8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23,7 +23,7 @@
 			)
 		)
 		(property "Footprint" "Package_SON:WSON-8-1EP_3x3mm_P0.5mm_EP1.45x2.4mm"
-			(at -0.762 18.796 0)
+			(at 0 -27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31,8 +31,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tca4307.pdf?ts=1763625241511&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTCA4307"
-			(at 1.27 13.716 0)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tca4307.pdf"
+			(at 0 -27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40,7 +40,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Hot Swappable I2C Bus and SMBus Buffer with Stuck Bus Recovery, WSON-8"
+			(at 0 -27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "TCA4307 Hot Swappable I2C Bus and SMBus Buffer with Stuck Bus Recovery"
 			(at 0 0 0)
 			(effects
 				(font
@@ -69,7 +78,7 @@
 				)
 			)
 			(pin output line
-				(at 12.7 2.54 180)
+				(at 12.7 0 180)
 				(length 2.54)
 				(name "SDAOUT"
 					(effects
@@ -87,7 +96,7 @@
 				)
 			)
 			(pin output line
-				(at 12.7 0 180)
+				(at 12.7 -2.54 180)
 				(length 2.54)
 				(name "SCLOUT"
 					(effects
@@ -109,6 +118,24 @@
 			(pin input line
 				(at -12.7 2.54 0)
 				(length 2.54)
+				(name "EN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 0 0)
+				(length 2.54)
 				(name "SDAIN"
 					(effects
 						(font
@@ -125,7 +152,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 0 0)
+				(at -12.7 -2.54 0)
 				(length 2.54)
 				(name "SCLIN"
 					(effects
@@ -142,26 +169,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at -12.7 -2.54 0)
-				(length 2.54)
-				(name "EN"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin power_in line
-				(at 0 -8.89 90)
+				(at 0 -10.16 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -178,8 +187,27 @@
 					)
 				)
 			)
+			(pin passive line
+				(at 0 -10.16 90)
+				(length 2.54)
+				(hide yes)
+				(name "EP"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin output line
-				(at 12.7 -2.54 180)
+				(at 12.7 2.54 180)
 				(length 2.54)
 				(name "READY"
 					(effects
@@ -200,7 +228,7 @@
 		(symbol "TCA4307_1_1"
 			(rectangle
 				(start -10.16 7.62)
-				(end 10.16 -6.35)
+				(end 10.16 -7.62)
 				(stroke
 					(width 0)
 					(type solid)
