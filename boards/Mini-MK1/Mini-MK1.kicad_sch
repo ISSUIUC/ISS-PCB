@@ -3956,6 +3956,216 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "I2C_Texas:TCA4307"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -11.43 -9.652 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TCA4307"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_SON:WSON-8-1EP_3x3mm_P0.5mm_EP1.45x2.4mm"
+				(at -0.762 18.796 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tca4307.pdf?ts=1763625241511&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTCA4307"
+				(at 1.27 13.716 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TCA4307_0_0"
+				(pin power_in line
+					(at 0 10.16 270)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 15.24 3.81 180)
+					(length 2.54)
+					(name "SDAOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 15.24 0 180)
+					(length 2.54)
+					(name "SCLOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "TCA4307_1_0"
+				(pin input line
+					(at -15.24 3.81 0)
+					(length 2.54)
+					(name "SDAIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -15.24 0 0)
+					(length 2.54)
+					(name "SCLIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -15.24 -3.81 0)
+					(length 2.54)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -8.89 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 15.24 -3.81 180)
+					(length 2.54)
+					(name "READY"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "TCA4307_1_1"
+				(rectangle
+					(start -12.7 7.62)
+					(end 12.7 -6.35)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Mechanical:MountingHole_Pad"
 			(pin_numbers
 				(hide yes)
@@ -7527,6 +7737,18 @@
 		(uuid ed887b62-7627-4b93-9075-5ab7c773cc74)
 	)
 	(rectangle
+		(start 332.74 139.7)
+		(end 403.86 181.61)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid ef5f07b9-b23e-4422-8f4f-5939dc0b7b4b)
+	)
+	(rectangle
 		(start 271.145 31.75)
 		(end 271.145 31.75)
 		(stroke
@@ -7749,6 +7971,20 @@
 			(justify left top)
 		)
 		(uuid "27a7f264-2c5c-4be4-a87e-de62fcfc0e65")
+	)
+	(text "TCA4307\n"
+		(exclude_from_sim no)
+		(at 334.518 143.002 0)
+		(effects
+			(font
+				(face "KiCad Font")
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "29399a4d-5f76-46e7-b507-af19c559446d")
 	)
 	(text "SAM-M10Q"
 		(exclude_from_sim no)
@@ -8735,7 +8971,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 146.05) (xy 212.09 146.05)
+			(xy 187.96 146.05) (xy 212.09 146.05)
 		)
 		(stroke
 			(width 0)
@@ -9105,6 +9341,16 @@
 	)
 	(wire
 		(pts
+			(xy 365.76 151.13) (xy 365.76 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "239f4c79-2e43-465d-87a2-9dd9936d0e7c")
+	)
+	(wire
+		(pts
 			(xy 92.71 194.31) (xy 92.71 196.85)
 		)
 		(stroke
@@ -9315,7 +9561,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 152.4) (xy 208.28 152.4)
+			(xy 187.96 152.4) (xy 208.28 152.4)
 		)
 		(stroke
 			(width 0)
@@ -10683,6 +10929,16 @@
 		)
 		(uuid "9cf0344a-365c-4cb2-a72f-c3160558d99b")
 	)
+	(wire
+		(pts
+			(xy 365.76 173.99) (xy 365.76 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e140993-8fb4-4e40-ab21-617702645e38")
+	)
 	(polyline
 		(pts
 			(xy 159.385 195.961) (xy 160.655 195.961)
@@ -12029,17 +12285,6 @@
 		)
 		(uuid "0f7b2612-d33f-4410-9dc7-7848fc6d680b")
 	)
-	(hierarchical_label "BNO086_BOOT"
-		(shape output)
-		(at 148.59 115.57 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "11031cf3-f3c0-4fed-83c3-1330c0273453")
-	)
 	(hierarchical_label "SENSE_B"
 		(shape input)
 		(at 66.675 138.43 0)
@@ -12183,6 +12428,17 @@
 		)
 		(uuid "23ad15fc-82c2-43d6-a2d7-d88e14ba22a0")
 	)
+	(hierarchical_label "TCA4307_READY"
+		(shape input)
+		(at 148.59 115.57 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "243ac45b-1066-404a-9ddf-0094401e4fc5")
+	)
 	(hierarchical_label "SPI_SCK"
 		(shape input)
 		(at 354.33 33.02 180)
@@ -12238,17 +12494,6 @@
 		)
 		(uuid "2b2f9f66-d8d2-4230-9d17-662cfad126cb")
 	)
-	(hierarchical_label "BNO086_INT"
-		(shape input)
-		(at 148.59 120.65 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "2bfb7ddb-1a93-4b00-8ae9-3f7abab5ef8b")
-	)
 	(hierarchical_label "E22_DIO3"
 		(shape bidirectional)
 		(at 148.59 151.13 0)
@@ -12292,17 +12537,6 @@
 			(justify right)
 		)
 		(uuid "352ecee0-fb83-4d16-95e1-40ca082e66c0")
-	)
-	(hierarchical_label "BNO086_RESET"
-		(shape output)
-		(at 148.59 118.11 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "3567c184-eaa5-4dd3-bc2e-e4e2c8d48729")
 	)
 	(hierarchical_label "SPI_SCK"
 		(shape output)
@@ -12436,6 +12670,17 @@
 		)
 		(uuid "4ac5f32e-0ab6-4ba8-9cdd-3e04614aba68")
 	)
+	(hierarchical_label "I2C_SCL_B2B"
+		(shape bidirectional)
+		(at 381 165.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4c22a2ac-d67d-479d-a355-dde60632d636")
+	)
 	(hierarchical_label "EXP_RESET"
 		(shape input)
 		(at 148.59 102.87 0)
@@ -12490,6 +12735,17 @@
 			(justify right)
 		)
 		(uuid "53698411-33bf-4f2d-be9a-e07c98daba5d")
+	)
+	(hierarchical_label "I2C_SDA"
+		(shape bidirectional)
+		(at 350.52 161.29 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "53b58fab-7cc7-4d09-9273-ec6ef944d52b")
 	)
 	(hierarchical_label "USB_POWER"
 		(shape output)
@@ -12634,6 +12890,17 @@
 		)
 		(uuid "6c67483e-4a21-4b4f-93de-caeef1cea6c0")
 	)
+	(hierarchical_label "TCA4307_READY"
+		(shape input)
+		(at 381 168.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6cbe0fa9-4782-4c0a-aeae-0d8062e0a4aa")
+	)
 	(hierarchical_label "SPI_MOSI"
 		(shape input)
 		(at 194.31 44.45 180)
@@ -12699,6 +12966,17 @@
 			(justify right)
 		)
 		(uuid "763c0e95-3641-49d5-bb84-1ddc7818368e")
+	)
+	(hierarchical_label "TCA4307_EN"
+		(shape input)
+		(at 148.59 113.03 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7652a40a-466c-4b6d-ab85-6433d10016ca")
 	)
 	(hierarchical_label "I2C_SCL"
 		(shape input)
@@ -12810,6 +13088,17 @@
 		)
 		(uuid "7f4742c8-b021-46b5-bc61-f0144be21710")
 	)
+	(hierarchical_label "I2C_SDA_B2B"
+		(shape bidirectional)
+		(at 187.96 146.05 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "81702ed1-e0cc-45c5-a50e-2c2eb0d7f937")
+	)
 	(hierarchical_label "E22_RXEN"
 		(shape input)
 		(at 148.59 140.97 0)
@@ -12898,6 +13187,28 @@
 		)
 		(uuid "929a8341-313f-4122-8293-03498dfd199f")
 	)
+	(hierarchical_label "I2C_SDA_B2B"
+		(shape bidirectional)
+		(at 381 161.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "92edfc22-684f-45b7-a5de-1771753609ff")
+	)
+	(hierarchical_label "TCA4307_EN"
+		(shape input)
+		(at 350.52 168.91 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9abb1c35-f058-40fe-bbc6-62ff8cad4464")
+	)
 	(hierarchical_label "I2C_SDA"
 		(shape bidirectional)
 		(at 32.385 128.27 180)
@@ -12931,6 +13242,17 @@
 		)
 		(uuid "a1d9806a-119c-4fe3-b74f-6d571f5516f8")
 	)
+	(hierarchical_label "I2C_SCL_B2B"
+		(shape input)
+		(at 187.96 152.4 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a520ded7-3176-4473-9259-b878f4c671f3")
+	)
 	(hierarchical_label "FLASH_DAT0"
 		(shape bidirectional)
 		(at 110.49 113.03 180)
@@ -12941,6 +13263,17 @@
 			(justify right)
 		)
 		(uuid "a5c443fe-dba6-45a0-90d8-1d24cbc7f90f")
+	)
+	(hierarchical_label "I2C_SCL"
+		(shape bidirectional)
+		(at 350.52 165.1 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a72a1e02-9850-4819-a5c3-cf81ea5c4ce0")
 	)
 	(hierarchical_label "VBAT_SENSE"
 		(shape output)
@@ -12974,28 +13307,6 @@
 			(justify left)
 		)
 		(uuid "af806b46-c911-41f4-8a40-dc9c72115930")
-	)
-	(hierarchical_label "BNO086_CS"
-		(shape output)
-		(at 148.59 123.19 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "afbe12f4-ec09-4373-b943-0ba017112128")
-	)
-	(hierarchical_label "I2C_SDA"
-		(shape bidirectional)
-		(at 184.15 146.05 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b0211ba7-6fcd-49ab-a364-019134c069c2")
 	)
 	(hierarchical_label "V_PYRO"
 		(shape input)
@@ -13305,17 +13616,6 @@
 		)
 		(uuid "e1b6a963-a170-4af8-ad5f-457803751ffd")
 	)
-	(hierarchical_label "BNO086_WAKE"
-		(shape output)
-		(at 148.59 113.03 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e1ed9c65-1a09-4e41-80d6-1b3c132d8e2b")
-	)
 	(hierarchical_label "VCAP_SENSE"
 		(shape output)
 		(at 90.17 196.85 180)
@@ -13436,17 +13736,6 @@
 			(justify right)
 		)
 		(uuid "f14c83a1-958e-4723-a4ef-b7ebaa752cdc")
-	)
-	(hierarchical_label "I2C_SCL"
-		(shape input)
-		(at 184.15 152.4 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "f3f138d9-f2cf-42a3-b568-91e01e122b25")
 	)
 	(hierarchical_label "SENSE_D"
 		(shape input)
@@ -17542,6 +17831,160 @@
 		)
 	)
 	(symbol
+		(lib_id "I2C_Texas:TCA4307")
+		(at 365.76 165.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "981cbfd1-a38d-4f49-a1e6-ce04b15a0716")
+		(property "Reference" "U1"
+			(at 367.9033 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TCA4307"
+			(at 367.9033 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SON:WSON-8-1EP_3x3mm_P0.5mm_EP1.45x2.4mm"
+			(at 364.998 146.304 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tca4307.pdf?ts=1763625241511&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTCA4307"
+			(at 367.03 151.384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 365.76 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "10345b32-f7ea-4338-a6bf-6007e59ac016")
+		)
+		(pin "7"
+			(uuid "1fc6c456-cdb9-47a2-82e9-55d263692524")
+		)
+		(pin "1"
+			(uuid "dafb896f-9e3e-40b7-b5e7-c5aefbfc1e41")
+		)
+		(pin "4"
+			(uuid "7f66055f-395b-4b13-b238-921b6e5766db")
+		)
+		(pin "5"
+			(uuid "5057cffa-b0d9-456c-8400-b866176d9aec")
+		)
+		(pin "2"
+			(uuid "4187b322-9b91-4d5d-8557-ff6b3b77cc73")
+		)
+		(pin "6"
+			(uuid "fd961e3a-8bec-4144-816a-3ab30df2bd21")
+		)
+		(pin "8"
+			(uuid "b4dc05eb-ae2d-45d6-84e3-ec5526a27c8c")
+		)
+		(instances
+			(project ""
+				(path "/0941d445-abe5-4c4a-84ea-6134de0a1f2b"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 365.76 176.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9a58447e-7c99-4564-8a5d-00d0877c862c")
+		(property "Reference" "#PWR02"
+			(at 365.76 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 365.76 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 365.76 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 365.76 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 365.76 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0c72a08c-0f62-4018-8696-d565e4973109")
+		)
+		(instances
+			(project "Mini-MK1"
+				(path "/0941d445-abe5-4c4a-84ea-6134de0a1f2b"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 252.73 48.26 0)
 		(unit 1)
@@ -19301,6 +19744,73 @@
 			(project "Mini-MK1"
 				(path "/0941d445-abe5-4c4a-84ea-6134de0a1f2b"
 					(reference "#PWR0115")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 365.76 151.13 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ceb4b248-3201-413d-9e58-db84d21b76de")
+		(property "Reference" "#PWR01"
+			(at 365.76 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 365.76 146.9969 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 365.76 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 365.76 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 365.76 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7655c097-24f1-4f6a-be84-ef0bf67c81f5")
+		)
+		(instances
+			(project "Mini-MK1"
+				(path "/0941d445-abe5-4c4a-84ea-6134de0a1f2b"
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
