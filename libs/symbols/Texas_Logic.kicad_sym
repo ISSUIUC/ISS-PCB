@@ -6,27 +6,23 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "IC"
-			(at 11.938 5.588 0)
+		(property "Reference" "U"
+			(at -10.16 7.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
-				(hide yes)
 			)
 		)
 		(property "Value" "SN74AUP1G74RSER"
-			(at 11.938 3.048 0)
+			(at 10.16 -7.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
-				(hide yes)
 			)
 		)
-		(property "Footprint" "SN74AUP1G74RSER"
+		(property "Footprint" "Package_UFQN:UQFN-RSE0008A"
 			(at 26.67 -87.3 0)
 			(effects
 				(font
@@ -36,7 +32,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74aup1g74.pdf?ts=1641198041264&ref_url=https%253A%252F%252Fwww.ti.com%252Fstore%252Fti%252Fen%252Fp%252Fproduct%252F%253Fp%253DSN74AUP1G74RSER%2526keyMatch%253DSN74AUP1G74RSER"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74aup1g74.pdf"
 			(at 26.67 -187.3 0)
 			(effects
 				(font
@@ -46,8 +42,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Flip Flops Low-Pwr Sgl Pos- Edge-Trgrd D-Type"
-			(at 12.192 10.414 0)
+		(property "Description" "Low-Power Single Positive-Edge-Triggered D-Type Flip-Flop With Clear and Preset, UQFN-8"
+			(at 0 -25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -55,60 +51,19 @@
 				(hide yes)
 			)
 		)
-		(property "Height" "0.6"
-			(at 26.67 -387.3 0)
+		(property "ki_keywords" "SN74AUP1G74RSER Low-Power Single Positive-Edge-Triggered D-Type Flip-Flop With Clear and Preset"
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "595-SN74AUP1G74RSER"
-			(at 26.67 -487.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/SN74AUP1G74RSER?qs=EuM%2FBx4ov4RGFdXbpZrTyw%3D%3D"
-			(at 26.67 -587.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Texas Instruments"
-			(at 26.67 -687.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "SN74AUP1G74RSER"
-			(at 26.67 -787.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(symbol "SN74AUP1G74RSER_1_1"
 			(rectangle
-				(start 0 0)
-				(end 20.32 -12.7)
+				(start -7.62 6.35)
+				(end 7.62 -6.35)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -118,7 +73,7 @@
 				)
 			)
 			(pin passive line
-				(at -2.54 -2.54 0)
+				(at -10.16 3.81 0)
 				(length 2.54)
 				(name "~{PRE}"
 					(effects
@@ -136,7 +91,7 @@
 				)
 			)
 			(pin passive line
-				(at -2.54 -5.08 0)
+				(at -10.16 1.27 0)
 				(length 2.54)
 				(name "~{CLR}"
 					(effects
@@ -154,7 +109,7 @@
 				)
 			)
 			(pin passive line
-				(at -2.54 -7.62 0)
+				(at -10.16 -1.27 0)
 				(length 2.54)
 				(name "D"
 					(effects
@@ -172,7 +127,7 @@
 				)
 			)
 			(pin passive line
-				(at -2.54 -10.16 0)
+				(at -10.16 -3.81 0)
 				(length 2.54)
 				(name "CLK"
 					(effects
@@ -190,7 +145,7 @@
 				)
 			)
 			(pin passive line
-				(at 10.16 2.54 270)
+				(at 0 8.89 270)
 				(length 2.54)
 				(name "VCC"
 					(effects
@@ -208,7 +163,7 @@
 				)
 			)
 			(pin passive line
-				(at 10.16 -15.24 90)
+				(at 0 -8.89 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -226,7 +181,7 @@
 				)
 			)
 			(pin passive line
-				(at 22.86 -5.08 180)
+				(at 10.16 1.27 180)
 				(length 2.54)
 				(name "Q"
 					(effects
@@ -244,7 +199,7 @@
 				)
 			)
 			(pin passive line
-				(at 22.86 -7.62 180)
+				(at 10.16 -1.27 180)
 				(length 2.54)
 				(name "~{Q}"
 					(effects
