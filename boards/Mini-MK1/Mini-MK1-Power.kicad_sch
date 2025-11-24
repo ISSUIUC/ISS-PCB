@@ -1770,7 +1770,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Texas:TPS745-Q1"
+		(symbol "Regulator_Texas:TPS746-Q1"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1782,7 +1782,7 @@
 					)
 				)
 			)
-			(property "Value" "TPS745-Q1"
+			(property "Value" "TPS746-Q1"
 				(at 6.35 -5.08 0)
 				(effects
 					(font
@@ -1799,7 +1799,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps745-q1.pdf"
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps746-q1.pdf"
 				(at 0 -24.13 0)
 				(effects
 					(font
@@ -1808,7 +1808,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Automotive 500-mA LDO With Power-Good, 1.5-6V Input, WSON-6"
+			(property "Description" "Automotive 1A LDO With Power-Good, 1.5-6V Input, WSON-6"
 				(at 0 -24.13 0)
 				(effects
 					(font
@@ -1817,7 +1817,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "TPS745-Q1 Automotive 500-mA LDO Power-Good 1.5-6V WSON-6"
+			(property "ki_keywords" "TPS746-Q1 Automotive 1A LDO Power-Good 1.5-6V WSON-6"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1826,7 +1826,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "TPS745-Q1_0_0"
+			(symbol "TPS746-Q1_0_0"
 				(pin power_in line
 					(at -8.89 5.08 0)
 					(length 2.54)
@@ -1918,7 +1918,7 @@
 					)
 				)
 			)
-			(symbol "TPS745-Q1_1_0"
+			(symbol "TPS746-Q1_1_0"
 				(pin no_connect line
 					(at -8.89 -2.54 0)
 					(length 2.54)
@@ -1939,7 +1939,7 @@
 					)
 				)
 			)
-			(symbol "TPS745-Q1_1_1"
+			(symbol "TPS746-Q1_1_1"
 				(rectangle
 					(start -6.35 7.62)
 					(end 6.35 -3.81)
@@ -2310,7 +2310,7 @@
 		)
 		(uuid "7ae8646b-816a-4fcb-a408-9716b2180351")
 	)
-	(text "1.5-6.0V V_{IN}\n500mA Maximum Output"
+	(text "1.5-6.0V V_{IN}\n1A Maximum Output"
 		(exclude_from_sim no)
 		(at 130.175 57.785 0)
 		(effects
@@ -2346,7 +2346,7 @@
 		)
 		(uuid "acf6307f-2c7d-46c8-b487-7aab1baf7b86")
 	)
-	(text "TPS74533-Q1"
+	(text "TPS74633-Q1"
 		(exclude_from_sim no)
 		(at 130.175 20.32 0)
 		(effects
@@ -2702,16 +2702,6 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 35.56) (xy 71.12 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3d9c7ed7-0c01-422a-816c-eb84339b1dcf")
-	)
-	(wire
-		(pts
 			(xy 62.23 57.15) (xy 62.23 60.96)
 		)
 		(stroke
@@ -2829,16 +2819,6 @@
 			(type default)
 		)
 		(uuid "522ccccf-d891-45b6-af07-47c48b9696c8")
-	)
-	(wire
-		(pts
-			(xy 93.98 38.1) (xy 93.98 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "588b8bb1-71de-49bc-ba24-24463c1fb7d4")
 	)
 	(wire
 		(pts
@@ -3329,6 +3309,36 @@
 			(type default)
 		)
 		(uuid "ff83103a-704b-4bf8-a62c-7cee799fda21")
+	)
+	(label "PMUX_GND"
+		(at 71.12 34.29 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0e0f0158-a1d3-4b0d-bec5-0354d76968ab")
+	)
+	(label "PMUX_GND"
+		(at 93.98 36.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "77f3091f-215a-4516-8edb-d26312d8b192")
+	)
+	(label "PMUX_GND"
+		(at 77.47 76.2 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "81fb56af-6366-41ec-8839-e32809c0ad0b")
 	)
 	(hierarchical_label "SYS_POWER"
 		(shape input)
@@ -4709,73 +4719,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 93.98 38.1 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7c2df71b-3c58-4588-98bf-66a27ee1bf25")
-		(property "Reference" "#PWR0205"
-			(at 93.98 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 93.98 42.545 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 93.98 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 93.98 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 93.98 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "973cd29c-bdca-4edb-8650-1d647db3fecf")
-		)
-		(instances
-			(project "Mini-MK1"
-				(path "/0941d445-abe5-4c4a-84ea-6134de0a1f2b/32ce2aba-9186-4123-a005-d961d98b988d"
-					(reference "#PWR0205")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Regulator_Texas:TPS745-Q1")
+		(lib_id "Regulator_Texas:TPS746-Q1")
 		(at 163.83 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4784,14 +4728,14 @@
 		(dnp no)
 		(uuid "8ce6a271-bb7e-40b4-b1fe-03c6779ecee2")
 		(property "Reference" "U204"
-			(at 160.02 29.21 0)
+			(at 158.75 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "TPS745-Q1"
+		(property "Value" "TPS746-Q1"
 			(at 170.18 43.18 0)
 			(effects
 				(font
@@ -4808,7 +4752,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps745-q1.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps746-q1.pdf"
 			(at 163.83 62.23 0)
 			(effects
 				(font
@@ -4817,7 +4761,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Automotive 500-mA LDO With Power-Good, 1.5-6V Input, WSON-6"
+		(property "Description" "Automotive 1A LDO With Power-Good, 1.5-6V Input, WSON-6"
 			(at 163.83 62.23 0)
 			(effects
 				(font
@@ -5599,72 +5543,6 @@
 			(project "Mini-MK1"
 				(path "/0941d445-abe5-4c4a-84ea-6134de0a1f2b/32ce2aba-9186-4123-a005-d961d98b988d"
 					(reference "#PWR0212")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 71.12 35.56 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e6b6b443-fd7c-4fa6-bda9-f3413c498bec")
-		(property "Reference" "#PWR0203"
-			(at 71.12 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 71.12 40.005 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 71.12 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 71.12 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 71.12 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b8e33510-3f70-47ee-8c77-ee436591f2b4")
-		)
-		(instances
-			(project "Mini-MK1"
-				(path "/0941d445-abe5-4c4a-84ea-6134de0a1f2b/32ce2aba-9186-4123-a005-d961d98b988d"
-					(reference "#PWR0203")
 					(unit 1)
 				)
 			)
