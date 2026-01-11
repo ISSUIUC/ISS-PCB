@@ -3450,20 +3450,20 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Torex:XC6223"
+		(symbol "Regulator_Texas:TPS7A25"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at -5.08 3.81 0)
+			(property "Reference" "U205"
+				(at 1.27 7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "XC6223"
-				(at 6.35 -6.35 0)
+			(property "Value" "TPS7A25"
+				(at 1.27 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3498,6 +3498,56 @@
 					(hide yes)
 				)
 			)
+			(property "Height" "0.6"
+				(at 26.67 -394.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "865-XC6223T331GR-G"
+				(at 26.67 -494.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Torex-Semiconductor/XC6223T331GR-G?qs=AsjdqWjXhJ9pIYh2kurybQ%3D%3D"
+				(at 26.67 -594.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "Torex"
+				(at 26.67 -694.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "XC6223T331GR-G"
+				(at 26.67 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
 			(property "ki_keywords" "XC6223 300mA High Speed LDO Voltage Regulator"
 				(at 0 0 0)
 				(effects
@@ -3507,7 +3557,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "XC6223_1_1"
+			(symbol "TPS7A25_1_1"
 				(rectangle
 					(start -5.08 2.54)
 					(end 7.62 -5.08)
@@ -3529,7 +3579,7 @@
 							)
 						)
 					)
-					(number "4"
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3540,14 +3590,14 @@
 				(pin passive line
 					(at -7.62 -2.54 0)
 					(length 2.54)
-					(name "CE"
+					(name "EN"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3558,14 +3608,14 @@
 				(pin passive line
 					(at 1.27 -7.62 90)
 					(length 2.54)
-					(name "VSS"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "2"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3577,14 +3627,14 @@
 					(at 1.27 -7.62 90)
 					(length 2.54)
 					(hide yes)
-					(name "EP"
+					(name "Thermal"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "5"
+					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3603,6 +3653,24 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name "PG"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3828,17 +3896,6 @@
 		)
 		(uuid "2027c866-bf8d-4efe-9b74-c0dada3b5208")
 	)
-	(text "XC6223x331GR-G\n1.6V-5.5V input\n3.3V output\n300mA max\n200mV dropout"
-		(exclude_from_sim no)
-		(at 159.385 138.43 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right top)
-		)
-		(uuid "372dc381-47d9-4498-9c85-2dc628824ae2")
-	)
 	(text "MCU Filtering Capacitors"
 		(exclude_from_sim no)
 		(at 15.875 105.41 0)
@@ -3983,6 +4040,17 @@
 		)
 		(uuid "88223f45-6722-4963-88fc-b7690d7f185c")
 	)
+	(text "TPS7A2533DRVR\n2.4-18.0V input\n3.3V output\n300mA max\n100mV dropout @ 100mA"
+		(exclude_from_sim no)
+		(at 159.258 138.43 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right top)
+		)
+		(uuid "89a2a359-6ac6-44c8-8ef9-2d9cc949e764")
+	)
 	(text "Mounting Holes"
 		(exclude_from_sim no)
 		(at 239.395 62.23 0)
@@ -4068,10 +4136,10 @@
 		(uuid "05dd0a26-9709-44aa-b06d-d06eba9e140f")
 	)
 	(junction
-		(at 104.14 153.67)
+		(at 105.41 153.67)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "06603c31-f077-4efa-9d81-755b2ede2fa1")
+		(uuid "0ed5f686-330c-4283-aebe-719bbe1cf2a1")
 	)
 	(junction
 		(at 45.72 113.03)
@@ -4086,16 +4154,22 @@
 		(uuid "1e776ec9-0c4b-4b5e-af7e-e3ad7419bce4")
 	)
 	(junction
-		(at 129.54 153.67)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2aa1b98c-f293-48c9-87ff-6f2821976b38")
-	)
-	(junction
 		(at 102.87 153.67)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2d6ab4a9-9d8e-444f-9e1c-84b718772055")
+	)
+	(junction
+		(at 115.57 166.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "43bc82bf-3686-4f71-9254-a6340f877eda")
+	)
+	(junction
+		(at 129.54 153.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4a7d74f4-ef9e-42a7-80a7-6d9a7a64bc9c")
 	)
 	(junction
 		(at 58.42 123.19)
@@ -4132,12 +4206,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6f9df4ed-eead-41b2-aecb-e9a514bbc1b7")
-	)
-	(junction
-		(at 116.205 166.37)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "89e0cb6b-6a9b-49e6-acf9-ded503962bf7")
 	)
 	(junction
 		(at 256.54 30.48)
@@ -4250,6 +4318,10 @@
 		(uuid "bb6f82f1-6bc6-47ab-bfaa-4124e561ab27")
 	)
 	(no_connect
+		(at 124.46 156.21)
+		(uuid "bf95a30a-211b-4b13-a01f-8259705681dd")
+	)
+	(no_connect
 		(at 59.69 62.23)
 		(uuid "c71f7cab-eadf-46aa-bdd7-6402fc517b9f")
 	)
@@ -4335,7 +4407,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 153.67) (xy 104.14 153.67)
+			(xy 102.87 153.67) (xy 105.41 153.67)
 		)
 		(stroke
 			(width 0)
@@ -4705,6 +4777,16 @@
 	)
 	(wire
 		(pts
+			(xy 106.68 156.21) (xy 105.41 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b4c6f3d-6dac-487b-b10b-4f21516f04ff")
+	)
+	(wire
+		(pts
 			(xy 266.7 123.19) (xy 264.16 123.19)
 		)
 		(stroke
@@ -4722,6 +4804,16 @@
 			(type default)
 		)
 		(uuid "3c317991-d05b-45f7-b085-88d6cbfbac4c")
+	)
+	(wire
+		(pts
+			(xy 115.57 161.29) (xy 115.57 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c686ec2-d0d4-4fb1-a085-ce42a4e4e460")
 	)
 	(wire
 		(pts
@@ -4812,16 +4904,6 @@
 			(type default)
 		)
 		(uuid "43cfa44e-b026-4563-a336-4e61b89bb0aa")
-	)
-	(wire
-		(pts
-			(xy 104.14 156.21) (xy 107.315 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "441aaad0-906f-419e-9bd3-5af18f867c10")
 	)
 	(wire
 		(pts
@@ -5005,16 +5087,6 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 153.67) (xy 107.315 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5f908339-54ce-4237-8ac9-69bda2137796")
-	)
-	(wire
-		(pts
 			(xy 39.37 123.19) (xy 45.72 123.19)
 		)
 		(stroke
@@ -5022,6 +5094,16 @@
 			(type default)
 		)
 		(uuid "600cee1c-d9e9-431b-83c0-90718a9182d5")
+	)
+	(wire
+		(pts
+			(xy 105.41 156.21) (xy 105.41 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "609ffeb3-e76c-499a-8eb0-23658500533e")
 	)
 	(wire
 		(pts
@@ -5215,26 +5297,6 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 166.37) (xy 116.205 166.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "76880f46-bf84-472e-bcf3-bedb078f6c5f")
-	)
-	(wire
-		(pts
-			(xy 125.095 153.67) (xy 129.54 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "76fa400b-a647-42fb-930a-0d37d7229c36")
-	)
-	(wire
-		(pts
 			(xy 111.76 30.48) (xy 111.76 27.94)
 		)
 		(stroke
@@ -5252,16 +5314,6 @@
 			(type default)
 		)
 		(uuid "78444fa0-a3cb-49aa-8337-62990e2872bc")
-	)
-	(wire
-		(pts
-			(xy 104.14 153.67) (xy 104.14 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7bfd83d6-2fcd-4614-9bac-a48e0f62acbd")
 	)
 	(wire
 		(pts
@@ -5505,7 +5557,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 166.37) (xy 116.205 166.37)
+			(xy 102.87 166.37) (xy 115.57 166.37)
 		)
 		(stroke
 			(width 0)
@@ -5615,7 +5667,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.205 166.37) (xy 116.205 168.275)
+			(xy 115.57 166.37) (xy 115.57 168.91)
 		)
 		(stroke
 			(width 0)
@@ -5825,6 +5877,16 @@
 	)
 	(wire
 		(pts
+			(xy 105.41 153.67) (xy 106.68 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0285324-448f-49ab-bcca-c12c6712362d")
+	)
+	(wire
+		(pts
 			(xy 135.89 39.37) (xy 134.62 39.37)
 		)
 		(stroke
@@ -5995,6 +6057,16 @@
 	)
 	(wire
 		(pts
+			(xy 124.46 153.67) (xy 129.54 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d342320c-0d54-49e2-bf51-93df44063221")
+	)
+	(wire
+		(pts
 			(xy 141.605 162.56) (xy 141.605 165.735)
 		)
 		(stroke
@@ -6002,6 +6074,16 @@
 			(type default)
 		)
 		(uuid "d5e35840-56d2-4c6b-ace9-d8441ed5ec41")
+	)
+	(wire
+		(pts
+			(xy 115.57 166.37) (xy 129.54 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d77cb532-c6d1-4b3a-9d5f-794802fd4e7e")
 	)
 	(wire
 		(pts
@@ -6172,16 +6254,6 @@
 			(type default)
 		)
 		(uuid "efc758db-c3e3-4705-8b95-61241ff79449")
-	)
-	(wire
-		(pts
-			(xy 116.205 161.29) (xy 116.205 166.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "efe4f1f0-8427-4c76-b34e-f1ab4c0bdac7")
 	)
 	(wire
 		(pts
@@ -6835,7 +6907,7 @@
 	)
 	(global_label "MCU_GND"
 		(shape input)
-		(at 116.205 168.275 270)
+		(at 115.57 168.91 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6845,7 +6917,7 @@
 		)
 		(uuid "cf33ec4f-bdd1-4a50-b60d-c2dfdac7d24d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 116.205 180.1502 90)
+			(at 115.57 180.7852 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8634,6 +8706,137 @@
 		)
 	)
 	(symbol
+		(lib_id "Regulator_Texas:TPS7A25")
+		(at 114.3 153.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2c9facd4-18f6-4324-8ceb-5e7ab3f9c577")
+		(property "Reference" "U103"
+			(at 115.57 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPS7A25"
+			(at 115.57 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm"
+			(at 114.3 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps7a25.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1768168918974"
+			(at 140.97 348.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "300-mA, 18-V, Ultra-Low IQ, Low-Dropout Linear Voltage Regulator With Power-Good"
+			(at 114.3 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "0.6"
+			(at 140.97 548.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "865-XC6223T331GR-G"
+			(at 140.97 648.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Torex-Semiconductor/XC6223T331GR-G?qs=AsjdqWjXhJ9pIYh2kurybQ%3D%3D"
+			(at 140.97 748.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Torex"
+			(at 140.97 848.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "XC6223T331GR-G"
+			(at 140.97 948.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "cf817749-523c-471f-bee6-80141ce6863e")
+		)
+		(pin "4"
+			(uuid "f69f7988-b73b-4a87-ba8d-13dfa1027ece")
+		)
+		(pin "3"
+			(uuid "ae90fa9b-9b2a-4c38-a27b-1d6b758259e3")
+		)
+		(pin "5"
+			(uuid "1cd13bcd-3adc-4f18-a117-56a89cd21ccf")
+		)
+		(pin "1"
+			(uuid "93636381-ff68-4d6a-9acb-0e1b91048233")
+		)
+		(pin "7"
+			(uuid "902baf69-582e-4c6f-af52-8c067968ca23")
+		)
+		(instances
+			(project "BAGEL-MK1.1-revA"
+				(path "/27fcebe4-2fb8-4847-92ca-f98a7b250261"
+					(reference "U103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Memory_Flash:W25Q16JVSS")
 		(at 45.72 162.56 0)
 		(unit 1)
@@ -8741,7 +8944,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "4.7k"
 			(at 181.61 144.78 90)
 			(effects
 				(font
@@ -9186,7 +9389,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "4.7k"
 			(at 181.61 138.43 90)
 			(effects
 				(font
@@ -9832,7 +10035,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "4.7k"
 			(at 142.875 160.02 0)
 			(effects
 				(font
@@ -9970,7 +10173,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7uF"
+		(property "Value" "2.2uF"
 			(at 132.334 162.306 0)
 			(effects
 				(font
@@ -10323,7 +10526,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "4.7k"
 			(at 181.61 157.48 90)
 			(effects
 				(font
@@ -10735,133 +10938,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Regulator_Torex:XC6223")
-		(at 114.935 153.67 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d24f60ef-9ce2-4b7a-b57f-8b5bb89defac")
-		(property "Reference" "U103"
-			(at 109.855 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "XC6223"
-			(at 121.285 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Regulator_Torex:Torex_USP-4"
-			(at 114.935 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://product.torexsemi.com/system/files/series/xc6223.pdf"
-			(at 141.605 348.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "300mA High Speed LDO Voltage Regulator"
-			(at 114.935 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "0.6"
-			(at 141.605 548.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "865-XC6223T331GR-G"
-			(at 141.605 648.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Torex-Semiconductor/XC6223T331GR-G?qs=AsjdqWjXhJ9pIYh2kurybQ%3D%3D"
-			(at 141.605 748.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Torex"
-			(at 141.605 848.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "XC6223T331GR-G"
-			(at 141.605 948.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "74901899-b277-4b6d-a786-d9cfddf2ee2c")
-		)
-		(pin "1"
-			(uuid "7421a228-e32e-4de8-b1cd-d674f73c2207")
-		)
-		(pin "5"
-			(uuid "68fbd866-9e72-4363-83a8-0d4adb3719f5")
-		)
-		(pin "4"
-			(uuid "6ffa4e2b-b4d2-49ad-a1bc-08eb1dce9a2a")
-		)
-		(pin "3"
-			(uuid "be6a0b47-cf50-4271-a710-3e993e1bcd65")
-		)
-		(instances
-			(project "Switch_Board"
-				(path "/27fcebe4-2fb8-4847-92ca-f98a7b250261"
-					(reference "U103")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_US")
 		(at 255.27 97.79 180)
 		(unit 1)
@@ -11093,7 +11169,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "4.7k"
 			(at 181.61 151.13 90)
 			(effects
 				(font
@@ -11468,7 +11544,7 @@
 			)
 		)
 		(instances
-			(project "Switch_Board"
+			(project "BAGEL-MK1.1-revA"
 				(path "/27fcebe4-2fb8-4847-92ca-f98a7b250261"
 					(page "3")
 				)
@@ -11550,7 +11626,7 @@
 			)
 		)
 		(instances
-			(project "Switch_Board"
+			(project "BAGEL-MK1.1-revA"
 				(path "/27fcebe4-2fb8-4847-92ca-f98a7b250261"
 					(page "4")
 				)
@@ -11632,7 +11708,7 @@
 			)
 		)
 		(instances
-			(project "Switch_Board"
+			(project "BAGEL-MK1.1-revA"
 				(path "/27fcebe4-2fb8-4847-92ca-f98a7b250261"
 					(page "2")
 				)
@@ -11714,7 +11790,7 @@
 			)
 		)
 		(instances
-			(project "Switch_Board"
+			(project "BAGEL-MK1.1-revA"
 				(path "/27fcebe4-2fb8-4847-92ca-f98a7b250261"
 					(page "6")
 				)
@@ -11796,7 +11872,7 @@
 			)
 		)
 		(instances
-			(project "Switch_Board"
+			(project "BAGEL-MK1.1-revA"
 				(path "/27fcebe4-2fb8-4847-92ca-f98a7b250261"
 					(page "5")
 				)
@@ -11878,7 +11954,7 @@
 			)
 		)
 		(instances
-			(project "Switch_Board"
+			(project "BAGEL-MK1.1-revA"
 				(path "/27fcebe4-2fb8-4847-92ca-f98a7b250261"
 					(page "7")
 				)
