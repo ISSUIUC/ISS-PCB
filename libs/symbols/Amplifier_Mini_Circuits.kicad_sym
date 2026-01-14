@@ -3,11 +3,14 @@
 	(generator "kicad_symbol_editor")
 	(generator_version "9.0")
 	(symbol "PMA-545G1+"
+		(pin_names
+			(offset 0.254)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U3"
-			(at -8.128 18.796 0)
+		(property "Reference" "U"
+			(at -7.62 10.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15,14 +18,14 @@
 			)
 		)
 		(property "Value" "PMA-545G1+"
-			(at -7.366 16.256 0)
+			(at 7.62 -10.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "QFN-8 3x3mm:QFN-8 3x3mm"
+		(property "Footprint" "Package_QFN:QFN-8-1EP_3x3mm_P1.2mm_EP1.7x1.7mm"
 			(at 0 -29.718 0)
 			(effects
 				(font
@@ -41,7 +44,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Low Noise MMIC Amplifier, +22dBm"
+		(property "Description" "Low Noise MMIC Amplifier, 0.4-2.2GHz, +31.5dB Gain"
 			(at -0.508 -20.574 0)
 			(effects
 				(font
@@ -50,7 +53,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "Low Noise Amplifier GNSS 20db 3.6mA Infineon"
+		(property "ki_keywords" "Low Noise MMIC Amplifier Mini-Circuits"
 			(at 0 0 0)
 			(effects
 				(font
@@ -59,71 +62,69 @@
 				(hide yes)
 			)
 		)
-		(symbol "PMA-545G1+_0_0"
+		(symbol "PMA-545G1+_1_0"
 			(rectangle
 				(start -7.62 7.62)
 				(end 7.62 -7.62)
 				(stroke
-					(width 0.254)
-					(type default)
+					(width 0)
+					(type solid)
 				)
 				(fill
 					(type background)
 				)
 			)
-		)
-		(symbol "PMA-545G1+_1_0"
-			(pin power_in line
+			(pin input line
 				(at -10.16 0 0)
 				(length 2.54)
 				(name "RFIN"
 					(effects
 						(font
-							(size 1.016 1.016)
+							(size 1.27 1.27)
 						)
 					)
 				)
 				(number "2"
 					(effects
 						(font
-							(size 1.016 1.016)
+							(size 1.27 1.27)
 						)
 					)
 				)
 			)
-			(pin passive line
-				(at -3.81 10.16 270)
-				(length 2.54)
-				(hide yes)
-				(name "NC"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 0 10.16 270)
+			(pin power_in line
+				(at -2.54 10.16 270)
 				(length 2.54)
 				(name "BIAS"
 					(effects
 						(font
-							(size 1.016 1.016)
+							(size 1.27 1.27)
 						)
 					)
 				)
 				(number "7"
 					(effects
 						(font
-							(size 1.016 1.016)
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -2.54 -7.62 90)
+				(length 2.54)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
 						)
 					)
 				)
@@ -135,14 +136,14 @@
 				(name "NC"
 					(effects
 						(font
-							(size 1.016 1.016)
+							(size 1.27 1.27)
 						)
 					)
 				)
 				(number "1"
 					(effects
 						(font
-							(size 1.016 1.016)
+							(size 1.27 1.27)
 						)
 					)
 				)
@@ -154,14 +155,14 @@
 				(name "NC"
 					(effects
 						(font
-							(size 1.016 1.016)
+							(size 1.27 1.27)
 						)
 					)
 				)
 				(number "3"
 					(effects
 						(font
-							(size 1.016 1.016)
+							(size 1.27 1.27)
 						)
 					)
 				)
@@ -185,38 +186,38 @@
 					)
 				)
 			)
-			(pin input line
+			(pin power_in line
 				(at 0 -10.16 90)
 				(length 2.54)
 				(name "GND"
 					(effects
 						(font
-							(size 1.016 1.016)
+							(size 1.27 1.27)
 						)
 					)
 				)
 				(number "9"
 					(effects
 						(font
-							(size 1.016 1.016)
+							(size 1.27 1.27)
 						)
 					)
 				)
 			)
-			(pin input line
-				(at 3.81 -10.16 90)
+			(pin power_in line
+				(at 2.54 10.16 270)
 				(length 2.54)
 				(name "BIAS"
 					(effects
 						(font
-							(size 1.016 1.016)
+							(size 1.27 1.27)
 						)
 					)
 				)
 				(number "4"
 					(effects
 						(font
-							(size 1.016 1.016)
+							(size 1.27 1.27)
 						)
 					)
 				)
@@ -227,14 +228,14 @@
 				(name "RFOUT"
 					(effects
 						(font
-							(size 1.016 1.016)
+							(size 1.27 1.27)
 						)
 					)
 				)
 				(number "5"
 					(effects
 						(font
-							(size 1.016 1.016)
+							(size 1.27 1.27)
 						)
 					)
 				)
