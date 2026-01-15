@@ -23,7 +23,7 @@
 			)
 		)
 		(property "Footprint" "Regulator_Torex:Torex_USP-4"
-			(at 0 -22.86 0)
+			(at 0 -20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32,12 +32,11 @@
 			)
 		)
 		(property "Datasheet" "https://product.torexsemi.com/system/files/series/xc6223.pdf"
-			(at 26.67 -194.92 0)
+			(at 0 -25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
@@ -64,14 +63,14 @@
 				(start -5.08 2.54)
 				(end 7.62 -5.08)
 				(stroke
-					(width 0.254)
-					(type default)
+					(width 0)
+					(type solid)
 				)
 				(fill
 					(type background)
 				)
 			)
-			(pin passive line
+			(pin power_in line
 				(at -7.62 0 0)
 				(length 2.54)
 				(name "VIN"
@@ -89,7 +88,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin input line
 				(at -7.62 -2.54 0)
 				(length 2.54)
 				(name "CE"
@@ -107,7 +106,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin power_in line
 				(at 1.27 -7.62 90)
 				(length 2.54)
 				(name "VSS"
@@ -144,7 +143,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin power_out line
 				(at 10.16 0 180)
 				(length 2.54)
 				(name "VOUT"
