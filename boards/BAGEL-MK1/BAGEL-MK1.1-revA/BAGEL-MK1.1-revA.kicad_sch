@@ -5,8 +5,8 @@
 	(uuid "27fcebe4-2fb8-4847-92ca-f98a7b250261")
 	(paper "A4")
 	(title_block
-		(title "BAGEL Switch MK1")
-		(date "2025-12-02")
+		(title "BAGEL Switch MK1.1")
+		(date "2026-01-25")
 		(rev "A")
 		(company "Illinois Space Society")
 		(comment 3 "Thomas McManamen, Chethan Karandikar")
@@ -3454,7 +3454,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U205"
+			(property "Reference" "U403"
 				(at 1.27 7.62 0)
 				(effects
 					(font
@@ -3470,7 +3470,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Regulator_Torex:Torex_USP-4"
+			(property "Footprint" "Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm"
 				(at 0 -22.86 0)
 				(effects
 					(font
@@ -3479,7 +3479,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://product.torexsemi.com/system/files/series/xc6223.pdf"
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps7a25.pdf"
 				(at 26.67 -194.92 0)
 				(effects
 					(font
@@ -3489,7 +3489,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "300mA High Speed LDO Voltage Regulator"
+			(property "Description" "300mA, 18-V, Ultra-Low IQ, Low-Dropout Linear Voltage Regulator With Power-Good, WSON-6"
 				(at 0 -22.86 0)
 				(effects
 					(font
@@ -3498,57 +3498,7 @@
 					(hide yes)
 				)
 			)
-			(property "Height" "0.6"
-				(at 26.67 -394.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Part Number" "865-XC6223T331GR-G"
-				(at 26.67 -494.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Torex-Semiconductor/XC6223T331GR-G?qs=AsjdqWjXhJ9pIYh2kurybQ%3D%3D"
-				(at 26.67 -594.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Name" "Torex"
-				(at 26.67 -694.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Part_Number" "XC6223T331GR-G"
-				(at 26.67 -794.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "XC6223 300mA High Speed LDO Voltage Regulator"
+			(property "ki_keywords" "Texas Instruments TI TPS7A25 300-mA, 18-V, Ultra-Low IQ, Low-Dropout Linear Voltage Regulator WSON-6"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3569,7 +3519,7 @@
 						(type background)
 					)
 				)
-				(pin passive line
+				(pin power_in line
 					(at -7.62 0 0)
 					(length 2.54)
 					(name "VIN"
@@ -3587,7 +3537,7 @@
 						)
 					)
 				)
-				(pin passive line
+				(pin input line
 					(at -7.62 -2.54 0)
 					(length 2.54)
 					(name "EN"
@@ -3605,7 +3555,26 @@
 						)
 					)
 				)
-				(pin passive line
+				(pin no_connect line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
 					(at 1.27 -7.62 90)
 					(length 2.54)
 					(name "GND"
@@ -3642,7 +3611,7 @@
 						)
 					)
 				)
-				(pin passive line
+				(pin power_out line
 					(at 10.16 0 180)
 					(length 2.54)
 					(name "VOUT"
@@ -3660,7 +3629,7 @@
 						)
 					)
 				)
-				(pin passive line
+				(pin output line
 					(at 10.16 -2.54 180)
 					(length 2.54)
 					(name "PG"
@@ -9279,12 +9248,11 @@
 		(dnp no)
 		(uuid "1dfd2fc9-953f-43e4-bf42-24e363637aee")
 		(property "Reference" "J104"
-			(at 219.202 47.244 0)
+			(at 215.9 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "Conn_01x02"
@@ -9427,12 +9395,11 @@
 		(dnp no)
 		(uuid "24002839-b5a0-4b6d-b5f8-edde7fc86411")
 		(property "Reference" "J106"
-			(at 219.202 65.024 0)
+			(at 215.9 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "Conn_01x02"
@@ -9522,7 +9489,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps7a25.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1768168918974"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps7a25.pdf"
 			(at 140.97 348.59 0)
 			(effects
 				(font
@@ -9532,7 +9499,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "300-mA, 18-V, Ultra-Low IQ, Low-Dropout Linear Voltage Regulator With Power-Good"
+		(property "Description" "300mA, 18-V, Ultra-Low IQ, Low-Dropout Linear Voltage Regulator With Power-Good, WSON-6"
 			(at 114.3 176.53 0)
 			(effects
 				(font
@@ -9608,6 +9575,9 @@
 		)
 		(pin "7"
 			(uuid "902baf69-582e-4c6f-af52-8c067968ca23")
+		)
+		(pin "2"
+			(uuid "07844ed2-9327-4c3e-b239-9ede4a5acb4b")
 		)
 		(instances
 			(project "BAGEL-MK1.1-revA"
@@ -9718,12 +9688,11 @@
 		(dnp no)
 		(uuid "32fca1b9-7fa0-4441-aa7b-7593e5ae1442")
 		(property "Reference" "J116"
-			(at 219.202 100.584 0)
+			(at 215.9 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "Conn_01x02"
@@ -9926,12 +9895,11 @@
 		(dnp no)
 		(uuid "3f9f3022-1591-48f4-b9e0-7cd8ab9edc5f")
 		(property "Reference" "J115"
-			(at 219.202 92.71 0)
+			(at 215.9 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "Conn_01x02"
@@ -10372,12 +10340,11 @@
 		(dnp no)
 		(uuid "5c93fe70-b5f5-4cee-a4a1-8352550bb451")
 		(property "Reference" "J105"
-			(at 219.202 57.15 0)
+			(at 215.9 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "Conn_01x02"
@@ -11441,12 +11408,11 @@
 		(dnp no)
 		(uuid "9b693e36-43ab-45f9-8abb-47876746980e")
 		(property "Reference" "J118"
-			(at 219.202 118.364 0)
+			(at 215.9 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "Conn_01x02"
@@ -11511,12 +11477,11 @@
 		(dnp no)
 		(uuid "a49faa6a-ba7a-4d77-b293-d5b9b52f8dc9")
 		(property "Reference" "J113"
-			(at 219.202 74.93 0)
+			(at 215.9 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "Conn_01x02"
@@ -11650,12 +11615,11 @@
 		(dnp no)
 		(uuid "aae5f48f-a77c-40d0-9f03-ae9dbd8d758b")
 		(property "Reference" "J102"
-			(at 219.202 29.464 0)
+			(at 215.9 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "Conn_01x02"
@@ -12004,12 +11968,11 @@
 		(dnp no)
 		(uuid "bda00a73-0852-454c-8154-8538868b3e9b")
 		(property "Reference" "J114"
-			(at 219.202 82.804 0)
+			(at 215.9 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "Conn_01x02"
@@ -12074,12 +12037,11 @@
 		(dnp no)
 		(uuid "c552a9aa-e020-4fae-9535-8a013769a6dd")
 		(property "Reference" "J101"
-			(at 219.202 21.59 0)
+			(at 215.9 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "Conn_01x02"
@@ -12289,12 +12251,11 @@
 		(dnp no)
 		(uuid "cde3e345-60e8-4274-8f94-c1caa5564525")
 		(property "Reference" "J103"
-			(at 219.202 39.37 0)
+			(at 215.9 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "Conn_01x02"
@@ -12359,12 +12320,11 @@
 		(dnp no)
 		(uuid "d7414c70-37b6-46ce-a2d0-b647ec445928")
 		(property "Reference" "J117"
-			(at 219.202 110.49 0)
+			(at 215.9 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "Conn_01x02"

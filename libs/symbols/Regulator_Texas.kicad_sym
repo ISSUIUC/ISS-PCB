@@ -1514,7 +1514,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U205"
+		(property "Reference" "U403"
 			(at 1.27 7.62 0)
 			(effects
 				(font
@@ -1530,7 +1530,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Regulator_Torex:Torex_USP-4"
+		(property "Footprint" "Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm"
 			(at 0 -22.86 0)
 			(effects
 				(font
@@ -1539,7 +1539,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://product.torexsemi.com/system/files/series/xc6223.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps7a25.pdf"
 			(at 26.67 -194.92 0)
 			(effects
 				(font
@@ -1549,7 +1549,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "300mA High Speed LDO Voltage Regulator"
+		(property "Description" "300mA, 18-V, Ultra-Low IQ, Low-Dropout Linear Voltage Regulator With Power-Good, WSON-6"
 			(at 0 -22.86 0)
 			(effects
 				(font
@@ -1558,57 +1558,7 @@
 				(hide yes)
 			)
 		)
-		(property "Height" "0.6"
-			(at 26.67 -394.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "865-XC6223T331GR-G"
-			(at 26.67 -494.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Torex-Semiconductor/XC6223T331GR-G?qs=AsjdqWjXhJ9pIYh2kurybQ%3D%3D"
-			(at 26.67 -594.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Torex"
-			(at 26.67 -694.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "XC6223T331GR-G"
-			(at 26.67 -794.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "XC6223 300mA High Speed LDO Voltage Regulator"
+		(property "ki_keywords" "Texas Instruments TI TPS7A25 300-mA, 18-V, Ultra-Low IQ, Low-Dropout Linear Voltage Regulator WSON-6"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1629,7 +1579,7 @@
 					(type background)
 				)
 			)
-			(pin passive line
+			(pin power_in line
 				(at -7.62 0 0)
 				(length 2.54)
 				(name "VIN"
@@ -1647,7 +1597,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin input line
 				(at -7.62 -2.54 0)
 				(length 2.54)
 				(name "EN"
@@ -1666,7 +1616,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 1.27 -7.62 90)
+				(at 0 -5.08 90)
 				(length 2.54)
 				(hide yes)
 				(name "NC"
@@ -1676,7 +1626,7 @@
 						)
 					)
 				)
-				(number "1"
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1684,7 +1634,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin power_in line
 				(at 1.27 -7.62 90)
 				(length 2.54)
 				(name "GND"
@@ -1721,7 +1671,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin power_out line
 				(at 10.16 0 180)
 				(length 2.54)
 				(name "VOUT"
@@ -1739,7 +1689,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin output line
 				(at 10.16 -2.54 180)
 				(length 2.54)
 				(name "PG"
