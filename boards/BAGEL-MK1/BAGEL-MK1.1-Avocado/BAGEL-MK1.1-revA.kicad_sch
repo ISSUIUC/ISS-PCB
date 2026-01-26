@@ -4966,7 +4966,7 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 54.61) (xy 255.27 54.61)
+			(xy 252.73 52.07) (xy 255.27 52.07)
 		)
 		(stroke
 			(width 0)
@@ -5016,7 +5016,7 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 52.07) (xy 255.27 52.07)
+			(xy 252.73 54.61) (xy 255.27 54.61)
 		)
 		(stroke
 			(width 0)
@@ -5386,6 +5386,16 @@
 	)
 	(wire
 		(pts
+			(xy 91.44 153.67) (xy 92.71 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7668396d-9def-4cbb-af7e-a6657890781f")
+	)
+	(wire
+		(pts
 			(xy 111.76 30.48) (xy 111.76 27.94)
 		)
 		(stroke
@@ -5473,16 +5483,6 @@
 			(type default)
 		)
 		(uuid "810d037f-a1d0-4324-82ab-4f8fc2d244b6")
-	)
-	(wire
-		(pts
-			(xy 92.075 153.67) (xy 93.345 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "857fd0dd-50aa-4551-bd89-614d52d27251")
 	)
 	(wire
 		(pts
@@ -6066,7 +6066,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.965 153.67) (xy 102.87 153.67)
+			(xy 100.33 153.67) (xy 102.87 153.67)
 		)
 		(stroke
 			(width 0)
@@ -6660,7 +6660,7 @@
 	)
 	(global_label "MCU_GND"
 		(shape input)
-		(at 252.73 52.07 180)
+		(at 252.73 54.61 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6670,7 +6670,7 @@
 		)
 		(uuid "46365633-8922-42bb-92ff-fb2b678e93e0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 240.8548 52.07 0)
+			(at 240.8548 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7208,9 +7208,9 @@
 		)
 		(uuid "07c0a06a-6157-4169-ae85-d4dab36da03d")
 	)
-	(hierarchical_label "CoinCell_V"
+	(hierarchical_label "MainBatt_V"
 		(shape output)
-		(at 252.73 54.61 180)
+		(at 252.73 52.07 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7879,17 +7879,6 @@
 		)
 		(uuid "772cfbf9-35ec-46f8-a270-a1a24f86a75d")
 	)
-	(hierarchical_label "CoinCell_V"
-		(shape input)
-		(at 255.27 20.32 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "7ad893be-e7e0-4066-967b-357f524ea816")
-	)
 	(hierarchical_label "Switch_5"
 		(shape input)
 		(at 179.07 101.6 180)
@@ -7955,6 +7944,17 @@
 			(justify right)
 		)
 		(uuid "85bec640-ed93-4049-8a22-17a7574ed70c")
+	)
+	(hierarchical_label "MainBatt_V"
+		(shape input)
+		(at 255.27 20.32 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "86f3dcbb-c7ff-4af6-b342-73c18d4d961a")
 	)
 	(hierarchical_label "PG_ISO_2"
 		(shape output)
@@ -8032,17 +8032,6 @@
 			(justify left)
 		)
 		(uuid "92164a7e-fbf7-429b-8ae8-abbcf4471250")
-	)
-	(hierarchical_label "CoinCell_V"
-		(shape input)
-		(at 92.075 153.67 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "9554f456-5ba9-4baa-aae8-3d875beb0aa1")
 	)
 	(hierarchical_label "NRST"
 		(shape input)
@@ -8296,6 +8285,17 @@
 			(justify left)
 		)
 		(uuid "b5c2f5b6-d66b-469c-9e6b-d7f9390aa931")
+	)
+	(hierarchical_label "MainBatt_V"
+		(shape input)
+		(at 91.44 153.67 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b684599c-aa94-4ec8-be5a-2d96b374cfa9")
 	)
 	(hierarchical_label "SubBatt_GND1"
 		(shape input)
@@ -10104,7 +10104,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4148WT")
-		(at 97.155 153.67 180)
+		(at 96.52 153.67 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10113,7 +10113,7 @@
 		(fields_autoplaced yes)
 		(uuid "5501afb0-c64d-4a38-b148-4907b6ae2af8")
 		(property "Reference" "D101"
-			(at 97.155 147.32 0)
+			(at 96.52 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10121,7 +10121,7 @@
 			)
 		)
 		(property "Value" "SDM05U40CSP-7"
-			(at 97.155 149.86 0)
+			(at 96.52 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10129,7 +10129,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-882"
-			(at 97.155 149.225 0)
+			(at 96.52 149.225 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10138,7 +10138,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds30396.pdf"
-			(at 97.155 153.67 0)
+			(at 96.52 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10147,7 +10147,7 @@
 			)
 		)
 		(property "Description" "75V 0.15A Fast switching Diode, SOD-523"
-			(at 97.155 153.67 0)
+			(at 96.52 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10156,7 +10156,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 97.155 153.67 0)
+			(at 96.52 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10165,7 +10165,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 97.155 153.67 0)
+			(at 96.52 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11185,7 +11185,8 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 260.35 52.07 0)
+		(at 260.35 54.61 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11202,7 +11203,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02"
-			(at 262.89 54.6099 0)
+			(at 262.89 52.0701 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11212,7 +11213,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 266.446 74.168 0)
+			(at 266.446 32.512 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11221,7 +11222,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 260.35 52.07 0)
+			(at 260.35 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11230,7 +11231,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 260.35 52.07 0)
+			(at 260.35 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
