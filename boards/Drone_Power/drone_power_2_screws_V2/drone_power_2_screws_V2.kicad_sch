@@ -2963,6 +2963,18 @@
 		)
 		(uuid d23c6bfd-b850-4bb2-8bc4-f79848433342)
 	)
+	(rectangle
+		(start 186.69 220.98)
+		(end 209.55 234.95)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid dcbecde6-197b-473e-8243-c568a1dbb3f8)
+	)
 	(text "2.54mm header pins"
 		(exclude_from_sim no)
 		(at 156.464 209.804 0)
@@ -3036,7 +3048,20 @@
 		)
 		(uuid "71b17a13-8c90-4fff-b07b-1d9bff096b39")
 	)
-	(text "Micro-Lock Plus"
+	(text "CAM Power Supply"
+		(exclude_from_sim no)
+		(at 186.944 221.742 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "74e02cab-05ab-467a-88c2-97d737a1e63b")
+	)
+	(text "Micro-Fit Plus\n0436500203"
 		(exclude_from_sim no)
 		(at 187.198 208.788 0)
 		(effects
@@ -3060,6 +3085,18 @@
 			(justify left top)
 		)
 		(uuid "8c7000ef-cc9b-4e18-9a6f-29082ca30b0e")
+	)
+	(text "JST-PH"
+		(exclude_from_sim no)
+		(at 187.198 224.028 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+			)
+			(justify left top)
+		)
+		(uuid "ca3d002d-b6c0-4864-9d3e-fe6625fce397")
 	)
 	(text "5V"
 		(exclude_from_sim no)
@@ -4109,6 +4146,16 @@
 			(type default)
 		)
 		(uuid "30954aa5-8443-4e62-9dee-36389a2bb020")
+	)
+	(wire
+		(pts
+			(xy 195.58 232.41) (xy 199.39 232.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32f7df3f-bcca-4570-9177-e58545e4b8de")
 	)
 	(wire
 		(pts
@@ -5782,6 +5829,16 @@
 	)
 	(wire
 		(pts
+			(xy 195.58 229.87) (xy 199.39 229.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dcd4c1c8-c928-4493-affa-2efb90656115")
+	)
+	(wire
+		(pts
 			(xy 35.56 118.11) (xy 35.56 129.54)
 		)
 		(stroke
@@ -6249,6 +6306,17 @@
 		)
 		(uuid "36280ba2-229f-46d2-b1ac-fcf51566e932")
 	)
+	(hierarchical_label "G_Batt"
+		(shape output)
+		(at 195.58 229.87 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3c36560b-5caa-44f9-bff0-a72ee30a5e14")
+	)
 	(hierarchical_label "5V_NAVIO"
 		(shape output)
 		(at 222.25 234.95 180)
@@ -6337,6 +6405,17 @@
 			(justify right)
 		)
 		(uuid "73baa867-874e-4629-8e3a-0f568020a397")
+	)
+	(hierarchical_label "12V"
+		(shape input)
+		(at 195.58 232.41 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "789eaa54-6d25-4601-8d6d-0152879c8cba")
 	)
 	(hierarchical_label "IP-"
 		(shape input)
@@ -6600,7 +6679,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "ISS_Borzoi:Molex_Micro-Lock_2200980271_1x02_P1.25mm_Horizontal"
+		(property "Footprint" "Connector_Molex_Micro-Fit-Plus:Molex_Micro-Fit-Plus_0436500203_1x02_P3.0mm"
 			(at 204.47 217.17 0)
 			(effects
 				(font
@@ -7737,7 +7816,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 228.2952 242.57 0)
 			(effects
 				(font
@@ -8017,7 +8096,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 248.6152 242.57 0)
 			(effects
 				(font
@@ -8054,6 +8133,77 @@
 			(project "drone_power_2_screws_V2"
 				(path "/35c12497-05d4-4ac3-a9db-2a4c567efa18"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 204.47 232.41 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "571d4a81-90d9-4c0d-ad7d-59364bf29239")
+		(property "Reference" "J1"
+			(at 205.74 229.8699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x02_Pin"
+			(at 205.74 232.4099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
+			(at 204.47 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 204.47 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 204.47 232.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "142c3728-1128-4121-82d5-44a1e3f20225")
+		)
+		(pin "1"
+			(uuid "142bfcca-a2b5-41df-b82b-6f332584c5c0")
+		)
+		(instances
+			(project "drone_power_2_screws_V2"
+				(path "/35c12497-05d4-4ac3-a9db-2a4c567efa18"
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -10488,7 +10638,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 177.8 218.44 0)
 			(effects
 				(font
