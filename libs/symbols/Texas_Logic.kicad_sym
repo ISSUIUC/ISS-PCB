@@ -7,7 +7,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -10.16 7.62 0)
+			(at -7.62 7.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23,22 +23,20 @@
 			)
 		)
 		(property "Footprint" "Package_UFQN:UQFN-RSE0008A"
-			(at 26.67 -87.3 0)
+			(at 0 -20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74aup1g74.pdf"
-			(at 26.67 -187.3 0)
+			(at 0 -22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
@@ -65,14 +63,14 @@
 				(start -7.62 6.35)
 				(end 7.62 -6.35)
 				(stroke
-					(width 0.254)
-					(type default)
+					(width 0)
+					(type solid)
 				)
 				(fill
 					(type background)
 				)
 			)
-			(pin passive line
+			(pin input line
 				(at -10.16 3.81 0)
 				(length 2.54)
 				(name "~{PRE}"
@@ -90,7 +88,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin input line
 				(at -10.16 1.27 0)
 				(length 2.54)
 				(name "~{CLR}"
@@ -108,7 +106,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin input line
 				(at -10.16 -1.27 0)
 				(length 2.54)
 				(name "D"
@@ -126,7 +124,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin input line
 				(at -10.16 -3.81 0)
 				(length 2.54)
 				(name "CLK"
@@ -144,7 +142,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin power_in line
 				(at 0 8.89 270)
 				(length 2.54)
 				(name "VCC"
@@ -162,7 +160,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin power_in line
 				(at 0 -8.89 90)
 				(length 2.54)
 				(name "GND"
@@ -180,7 +178,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin output line
 				(at 10.16 1.27 180)
 				(length 2.54)
 				(name "Q"
@@ -198,7 +196,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin output line
 				(at 10.16 -1.27 180)
 				(length 2.54)
 				(name "~{Q}"
