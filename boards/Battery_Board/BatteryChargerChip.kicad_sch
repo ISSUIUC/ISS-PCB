@@ -2742,6 +2742,16 @@
 		)
 		(uuid c56ea763-1870-4f3e-8807-68024a05fb55)
 	)
+	(text "I2C Address: x22 ADDR low, x23 ADDR high"
+		(exclude_from_sim no)
+		(at 41.91 72.644 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "182f307d-39e6-4f98-a16e-6fa217487fa1")
+	)
 	(text "Display + i2c Expander"
 		(exclude_from_sim no)
 		(at 151.384 14.986 0)
@@ -2803,6 +2813,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "89d57011-c0ea-4245-9b10-e9e6ccf7f9a0")
+	)
+	(junction
+		(at 35.56 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8b702869-340f-4a33-914a-183b4089076b")
 	)
 	(junction
 		(at 93.98 64.77)
@@ -3236,7 +3252,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 46.99) (xy 48.26 46.99)
+			(xy 34.29 46.99) (xy 35.56 46.99)
 		)
 		(stroke
 			(width 0)
@@ -3323,6 +3339,16 @@
 			(type default)
 		)
 		(uuid "cb4f10dc-5647-4272-b2d2-422652d863f1")
+	)
+	(wire
+		(pts
+			(xy 35.56 46.99) (xy 48.26 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb6e35cd-0bf8-4b14-81ba-5c65e6bef040")
 	)
 	(wire
 		(pts
@@ -3426,6 +3452,16 @@
 	)
 	(wire
 		(pts
+			(xy 35.56 46.99) (xy 35.56 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e50d74d5-cae3-4c5d-96c4-96d93a9f978e")
+	)
+	(wire
+		(pts
 			(xy 181.61 97.79) (xy 181.61 96.52)
 		)
 		(stroke
@@ -3514,6 +3550,17 @@
 			(justify right)
 		)
 		(uuid "07e73de2-d815-491d-9066-fb3e44e047dc")
+	)
+	(hierarchical_label "BATT_V"
+		(shape input)
+		(at 35.56 49.53 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5f46dd57-cf50-49ab-b77a-6dd4e24af12b")
 	)
 	(hierarchical_label "ADDR"
 		(shape input)
@@ -3636,11 +3683,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "163e9fda-5292-45f8-bf18-c6a35b1d3198")
+			(uuid "b1f8c681-a757-4b79-aa97-24bd5aecae07")
 		)
 		(instances
 			(project "Battery_Board"
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/01ab7845-2334-4a8f-b61c-37d80644daae"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/0bc201de-2920-4f1d-8d52-3a817d1a1147"
 					(reference "#PWR0704")
 					(unit 1)
 				)
@@ -3648,19 +3695,19 @@
 					(reference "#PWR0204")
 					(unit 1)
 				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/124a120d-138c-411d-b8db-08000d22d3c8"
-					(reference "#PWR0504")
-					(unit 1)
-				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/16e86f59-93b5-4321-8278-cc01d9583d70"
-					(reference "#PWR0304")
-					(unit 1)
-				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/2b5282ab-af9c-4a87-9298-b038bc35519a"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/629045ab-4657-47a2-9782-c828331f900e"
 					(reference "#PWR0404")
 					(unit 1)
 				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/4bf5a6e5-e48f-4eec-a2e1-f4eae4d579b8"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/7c3bcc04-9b52-4d44-9a5e-d94c42574bf1"
+					(reference "#PWR0504")
+					(unit 1)
+				)
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/c019dc8f-18d8-4677-8552-b568a06be594"
+					(reference "#PWR0304")
+					(unit 1)
+				)
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/e05a4049-58a1-4ded-9a2e-aaae4b730faf"
 					(reference "#PWR0604")
 					(unit 1)
 				)
@@ -3748,17 +3795,17 @@
 			)
 		)
 		(pin "1"
-			(uuid "558543c1-72b4-4991-a065-fe8c11ff94bb")
+			(uuid "f137e82b-0750-42d4-9d8d-fa14fe2a3f3f")
 		)
 		(pin "3"
-			(uuid "ca844c1b-1b89-4b20-894d-f38a8d122e61")
+			(uuid "48b65f35-3ae8-4e40-b96f-f5e1119594cd")
 		)
 		(pin "2"
-			(uuid "e0f77e36-1a2f-4929-add9-e8d2e897e4f7")
+			(uuid "8789f2a2-4619-4263-b51d-e4ee9d00f21b")
 		)
 		(instances
 			(project "Battery_Board"
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/01ab7845-2334-4a8f-b61c-37d80644daae"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/0bc201de-2920-4f1d-8d52-3a817d1a1147"
 					(reference "Q701")
 					(unit 1)
 				)
@@ -3766,19 +3813,19 @@
 					(reference "Q201")
 					(unit 1)
 				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/124a120d-138c-411d-b8db-08000d22d3c8"
-					(reference "Q501")
-					(unit 1)
-				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/16e86f59-93b5-4321-8278-cc01d9583d70"
-					(reference "Q301")
-					(unit 1)
-				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/2b5282ab-af9c-4a87-9298-b038bc35519a"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/629045ab-4657-47a2-9782-c828331f900e"
 					(reference "Q401")
 					(unit 1)
 				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/4bf5a6e5-e48f-4eec-a2e1-f4eae4d579b8"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/7c3bcc04-9b52-4d44-9a5e-d94c42574bf1"
+					(reference "Q501")
+					(unit 1)
+				)
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/c019dc8f-18d8-4677-8552-b568a06be594"
+					(reference "Q301")
+					(unit 1)
+				)
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/e05a4049-58a1-4ded-9a2e-aaae4b730faf"
 					(reference "Q601")
 					(unit 1)
 				)
@@ -3839,14 +3886,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "61d9fd5a-a44a-4c76-880a-3f9c55530638")
+			(uuid "1417e61c-7ab7-481c-aa03-4b16f31f71ce")
 		)
 		(pin "2"
-			(uuid "18aa9579-ece6-457e-a92b-bef78e9a7f35")
+			(uuid "ccca8eab-b631-49dc-ae02-daf121f8e630")
 		)
 		(instances
 			(project "Battery_Board"
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/01ab7845-2334-4a8f-b61c-37d80644daae"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/0bc201de-2920-4f1d-8d52-3a817d1a1147"
 					(reference "C701")
 					(unit 1)
 				)
@@ -3854,19 +3901,19 @@
 					(reference "C201")
 					(unit 1)
 				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/124a120d-138c-411d-b8db-08000d22d3c8"
-					(reference "C501")
-					(unit 1)
-				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/16e86f59-93b5-4321-8278-cc01d9583d70"
-					(reference "C301")
-					(unit 1)
-				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/2b5282ab-af9c-4a87-9298-b038bc35519a"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/629045ab-4657-47a2-9782-c828331f900e"
 					(reference "C401")
 					(unit 1)
 				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/4bf5a6e5-e48f-4eec-a2e1-f4eae4d579b8"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/7c3bcc04-9b52-4d44-9a5e-d94c42574bf1"
+					(reference "C501")
+					(unit 1)
+				)
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/c019dc8f-18d8-4677-8552-b568a06be594"
+					(reference "C301")
+					(unit 1)
+				)
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/e05a4049-58a1-4ded-9a2e-aaae4b730faf"
 					(reference "C601")
 					(unit 1)
 				)
@@ -3936,14 +3983,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "0251c0c8-6e40-41d5-8967-ba1915dfacbd")
+			(uuid "ad4bc347-e751-4289-b76a-ca3759ea9d21")
 		)
 		(pin "2"
-			(uuid "966f3a67-14e2-48e3-91b3-a589bdb042c8")
+			(uuid "0caeed84-ff0e-4fd5-b944-c02ee124abc4")
 		)
 		(instances
 			(project "Battery_Board"
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/01ab7845-2334-4a8f-b61c-37d80644daae"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/0bc201de-2920-4f1d-8d52-3a817d1a1147"
 					(reference "D703")
 					(unit 1)
 				)
@@ -3951,19 +3998,19 @@
 					(reference "D203")
 					(unit 1)
 				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/124a120d-138c-411d-b8db-08000d22d3c8"
-					(reference "D503")
-					(unit 1)
-				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/16e86f59-93b5-4321-8278-cc01d9583d70"
-					(reference "D303")
-					(unit 1)
-				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/2b5282ab-af9c-4a87-9298-b038bc35519a"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/629045ab-4657-47a2-9782-c828331f900e"
 					(reference "D403")
 					(unit 1)
 				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/4bf5a6e5-e48f-4eec-a2e1-f4eae4d579b8"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/7c3bcc04-9b52-4d44-9a5e-d94c42574bf1"
+					(reference "D503")
+					(unit 1)
+				)
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/c019dc8f-18d8-4677-8552-b568a06be594"
+					(reference "D303")
+					(unit 1)
+				)
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/e05a4049-58a1-4ded-9a2e-aaae4b730faf"
 					(reference "D603")
 					(unit 1)
 				)
@@ -4026,11 +4073,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "11deab53-8b9c-4863-ad10-767a3954f435")
+			(uuid "ab31b657-d974-4543-aec0-f52591b67e16")
 		)
 		(instances
 			(project "Battery_Board"
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/01ab7845-2334-4a8f-b61c-37d80644daae"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/0bc201de-2920-4f1d-8d52-3a817d1a1147"
 					(reference "#PWR0701")
 					(unit 1)
 				)
@@ -4038,19 +4085,19 @@
 					(reference "#PWR0201")
 					(unit 1)
 				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/124a120d-138c-411d-b8db-08000d22d3c8"
-					(reference "#PWR0501")
-					(unit 1)
-				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/16e86f59-93b5-4321-8278-cc01d9583d70"
-					(reference "#PWR0301")
-					(unit 1)
-				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/2b5282ab-af9c-4a87-9298-b038bc35519a"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/629045ab-4657-47a2-9782-c828331f900e"
 					(reference "#PWR0401")
 					(unit 1)
 				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/4bf5a6e5-e48f-4eec-a2e1-f4eae4d579b8"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/7c3bcc04-9b52-4d44-9a5e-d94c42574bf1"
+					(reference "#PWR0501")
+					(unit 1)
+				)
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/c019dc8f-18d8-4677-8552-b568a06be594"
+					(reference "#PWR0301")
+					(unit 1)
+				)
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/e05a4049-58a1-4ded-9a2e-aaae4b730faf"
 					(reference "#PWR0601")
 					(unit 1)
 				)
@@ -4112,11 +4159,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "0e5a4026-55f7-4068-b7fb-6bfe2d955991")
+			(uuid "d5918146-91e7-4192-b4bd-b01b5753652d")
 		)
 		(instances
 			(project "Battery_Board"
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/01ab7845-2334-4a8f-b61c-37d80644daae"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/0bc201de-2920-4f1d-8d52-3a817d1a1147"
 					(reference "#PWR0705")
 					(unit 1)
 				)
@@ -4124,19 +4171,19 @@
 					(reference "#PWR0205")
 					(unit 1)
 				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/124a120d-138c-411d-b8db-08000d22d3c8"
-					(reference "#PWR0505")
-					(unit 1)
-				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/16e86f59-93b5-4321-8278-cc01d9583d70"
-					(reference "#PWR0305")
-					(unit 1)
-				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/2b5282ab-af9c-4a87-9298-b038bc35519a"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/629045ab-4657-47a2-9782-c828331f900e"
 					(reference "#PWR0405")
 					(unit 1)
 				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/4bf5a6e5-e48f-4eec-a2e1-f4eae4d579b8"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/7c3bcc04-9b52-4d44-9a5e-d94c42574bf1"
+					(reference "#PWR0505")
+					(unit 1)
+				)
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/c019dc8f-18d8-4677-8552-b568a06be594"
+					(reference "#PWR0305")
+					(unit 1)
+				)
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/e05a4049-58a1-4ded-9a2e-aaae4b730faf"
 					(reference "#PWR0605")
 					(unit 1)
 				)
@@ -4200,14 +4247,14 @@
 			)
 		)
 		(pin "2"
-			(uuid "c00f23d1-4837-4dca-882f-b2958a4ce822")
+			(uuid "7080d01d-9371-408e-8d6f-ac99732f35e4")
 		)
 		(pin "1"
-			(uuid "4fa46593-7120-4070-b5b1-1568dfc7f6ca")
+			(uuid "711cca27-f3e9-4d97-937a-d284a9fbc10b")
 		)
 		(instances
 			(project "Battery_Board"
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/01ab7845-2334-4a8f-b61c-37d80644daae"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/0bc201de-2920-4f1d-8d52-3a817d1a1147"
 					(reference "R701")
 					(unit 1)
 				)
@@ -4215,19 +4262,19 @@
 					(reference "R201")
 					(unit 1)
 				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/124a120d-138c-411d-b8db-08000d22d3c8"
-					(reference "R501")
-					(unit 1)
-				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/16e86f59-93b5-4321-8278-cc01d9583d70"
-					(reference "R301")
-					(unit 1)
-				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/2b5282ab-af9c-4a87-9298-b038bc35519a"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/629045ab-4657-47a2-9782-c828331f900e"
 					(reference "R401")
 					(unit 1)
 				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/4bf5a6e5-e48f-4eec-a2e1-f4eae4d579b8"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/7c3bcc04-9b52-4d44-9a5e-d94c42574bf1"
+					(reference "R501")
+					(unit 1)
+				)
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/c019dc8f-18d8-4677-8552-b568a06be594"
+					(reference "R301")
+					(unit 1)
+				)
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/e05a4049-58a1-4ded-9a2e-aaae4b730faf"
 					(reference "R601")
 					(unit 1)
 				)
@@ -4297,14 +4344,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "5af2852e-3b40-49f4-a22a-fc02483e75cc")
+			(uuid "16cc0b85-57fa-453a-af1e-7bcadeeaacca")
 		)
 		(pin "2"
-			(uuid "7efc303e-9967-4f55-bfcc-f02b8c35f49e")
+			(uuid "bf6a5a91-5ec3-496e-ad15-bb0f49f78a5d")
 		)
 		(instances
 			(project "Battery_Board"
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/01ab7845-2334-4a8f-b61c-37d80644daae"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/0bc201de-2920-4f1d-8d52-3a817d1a1147"
 					(reference "D702")
 					(unit 1)
 				)
@@ -4312,19 +4359,19 @@
 					(reference "D202")
 					(unit 1)
 				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/124a120d-138c-411d-b8db-08000d22d3c8"
-					(reference "D502")
-					(unit 1)
-				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/16e86f59-93b5-4321-8278-cc01d9583d70"
-					(reference "D302")
-					(unit 1)
-				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/2b5282ab-af9c-4a87-9298-b038bc35519a"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/629045ab-4657-47a2-9782-c828331f900e"
 					(reference "D402")
 					(unit 1)
 				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/4bf5a6e5-e48f-4eec-a2e1-f4eae4d579b8"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/7c3bcc04-9b52-4d44-9a5e-d94c42574bf1"
+					(reference "D502")
+					(unit 1)
+				)
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/c019dc8f-18d8-4677-8552-b568a06be594"
+					(reference "D302")
+					(unit 1)
+				)
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/e05a4049-58a1-4ded-9a2e-aaae4b730faf"
 					(reference "D602")
 					(unit 1)
 				)
@@ -4438,80 +4485,80 @@
 			)
 		)
 		(pin "5"
-			(uuid "f06c9460-5c31-4dd9-9c67-624965b49d1d")
+			(uuid "16d32e17-1d94-4278-b337-e4a9de972207")
 		)
 		(pin "23"
-			(uuid "40fabae3-ac1c-4904-bca2-5e6c2f75a1fd")
+			(uuid "9feeb2a5-8d36-4b64-a7df-d72cefc425ca")
 		)
 		(pin "19"
-			(uuid "a65c585f-8454-4be4-9fe6-b5c78f02698f")
+			(uuid "c7e3d733-20f6-437b-a54d-03c657eed652")
 		)
 		(pin "24"
-			(uuid "3b7f64b7-3d55-43e8-9dd3-78118da73f9e")
+			(uuid "9861aa4f-3b79-4770-b5f2-308b65b4bc2c")
 		)
 		(pin "15"
-			(uuid "941ffb17-854b-4b00-9183-fc09c118f377")
+			(uuid "fc085c46-85f1-4104-9cda-ba53dd7f85fa")
 		)
 		(pin "8"
-			(uuid "b0702c8b-2796-43ab-8ff5-f23dd612363a")
+			(uuid "ae64884b-2b39-4a79-b5f7-693f2fb16534")
 		)
 		(pin "13"
-			(uuid "30244919-722c-4281-9860-e519e9552cca")
+			(uuid "4f9098c9-0620-45ca-92ee-9f3aa8f87ea6")
 		)
 		(pin "21"
-			(uuid "38bf287a-266a-49d5-9e11-4c57575ef193")
+			(uuid "04e37107-ce68-4271-aae3-af055544509a")
 		)
 		(pin "18"
-			(uuid "3d693c7c-8cbf-4dde-b317-72796c9d1566")
+			(uuid "18789319-f29c-4063-9120-a8da13948303")
 		)
 		(pin "9"
-			(uuid "759ece48-a3ee-424d-8357-8e933e825387")
+			(uuid "c9bd1803-d0f5-436f-86cc-fa48ff144691")
 		)
 		(pin "14"
-			(uuid "8d216c26-8671-409f-ac0b-8e1f20e4a2b5")
+			(uuid "c26a4d07-ade4-4400-b493-8cf145bafd13")
 		)
 		(pin "20"
-			(uuid "13996fba-7a2b-4cff-a657-2b72a2d58272")
+			(uuid "1fe42536-6e0e-49f4-98e9-d7c60bb4b50d")
 		)
 		(pin "11"
-			(uuid "cd7bdce6-39fa-4ad0-ad78-c1c8ac7e7596")
+			(uuid "21ee177b-3e3b-4199-aa31-7f47c5b1de89")
 		)
 		(pin "17"
-			(uuid "27cb2b91-efa7-4f1f-b336-92fe7dceed04")
+			(uuid "36fbf13d-b922-48fc-8bc5-e9c258d8ed55")
 		)
 		(pin "1"
-			(uuid "afa85e63-4e7a-4500-b3bc-d65e1fc143b7")
+			(uuid "2115b015-29f3-4237-af7c-2e399a820332")
 		)
 		(pin "22"
-			(uuid "1f24ecb4-582c-4c48-b6e2-1cf137dca73c")
+			(uuid "645b6c51-08a4-4a17-aee5-ce27bc2d7052")
 		)
 		(pin "6"
-			(uuid "b4ad49ab-0509-4a43-aa5a-e57a2b1f154d")
+			(uuid "f41da49d-8518-4d5a-afbb-414a059d99ea")
 		)
 		(pin "12"
-			(uuid "1d70f0a0-9817-424c-942d-c755e070054f")
+			(uuid "3ae3c9d9-2904-48f6-a6b6-c9599a9f0ef4")
 		)
 		(pin "3"
-			(uuid "7f461ffe-9bfd-4f3c-8381-ba9bf7b9e014")
+			(uuid "25ae9769-4de1-4c43-90a5-39df7f0afdda")
 		)
 		(pin "2"
-			(uuid "32506c0d-649d-4f95-adee-1afb1ad23095")
+			(uuid "3c4a6aee-f4bc-41c7-ac8f-bbf396fc8f88")
 		)
 		(pin "4"
-			(uuid "677c1bf8-f134-4741-9b8f-d8971f00339a")
+			(uuid "874c997f-643d-4f10-a780-4aff83f7cd9d")
 		)
 		(pin "10"
-			(uuid "b6b02f90-f5d8-4c16-9904-70f56a9c65f0")
+			(uuid "7cc42a0f-ef5f-40e5-bb1d-4f77fd57c07d")
 		)
 		(pin "16"
-			(uuid "640ee92f-28bb-423d-9eb7-1a6664bcf865")
+			(uuid "260b50be-9a2a-4592-bc06-edf5c9584410")
 		)
 		(pin "7"
-			(uuid "46107618-f12a-42c0-b78a-b1baaf80988c")
+			(uuid "fc073882-bbc3-4a62-bce9-06d62410b124")
 		)
 		(instances
 			(project "Battery_Board"
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/01ab7845-2334-4a8f-b61c-37d80644daae"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/0bc201de-2920-4f1d-8d52-3a817d1a1147"
 					(reference "DS701")
 					(unit 1)
 				)
@@ -4519,19 +4566,19 @@
 					(reference "DS201")
 					(unit 1)
 				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/124a120d-138c-411d-b8db-08000d22d3c8"
-					(reference "DS501")
-					(unit 1)
-				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/16e86f59-93b5-4321-8278-cc01d9583d70"
-					(reference "DS301")
-					(unit 1)
-				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/2b5282ab-af9c-4a87-9298-b038bc35519a"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/629045ab-4657-47a2-9782-c828331f900e"
 					(reference "DS401")
 					(unit 1)
 				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/4bf5a6e5-e48f-4eec-a2e1-f4eae4d579b8"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/7c3bcc04-9b52-4d44-9a5e-d94c42574bf1"
+					(reference "DS501")
+					(unit 1)
+				)
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/c019dc8f-18d8-4677-8552-b568a06be594"
+					(reference "DS301")
+					(unit 1)
+				)
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/e05a4049-58a1-4ded-9a2e-aaae4b730faf"
 					(reference "DS601")
 					(unit 1)
 				)
@@ -4593,11 +4640,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "2190c92d-65aa-4254-964a-684d8ba06150")
+			(uuid "d0ee1fc1-c035-4bcd-b543-c5582bd91fed")
 		)
 		(instances
 			(project "Battery_Board"
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/01ab7845-2334-4a8f-b61c-37d80644daae"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/0bc201de-2920-4f1d-8d52-3a817d1a1147"
 					(reference "#PWR0703")
 					(unit 1)
 				)
@@ -4605,19 +4652,19 @@
 					(reference "#PWR0203")
 					(unit 1)
 				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/124a120d-138c-411d-b8db-08000d22d3c8"
-					(reference "#PWR0503")
-					(unit 1)
-				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/16e86f59-93b5-4321-8278-cc01d9583d70"
-					(reference "#PWR0303")
-					(unit 1)
-				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/2b5282ab-af9c-4a87-9298-b038bc35519a"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/629045ab-4657-47a2-9782-c828331f900e"
 					(reference "#PWR0403")
 					(unit 1)
 				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/4bf5a6e5-e48f-4eec-a2e1-f4eae4d579b8"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/7c3bcc04-9b52-4d44-9a5e-d94c42574bf1"
+					(reference "#PWR0503")
+					(unit 1)
+				)
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/c019dc8f-18d8-4677-8552-b568a06be594"
+					(reference "#PWR0303")
+					(unit 1)
+				)
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/e05a4049-58a1-4ded-9a2e-aaae4b730faf"
 					(reference "#PWR0603")
 					(unit 1)
 				)
@@ -4681,14 +4728,14 @@
 			)
 		)
 		(pin "2"
-			(uuid "2bc41f13-ba11-44a5-8594-26226933e824")
+			(uuid "ed65cbcf-1c63-4cce-b088-5619b0f38bf3")
 		)
 		(pin "1"
-			(uuid "b13b663a-307e-474d-be1a-d2c9cca5d7ad")
+			(uuid "3a05c792-a571-4296-a54d-e6f247ff7210")
 		)
 		(instances
 			(project "Battery_Board"
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/01ab7845-2334-4a8f-b61c-37d80644daae"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/0bc201de-2920-4f1d-8d52-3a817d1a1147"
 					(reference "R702")
 					(unit 1)
 				)
@@ -4696,19 +4743,19 @@
 					(reference "R202")
 					(unit 1)
 				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/124a120d-138c-411d-b8db-08000d22d3c8"
-					(reference "R502")
-					(unit 1)
-				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/16e86f59-93b5-4321-8278-cc01d9583d70"
-					(reference "R302")
-					(unit 1)
-				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/2b5282ab-af9c-4a87-9298-b038bc35519a"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/629045ab-4657-47a2-9782-c828331f900e"
 					(reference "R402")
 					(unit 1)
 				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/4bf5a6e5-e48f-4eec-a2e1-f4eae4d579b8"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/7c3bcc04-9b52-4d44-9a5e-d94c42574bf1"
+					(reference "R502")
+					(unit 1)
+				)
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/c019dc8f-18d8-4677-8552-b568a06be594"
+					(reference "R302")
+					(unit 1)
+				)
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/e05a4049-58a1-4ded-9a2e-aaae4b730faf"
 					(reference "R602")
 					(unit 1)
 				)
@@ -4726,7 +4773,7 @@
 		(dnp no)
 		(uuid "8ff84c16-7d72-4882-ad0c-1ed463229cd9")
 		(property "Reference" "D201"
-			(at 30.988 50.038 90)
+			(at 37.592 53.594 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4735,7 +4782,7 @@
 			)
 		)
 		(property "Value" "BZT52C10LP-7"
-			(at 30.988 52.578 90)
+			(at 37.592 56.134 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4771,14 +4818,14 @@
 			)
 		)
 		(pin "2"
-			(uuid "02648c75-9eb5-47d9-be55-0b2ddcbc3327")
+			(uuid "6eb07be7-68e0-4745-82dd-8f685d6c9a4d")
 		)
 		(pin "1"
-			(uuid "29225d4b-a146-4359-ba08-1fb77ab8429e")
+			(uuid "99d7e8b8-e3c3-4ff2-ac1c-be464250fc46")
 		)
 		(instances
 			(project "Battery_Board"
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/01ab7845-2334-4a8f-b61c-37d80644daae"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/0bc201de-2920-4f1d-8d52-3a817d1a1147"
 					(reference "D701")
 					(unit 1)
 				)
@@ -4786,19 +4833,19 @@
 					(reference "D201")
 					(unit 1)
 				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/124a120d-138c-411d-b8db-08000d22d3c8"
-					(reference "D501")
-					(unit 1)
-				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/16e86f59-93b5-4321-8278-cc01d9583d70"
-					(reference "D301")
-					(unit 1)
-				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/2b5282ab-af9c-4a87-9298-b038bc35519a"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/629045ab-4657-47a2-9782-c828331f900e"
 					(reference "D401")
 					(unit 1)
 				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/4bf5a6e5-e48f-4eec-a2e1-f4eae4d579b8"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/7c3bcc04-9b52-4d44-9a5e-d94c42574bf1"
+					(reference "D501")
+					(unit 1)
+				)
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/c019dc8f-18d8-4677-8552-b568a06be594"
+					(reference "D301")
+					(unit 1)
+				)
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/e05a4049-58a1-4ded-9a2e-aaae4b730faf"
 					(reference "D601")
 					(unit 1)
 				)
@@ -4860,11 +4907,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "423b7622-1482-4da4-8f45-529a619aef78")
+			(uuid "4315754a-17ad-4e0c-a0c5-ac6a1f6af67b")
 		)
 		(instances
 			(project "Battery_Board"
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/01ab7845-2334-4a8f-b61c-37d80644daae"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/0bc201de-2920-4f1d-8d52-3a817d1a1147"
 					(reference "#PWR0702")
 					(unit 1)
 				)
@@ -4872,19 +4919,19 @@
 					(reference "#PWR0202")
 					(unit 1)
 				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/124a120d-138c-411d-b8db-08000d22d3c8"
-					(reference "#PWR0502")
-					(unit 1)
-				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/16e86f59-93b5-4321-8278-cc01d9583d70"
-					(reference "#PWR0302")
-					(unit 1)
-				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/2b5282ab-af9c-4a87-9298-b038bc35519a"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/629045ab-4657-47a2-9782-c828331f900e"
 					(reference "#PWR0402")
 					(unit 1)
 				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/4bf5a6e5-e48f-4eec-a2e1-f4eae4d579b8"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/7c3bcc04-9b52-4d44-9a5e-d94c42574bf1"
+					(reference "#PWR0502")
+					(unit 1)
+				)
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/c019dc8f-18d8-4677-8552-b568a06be594"
+					(reference "#PWR0302")
+					(unit 1)
+				)
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/e05a4049-58a1-4ded-9a2e-aaae4b730faf"
 					(reference "#PWR0602")
 					(unit 1)
 				)
@@ -4947,14 +4994,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "b100e4e9-f16e-4da9-990e-02059e7f7ad6")
+			(uuid "d224fb5c-076d-4261-8b50-84cc9d896bd3")
 		)
 		(pin "2"
-			(uuid "cab31d27-3aa5-4327-b359-621ddf8ecf61")
+			(uuid "b2e48603-7c54-4fd6-a6c9-979ea54f120d")
 		)
 		(instances
 			(project "Battery_Board"
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/01ab7845-2334-4a8f-b61c-37d80644daae"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/0bc201de-2920-4f1d-8d52-3a817d1a1147"
 					(reference "J701")
 					(unit 1)
 				)
@@ -4962,19 +5009,19 @@
 					(reference "J201")
 					(unit 1)
 				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/124a120d-138c-411d-b8db-08000d22d3c8"
-					(reference "J501")
-					(unit 1)
-				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/16e86f59-93b5-4321-8278-cc01d9583d70"
-					(reference "J301")
-					(unit 1)
-				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/2b5282ab-af9c-4a87-9298-b038bc35519a"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/629045ab-4657-47a2-9782-c828331f900e"
 					(reference "J401")
 					(unit 1)
 				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/4bf5a6e5-e48f-4eec-a2e1-f4eae4d579b8"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/7c3bcc04-9b52-4d44-9a5e-d94c42574bf1"
+					(reference "J501")
+					(unit 1)
+				)
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/c019dc8f-18d8-4677-8552-b568a06be594"
+					(reference "J301")
+					(unit 1)
+				)
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/e05a4049-58a1-4ded-9a2e-aaae4b730faf"
 					(reference "J601")
 					(unit 1)
 				)
@@ -5037,41 +5084,41 @@
 			)
 		)
 		(pin "1"
-			(uuid "21968b2c-d9b3-4a87-906d-b9b9a2ae5ba3")
+			(uuid "bdfaecdf-7ee4-43fc-82f9-aae95c28a2ba")
 		)
 		(pin "2"
-			(uuid "7e345039-9e65-4a62-9a49-d77b0837226b")
+			(uuid "faf8e808-b4a8-48e5-88a1-2bc943b8d896")
 		)
 		(pin "3"
-			(uuid "21ab462b-ada2-45fe-9437-52a981f82e03")
+			(uuid "5ed6b5ae-e54e-47d0-b7ab-aa96d8b3034b")
 		)
 		(pin "5"
-			(uuid "967fefc5-ae2a-4f53-a241-cc621f09ec32")
+			(uuid "b97c3423-cd6a-4259-a7a7-d571c7d1e434")
 		)
 		(pin "7"
-			(uuid "8234ce37-e4e2-4dd5-8ecb-630bd35980a9")
+			(uuid "8d606551-a9a1-437a-bc9d-98b9c8e8c75e")
 		)
 		(pin "9"
-			(uuid "cef1e15e-4c63-4571-95c1-b41a340b9ab5")
+			(uuid "44920914-5961-4067-bebc-fda7029db98a")
 		)
 		(pin "11"
-			(uuid "5f57b681-862c-41e4-b97d-5d6ca7fbba61")
+			(uuid "69b3bf9e-8b51-4d55-96ce-a6e6baa18f2a")
 		)
 		(pin "4"
-			(uuid "9598086b-04e4-4f97-b057-5431d0954121")
+			(uuid "e2e66442-8592-4ec0-9c52-d6733893291b")
 		)
 		(pin "10"
-			(uuid "90ae3e88-41bc-4651-b0a8-843bd4f9eb61")
+			(uuid "dac7912c-33c6-4eac-81e8-9c187598043c")
 		)
 		(pin "6"
-			(uuid "c0701399-5728-41ca-b89e-d88cd8439406")
+			(uuid "bf8bb1ca-104b-4779-9dcd-33636b583d0f")
 		)
 		(pin "8"
-			(uuid "21e4e1c7-072c-4171-87d1-d4ba9a92773c")
+			(uuid "cb61f0f6-e57f-4eb8-92e4-1ffc678e1223")
 		)
 		(instances
 			(project "Battery_Board"
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/01ab7845-2334-4a8f-b61c-37d80644daae"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/0bc201de-2920-4f1d-8d52-3a817d1a1147"
 					(reference "U701")
 					(unit 1)
 				)
@@ -5079,19 +5126,19 @@
 					(reference "U201")
 					(unit 1)
 				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/124a120d-138c-411d-b8db-08000d22d3c8"
-					(reference "U501")
-					(unit 1)
-				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/16e86f59-93b5-4321-8278-cc01d9583d70"
-					(reference "U301")
-					(unit 1)
-				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/2b5282ab-af9c-4a87-9298-b038bc35519a"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/629045ab-4657-47a2-9782-c828331f900e"
 					(reference "U401")
 					(unit 1)
 				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/4bf5a6e5-e48f-4eec-a2e1-f4eae4d579b8"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/7c3bcc04-9b52-4d44-9a5e-d94c42574bf1"
+					(reference "U501")
+					(unit 1)
+				)
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/c019dc8f-18d8-4677-8552-b568a06be594"
+					(reference "U301")
+					(unit 1)
+				)
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/e05a4049-58a1-4ded-9a2e-aaae4b730faf"
 					(reference "U601")
 					(unit 1)
 				)
@@ -5155,107 +5202,107 @@
 			)
 		)
 		(pin "29"
-			(uuid "7deb49f2-bd81-49a6-9ccb-7b2989cf9451")
+			(uuid "7fd62c5d-8407-4e22-99eb-8ff50fab6ac4")
 		)
 		(pin "30"
-			(uuid "939e8b42-9355-45a9-b6bd-7dcb7166f0e5")
+			(uuid "653c47c6-2e42-41c2-9dcc-fcf952cec693")
 		)
 		(pin "16"
-			(uuid "20a51a20-1f5b-4f78-815a-0e02bd2d863c")
+			(uuid "5fc592ef-1c6f-42a4-9a67-02d30f17bb71")
 		)
 		(pin "21"
-			(uuid "f99a3f1b-ed1b-4415-bc60-3919b8e0639f")
+			(uuid "9ae82bc3-56be-4b2f-8f22-4342223ace90")
 		)
 		(pin "7"
-			(uuid "21f07432-b970-4fd4-9481-3ae3cbb28f67")
+			(uuid "6773044a-e431-4875-88fd-2bdb309e3ba6")
 		)
 		(pin "26"
-			(uuid "e7a1f8a2-d341-49ab-a4ab-a37c099f8d3d")
+			(uuid "e928db2c-5794-4ea8-ba31-bda62fa89f8c")
 		)
 		(pin "28"
-			(uuid "9d948381-cdb1-49b6-accb-ccc793099604")
+			(uuid "82b0a43b-e8fc-463e-89a0-6fc5f400165f")
 		)
 		(pin "22"
-			(uuid "08ff1dcc-eb3d-4e9e-9975-c4c9e40bc48a")
+			(uuid "54b43ddb-bfe3-4b4a-904c-0160e0c1ef95")
 		)
 		(pin "5"
-			(uuid "0ed8eb1c-dc83-418a-b6b1-0960e75b13a0")
+			(uuid "bbf64777-e63d-479b-ab61-d809ab69552f")
 		)
 		(pin "20"
-			(uuid "fba9e2fe-e994-4153-8410-d64204bebb68")
+			(uuid "aa671eeb-ea02-463a-84f9-6b2c53c30ca1")
 		)
 		(pin "19"
-			(uuid "b55dea6e-0c37-4834-a967-088758513b23")
+			(uuid "8018053f-5826-4578-8fda-221e702014ac")
 		)
 		(pin "25"
-			(uuid "02ad0a47-517d-4215-804f-43f61552b178")
+			(uuid "e22cb666-43c1-4e96-a5ba-b9bf2860779b")
 		)
 		(pin "18"
-			(uuid "cf74244e-bfaf-4cd3-9ad1-4435193f5d0c")
+			(uuid "690c835d-3835-47bc-bfd0-b2cfe96fef22")
 		)
 		(pin "8"
-			(uuid "d410071e-cefe-4fa8-84a8-19f9ad84e680")
+			(uuid "267365af-2bb8-4ec4-996f-a516440853a6")
 		)
 		(pin "31"
-			(uuid "69971238-08ec-4d08-8259-d0dac708b963")
+			(uuid "672fb050-9e31-4a9b-bb0b-83ae83eae694")
 		)
 		(pin "33"
-			(uuid "bd7985e0-1a2f-4afb-a6f0-f47d98d7a94e")
+			(uuid "2e88ac9c-82b1-41b3-ab9f-8bfac3f341c0")
 		)
 		(pin "17"
-			(uuid "7f2a245a-1239-4dab-9c4a-06a04b145378")
+			(uuid "9e76fc58-94eb-46a3-8d04-680384dad317")
 		)
 		(pin "2"
-			(uuid "0ce07b5d-0b3d-437e-90eb-552fe8bd6937")
+			(uuid "4d6b037a-f0bc-4aa9-9ef2-775688065926")
 		)
 		(pin "14"
-			(uuid "7c31895f-5ab3-4b8d-ab6f-aa35237d9f4e")
+			(uuid "f3678a49-26eb-4636-b081-85ddaeee330f")
 		)
 		(pin "9"
-			(uuid "1687a595-d44c-4a75-b121-9d680a692915")
+			(uuid "1f2823b7-40eb-4959-a005-b9bbdcf83ad3")
 		)
 		(pin "27"
-			(uuid "ee46accc-ea09-407c-b511-abf0f7dc13ba")
+			(uuid "6616d738-501e-4fa7-80a2-163b6ebb21fc")
 		)
 		(pin "32"
-			(uuid "c312473b-75f7-4b30-99b3-9fee3ca977f6")
+			(uuid "8fa33729-53b5-4f1b-aea3-82045b636a65")
 		)
 		(pin "13"
-			(uuid "a76ff069-2894-4019-8bd3-834c5f529a63")
+			(uuid "67f6f0d4-17a0-4010-8f19-0b083aedf051")
 		)
 		(pin "15"
-			(uuid "42e5ba88-0ce1-4a99-8732-4794717dfea9")
+			(uuid "64144e42-77d2-4a3c-80e0-d5f58d711fd6")
 		)
 		(pin "11"
-			(uuid "12b8eda4-dfe5-40a2-a2a7-20012b2a19c3")
+			(uuid "65468d81-c65e-48c8-83b5-e92a7e7fb384")
 		)
 		(pin "3"
-			(uuid "539fe928-ac84-4bc7-ab4c-9ffda654a617")
+			(uuid "1c9a3ac2-7d0e-417c-95f2-fb202c89c9d0")
 		)
 		(pin "4"
-			(uuid "a3e7fe96-3d55-456d-b6d4-1646b741bee9")
+			(uuid "03ed4e90-e884-4beb-9944-e4cd0f0cfa10")
 		)
 		(pin "6"
-			(uuid "8289d0fd-f577-4543-8c93-08f7a36fb4de")
+			(uuid "5f1843c5-c7d3-45f0-919f-84c04ca8028e")
 		)
 		(pin "12"
-			(uuid "991d6486-4fe4-46d6-bc0b-6cee639254ea")
+			(uuid "ab382c79-25bc-4673-9323-74121fb6c4ca")
 		)
 		(pin "24"
-			(uuid "131e261c-9a54-4959-b4f0-b9c937e3bc51")
+			(uuid "67a8a4c4-118e-4050-82ef-9749afd60f8d")
 		)
 		(pin "10"
-			(uuid "28a389d6-6bac-497f-9de5-a5d0eba41251")
+			(uuid "fca9682c-0796-46bb-bba2-f2deb34a4c54")
 		)
 		(pin "23"
-			(uuid "4d3d4729-e726-45f9-9e3c-304c115eb761")
+			(uuid "02f72815-5dca-40cb-a712-1851dc1c0022")
 		)
 		(pin "1"
-			(uuid "72b61063-4b84-441d-8833-1f8c554f3d81")
+			(uuid "92356e99-37e3-4dd2-9a18-7e26df3ed28a")
 		)
 		(instances
 			(project "Battery_Board"
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/01ab7845-2334-4a8f-b61c-37d80644daae"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/0bc201de-2920-4f1d-8d52-3a817d1a1147"
 					(reference "U702")
 					(unit 1)
 				)
@@ -5263,19 +5310,19 @@
 					(reference "U202")
 					(unit 1)
 				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/124a120d-138c-411d-b8db-08000d22d3c8"
-					(reference "U502")
-					(unit 1)
-				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/16e86f59-93b5-4321-8278-cc01d9583d70"
-					(reference "U302")
-					(unit 1)
-				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/2b5282ab-af9c-4a87-9298-b038bc35519a"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/629045ab-4657-47a2-9782-c828331f900e"
 					(reference "U402")
 					(unit 1)
 				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/4bf5a6e5-e48f-4eec-a2e1-f4eae4d579b8"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/7c3bcc04-9b52-4d44-9a5e-d94c42574bf1"
+					(reference "U502")
+					(unit 1)
+				)
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/c019dc8f-18d8-4677-8552-b568a06be594"
+					(reference "U302")
+					(unit 1)
+				)
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/e05a4049-58a1-4ded-9a2e-aaae4b730faf"
 					(reference "U602")
 					(unit 1)
 				)
@@ -5337,14 +5384,14 @@
 			)
 		)
 		(pin "2"
-			(uuid "a84ae19c-fe85-408b-91bb-10428b52724e")
+			(uuid "d1c91ac3-4bb6-4f20-93c9-3e798ac5a992")
 		)
 		(pin "1"
-			(uuid "f058382b-8cbd-42ed-bb82-3cd3f0a1d941")
+			(uuid "59b0de2d-40b1-44ae-a9fb-ea6312026bdf")
 		)
 		(instances
 			(project "Battery_Board"
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/01ab7845-2334-4a8f-b61c-37d80644daae"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/0bc201de-2920-4f1d-8d52-3a817d1a1147"
 					(reference "R704")
 					(unit 1)
 				)
@@ -5352,19 +5399,19 @@
 					(reference "R204")
 					(unit 1)
 				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/124a120d-138c-411d-b8db-08000d22d3c8"
-					(reference "R504")
-					(unit 1)
-				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/16e86f59-93b5-4321-8278-cc01d9583d70"
-					(reference "R304")
-					(unit 1)
-				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/2b5282ab-af9c-4a87-9298-b038bc35519a"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/629045ab-4657-47a2-9782-c828331f900e"
 					(reference "R404")
 					(unit 1)
 				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/4bf5a6e5-e48f-4eec-a2e1-f4eae4d579b8"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/7c3bcc04-9b52-4d44-9a5e-d94c42574bf1"
+					(reference "R504")
+					(unit 1)
+				)
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/c019dc8f-18d8-4677-8552-b568a06be594"
+					(reference "R304")
+					(unit 1)
+				)
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/e05a4049-58a1-4ded-9a2e-aaae4b730faf"
 					(reference "R604")
 					(unit 1)
 				)
@@ -5427,14 +5474,14 @@
 			)
 		)
 		(pin "2"
-			(uuid "9303690b-a50b-4413-82d5-52e2170b542e")
+			(uuid "7bdcff2a-dfb2-40da-a6b1-08a1ece432f3")
 		)
 		(pin "1"
-			(uuid "d393b065-7e34-4b99-986f-69dbe7a5fcd0")
+			(uuid "9f4c923a-04b1-4aee-a972-b3d83ccb5087")
 		)
 		(instances
 			(project "Battery_Board"
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/01ab7845-2334-4a8f-b61c-37d80644daae"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/0bc201de-2920-4f1d-8d52-3a817d1a1147"
 					(reference "R703")
 					(unit 1)
 				)
@@ -5442,19 +5489,19 @@
 					(reference "R203")
 					(unit 1)
 				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/124a120d-138c-411d-b8db-08000d22d3c8"
-					(reference "R503")
-					(unit 1)
-				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/16e86f59-93b5-4321-8278-cc01d9583d70"
-					(reference "R303")
-					(unit 1)
-				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/2b5282ab-af9c-4a87-9298-b038bc35519a"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/629045ab-4657-47a2-9782-c828331f900e"
 					(reference "R403")
 					(unit 1)
 				)
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/4bf5a6e5-e48f-4eec-a2e1-f4eae4d579b8"
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/7c3bcc04-9b52-4d44-9a5e-d94c42574bf1"
+					(reference "R503")
+					(unit 1)
+				)
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/c019dc8f-18d8-4677-8552-b568a06be594"
+					(reference "R303")
+					(unit 1)
+				)
+				(path "/d3692c46-3072-44c6-b58b-509187a5d50a/e05a4049-58a1-4ded-9a2e-aaae4b730faf"
 					(reference "R603")
 					(unit 1)
 				)
