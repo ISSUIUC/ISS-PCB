@@ -175,30 +175,30 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:USB_C_Receptacle_USB2.0_16P"
+		(symbol "Connector:USB_C_Receptacle_USB2.0"
 			(pin_names
 				(offset 1.016)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "J"
-				(at 0 22.225 0)
+			(property "Reference" "J101"
+				(at 0 22.86 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "USB_C_Receptacle_USB2.0_16P"
-				(at 0 19.685 0)
+			(property "Value" "USB4105-GF-A"
+				(at 0 20.32 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal"
 				(at 3.81 0 0)
 				(effects
 					(font
@@ -207,7 +207,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
+			(property "Datasheet" "https://gct.co/connector/usb4105"
 				(at 3.81 0 0)
 				(effects
 					(font
@@ -216,7 +216,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
+			(property "Description" "USB 2.0-only Type-C Receptacle connector"
 				(at 0 0 0)
 				(effects
 					(font
@@ -243,7 +243,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "USB_C_Receptacle_USB2.0_16P_0_0"
+			(symbol "USB_C_Receptacle_USB2.0_0_0"
 				(rectangle
 					(start -0.254 -17.78)
 					(end 0.254 -16.764)
@@ -355,7 +355,7 @@
 					)
 				)
 			)
-			(symbol "USB_C_Receptacle_USB2.0_16P_0_1"
+			(symbol "USB_C_Receptacle_USB2.0_0_1"
 				(rectangle
 					(start -10.16 17.78)
 					(end 10.16 -17.78)
@@ -556,7 +556,7 @@
 					)
 				)
 			)
-			(symbol "USB_C_Receptacle_USB2.0_16P_1_1"
+			(symbol "USB_C_Receptacle_USB2.0_1_1"
 				(pin passive line
 					(at -7.62 -22.86 90)
 					(length 5.08)
@@ -764,42 +764,6 @@
 				(pin bidirectional line
 					(at 15.24 2.54 180)
 					(length 5.08)
-					(name "D-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "A7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 15.24 0 180)
-					(length 5.08)
-					(name "D-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "B7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 15.24 -2.54 180)
-					(length 5.08)
 					(name "D+"
 						(effects
 							(font
@@ -816,7 +780,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 15.24 -5.08 180)
+					(at 15.24 0 180)
 					(length 5.08)
 					(name "D+"
 						(effects
@@ -826,6 +790,42 @@
 						)
 					)
 					(number "B6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -2.54 180)
+					(length 5.08)
+					(name "D-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -5.08 180)
+					(length 5.08)
+					(name "D-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6426,6 +6426,16 @@
 	)
 	(wire
 		(pts
+			(xy 53.34 48.26) (xy 53.34 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "165a8fd8-77f9-48c3-a2c9-d521d7ef9b83")
+	)
+	(wire
+		(pts
 			(xy 219.71 63.5) (xy 219.71 64.77)
 		)
 		(stroke
@@ -7696,16 +7706,6 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 48.26) (xy 53.34 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "da365d9a-2add-4769-8845-9cf9677ddad0")
-	)
-	(wire
-		(pts
 			(xy 219.71 73.66) (xy 219.71 74.93)
 		)
 		(stroke
@@ -8124,6 +8124,16 @@
 		)
 		(uuid "1c5a698a-010f-4e1d-8fc7-74f710477dca")
 	)
+	(label "D+"
+		(at 53.34 43.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "26de527b-3990-41c5-b40b-66a97f75d4b7")
+	)
 	(label "BOOT"
 		(at 246.38 88.9 180)
 		(effects
@@ -8175,6 +8185,16 @@
 			(justify left bottom)
 		)
 		(uuid "394bb940-43f5-486a-b8a6-059672ca55de")
+	)
+	(label "D-"
+		(at 53.34 48.26 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3ab06b8c-86d8-4f2f-b171-10ba9a0b9d31")
 	)
 	(label "CS_RADIO"
 		(at 133.35 27.94 0)
@@ -10764,119 +10784,6 @@
 			(project ""
 				(path "/7c2abd51-3bc4-4f94-b9a9-b2965dd12999"
 					(reference "C16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:USB_C_Receptacle_USB2.0_16P")
-		(at 35.56 43.18 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5dd9ef05-0ed3-47ea-92b9-0899a77388f5")
-		(property "Reference" "J1"
-			(at 35.56 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "USB_C_Receptacle_USB2.0_16P"
-			(at 35.56 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal"
-			(at 39.37 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
-			(at 39.37 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
-			(at 35.56 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "B9"
-			(uuid "1d03045b-2ea2-42a1-ac7a-4eda73d6dd7b")
-		)
-		(pin "B7"
-			(uuid "4950bce2-2e13-405a-abff-feaa49e4158e")
-		)
-		(pin "A6"
-			(uuid "3749f220-1761-4f83-aefe-aa7aeb01ee7c")
-		)
-		(pin "A4"
-			(uuid "91a5bb2f-309e-4542-8d7a-2812c2331dc1")
-		)
-		(pin "B12"
-			(uuid "55f676e8-6c39-4af5-a1ec-8581e57ece86")
-		)
-		(pin "A12"
-			(uuid "b0b241b9-9526-4843-97b1-aad2674a1f70")
-		)
-		(pin "A1"
-			(uuid "3d304269-b3f1-40eb-af5b-ef2ef912a7e8")
-		)
-		(pin "S1"
-			(uuid "e5293d84-3e3f-4783-bf8d-70b02bc806a1")
-		)
-		(pin "B6"
-			(uuid "201b56df-1c29-4e20-a51c-da06c986acb9")
-		)
-		(pin "A7"
-			(uuid "c2f4e13a-6384-4783-b6e2-7b45656780e3")
-		)
-		(pin "A9"
-			(uuid "f652bd3f-d16c-4851-8ffb-1abd9d680bb7")
-		)
-		(pin "B5"
-			(uuid "76fcc99f-4028-4dbd-bd73-a6a66a70dc16")
-		)
-		(pin "A5"
-			(uuid "f2c9c0ca-7099-4f75-a96d-ce1eae0e0965")
-		)
-		(pin "B4"
-			(uuid "befff171-69de-4763-a114-df43b116659d")
-		)
-		(pin "B8"
-			(uuid "f90b730e-8cd5-4f28-88a0-f996cf8b615c")
-		)
-		(pin "A8"
-			(uuid "90f85a51-b368-4635-a586-a315d3403046")
-		)
-		(pin "B1"
-			(uuid "2ac5be31-23c9-4e04-ae47-57a97cc79c1b")
-		)
-		(instances
-			(project ""
-				(path "/7c2abd51-3bc4-4f94-b9a9-b2965dd12999"
-					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -14544,6 +14451,119 @@
 			(project "TeleDecoder"
 				(path "/7c2abd51-3bc4-4f94-b9a9-b2965dd12999"
 					(reference "C14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:USB_C_Receptacle_USB2.0")
+		(at 35.56 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e5c8e063-8b9a-461f-9e60-a494b399457a")
+		(property "Reference" "J101"
+			(at 35.56 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "USB4105-GF-A"
+			(at 38.735 62.865 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal"
+			(at 39.37 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://gct.co/connector/usb4105"
+			(at 39.37 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 35.56 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "A1"
+			(uuid "8c11eead-8cc2-44f0-a3c8-d9e1f1260567")
+		)
+		(pin "A12"
+			(uuid "c6863db7-d433-4ef3-8332-a353da43544e")
+		)
+		(pin "A4"
+			(uuid "9dac92a7-e4e0-4c51-8ed5-3d3f70dfdcba")
+		)
+		(pin "A5"
+			(uuid "37d68ab6-b794-4f21-827d-d4e16d10ddce")
+		)
+		(pin "A6"
+			(uuid "403e36ff-4492-41ec-baff-51c1ad583481")
+		)
+		(pin "A7"
+			(uuid "79a19be3-78d1-4699-9dd4-36c58950ddb4")
+		)
+		(pin "A8"
+			(uuid "c87e71b0-c31b-4980-b180-015047ebf1c5")
+		)
+		(pin "A9"
+			(uuid "48e73193-d9d0-4fa7-9784-3405ef2337ed")
+		)
+		(pin "B1"
+			(uuid "6bf9c309-a1ba-49ed-8624-6c0006704956")
+		)
+		(pin "B12"
+			(uuid "6425276d-8aa7-47e8-9639-ff1542a12ef8")
+		)
+		(pin "B4"
+			(uuid "734eb3fa-b187-4dc2-ac67-56732e8d1fa4")
+		)
+		(pin "B5"
+			(uuid "3e659740-19cc-44ad-b909-d9acedf12785")
+		)
+		(pin "B6"
+			(uuid "6d41b11c-6d8c-428a-8135-cc56fe3d8e69")
+		)
+		(pin "B7"
+			(uuid "a428c9e0-cbaf-42f0-ab66-3ea1e67f4df2")
+		)
+		(pin "B8"
+			(uuid "c29c631e-154e-4da7-8bcf-f1fb20991782")
+		)
+		(pin "B9"
+			(uuid "8ac362b2-f3f1-4906-a7df-335b8d09ee5d")
+		)
+		(pin "S1"
+			(uuid "37b24502-4c4d-43a6-9618-9283f5444d83")
+		)
+		(instances
+			(project "TeleDecoder"
+				(path "/7c2abd51-3bc4-4f94-b9a9-b2965dd12999"
+					(reference "J101")
 					(unit 1)
 				)
 			)
