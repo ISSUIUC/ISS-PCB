@@ -7866,7 +7866,7 @@
 		)
 		(uuid "9d682a88-b845-4e58-9ef0-eb81407b72e7")
 	)
-	(text "RF4463PRO\n"
+	(text "LR2021"
 		(exclude_from_sim no)
 		(at 13.716 165.608 0)
 		(effects
@@ -11713,7 +11713,7 @@
 		)
 		(uuid "099c94af-282b-4885-90c8-2913fc78c69f")
 	)
-	(hierarchical_label "LR2021_nIRQ"
+	(hierarchical_label "LR2021_nRST"
 		(shape output)
 		(at 29.21 97.79 180)
 		(effects
@@ -11768,6 +11768,17 @@
 		)
 		(uuid "18b6ecd2-459f-4205-a350-1a15e3e681f2")
 	)
+	(hierarchical_label "LR2021_DIO8"
+		(shape output)
+		(at 64.77 139.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "214648f1-db13-4cba-bc67-63ca5dba57c4")
+	)
 	(hierarchical_label "SPI_SCK"
 		(shape bidirectional)
 		(at 320.04 111.76 180)
@@ -11789,17 +11800,6 @@
 			(justify right)
 		)
 		(uuid "27459acc-4809-43fe-94ab-d88f1cf52af3")
-	)
-	(hierarchical_label "LR2021_DIO7"
-		(shape output)
-		(at 29.21 92.71 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "2f85d9be-3117-4b7e-959c-8500c1445272")
 	)
 	(hierarchical_label "SPI_MISO"
 		(shape input)
@@ -11844,17 +11844,6 @@
 			(justify right)
 		)
 		(uuid "382b275d-0047-4302-80b8-44f0400b18c2")
-	)
-	(hierarchical_label "LR2021_DIO8"
-		(shape input)
-		(at 63.5 142.24 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "39b891f9-6e62-4812-b52f-97bec82fcd33")
 	)
 	(hierarchical_label "SPI_SCK"
 		(shape input)
@@ -11910,6 +11899,17 @@
 			(justify right)
 		)
 		(uuid "4be05e7b-5876-4771-b911-e4c6cc32d917")
+	)
+	(hierarchical_label "LR2021_DIO7"
+		(shape output)
+		(at 63.5 142.24 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4dc60d03-779a-4d58-a1a9-8bd4345f70c9")
 	)
 	(hierarchical_label "LR2021_DIO7"
 		(shape input)
@@ -12043,7 +12043,18 @@
 		)
 		(uuid "78b6a7ef-2e41-4fd6-bd6d-81ddf99bb80f")
 	)
-	(hierarchical_label "LR2021_nIRQ"
+	(hierarchical_label "LR2021_DIO9"
+		(shape output)
+		(at 29.21 92.71 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7a0c6c87-4fdb-4ab5-81cf-8d6feae98a4b")
+	)
+	(hierarchical_label "LR2021_BUSY"
 		(shape input)
 		(at 34.29 200.66 180)
 		(effects
@@ -12131,7 +12142,7 @@
 		)
 		(uuid "96ee8b26-ecec-47c9-97c9-89fdd345d7b8")
 	)
-	(hierarchical_label "LR2021_EN"
+	(hierarchical_label "LR2021_BUSY"
 		(shape output)
 		(at 29.21 95.25 180)
 		(effects
@@ -12197,7 +12208,7 @@
 		)
 		(uuid "b0b513b9-eadf-4758-be3b-a3805eec1f44")
 	)
-	(hierarchical_label "LR2021_EN"
+	(hierarchical_label "LR2021_nRST"
 		(shape input)
 		(at 63.5 181.61 0)
 		(effects
@@ -12328,17 +12339,6 @@
 			(justify right)
 		)
 		(uuid "f4717d60-53f5-4917-8974-b0094709995b")
-	)
-	(hierarchical_label "LR2021_DIO9"
-		(shape input)
-		(at 64.77 139.7 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "fa266ff8-bbdf-4332-8393-a912da3427d3")
 	)
 	(hierarchical_label "SENSE_SDA"
 		(shape bidirectional)
@@ -19109,7 +19109,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "RF_Module_NiceRF:LR2021"
 			(at 48.26 191.77 0)
 			(effects
 				(font
