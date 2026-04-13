@@ -3149,7 +3149,7 @@
 						)
 					)
 				)
-				(pin passive line
+				(pin no_connect line
 					(at -12.7 -7.62 0)
 					(length 2.54)
 					(hide yes)
@@ -3168,7 +3168,26 @@
 						)
 					)
 				)
-				(pin passive line
+				(pin no_connect line
+					(at -12.7 -7.62 0)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
 					(at -12.7 -7.62 0)
 					(length 2.54)
 					(hide yes)
@@ -3187,7 +3206,7 @@
 						)
 					)
 				)
-				(pin passive line
+				(pin no_connect line
 					(at -12.7 -7.62 0)
 					(length 2.54)
 					(hide yes)
@@ -3199,25 +3218,6 @@
 						)
 					)
 					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 -10.16 0)
-					(length 2.54)
-					(hide yes)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "19"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -8601,6 +8601,16 @@
 	)
 	(wire
 		(pts
+			(xy 173.99 231.14) (xy 173.99 238.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c57785a-18e3-486d-ae92-eda318312015")
+	)
+	(wire
+		(pts
 			(xy 43.18 210.82) (xy 43.18 213.36)
 		)
 		(stroke
@@ -8888,6 +8898,16 @@
 			(type default)
 		)
 		(uuid "6c9fc107-a536-4c94-a870-b90902f47572")
+	)
+	(wire
+		(pts
+			(xy 173.355 231.14) (xy 173.99 231.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d2302d5-c5dd-4fe0-81d3-01c6aa00d7f8")
 	)
 	(wire
 		(pts
@@ -9608,16 +9628,6 @@
 			(type default)
 		)
 		(uuid "a827b212-6129-4722-bd10-d274b7b6c683")
-	)
-	(wire
-		(pts
-			(xy 173.99 233.68) (xy 173.99 238.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a92ae888-0813-4292-9b14-b7dac24d0fe3")
 	)
 	(wire
 		(pts
@@ -11012,17 +11022,6 @@
 		)
 		(uuid "0be30311-f0c7-4c71-8485-b0e448b69977")
 	)
-	(hierarchical_label "BATT_4_V_SENSE"
-		(shape input)
-		(at 66.04 171.45 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "0e97c300-f245-4354-b47b-040b8cf13596")
-	)
 	(hierarchical_label "BATT_3_V_SENSE"
 		(shape output)
 		(at 64.77 222.25 0)
@@ -11055,6 +11054,17 @@
 			(justify right)
 		)
 		(uuid "16a8f1a7-29de-45f0-8165-5927b5bbecf1")
+	)
+	(hierarchical_label "Debug_LED_ORANGE"
+		(shape input)
+		(at 127 65.405 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "18dcb275-c30f-476c-b024-880aaa6e2618")
 	)
 	(hierarchical_label "USB_CC1"
 		(shape input)
@@ -11136,17 +11146,6 @@
 		)
 		(uuid "2db3da40-db5e-47ca-a75a-e16fbdd52ca1")
 	)
-	(hierarchical_label "Debug_LED_ORANGE"
-		(shape input)
-		(at 127 70.485 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "2e939b91-2cfa-47bb-85b7-a625907026ee")
-	)
 	(hierarchical_label "5V"
 		(shape input)
 		(at 318.008 58.42 180)
@@ -11158,6 +11157,28 @@
 		)
 		(uuid "2f7f0836-c4de-43ee-ae6d-3c648f953e01")
 	)
+	(hierarchical_label "BATT_4_V_SENSE"
+		(shape input)
+		(at 66.04 168.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "30f4241d-3262-4be2-a476-bce934a683cc")
+	)
+	(hierarchical_label "Debug_LED_BLUE"
+		(shape input)
+		(at 127 70.485 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3206e52c-08e8-409c-9831-1b2e1596fae7")
+	)
 	(hierarchical_label "BATT_4_V"
 		(shape input)
 		(at 24.13 243.84 0)
@@ -11168,17 +11189,6 @@
 			(justify left)
 		)
 		(uuid "35cc3697-e05a-4843-8dc8-38f6e38568bf")
-	)
-	(hierarchical_label "BATT_2_V_SENSE"
-		(shape input)
-		(at 66.04 166.37 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "38ab0550-10eb-4548-9f29-cc2eb28ddc95")
 	)
 	(hierarchical_label "5V"
 		(shape input)
@@ -11213,7 +11223,7 @@
 		)
 		(uuid "4b442899-ce99-47cb-a887-58c4e9c81411")
 	)
-	(hierarchical_label "BATT_6_V_SENSE"
+	(hierarchical_label "BATT_1_V_SENSE"
 		(shape input)
 		(at 66.04 176.53 0)
 		(effects
@@ -11222,7 +11232,7 @@
 			)
 			(justify left)
 		)
-		(uuid "5865dac7-99d9-4b27-821e-5321bf56afb5")
+		(uuid "52833e10-7817-413f-829e-149ffa12f5d0")
 	)
 	(hierarchical_label "SWCLK"
 		(shape bidirectional)
@@ -11447,6 +11457,17 @@
 		)
 		(uuid "8a799f30-9c00-495a-918f-278346ec828a")
 	)
+	(hierarchical_label "BATT_5_V_SENSE"
+		(shape input)
+		(at 66.04 166.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8a975a1d-f509-411f-8fe8-201dc32caf8d")
+	)
 	(hierarchical_label "D-"
 		(shape output)
 		(at 36.83 100.965 180)
@@ -11468,28 +11489,6 @@
 			(justify right)
 		)
 		(uuid "8d4abbcb-ed39-4ebf-b7d0-0f093cf03b75")
-	)
-	(hierarchical_label "Debug_LED_GREEN"
-		(shape input)
-		(at 127 65.405 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "8fc4b944-060a-4f5b-bec3-96c912fc4532")
-	)
-	(hierarchical_label "Debug_LED_BLUE"
-		(shape input)
-		(at 127 67.945 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "90a3879a-9022-4546-a9f9-09dac5321a36")
 	)
 	(hierarchical_label "I2C_SDA"
 		(shape bidirectional)
@@ -11513,16 +11512,16 @@
 		)
 		(uuid "94c1ec62-e2db-416d-9825-cd724b16d53c")
 	)
-	(hierarchical_label "BATT_5_V_SENSE"
+	(hierarchical_label "5V"
 		(shape input)
-		(at 66.04 173.99 0)
+		(at 173.355 231.14 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "99168130-b676-42ba-b78f-da0ebeb7331f")
+		(uuid "9631e9db-a79d-4499-be5d-ece61ab038ed")
 	)
 	(hierarchical_label "I2C_SDA"
 		(shape bidirectional)
@@ -11557,17 +11556,6 @@
 			(justify left)
 		)
 		(uuid "9dc0d5e5-5aa5-49f0-b616-11f8f047f5ef")
-	)
-	(hierarchical_label "BATT_1_V_SENSE"
-		(shape input)
-		(at 66.04 163.83 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "a7e2c8be-89ec-4a62-8c08-a3d12b3c25c8")
 	)
 	(hierarchical_label "OLED_RES"
 		(shape input)
@@ -11635,6 +11623,17 @@
 			(justify right)
 		)
 		(uuid "ba765bbd-52fb-4544-84e4-dab472ffdd0a")
+	)
+	(hierarchical_label "Debug_LED_GREEN"
+		(shape input)
+		(at 127 67.945 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bc20f447-f310-4d75-85fb-6ee9cc9a8c63")
 	)
 	(hierarchical_label "I2C_SCL"
 		(shape input)
@@ -11714,17 +11713,6 @@
 		)
 		(uuid "d13e0b29-39e3-4ced-aa82-cc57ec1df993")
 	)
-	(hierarchical_label "BATT_3_V_SENSE"
-		(shape input)
-		(at 66.04 168.91 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d1a0773d-cc1e-48c5-a2c3-57ca9d5d0274")
-	)
 	(hierarchical_label "LPUART_TX"
 		(shape input)
 		(at 254.635 85.725 180)
@@ -11791,6 +11779,28 @@
 		)
 		(uuid "de00acdc-0b56-497d-8dbd-64cf9cfa2432")
 	)
+	(hierarchical_label "BATT_2_V_SENSE"
+		(shape input)
+		(at 66.04 173.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "dfba2cbe-176d-4966-8ac4-04cc92f64e2a")
+	)
+	(hierarchical_label "BATT_6_V_SENSE"
+		(shape input)
+		(at 66.04 163.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e006e27a-a916-416b-9d19-73cdfa97a844")
+	)
 	(hierarchical_label "5V"
 		(shape input)
 		(at 167.64 30.48 180)
@@ -11801,6 +11811,17 @@
 			(justify right)
 		)
 		(uuid "e17a755d-72b8-46af-9355-ca3770a6bf86")
+	)
+	(hierarchical_label "BATT_3_V_SENSE"
+		(shape input)
+		(at 66.04 171.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e1a0e112-e336-4608-878e-95b01d6d5707")
 	)
 	(hierarchical_label "BATT_6_V"
 		(shape input)
@@ -13039,7 +13060,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100uF"
+		(property "Value" "100nF"
 			(at 255.27 234.95 0)
 			(effects
 				(font
@@ -21125,71 +21146,6 @@
 			(project "Battery_Board"
 				(path "/d3692c46-3072-44c6-b58b-509187a5d50a"
 					(reference "#PWR0114")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 173.99 233.68 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f641c110-4bd1-4cb8-ae5b-1f7af59e2eda")
-		(property "Reference" "#PWR0121"
-			(at 173.99 237.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 173.99 229.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 173.99 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 173.99 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 173.99 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4dbfa88b-8783-468a-9cce-8f06c8251c0f")
-		)
-		(instances
-			(project "Battery_Board"
-				(path "/d3692c46-3072-44c6-b58b-509187a5d50a"
-					(reference "#PWR0121")
 					(unit 1)
 				)
 			)
