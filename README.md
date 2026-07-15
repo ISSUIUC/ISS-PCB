@@ -3,7 +3,7 @@ Welcome to the ISS-PCB repo!
 
 # Repository Overview
 
-* Archive: Contains all past projects that the team has worked on, including Tars Mk1, Mk2, and Mk3
+* Archive: Moved to the [Archive](https://github.com/ISSUIUC/ISS-PCB-Archive) repo... check it out! 😁
 * Boards: Contains all of the present boards the team is working on
 * Docs: Contains various documents pertaining to PCB designs
 * Libs: Contains various templates, symbols and footprints that we use when designing PCBs
