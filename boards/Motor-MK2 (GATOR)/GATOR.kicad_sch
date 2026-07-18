@@ -1608,42 +1608,6 @@
 				)
 			)
 			(symbol "Qwiic_4_pin_0_0"
-				(polyline
-					(pts
-						(xy -3.81 6.35) (xy -3.81 -3.81)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 6.35) (xy -2.54 7.62)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 -3.81) (xy -2.54 -5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(rectangle
 					(start -3.175 4.7625)
 					(end -1.5875 5.3975)
@@ -1690,38 +1654,15 @@
 				)
 				(polyline
 					(pts
-						(xy -2.54 -5.08) (xy 5.08 -5.08)
+						(xy -2.54 7.62) (xy 5.08 7.62) (xy 5.08 -5.08) (xy -2.54 -5.08) (xy -3.81 -3.81) (xy -3.81 6.35)
+						(xy -2.54 7.62)
 					)
 					(stroke
 						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 7.62) (xy -2.54 7.62)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 -5.08) (xy 5.08 7.62)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
+						(type background)
 					)
 				)
 				(pin passive line
@@ -7882,7 +7823,7 @@
 			(width 0)
 			(type dash)
 			(color 0 0 0 1)
-			)
+		)
 		(fill
 			(type none)
 		)
@@ -8698,10 +8639,6 @@
 	(no_connect
 		(at 50.8 140.97)
 		(uuid "26ab23d1-f212-4e6c-8092-fdf1a1959a22")
-	)
-	(no_connect
-		(at 92.71 130.175)
-		(uuid "30aa95f1-e35f-4ac9-9342-ddfde60c7da7")
 	)
 	(no_connect
 		(at 373.38 236.22)
@@ -12205,28 +12142,6 @@
 	)
 	(global_label "USB-"
 		(shape input)
-		(at 85.09 130.81 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "59888f90-17fa-4571-9aba-67cb9096bb37")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 93.4576 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "USB-"
-		(shape input)
 		(at 76.2 198.12 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12265,28 +12180,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "USB+"
-		(shape input)
-		(at 85.09 128.27 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "cd507d47-c954-4743-86b1-0ebe71b21a04")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 93.4576 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -13017,6 +12910,17 @@
 		)
 		(uuid "903e7115-91c6-44e6-acc4-071cc87efa50")
 	)
+	(hierarchical_label "USB+"
+		(shape input)
+		(at 85.09 128.27 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "91d05779-3832-4380-80a6-ea47955d4bdd")
+	)
 	(hierarchical_label "E22_BUSY"
 		(shape output)
 		(at 76.2 208.28 0)
@@ -13214,6 +13118,17 @@
 			(justify left)
 		)
 		(uuid "da781a88-a146-4523-b7fa-5402942feb81")
+	)
+	(hierarchical_label "USB-"
+		(shape input)
+		(at 85.09 130.81 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "da9c19b8-c689-404b-8bbe-5831a77787f6")
 	)
 	(hierarchical_label "SDO"
 		(shape output)
@@ -18480,126 +18395,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
-			)
-		)
-		(property "MF" "SparkFun Electronics"
-			(at 345.44 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "2.9 mm"
-			(at 345.44 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "None"
-			(at 345.44 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 345.44 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/PRT-14417/SparkFun/view-part/?ref=eda"
-			(at 345.44 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 345.44 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" "NA"
-			(at 345.44 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/PRT-14417/SparkFun/view-part/?ref=snap"
-			(at 345.44 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "PRT-14417"
-			(at 345.44 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "QWIIC JST CONNECTOR - SMD 4-PIN"
-			(at 345.44 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 345.44 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "SparkFun Electronics"
-			(at 345.44 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
 				(hide yes)
 			)
 		)
