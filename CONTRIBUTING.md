@@ -207,6 +207,9 @@ When adding custom libraries to a project, you must point KiCad to the library f
   - ${ } tells KiCad to look in the folders specified by the path variable. KiCad then searches for the rest of the file path as normal.
   - Replace all \ with / in file paths
 
+
+  // set a link to HOW-TO 
+
 - ### **Library Table**
 
   Every time you import a new custom library to a specific project you must save and push the following files or else your library and relative path won't be imported!
