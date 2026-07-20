@@ -1,11 +1,11 @@
-# **How-To KiCAD Fundementals**
+# **How-To KiCAD Fundamentals**
 
 
 *Author(s): Kacper Paraniuk*
 
 ## Table of Contents
 
-- [Symbols](#Symbol Libraries)
+- [Symbols](#symbol-libraries)
 
 
 
@@ -17,4 +17,8 @@
 ### **Finding ISS Symbol Library**
 
 
+
+
+
+### **Setting Up Symbol Directories**
 
