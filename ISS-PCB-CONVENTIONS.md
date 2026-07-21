@@ -102,7 +102,7 @@ Power flags should always face upwards, and GND flags should face downwards. Whe
 
 - When working with the individual chip and not a module, keep the official library's symbol as is, since there are nuances to power supplies that should not be ignored
 
-<img src="ISS-PCB-KiCAD-Conventions-Power-Exception.png" alt="Power-Flags" width="500">
+<img src="images/ISS-PCB-KiCAD-Conventions-Power-Exception.png" alt="Symbol_Exception" width="500">
 
 
 
