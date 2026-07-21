@@ -26,9 +26,7 @@ You are a graphic designer that works with electrons.
 
 # **Consistency**
 
-Whenever making a formatting decision, it is vital to maintain consistency across the schematic with whatever formatting convention you choose. Essentially, pick something and stick with it.
-
-
+Whenever making a formatting decision, it is vital to maintain consistency across the schematic with whatever formatting convention you choose. Essentially, pick something and stick with it but make sure you also follow ISS conventions. 
 
 <br/>
 
@@ -76,13 +74,18 @@ Avoid overlapping text, reference designators, and symbols.
 
 Net names should be capitalized and contain no spaces. Use "_" instead of spaces.
 
-<img src="images/ISS-PCB-KiCAD-Conventions-Net-Names.png" alt="Net-Names" width="100">
+<img src="images/ISS-PCB-KiCAD-Conventions-Net-Names.png" alt="Net-Names" width="500">
 
 
 
 ### Labels
 
-Don't use global labels unless necessary. Hierarchical labels are the prefered label in most situations.
+Don't use global labels unless necessary. Hierarchical labels are the prefered label and should be used in most situations.
+
+#### Exceptions: 
+- ??
+- ??
+- ??
 
 <!---
 Three label image idea with names as label
@@ -93,6 +96,19 @@ Three label image idea with names as label
 Power flags should always face upwards, and GND flags should face downwards. Whenever a voltage has a decimal it should be replaced with "V" (Ex: 3.3V = 3V3) Power *labels* may face sideways if a power flag can not be used. Input and output power components such as regulators may have sidways power labels. (Flags are not the same as labels)
 
 <img src="images/ISS-PCB-KiCAD-Conventions-Power-Flags.png" alt="Power-Flags" width="100">
+
+
+#### Exceptions:
+
+- When working with the individual chip and not a module, keep the official library's symbol as is, since there are nuances to power supplies that should not be ignored
+
+<img src="ISS-PCB-KiCAD-Conventions-Power-Exception.png" alt="Power-Flags" width="500">
+
+
+
+
+
+
 
 ### Wire Crossing
 
