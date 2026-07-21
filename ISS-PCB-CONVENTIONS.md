@@ -161,7 +161,12 @@ Assign Reference designator according to IEEE standards (listed below)
 
 ### Custom Symbols
 
-When making custom libraries look towards similar symbols for general formatting questions. Above all else follow the KiCAD Library Conventions.  
+When making custom libraries take a look at our guide!
+
+[Custom Symbols/Footprint How-TO](./HOW-TO.md)
+
+Additionally look towards similar symbols for general formatting questions. Above all else follow the KiCAD Library Conventions.  
+
 ➡️ [KiCAD Library Conventions](https://klc.kicad.org/) ⬅️
 
 ### US Resistors
