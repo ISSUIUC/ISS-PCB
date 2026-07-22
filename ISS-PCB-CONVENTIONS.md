@@ -252,7 +252,7 @@ Voltage Regulators VIN pin should be top left and VOUT should be top right of th
 - Exception: if individual VIN without VOUT then it will be on the top and GND always on the bottom
 
 
-<img src="images/ISS-PCB-KiCAD-Conventions-Voltage-Regulator.png" alt="Connectors" width="200">
+<img src="images/ISS-PCB-KiCAD-Conventions-Voltage-Regulator.png" alt="Connectors" width="500">
 
 
 
@@ -267,11 +267,27 @@ Each symbol should have a courtyard (Pink outline) if not add one by clicking th
 
 ### Solder Paste 
 
+Make sure BOTH F.paste and F.mask layers have filled in solder paste
+
 <img src="images/ISS-PCB-KiCAD-Conventions-Solder-Paste.png" alt="Connectors" width="200">
+
 
 <img src="images/ISS-PCB-KiCAD-Conventions-Solder-Paste-2.png" alt="Connectors" width="200">
 
 
+### Traces
+
+#### Trace Impedances 
+Correct trace impedances are crucial for differential pairs such as USB Lines (D+, D-) for signal integrity, noise rejection, and data reliability. 
+
+Follow [Trace Impedance Matching](./HOW-TO.md) guide to learn more. 
+
+
+#### Trace Sizes 
+
+Determine based on estimated current and voltage what size of trace is needed. 
+
+Follow [Trace Size](./HOW-TO.md) guide to learn more. 
 
 
 
