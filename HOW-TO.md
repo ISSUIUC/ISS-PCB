@@ -34,10 +34,9 @@ Find a graphic version of the ISS-PCB directory [here](CONTRIBUTING.md#library-d
 
 ### **Setting Up Symbol Directories**
 
-Take a look at [ISS Library Conventions](CONTRIBUTING.md#custom-library-paths) for a tutorial 
+Take a look at [Contributing Page](CONTRIBUTING.md#custom-library-paths) for a tutorial. 
 
-
-Ensure symbbol names follow ISS conventions seen in [ISS Library Conventions](CONTRIBUTING.md#library-conventions)
+Ensure symbbol names follow ISS conventions seen in [ISS Library Conventions](https://github.com/ISSUIUC/ISS-PCB/blob/conventions/CONTRIBUTING.md#library-directory)
 
 
 # **Layout Tutorials** 
@@ -46,7 +45,7 @@ Ensure symbbol names follow ISS conventions seen in [ISS Library Conventions](CO
 ### **Setting Up Design Rules Constraints (DRC)**
 
 
-<img src="images/ISS-PCB-KiCAD-HOW-TO-DRC" alt="Small-Symbols" width="500">
+<img src="images/ISS-PCB-KiCAD-HOW-TO-DRC.png" alt="Small-Symbols" width="500">
 
 
 
