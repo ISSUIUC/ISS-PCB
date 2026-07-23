@@ -1,6 +1,6 @@
 # **Contributing Guide**
 
-*Author(s): Peter Giannetos, Thomas McManamen*
+*Author(s): Peter Giannetos, Thomas McManamen, Kacper Paraniuk*
 
 KiCad files are more difficult and delicate to merge than standard code. Working with multiple contributors requires a specialized workflow. Please use the following guide below as a reference.
 
@@ -12,6 +12,9 @@ KiCad files are more difficult and delicate to merge than standard code. Working
 - [KiCad Parts Library](#kicad-parts-library)
 - [Merge Conflicts](#merge-conflicts)
 - [Example Workflow](#example-workflow)
+- [ISS Project Naming](#iss-kicad-project-naming)
+
+
 
 <br/>
 
@@ -146,11 +149,7 @@ KiCad has a rich default library of parts but often we need to create custom par
 
 - [SnapEDA](https://www.snapeda.com/): *Download free symbols, footprints, & 3D models for millions of electronic components.* 
 
-## **KiCad Library Convention**
 
-The KiCad Library Convention (KLC) is a set of guidelines for contributing to the official KiCad libraries. **Read over these requirments beforehand and follow them when making custom libraries.** Our libraries follow the same guidelines. All libraries should be created with the intent to upstream them to the offficial KiCad Libraries.
-
-- [KiCad Library Convention](https://klc.kicad.org/): *Library maintainer rules & guidelines*
 
 ## **Files Types**
 
@@ -176,21 +175,27 @@ There are three main categories of part files. When adding new components please
   - `.step` : An individual component 3D model
   - `.wrl` : An individual component 3D model with texture data for advanced rendering *(Optional)*
 
-## **Library Directory**
+## **Library Directory** {#library-directory}
 
 The custom library used by all the projects in this repository is stored in the root of the repository under the `/libs` folder. Any new parts should be added here.
 
 ![KiCad Library Folders](/images/ISS-PCB-Contributing-Library-Folders.png)
 
-## **Custom Library Paths**
+## **Custom Library Paths** {#custom-library-paths}
 
 When adding custom libraries to a project, you must point KiCad to the library file using a path linked to the repository and not your local computer, or else the library will not load correctly when the project is opened by other contributors.
 
 - ### **Creating Paths**
 
   - In KiCad, locate Preferences ➡ Configure Paths
+
+![alt text](images/ISS-PCB-Contributing-Repository-custom-library-1.png)
+
   - Create new variables: `ISS_SYMBOL_DIR`, `ISS_FOOTPRINT_DIR`, and `ISS_3DMODEL_DIR`
   - Set the locations to those of the `symbols`, `footprints`, and `3d_models` folders within the `lib` folder of your local repository. 
+
+![alt text](images/ISS-PCB-Contributing-Repository-custom-library-2.png)
+
   
 - ### **Accessing Settings**
 
@@ -222,6 +227,41 @@ When adding custom libraries to a project, you must point KiCad to the library f
 Below is a good example with a relative path and a bad example with a user specific path. The steps to import a library are also shown. Navigate to this window by following the "Accessing Settings" section.
 
 ![KiCad Relative Paths](/images/ISS-PCB-Contributing-Custom-Library-Paths.png)
+
+
+
+
+## **ISS Library Convention** {#library-conventions}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## **KiCad Library Convention**
+
+ISS provides an easy naming scheme for members to not have to go through the hastle of looking at KiCad Library conventions. However if members are interested they can take a look at KiCads Library Conventions.
+
+The KiCad Library Convention (KLC) is a set of guidelines for contributing to the official KiCad libraries. **Read over these requirments beforehand and follow them when making custom libraries.** Our libraries follow the same guidelines. All libraries should be created with the intent to upstream them to the offficial KiCad Libraries.
+
+- [KiCad Library Convention](https://klc.kicad.org/): *Library maintainer rules & guidelines*
+
+
+
+
+
+
+
+
 
 <br/>
 
@@ -273,3 +313,15 @@ New files and folder naming: use - not _
 Potentially garbage KiCAD files
 Warning about uneatness will not be added to the repo
 -->
+
+
+# **ISS KiCAD Project Naming**
+
+E-hardware follows this specific format for project naming when creating boards or new revisions. 
+
+
+![Project Naming Guide](/images/ISS-PCB-Contributing-Repository-ISS-Naming.png)
+
+
+
+
