@@ -29,12 +29,12 @@ The location in your directory where ISS-PCB is located > ISS-PCB -> Libs > Symb
 
 .kicad_sym are libraries of symbols not symbols themselves thus we will want to import a symbol into the correct library or create a new library if needed when importing or creating new symbols. 
 
-Find a graphic version of the ISS-PCB directory [here](CONTRIBUTING.md#library-directory)
+Find a graphic version of the ISS-PCB directory [here](https://github.com/ISSUIUC/ISS-PCB/blob/conventions/CONTRIBUTING.md#library-directory)
 
 
 ### **Setting Up Symbol Directories**
 
-Take a look at [Contributing Page](CONTRIBUTING.md#custom-library-paths) for a tutorial. 
+Take a look at [Contributing Page](https://github.com/ISSUIUC/ISS-PCB/blob/conventions/CONTRIBUTING.md#custom-library-paths) for a tutorial. 
 
 Ensure symbbol names follow ISS conventions seen in [ISS Library Conventions](https://github.com/ISSUIUC/ISS-PCB/blob/conventions/CONTRIBUTING.md#iss-library-convention)
 
