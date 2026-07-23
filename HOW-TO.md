@@ -36,7 +36,7 @@ Find a graphic version of the ISS-PCB directory [here](CONTRIBUTING.md#library-d
 
 Take a look at [Contributing Page](CONTRIBUTING.md#custom-library-paths) for a tutorial. 
 
-Ensure symbbol names follow ISS conventions seen in [ISS Library Conventions](https://github.com/ISSUIUC/ISS-PCB/blob/conventions/CONTRIBUTING.md#library-directory)
+Ensure symbbol names follow ISS conventions seen in [ISS Library Conventions](https://github.com/ISSUIUC/ISS-PCB/blob/conventions/CONTRIBUTING.md#iss-library-convention)
 
 
 # **Layout Tutorials** 
