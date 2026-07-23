@@ -175,13 +175,13 @@ There are three main categories of part files. When adding new components please
   - `.step` : An individual component 3D model
   - `.wrl` : An individual component 3D model with texture data for advanced rendering *(Optional)*
 
-## **Library Directory** {#library-directory}
+## **Library Directory** 
 
 The custom library used by all the projects in this repository is stored in the root of the repository under the `/libs` folder. Any new parts should be added here.
 
 ![KiCad Library Folders](/images/ISS-PCB-Contributing-Library-Folders.png)
 
-## **Custom Library Paths** {#custom-library-paths}
+## **Custom Library Paths** 
 
 When adding custom libraries to a project, you must point KiCad to the library file using a path linked to the repository and not your local computer, or else the library will not load correctly when the project is opened by other contributors.
 
@@ -231,7 +231,7 @@ Below is a good example with a relative path and a bad example with a user speci
 
 
 
-## **ISS Library Convention** {#library-conventions}
+## **ISS Library Convention** 
 
 
 
