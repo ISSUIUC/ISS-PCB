@@ -10,6 +10,7 @@ KiCad files are more difficult and delicate to merge than standard code. Working
 - [Branches](#branches)
 - [Pull Requests](#pull-requests)
 - [KiCad Parts Library](#kicad-parts-library)
+  - [ISS Naming Conventions for KiCad Parts](#iss-library-convention)
 - [Merge Conflicts](#merge-conflicts)
 - [Example Workflow](#example-workflow)
 - [ISS Project Naming](#iss-kicad-project-naming)
@@ -327,7 +328,7 @@ Warning about uneatness will not be added to the repo
 -->
 
 
-# **ISS KiCAD Project Naming**
+# **ISS KiCad Project Naming**
 
 E-hardware follows this specific format for project naming when creating boards or new revisions. 
 
