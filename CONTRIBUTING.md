@@ -147,8 +147,11 @@ Pull requests (PRs) are how to submit work for peer review and merge into Projec
 
 KiCad has a rich default library of parts but often we need to create custom part files for unique components. If the part files can not be found online then custom files can be made with the built-in symbol editor, footprint editor, and your choice of CAD software.
 
-- [SnapEDA](https://www.snapeda.com/): *Download free symbols, footprints, & 3D models for millions of electronic components.* 
+- [SnapEDA](https://www.snapeda.com/)
+- [Ultra-Librarian](https://www.ultralibrarian.com/) 
 
+
+ *Download free symbols, footprints, & 3D models for millions of electronic components.* 
 
 
 ## **Files Types**
@@ -214,8 +217,6 @@ When adding custom libraries to a project, you must point KiCad to the library f
 
 
 
-  // set a link to HOW-TO 
-
 - ### **Library Table**
 
   Every time you import a new custom library to a specific project you must save and push the following files or else your library and relative path won't be imported!
@@ -234,33 +235,44 @@ Below is a good example with a relative path and a bad example with a user speci
 ## **ISS Library Convention** 
 
 
+### **Naming Conventions for Symbols, Footprints, 3D-Models**
+
+#### **ISS Symbols Folder**
+
+The convention for naming `.kicad_sym`, `.kicad_mod`, `.3dshapes` is very simple: 
+
+“The general name for what it is” + “_” + “company who made it”
+
+![alt text](images/ISS-PCB-Contributing-Convention-Sym-Folder.png)
+
+Inside of symbol library symbol should be named by: “what it specifically is”
+
+![alt text](images/ISS-PCB-Contributing-Convention-Inside-Sym-Folder.png)
 
 
 
+#### **Project Specific Libraries**
+
+Should be named with the exact same formatting as inside of a [ISS Symbols Folder](https://github.com/ISSUIUC/ISS-PCB/blob/conventions/CONTRIBUTING.md#iss-symbols-folder): “What it is” + “_” + “company who made it”
 
 
+##### **Symbols** 
 
+![alt text](images/ISS-PCB-Contributing-Repository-Project-Specific-Libraries.png)
 
+##### **Footprints** 
 
-
-
+![alt text](images/ISS-PCB-Contributing-Repository-Project-Specific-Libraries-2.png)
 
 
 
 ## **KiCad Library Convention**
 
-ISS provides an easy naming scheme for members to not have to go through the hastle of looking at KiCad Library conventions. However if members are interested they can take a look at KiCads Library Conventions.
+ISS provides an easy naming scheme/directions for custom libraries for members to not have to go through the hastle of looking at KiCad Library conventions. However if interested, they can take a look at KiCads Library Conventions.
 
 The KiCad Library Convention (KLC) is a set of guidelines for contributing to the official KiCad libraries. **Read over these requirments beforehand and follow them when making custom libraries.** Our libraries follow the same guidelines. All libraries should be created with the intent to upstream them to the offficial KiCad Libraries.
 
 - [KiCad Library Convention](https://klc.kicad.org/): *Library maintainer rules & guidelines*
-
-
-
-
-
-
-
 
 
 <br/>

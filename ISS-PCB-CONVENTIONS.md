@@ -280,7 +280,7 @@ Make sure BOTH F.paste and F.mask layers have filled in solder paste
 #### Trace Impedances 
 Correct trace impedances are crucial for differential pairs such as USB Lines (D+, D-) for signal integrity, noise rejection, and data reliability. 
 
-Follow [Trace Impedance Matching](./HOW-TO.md) guide to learn more. 
+Follow [Trace Impedance Matching](https://github.com/ISSUIUC/ISS-PCB/blob/conventions/HOW-TO.md#trace-impedance-matching) guide to learn more. 
 
 
 #### Trace Sizes 
