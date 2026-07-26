@@ -287,7 +287,7 @@ Follow [Trace Impedance Matching](https://github.com/ISSUIUC/ISS-PCB/blob/conven
 
 Determine based on estimated current and voltage what size of trace is needed. 
 
-Follow [Trace Size](./HOW-TO.md) guide to learn more. 
+Follow [Trace Size](https://github.com/ISSUIUC/ISS-PCB/blob/conventions/HOW-TO.md#trace-sizing) guide to learn more. 
 
 
 

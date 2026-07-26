@@ -1,4 +1,4 @@
-# **How-To KiCAD Fundamentals**
+# **How-To KiCad Fundamentals**
 
 
 *Author(s): Kacper Paraniuk*
@@ -8,6 +8,11 @@
 - [Symbols](#symbol-libraries)
     - [Finding ISS Symbol Library](#finding-iss-symbol-library)
     - [Setting Up Symbol Directories](#setting-up-symbol-directories)
+    - [New Symbols](#new-symbols)
+        -[Creating a New Symbol Library](#creating-a-new-symbol-library)
+        -[Creating New Symbols](#creating-new-symbols)
+        -[]
+
 - [Layout Tutorials](#layout-tutorials)
     - [Setting Up Design Rules Contraints](#setting-up-design-rules-constraints-drc)
     - [Trace Impedance Matching](#trace-impedance-matching)
@@ -20,8 +25,6 @@
 
 
 # **Symbol Libraries**
-
-
 
 ### **Finding ISS Symbol Library** 
 
@@ -39,6 +42,54 @@ Take a look at [Contributing Page](https://github.com/ISSUIUC/ISS-PCB/blob/conve
 Ensure symbol names follow ISS conventions seen in [ISS Library Conventions](https://github.com/ISSUIUC/ISS-PCB/blob/conventions/CONTRIBUTING.md#iss-library-convention)
 
 
+## **New Symbols**
+
+- Once KiCad is open go into Symbol Editor 
+
+![alt text](images/ISS-PCB-KiCAD-HOW-TO-Identify-Symbol-Library.png)
+
+- Identify if you need a New Symbol Library or can you just import the symbol into an existing symbol library.
+
+![alt text](images/ISS-PCB-KiCAD-HOW-TO-Symbol-Editor.png)
+
+*Error: If you get an error that says “Symbol Library “name” is not writable” this means you are trying to write to a kicad library you need to import to an ISS folder.*
+
+Click for [New Symbol Library](#creating-a-new-symbol-library)
+
+If you already have an existing symbol library that follows conventions and need help importing a symbol click [Import New Symbols within Existing Library](#import-new-symbols-within-existing-library)
+
+### **Creating a New Symbol Library** 
+
+- Go into Symbol Editor 
+
+
+- Click File > New Library 
+
+
+- Create a project specific library 
+
+### **Import New Symbols within Existing Library**
+
+
+
+
+
+### **Creating New Symbols**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # **Layout Tutorials** 
 
 
@@ -50,9 +101,8 @@ Ensure symbol names follow ISS conventions seen in [ISS Library Conventions](htt
 
 
 
+
 ### **Trace Impedance Matching**
-
-
 
 
 
@@ -61,6 +111,51 @@ Ensure symbol names follow ISS conventions seen in [ISS Library Conventions](htt
 
 
 
+### **RF Circuitry** 
 
 
-https://www.ultralibrarian.com/ << add to symbol >>
+
+
+# **Instrumentation Tutorials**
+
+Links to relevant tutorials that members can follow:
+
+
+
+### **How to Use a Multi-Meter**
+
+
+
+
+
+### **How to Use an Oscilloscope**
+
+
+
+
+
+### **How to Use a Digital Logic Analyzer**
+
+
+
+
+
+### **How to Solder**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

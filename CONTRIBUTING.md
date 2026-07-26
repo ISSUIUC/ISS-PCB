@@ -13,7 +13,7 @@ KiCad files are more difficult and delicate to merge than standard code. Working
   - [ISS Naming Conventions for KiCad Parts](#iss-library-convention)
 - [Merge Conflicts](#merge-conflicts)
 - [Example Workflow](#example-workflow)
-- [ISS Project Naming](#iss-kicad-project-naming)
+- [ISS KiCad Project Naming](#iss-kicad-project-naming)
 
 
 
@@ -316,16 +316,8 @@ You can clean your repository by running the following commands. Just make sure 
 - `git clean -d -n` a dry run of what untracked files your about to permantely delete
 - `git clean -d -f` nukes every untracked directory 
 
+
 <br/><br/><br/>
-
-*See a typo? Think we left some vital information out? Make a branch and edit this file!*
-
-<!---
-To Do:
-New files and folder naming: use - not _
-Potentially garbage KiCAD files
-Warning about uneatness will not be added to the repo
--->
 
 
 # **ISS KiCad Project Naming**
@@ -336,5 +328,17 @@ E-hardware follows this specific format for project naming when creating boards 
 ![Project Naming Guide](/images/ISS-PCB-Contributing-Repository-ISS-Naming.png)
 
 
+
+
+
+
+*See a typo? Think we left some vital information out? Make a branch and edit this file!*
+
+<!---
+To Do:
+New files and folder naming: use - not _
+Potentially garbage KiCAD files
+Warning about uneatness will not be added to the repo
+-->
 
 
