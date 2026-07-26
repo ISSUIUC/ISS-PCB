@@ -43,7 +43,7 @@ Ensure symbol names follow ISS conventions seen in [ISS Library Conventions](htt
 
 ![alt text](images/ISS-PCB-KiCAD-HOW-TO-Identify-Symbol-Library.png)
 
-- Identify if you need a New Symbol Library or can you just import the symbol into an existing symbol library.
+- Identify if you need a new symbol library or can you just import the symbol into an existing symbol library.
 
 ![alt text](images/ISS-PCB-KiCAD-HOW-TO-Symbol-Editor.png)
 
@@ -82,7 +82,7 @@ Give symbol name (should be the name of the component you are importing) and [re
 
 ![alt text](images/ISS-PCB-KiCAD-HOW-TO-DSPT2.png)
 
-Make sure symbol is up to [conventions](https://github.com/ISSUIUC/ISS-PCB/blob/conventions/ISS-PCB-CONVENTIONS.md#symbol-conventions)
+Make sure symbol is up to [conventions](https://github.com/ISSUIUC/ISS-PCB/blob/conventions/ISS-PCB-CONVENTIONS.md#symbol-conventions) (unlike the one above)
 
 - Save! File > Save 
 
@@ -91,7 +91,7 @@ Make sure symbol is up to [conventions](https://github.com/ISSUIUC/ISS-PCB/blob/
 
 ### **Creating New Symbols**
 
-Find the library and right click on it. Then click “New symbol” 
+Find the symbol library and right click on it. Then click “New symbol” 
 
 ![alt text](images/ISS-PCB-KiCAD-HOW-TO-ISPT1.png)
 
@@ -103,13 +103,13 @@ Assign [reference designator](https://github.com/ISSUIUC/ISS-PCB/blob/convention
 ![alt text](images/ISS-PCB-KiCAD-HOW-TO-ISPT2.png)
 
 
-Place a rectangle, then appropriate pins, and look at [conventions](https://github.com/ISSUIUC/ISS-PCB/blob/conventions/ISS-PCB-CONVENTIONS.md#symbol-conventions) to create a proper symbol. 
+Place a rectangle, then appropriate pins, and look at [conventions](https://github.com/ISSUIUC/ISS-PCB/blob/conventions/ISS-PCB-CONVENTIONS.md#symbol-conventions) to check if you've created a symbol that follows ISS conventions. 
 
 ![alt text](images/ISS-PCB-KiCAD-HOW-TO-ISPT3.png)
 
 Save! File> Save 
 
-Look up the name in (Place Symbols) in schematic editor. 
+Look up the name in schematic editor to check if your symbol was properly saved. 
 
 # **Footprint Libraries**
 
@@ -131,14 +131,14 @@ What are Project Specific Libraries? These are libraries you have imported that 
 
 ![alt text](images/ISS-PCB-KiCAD-HOW-TO-Project-Specific-3.png)
 
-- The redline indicates the Name of the library make sure it is according to library convention,  
-    - Should be named with the exact same formatting as inside of folder: “What it is” + “_” + “company who made it”
+- The redline indicates the name of the library make sure it follows library conventions,  
+    - Should be named with the exact same formatting as folder: “What it is” + “_” + “company who made it”
 
-- Click the folder icon and find the ISS Symbol file and like your .kicad_sym
+- Click the folder icon and find the ISS Symbol file and add your .kicad_sym
+
 - The highlighted part is the directory pathway, make sure it is linked properly inside your folder with {ISS_SYMBOL_DIR}
 
 - Once done look up your library in symbols to make sure it comes up!
-
 
 
 # **Layout Tutorials** 
