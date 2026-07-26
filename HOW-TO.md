@@ -9,8 +9,8 @@
     - [Finding ISS Symbol Library](#finding-iss-symbol-library)
     - [Setting Up Symbol Directories](#setting-up-symbol-directories)
     - [New Symbols](#new-symbols)
-- [Importing Project Specifc Libraries](#importing-project-specific-libraries)
 - [Footprints](#footprint-libraries)
+- [Importing Project Specifc Libraries](#importing-project-specific-libraries)
 - [Layout Tutorials](#layout-tutorials)
     - [Setting Up Design Rules Contraints](#setting-up-design-rules-constraints-drc)
     - [Trace Impedance Matching](#trace-impedance-matching)
@@ -49,9 +49,8 @@ Ensure symbol names follow ISS conventions seen in [ISS Library Conventions](htt
 
 *Error: If you get an error that says “Symbol Library “name” is not writable” this means you are trying to write to a kicad library you need to import to an ISS folder.*
 
-Click for [New Symbol Library](#creating-a-new-symbol-library)
+Either click to create a [New Symbol Library](#creating-a-new-symbol-library) or if you already have an existing symbol library that follows [conventions](https://github.com/ISSUIUC/ISS-PCB/blob/conventions/CONTRIBUTING.md#iss-library-convention) follow the steps to [import](#import-new-symbols-within-existing-library) or [create a new symbol](#creating-new-symbols)!
 
-If you already have an existing symbol library that follows [conventions](https://github.com/ISSUIUC/ISS-PCB/blob/conventions/CONTRIBUTING.md#iss-library-convention) and need help importing a symbol click [Import New Symbols within Existing Library](#import-new-symbols-within-existing-library)
 
 ### **Creating a New Symbol Library** 
 
@@ -75,13 +74,48 @@ Follow the steps to [import](#import-new-symbols-within-existing-library) or [cr
 
 ### **Import New Symbols within Existing Library**
 
-Symbols!
+Find the library and right click on it. Then click the import symbol. 
 
+![alt text](images/ISS-PCB-KiCAD-HOW-TO-DSPT1.png)
+
+Give symbol name (should be the name of the component you are importing) and [reference designator](https://github.com/ISSUIUC/ISS-PCB/blob/conventions/ISS-PCB-CONVENTIONS.md#reference-designators) in this case: 
+
+![alt text](images/ISS-PCB-KiCAD-HOW-TO-DSPT2.png)
+
+Make sure symbol is up to [conventions](https://github.com/ISSUIUC/ISS-PCB/blob/conventions/ISS-PCB-CONVENTIONS.md#symbol-conventions)
+
+- Save! File > Save 
+
+- Look up the name in (Place Symbols) in schematic editor 
 
 
 ### **Creating New Symbols**
 
-Symbols!
+Find the library and right click on it. Then click “New symbol” 
+
+![alt text](images/ISS-PCB-KiCAD-HOW-TO-ISPT1.png)
+
+
+Give symbol name (should be the name of the component you are putting in) in this case TLV76050DBZR
+
+Assign [reference designator](https://github.com/ISSUIUC/ISS-PCB/blob/conventions/ISS-PCB-CONVENTIONS.md#reference-designators) according to IEEE standards 
+
+![alt text](images/ISS-PCB-KiCAD-HOW-TO-ISPT2.png)
+
+
+Place a rectangle, then appropriate pins, and look at [conventions](https://github.com/ISSUIUC/ISS-PCB/blob/conventions/ISS-PCB-CONVENTIONS.md#symbol-conventions) to create a proper symbol. 
+
+![alt text](images/ISS-PCB-KiCAD-HOW-TO-ISPT3.png)
+
+Save! File> Save 
+
+Look up the name in (Place Symbols) in schematic editor. 
+
+# **Footprint Libraries**
+
+Footprint Libraries!
+
+
 
 # **Importing Project Specific Libraries**
 
@@ -105,11 +139,6 @@ What are Project Specific Libraries? These are libraries you have imported that 
 
 - Once done look up your library in symbols to make sure it comes up!
 
-
-
-# **Footprint Libraries**
-
-Footprint Libraries!
 
 
 # **Layout Tutorials** 
