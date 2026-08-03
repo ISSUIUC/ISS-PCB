@@ -4,7 +4,7 @@
 
 A non-exhaustive guide of how to create neat KiCAD schematics. Schematics that do not adhere to these guidelines will not be permitted to merged to main.
 
-Please check each project with the following checklist: ➡️ [ISS E-hardware Conventions]() ⬅️ before submitting a PR (link once the box is organized and set in stone)
+Please check each project with the following checklist: ➡️ [ISS E-hardware Conventions](https://uofi.app.box.com/folder/404099229358) ⬅️ before submitting a PR (link once the box is organized and set in stone)
 
 ## Table of Contents
 
