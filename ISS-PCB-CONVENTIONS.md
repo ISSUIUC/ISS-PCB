@@ -42,15 +42,16 @@ Components should be sectioned off and grouped based on functionaility. The box 
 
 - Box Border: 0 Width (Default)
 - Dashed Line Border
-- Box Title: 2mm Bold
+- Box Title: 2mm Bold 
 - Box Subtitle: 2mm Italic
 - Has a Title in bold with font: **KiCad Font** and Part Name under title with font: **Default Font**
+- *Italicize* the subtitle and extra information. 
 
 <img src="images/ISS-PCB-KiCAD-Conventions-Component-Partitions.png" alt="MPN" width="500">
 
 
 - I2C Addresses should be listed in a convenient location inside the sectioned off box. 
-- If a component needs a description or link from inspiration place this in the bottom left of the box
+- If a component needs a description or link from inspiration place this in the bottom left or right of the box depending on best fit.
 
 
 ### Title Block
@@ -261,6 +262,8 @@ Voltage Regulators VIN pin should be top left and VOUT should be top right of th
 
 # **Footprint Conventions**
 
+When creating footprints always follow the mechanical section of the datasheet to get a thorough layout of the dimensions to follow.  
+
 ### Courtyards 
 
 Each symbol should have a courtyard (Pink outline) if not add one by clicking the courtyard layer (respective front/back) that is a little bigger than the component itself. 
@@ -295,15 +298,3 @@ Follow [Trace Size](https://github.com/ISSUIUC/ISS-PCB/blob/conventions/HOW-TO.m
 <br/><br/><br/>
 
 *See a typo? Think we left some vital information out? Make a branch and edit this file!*
-
-<!--
-TO DO:
-# **Templates**
-
-## MPN
-
-<img src="images/ISS-PCB-KiCAD-Conventions-MPN.png" alt="MPN" width="500">
-
-Add an extra field called MPN (Manufacturer Part Number) to each symbol and then respond 
-
--->
