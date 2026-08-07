@@ -73,25 +73,6 @@ There are three commonly used branch types in this repository.
 
 ## **Ticket Branch Rules**
 
-
-
-
-
-
-
-// i'd like to remove ticket and unrelevant rules that we do not follow anymore in E-hardware. 
-
-
-
-
-
-
-
-
-
-
-
-
 There are nine rules you must follow when working in ticket branches to avoid merge conflicts and loss of work.
 
 1. ### **Pull Often**
@@ -347,7 +328,17 @@ E-hardware follows this specific format for project naming when creating boards 
 ![Project Naming Guide](/images/ISS-PCB-Contributing-Repository-ISS-Naming.png)
 
 
+
+
+
+
 *See a typo? Think we left some vital information out? Make a branch and edit this file!*
 
+<!---
+To Do:
+New files and folder naming: use - not _
+Potentially garbage KiCAD files
+Warning about uneatness will not be added to the repo
+-->
 
 
