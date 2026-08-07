@@ -116,7 +116,7 @@ Look up the name in schematic editor to check if your symbol was properly saved.
 
 # **Footprint Libraries**
 
-### **Creating Footprints**
+### **Organizing Footprint Libraries**
 
 Follow the exact same steps in [Symbol Libraries](#symbol-libraries) as for footprint libraries. However, make sure you click into "Footprint Editor" rather than "Symbol Editor" on the main homescreen of KiCad.
 
@@ -125,34 +125,43 @@ The process behind managing footprint libraries is identical to symbols and thus
 Ensure you are following [footprint conventions](https://github.com/ISSUIUC/ISS-PCB/blob/conventions/ISS-PCB-CONVENTIONS.md#footprint-conventions)
 
 
+### **Creating a Footprint**
+
 #### **Reading Mechanical Drawings in Datasheets** 
 
 
-
-
-### **PCB Layer Overview**
-
-
-KiCad uses multiple layers we will be mainly focusing on 
-
-
-Edge Cuts for creating the boundary of a PCB. 
-
-
-
-
-
-
-### **Creating a Footprint** 
-
 The first step in creating a footprint is to find the mechanical drawing of the IC footprint as shown below: 
 
+![alt text](images/ISS-PCB-KiCAD-HOW-TO-MechDim.png)
+
+Next, open up 'Footprint Editor' and click 'File' > 'New Footprint'
+
+Save right away and decide if this will go into an existing library or a new library. 
+
+![alt text](images/ISS-PCB-KiCAD-HOW-TO-SAVE.png)
+
+If existing search up the library and name the symbol. If a completely new library click new library... 
+
+For actually creating the footprint we need to know what two layers are. 
+
+#### **PCB Layer Overview**
+
+KiCad uses multiple layers and it's important to know what they generally are for ordering PCBs when they ask for Gerber files. We will be mainly focusing on the F.courtyard which we will use to set as the boundary of the component and F.Silkscreen which is the non-conductive ink layer printed on the surface for creating a footprint.
+
+![alt text](images/ISS-PCB-KiCAD-HOW-TO-Layers.png)
+
+- As for other layers F.Cu and B.Cu are copper layers of the PCB itself 
+- Solder mask is a thin layer of polymer that is applied to the copper traces of a PCB
+- Edge Cuts for creating the boundary of a PCB so the manufacturer knows the boundary at which to cut the board outline
 
 
+After that, creating a footprint is simple. Place pads and allign the dimensions as shown in the mechanical drawing. Make sure when drawing silkscreen or courtyard to select the right layer before placing lines as the line will become whatever layer you are selected on.  
 
+![alt text](ISS-PCB-KiCAD-HOW-TO-RF4463-FOOTPRINT.png)
 
+Use dimension tools to accurately design the footprint. Once done save the footprint and attach to the correct symbol. 
 
-
+Great job!
 
 # **Importing Project Specific Libraries**
 
