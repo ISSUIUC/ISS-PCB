@@ -1,8 +1,8 @@
 # **How-To KiCad Fundamentals**
 
-![alt text](images/ISS-PCB-HOW-TO-INTRO.jpg)
-
 *Author(s): Kacper Paraniuk*
+
+![alt text](images/ISS-PCB-HOW-TO-INTRO.jpg)
 
 ## Table of Contents
 
