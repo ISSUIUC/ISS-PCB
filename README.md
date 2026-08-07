@@ -44,6 +44,7 @@ Here are some links you may find useful as you are building PCBs:
 
 Thanks for reading, and good luck in building PCBs! 
 
+*See a typo? Think we left some vital information out? Make a branch and edit this file!*
 
 
 

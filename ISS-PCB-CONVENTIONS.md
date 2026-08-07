@@ -4,8 +4,7 @@
 
 A non-exhaustive guide of how to create neat KiCAD schematics. Schematics that do not adhere to these guidelines will not be permitted to merged to main.
 
-Please check each project with the following checklist: ➡️ [ISS E-hardware Conventions](https://uofi.app.box.com/folder/404099229358) ⬅️ before submitting a PR (link once the box is organized and set in stone)
-
+Please check each project with the following checklist: ➡️ [ISS E-hardware Conventions](https://uofi.app.box.com/folder/404099229358) ⬅️ before submitting a PR 
 ## Table of Contents
 
 - [Intro](#intro)
@@ -15,7 +14,6 @@ Please check each project with the following checklist: ➡️ [ISS E-hardware C
 - [Symbols](#symbol-conventions)
 - [Schematic](#schematic-conventions)
 - [Footprint](#footprint-conventions)
-
 
 
 <br/>
@@ -71,7 +69,6 @@ Always fill out the Title Block and add Contributors, Date, Revision, and a Proj
 
 
 
-
 ### Grid Size
 
 Keep the grid size as large as possible. The typical size is 1.27mm for components and wires. Text, labels, and graphics may be placed on a 0.64mm grid for better alignment. The grid size can sometimes be found at a corner of the schematic.
@@ -85,7 +82,6 @@ Avoid overlapping text, reference designators, and symbols.
 <img src="images/ISS-PCB-KiCAD-Conventions-Overlap-Text.png" alt="MPN" width="200">
 
 <br/>
-
 
 # **Wires & Labels**
 
@@ -116,10 +112,7 @@ Four way intersections are ambiguous. At most intersections should be limited to
 
 <img src="images/ISS-PCB-KiCAD-Conventions-Four-Wire-Connections.png" alt="Four-Wire-Connections" width="200">
 
-
-
 # **Symbol Conventions**
-
 
 ### Reference Designators 
 
@@ -161,7 +154,7 @@ Fill every symbol/connector with body background color  “L.yellow” or #FFFFC
 
 Symbols should be as small as possible without distortion or weirdness. 
 
-<img src="images/ISS-PCB-KiCAD-Conventions-Symbol.png" alt="MPN" width="200">
+<img src="images/ISS-PCB-KiCAD-Conventions-Symbol.png" alt="MPN" width="500">
 
 
 ### Symbol Properties 
@@ -190,17 +183,13 @@ Electrical Type of the pins to the symbol are correctly selected
 - Output pins = Output
 - Both input / output = bidirectional
 
-
-
-
 # **Schematic Conventions**
-
 
 ### Custom Symbols
 
-When making custom libraries take a look at our guide!
+When creating and managing custom libraries take a look at our guide!
 
-[Custom Symbols/Footprint How-TO](./HOW-TO.md)
+➡️ [Custom Library Creation](./HOW-TO.md) ⬅️
 
 Additionally look towards similar symbols for general formatting questions. Above all else follow the KiCAD Library Conventions.  
 
@@ -245,24 +234,22 @@ Note: There shouldn't be a space between the numeric value and the prefix/unit.
 
 Use the generic yellow solid fill connectors and not the other male/female types.
 
-
-
 ### Voltage Regulators 
 
 Voltage Regulators VIN pin should be top left and VOUT should be top right of the symbol 
-- Exception: if individual VIN without VOUT then it will be on the top and GND always on the bottom
 
 
 <img src="images/ISS-PCB-KiCAD-Conventions-Voltage-Regulator.png" alt="Connectors" width="500">
 
-
-
-
-
-
 # **Footprint Conventions**
 
-When creating footprints always follow the mechanical section of the datasheet to get a thorough layout of the dimensions to follow.  
+When creating footprints always follow the mechanical section of the datasheet to get a thorough layout of the dimensions to follow. 
+
+Follow our tutorial for [Creating a Footprint](https://github.com/ISSUIUC/ISS-PCB/blob/conventions/HOW-TO.md#creating-a-footprint)
+
+### Pin Number One
+
+Although not necessary it is helpful to put a silk screen indicator by pin number one of the component for later when soldering. 
 
 ### Courtyards 
 
@@ -285,15 +272,11 @@ Correct trace impedances are crucial for differential pairs such as USB Lines (D
 
 Follow [Trace Impedance Matching](https://github.com/ISSUIUC/ISS-PCB/blob/conventions/HOW-TO.md#trace-impedance-matching) guide to learn more. 
 
-
 #### Trace Sizes 
 
 Determine based on estimated current and voltage what size of trace is needed. 
 
 Follow [Trace Size](https://github.com/ISSUIUC/ISS-PCB/blob/conventions/HOW-TO.md#trace-sizing) guide to learn more. 
-
-
-
 
 <br/><br/><br/>
 
