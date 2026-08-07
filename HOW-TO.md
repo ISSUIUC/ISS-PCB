@@ -140,7 +140,7 @@ Save right away and decide if this will go into an existing library or a new lib
 
 ![alt text](images/ISS-PCB-KiCAD-HOW-TO-SAVE.png)
 
-If existing search up the library and name the symbol. If a completely new library click new library... 
+If existing search up the library and name the footprint. If a completely new library click new library... 
 
 For actually creating the footprint we need to know what two layers are. 
 
@@ -239,7 +239,7 @@ Trace sizing is important when dealing with various voltages
 
 - For USB_POWER we use: .5 mm for trace width 
 
-However, these trace widths aren't computed thoroughly and there isn't a convention for how big they should be. The trace width should be sized proportionally to it's voltage. 
+However, these trace widths aren't computed thoroughly and there isn't a convention for how big they should be. The trace width should be sized proportionally to it's voltage based on the reference point given up above. 
 
 
 ### **RF Circuitry** 
@@ -271,12 +271,11 @@ Having trouble understanding? Not able to comprehend what is being said? Look fo
 
 Checkout Week 3 on 2026 Onboarding [How to Solder Slides](https://uofi.app.box.com/folder/401706100793) in the UIUC Box
 
-
 # **Electronic Learning Resources** 
 
-[EEVblog](https://www.youtube.com/@EEVblog)
-[Ben Eater](https://www.youtube.com/@BenEater)
-[The Engineering Mindset](https://www.youtube.com/@EngineeringMindset)
+- [EEVblog](https://www.youtube.com/@EEVblog)
+- [Ben Eater](https://www.youtube.com/@BenEater)
+- [The Engineering Mindset](https://www.youtube.com/@EngineeringMindset)
 
 
 *See a typo? Think we left some vital information out? Make a branch and edit this file!*
