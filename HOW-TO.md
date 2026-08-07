@@ -1,5 +1,6 @@
 # **How-To KiCad Fundamentals**
 
+![alt text](images/ISS-PCB-HOW-TO-INTRO.jpg)
 
 *Author(s): Kacper Paraniuk*
 
@@ -157,7 +158,7 @@ KiCad uses multiple layers and it's important to know what they generally are fo
 
 After that, creating a footprint is simple. Place pads and allign the dimensions as shown in the mechanical drawing. Make sure when drawing silkscreen or courtyard to select the right layer before placing lines as the line will become whatever layer you are selected on.  
 
-![alt text](ISS-PCB-KiCAD-HOW-TO-RF4463-FOOTPRINT.png)
+![alt text](images/ISS-PCB-KiCAD-HOW-TO-RF4463-FOOTPRINT.png)
 
 Use dimension tools to accurately design the footprint. Once done save the footprint and attach to the correct symbol. 
 

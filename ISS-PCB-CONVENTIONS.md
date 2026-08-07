@@ -2,6 +2,8 @@
 
 *Author(s): Peter Giannetos, Kacper Paraniuk*
 
+![alt text](images/ISS-PCB-ISS-PCB-CONVENTIONS-INTRO.jpg)
+
 A non-exhaustive guide of how to create neat KiCAD schematics. Schematics that do not adhere to these guidelines will not be permitted to merged to main.
 
 Please check each project with the following checklist: ➡️ [ISS E-hardware Conventions](https://uofi.app.box.com/folder/404099229358) ⬅️ before submitting a PR 
