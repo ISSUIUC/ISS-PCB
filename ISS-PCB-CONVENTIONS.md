@@ -239,7 +239,7 @@ Use regular sized components and not their alternative small symbols.
 
 Use the value field in passive components to display their characteristics.   
 Note: There shouldn't be a space between the numeric value and the prefix/unit.   
-*Example: `5pF` = 5 pico-ferrites*
+*Example: `5pF` = 5 pico-farads*
 
 | Prefixes | Description       |
 | -------- | ----------------- |
@@ -253,7 +253,7 @@ Note: There shouldn't be a space between the numeric value and the prefix/unit.
 | Units    | Description                          |
 | -------- | ------------------------------------ |
 | ` `      | Ohm: Resistance (No symbol in KiCAD) |
-| `F`      | Ferrite : Capacitance                |
+| `F`      | Farad : Capacitance                |
 | `H`      | Henry: Inductance                    |
 
 ### Connectors
