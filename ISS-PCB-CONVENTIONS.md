@@ -99,7 +99,7 @@ See [ISS KiCAD Project Naming](https://github.com/ISSUIUC/ISS-PCB/blob/conventio
 
 ### Grid Size
 
-Keep the grid size as large as possible. The typical size is 1.27mm for components and wires. Text, labels, and graphics may be placed on a 0.64mm grid for better alignment. The grid size can sometimes be found at a corner of the schematic.
+Keep the grid size as large as possible. The typical size is 1.27mm for components and wires. Text, labels, and graphics may be placed on a 0.635 mm grid for better alignment. The grid size can sometimes be found at a corner of the schematic.
 
 <img src="images/ISS-PCB-KiCAD-Conventions-Grid-Size.png" alt="MPN" width="200">
 
