@@ -34,7 +34,7 @@ Whenever making a formatting decision, it is vital to maintain consistency acros
 
 ### Text & Page Size
 
-Text width should be no smaller than 1.27mm in order to be readable if printed. The schematic size can be of any size as long as projects with multiple boards maintain a consistent size.
+Text width should be no smaller than 1.27mm in order to be readable if printed. The schematic size can be of any size as long as projects with multiple boards or sheets maintain a consistent size.
 
 ### Partitions
 
