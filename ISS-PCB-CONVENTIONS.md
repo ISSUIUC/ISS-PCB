@@ -122,7 +122,7 @@ Net names should be capitalized and contain no spaces. Use "_" instead of spaces
 
 ### Labels
 
-Don't use global labels. Hierarchical labels are the prefered label and should be used.
+Don't use global labels. Hierarchical labels are always the prefered label.
 
 Labels should always face up (Never to the side where someone looking at the schematic has to tilt their head)
 
