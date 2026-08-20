@@ -5,8 +5,8 @@
 
 # Repository Overview
 
-* Archive: Moved to the [Archive](https://github.com/ISSUIUC/ISS-PCB-Archive) repo... check it out! 😁
 * Boards: Contains all of the present boards the team is working on
+    - Moved Board Archive to the [Archive](https://github.com/ISSUIUC/ISS-PCB-Archive) repo... check it out! 😁
 * Docs: Contains various documents pertaining to PCB designs
 * Libs: Contains various templates, symbols and footprints that we use when designing PCBs
 * Scripts: Contains various codes used in PCB development
