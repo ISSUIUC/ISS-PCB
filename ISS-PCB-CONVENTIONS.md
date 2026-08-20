@@ -77,10 +77,20 @@ Always fill out the Title Block and add Contributors, Date, Revision, and a Proj
 <img src="images/ISS-PCB-KiCAD-Conventions-Title-Block.png" alt="MPN" width="500">
 
 
-- Names inserted (“Comment 3” and “Comment 4”)
-- Name typed into (“Title”) 
-- Issue Date 
-- Revision. (Fill in Rev)
+- Contributing member names inserted (“Comment 3” and “Comment 4”)
+- Project name typed into (“Title”) 
+- Fill in issue Date by clicking <<< arrows
+- Company = Illinois Space Society 
+
+#### Revisions 
+
+- A = First revision 
+- B = Second revision 
+- C = Third...
+- So on. 
+
+See [ISS KiCAD Project Naming](https://github.com/ISSUIUC/ISS-PCB/blob/conventions/CONTRIBUTING.md#iss-kicad-project-naming) for project naming conventions.  
+
 
 
 <img src="images/ISS-PCB-KiCAD-Conventions-Title-Block-PT2.png" alt="MPN" width="500">
