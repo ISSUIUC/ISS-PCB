@@ -11,7 +11,7 @@
 * Libs: Contains various templates, symbols and footprints that we use when designing PCBs
 * Scripts: Contains various codes used in PCB development
 * Documentation & Tutorial Mark Down Files: 
-    - README.md: Introduces the ISS-PCB-Repo and pertinent information to become an amazing E-Hardware member
+    - README.md: Introduces the ISS-PCB Repo and pertinent information to become an amazing E-Hardware member
     - ISS-PCB-CONVENTIONS.md: Sets conventions to be followed when desiging for the ISS-PCB KiCad repo
     - HOW-TO.md: Presents brief and thorough lessons on important KiCad tools, documenation procedures, and design processes
     - GITHUB.md: An introduction to GitHub and how to use it for KiCad
