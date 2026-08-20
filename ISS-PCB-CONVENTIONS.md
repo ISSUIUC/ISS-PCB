@@ -192,7 +192,7 @@ Symbols should be as small as possible without distortion or weirdness.
 - Short concise description 
 
 
-<img src="images/ISS-PCB-KiCAD-Conventions-Symbol-Info.png" alt="MPN" width="200">
+<img src="images/ISS-PCB-KiCAD-Conventions-Symbol-Info.png" alt="MPN" width="500">
 
 
 No Connect (NC) pins
