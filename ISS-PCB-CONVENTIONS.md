@@ -26,7 +26,7 @@ You are a graphic designer that works with electrons.
 
 # **Consistency**
 
-Whenever making a formatting decision, it is vital to maintain consistency across the schematic with whatever formatting convention you choose. Essentially, pick something and stick with it but make sure you also follow ISS conventions. 
+Whenever making a formatting decision, it is vital to maintain consistency across the schematic with whatever formatting convention you choose. Essentially, pick something and stick with it whether that be what's listed in this file or the KLC. 
 
 <br/>
 
