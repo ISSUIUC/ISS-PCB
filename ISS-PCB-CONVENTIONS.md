@@ -58,9 +58,16 @@ EXCEPTION: Small peripheral partitions can have:
 
 <img src="images/ISS-PCB-KiCAD-Conventions-Component-Partitions.png" alt="MPN" width="500">
 
+If a component needs a description or link to an external resource place it in the bottom left or right of the box depending on best fit.
 
-- I2C Addresses (if applicable) should be listed in a convenient location inside the sectioned off box. 
-- If a component needs a description or link from inspiration place this in the bottom left or right of the box depending on best fit.
+## Examples
+
+- I2C Addresses listed in a convenient location inside the sectioned off box. 
+- Including calculations for voltage dividers, amplifiers, charging/discharging, etc...
+- Rationale for specific passive values
+- Rationale for do-not populate (DNP)
+- Maximum/minimum inputs/outputs for voltage/current. 
+- Links from inspired by circuits / examples
 
 
 ### Title Block
