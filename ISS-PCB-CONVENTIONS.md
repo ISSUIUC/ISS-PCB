@@ -167,7 +167,7 @@ Assign Reference designator according to IEEE standards (listed below)
 
 ### Power Pins 
 
-Ensure GND always points down and power (VCC) points up
+Ensure GND pins are on the bottom and power pins (VCC) are on top of the symbol
 
 Overlap GND/Power/Identical Pins
 - One pin should be visible, all the others should have visibility check box turned off and electrical type set to “Passive” 
