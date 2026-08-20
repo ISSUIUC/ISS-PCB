@@ -56,7 +56,7 @@ EXCEPTION: Small peripheral partitions can have:
 <img src="images/ISS-PCB-KiCAD-Conventions-Component-Partitions.png" alt="MPN" width="500">
 
 
-- I2C Addresses should be listed in a convenient location inside the sectioned off box. 
+- I2C Addresses (if applicable) should be listed in a convenient location inside the sectioned off box. 
 - If a component needs a description or link from inspiration place this in the bottom left or right of the box depending on best fit.
 
 
