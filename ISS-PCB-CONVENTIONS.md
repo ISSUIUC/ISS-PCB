@@ -51,7 +51,8 @@ EXCEPTION: Small peripheral partitions can have:
 
 - Box Title: 1.27 mm **KiCad Font** 
 
-![alt text](images/ISS-PCB-KiCAD-Conventions-Small-Boxes.png)
+<img src="images/ISS-PCB-KiCAD-Conventions-Small-Boxes.png" alt="MPN" width="500">
+
 
 <img src="images/ISS-PCB-KiCAD-Conventions-Component-Partitions.png" alt="MPN" width="500">
 
