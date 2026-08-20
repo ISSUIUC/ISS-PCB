@@ -45,7 +45,7 @@ Components should be sectioned off and grouped based on functionaility. The box 
 - Box Title: 2mm Bold 
 - Box Subtitle: 2mm Italic
 - Has a Title in bold with font: **KiCad Font** and Part Name under title with font: **Default Font**
-- *Italicize* the subtitle and extra information. 
+- *Italicize* extra information. 
 
 <img src="images/ISS-PCB-KiCAD-Conventions-Component-Partitions.png" alt="MPN" width="500">
 
