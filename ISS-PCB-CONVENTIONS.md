@@ -169,7 +169,7 @@ Assign Reference designator according to IEEE standards (listed below)
 
 Ensure GND pins are on the bottom and power pins (VCC) are on top of the symbol
 
-Overlap GND/Power/Identical Pins
+Overlap GND/Power/Identical Pins - "Many symbols have corresponding footprints where multiple physical pins are connected to a single logical net." For more [info](https://klc.kicad.org/symbol/s4/s4.3/)
 - One pin should be visible, all the others should have visibility check box turned off and electrical type set to “Passive” 
 
 #### Exception 
