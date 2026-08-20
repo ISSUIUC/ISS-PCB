@@ -195,7 +195,7 @@ Symbols should be as small as possible without distortion or weirdness.
 <img src="images/ISS-PCB-KiCAD-Conventions-Symbol-Info.png" alt="MPN" width="200">
 
 
-NC pins
+No Connect (NC) pins
 - Visibility check box turned off
 - Set Electrical Type to “Unconnected”	
 
