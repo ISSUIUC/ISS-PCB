@@ -124,7 +124,7 @@ Net names should be capitalized and contain no spaces. Use "_" instead of spaces
 
 Don't use global labels. Hierarchical labels are always the prefered label.
 
-Labels should always face up (Never to the side where someone looking at the schematic has to tilt their head)
+Any text should always face up (Never to the side where someone looking at the schematic has to tilt their head)
 
 
 ### Power Rails
