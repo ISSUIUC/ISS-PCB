@@ -269,12 +269,13 @@ Should be named with the exact same formatting as inside of a [ISS Symbols Folde
 
 ## **KiCad Library Convention**
 
-ISS provides an easy naming scheme/directions for custom libraries for members to not have to go through the hastle of looking at KiCad Library conventions. However if interested, they can take a look at KiCads Library Conventions.
+ISS provides an easy naming scheme/directions for custom libraries for members to not have to go through the hastle of looking at KiCad Library conventions. However, KiCad's Library Conventions should still be the main point of reference.
 
-The KiCad Library Convention (KLC) is a set of guidelines for contributing to the official KiCad libraries. **Read over these requirments beforehand and follow them when making custom libraries.** Our libraries follow the same guidelines. All libraries should be created with the intent to upstream them to the offficial KiCad Libraries.
+The KiCad Library Convention (KLC) is a set of guidelines for contributing to the official KiCad libraries. **Read over these requirments beforehand and follow them when making custom libraries.** Our libraries follow the same guidelines. All libraries should be created with the intent to upstream them to the official KiCad Libraries. It is **important** to note that many downloaded libraries are often not up to KLC thus shouldn't be blindly added to our libraries. 
 
 - [KiCad Library Convention](https://klc.kicad.org/): *Library maintainer rules & guidelines*
 
+*All libraires should follow the KLC before merging to main* 
 
 <br/>
 
