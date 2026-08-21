@@ -43,9 +43,10 @@ Find a graphic version of the ISS-PCB directory [here](https://github.com/ISSUIU
 
 Take a look at [Contributing Page](https://github.com/ISSUIUC/ISS-PCB/blob/conventions/CONTRIBUTING.md#custom-library-paths) for a tutorial. 
 
+## **New Symbols**
+
 Ensure symbol names follow ISS conventions seen in [ISS Library Conventions](https://github.com/ISSUIUC/ISS-PCB/blob/conventions/CONTRIBUTING.md#iss-library-convention)
 
-## **New Symbols**
 
 - Once KiCad is open go into Symbol Editor 
 
