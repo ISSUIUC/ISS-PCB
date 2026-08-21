@@ -260,7 +260,7 @@ Trace sizing is determined based on estimated current and voltage the trace will
 
 - For USB_POWER we use: .5 mm for trace width 
 
-However, these trace widths aren't computed thoroughly and there isn't a convention for how big they should be. The trace width should be sized proportionally to it's voltage based on the reference point given up above. 
+However, these trace widths aren't computed thoroughly and there isn't a convention for how big they should be. The trace width should be sized proportionally to it's estimated current/voltage load. 
 
 
 ### **RF Circuitry** 
@@ -270,6 +270,11 @@ Remember in E-hardware everyone is learning, even the leads, especially about to
 *Usually for our purposes RF traces almost always have a 50 ohm impedance, however, this is not ALWAYS the case*
 
 # **Instrumentation Tutorials**
+
+## **Cool Gear ISS Has**
+
+- Saleae Logic 8
+- ImmersionRC RF Power Meter V2.1 
 
 Links to relevant tutorials that members can follow:
 
