@@ -224,7 +224,8 @@ How you configure the design rules constraints depends on the manufacturer. Thes
 
 You can manually input these design constraints as shown:
 
-<img src="images/ISS-PCB-KiCAD-HOW-TO-DRC.png" alt="Small-Symbols" width="500">
+![alt text](images/ISS-PCB-KiCAD-HOW-TO-DRC.png)
+
 
 This page is accessed by clicking File (in the top left corner of the KiCad layout screen) 
 
@@ -236,6 +237,11 @@ OR you can import these constraints from other projects by clicking the button s
 
 Information about design constraints can be found at [JLCPCB Design Rules](https://jlcpcb.com/capabilities/Capabilities) - these are the design constraints JLCPCB imposes, the manufacturer we use. 
 
+### **Adding Predefined Sizes** 
+
+Under design rules (as seen in the previous image) is a sub-section to imput Pre-defined Sizes. We reccomend adding them for easy of routing and impedance matching. 
+
+Ex: Pre-defined 50 Ohm Impedance in Generic GLC Stackup = 0.3497mm 
 
 
 ### **Trace Impedance Matching**
@@ -265,7 +271,7 @@ However, these trace widths aren't computed thoroughly and there isn't a convent
 
 ### **RF Circuitry** 
 
-Remember in E-hardware everyone is learning, even the leads, especially about topics like black magic (RF). Thus, no conventions have been strictly made as we are continously learning about how to build proper SRAD RF designs. You are more than welcome to add to this part of the md. 
+Remember in E-hardware everyone is learning, even the leads, especially about topics in RF (aka black magic). Thus, no conventions have been strictly made as we are continously learning about how to build proper SRAD RF designs. You are more than welcome to add to this part of the md. 
 
 *Usually for our purposes RF traces almost always have a 50 ohm impedance, however, this is not ALWAYS the case*
 

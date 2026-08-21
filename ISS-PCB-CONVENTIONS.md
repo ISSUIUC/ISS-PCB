@@ -38,7 +38,7 @@ Text width should be no smaller than 1.27mm in order to be readable if printed. 
 
 ### Partitions
 
-Components should be sectioned off and grouped based on functionaility. The box title describes the general functionality while the subtitle describes the main component partnumber or other design defining information. Sometimes a subtitle isn't needed. Alternatively some schematics draw lines across the full length of the schematic to divide sections. Regardless of the method, always find a way to consistently group similar circuits together and clearly annotate them.
+Components should be sectioned off and grouped based on functionaility. The box title describes the general functionality while the subtitle describes the main component partnumber or other design defining information. **Sometimes a subtitle isn't needed.** Alternatively some schematics draw lines across the full length of the schematic to divide sections. Regardless of the method, always find a way to consistently group similar circuits together and clearly annotate them.
 
 - Box Border: 0 Width (Default)
 - Dashed Line Border
@@ -195,11 +195,11 @@ Symbols should be as small as possible without distortion or weirdness.
 <img src="images/ISS-PCB-KiCAD-Conventions-Symbol-Info.png" alt="MPN" width="500">
 
 
-No Connect (NC) pins
+No Connect (NC) pins in symbol editor
 - Visibility check box turned off
 - Set Electrical Type to “Unconnected”	
 
-Pins are not used/connected to make sure to place “no connect flags” 
+Pins are not used/connected to make sure to place “no connect flags” in schematic editor
 
 Pins with similar functions should be grouped together:
 - SPI_MISO, SPI_MOSI, SPI_CS, SPI_CLK
