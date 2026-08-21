@@ -223,6 +223,8 @@ OR you can import these constraints from other projects by clicking the button s
 
 ### **Trace Impedance Matching**
 
+Correct trace impedances are crucial for differential pairs such as USB Lines (D+, D-) for signal integrity, noise rejection, and data reliability. 
+
 We sometimes encounter differential pairs that need to have a set trace impedance. Usually when we are routing D+/D- lines from USB to the MCU. 
 
 In order to correctly route differential pairs for a USB click Route -> Route Differential Pair -> then click the D+/D- line. 
@@ -234,7 +236,7 @@ You can also compute different traces using the KiCad calculator seen in the KiC
 
 ### **Trace Sizing** 
 
-Trace sizing is important when dealing with various voltages
+Trace sizing is determined based on estimated current and voltage the trace will experience. 
 
 - For regular digital signal lines we use: 0.127 mm for trace width 
 

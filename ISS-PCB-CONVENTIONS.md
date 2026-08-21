@@ -298,19 +298,6 @@ Make sure BOTH F.paste and F.mask layers have filled in solder paste ensure you 
 <img src="images/ISS-PCB-KiCAD-Conventions-Solder-Paste-2.png" alt="Connectors" width="200">
 
 
-### Traces
-
-#### Trace Impedances 
-Correct trace impedances are crucial for differential pairs such as USB Lines (D+, D-) for signal integrity, noise rejection, and data reliability. 
-
-Follow [Trace Impedance Matching](https://github.com/ISSUIUC/ISS-PCB/blob/conventions/HOW-TO.md#trace-impedance-matching) guide to learn more. 
-
-#### Trace Sizes 
-
-Determine based on estimated current and voltage what size of trace is needed. 
-
-Follow [Trace Size](https://github.com/ISSUIUC/ISS-PCB/blob/conventions/HOW-TO.md#trace-sizing) guide to learn more. 
-
 <br/><br/><br/>
 
 *See a typo? Think we left some vital information out? Make a branch and edit this file!*
