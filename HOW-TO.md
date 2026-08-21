@@ -1,6 +1,6 @@
 # **How-To KiCad Fundamentals**
 
-*Author(s): Kacper Paraniuk*
+*Author(s): Kacper Paraniuk, Thomas McManamen, Eddie Tang*
 
 ![alt text](images/ISS-PCB-HOW-TO-INTRO.jpg)
 
@@ -250,6 +250,7 @@ You can also compute different traces using the KiCad calculator seen in the KiC
  
 ![alt text](images/ISS-PCB-KiCAD-HOW-TO-Impedance.png)
 
+Additionally, JLCPCB and digikey have calculators that can be used. The former is very helpful cause it takes the board stackup into account automatically.
 
 ### **Trace Sizing** 
 
@@ -265,6 +266,8 @@ However, these trace widths aren't computed thoroughly and there isn't a convent
 ### **RF Circuitry** 
 
 Remember in E-hardware everyone is learning, even the leads, especially about topics like black magic (RF). Thus, no conventions have been strictly made as we are continously learning about how to build proper SRAD RF designs. You are more than welcome to add to this part of the md. 
+
+*Usually for our purposes RF traces almost always have a 50 ohm impedance, however, this is not ALWAYS the case*
 
 # **Instrumentation Tutorials**
 

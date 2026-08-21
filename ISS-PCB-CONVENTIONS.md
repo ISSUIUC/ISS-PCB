@@ -1,6 +1,6 @@
 # **ISS E-Hardware PCB Conventions**
 
-*Author(s): Peter Giannetos, Kacper Paraniuk*
+*Author(s): Peter Giannetos, Kacper Paraniuk, Thomas McManamen, Eddie Tang*
 
 ![alt text](images/ISS-PCB-ISS-PCB-CONVENTIONS-INTRO.jpg)
 
