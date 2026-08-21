@@ -33,9 +33,9 @@ A symbol is a graphical representation of an electronic component which we use t
 
 ### **Finding ISS Symbol Library** 
 
-The location in your directory where ISS-PCB is located > ISS-PCB -> Libs > Symbols 
+The location in your directory where ISS-PCB is located || ISS-PCB -> Libs > Symbols 
 
-.kicad_sym are libraries of symbols not symbols themselves thus we will want to import a symbol into the correct library or create a new library if needed when importing or creating new symbols. 
+.kicad_sym is a collection of symbols (not symbols themselves) thus we will want to import a symbol into the correct library. Examples of .kicad_sym can include Analog_ADC_Texas. If there is no relevant library then we need to create a new library for the symbol. 
 
 Find a graphic version of the ISS-PCB directory [here](https://github.com/ISSUIUC/ISS-PCB/blob/conventions/CONTRIBUTING.md#library-directory)
 
