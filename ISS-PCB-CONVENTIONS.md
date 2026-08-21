@@ -283,14 +283,14 @@ It is required to put a silk screen indicator by pin number one of the component
 
 Each symbol should have a courtyard (Pink outline) if not add one by clicking the courtyard layer (respective front/back) that has the correct distance between the courtyard and component. 
 
-"Unless otherwise specified, clearance is 0.25mm. This shrinks to 0.15mm for parts smaller than 1.5mm in any dimension." (KLC) However these numbers change based on the component working with. 
+"Unless otherwise specified, clearance is 0.25mm. This shrinks to 0.15mm for parts smaller than 1.5mm in any dimension." (KLC) However, these numbers change based on the component working with. 
 
 For information on the [Courtyard Layer Requirements](https://klc.kicad.org/footprint/f5/f5.3.html) reference the KLC.
 
 
 ### Solder Paste 
 
-Make sure BOTH F.paste and F.mask layers have filled in solder paste
+Make sure BOTH F.paste and F.mask layers have filled in solder paste ensure you reference the mechanical sheet when filling in these layers as they may not always be the same. 
 
 <img src="images/ISS-PCB-KiCAD-Conventions-Solder-Paste.png" alt="Connectors" width="200">
 
