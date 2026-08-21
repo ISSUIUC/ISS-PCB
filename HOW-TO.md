@@ -162,12 +162,12 @@ For actually creating the footprint we need to know what two layers are.
 
 #### **PCB Layer Overview**
 
-KiCad uses multiple layers and it's important to know what they generally are for ordering PCBs when they ask for Gerber files. We will be mainly focusing on the F.courtyard which we will use to set as the boundary of the component and F.Silkscreen which is the non-conductive ink layer printed on the surface for creating a footprint.
+KiCad uses multiple layers and it's important to know what they are not only for ordering PCBs but also for understanding how to design complex boards. We will be mainly focusing on the F.courtyard which we will use to set as the boundary of the component and F.Silkscreen which is the non-conductive ink layer printed on the surface for creating a footprint.
 
 ![alt text](images/ISS-PCB-KiCAD-HOW-TO-Layers.png)
 
 - As for other layers F.Cu and B.Cu are copper layers of the PCB itself 
-- Solder mask is a thin layer of polymer that is applied to the copper traces of a PCB
+- Solder mask is a thin polymer protective coating applied to all non-conductive areas and during manufacturing to prevent solder from going to unwanted areas. 
 - Edge Cuts for creating the boundary of a PCB so the manufacturer knows the boundary at which to cut the board outline
 
 
