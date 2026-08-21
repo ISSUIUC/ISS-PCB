@@ -211,7 +211,7 @@ Create hierarchical sheets when dividing sections of a PCB.
 
 - Name both the Sheet Name & File Name to the same name. 
 
-- Right click the box and click "Autoplace All Sheet Pins" 
+- Right click the box and click "Autoplace All Sheet Pins." Unnecessary pins can be connected to a no connect flag or deleted.
 
 - Connect subsequent hierachical labels to create connections between different sheets/files. 
 
@@ -230,10 +230,12 @@ This page is accessed by clicking File (in the top left corner of the KiCad layo
 
 File > Board Setup... > Design Rules > Constraints 
 
-
 OR you can import these constraints from other projects by clicking the button shown in the image: 
 
 ![alt text](images/ISS-PCB-KiCAD-HOW-TO-DRC2.png)
+
+Information about design constraints can be found at [JLCPCB Design Rules](https://jlcpcb.com/capabilities/Capabilities) - these are the design constraints JLCPCB imposes, the manufacturer we use. 
+
 
 
 ### **Trace Impedance Matching**
