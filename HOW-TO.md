@@ -49,11 +49,13 @@ Ensure symbol names follow ISS conventions seen in [ISS Library Conventions](htt
 
 - Once KiCad is open go into Symbol Editor 
 
-![alt text](images/ISS-PCB-KiCAD-HOW-TO-Identify-Symbol-Library.png)
+![alt text](images/ISS-PCB-KiCAD-HOW-TO-Symbol-Editor.png)
+
 
 - Identify if you need a new symbol library or can you just import the symbol into an existing symbol library.
 
-![alt text](images/ISS-PCB-KiCAD-HOW-TO-Symbol-Editor.png)
+![alt text](images/ISS-PCB-KiCAD-HOW-TO-Identify-Symbol-Library.png)
+
 
 *Error: If you get an error that says “Symbol Library “name” is not writable” this means you are trying to write to a kicad library you need to import to an ISS folder.*
 
