@@ -15,13 +15,11 @@ KiCad files are more difficult and delicate to merge than standard code. Working
 - [Example Workflow](#example-workflow)
 - [ISS KiCad Project Naming](#iss-kicad-project-naming)
 
-
-
 <br/>
 
 # **Quickstart**
 
-How to quickly get started via terminal commands. Recommended Terminal: [Git Bash](https://git-scm.com/downloads)
+How to quickly get started via terminal commands.
 
 ## Install KiCad
 
@@ -48,9 +46,7 @@ The rest of this guide assumes you are somewhat familiar with Git and GitHub. Be
 
 # **Branches**
 
-There are three commonly used branch types in this repository.
-
-![Branch Hierarchy](/images/ISS-PCB-Contributing-Branch-Types.png)
+There are two used branch types in this repository.
 
 - ### **Main**
 
@@ -61,19 +57,14 @@ There are three commonly used branch types in this repository.
 - ### **Project_Dev**
 
   - Projects that are being actively developed
-  - Used to review work from Ticket Branches via pull requests
+  - Used to review work from branches via pull requests
   - Do not directly push to this branch! (Pull requests only!)
   - Example: `TARS-MK4-dev`
 
-- ### **Ticket**
 
-  - Specific tasks for Project_Dev branches sourced from our Trello
-  - This is where the majority of the development happens
-  - Example: `AV-999/Route-FCB-Sensors`
+## **Branch Rules**
 
-## **Ticket Branch Rules**
-
-There are nine rules you must follow when working in ticket branches to avoid merge conflicts and loss of work.
+There are six rules you must follow when working in branches to avoid merge conflicts and loss of work.
 
 1. ### **Pull Often**
 
@@ -81,35 +72,28 @@ There are nine rules you must follow when working in ticket branches to avoid me
   
 2. ### **Merge Often**
 
-   - Merge your work into the Project_Dev branch with a pull request. This allows for new ticket branches to have your work and current ticket branches to rebase with your work. **If your work is incomplete, create a draft pull request to still receive feedback.**
+   - Merge your work into the Project_Dev branch with a pull request. This allows for new branches to have your work and current branches to rebase with your work. **If your work is incomplete, create a draft pull request to still receive feedback.**
 
-3. ### **Rebase Often**
-
-   - Rebase your ticket branch from the Project_Dev branch before every work session. This ensures you have the most up to date work from other ticket branches editing Project_Dev. You could alternatively merge your old work and then make a new branch.
-  
-4. ### **Single File Commits**
+3. ### **Single File Commits**
 
    - Only `git add` one file per `git commit`. However, you may have multiple commits per `git push`. **KiCad will ghost edit files even if you don't open them.** This will cause `git status` to mark them as edited even though no actual changes were made. In short, never automatically add all the 'edited' files to a commit. You must delibratly `git add` the individual files you opened and edited. This also ensures you don't accidentally add any random files.
   
-5. ### **One Branch Per File**
+4. ### **One Branch Per File**
 
-   - There should only be one ticket branch editing a specific file. However a single ticket branch may edit multiple files. This ensures no parallel work is happening on a specific file between multiple branches. This would cause merge conflicts and some work is almost always lost.
+   - There should only be one branch editing a specific file. However a single branch may edit multiple files. This ensures no parallel work is happening on a specific file between multiple branches. This would cause merge conflicts and some work is almost always lost.
 
-6. ### **No Simultaneous Editors Per Branch**
+5. ### **No Simultaneous Editors Per Branch**
 
    - Only one person can edit a branch at a time. Co-contributors must coordinate with each other to ensure that only one person is activly editing.
 
-7. ### **Stay Within Your Branch's Scope**
+6. ### **Stay Within Your Branch's Scope**
 
-   - Do not edit files beyond the scope of your ticket for your project. This includes editing files in other project folders and other files in your project folder. This ensures you don't cause merge conflicts for someone else's work on another branch, and that the Project_Dev branch doesn't accidentally edit other projects in Main or other Project_Dev branches. Adding files to the KiCad Parts Library is allowed as long as the parts are related to your work. Rule #4 is the best way to ensure compliance.
+   - Do not edit files beyond the scope of your branch for your project. This includes editing files in other project folders and other files in your project folder. This ensures you don't cause merge conflicts for someone else's work on another branch, and that the Project_Dev branch doesn't accidentally edit other projects in Main or other Project_Dev branches. Adding files to the KiCad Parts Library is allowed as long as the parts are related to your work. Rule #4 is the best way to ensure compliance.
 
-8. ### **Focused Ticket Scope**
+7. ### **Focused Branch Scope**
 
-   - Ticket branches should be focused on completing a specific task. This allows you to finish the work faster, receive feedback faster, merge the branch into the Project_Dev branch faster, and start work on a newer up to date Ticket branch faster. For example `Route-FCB-Sensors` is relatively focused, but `Finish-FCB` is not and can have a broad interpretation.
+   - Focused branches should be focused on completing a specific task. This allows you to finish the work faster, receive feedback faster, merge the branch into the Project_Dev branch faster, and start work on a newer up to date branch faster. For example `Route-FCB-Sensors` is relatively focused, but `Finish-FCB` is not and can have a broad interpretation.
 
-9. ### **Branch From Project_Dev**
-
-   - All Ticket branches should be created by branching off of the Project_Dev branch you are working within. Do not make any Ticket branches off of main.
 
 ## **Branch Protection**
 
@@ -119,11 +103,6 @@ The `main` and `Project_Dev` branches should be locked down and require pull req
 
 Keep the naming of branches consistent between each other.
 - **Project_Dev:** `PROJECT_NAME-dev` ➡ `TARS-MK4-dev`
-- **Ticket Branch:** `TEAM-NUMBER/TITLE` ➡ `AV-884/Route-FCB`
-  - The team currently employs a ticketing system where members are assigned to a ticket with a serialized number to complete tasks. *(Trello usually works well for this)*
-  - Teams: AV (Avionics), PAY (Payload), REC (Recovery), STR (Structures)
-  - **If you merge your ticket branch but are still working on the same ticket make a new branch with that number but a different** `/TITLE`
-    - Ticket #884 Make FCB ➡ `AV-884/FCB-Schematic` ➡ `AV-884/FCB-Routing`
 - **Other Branches:** Name them according to their task/purpose
   - The branch this contributing guide was made on was called `Contributing`
 
@@ -231,8 +210,6 @@ Below is a good example with a relative path and a bad example with a user speci
 ![KiCad Relative Paths](/images/ISS-PCB-Contributing-Custom-Library-Paths.png)
 
 
-
-
 ## **ISS Library Convention** 
 
 
@@ -285,7 +262,7 @@ If you ever run into merge conflicts, which are common with KiCad, there are a f
 
 1. ### **New Branch:**
 
-    - If you are unable to merge a branch, you can create a new branch and then copy over any work from the old branch to the new branch. This is often the best solution for Ticket branches.
+    - If you are unable to merge a branch, you can create a new branch and then copy over any work from the old branch to the new branch. This is often the best solution for branches.
 
 2. ### **File Editing:**
 
@@ -299,7 +276,7 @@ If you ever run into merge conflicts, which are common with KiCad, there are a f
 
 # **Example Workflow**
 
-Here is a barebones demo of a typical workflow when working with Ticket branches.
+Here is a barebones demo of a typical workflow when working with branches.
 
 1. Run `git pull` to make sure you have the latest version
 2. Make sure you are on the correct branch; If not run `git checkout BRANCH_NAME`
@@ -325,11 +302,7 @@ You can clean your repository by running the following commands. Just make sure 
 
 E-Hardware follows this specific format for project naming when creating boards or new revisions. 
 
-
 ![Project Naming Guide](/images/ISS-PCB-Contributing-Repository-ISS-Naming.png)
-
-
-
 
 
 
