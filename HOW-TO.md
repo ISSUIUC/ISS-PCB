@@ -27,6 +27,10 @@
 
 # **Symbol Libraries**
 
+## **What is a symbol?**
+
+A symbol is a graphical representation of an electronic component which we use to show how the part connects electrically. 
+
 ### **Finding ISS Symbol Library** 
 
 The location in your directory where ISS-PCB is located > ISS-PCB -> Libs > Symbols 
@@ -127,6 +131,10 @@ Ensure you are following [footprint conventions](https://github.com/ISSUIUC/ISS-
 
 
 ### **Creating a Footprint**
+
+## **What is a footprint?**
+
+A footprint represents the physical land pattern (pads) of an electronic component. It defines the shape and size of the copper pads to solder a component onto a PCB. 
 
 #### **Reading Mechanical Drawings in Datasheets** 
 
