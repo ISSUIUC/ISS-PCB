@@ -242,11 +242,11 @@ Below is a good example with a relative path and a bad example with a user speci
 
 The convention for naming `.kicad_sym`, `.kicad_mod`, `.3dshapes` is very simple: 
 
-“The general name for what it is” + “_” + “company who made it”
+“The general name for what it is (ex: MCU, Amplifier, Clock... etc) ” + “_” + “company who made it”
 
 ![alt text](images/ISS-PCB-Contributing-Convention-Sym-Folder.png)
 
-Inside of symbol library symbol should be named by: “what it specifically is”
+Inside of symbol library symbol should be named by: “what it specifically is (ex: part number)”
 
 ![alt text](images/ISS-PCB-Contributing-Convention-Inside-Sym-Folder.png)
 
@@ -323,7 +323,7 @@ You can clean your repository by running the following commands. Just make sure 
 
 # **ISS KiCad Project Naming**
 
-E-hardware follows this specific format for project naming when creating boards or new revisions. 
+E-Hardware follows this specific format for project naming when creating boards or new revisions. 
 
 
 ![Project Naming Guide](/images/ISS-PCB-Contributing-Repository-ISS-Naming.png)
