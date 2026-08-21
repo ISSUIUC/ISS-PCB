@@ -277,7 +277,7 @@ Follow our tutorial for [Creating a Footprint](https://github.com/ISSUIUC/ISS-PC
 
 ### Pin Number One
 
-Although not necessary it is helpful to put a silk screen indicator by pin number one of the component for later when soldering. 
+It is required to put a silk screen indicator by pin number one of the component for soldering purposes. The only exception being unless footprint orientation does not matter. 
 
 ### Courtyards 
 
