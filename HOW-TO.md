@@ -85,6 +85,8 @@ Follow the steps to [import](#import-new-symbols-within-existing-library) or [cr
 
 ### **Import New Symbols within Existing Library**
 
+*It is important to note symbols downloaded from online oftentimes need to be edited heavily to follow conventions*
+
 Find the library and right click on it. Then click the import symbol. 
 
 ![alt text](images/ISS-PCB-KiCAD-HOW-TO-DSPT1.png)
@@ -108,6 +110,8 @@ Find the symbol library and right click on it. Then click “New symbol”
 
 
 Give symbol name (should be the name of the component you are putting in) in this case TLV76050DBZR
+
+- Symbol name specifies the associated MPN but any more specific is optional such as package type.
 
 Assign [reference designator](https://github.com/ISSUIUC/ISS-PCB/blob/conventions/ISS-PCB-CONVENTIONS.md#reference-designators) according to IEEE standards 
 
