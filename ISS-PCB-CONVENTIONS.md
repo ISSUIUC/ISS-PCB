@@ -169,7 +169,7 @@ Assign Reference designator according to IEEE standards (listed below)
 
 Ensure GND pins are on the bottom and power pins (VCC) are on top of the symbol
 
-Overlap GND/Power/Identical Pins - "Many symbols have corresponding footprints where multiple physical pins are connected to a single logical net." For more [info](https://klc.kicad.org/symbol/s4/s4.3/)
+Overlap GND/Power/Identical Pins - "Many symbols have corresponding footprints where multiple physical pins are connected to a single logical net." (KLC) For more [info](https://klc.kicad.org/symbol/s4/s4.3/)
 - One pin should be visible, all the others should have visibility check box turned off and electrical type set to “Passive” 
 
 #### Exception 
@@ -281,7 +281,12 @@ It is required to put a silk screen indicator by pin number one of the component
 
 ### Courtyards 
 
-Each symbol should have a courtyard (Pink outline) if not add one by clicking the courtyard layer (respective front/back) that is a little bigger than the component itself. 
+Each symbol should have a courtyard (Pink outline) if not add one by clicking the courtyard layer (respective front/back) that has the correct distance between the courtyard and component. 
+
+"Unless otherwise specified, clearance is 0.25mm. This shrinks to 0.15mm for parts smaller than 1.5mm in any dimension." (KLC) However these numbers change based on the component working with. 
+
+For information on the [Courtyard Layer Requirements](https://klc.kicad.org/footprint/f5/f5.3.html) reference the KLC.
+
 
 ### Solder Paste 
 
