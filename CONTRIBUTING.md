@@ -76,7 +76,7 @@ There are six rules you must follow when working in branches to avoid merge conf
 
 3. ### **Single File Commits**
 
-   - Only `git add` one file per `git commit`. However, you may have multiple commits per `git push`. **KiCad will ghost edit files even if you don't open them.** This will cause `git status` to mark them as edited even though no actual changes were made. In short, never automatically add all the 'edited' files to a commit. You must delibratly `git add` the individual files you opened and edited. This also ensures you don't accidentally add any random files.
+   - Only `git add` one file per `git commit`. However, you may have multiple commits per `git push`. **KiCad will ghost edit files even if you don't open them.** This will cause `git status` to mark them as edited even though no actual changes were made. In short, never automatically add all the 'edited' files to a commit. You must deliberately `git add` the individual files you opened and edited. This also ensures you don't accidentally add any random files.
   
 4. ### **One Branch Per File**
 
@@ -110,7 +110,7 @@ Keep the naming of branches consistent between each other.
 
 # **Pull Requests**
 
-Pull requests (PRs) are how to submit work for peer review and merge into Project_Dev branches or main. Submit pull requests as soon as possible in the development cycle to recieve feedback early. It is recomended that PRs and comments are made through GitHub.com and not via the command line.
+Pull requests (PRs) are how to submit work for peer review and merge into Project_Dev branches or main. Submit pull requests as soon as possible in the development cycle to receive feedback early. It is recommended that PRs and comments are made through GitHub.com and not via the command line.
 
 ## **Peer Review Guidelines**
 
@@ -154,7 +154,7 @@ There are three main categories of part files. When adding new components please
 - ### **3D Models**
 
   - Used to render 3D images of the boards
-  - `.3dshapes`: A library folder contating multiple `.step` and `.wrl` files 
+  - `.3dshapes`: A library folder containing multiple `.step` and `.wrl` files 
   - `.step` : An individual component 3D model
   - `.wrl` : An individual component 3D model with texture data for advanced rendering *(Optional)*
 
@@ -246,13 +246,13 @@ Should be named with the exact same formatting as inside of a [ISS Symbols Folde
 
 ## **KiCad Library Convention**
 
-ISS provides an easy naming scheme/directions for custom libraries for members to not have to go through the hastle of looking at KiCad Library conventions. However, KiCad's Library Conventions should still be the main point of reference.
+ISS provides an easy naming scheme/directions for custom libraries for members to not have to go through the hassle of looking at KiCad Library conventions. However, KiCad's Library Conventions should still be the main point of reference.
 
-The KiCad Library Convention (KLC) is a set of guidelines for contributing to the official KiCad libraries. **Read over these requirments beforehand and follow them when making custom libraries.** Our libraries follow the same guidelines. All libraries should be created with the intent to upstream them to the official KiCad Libraries. It is **important** to note that many downloaded libraries are often not up to KLC thus shouldn't be blindly added to our libraries. 
+The KiCad Library Convention (KLC) is a set of guidelines for contributing to the official KiCad libraries. **Read over these requirements beforehand and follow them when making custom libraries.** Our libraries follow the same guidelines. All libraries should be created with the intent to upstream them to the official KiCad Libraries. It is **important** to note that many downloaded libraries are often not up to KLC thus shouldn't be blindly added to our libraries. 
 
 - [KiCad Library Convention](https://klc.kicad.org/): *Library maintainer rules & guidelines*
 
-*All libraires should follow the KLC before merging to main* 
+*All libraries should follow the KLC before merging to main* 
 
 <br/>
 
@@ -272,7 +272,7 @@ If you ever run into merge conflicts, which are common with KiCad, there are a f
 
 3. ### **Fresh Start:**
 
-   - If your entire **local** repository is acting strange and you can not solve it within 20 minutes, you can opt to reclone the repository in a new folder. You can delete your old local repository if you have no work that you want to save! It is recomended that you copy and paste any work you want to keep from the old repository to the new local repository, and then delete the old repository.
+   - If your entire **local** repository is acting strange and you can not solve it within 20 minutes, you can opt to re-clone the repository in a new folder. You can delete your old local repository if you have no work that you want to save! It is recommended that you copy and paste any work you want to keep from the old repository to the new local repository, and then delete the old repository.
 
 # **Example Workflow**
 
@@ -291,7 +291,7 @@ Here is a barebones demo of a typical workflow when working with branches.
 
 You can clean your repository by running the following commands. Just make sure you commit and push any unsaved work first! We suggest doing this after every time you push to ensure you don't build a heap of untracked and modified files that'll make it more confusing when running `git add`.
 
-- `git clean -d -n` a dry run of what untracked files your about to permantely delete
+- `git clean -d -n` a dry run of what untracked files your about to permanently delete
 - `git clean -d -f` nukes every untracked directory 
 
 
