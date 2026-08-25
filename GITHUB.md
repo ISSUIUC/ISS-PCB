@@ -48,7 +48,7 @@ Branches are different version of a repository used to develope in isolation. Th
 
 # **Interfaces**
 
-There exist many different terminal and GUI style interfaces. Git Bash is a very popular terminal command line interface while GitHub Desktop is a popular GUI interface. Linux and MacOS computer may already have command line interfaces. Download Git and Git Bash at minimum to get started with GitHub.
+There exist many different terminal and GUI style interfaces. Git Bash is a very popular terminal command line interface while GitHub Desktop is a popular GUI interface. Linux and MacOS computer may already have command line interfaces. Download Git at minimum to get started with GitHub.
 
 - Git Bash: [git-scm.com/downloads](https://git-scm.com/downloads)
 - GitHub Desktop: [desktop.github.com](https://desktop.github.com/)
