@@ -4248,6 +4248,121 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "GND_4"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GND_4_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_4_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "GND_5"
 			(power global)
 			(pin_numbers
@@ -12998,6 +13113,12 @@
 		(uuid "5b1fca66-5ea3-4233-ac8c-b13eb0873fef")
 	)
 	(junction
+		(at 105.41 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "66beaaf2-db4c-4290-a1cd-a28bdaeb2d0b")
+	)
+	(junction
 		(at 112.395 -197.485)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -13494,6 +13615,16 @@
 			(type default)
 		)
 		(uuid "0f615efd-7ea3-40f1-bef3-7946aad2bfd7")
+	)
+	(wire
+		(pts
+			(xy 101.6 63.5) (xy 105.41 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f8c6d5a-f8f1-4fda-9c01-7a349e7edfe4")
 	)
 	(wire
 		(pts
@@ -15025,6 +15156,16 @@
 		)
 		(uuid "6c733917-bfdf-4217-b39f-ffd2035c92bd")
 	)
+	(wire
+		(pts
+			(xy 101.6 86.36) (xy 105.41 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6cac534c-06f1-4e0e-b180-e2606cef3f8a")
+	)
 	(polyline
 		(pts
 			(xy 187.96 -54.61) (xy 189.23 -54.61)
@@ -15937,6 +16078,16 @@
 	)
 	(wire
 		(pts
+			(xy 105.41 63.5) (xy 105.41 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a34e2289-d0dc-427f-a490-8be2956cd487")
+	)
+	(wire
+		(pts
 			(xy 284.48 -147.32) (xy 287.02 -147.32)
 		)
 		(stroke
@@ -16354,6 +16505,16 @@
 			(type default)
 		)
 		(uuid "b7cce247-3284-4eec-bc4e-c361cd7cd698")
+	)
+	(wire
+		(pts
+			(xy 105.41 86.36) (xy 105.41 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8fbb6f0-c372-4012-9cbe-b7c6d87fa81a")
 	)
 	(wire
 		(pts
@@ -27410,6 +27571,85 @@
 			(project "MIDAS-MICRO"
 				(path "/0941d445-abe5-4c4a-84ea-6134de0a1f2b"
 					(reference "#PWR0110")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_4")
+		(lib_id "power:GND")
+		(at 105.41 118.11 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "beaf3bff-292a-4754-96e0-4f187c280f61")
+		(property "Reference" "#PWR06"
+			(at 105.41 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 105.41 123.19 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 105.41 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 105.41 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 105.41 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1d4b9985-46a1-494d-b42d-3380dac0b1da")
+		)
+		(instances
+			(project "MIDAS-MICRO"
+				(path "/0941d445-abe5-4c4a-84ea-6134de0a1f2b"
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
