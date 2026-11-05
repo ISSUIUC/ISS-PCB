@@ -41,7 +41,7 @@
         "pads": {
           "drill": 0.8,
           "height": 1.27,
-          "width": 2.54
+          "width": 1.27
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -60,7 +60,7 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.1,
+          "min_clearance": 0.5,
           "min_island_area": 10.0,
           "min_thickness": 0.25,
           "pad_connection": 1,
@@ -69,13 +69,7 @@
           "thermal_relief_spoke_width": 0.5
         }
       },
-      "diff_pair_dimensions": [
-        {
-          "gap": 0.0,
-          "via_gap": 0.0,
-          "width": 0.0
-        }
-      ],
+      "diff_pair_dimensions": [],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -116,9 +110,9 @@
         "missing_tuning_profile": "warning",
         "net_conflict": "warning",
         "nonmirrored_text_on_back_layer": "warning",
-        "npth_inside_courtyard": "ignore",
+        "npth_inside_courtyard": "error",
         "padstack": "warning",
-        "pth_inside_courtyard": "ignore",
+        "pth_inside_courtyard": "error",
         "shorting_items": "error",
         "silk_edge_clearance": "warning",
         "silk_over_copper": "warning",
@@ -146,22 +140,22 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.1,
-        "min_connection": 0.1,
-        "min_copper_edge_clearance": 0.2,
+        "min_clearance": 0.0,
+        "min_connection": 0.0,
+        "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
-        "min_hole_clearance": 0.1,
-        "min_hole_to_hole": 0.2,
+        "min_hole_clearance": 0.25,
+        "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
-        "min_text_thickness": 0.1,
+        "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.1,
-        "min_via_annular_width": 0.05,
-        "min_via_diameter": 0.25,
+        "min_track_width": 0.2,
+        "min_via_annular_width": 0.1,
+        "min_via_diameter": 0.5,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -209,15 +203,7 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [
-        0.0,
-        0.127,
-        0.2,
-        0.3,
-        0.3497,
-        0.5,
-        1.0
-      ],
+      "track_widths": [],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -244,20 +230,7 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [
-        {
-          "diameter": 0.0,
-          "drill": 0.0
-        },
-        {
-          "diameter": 0.45,
-          "drill": 0.3
-        },
-        {
-          "diameter": 0.8,
-          "drill": 0.4
-        }
-      ],
+      "via_dimensions": [],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -267,7 +240,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": "A"
+      "sch_revision": ""
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -476,7 +449,6 @@
       "footprint_filter": "ignore",
       "footprint_link_issues": "warning",
       "four_way_junction": "ignore",
-      "global_label_dangling": "warning",
       "ground_pin_not_ground": "warning",
       "hier_label_mismatch": "error",
       "isolated_pin_label": "warning",
@@ -516,17 +488,17 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "MIDAS-MICRO.kicad_pro",
+    "filename": "MIDAS-Micro.kicad_pro",
     "version": 3
   },
   "net_settings": {
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.1,
-        "diff_pair_gap": 0.127,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2419,
+        "diff_pair_width": 0.2,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
@@ -534,9 +506,9 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.127,
+        "track_width": 0.2,
         "tuning_profile": "",
-        "via_diameter": 0.45,
+        "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
       }
@@ -550,14 +522,10 @@
   },
   "pcbnew": {
     "last_paths": {
-      "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "../../../Gerbers/12-02-25/MIDAS/",
-      "pos_files": "",
+      "plot": "",
       "specctra_dsn": "",
-      "step": "",
-      "svg": "",
       "vrml": ""
     },
     "page_layout_descr_file": ""
@@ -568,7 +536,7 @@
       "method": 0,
       "sort_order": 0
     },
-    "bom_export_filename": "/Users/chethankarandikar/Downloads/Mini-MK1.csv",
+    "bom_export_filename": "${PROJECTNAME}.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -630,36 +598,12 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Sim.Pins",
-          "name": "Sim.Pins",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Sim.Device",
-          "name": "Sim.Device",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Description",
-          "name": "Description",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "#",
-          "name": "${ITEM_NUMBER}",
-          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "",
+      "name": "Default Editing",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -692,45 +636,37 @@
     "meta": {
       "version": 1
     },
-    "net_format_name": "",
     "page_layout_descr_file": "",
     "plot_directory": "",
     "reuse_designators": true,
-    "space_save_all_events": true,
-    "spice_current_sheet_as_root": false,
-    "spice_external_command": "spice \"%I\"",
-    "spice_model_current_sheet_as_root": true,
-    "spice_save_all_currents": false,
-    "spice_save_all_dissipations": false,
-    "spice_save_all_voltages": false,
     "subpart_first_id": 65,
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "MIDAS-MICRO.kicad_sch",
-        "name": "MIDAS-MICRO",
-        "uuid": "0941d445-abe5-4c4a-84ea-6134de0a1f2b"
+        "filename": "MIDAS-Micro.kicad_sch",
+        "name": "Root",
+        "uuid": "091f347c-ad3c-4923-abe1-9dfb40841e4f"
       }
     ],
-    "used_designators": "U1-2,U4,U205-206,J1-2,J109-112,R125-128,R208,#PWR1-6,#PWR127,#PWR139,#PWR142,#PWR203,#PWR205,#PWR214-218,D108-111,D204,C205-206",
+    "used_designators": "D1-6,#PWR1-59,R1-41,J1-10,BZ1,C1-20,H1-2,TP1-7,U1-13,Q1-2",
     "variants": []
   },
   "sheets": [
     [
-      "0941d445-abe5-4c4a-84ea-6134de0a1f2b",
-      "MIDAS-MICRO"
+      "091f347c-ad3c-4923-abe1-9dfb40841e4f",
+      "Root"
     ],
     [
-      "32ce2aba-9186-4123-a005-d961d98b988d",
+      "ae703e74-04bb-42e3-a3b6-4475caac0c2e",
       "Power"
     ],
     [
-      "97eb127c-dc60-44b5-924d-287f4cce79b1",
-      "Sensors"
+      "cc39b3ff-2e8a-4275-92bb-e0f567d05171",
+      "Pyro"
     ],
     [
-      "f117cbb2-0371-40a5-aa34-c614dfee4103",
-      "Pyro"
+      "2c4965f8-c79c-42f5-b2ac-30053deb1f9b",
+      "Sensors"
     ]
   ],
   "text_variables": {},
