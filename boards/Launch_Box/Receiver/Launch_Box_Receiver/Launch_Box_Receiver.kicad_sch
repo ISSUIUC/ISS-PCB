@@ -2423,6 +2423,145 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:+3V3"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+3V3"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3V3\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+3V3_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3V3_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power global)
 			(pin_numbers
@@ -2720,18 +2859,6 @@
 		)
 		(uuid "41dd312d-bfec-4011-99cb-cf27d32db413")
 	)
-	(text "we will need to create a footprint for this module."
-		(exclude_from_sim no)
-		(at 147.32 85.598 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(italic yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "7434c148-32c4-43e2-a649-a6ebf386f6a5")
-	)
 	(text "ESP32-S3-MINI-1U-N8"
 		(exclude_from_sim no)
 		(at 15.494 19.177 0)
@@ -2852,16 +2979,6 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 60.96) (xy 140.97 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0017f3de-0246-4c61-b43b-efc9c2c8c48a")
-	)
-	(wire
-		(pts
 			(xy 55.88 139.7) (xy 55.88 152.4)
 		)
 		(stroke
@@ -2879,6 +2996,16 @@
 			(type default)
 		)
 		(uuid "079889d6-b6e4-4c1c-8664-5cddead8ca3a")
+	)
+	(wire
+		(pts
+			(xy 138.43 52.07) (xy 143.51 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d7af317-e75c-4c36-a0c4-33d29dfb0d3b")
 	)
 	(wire
 		(pts
@@ -2912,6 +3039,16 @@
 	)
 	(wire
 		(pts
+			(xy 138.43 60.96) (xy 143.51 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17187009-d73b-42a1-abef-39012ab816ea")
+	)
+	(wire
+		(pts
 			(xy 41.91 114.3) (xy 44.45 114.3)
 		)
 		(stroke
@@ -2932,6 +3069,16 @@
 	)
 	(wire
 		(pts
+			(xy 161.29 27.94) (xy 161.29 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2049f30a-1be3-4637-a88b-f402663ef6af")
+	)
+	(wire
+		(pts
 			(xy 31.75 152.4) (xy 34.29 152.4)
 		)
 		(stroke
@@ -2942,6 +3089,16 @@
 	)
 	(wire
 		(pts
+			(xy 138.43 54.61) (xy 143.51 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b99eb93-5e49-4d59-8b6a-5da4b7787157")
+	)
+	(wire
+		(pts
 			(xy 78.74 52.07) (xy 82.55 52.07)
 		)
 		(stroke
@@ -2949,16 +3106,6 @@
 			(type default)
 		)
 		(uuid "48d377f0-1d55-4421-8f13-346e6b89ba99")
-	)
-	(wire
-		(pts
-			(xy 158.75 72.39) (xy 158.75 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "497de0b9-ef02-48f1-834b-8d72e94c84a4")
 	)
 	(wire
 		(pts
@@ -2989,6 +3136,16 @@
 			(type default)
 		)
 		(uuid "508e909e-6d02-4370-8e84-539aa563c378")
+	)
+	(wire
+		(pts
+			(xy 138.43 63.5) (xy 143.51 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5117eb8e-9141-47d3-a455-8ab33234ca69")
 	)
 	(wire
 		(pts
@@ -3122,6 +3279,16 @@
 	)
 	(wire
 		(pts
+			(xy 138.43 58.42) (xy 143.51 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5ffc4c4-f20d-4d16-9db6-8243df8a33d0")
+	)
+	(wire
+		(pts
 			(xy 41.91 57.15) (xy 48.26 57.15)
 		)
 		(stroke
@@ -3149,6 +3316,26 @@
 			(type default)
 		)
 		(uuid "b3eec49f-3df4-407d-bbc2-99c7d984f0ac")
+	)
+	(wire
+		(pts
+			(xy 161.29 74.93) (xy 161.29 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7e06df6-52f8-45ca-a19c-4a6f0259d1be")
+	)
+	(wire
+		(pts
+			(xy 138.43 66.04) (xy 143.51 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd2bec29-4a92-4176-b4db-199d3a0b174d")
 	)
 	(wire
 		(pts
@@ -3202,6 +3389,16 @@
 	)
 	(wire
 		(pts
+			(xy 179.07 48.26) (xy 181.61 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d27a7ce6-68dc-4658-9116-c75eadd5b792")
+	)
+	(wire
+		(pts
 			(xy 43.18 34.29) (xy 48.26 34.29)
 		)
 		(stroke
@@ -3252,16 +3449,6 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 63.5) (xy 140.97 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ed5d3824-d11b-476f-950c-44820ca2236a")
-	)
-	(wire
-		(pts
 			(xy 43.18 29.21) (xy 48.26 29.21)
 		)
 		(stroke
@@ -3269,6 +3456,28 @@
 			(type default)
 		)
 		(uuid "f3a93dc3-001e-4d6b-bb38-d6e7f5be4c97")
+	)
+	(hierarchical_label "MOSI"
+		(shape output)
+		(at 138.43 66.04 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "01f6aa36-bf6f-4939-898a-92c0b9a32fe5")
+	)
+	(hierarchical_label "SX1262_TX_EN"
+		(shape output)
+		(at 138.43 54.61 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "19170aed-063c-4efc-9465-9d17d885f411")
 	)
 	(hierarchical_label "LED_GREEN"
 		(shape input)
@@ -3281,6 +3490,28 @@
 		)
 		(uuid "2c1c7b18-f4a4-49f5-93a7-80e57e296bf2")
 	)
+	(hierarchical_label "ANT_SX1262"
+		(shape input)
+		(at 181.61 48.26 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2e6d21bb-af8d-47b6-b601-b07d98349c41")
+	)
+	(hierarchical_label "SCK"
+		(shape output)
+		(at 138.43 60.96 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "32f48eb5-b316-4064-9353-159d10a9ab5a")
+	)
 	(hierarchical_label "V_PYRO"
 		(shape input)
 		(at 77.47 128.27 180)
@@ -3291,6 +3522,28 @@
 			(justify right)
 		)
 		(uuid "38313d95-6551-46ad-a431-0e45186cb90f")
+	)
+	(hierarchical_label "SX1262_RX_EN"
+		(shape output)
+		(at 138.43 52.07 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3f0bf019-8b1b-41fa-8db0-18fc60601a00")
+	)
+	(hierarchical_label "SX1262_GPIO_2"
+		(shape input)
+		(at 179.07 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3f7c71a5-1536-4fa0-b352-e3b6051c9292")
 	)
 	(hierarchical_label "FIRE_1"
 		(shape input)
@@ -3391,16 +3644,49 @@
 		)
 		(uuid "7319aad7-a81a-4dc4-a23e-2a729c33b1b8")
 	)
-	(hierarchical_label "MISO"
-		(shape input)
-		(at 137.16 60.96 180)
+	(hierarchical_label "SX1262_GPIO_1"
+		(shape output)
+		(at 179.07 58.42 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "731e6ca2-c21b-47f3-90fd-fe07016f8a03")
+	)
+	(hierarchical_label "SX1262_BUSY"
+		(shape output)
+		(at 143.51 46.99 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "91dec16b-159c-4263-a271-87eccd76d99e")
+		(uuid "8177f858-8814-46d0-90b5-af2f677df7cb")
+	)
+	(hierarchical_label "SX1262_CS"
+		(shape output)
+		(at 138.43 58.42 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9170ceff-f65d-45b6-b688-5adbd18ff04b")
+	)
+	(hierarchical_label "SX1262_RESET"
+		(shape output)
+		(at 143.51 44.45 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9c90d9f9-b05b-4ec4-a9b7-5f3b12471f58")
 	)
 	(hierarchical_label "continuity_2"
 		(shape output)
@@ -3423,6 +3709,17 @@
 			(justify right)
 		)
 		(uuid "a9788a32-d06e-48d1-af29-d4b1330d501e")
+	)
+	(hierarchical_label "MISO"
+		(shape input)
+		(at 138.43 63.5 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b1b99dc8-2e32-4a76-828e-4dbfac979c93")
 	)
 	(hierarchical_label "RESET_SW"
 		(shape input)
@@ -3467,17 +3764,6 @@
 			(justify right)
 		)
 		(uuid "df5b0b1d-78e9-4313-a0db-29df65684e57")
-	)
-	(hierarchical_label "MOSI"
-		(shape input)
-		(at 137.16 63.5 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "e78f6915-9b94-495b-835a-e2daa2920198")
 	)
 	(symbol
 		(lib_id "Device:LED")
@@ -3638,8 +3924,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Transceiver_NiceRF:CORE1262-868M")
-		(at 158.75 53.34 0)
+		(lib_id "power:GND")
+		(at 161.29 80.01 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3648,31 +3934,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "0d1b01c5-ee56-49a8-b687-c0073ef39b5e")
-		(property "Reference" "U6"
-			(at 160.7186 30.48 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "CORE1262-868M"
-			(at 160.7186 33.02 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "RF_Module_NiceRF:XCVR_CORE1262-868M"
-			(at 158.75 58.42 0)
+		(uuid "0d182b37-06af-462b-aea4-32827349ca38")
+		(property "Reference" "#PWR031"
+			(at 161.29 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3680,11 +3944,20 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 			)
 		)
-		(property "Datasheet" "https://www.waveshare.com/core1262-868m.htm"
-			(at 157.988 17.272 0)
+		(property "Value" "GND"
+			(at 161.29 85.09 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 161.29 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3692,11 +3965,10 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 			)
 		)
-		(property "Description" "Lora core module"
-			(at 158.75 53.34 0)
+		(property "Datasheet" ""
+			(at 161.29 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3704,11 +3976,10 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 			)
 		)
-		(property "DATASHEET_URL" "https://snapeda.s3.amazonaws.com/datasheet/Core1262-868M+-+Waveshare+Wiki.pdf"
-			(at 157.988 17.272 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 161.29 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3716,133 +3987,15 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 			)
-		)
-		(property "MANUFACTURER" "Waveshare Electronics"
-			(at 158.75 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "3.27mm"
-			(at 158.75 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MPN" "Core1262-868M"
-			(at 158.75 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Package" "Package"
-			(at 158.75 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "SOURCE_URL" "https://www.snapeda.com/parts/Core1262-868M/Waveshare+Electronics/view-part/"
-			(at 157.988 17.272 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "STANDARD" "IPC 7351B"
-			(at 158.75 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(pin "12"
-			(uuid "275c69a0-266a-4a3b-9ea5-a1244891ba51")
-		)
-		(pin "2"
-			(uuid "a8aa8128-3d92-4fee-8220-eaaec7f8919f")
-		)
-		(pin "5"
-			(uuid "bc529543-df99-4bd7-bbd3-ac6060fbc782")
-		)
-		(pin "4"
-			(uuid "f29ca985-bb80-471b-b0ce-310aeeecc661")
-		)
-		(pin "7"
-			(uuid "6f4c3f1b-fa1f-43bb-9448-a042d4555190")
-		)
-		(pin "8"
-			(uuid "2e65741d-6b7c-456a-946d-545368dfc2c8")
 		)
 		(pin "1"
-			(uuid "9c6cd773-42aa-461c-8a0b-c2c4163ec773")
-		)
-		(pin "6"
-			(uuid "f1a3b6b1-fd20-4648-a750-a5054f856c1d")
-		)
-		(pin "9"
-			(uuid "17a93b7e-37e3-461c-8031-c76d43d403bd")
-		)
-		(pin "3"
-			(uuid "8adb7568-6ed7-4524-ba75-a30a301cab03")
-		)
-		(pin "10"
-			(uuid "fec8b3c7-1c60-4a63-b4ae-25bdc0ce021f")
-		)
-		(pin "11"
-			(uuid "5fc39c5e-c332-417b-8f5c-0f5b8f9e75d9")
-		)
-		(pin "14"
-			(uuid "9ba56153-f242-4d7d-9e51-7ce83ac31bcf")
-		)
-		(pin "13"
-			(uuid "18a2485a-36dd-445d-8573-e66671b61121")
-		)
-		(pin "15"
-			(uuid "c1e9ff9e-ac9e-46d3-b17e-85528fa03cbe")
-		)
-		(pin "16"
-			(uuid "9d513ae1-737f-40b3-b22a-ed541cde335d")
+			(uuid "bb27a574-addf-4928-be1f-0e6115e20ac3")
 		)
 		(instances
 			(project "Launch_Box_Receiver"
 				(path "/a06f3466-842c-458d-800b-34a41093a17e"
-					(reference "U6")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -4004,84 +4157,6 @@
 			(project "Launch_Box_Receiver"
 				(path "/a06f3466-842c-458d-800b-34a41093a17e"
 					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 158.75 74.93 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3fe384a9-942d-418c-8e3b-590c32cb7caf")
-		(property "Reference" "#PWR030"
-			(at 158.75 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 158.75 80.01 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 158.75 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 158.75 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 158.75 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "dc012f26-e3cb-4b6a-bfc6-08aee50aaf66")
-		)
-		(instances
-			(project "Launch_Box_Receiver"
-				(path "/a06f3466-842c-458d-800b-34a41093a17e"
-					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -4837,6 +4912,217 @@
 		)
 	)
 	(symbol
+		(lib_id "Transceiver_NiceRF:CORE1262-868M")
+		(at 161.29 55.88 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a869c25b-8274-44bc-bcba-5ba69f0a22d4")
+		(property "Reference" "U7"
+			(at 163.2586 33.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CORE1262-868M"
+			(at 163.2586 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "RF_Module_NiceRF:XCVR_CORE1262-868M"
+			(at 161.29 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" "https://www.waveshare.com/core1262-868m.htm"
+			(at 160.528 19.812 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Description" "Lora core module"
+			(at 161.29 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "DATASHEET_URL" "https://snapeda.s3.amazonaws.com/datasheet/Core1262-868M+-+Waveshare+Wiki.pdf"
+			(at 160.528 19.812 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MANUFACTURER" "Waveshare Electronics"
+			(at 161.29 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "3.27mm"
+			(at 161.29 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MPN" "Core1262-868M"
+			(at 161.29 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Package" "Package"
+			(at 161.29 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "SOURCE_URL" "https://www.snapeda.com/parts/Core1262-868M/Waveshare+Electronics/view-part/"
+			(at 160.528 19.812 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "STANDARD" "IPC 7351B"
+			(at 161.29 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(pin "12"
+			(uuid "a7211dcd-7186-4991-8056-860dbe9cf747")
+		)
+		(pin "2"
+			(uuid "b3aab136-8f96-4a53-972b-226fd9a1fcab")
+		)
+		(pin "5"
+			(uuid "2cd74f6e-e93a-4c2b-b5e2-fbab663af6d5")
+		)
+		(pin "4"
+			(uuid "bd4e9bca-b1cd-40bd-bad4-c3e9bc3099d3")
+		)
+		(pin "7"
+			(uuid "204fb42a-f339-4942-8c10-6bef074e4551")
+		)
+		(pin "8"
+			(uuid "af965a23-b0d5-4c11-a317-4b99c3c84eb7")
+		)
+		(pin "1"
+			(uuid "53321362-aba3-4ce4-89dd-fccd5d2c9960")
+		)
+		(pin "6"
+			(uuid "e3f49ea0-89cf-49db-97ce-0454ff51e28a")
+		)
+		(pin "9"
+			(uuid "be13c575-11fd-4ecb-b800-f9f4938e57af")
+		)
+		(pin "3"
+			(uuid "fe97627d-a758-4354-8cab-7eb296e0e115")
+		)
+		(pin "10"
+			(uuid "4532632f-35db-412b-8de0-c13fad713a56")
+		)
+		(pin "11"
+			(uuid "f5be6b95-21fa-45ab-b6ce-b210944222be")
+		)
+		(pin "14"
+			(uuid "3201f929-3f73-4ecb-bcb6-f272fefd406b")
+		)
+		(pin "13"
+			(uuid "c2a835b8-df38-41a2-9ce5-c7289fda29df")
+		)
+		(pin "15"
+			(uuid "dbd83553-d62b-46f2-bfad-00173f3cc2ee")
+		)
+		(pin "16"
+			(uuid "fe62667e-f266-47b3-8aae-b7b73e787764")
+		)
+		(instances
+			(project "Launch_Box_Receiver"
+				(path "/a06f3466-842c-458d-800b-34a41093a17e"
+					(reference "U7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED")
 		(at 48.26 152.4 180)
 		(unit 1)
@@ -4910,6 +5196,83 @@
 			(project "Launch_Box_Receiver"
 				(path "/a06f3466-842c-458d-800b-34a41093a17e"
 					(reference "D107")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 161.29 27.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "be3669f4-3035-442d-9ae3-d646228a229d")
+		(property "Reference" "#PWR0115"
+			(at 161.29 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 161.29 23.8069 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 161.29 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 161.29 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 161.29 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b0603867-69f7-443b-91a8-6d50816901ac")
+		)
+		(instances
+			(project "Launch_Box_Receiver"
+				(path "/a06f3466-842c-458d-800b-34a41093a17e"
+					(reference "#PWR0115")
 					(unit 1)
 				)
 			)
