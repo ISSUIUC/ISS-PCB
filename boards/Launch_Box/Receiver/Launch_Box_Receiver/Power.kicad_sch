@@ -3403,9 +3403,9 @@
 		)
 		(uuid "d5b168ea-3ba3-4da6-b4a1-021d703a2390")
 	)
-	(text "After High Enable"
+	(text "Before High Enable"
 		(exclude_from_sim no)
-		(at 265.43 58.928 0)
+		(at 267.208 58.928 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5056,6 +5056,30 @@
 			)
 		)
 	)
+	(global_label "12_VBAT"
+		(shape input)
+		(at 27.94 78.74 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0b22fb9c-e9b6-4ca3-baa1-6454da569f89")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 17.1534 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "SYS_POWER"
 		(shape input)
 		(at 261.62 20.32 0)
@@ -5069,30 +5093,6 @@
 		(uuid "43a6821a-e68f-46ec-b7e0-f2057dbb851c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 275.5513 20.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "V_SYS"
-		(shape input)
-		(at 107.95 82.55 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "a67e717e-d85c-41e9-ae7c-402e11f2034f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 116.499 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5130,6 +5130,17 @@
 	)
 	(hierarchical_label "V_SYS"
 		(shape input)
+		(at 107.95 82.55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "06e5cc26-7143-4d35-a4fa-bc91de0c03dc")
+	)
+	(hierarchical_label "V_SYS"
+		(shape input)
 		(at 226.06 20.32 0)
 		(effects
 			(font
@@ -5138,17 +5149,6 @@
 			(justify left)
 		)
 		(uuid "12688188-7a2f-49fe-9aea-3c854da48cce")
-	)
-	(hierarchical_label "12_VBAT"
-		(shape input)
-		(at 27.94 78.74 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "1664b49d-bda5-49b9-afe5-e227034accbd")
 	)
 	(hierarchical_label "PMUX_GND"
 		(shape input)
