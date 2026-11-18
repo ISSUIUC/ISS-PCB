@@ -3188,8 +3188,20 @@
 		(uuid "145f68c4-6278-4416-a04d-2c60fe3ecb45")
 	)
 	(rectangle
+		(start 247.65 12.7)
+		(end 281.94 59.69)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "24e1fdb6-fc6d-480f-965b-54fc9cef54f5")
+	)
+	(rectangle
 		(start 212.09 12.7)
-		(end 255.27 59.69)
+		(end 246.38 59.69)
 		(stroke
 			(width 0)
 			(type dash)
@@ -3246,6 +3258,18 @@
 			(justify right bottom)
 		)
 		(uuid "1a1a0660-3163-4c62-8bdc-e18f112ab6eb")
+	)
+	(text "12V VBAT Power LED"
+		(exclude_from_sim no)
+		(at 248.158 13.97 0)
+		(effects
+			(font
+				(size 2 2)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "1dd85395-24fc-4f2e-9c07-83c51632a9be")
 	)
 	(text "XT60 12VBAT Connector Power In"
 		(exclude_from_sim no)
@@ -3332,7 +3356,7 @@
 		)
 		(uuid "cd08fa7a-5484-4e6a-aeb6-e2c5b3c7071f")
 	)
-	(text "12V VBAT Power LED"
+	(text "SYS Power LED"
 		(exclude_from_sim no)
 		(at 212.598 13.97 0)
 		(effects
@@ -3379,6 +3403,17 @@
 		)
 		(uuid "d5b168ea-3ba3-4da6-b4a1-021d703a2390")
 	)
+	(text "After High Enable"
+		(exclude_from_sim no)
+		(at 265.43 58.928 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e2742f0b-1f26-43f1-91fe-fc8dc66b1fa4")
+	)
 	(text "The comparator trips at 3.844 input voltage allowing for igniter to trigger. - 3.844 * (22.0/222.0) = 0.381"
 		(exclude_from_sim no)
 		(at 179.07 66.04 0)
@@ -3389,6 +3424,17 @@
 			(justify right bottom)
 		)
 		(uuid "e63c39ee-274e-4d79-9d7a-b3561217f36f")
+	)
+	(text "Before High Enable"
+		(exclude_from_sim no)
+		(at 231.14 59.182 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e806afc6-042e-493a-a510-1d48c69c95b4")
 	)
 	(junction
 		(at 69.85 39.37)
@@ -3407,6 +3453,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0f701ab7-369d-4e98-bc41-d202fe161d67")
+	)
+	(junction
+		(at 105.41 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "26fbf9ef-d0c0-4ced-a0d2-60dcd638c03a")
 	)
 	(junction
 		(at 59.69 114.3)
@@ -3589,12 +3641,6 @@
 		(uuid "f0336adc-7115-4bee-9a29-90c80844d10a")
 	)
 	(junction
-		(at 105.41 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f397dd59-e5e3-462b-aa42-1df54a5bdbe9")
-	)
-	(junction
 		(at 64.77 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3645,6 +3691,16 @@
 			(type default)
 		)
 		(uuid "02cf675a-2ca4-4647-b47c-5a92010a1c04")
+	)
+	(wire
+		(pts
+			(xy 262.89 41.91) (xy 259.08 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "032a0a47-4c88-459d-8a92-a02b23f89065")
 	)
 	(wire
 		(pts
@@ -3785,6 +3841,16 @@
 			(type default)
 		)
 		(uuid "2012bc09-32c5-4fc4-9ec0-87b5f8bb2b7c")
+	)
+	(wire
+		(pts
+			(xy 259.08 39.37) (xy 262.89 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "204c0626-7a05-41b3-b1c6-7413d6bd76a7")
 	)
 	(wire
 		(pts
@@ -4148,6 +4214,16 @@
 	)
 	(wire
 		(pts
+			(xy 259.08 41.91) (xy 259.08 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fa8ad7d-eeec-47b1-ad59-4711ef1f386b")
+	)
+	(wire
+		(pts
 			(xy 135.89 39.37) (xy 128.27 39.37)
 		)
 		(stroke
@@ -4488,6 +4564,16 @@
 	)
 	(wire
 		(pts
+			(xy 259.08 34.29) (xy 259.08 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab032f3e-b9fc-4193-b28f-c27512a29efc")
+	)
+	(wire
+		(pts
 			(xy 92.71 129.54) (xy 104.14 129.54)
 		)
 		(stroke
@@ -4675,6 +4761,16 @@
 			(type default)
 		)
 		(uuid "c52ece0a-0612-4455-92da-e2fb1ec7dc66")
+	)
+	(wire
+		(pts
+			(xy 261.62 20.32) (xy 259.08 20.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c60c3dba-2e4f-491b-be07-e75b00681a23")
 	)
 	(wire
 		(pts
@@ -4878,6 +4974,16 @@
 	)
 	(wire
 		(pts
+			(xy 259.08 20.32) (xy 259.08 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f16e9f4a-e43e-41be-8abf-c10981c44f80")
+	)
+	(wire
+		(pts
 			(xy 33.02 31.75) (xy 33.02 29.21)
 		)
 		(stroke
@@ -4952,7 +5058,7 @@
 	)
 	(global_label "SYS_POWER"
 		(shape input)
-		(at 226.06 20.32 0)
+		(at 261.62 20.32 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4960,9 +5066,9 @@
 			)
 			(justify left)
 		)
-		(uuid "12bbdf9c-73b8-4036-857b-e8cc922f37ca")
+		(uuid "43a6821a-e68f-46ec-b7e0-f2057dbb851c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 239.9913 20.32 0)
+			(at 275.5513 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4974,32 +5080,8 @@
 			)
 		)
 	)
-	(global_label "SYS_POWER"
+	(global_label "V_SYS"
 		(shape input)
-		(at 26.67 29.21 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "43188fef-033d-4f55-ac34-6a9480807475")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 12.7387 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "SYS_POWER"
-		(shape output)
 		(at 107.95 82.55 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5008,9 +5090,9 @@
 			)
 			(justify left)
 		)
-		(uuid "b34e4e7d-adae-4a75-b23c-131fadb08e5e")
+		(uuid "a67e717e-d85c-41e9-ae7c-402e11f2034f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 121.8813 82.55 0)
+			(at 116.499 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5046,6 +5128,17 @@
 			)
 		)
 	)
+	(hierarchical_label "V_SYS"
+		(shape input)
+		(at 226.06 20.32 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "12688188-7a2f-49fe-9aea-3c854da48cce")
+	)
 	(hierarchical_label "12_VBAT"
 		(shape input)
 		(at 27.94 78.74 180)
@@ -5078,6 +5171,17 @@
 			(justify right)
 		)
 		(uuid "4766d5fb-072a-4c6c-8038-6ba74f1e514d")
+	)
+	(hierarchical_label "V_SYS"
+		(shape input)
+		(at 26.67 29.21 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "56d7662a-ace3-4c2f-ab61-275b2aec906b")
 	)
 	(hierarchical_label "USB_POWER"
 		(shape input)
@@ -8057,6 +8161,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 259.08 48.26 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a10856dc-c856-4c49-a22c-e320ecbefe05")
+		(property "Reference" "#PWR08"
+			(at 259.08 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 259.08 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 259.08 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 259.08 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 259.08 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "242137d1-a259-49c7-a7df-75d242a4553f")
+		)
+		(instances
+			(project "Launch_Box_Receiver"
+				(path "/a06f3466-842c-458d-800b-34a41093a17e/7cdb4ed0-83a7-4d04-a9fe-360c46a48da1"
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 100.33 34.29 90)
 		(unit 1)
@@ -8381,6 +8563,87 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_US")
+		(at 259.08 30.48 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c954a2b0-e9ac-439d-ad04-f3fb2bd05da8")
+		(property "Reference" "R209"
+			(at 252.73 29.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2k"
+			(at 252.73 31.496 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 260.096 30.734 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 259.08 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 259.08 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c3cb3579-0a17-488c-a534-800eb0d30d1a")
+		)
+		(pin "2"
+			(uuid "2d5244a4-358e-4928-8c94-b2abf8cd3a6a")
+		)
+		(instances
+			(project "Launch_Box_Receiver"
+				(path "/a06f3466-842c-458d-800b-34a41093a17e/7cdb4ed0-83a7-4d04-a9fe-360c46a48da1"
+					(reference "R209")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_name "GND_1")
 		(lib_id "power:GND")
 		(at 82.55 44.45 0)
@@ -8536,6 +8799,87 @@
 			(project "Launch_Box_Receiver"
 				(path "/a06f3466-842c-458d-800b-34a41093a17e/7cdb4ed0-83a7-4d04-a9fe-360c46a48da1"
 					(reference "R144")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Screw_Terminal_01x02")
+		(at 267.97 39.37 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "dca25a78-2f53-4290-a83d-7bb8add41b8f")
+		(property "Reference" "J9"
+			(at 266.954 36.322 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Screw_Terminal_01x02"
+			(at 259.588 45.212 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 267.97 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 267.97 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 267.97 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "f6b4b06b-3f34-4a18-99af-8e714d5af422")
+		)
+		(pin "1"
+			(uuid "4e8eac32-04b6-4c7a-b9cd-2be2f7353876")
+		)
+		(instances
+			(project "Launch_Box_Receiver"
+				(path "/a06f3466-842c-458d-800b-34a41093a17e/7cdb4ed0-83a7-4d04-a9fe-360c46a48da1"
+					(reference "J9")
 					(unit 1)
 				)
 			)
