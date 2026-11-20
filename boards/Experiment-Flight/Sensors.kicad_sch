@@ -3112,6 +3112,32 @@
 		)
 		(uuid "adaa2507-24d6-445b-98b3-0d5a3f36dcb8")
 	)
+	(text "4.5 (10/14.7) = 3.0612 V\n"
+		(exclude_from_sim no)
+		(at 215.392 36.068 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "b7340397-87ad-4f19-b57a-d9069f87b7da")
+	)
+	(text "ADC Measures to AVDD + 0.1 = ~3.4V"
+		(exclude_from_sim no)
+		(at 215.392 33.782 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "c0f3978b-394d-40e6-9055-76cefffacd0a")
+	)
 	(text "Barometer\n"
 		(exclude_from_sim no)
 		(at 156.464 14.224 0)
@@ -3308,6 +3334,12 @@
 		(uuid "c2b07db6-3fd8-49e8-bea3-bef430033c2c")
 	)
 	(junction
+		(at 246.38 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c52cf1bb-d635-4d31-a246-7b9711222a4b")
+	)
+	(junction
 		(at 102.87 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3330,12 +3362,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d9b4889d-0be1-413b-9462-d25c20c1afd5")
-	)
-	(junction
-		(at 246.38 25.4)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e2fcc8cc-fccf-42e3-85c4-0498243a9cbb")
 	)
 	(junction
 		(at 187.96 57.15)
@@ -3379,7 +3405,7 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 25.4) (xy 246.38 25.4)
+			(xy 243.84 25.4) (xy 246.38 25.4)
 		)
 		(stroke
 			(width 0)
@@ -3529,7 +3555,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 33.02) (xy 246.38 33.02)
+			(xy 248.92 29.21) (xy 246.38 29.21)
 		)
 		(stroke
 			(width 0)
@@ -3769,7 +3795,7 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 25.4) (xy 237.49 25.4)
+			(xy 233.68 25.4) (xy 236.22 25.4)
 		)
 		(stroke
 			(width 0)
@@ -4719,7 +4745,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 33.02) (xy 246.38 25.4)
+			(xy 246.38 29.21) (xy 246.38 25.4)
 		)
 		(stroke
 			(width 0)
@@ -4916,7 +4942,7 @@
 	)
 	(hierarchical_label "PRESSURE_SENSE"
 		(shape input)
-		(at 248.92 33.02 0)
+		(at 248.92 29.21 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6492,7 +6518,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 241.3 25.4 90)
+		(at 240.03 25.4 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6500,10 +6526,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "3d8c2e8b-d80e-4f6c-8707-512340076ee3")
 		(property "Reference" "R15"
-			(at 241.3 19.05 90)
+			(at 240.03 20.066 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6512,8 +6537,8 @@
 				)
 			)
 		)
-		(property "Value" "R_US"
-			(at 241.3 21.59 90)
+		(property "Value" "4.7k"
+			(at 240.03 22.606 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6523,7 +6548,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
-			(at 241.554 24.384 90)
+			(at 240.284 24.384 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6534,7 +6559,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 241.3 25.4 0)
+			(at 240.03 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6545,7 +6570,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 241.3 25.4 0)
+			(at 240.03 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9908,10 +9933,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "e519d655-5826-40ca-872e-e7b941972f20")
 		(property "Reference" "R16"
-			(at 256.54 19.05 90)
+			(at 256.54 20.32 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9920,8 +9944,8 @@
 				)
 			)
 		)
-		(property "Value" "R_US"
-			(at 256.54 21.59 90)
+		(property "Value" "10k"
+			(at 256.54 22.86 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
