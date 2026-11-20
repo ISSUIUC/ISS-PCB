@@ -3013,6 +3013,16 @@
 		)
 		(uuid "1237acd8-fa28-4086-a352-9272556c5bd1")
 	)
+	(text "Address: 0x36"
+		(exclude_from_sim no)
+		(at 221.996 73.66 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3e8fb653-6f3a-4295-8514-d104dae9266d")
+	)
 	(text "MAX31856"
 		(exclude_from_sim no)
 		(at 85.09 81.026 0)
@@ -3625,16 +3635,6 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 46.99) (xy 31.75 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2608c183-f7b3-4ecc-8432-aa42c490fd59")
-	)
-	(wire
-		(pts
 			(xy 139.7 34.29) (xy 128.27 34.29)
 		)
 		(stroke
@@ -3775,6 +3775,16 @@
 	)
 	(wire
 		(pts
+			(xy 29.21 44.45) (xy 31.75 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4dab7595-8298-4481-8051-0e283cad0eee")
+	)
+	(wire
+		(pts
 			(xy 93.98 105.41) (xy 93.98 106.68)
 		)
 		(stroke
@@ -3875,16 +3885,6 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 44.45) (xy 31.75 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "684e110a-5f02-48d8-bbcc-4584525f6c1b")
-	)
-	(wire
-		(pts
 			(xy 224.79 55.88) (xy 224.79 60.96)
 		)
 		(stroke
@@ -3922,6 +3922,16 @@
 			(type default)
 		)
 		(uuid "6f4fcc18-a2d2-4392-a4cf-76dff1955403")
+	)
+	(wire
+		(pts
+			(xy 29.21 49.53) (xy 31.75 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "711b9fe8-a0b2-4dfb-99a6-e549a55c6a17")
 	)
 	(wire
 		(pts
@@ -4292,6 +4302,16 @@
 			(type default)
 		)
 		(uuid "afa4cb69-d524-4c19-992c-468042fef81a")
+	)
+	(wire
+		(pts
+			(xy 29.21 46.99) (xy 31.75 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "afbf3ceb-709e-4b70-b97d-67d187e2d5ba")
 	)
 	(wire
 		(pts
@@ -4705,16 +4725,6 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 49.53) (xy 31.75 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fb8a3d8c-2257-4103-a747-66b31e579bb3")
-	)
-	(wire
-		(pts
 			(xy 123.19 35.56) (xy 123.19 33.02)
 		)
 		(stroke
@@ -4753,19 +4763,30 @@
 		)
 		(uuid "fee38276-1b96-47fe-b1e2-39e2a6bfcb43")
 	)
-	(hierarchical_label "SPI_MOSI"
+	(hierarchical_label "SPI1_MOSI"
 		(shape input)
-		(at 133.35 115.57 0)
+		(at 109.22 48.26 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "03ec9948-15ee-4fed-9ec2-8bd40f1a920b")
+		(uuid "0488c522-219f-42a9-a8ab-4570d38ee0fd")
 	)
-	(hierarchical_label "SPI_SCK"
-		(shape input)
+	(hierarchical_label "SPI1_SCK"
+		(shape bidirectional)
+		(at 109.22 50.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0e852790-680d-41ad-baed-a0efde6455bd")
+	)
+	(hierarchical_label "SPI2_SCK"
+		(shape bidirectional)
 		(at 62.23 113.03 0)
 		(effects
 			(font
@@ -4786,16 +4807,16 @@
 		)
 		(uuid "1c6a77e7-28b4-4cb8-800f-be0f19e46587")
 	)
-	(hierarchical_label "SPI_SCK"
+	(hierarchical_label "SPI2_MISO"
 		(shape input)
-		(at 109.22 50.8 180)
+		(at 133.35 118.11 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "27e92471-0fac-4a55-863f-c017c880036c")
+		(uuid "2975ab57-ad3f-403e-bb82-8367af46bdaf")
 	)
 	(hierarchical_label "PRESSURE+"
 		(shape input)
@@ -4808,8 +4829,8 @@
 		)
 		(uuid "2f63151b-bc40-40e0-a67c-6178a9fb63c6")
 	)
-	(hierarchical_label "SPI_MISO"
-		(shape output)
+	(hierarchical_label "SPI2_MISO"
+		(shape input)
 		(at 62.23 118.11 0)
 		(effects
 			(font
@@ -4818,17 +4839,6 @@
 			(justify left)
 		)
 		(uuid "3302e8cf-5e84-4155-998e-ead4f7f4e0ea")
-	)
-	(hierarchical_label "SPI_MISO"
-		(shape input)
-		(at 27.94 46.99 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "33340d1b-f7e7-4db3-8ce3-a8fce1272005")
 	)
 	(hierarchical_label "MAG_INT"
 		(shape output)
@@ -4841,7 +4851,7 @@
 		)
 		(uuid "40a83594-177d-456b-b217-fca7087b310a")
 	)
-	(hierarchical_label "I2C1_SCL"
+	(hierarchical_label "I2C_SCL"
 		(shape bidirectional)
 		(at 269.24 55.88 0)
 		(effects
@@ -4863,8 +4873,8 @@
 		)
 		(uuid "5846f59a-499d-4f6c-9d50-66ea1fa9d63a")
 	)
-	(hierarchical_label "SPI_MISO"
-		(shape input)
+	(hierarchical_label "SPI1_MISO"
+		(shape output)
 		(at 109.22 53.34 180)
 		(effects
 			(font
@@ -4872,7 +4882,29 @@
 			)
 			(justify right)
 		)
-		(uuid "7aaf0143-0efe-4132-8c9e-4e00572d8607")
+		(uuid "5b9fd954-7619-49a0-969a-a8f39351b8d4")
+	)
+	(hierarchical_label "SPI1_SCK"
+		(shape bidirectional)
+		(at 29.21 44.45 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7984ae2d-ef3b-4f5a-8f64-49fe0f43a0ff")
+	)
+	(hierarchical_label "SPI1_MOSI"
+		(shape input)
+		(at 29.21 49.53 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "79f6ad3a-ec1a-4c85-9e28-11eaf997cab2")
 	)
 	(hierarchical_label "T_1-"
 		(shape input)
@@ -4896,18 +4928,7 @@
 		)
 		(uuid "7c1be162-1c82-4fb7-91d1-0fd5b8e9195b")
 	)
-	(hierarchical_label "SPI_MISO"
-		(shape output)
-		(at 133.35 118.11 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "7d7862aa-f486-4c48-b19f-746ac2b36589")
-	)
-	(hierarchical_label "SPI_MOSI"
+	(hierarchical_label "SPI1_MOSI"
 		(shape input)
 		(at 171.45 45.72 180)
 		(effects
@@ -4929,8 +4950,8 @@
 		)
 		(uuid "9d7a5b0b-3371-46e1-8b7e-af09b3ed1699")
 	)
-	(hierarchical_label "SPI_SCK"
-		(shape input)
+	(hierarchical_label "SPI1_SCK"
+		(shape bidirectional)
 		(at 171.45 48.26 180)
 		(effects
 			(font
@@ -4940,8 +4961,30 @@
 		)
 		(uuid "a8264a35-30ea-4d4e-9098-5f964159c156")
 	)
-	(hierarchical_label "PRESSURE_SENSE"
+	(hierarchical_label "SPI2_SCK"
+		(shape bidirectional)
+		(at 133.35 113.03 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ac25a721-aef5-4dc6-9cb2-bd85adfae5f5")
+	)
+	(hierarchical_label "SPI2_MOSI"
 		(shape input)
+		(at 133.35 115.57 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ae5671f2-f0eb-4ba6-a179-0b4ae1295968")
+	)
+	(hierarchical_label "PRESSURE_SENSE"
+		(shape output)
 		(at 248.92 29.21 0)
 		(effects
 			(font
@@ -4984,17 +5027,6 @@
 		)
 		(uuid "b3e0fe4b-433c-4da0-90e1-40b996e6d33c")
 	)
-	(hierarchical_label "SPI_MOSI"
-		(shape input)
-		(at 27.94 49.53 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "c047c2ea-26e5-404c-b9b8-e49721571f9b")
-	)
 	(hierarchical_label "MS5611_CS"
 		(shape input)
 		(at 171.45 50.8 180)
@@ -5017,7 +5049,7 @@
 		)
 		(uuid "cf6fbef3-d603-4d86-be4c-1b6bbd63ef13")
 	)
-	(hierarchical_label "SPI_MOSI"
+	(hierarchical_label "SPI2_MOSI"
 		(shape input)
 		(at 62.23 115.57 0)
 		(effects
@@ -5028,18 +5060,18 @@
 		)
 		(uuid "d089e4a4-36ba-4f63-b3f6-e2b2103e8333")
 	)
-	(hierarchical_label "SPI_SCK"
-		(shape input)
-		(at 27.94 44.45 180)
+	(hierarchical_label "SPI1_MISO"
+		(shape output)
+		(at 29.21 46.99 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "d4a6bb96-c786-4d53-8bbc-ebb91d645b45")
+		(uuid "d22be849-29fb-4172-8473-6a59905023cb")
 	)
-	(hierarchical_label "I2C1_SDA"
+	(hierarchical_label "I2C_SDA"
 		(shape bidirectional)
 		(at 269.24 58.42 0)
 		(effects
@@ -5049,28 +5081,6 @@
 			(justify left)
 		)
 		(uuid "da2d4acf-1564-4bc7-9b40-a21b2fbeec98")
-	)
-	(hierarchical_label "SPI_SCK"
-		(shape input)
-		(at 133.35 113.03 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ddf15b34-9559-4704-ac6d-3c3f5a2fcdc1")
-	)
-	(hierarchical_label "SPI_MOSI"
-		(shape input)
-		(at 109.22 48.26 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ddfe2b92-089f-49d1-9827-fdbfe4e67f5a")
 	)
 	(hierarchical_label "LSM_CS"
 		(shape input)
@@ -5083,8 +5093,8 @@
 		)
 		(uuid "ecf20dd3-0f0b-42cc-be36-3eb70bcafa74")
 	)
-	(hierarchical_label "SPI_MISO"
-		(shape input)
+	(hierarchical_label "SPI1_MISO"
+		(shape output)
 		(at 171.45 43.18 180)
 		(effects
 			(font
@@ -5203,7 +5213,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "ASM_OSRAM_Sensors:SOIC127P600X175-8N"
 			(at 250.19 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -5214,7 +5224,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.mouser.com/datasheet/2/744/AS5600_DS000365_5_00-2488176.pdf"
 			(at 250.19 48.26 0)
 			(hide yes)
 			(show_name no)
