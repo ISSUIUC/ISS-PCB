@@ -1629,6 +1629,18 @@
 		)
 		(uuid "fd4dda07-e74a-41a1-92d0-2263ba0f5a6c")
 	)
+	(text "For debugging without external components. "
+		(exclude_from_sim no)
+		(at 13.462 124.46 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "15df7eff-f457-44c5-a73f-dd2879de929a")
+	)
 	(text "Launch Button"
 		(exclude_from_sim no)
 		(at 91.44 37.592 0)
@@ -1662,15 +1674,16 @@
 		)
 		(uuid "225229b8-e38d-47c8-a9ca-a5f11b07b6ba")
 	)
-	(text "Connected in parrallel with boards SMD LEDS"
+	(text "External through hole LEDs connected in parrallel with SMD LEDS"
 		(exclude_from_sim no)
-		(at 93.726 120.904 0)
+		(at 84.328 125.476 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 				(italic yes)
 			)
 			(justify left bottom)
+			(href "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/151051RS11000/4490012")
 		)
 		(uuid "26d1d485-0201-42c4-9394-af1ddc780baa")
 	)
@@ -2603,7 +2616,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0071e746-6a57-4c7b-9496-c544a204c031")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR022"
 			(at 105.41 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -2664,7 +2677,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/fa9dec7b-8b0e-46fd-adb1-01042abcfaa9"
-					(reference "#PWR023")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -2681,7 +2694,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0e22bb4c-1329-4b79-bf7f-0c9fe6499d52")
-		(property "Reference" "D106"
+		(property "Reference" "D3"
 			(at 130.81 45.72 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2743,7 +2756,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/fa9dec7b-8b0e-46fd-adb1-01042abcfaa9"
-					(reference "D106")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -2761,7 +2774,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "105f248a-954a-4264-aa66-8003fe790800")
-		(property "Reference" "J4"
+		(property "Reference" "J6"
 			(at 128.27 26.6699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2825,7 +2838,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/fa9dec7b-8b0e-46fd-adb1-01042abcfaa9"
-					(reference "J4")
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -2843,7 +2856,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1e2938f9-12fa-42cb-b3bf-8b33cbad908b")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR021"
 			(at 72.39 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -2903,7 +2916,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/fa9dec7b-8b0e-46fd-adb1-01042abcfaa9"
-					(reference "#PWR03")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -2921,7 +2934,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1f134ceb-aab7-43df-b088-9d9a0cc89fa1")
-		(property "Reference" "R122"
+		(property "Reference" "R8"
 			(at 54.61 58.42 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2983,7 +2996,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/fa9dec7b-8b0e-46fd-adb1-01042abcfaa9"
-					(reference "R122")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -3001,7 +3014,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "244aebc7-18b2-4eaf-9cb9-aef1b1c305d8")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR018"
 			(at 26.67 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -3062,87 +3075,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/fa9dec7b-8b0e-46fd-adb1-01042abcfaa9"
-					(reference "#PWR032")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 46.99 104.14 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2fe10d9f-a7b3-48f9-a1db-c3949f64a8fd")
-		(property "Reference" "SW2"
-			(at 46.99 96.52 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 46.99 99.06 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 46.99 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 46.99 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 46.99 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "d804c9a9-84fe-48e3-aeaa-68fdfb15c70d")
-		)
-		(pin "1"
-			(uuid "e3955b25-169f-4e4f-b766-dac635240048")
-		)
-		(instances
-			(project "Launch_Box_Ground"
-				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/fa9dec7b-8b0e-46fd-adb1-01042abcfaa9"
-					(reference "SW2")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -3160,7 +3093,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3c5c8e7f-efdc-4703-bc1f-5a2bbae369a9")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR023"
 			(at 115.57 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -3220,7 +3153,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/fa9dec7b-8b0e-46fd-adb1-01042abcfaa9"
-					(reference "#PWR022")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -3238,7 +3171,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3ccca910-309c-4d55-bc1c-89d44bd032d0")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR019"
 			(at 26.67 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -3299,7 +3232,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/fa9dec7b-8b0e-46fd-adb1-01042abcfaa9"
-					(reference "#PWR033")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -3316,7 +3249,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4120a14b-4560-4500-97df-7bd5195ce0cf")
-		(property "Reference" "R2"
+		(property "Reference" "R13"
 			(at 128.778 99.314 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3378,7 +3311,86 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/fa9dec7b-8b0e-46fd-adb1-01042abcfaa9"
-					(reference "R2")
+					(reference "R13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 46.99 92.71 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4399ce68-26ad-4878-804c-6b2fb493365c")
+		(property "Reference" "SW1"
+			(at 46.99 85.598 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 46.99 87.884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_FSMSM"
+			(at 46.99 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 46.99 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 46.99 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7baabd90-03c9-4538-8843-ca312fb072a2")
+		)
+		(pin "2"
+			(uuid "2529c10f-706c-4378-a7fe-76d23fde61b1")
+		)
+		(instances
+			(project "Launch_Box_Ground"
+				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/fa9dec7b-8b0e-46fd-adb1-01042abcfaa9"
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -3396,7 +3408,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4751bab0-18aa-43fa-acda-59732b2b08b7")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR026"
 			(at 177.8 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -3457,7 +3469,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/fa9dec7b-8b0e-46fd-adb1-01042abcfaa9"
-					(reference "#PWR028")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -3475,7 +3487,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4c72ffb6-7615-44b4-b564-98640b60e327")
-		(property "Reference" "J3"
+		(property "Reference" "J5"
 			(at 55.88 22.8599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3539,7 +3551,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/fa9dec7b-8b0e-46fd-adb1-01042abcfaa9"
-					(reference "J3")
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -3556,7 +3568,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5345d1a5-08de-4dfb-9084-bb4b94d84e68")
-		(property "Reference" "R4"
+		(property "Reference" "R11"
 			(at 128.778 89.154 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3618,7 +3630,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/fa9dec7b-8b0e-46fd-adb1-01042abcfaa9"
-					(reference "R4")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -3635,7 +3647,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5b4396d8-20e0-4d9a-aacc-cc146c525e87")
-		(property "Reference" "J2"
+		(property "Reference" "J7"
 			(at 144.018 84.582 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3717,7 +3729,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/fa9dec7b-8b0e-46fd-adb1-01042abcfaa9"
-					(reference "J2")
+					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -3734,7 +3746,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "631cb04b-708d-4d32-9739-b9e2cd0e1f5a")
-		(property "Reference" "R3"
+		(property "Reference" "R12"
 			(at 128.778 94.234 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3796,7 +3808,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/fa9dec7b-8b0e-46fd-adb1-01042abcfaa9"
-					(reference "R3")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -3814,7 +3826,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6c9251d2-a500-4440-ab9c-4a568592117c")
-		(property "Reference" "J7"
+		(property "Reference" "J8"
 			(at 198.12 55.8799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3878,7 +3890,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/fa9dec7b-8b0e-46fd-adb1-01042abcfaa9"
-					(reference "J7")
+					(reference "J8")
 					(unit 1)
 				)
 			)
@@ -3886,7 +3898,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 46.99 116.84 0)
+		(at 46.99 104.14 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3894,10 +3906,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "75307fd9-8d56-4666-ad8c-80a70315f2f6")
-		(property "Reference" "SW3"
-			(at 46.99 109.22 0)
+		(uuid "77b41a7c-061f-4a68-9127-24e62b9830fc")
+		(property "Reference" "SW2"
+			(at 47.244 96.774 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3907,7 +3918,7 @@
 			)
 		)
 		(property "Value" "SW_Push"
-			(at 46.99 111.76 0)
+			(at 47.752 99.314 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3916,8 +3927,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 46.99 111.76 0)
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_FSMSM"
+			(at 46.99 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3928,7 +3939,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 46.99 111.76 0)
+			(at 46.99 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3939,7 +3950,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 46.99 116.84 0)
+			(at 46.99 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3949,16 +3960,16 @@
 				)
 			)
 		)
-		(pin "2"
-			(uuid "ee87d781-72c5-4601-93c0-9a00a3719f68")
-		)
 		(pin "1"
-			(uuid "c694258c-0d0d-4336-b959-658e01f1c221")
+			(uuid "b065f6ed-bf37-48a7-8b74-ac22b6c9e3b5")
+		)
+		(pin "2"
+			(uuid "27889db0-2ff8-4af8-a03a-62c71b8c31c2")
 		)
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/fa9dec7b-8b0e-46fd-adb1-01042abcfaa9"
-					(reference "SW3")
+					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -3976,7 +3987,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "88ed4c17-ca2f-4f4c-9f19-0c54938839f5")
-		(property "Reference" "J5"
+		(property "Reference" "J9"
 			(at 200.66 26.6699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4040,7 +4051,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/fa9dec7b-8b0e-46fd-adb1-01042abcfaa9"
-					(reference "J5")
+					(reference "J9")
 					(unit 1)
 				)
 			)
@@ -4058,7 +4069,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "89e17397-6896-4531-9c63-9d356686bec1")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR024"
 			(at 142.24 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -4118,7 +4129,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/fa9dec7b-8b0e-46fd-adb1-01042abcfaa9"
-					(reference "#PWR026")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -4135,7 +4146,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8b006f7e-d531-4ba5-8cec-f512f40d9414")
-		(property "Reference" "R1"
+		(property "Reference" "R14"
 			(at 128.778 104.14 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4197,7 +4208,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/fa9dec7b-8b0e-46fd-adb1-01042abcfaa9"
-					(reference "R1")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -4215,7 +4226,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "90e5f257-b46c-4a20-9d3e-f2021675c8a5")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR020"
 			(at 45.72 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -4275,7 +4286,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/fa9dec7b-8b0e-46fd-adb1-01042abcfaa9"
-					(reference "#PWR027")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -4292,7 +4303,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "93e4cefa-97ed-4984-abfb-64f82498dbad")
-		(property "Reference" "D104"
+		(property "Reference" "D1"
 			(at 64.77 45.72 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4354,7 +4365,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/fa9dec7b-8b0e-46fd-adb1-01042abcfaa9"
-					(reference "D104")
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -4372,7 +4383,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9f74f766-055e-454f-bc3e-dcc78b9c5aad")
-		(property "Reference" "R121"
+		(property "Reference" "R7"
 			(at 54.61 45.72 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4434,7 +4445,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/fa9dec7b-8b0e-46fd-adb1-01042abcfaa9"
-					(reference "R121")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -4452,7 +4463,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cbdb0e54-a0e0-41fe-af60-f408265e787b")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR017"
 			(at 26.67 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -4513,7 +4524,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/fa9dec7b-8b0e-46fd-adb1-01042abcfaa9"
-					(reference "#PWR031")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -4531,7 +4542,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ce06d2ea-fd9d-4a74-b0dc-fb8fe3dc8df2")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR025"
 			(at 175.26 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -4592,7 +4603,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/fa9dec7b-8b0e-46fd-adb1-01042abcfaa9"
-					(reference "#PWR030")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -4609,7 +4620,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d335f564-c352-4dbc-8539-9e1c4135f1d1")
-		(property "Reference" "D105"
+		(property "Reference" "D2"
 			(at 64.77 58.42 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4671,7 +4682,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/fa9dec7b-8b0e-46fd-adb1-01042abcfaa9"
-					(reference "D105")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -4688,7 +4699,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "db579c7a-751e-42dc-989f-2a9cd2152c99")
-		(property "Reference" "D107"
+		(property "Reference" "D4"
 			(at 130.81 58.42 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4750,7 +4761,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/fa9dec7b-8b0e-46fd-adb1-01042abcfaa9"
-					(reference "D107")
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -4768,7 +4779,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "db9dbc6a-cc08-42eb-aacf-4f3f90be39a2")
-		(property "Reference" "R123"
+		(property "Reference" "R9"
 			(at 120.65 45.72 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4830,7 +4841,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/fa9dec7b-8b0e-46fd-adb1-01042abcfaa9"
-					(reference "R123")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -4848,7 +4859,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e1bece70-62c0-4fea-9117-d33cffea5de8")
-		(property "Reference" "R124"
+		(property "Reference" "R10"
 			(at 120.65 58.42 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4910,7 +4921,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/fa9dec7b-8b0e-46fd-adb1-01042abcfaa9"
-					(reference "R124")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -4918,7 +4929,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 46.99 92.71 0)
+		(at 46.99 116.84 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4927,9 +4938,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "f2ffba69-8433-4574-9302-cab9be28879e")
-		(property "Reference" "SW1"
-			(at 46.99 85.09 0)
+		(uuid "e29880dd-445b-404b-a98a-7c7fa465c0dc")
+		(property "Reference" "SW3"
+			(at 46.99 109.22 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4939,7 +4950,7 @@
 			)
 		)
 		(property "Value" "SW_Push"
-			(at 46.99 87.63 0)
+			(at 46.99 111.76 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4949,7 +4960,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 46.99 87.63 0)
+			(at 46.99 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4960,7 +4971,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 46.99 87.63 0)
+			(at 46.99 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4971,7 +4982,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 46.99 92.71 0)
+			(at 46.99 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4982,15 +4993,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "778184dc-1989-46c7-acd3-f751247944b9")
+			(uuid "5d829f50-44f4-4cc8-9236-6793906431f5")
 		)
 		(pin "1"
-			(uuid "8569a005-b7f9-4814-a1fc-a6403e668451")
+			(uuid "6738f576-c5eb-43d3-a85c-65881f439ab6")
 		)
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/fa9dec7b-8b0e-46fd-adb1-01042abcfaa9"
-					(reference "SW1")
+					(reference "SW3")
 					(unit 1)
 				)
 			)
