@@ -64,12 +64,18 @@
           "min_island_area": 10.0,
           "min_thickness": 0.25,
           "pad_connection": 1,
-          "remove_islands": 0,
+          "remove_islands": 1,
           "thermal_relief_gap": 0.5,
           "thermal_relief_spoke_width": 0.5
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -203,7 +209,13 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0,
+        0.127,
+        0.2,
+        0.5,
+        1.0
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -230,7 +242,20 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        },
+        {
+          "diameter": 0.45,
+          "drill": 0.3
+        },
+        {
+          "diameter": 0.8,
+          "drill": 0.4
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -661,7 +686,7 @@
         "uuid": "e591c520-166f-4be8-8a23-fbc1d7079c89"
       }
     ],
-    "used_designators": "U1-3,U102,U105-107,U201-203,U301-302,U304,J1-2,J101,J103-109,J201,J301,R1-3,R106-107,R110,R115-124,R130-134,R201-205,R301-302,R304-305,R307-310,R312,R314,BZ101,C1-4,C102-103,C106-115,C122-126,C201,C308,#PWR1-5,#PWR8,#PWR101-103,#PWR105,#PWR108-110,#PWR118-141,#PWR201-202,#PWR204,#PWR302-303,D1,D104-107,D201,D302,H101-104,L101,SW101-107",
+    "used_designators": "SW2,SW4,SW6-7,SW101-107,L101,H101-104,#PWR1-5,#PWR8,#PWR46,#PWR48,#PWR53-61,#PWR101-103,#PWR105,#PWR108-110,#PWR118-141,#PWR201-202,#PWR204,#PWR302-303,D1,D104-107,D201,D302,C1-4,C22,C24,C28-29,C102-103,C106-115,C122-126,C201,C308,BZ101,R1-3,R30-34,R106-107,R110,R115-124,R130-134,R201-205,R301-302,R304-305,R307-310,R312,R314,J1-2,J11-12,J101,J103-109,J201,J301,U1-3,U102,U105-107,U201-203,U301-302,U304",
     "variants": []
   },
   "sheets": [
