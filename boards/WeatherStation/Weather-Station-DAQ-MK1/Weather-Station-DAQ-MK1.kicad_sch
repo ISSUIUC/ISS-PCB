@@ -5578,6 +5578,12 @@
 		(uuid "71799214-c269-4eec-82a5-c4985cea1d61")
 	)
 	(junction
+		(at 55.88 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7700c922-b387-47c0-8f3b-a3f085e23867")
+	)
+	(junction
 		(at 289.56 27.94)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5807,6 +5813,16 @@
 	)
 	(wire
 		(pts
+			(xy 63.5 59.69) (xy 55.88 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14322045-e214-4146-8631-890953dec361")
+	)
+	(wire
+		(pts
 			(xy 266.7 105.41) (xy 284.48 105.41)
 		)
 		(stroke
@@ -5824,6 +5840,16 @@
 			(type default)
 		)
 		(uuid "1948add8-e618-4b29-ac14-1427734c646c")
+	)
+	(wire
+		(pts
+			(xy 55.88 58.42) (xy 55.88 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2061d4a8-0330-4dc7-b36d-046c2eba2efc")
 	)
 	(wire
 		(pts
@@ -8026,6 +8052,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 55.88 50.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "25371527-4742-4e8e-b3cb-37b73de72ab4")
+		(property "Reference" "#PWR0119"
+			(at 55.88 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 55.88 45.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Oscillator:Oscillator_OCXO_Morion_MV317"
+			(at 55.88 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55.88 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 55.88 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4cc246b8-affb-4d84-8444-4cc30a150e59")
+		)
+		(instances
+			(project "Weather-Station-DAQ-MK1"
+				(path "/31bb8bf1-9eb6-4115-ae3e-7084220544a9"
+					(reference "#PWR0119")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Screw_Terminal_01x04")
 		(at 289.56 100.33 0)
 		(unit 1)
@@ -9614,6 +9718,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 48.26 59.69 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a481b564-2650-4281-981e-1b1c6f9d4a57")
+		(property "Reference" "#PWR0121"
+			(at 48.26 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 48.26 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_QFP:TQFP-44_10x10mm_P0.8mm"
+			(at 48.26 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 48.26 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 48.26 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8207d583-17c6-4261-ae0a-83e30ec0f4a3")
+		)
+		(instances
+			(project "Weather-Station-DAQ-MK1"
+				(path "/31bb8bf1-9eb6-4115-ae3e-7084220544a9"
+					(reference "#PWR0121")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_name "+3V3_1")
 		(lib_id "power:+3V3")
 		(at 289.56 25.4 0)
@@ -10528,6 +10710,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_US")
+		(at 55.88 54.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dec64853-674d-4125-99a6-8bc483d8d008")
+		(property "Reference" "R135"
+			(at 58.42 53.3399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 58.42 55.8799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 56.896 54.864 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55.88 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 55.88 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0e796ac1-63fb-4b13-9623-9666def320d5")
+		)
+		(pin "2"
+			(uuid "907d96ef-75be-4a61-ba69-ec766dce9956")
+		)
+		(instances
+			(project "Weather-Station-DAQ-MK1"
+				(path "/31bb8bf1-9eb6-4115-ae3e-7084220544a9"
+					(reference "R135")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Micro_SD_Card_Det2")
 		(at 217.17 46.99 0)
 		(unit 1)
@@ -10705,6 +10969,86 @@
 			(project "Weather-Station-DAQ-MK1"
 				(path "/31bb8bf1-9eb6-4115-ae3e-7084220544a9"
 					(reference "#PWR0105")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 52.07 59.69 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e57188b2-f440-47be-ba4e-ff16082b09d9")
+		(property "Reference" "C124"
+			(at 52.07 52.07 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1uF"
+			(at 52.07 54.61 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 48.26 60.6552 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 52.07 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 52.07 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "b5336002-6c57-45cc-874a-72e176063664")
+		)
+		(pin "1"
+			(uuid "dd00ee60-c52c-4677-88bf-808bb71f20f5")
+		)
+		(instances
+			(project "Weather-Station-DAQ-MK1"
+				(path "/31bb8bf1-9eb6-4115-ae3e-7084220544a9"
+					(reference "C124")
 					(unit 1)
 				)
 			)
