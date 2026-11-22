@@ -4,6 +4,11 @@
 	(generator_version "10.0")
 	(uuid "74361bfb-ad44-4e31-ad40-322a1f4a3fcc")
 	(paper "A4")
+	(title_block
+		(title "Launch Box Ground Power")
+		(date "2026-11-21")
+		(rev "A")
+	)
 	(lib_symbols
 		(symbol "Connector:Screw_Terminal_01x02"
 			(pin_names
@@ -3069,7 +3074,7 @@
 	)
 	(rectangle
 		(start 142.24 12.7)
-		(end 171.45 59.69)
+		(end 175.26 59.69)
 		(stroke
 			(width 0)
 			(type dash)
@@ -3079,19 +3084,7 @@
 		)
 		(uuid "fbfa2e6f-a930-4ea9-b46e-043303ea0ccb")
 	)
-	(text "2.54mm Pin Headers"
-		(exclude_from_sim no)
-		(at 123.698 141.732 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(italic yes)
-			)
-			(justify right bottom)
-		)
-		(uuid "0e6544c2-11c7-4fa1-9925-d0a6415048b4")
-	)
-	(text "VCOMP (Highest voltage mode)\n(V_{OV} - V_{DIODE}) * R_{BOT} / (R_{BOT} + R_{TOP}) = 1.06V\nV_{OV} = 1.06 * (5k + 16.9k) / 5k + 0.9 = 5.54V\nV_{OV} = 1.06 * (5k + 49.9k) / 5k + 0.9 = 12.54V\nI_{LM} = 65.2 / R_{ILM}(k)^{0.861} = 65.2 / 21.5^{0.861} = 4.64A"
+	(text "VCOMP (Highest voltage mode)\n(V_{OV} - V_{DIODE}) * R_{BOT} / (R_{BOT} + R_{TOP}) = 1.06V\nV_{OV} = 1.06 * (5k + 16.9k) / 5k + 0.9 = 5.54V\nV_{OV} = 1.06 * (5k + 62k) / 5k + 0.9 = 15.1V\nI_{LM} = 65.2 / R_{ILM}(k)^{0.861} = 65.2 / 80.6^{0.861} = 1.48A"
 		(exclude_from_sim no)
 		(at 13.335 141.605 0)
 		(effects
@@ -3201,12 +3194,6 @@
 		(uuid "97c3271d-a408-47e1-998c-a2fb51bc80b1")
 	)
 	(junction
-		(at 29.21 27.94)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "03dfb931-7134-4435-93e0-a9c90bf1987e")
-	)
-	(junction
 		(at 36.83 27.94)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3229,6 +3216,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1d799450-89a0-4636-9908-73643a619dba")
+	)
+	(junction
+		(at 29.21 27.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2fc51425-5824-4f58-b3b0-3f63fcc31e45")
 	)
 	(junction
 		(at 52.07 38.1)
@@ -3267,10 +3260,10 @@
 		(uuid "665f64db-05ef-48f2-b4dd-15814be0ed8a")
 	)
 	(junction
-		(at 105.41 74.93)
+		(at 44.45 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6b76d10d-d581-404c-8722-caf1ed8c7bd7")
+		(uuid "6884a29e-719d-4d84-92c4-c8de54a9b9c3")
 	)
 	(junction
 		(at 107.95 27.94)
@@ -3295,6 +3288,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8559ed5e-a926-40c2-9d6d-9161eeab63c3")
+	)
+	(junction
+		(at 105.41 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "86a541ab-78b2-4a53-ac70-95ec11febd41")
 	)
 	(junction
 		(at 69.85 121.92)
@@ -3367,12 +3366,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d80c8a0a-3bea-497a-ac46-dc041fba8071")
-	)
-	(junction
-		(at 44.45 121.92)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e033affd-9250-4428-878c-40fd2b75077c")
 	)
 	(junction
 		(at 44.45 74.93)
@@ -3790,7 +3783,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 80.01) (xy 69.85 80.01)
+			(xy 59.69 80.01) (xy 69.85 80.01)
 		)
 		(stroke
 			(width 0)
@@ -4050,7 +4043,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 27.94) (xy 29.21 27.94)
+			(xy 16.51 27.94) (xy 29.21 27.94)
 		)
 		(stroke
 			(width 0)
@@ -4150,7 +4143,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 121.92) (xy 44.45 121.92)
+			(xy 33.02 121.92) (xy 44.45 121.92)
 		)
 		(stroke
 			(width 0)
@@ -4350,7 +4343,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 82.55) (xy 90.17 82.55)
+			(xy 101.6 82.55) (xy 90.17 82.55)
 		)
 		(stroke
 			(width 0)
@@ -4360,7 +4353,7 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 74.93) (xy 107.95 74.93)
+			(xy 105.41 74.93) (xy 118.11 74.93)
 		)
 		(stroke
 			(width 0)
@@ -4578,60 +4571,55 @@
 		)
 		(uuid "ff741620-2ddd-4053-a684-1a830f8acd04")
 	)
-	(hierarchical_label "PMUX_GND"
-		(shape input)
-		(at 68.58 80.01 180)
+	(label "PMUX_GND"
+		(at 33.02 121.92 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left bottom)
 		)
-		(uuid "10d51f55-f19e-4806-acd0-cb59c295e0e3")
+		(uuid "472b02fe-1de3-4352-88c5-4cb1e08d0fe1")
 	)
-	(hierarchical_label "PMUX_GND"
-		(shape input)
-		(at 41.91 121.92 180)
+	(label "SYS_POWER"
+		(at 118.11 74.93 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify right bottom)
 		)
-		(uuid "1540e8c0-e7ba-4ed4-b960-a56f63ba8274")
+		(uuid "798b20a8-ff65-4dea-9e4d-2333fdc694b0")
 	)
-	(hierarchical_label "PMUX_GND"
-		(shape input)
-		(at 91.44 82.55 0)
+	(label "PMUX_GND"
+		(at 59.69 80.01 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify left bottom)
 		)
-		(uuid "3701759a-781a-459f-9486-4761b5219068")
+		(uuid "b71ced5c-4776-4098-adf9-0e0cf0ca09e1")
 	)
-	(hierarchical_label "SYS_POWER"
-		(shape output)
-		(at 107.95 74.93 0)
+	(label "PMUX_GND"
+		(at 101.6 82.55 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right bottom)
 		)
-		(uuid "47c860e4-82b8-4f13-a8f2-199b932a09d5")
+		(uuid "c5bf3903-3ff9-49e0-b6d0-d3bbb57036d1")
 	)
-	(hierarchical_label "SYS_POWER"
-		(shape output)
-		(at 26.67 27.94 180)
+	(label "SYS_POWER"
+		(at 16.51 27.94 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left bottom)
 		)
-		(uuid "8dea3114-f610-47f6-9f17-ff2db4be51e0")
+		(uuid "e78aba2a-93a3-43f2-bafe-5372078e6e14")
 	)
 	(hierarchical_label "USB_POWER"
 		(shape input)
@@ -4644,8 +4632,8 @@
 		)
 		(uuid "9464099f-5e6e-4c27-9a7e-ec422da7a7b3")
 	)
-	(hierarchical_label "12_VBAT"
-		(shape output)
+	(hierarchical_label "12V_VBAT"
+		(shape input)
 		(at 27.94 71.12 180)
 		(effects
 			(font
@@ -4655,8 +4643,8 @@
 		)
 		(uuid "dc2a4cb6-3598-48da-baf5-5a676b0539ca")
 	)
-	(hierarchical_label "12_VBAT"
-		(shape output)
+	(hierarchical_label "12V_VBAT"
+		(shape input)
 		(at 144.78 69.85 0)
 		(effects
 			(font
@@ -4677,7 +4665,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "04c9cf55-34f2-4f6e-bec6-ed96ecc84c84")
-		(property "Reference" "R25"
+		(property "Reference" "R26"
 			(at 61.595 113.03 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4741,7 +4729,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/8667d66e-4419-4975-a57b-cff4e638507d"
-					(reference "R25")
+					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -4759,7 +4747,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0e058712-9d9e-4474-bd42-6b0a1ed5c4c1")
-		(property "Reference" "C11"
+		(property "Reference" "C8"
 			(at 107.95 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4823,7 +4811,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/8667d66e-4419-4975-a57b-cff4e638507d"
-					(reference "C11")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -4841,7 +4829,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0ec8b265-6607-4a0a-ab13-56dab4b0fcbd")
-		(property "Reference" "D5"
+		(property "Reference" "D6"
 			(at 50.165 41.91 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4905,7 +4893,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/8667d66e-4419-4975-a57b-cff4e638507d"
-					(reference "D5")
+					(reference "D6")
 					(unit 1)
 				)
 			)
@@ -5004,7 +4992,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "17c5fee3-58e1-4a8b-b487-2f338735235a")
-		(property "Reference" "U5"
+		(property "Reference" "U6"
 			(at 25.4 73.66 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5083,7 +5071,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/8667d66e-4419-4975-a57b-cff4e638507d"
-					(reference "U5")
+					(reference "U6")
 					(unit 1)
 				)
 			)
@@ -5100,7 +5088,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1d3c329e-3a6c-44cf-9538-d6841ddd5231")
-		(property "Reference" "R19"
+		(property "Reference" "R28"
 			(at 87.63 30.48 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5162,7 +5150,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/8667d66e-4419-4975-a57b-cff4e638507d"
-					(reference "R19")
+					(reference "R28")
 					(unit 1)
 				)
 			)
@@ -5260,7 +5248,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2c10c10e-56e0-42c1-8cac-489b6fc8683a")
-		(property "Reference" "R21"
+		(property "Reference" "R32"
 			(at 144.78 33.02 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5324,7 +5312,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/8667d66e-4419-4975-a57b-cff4e638507d"
-					(reference "R21")
+					(reference "R32")
 					(unit 1)
 				)
 			)
@@ -5342,7 +5330,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2cb55e65-30f3-4a19-ab40-8f6682e4ab43")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR036"
 			(at 130.81 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -5403,7 +5391,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/8667d66e-4419-4975-a57b-cff4e638507d"
-					(reference "#PWR034")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -5420,7 +5408,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2cc97e36-9bb8-4275-8238-297d5585e8bd")
-		(property "Reference" "R24"
+		(property "Reference" "R25"
 			(at 61.595 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5484,7 +5472,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/8667d66e-4419-4975-a57b-cff4e638507d"
-					(reference "R24")
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -5503,7 +5491,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "35ed4556-67ec-4b45-a3bb-66e0fb80553a")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR030"
 			(at 57.15 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -5564,7 +5552,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/8667d66e-4419-4975-a57b-cff4e638507d"
-					(reference "#PWR029")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -5581,7 +5569,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "36dc966d-a219-4d0f-bc4b-7ee98cc8f9bd")
-		(property "Reference" "C10"
+		(property "Reference" "C11"
 			(at 123.825 30.48 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5645,7 +5633,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/8667d66e-4419-4975-a57b-cff4e638507d"
-					(reference "C10")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -5662,7 +5650,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3ab80c3e-77e5-4bb3-8996-672ca3d260bd")
-		(property "Reference" "D6"
+		(property "Reference" "D8"
 			(at 132.842 41.148 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5726,7 +5714,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/8667d66e-4419-4975-a57b-cff4e638507d"
-					(reference "D6")
+					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -5744,7 +5732,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "441229cf-2b9c-4b9d-9cb3-2fb94e90f3aa")
-		(property "Reference" "R26"
+		(property "Reference" "R29"
 			(at 94.615 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5755,7 +5743,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "21.5k"
+		(property "Value" "80.6k"
 			(at 94.615 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5808,7 +5796,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/8667d66e-4419-4975-a57b-cff4e638507d"
-					(reference "R26")
+					(reference "R29")
 					(unit 1)
 				)
 			)
@@ -5825,7 +5813,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4e4f4762-6cab-4051-bfbe-ba0f9a7541ec")
-		(property "Reference" "J11"
+		(property "Reference" "J12"
 			(at 157.734 36.322 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5838,6 +5826,7 @@
 		)
 		(property "Value" "Screw_Terminal_01x02"
 			(at 150.368 45.212 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5889,7 +5878,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/8667d66e-4419-4975-a57b-cff4e638507d"
-					(reference "J11")
+					(reference "J12")
 					(unit 1)
 				)
 			)
@@ -5906,7 +5895,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "580c1678-ba05-4f67-8cf0-52c8c0ad24e4")
-		(property "Reference" "R20"
+		(property "Reference" "R30"
 			(at 132.08 30.48 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5970,7 +5959,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/8667d66e-4419-4975-a57b-cff4e638507d"
-					(reference "R20")
+					(reference "R30")
 					(unit 1)
 				)
 			)
@@ -5987,7 +5976,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "59e64416-8dda-45df-a9a7-a0a2dab26971")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR029"
 			(at 33.02 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -6048,7 +6037,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/8667d66e-4419-4975-a57b-cff4e638507d"
-					(reference "#PWR038")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -6065,7 +6054,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5bd2b359-b01f-47d2-888d-77daaab9044c")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR032"
 			(at 69.85 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -6126,7 +6115,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/8667d66e-4419-4975-a57b-cff4e638507d"
-					(reference "#PWR039")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -6143,7 +6132,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5e84cb1d-f440-4c92-afc4-47d19f896e56")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR028"
 			(at 33.02 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -6204,7 +6193,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/8667d66e-4419-4975-a57b-cff4e638507d"
-					(reference "#PWR037")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -6222,7 +6211,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "666ad8d5-ce33-4c43-accb-1e7b3de92204")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR034"
 			(at 123.19 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -6283,7 +6272,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/8667d66e-4419-4975-a57b-cff4e638507d"
-					(reference "#PWR032")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -6300,7 +6289,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6a6d4bd7-0bef-49c9-9a83-abaab23bdf48")
-		(property "Reference" "R23"
+		(property "Reference" "R22"
 			(at 46.355 113.03 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6364,7 +6353,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/8667d66e-4419-4975-a57b-cff4e638507d"
-					(reference "R23")
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -6381,7 +6370,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6c8c53c8-dc16-4ac0-a061-28d10b35a017")
-		(property "Reference" "U4"
+		(property "Reference" "U8"
 			(at 69.85 20.32 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6455,7 +6444,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/8667d66e-4419-4975-a57b-cff4e638507d"
-					(reference "U4")
+					(reference "U8")
 					(unit 1)
 				)
 			)
@@ -6473,7 +6462,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6e441163-11a9-4436-995f-a670f82731e5")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR038"
 			(at 149.86 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -6533,7 +6522,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/8667d66e-4419-4975-a57b-cff4e638507d"
-					(reference "#PWR035")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -6550,7 +6539,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9ab4ff48-325a-4724-b26e-2f091a7d4bab")
-		(property "Reference" "R22"
+		(property "Reference" "R21"
 			(at 46.355 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6561,7 +6550,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "49.9k"
+		(property "Value" "62k"
 			(at 46.355 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6614,7 +6603,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/8667d66e-4419-4975-a57b-cff4e638507d"
-					(reference "R22")
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -6631,7 +6620,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a69e9367-b599-451f-a01f-6d17eacb6402")
-		(property "Reference" "C9"
+		(property "Reference" "C10"
 			(at 116.205 30.48 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6695,7 +6684,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/8667d66e-4419-4975-a57b-cff4e638507d"
-					(reference "C9")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -6712,7 +6701,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a8461676-5250-4fec-9828-c3db6dc86871")
-		(property "Reference" "R15"
+		(property "Reference" "R31"
 			(at 135.89 78.74 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6776,7 +6765,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/8667d66e-4419-4975-a57b-cff4e638507d"
-					(reference "R15")
+					(reference "R31")
 					(unit 1)
 				)
 			)
@@ -6794,7 +6783,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "acedc71d-afcd-4f5d-8189-579f24b14c51")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR033"
 			(at 82.55 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -6855,7 +6844,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/8667d66e-4419-4975-a57b-cff4e638507d"
-					(reference "#PWR031")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -6954,7 +6943,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bc679ecb-ffd7-4dd5-8214-fa240d5f3f8f")
-		(property "Reference" "U7"
+		(property "Reference" "U9"
 			(at 74.93 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7047,7 +7036,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/8667d66e-4419-4975-a57b-cff4e638507d"
-					(reference "U7")
+					(reference "U9")
 					(unit 1)
 				)
 			)
@@ -7065,7 +7054,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bd3cdddb-f12d-459a-b5c0-ae85e5cf4872")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR039"
 			(at 151.13 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -7125,7 +7114,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/8667d66e-4419-4975-a57b-cff4e638507d"
-					(reference "#PWR036")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -7142,7 +7131,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bf977e57-e3a2-42ed-98a7-ee9ea29ad708")
-		(property "Reference" "C8"
+		(property "Reference" "C9"
 			(at 108.585 30.48 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7206,7 +7195,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/8667d66e-4419-4975-a57b-cff4e638507d"
-					(reference "C8")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -7224,7 +7213,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c1a6a63e-8df8-4964-8fb0-fbb4aa8c8709")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR031"
 			(at 69.85 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -7285,7 +7274,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/8667d66e-4419-4975-a57b-cff4e638507d"
-					(reference "#PWR030")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -7303,7 +7292,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c2066cef-edcb-45f5-a83d-dd806f3546a8")
-		(property "Reference" "R16"
+		(property "Reference" "R23"
 			(at 50.8 30.48 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7367,7 +7356,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/8667d66e-4419-4975-a57b-cff4e638507d"
-					(reference "R16")
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -7385,7 +7374,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c4e21341-1b40-404d-9d1a-dcf1e775508f")
-		(property "Reference" "R18"
+		(property "Reference" "R27"
 			(at 81.28 39.37 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7449,7 +7438,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/8667d66e-4419-4975-a57b-cff4e638507d"
-					(reference "R18")
+					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -7467,7 +7456,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c4edd824-279b-417f-8fe5-680c61941b7b")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR037"
 			(at 142.24 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -7527,7 +7516,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/8667d66e-4419-4975-a57b-cff4e638507d"
-					(reference "#PWR027")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -7544,7 +7533,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c5523200-95bc-4a40-bd50-8880b5904d60")
-		(property "Reference" "J12"
+		(property "Reference" "J10"
 			(at 105.41 83.82 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7605,7 +7594,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/8667d66e-4419-4975-a57b-cff4e638507d"
-					(reference "J12")
+					(reference "J10")
 					(unit 1)
 				)
 			)
@@ -7622,7 +7611,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c873a6f5-e4b8-43fe-a7f2-c0cf4151f263")
-		(property "Reference" "R17"
+		(property "Reference" "R24"
 			(at 58.42 41.91 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7686,7 +7675,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/8667d66e-4419-4975-a57b-cff4e638507d"
-					(reference "R17")
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -7704,7 +7693,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d3a6854f-aafb-47d0-88c8-255ffd0d760d")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR027"
 			(at 29.21 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -7765,7 +7754,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/8667d66e-4419-4975-a57b-cff4e638507d"
-					(reference "#PWR028")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -7782,7 +7771,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d5c2a6c0-4cb5-4f56-a489-3b06a3782088")
-		(property "Reference" "J10"
+		(property "Reference" "J11"
 			(at 150.114 85.852 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7846,7 +7835,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/8667d66e-4419-4975-a57b-cff4e638507d"
-					(reference "J10")
+					(reference "J11")
 					(unit 1)
 				)
 			)
@@ -7863,7 +7852,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d751b2f3-3e48-49c8-a88b-a0ef464f5d1a")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR035"
 			(at 130.81 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -7923,7 +7912,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/8667d66e-4419-4975-a57b-cff4e638507d"
-					(reference "#PWR033")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -8022,7 +8011,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "eefa1e51-5f84-4a70-9a19-baf73be1bcba")
-		(property "Reference" "U6"
+		(property "Reference" "U7"
 			(at 25.4 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8101,7 +8090,7 @@
 		(instances
 			(project "Launch_Box_Ground"
 				(path "/2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60/8667d66e-4419-4975-a57b-cff4e638507d"
-					(reference "U6")
+					(reference "U7")
 					(unit 1)
 				)
 			)
