@@ -6,6 +6,11 @@
 	(paper "A3")
 	(title_block
 		(title "Weather Station DAQ")
+		(date "2026-11-25")
+		(rev "A")
+		(company "Illinois Space Society")
+		(comment 3 "Aaryamaan Saini, Eddie Tang")
+		(comment 4 "Contributors: Phillip Raczka, Gwyneth Straiton, Linus Mitchell, Harish Shankar,")
 	)
 	(lib_symbols
 		(symbol "Connector:Conn_Coaxial"
@@ -1730,7 +1735,7 @@
 							)
 						)
 					)
-					(number "S1"
+					(number "SH"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4514,7 +4519,7 @@
 					(justify left bottom)
 				)
 			)
-			(property "Footprint" "MAX3430CSA_T:SOIC127P600X175-8N"
+			(property "Footprint" "Transceiver_Analog_Devices:SOIC127P600X175-8N"
 				(at -0.254 24.384 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -5723,8 +5728,8 @@
 		(uuid "c559ae62-c311-413b-b2bc-034e8e119a87")
 	)
 	(rectangle
-		(start 213.36 250.19)
-		(end 254 276.86)
+		(start 213.36 247.65)
+		(end 255.27 276.86)
 		(stroke
 			(width 0)
 			(type dash)
@@ -5748,7 +5753,7 @@
 	)
 	(text "Extra Debug Pads\n"
 		(exclude_from_sim no)
-		(at 214.63 251.46 0)
+		(at 214.884 248.92 0)
 		(effects
 			(font
 				(size 2 2)
@@ -5860,16 +5865,6 @@
 		)
 		(uuid "3fd9cb4b-d693-44e5-9ee2-81f8b1f1a875")
 	)
-	(text ""
-		(exclude_from_sim no)
-		(at 310.642 255.27 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "3ffa4d89-7012-4085-bf5b-ddca5514d632")
-	)
 	(text "Transceiver Module"
 		(exclude_from_sim no)
 		(at 229.87 17.78 0)
@@ -5906,6 +5901,18 @@
 			(justify left top)
 		)
 		(uuid "5c4092a9-afcb-4771-85d6-2d2028758321")
+	)
+	(text "Xinya XY308-2.54-4P"
+		(exclude_from_sim no)
+		(at 15.24 222.377 0)
+		(effects
+			(font
+				(size 2 2)
+				(italic yes)
+			)
+			(justify left top)
+		)
+		(uuid "5dc14d49-d176-46e7-bc0a-a0d0d7ea0c05")
 	)
 	(text "Mounting Holes"
 		(exclude_from_sim no)
@@ -5970,17 +5977,6 @@
 		)
 		(uuid "8be3f50d-4bfc-4fb8-90e5-1bc686a505ab")
 	)
-	(text "Contributors: Phillip Raczka, Gwyneth Straiton, Linus Mitchell, Harish Shankar, Aaryamaan Saini\n"
-		(exclude_from_sim no)
-		(at 348.234 255.016 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 72 0 0 1)
-			)
-		)
-		(uuid "8fc927bc-a5a7-4b53-bc56-8d2947f9fa91")
-	)
 	(text "MicroSD Card Connector"
 		(exclude_from_sim no)
 		(at 144.145 78.74 0)
@@ -6006,9 +6002,9 @@
 		)
 		(uuid "9d8b1d22-f0ea-4ba8-8e25-3a9e6f4dec30")
 	)
-	(text "To eliminate line reflections, each cable end is terminated with a termination resistor, RT,\nwhose value matches the characteristic impedance, Z0"
+	(text "R12 = 120R (cable Z0), DNP: the sensor's 2 m cable is electrically short at <=115200 baud,\nso no termination is needed. Populate only for a long cable run.\nBrown is +5 V, white GND, yellow B−, green A+."
 		(exclude_from_sim no)
-		(at 14.732 274.32 0)
+		(at 14.986 273.05 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6108,19 +6104,6 @@
 			)
 		)
 		(uuid "f3555412-683a-47e4-9121-147ea2abf50b")
-	)
-	(text "Illinois Space Society"
-		(exclude_from_sim no)
-		(at 312.166 265.938 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-				(color 72 0 0 1)
-			)
-		)
-		(uuid "f667d701-5ca4-4c6f-bd7c-fe9085e04efd")
 	)
 	(text "MCU Debug Pin\n\n"
 		(exclude_from_sim no)
@@ -6358,6 +6341,10 @@
 	(no_connect
 		(at 287.02 58.42)
 		(uuid "d5891497-00bc-4d79-9a87-1337bc1ed4a5")
+	)
+	(no_connect
+		(at 102.87 83.82)
+		(uuid "d846e6c6-eced-41ec-b70f-418ef136d798")
 	)
 	(no_connect
 		(at 102.87 40.64)
@@ -6703,6 +6690,16 @@
 	)
 	(wire
 		(pts
+			(xy 220.98 261.62) (xy 224.79 261.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2bad11eb-f5bf-4952-9740-46be4045ddf7")
+	)
+	(wire
+		(pts
 			(xy 173.99 88.9) (xy 173.99 90.17)
 		)
 		(stroke
@@ -6890,6 +6887,16 @@
 			(type default)
 		)
 		(uuid "46c49cfd-5be2-4719-88a0-fa551bc73b76")
+	)
+	(wire
+		(pts
+			(xy 220.98 256.54) (xy 224.79 256.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "488b3435-760b-4fd7-bc4e-9dadac1c84eb")
 	)
 	(wire
 		(pts
@@ -7123,7 +7130,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 269.24) (xy 224.79 269.24)
+			(xy 220.98 271.78) (xy 224.79 271.78)
 		)
 		(stroke
 			(width 0)
@@ -7133,7 +7140,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 274.32) (xy 224.79 274.32)
+			(xy 220.98 274.32) (xy 224.79 274.32)
 		)
 		(stroke
 			(width 0)
@@ -7423,6 +7430,16 @@
 	)
 	(wire
 		(pts
+			(xy 220.98 259.08) (xy 224.79 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "828136f2-057e-4a5d-8877-59db411242e3")
+	)
+	(wire
+		(pts
 			(xy 107.95 139.7) (xy 124.46 139.7)
 		)
 		(stroke
@@ -7530,6 +7547,16 @@
 			(type default)
 		)
 		(uuid "8b72dba9-0024-4c5c-8626-c41de869be3d")
+	)
+	(wire
+		(pts
+			(xy 220.98 254) (xy 224.79 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c6be9fc-90ef-4b4a-ad37-e2cdf62c3f99")
 	)
 	(wire
 		(pts
@@ -7663,7 +7690,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 261.62) (xy 226.06 261.62)
+			(xy 220.98 266.7) (xy 224.79 266.7)
 		)
 		(stroke
 			(width 0)
@@ -7733,7 +7760,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 256.54) (xy 226.06 256.54)
+			(xy 220.98 264.16) (xy 224.79 264.16)
 		)
 		(stroke
 			(width 0)
@@ -8083,7 +8110,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 266.7) (xy 226.06 266.7)
+			(xy 220.98 269.24) (xy 224.79 269.24)
 		)
 		(stroke
 			(width 0)
@@ -8404,7 +8431,7 @@
 	)
 	(hierarchical_label "MAX_CS_3"
 		(shape output)
-		(at 226.06 256.54 0)
+		(at 224.79 264.16 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8600,6 +8627,17 @@
 		)
 		(uuid "243dcc0e-a51a-46e9-96ef-fc309e040cff")
 	)
+	(hierarchical_label "LR2021_CS"
+		(shape input)
+		(at 224.79 254 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2759543e-0b0c-4987-ba7b-60204e5f7181")
+	)
 	(hierarchical_label "UART_RX"
 		(shape output)
 		(at 68.58 91.44 180)
@@ -8611,8 +8649,8 @@
 		)
 		(uuid "39f12164-64d2-452f-9d7a-b7a05eb53b58")
 	)
-	(hierarchical_label "SD_CLK"
-		(shape bidirectional)
+	(hierarchical_label "SD_CMD"
+		(shape input)
 		(at 106.68 88.9 0)
 		(effects
 			(font
@@ -8855,7 +8893,7 @@
 	)
 	(hierarchical_label "MAX_CS_1"
 		(shape output)
-		(at 226.06 261.62 0)
+		(at 224.79 266.7 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8866,7 +8904,7 @@
 	)
 	(hierarchical_label "RS485_RECEIVER_DRIVER_EN"
 		(shape input)
-		(at 224.79 269.24 0)
+		(at 224.79 271.78 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8995,6 +9033,17 @@
 			(justify left)
 		)
 		(uuid "90dcb2a8-5445-48bd-8c14-4c3baa423ec2")
+	)
+	(hierarchical_label "SD_CMD"
+		(shape input)
+		(at 224.79 259.08 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "93ad750b-6322-495a-b937-94b0e1657bfe")
 	)
 	(hierarchical_label "RESET_SW"
 		(shape input)
@@ -9339,7 +9388,7 @@
 	)
 	(hierarchical_label "MAX_CS_2"
 		(shape output)
-		(at 226.06 266.7 0)
+		(at 224.79 269.24 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9347,6 +9396,17 @@
 			(justify left)
 		)
 		(uuid "cd548b58-fe02-482a-89b1-95326d006f7d")
+	)
+	(hierarchical_label "SD_DAT0"
+		(shape bidirectional)
+		(at 224.79 261.62 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d6915d27-105e-4b67-a79f-7504d34fae5a")
 	)
 	(hierarchical_label "SPI_MOSI"
 		(shape input)
@@ -9358,6 +9418,17 @@
 			(justify right)
 		)
 		(uuid "d7606af5-1183-4ab6-9a39-e7a894d8d24a")
+	)
+	(hierarchical_label "SD_CLK"
+		(shape bidirectional)
+		(at 224.79 256.54 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "dc66889b-125d-4180-8c97-a769c3840791")
 	)
 	(hierarchical_label "SPI_SCK"
 		(shape bidirectional)
@@ -9491,8 +9562,8 @@
 		)
 		(uuid "f5289058-a7ff-4728-a9b9-a07af28e7dff")
 	)
-	(hierarchical_label "SD_CMD"
-		(shape input)
+	(hierarchical_label "SD_CLK"
+		(shape bidirectional)
 		(at 106.68 86.36 0)
 		(effects
 			(font
@@ -9523,6 +9594,86 @@
 			(justify right)
 		)
 		(uuid "fe5c7e24-e831-470b-ad80-af80380b32cc")
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 220.98 254 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "01409620-452c-4bfa-a10c-0f7a61f8a679")
+		(property "Reference" "TP6"
+			(at 219.71 254 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 218.44 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 215.9 254 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 254 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 220.98 254 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3da75995-db66-4350-b784-0f5200f8ee6a")
+		)
+		(instances
+			(project "Weather-Station-DAQ-MK1"
+				(path "/31bb8bf1-9eb6-4115-ae3e-7084220544a9"
+					(reference "TP6")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -9636,7 +9787,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 177.4952 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -9951,7 +10102,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 53.594 91.186 90)
 			(hide yes)
 			(show_name no)
@@ -10614,10 +10765,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "27731433-789b-419c-aae7-5cbd424d1e23")
 		(property "Reference" "J3"
-			(at 82.55 237.4899 0)
+			(at 78.994 232.156 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10629,6 +10779,7 @@
 		)
 		(property "Value" "Screw_Terminal_01x04"
 			(at 82.55 240.0299 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10649,7 +10800,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "http://www.xinyaelectronic.com/product/xy308-254"
 			(at 80.01 237.49 0)
 			(hide yes)
 			(show_name no)
@@ -10773,7 +10924,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint_Small")
-		(at 222.25 266.7 0)
+		(at 220.98 269.24 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -10784,7 +10935,7 @@
 		(dnp no)
 		(uuid "2e66cb99-5f1f-45ff-bafd-d2173de1f1ab")
 		(property "Reference" "TP3"
-			(at 220.98 266.7 0)
+			(at 219.71 269.24 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10795,7 +10946,7 @@
 			)
 		)
 		(property "Value" "TestPoint_Small"
-			(at 219.71 269.24 0)
+			(at 218.44 271.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10807,7 +10958,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 217.17 266.7 0)
+			(at 215.9 269.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10818,7 +10969,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 217.17 266.7 0)
+			(at 215.9 269.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10829,7 +10980,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 222.25 266.7 0)
+			(at 220.98 269.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10939,10 +11090,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "34583b9e-742c-4bcd-bf3e-6aeb7d5640f0")
 		(property "Reference" "J4"
-			(at 82.55 260.3499 0)
+			(at 79.248 255.016 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10954,6 +11104,7 @@
 		)
 		(property "Value" "Screw_Terminal_01x04"
 			(at 82.55 262.8899 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10974,7 +11125,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "http://www.xinyaelectronic.com/product/xy308-254"
 			(at 80.01 260.35 0)
 			(hide yes)
 			(show_name no)
@@ -11050,7 +11201,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 160.274 93.726 90)
 			(hide yes)
 			(show_name no)
@@ -11132,7 +11283,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 122.174 252.476 90)
 			(hide yes)
 			(show_name no)
@@ -11338,6 +11489,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 220.98 256.54 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "44632db1-6ef9-4723-99f5-b7536f99fe15")
+		(property "Reference" "TP7"
+			(at 219.71 256.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 218.44 259.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 215.9 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 220.98 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a3a282ed-fa4b-436c-b399-c0cd8a67bb79")
+		)
+		(instances
+			(project "Weather-Station-DAQ-MK1"
+				(path "/31bb8bf1-9eb6-4115-ae3e-7084220544a9"
+					(reference "TP7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 57.15 238.76 0)
 		(unit 1)
@@ -11360,7 +11591,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R_T"
+		(property "Value" "120"
 			(at 59.69 240.0299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11371,7 +11602,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 58.166 239.014 90)
 			(hide yes)
 			(show_name no)
@@ -11421,7 +11652,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint_Small")
-		(at 222.25 274.32 0)
+		(at 220.98 274.32 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -11432,7 +11663,7 @@
 		(dnp no)
 		(uuid "47c10252-7969-4c94-ab02-ffd4cffee4b2")
 		(property "Reference" "TP5"
-			(at 220.98 274.32 0)
+			(at 219.71 274.32 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11443,7 +11674,7 @@
 			)
 		)
 		(property "Value" "TestPoint_Small"
-			(at 219.71 276.86 0)
+			(at 218.44 276.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11455,7 +11686,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 217.17 274.32 0)
+			(at 215.9 274.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11466,7 +11697,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 217.17 274.32 0)
+			(at 215.9 274.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11477,7 +11708,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 222.25 274.32 0)
+			(at 220.98 274.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11611,7 +11842,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 71.374 138.684 90)
 			(hide yes)
 			(show_name no)
@@ -11850,7 +12081,7 @@
 		(pin "B9"
 			(uuid "01cd886a-a105-49aa-b198-0b804efeb5ed")
 		)
-		(pin "S1"
+		(pin "SH"
 			(uuid "f7072a36-384e-4713-91c6-94aee5fb7a94")
 		)
 		(instances
@@ -11895,7 +12126,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 115.824 133.096 90)
 			(hide yes)
 			(show_name no)
@@ -11976,7 +12207,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 124.1552 266.7 0)
 			(hide yes)
 			(show_name no)
@@ -12026,7 +12257,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint_Small")
-		(at 222.25 256.54 0)
+		(at 220.98 264.16 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -12037,7 +12268,7 @@
 		(dnp no)
 		(uuid "6b3f73a8-d286-4176-8067-de41e757719c")
 		(property "Reference" "TP1"
-			(at 220.98 256.54 0)
+			(at 219.71 264.16 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12048,7 +12279,7 @@
 			)
 		)
 		(property "Value" "TestPoint_Small"
-			(at 219.71 259.08 0)
+			(at 218.44 266.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12060,7 +12291,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 217.17 256.54 0)
+			(at 215.9 264.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12071,7 +12302,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 217.17 256.54 0)
+			(at 215.9 264.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12082,7 +12313,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 222.25 256.54 0)
+			(at 220.98 264.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12184,7 +12415,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint_Small")
-		(at 222.25 261.62 0)
+		(at 220.98 266.7 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -12195,7 +12426,7 @@
 		(dnp no)
 		(uuid "7317125a-5b6f-4b01-a7e0-922c4aebc2a7")
 		(property "Reference" "TP2"
-			(at 220.98 261.62 0)
+			(at 219.71 266.7 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12206,7 +12437,7 @@
 			)
 		)
 		(property "Value" "TestPoint_Small"
-			(at 219.71 264.16 0)
+			(at 218.44 269.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12218,7 +12449,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 217.17 261.62 0)
+			(at 215.9 266.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12229,7 +12460,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 217.17 261.62 0)
+			(at 215.9 266.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12240,7 +12471,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 222.25 261.62 0)
+			(at 220.98 266.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12295,7 +12526,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 247.904 48.006 90)
 			(hide yes)
 			(show_name no)
@@ -12538,7 +12769,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 166.624 93.726 90)
 			(hide yes)
 			(show_name no)
@@ -12697,7 +12928,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 185.674 93.726 90)
 			(hide yes)
 			(show_name no)
@@ -12950,7 +13181,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 106.934 133.096 90)
 			(hide yes)
 			(show_name no)
@@ -13070,6 +13301,86 @@
 			(project "Weather-Station-DAQ-MK1"
 				(path "/31bb8bf1-9eb6-4115-ae3e-7084220544a9"
 					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 220.98 261.62 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a74db9d1-105e-40ec-a61d-25cdd43d0fa5")
+		(property "Reference" "TP9"
+			(at 219.71 261.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 218.44 264.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 215.9 261.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 261.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 220.98 261.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "575d9d0d-cdd8-46a0-a89c-7dd855027c35")
+		)
+		(instances
+			(project "Weather-Station-DAQ-MK1"
+				(path "/31bb8bf1-9eb6-4115-ae3e-7084220544a9"
+					(reference "TP9")
 					(unit 1)
 				)
 			)
@@ -13266,7 +13577,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 96.2152 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -13696,7 +14007,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MAX3430CSA_T:SOIC127P600X175-8N"
+		(property "Footprint" "Transceiver_Analog_Devices:SOIC127P600X175-8N"
 			(at 187.706 25.146 0)
 			(hide yes)
 			(show_name no)
@@ -14172,7 +14483,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 199.0852 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -14253,7 +14564,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 71.374 136.144 90)
 			(hide yes)
 			(show_name no)
@@ -14606,7 +14917,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 172.974 93.726 90)
 			(hide yes)
 			(show_name no)
@@ -14844,7 +15155,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 107.6452 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -14894,7 +15205,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint_Small")
-		(at 222.25 269.24 0)
+		(at 220.98 271.78 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -14905,7 +15216,7 @@
 		(dnp no)
 		(uuid "fa309199-8bf7-47f8-93ed-9c1ee2feb1c5")
 		(property "Reference" "TP4"
-			(at 220.98 269.24 0)
+			(at 219.71 271.78 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14916,7 +15227,7 @@
 			)
 		)
 		(property "Value" "TestPoint_Small"
-			(at 219.71 271.78 0)
+			(at 218.44 274.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14928,7 +15239,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 217.17 269.24 0)
+			(at 215.9 271.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14939,7 +15250,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 217.17 269.24 0)
+			(at 215.9 271.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14950,7 +15261,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 222.25 269.24 0)
+			(at 220.98 271.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15086,7 +15397,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 179.324 93.726 90)
 			(hide yes)
 			(show_name no)
@@ -15129,6 +15440,86 @@
 			(project "Weather-Station-DAQ-MK1"
 				(path "/31bb8bf1-9eb6-4115-ae3e-7084220544a9"
 					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 220.98 259.08 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ffc83758-11ab-40ae-bf49-581861ec42fe")
+		(property "Reference" "TP8"
+			(at 219.71 259.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint_Small"
+			(at 218.44 261.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 215.9 259.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 259.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 220.98 259.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c1e6a507-6ed3-4d13-a273-15cc435c6d8d")
+		)
+		(instances
+			(project "Weather-Station-DAQ-MK1"
+				(path "/31bb8bf1-9eb6-4115-ae3e-7084220544a9"
+					(reference "TP8")
 					(unit 1)
 				)
 			)

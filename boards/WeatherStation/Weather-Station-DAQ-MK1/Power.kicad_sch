@@ -4,6 +4,14 @@
 	(generator_version "10.0")
 	(uuid "fe639667-53e0-48ef-bf27-3d0bd1713565")
 	(paper "A4")
+	(title_block
+		(title "Weather Station DAQ Power")
+		(date "2026-11-25")
+		(rev "A")
+		(company "Illinois Space Society")
+		(comment 3 "Aaryamaan Saini, Eddie Tang")
+		(comment 4 "Contributors: Phillip Raczka, Gwyneth Straiton, Linus Mitchell, Harish Shankar,")
+	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x01"
 			(pin_names
@@ -3023,18 +3031,6 @@
 		)
 		(uuid "51c2de6e-caee-4498-aebb-6932d3b0f51c")
 	)
-	(text "2.54mm Pin Headers"
-		(exclude_from_sim no)
-		(at 123.825 92.075 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(italic yes)
-			)
-			(justify right bottom)
-		)
-		(uuid "605c0b0d-011b-4e85-81a9-4defcee21729")
-	)
 	(text "If not using diode add jumper\nand recalculate resistor voltage dividers"
 		(exclude_from_sim no)
 		(at 13.335 83.82 0)
@@ -4805,6 +4801,36 @@
 		)
 		(uuid "cc2547b6-69bd-41fd-9686-5ed761e28dfc")
 	)
+	(label "VBAT"
+		(at 134.62 104.14 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d48245a6-4ded-4ad0-8832-f1f94f804e94")
+	)
+	(label "VBAT"
+		(at 27.94 44.45 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e0bcdf67-b075-412a-a1ec-1701a2510fb9")
+	)
+	(label "VBAT"
+		(at 97.79 114.3 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e7c0f832-bc03-4687-bdcc-4c596b4e84cf")
+	)
 	(hierarchical_label "SYS_POWER"
 		(shape output)
 		(at 26.67 111.76 180)
@@ -4838,50 +4864,6 @@
 		)
 		(uuid "7f520e2a-a486-4528-b089-2c3925b58e0d")
 	)
-	(hierarchical_label "USB_POWER"
-		(shape input)
-		(at 12.7854 0.8096 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "abb55084-68a0-413b-9ccc-5c3b8414e80c")
-	)
-	(hierarchical_label "USB_POWER"
-		(shape input)
-		(at 15.3254 3.3496 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "bc4511f5-1c6d-4791-92bc-e8924d257094")
-	)
-	(hierarchical_label "VBAT"
-		(shape input)
-		(at 134.62 104.14 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "d48245a6-4ded-4ad0-8832-f1f94f804e94")
-	)
-	(hierarchical_label "VBAT"
-		(shape input)
-		(at 27.94 44.45 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "e0bcdf67-b075-412a-a1ec-1701a2510fb9")
-	)
 	(hierarchical_label "SYS_POWER"
 		(shape output)
 		(at 107.95 26.67 0)
@@ -4892,17 +4874,6 @@
 			(justify left)
 		)
 		(uuid "e168912a-4b5c-4962-95a1-2d04fc39ce78")
-	)
-	(hierarchical_label "VBAT"
-		(shape input)
-		(at 97.79 114.3 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "e7c0f832-bc03-4687-bdcc-4c596b4e84cf")
 	)
 	(hierarchical_label "USB_POWER"
 		(shape input)
@@ -4948,7 +4919,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 168.6052 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -5357,7 +5328,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 45.466 51.054 90)
 			(hide yes)
 			(show_name no)
@@ -5436,7 +5407,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 218.186 44.704 90)
 			(hide yes)
 			(show_name no)
@@ -5516,7 +5487,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Coilcraft:L_Coilcraft_XGL4020_COC"
+		(property "Footprint" "Inductor_Coilcraft:L_Coilcraft_XGL4020_COC"
 			(at 186.69 20.32 0)
 			(hide yes)
 			(show_name no)
@@ -5527,7 +5498,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.coilcraft.com/pdfs/xgl4020.pdf"
 			(at 186.69 20.32 0)
 			(hide yes)
 			(show_name no)
@@ -5597,7 +5568,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 136.144 110.236 90)
 			(hide yes)
 			(show_name no)
@@ -5676,7 +5647,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 213.106 39.624 90)
 			(hide yes)
 			(show_name no)
@@ -5755,7 +5726,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 166.116 40.386 90)
 			(hide yes)
 			(show_name no)
@@ -6347,7 +6318,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 261.366 44.704 90)
 			(hide yes)
 			(show_name no)
@@ -6710,7 +6681,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
 			(at 110.49 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -6780,7 +6751,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 144.4752 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -7035,7 +7006,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 60.706 66.294 90)
 			(hide yes)
 			(show_name no)
@@ -7117,7 +7088,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 91.694 55.626 90)
 			(hide yes)
 			(show_name no)
@@ -7358,7 +7329,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 74.676 117.094 90)
 			(hide yes)
 			(show_name no)
@@ -7439,7 +7410,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 64.4652 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -7521,7 +7492,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 103.1748 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -7758,7 +7729,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 31.4452 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -8014,7 +7985,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Regulator_Texas:RNM0015A"
+		(property "Footprint" "Package_VQFN:VQFN-RNM0015A"
 			(at 186.69 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -8230,7 +8201,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 60.706 51.054 90)
 			(hide yes)
 			(show_name no)
@@ -8392,7 +8363,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 136.144 121.666 90)
 			(hide yes)
 			(show_name no)
@@ -8416,6 +8387,7 @@
 		)
 		(property "Description" "Resistor, US symbol"
 			(at 137.16 121.92 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8550,7 +8522,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 45.466 66.294 90)
 			(hide yes)
 			(show_name no)
@@ -8707,7 +8679,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 213.106 56.134 90)
 			(hide yes)
 			(show_name no)
