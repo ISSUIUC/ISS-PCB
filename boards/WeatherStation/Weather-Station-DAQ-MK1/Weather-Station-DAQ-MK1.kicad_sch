@@ -2430,6 +2430,129 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "H"
+				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Mounting Hole with connection"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Power_Protection:ECMF02-2AMX6"
 			(pin_names
 				(offset 0.0254)
@@ -5552,6 +5675,18 @@
 		(uuid "573f10ce-bd04-49cf-a68d-1d7c4df85752")
 	)
 	(rectangle
+		(start 13.97 196.85)
+		(end 59.69 214.63)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "7541897f-867d-4c8f-84b6-1c2e64c9f8f3")
+	)
+	(rectangle
 		(start 13.97 217.17)
 		(end 110.49 276.86)
 		(stroke
@@ -5772,6 +5907,20 @@
 		)
 		(uuid "5c4092a9-afcb-4771-85d6-2d2028758321")
 	)
+	(text "Mounting Holes"
+		(exclude_from_sim no)
+		(at 14.605 198.12 0)
+		(effects
+			(font
+				(face "KiCad Font")
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "62ef270f-3bd4-43a8-b2f6-62f7db6d3a42")
+	)
 	(text "USB-C Port\n"
 		(exclude_from_sim no)
 		(at 13.97 113.665 0)
@@ -5867,6 +6016,18 @@
 			(justify left)
 		)
 		(uuid "a64b1f00-8c47-4e7f-836d-411596e5b2aa")
+	)
+	(text "Electrically isolated!"
+		(exclude_from_sim no)
+		(at 14.605 213.995 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "a8437c71-d39c-43d0-a9a1-3e6d4723fbca")
 	)
 	(text "Sensors"
 		(exclude_from_sim no)
@@ -6171,12 +6332,24 @@
 		(uuid "7c20cdf8-8118-4b9f-912e-cc1c3c5c55fc")
 	)
 	(no_connect
+		(at 49.53 209.55)
+		(uuid "93d71e32-6577-495a-a7bd-defda656313f")
+	)
+	(no_connect
 		(at 199.39 121.92)
 		(uuid "9fcfd083-bf1c-4582-8e21-d4bde6789a2b")
 	)
 	(no_connect
+		(at 39.37 209.55)
+		(uuid "a94fe2e6-34af-45c7-81db-a7c24cb80cdd")
+	)
+	(no_connect
 		(at 55.88 157.48)
 		(uuid "b791bba1-5470-4c71-9a6f-86b0fd1d7382")
+	)
+	(no_connect
+		(at 29.21 209.55)
+		(uuid "c3cc227a-7940-42b4-a642-adc1b4aa911e")
 	)
 	(no_connect
 		(at 72.39 66.04)
@@ -6193,6 +6366,10 @@
 	(no_connect
 		(at 264.16 41.91)
 		(uuid "f138fff3-d900-4fa5-86ca-bce365e26bfe")
+	)
+	(no_connect
+		(at 19.05 209.55)
+		(uuid "f2b76b03-ce08-4eae-90b0-bd47d8ed6cfb")
 	)
 	(wire
 		(pts
@@ -10350,6 +10527,84 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 39.37 207.01 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "25d1df92-7deb-40b5-a387-6d0d416fa39c")
+		(property "Reference" "H3"
+			(at 41.91 204.47 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M3"
+			(at 41.91 207.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 39.37 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 39.37 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 39.37 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d916b76e-e5e5-4379-a2bc-46d4dd1a33ae")
+		)
+		(instances
+			(project "Weather-Station-DAQ-MK1"
+				(path "/31bb8bf1-9eb6-4115-ae3e-7084220544a9"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Screw_Terminal_01x04")
 		(at 80.01 237.49 0)
 		(unit 1)
@@ -12491,6 +12746,84 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 29.21 207.01 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "93e75079-677e-45d1-9e12-866a693636ea")
+		(property "Reference" "H2"
+			(at 31.75 204.47 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M3"
+			(at 31.75 207.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 29.21 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 29.21 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 29.21 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "971ad2e4-d5f8-4028-b7a9-25e78ec5eab8")
+		)
+		(instances
+			(project "Weather-Station-DAQ-MK1"
+				(path "/31bb8bf1-9eb6-4115-ae3e-7084220544a9"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Power_Protection:ECMF02-2AMX6")
 		(at 58.42 149.86 0)
 		(mirror y)
@@ -12976,6 +13309,84 @@
 			(project "Weather-Station-DAQ-MK1"
 				(path "/31bb8bf1-9eb6-4115-ae3e-7084220544a9"
 					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 19.05 207.01 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b6e33483-0ce3-4cbc-b15a-acec88072174")
+		(property "Reference" "H1"
+			(at 21.59 204.4699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M3"
+			(at 21.59 207.0099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 19.05 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 19.05 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 19.05 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "996da590-6a1a-4781-9d3d-101ddf3fa12d")
+		)
+		(instances
+			(project "Weather-Station-DAQ-MK1"
+				(path "/31bb8bf1-9eb6-4115-ae3e-7084220544a9"
+					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -13566,6 +13977,84 @@
 			(project "Weather-Station-DAQ-MK1"
 				(path "/31bb8bf1-9eb6-4115-ae3e-7084220544a9"
 					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 49.53 207.01 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c5e41caf-d900-4d70-8358-f2b711fb9ee5")
+		(property "Reference" "H4"
+			(at 52.07 204.47 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M3"
+			(at 52.07 207.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 49.53 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 49.53 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "30126210-304b-4ab8-a42f-e1a665531624")
+		)
+		(instances
+			(project "Weather-Station-DAQ-MK1"
+				(path "/31bb8bf1-9eb6-4115-ae3e-7084220544a9"
+					(reference "H4")
 					(unit 1)
 				)
 			)
