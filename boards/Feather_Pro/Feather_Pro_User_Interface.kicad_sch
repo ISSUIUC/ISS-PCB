@@ -1825,7 +1825,7 @@
 	)
 	(rectangle
 		(start 93.98 12.7)
-		(end 152.4 73.66)
+		(end 161.29 73.66)
 		(stroke
 			(width 0)
 			(type dash)
@@ -1968,10 +1968,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f02683a2-d1bf-45a5-ad7b-2d66101ff7c9")
-	)
-	(no_connect
-		(at 133.35 52.07)
-		(uuid "f89d8933-a31b-428c-90b5-956a5b5da558")
 	)
 	(wire
 		(pts
@@ -2175,6 +2171,26 @@
 	)
 	(wire
 		(pts
+			(xy 148.59 41.91) (xy 148.59 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4cd1dd9e-0643-4c79-bdec-30088d9413c6")
+	)
+	(wire
+		(pts
+			(xy 148.59 52.07) (xy 148.59 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f88506a-74f4-4221-9c62-2e3d4f2e897c")
+	)
+	(wire
+		(pts
 			(xy 73.66 45.72) (xy 69.85 45.72)
 		)
 		(stroke
@@ -2342,6 +2358,16 @@
 			(type default)
 		)
 		(uuid "99eede6a-3969-4d33-b381-226d23f0b5bb")
+	)
+	(wire
+		(pts
+			(xy 133.35 52.07) (xy 148.59 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9be8800d-ce0d-480b-a1bc-590aea574ebd")
 	)
 	(wire
 		(pts
@@ -2905,6 +2931,88 @@
 			(project "Feather_Pro"
 				(path "/e591c520-166f-4be8-8a23-fbc1d7079c89/3bbf9958-f33e-4539-bbfe-81b78af18c9e"
 					(reference "#PWR060")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 148.59 46.99 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "02ba9401-6075-49e6-9675-81e5bfde2bda")
+		(property "Reference" "R35"
+			(at 151.13 45.7199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100k"
+			(at 151.13 48.2599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 149.606 47.244 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 148.59 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 148.59 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "e3f76141-3b66-4ed4-901c-a934d4df2144")
+		)
+		(pin "1"
+			(uuid "6f95ea97-068e-4bc6-8f7d-9c45349424bd")
+		)
+		(instances
+			(project "Feather_Pro"
+				(path "/e591c520-166f-4be8-8a23-fbc1d7079c89/3bbf9958-f33e-4539-bbfe-81b78af18c9e"
+					(reference "R35")
 					(unit 1)
 				)
 			)
@@ -3959,6 +4067,84 @@
 			(project "Feather_Pro"
 				(path "/e591c520-166f-4be8-8a23-fbc1d7079c89/3bbf9958-f33e-4539-bbfe-81b78af18c9e"
 					(reference "U12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "+3V3_1")
+		(lib_id "power:+3V3")
+		(at 148.59 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "870b2165-926c-43d1-ad34-2901f5002b95")
+		(property "Reference" "#PWR062"
+			(at 148.59 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 148.336 37.592 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 148.59 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 148.59 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 148.59 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0e5c1632-14e2-49b4-9f7d-609e8c1dd42b")
+		)
+		(instances
+			(project "Feather_Pro"
+				(path "/e591c520-166f-4be8-8a23-fbc1d7079c89/3bbf9958-f33e-4539-bbfe-81b78af18c9e"
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)
