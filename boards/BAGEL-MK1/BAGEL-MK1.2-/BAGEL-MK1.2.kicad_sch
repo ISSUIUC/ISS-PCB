@@ -1702,121 +1702,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GND_8"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "GND"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "GND_8_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GND_8_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Interface_Expander_Texas:TCAL9538"
 			(pin_names
 				(offset 0.254)
@@ -7327,7 +7212,7 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 102.87) (xy 217.17 105.41)
+			(xy 217.17 102.87) (xy 217.17 106.68)
 		)
 		(stroke
 			(width 0)
@@ -8007,6 +7892,16 @@
 	)
 	(wire
 		(pts
+			(xy 217.17 106.68) (xy 218.44 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f19b1d5a-c26c-47b7-8f53-c61d6457a874")
+	)
+	(wire
+		(pts
 			(xy 123.19 29.21) (xy 123.19 33.02)
 		)
 		(stroke
@@ -8186,6 +8081,30 @@
 		(uuid "166e4f81-d89b-4ed5-9538-d8e7202ab3a3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 46.99 22.0217 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "MCU_GND"
+		(shape input)
+		(at 218.44 106.68 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1eb6280e-ffe7-4285-bd9f-396f85dc24b7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 230.3152 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9077,17 +8996,6 @@
 		)
 		(uuid "09aab28c-f468-4061-aca8-03aa39d7eb31")
 	)
-	(hierarchical_label "V_out_7"
-		(shape output)
-		(at 215.9 127 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "0c1b0b44-fbd2-4ade-85b1-d78e35b8d40a")
-	)
 	(hierarchical_label "GREEN_LED"
 		(shape output)
 		(at 134.62 115.57 0)
@@ -9100,7 +9008,7 @@
 		(uuid "0dc50893-523b-4f13-b4e3-b2db362306c0")
 	)
 	(hierarchical_label "V_out_8"
-		(shape output)
+		(shape input)
 		(at 386.08 154.94 0)
 		(effects
 			(font
@@ -9109,6 +9017,17 @@
 			(justify left)
 		)
 		(uuid "0e000ae2-a7e3-4572-8be1-a369e81b4246")
+	)
+	(hierarchical_label "V_out_2"
+		(shape input)
+		(at 215.9 129.54 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0f028dd5-b818-4fb0-b8d5-69049cdcd006")
 	)
 	(hierarchical_label "SubBatt_GND3"
 		(shape input)
@@ -9287,7 +9206,7 @@
 		(uuid "24b1b5d9-6d99-4bef-b2bd-bba372ff18ff")
 	)
 	(hierarchical_label "V_out_8"
-		(shape output)
+		(shape input)
 		(at 368.3 148.59 0)
 		(effects
 			(font
@@ -9331,7 +9250,7 @@
 		(uuid "2cd21d56-a60d-47f9-b2df-235bb12e095b")
 	)
 	(hierarchical_label "V_out_7"
-		(shape output)
+		(shape input)
 		(at 368.3 129.54 0)
 		(effects
 			(font
@@ -9362,6 +9281,17 @@
 			(justify left)
 		)
 		(uuid "3591bade-5113-4c7e-80cd-b765450cc029")
+	)
+	(hierarchical_label "V_out_7"
+		(shape input)
+		(at 215.9 121.92 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "37cad941-7946-4c57-9e91-2de63e8b49c6")
 	)
 	(hierarchical_label "PG_ISO_7"
 		(shape input)
@@ -9418,17 +9348,6 @@
 		)
 		(uuid "3d46ff9f-8f65-4c14-818f-8e258db01e09")
 	)
-	(hierarchical_label "V_out_3"
-		(shape input)
-		(at 215.9 116.84 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "3f0f0c5e-6ca7-497b-9748-67bb83bb31e3")
-	)
 	(hierarchical_label "I2C_SCL"
 		(shape input)
 		(at 181.61 116.84 180)
@@ -9472,6 +9391,17 @@
 			(justify left)
 		)
 		(uuid "40b1f6d8-9dda-46ef-a42a-21fc54fd0444")
+	)
+	(hierarchical_label "V_out_4"
+		(shape input)
+		(at 215.9 114.3 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "41171d7c-d8e9-4336-af1b-435a21ca2655")
 	)
 	(hierarchical_label "SubBatt_GND6"
 		(shape input)
@@ -9571,17 +9501,6 @@
 			(justify right)
 		)
 		(uuid "52988969-34a8-40d0-96fb-77013d037bf7")
-	)
-	(hierarchical_label "V_out_5"
-		(shape input)
-		(at 215.9 121.92 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "52f87062-b4d7-40fd-a20a-291d08de4028")
 	)
 	(hierarchical_label "BLUE_LED"
 		(shape output)
@@ -9716,7 +9635,7 @@
 		(uuid "6c07f307-47d6-42e2-b217-972951d1e7ff")
 	)
 	(hierarchical_label "V_out_7"
-		(shape output)
+		(shape input)
 		(at 386.08 135.89 0)
 		(effects
 			(font
@@ -9836,6 +9755,17 @@
 		)
 		(uuid "80735179-6769-4cc9-9ae3-724a9fb3e7dc")
 	)
+	(hierarchical_label "V_out_1"
+		(shape input)
+		(at 215.9 127 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "84719fbb-aa81-4a52-adf7-6180a2ea7219")
+	)
 	(hierarchical_label "BLUE_LED"
 		(shape input)
 		(at 26.67 245.11 180)
@@ -9846,6 +9776,17 @@
 			(justify right)
 		)
 		(uuid "84a51985-5255-41f9-88e9-0e2b928ed1e1")
+	)
+	(hierarchical_label "V_out_5"
+		(shape input)
+		(at 215.9 116.84 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "863e04fa-6c9d-45d8-a690-015fed93cd18")
 	)
 	(hierarchical_label "MainBatt_V"
 		(shape input)
@@ -10364,17 +10305,6 @@
 		)
 		(uuid "bbd0daee-e84f-4cc3-b483-ac40a2599699")
 	)
-	(hierarchical_label "V_out_8"
-		(shape output)
-		(at 215.9 129.54 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "bca2d315-211c-4289-8945-1131b1e5f31e")
-	)
 	(hierarchical_label "V_out_5"
 		(shape input)
 		(at 368.3 93.98 0)
@@ -10396,17 +10326,6 @@
 			(justify left)
 		)
 		(uuid "bff3c384-2215-4bc2-8809-cf8fdf29858c")
-	)
-	(hierarchical_label "V_out_2"
-		(shape input)
-		(at 215.9 114.3 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "c28e6237-85d7-4924-9a01-aa35a2e9f30b")
 	)
 	(hierarchical_label "~{Q}_ISO_5"
 		(shape output)
@@ -10528,6 +10447,17 @@
 			(justify right)
 		)
 		(uuid "cc26f8bc-a32f-4c93-b5d0-fb6a9f9cc57a")
+	)
+	(hierarchical_label "V_out_8"
+		(shape input)
+		(at 215.9 124.46 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d1471acf-ef45-4398-901e-d9179e597769")
 	)
 	(hierarchical_label "FLASH_CS"
 		(shape input)
@@ -10705,17 +10635,6 @@
 		)
 		(uuid "e0ffbea3-b937-4387-be57-9422d0e9a819")
 	)
-	(hierarchical_label "V_out_6"
-		(shape input)
-		(at 215.9 124.46 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e114417b-745a-478b-8b53-0438bbbcad05")
-	)
 	(hierarchical_label "I2C_SDA"
 		(shape bidirectional)
 		(at 105.41 226.06 0)
@@ -10837,6 +10756,17 @@
 		)
 		(uuid "ef681ba7-5ee3-498e-b63c-aeca52c62325")
 	)
+	(hierarchical_label "V_out_6"
+		(shape input)
+		(at 215.9 119.38 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f0eadd6e-89a8-40a1-977b-d2d24d634c58")
+	)
 	(hierarchical_label "SPI_SCK"
 		(shape input)
 		(at 214.63 186.69 180)
@@ -10891,6 +10821,17 @@
 			(justify left)
 		)
 		(uuid "f886c8fc-a32c-42fa-9e43-dbcf63634841")
+	)
+	(hierarchical_label "V_out_3"
+		(shape input)
+		(at 215.9 111.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f8d660d6-5601-4527-bfb8-f00893f201d2")
 	)
 	(hierarchical_label "~{Q}_ISO_7"
 		(shape input)
@@ -10957,28 +10898,6 @@
 			(justify left)
 		)
 		(uuid "fd8b54df-0c9e-402d-b05e-c3881bda31e8")
-	)
-	(hierarchical_label "V_out_4"
-		(shape input)
-		(at 215.9 119.38 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "fe6c96d1-aff8-43fe-8a99-52a6d15adbc3")
-	)
-	(hierarchical_label "V_out_1"
-		(shape input)
-		(at 215.9 111.76 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ff3b915c-32fc-4276-b434-d86dbb1daaec")
 	)
 	(hierarchical_label "SPI_MISO"
 		(shape input)
@@ -12719,85 +12638,6 @@
 			(project "BAGEL-MK1.2"
 				(path "/27fcebe4-2fb8-4847-92ca-f98a7b250261"
 					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "GND_8")
-		(lib_id "power:GND")
-		(at 217.17 105.41 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2e36346f-5b59-4a85-bb2e-1f1415b38761")
-		(property "Reference" "#PWR02"
-			(at 217.17 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 217.17 109.5431 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 217.17 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 217.17 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 217.17 105.41 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "75735e14-68e8-4dae-a024-4ab092a2f4f4")
-		)
-		(instances
-			(project "BAGEL-MK1.2"
-				(path "/27fcebe4-2fb8-4847-92ca-f98a7b250261"
-					(reference "#PWR02")
 					(unit 1)
 				)
 			)
