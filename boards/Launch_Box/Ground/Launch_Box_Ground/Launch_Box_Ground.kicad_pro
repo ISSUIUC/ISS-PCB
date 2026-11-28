@@ -63,13 +63,19 @@
           "min_clearance": 0.5,
           "min_island_area": 10.0,
           "min_thickness": 0.25,
-          "pad_connection": 1,
+          "pad_connection": 2,
           "remove_islands": 0,
           "thermal_relief_gap": 0.5,
           "thermal_relief_spoke_width": 0.5
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -140,22 +146,22 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
-        "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.5,
+        "min_clearance": 0.1,
+        "min_connection": 0.1,
+        "min_copper_edge_clearance": 0.2,
         "min_groove_width": 0.0,
-        "min_hole_clearance": 0.25,
-        "min_hole_to_hole": 0.25,
+        "min_hole_clearance": 0.1,
+        "min_hole_to_hole": 0.2,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
-        "min_text_thickness": 0.08,
+        "min_text_thickness": 0.1,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.2,
-        "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.5,
+        "min_track_width": 0.1,
+        "min_via_annular_width": 0.05,
+        "min_via_diameter": 0.25,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -203,7 +209,16 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0,
+        0.127,
+        0.2,
+        0.2419,
+        0.25,
+        0.3,
+        0.349,
+        0.5
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -230,7 +245,20 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        },
+        {
+          "diameter": 0.45,
+          "drill": 0.3
+        },
+        {
+          "diameter": 0.8,
+          "drill": 0.4
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -495,10 +523,10 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
-        "diff_pair_gap": 0.25,
+        "clearance": 0.1,
+        "diff_pair_gap": 0.127,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
+        "diff_pair_width": 0.2419,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
@@ -506,9 +534,9 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
+        "track_width": 0.127,
         "tuning_profile": "",
-        "via_diameter": 0.6,
+        "via_diameter": 0.45,
         "via_drill": 0.3,
         "wire_width": 6
       }
@@ -537,7 +565,7 @@
       "method": 0,
       "sort_order": 0
     },
-    "bom_export_filename": "${PROJECTNAME}.csv",
+    "bom_export_filename": "../../../../Downloads/Mini-MK1.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -611,12 +639,66 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "MPN",
+          "name": "MPN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Package",
+          "name": "Package",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "SOURCE_URL",
+          "name": "SOURCE_URL",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "STANDARD",
+          "name": "STANDARD",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MAXIMUM_PACKAGE_HEIGHT",
+          "name": "MAXIMUM_PACKAGE_HEIGHT",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MANUFACTURER",
+          "name": "MANUFACTURER",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "DATASHEET_URL",
+          "name": "DATASHEET_URL",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -661,7 +743,7 @@
         "uuid": "2b5e7e56-ffd4-4bdd-9f09-81cb3d76eb60"
       }
     ],
-    "used_designators": "D1-7,D101,D104-111,D201,D303,#PWR1-39,#PWR101-102,#PWR105-106,#PWR109-111,#PWR113-116,#PWR120,#PWR124,#PWR133-136,#PWR140-141,#PWR201-202,#PWR204,#PWR309,L1,L101,C1-11,C18-19,C104-107,C110,C112-113,C116,C119,C122,C125,C201-204,U1-7,U102-104,U201-203,U303,Y1,J1-12,J101-102,J105-108,J201,R1-26,R106-109,R120-128,R131,R134-135,R143,R201-208,R315,BZ1,BZ101,H1-4,H101-104,SW1-5",
+    "used_designators": "D1-11,D101-111,D201,D303,#PWR1-44,#PWR101-102,#PWR105-106,#PWR109-111,#PWR113-116,#PWR120,#PWR124,#PWR133-136,#PWR140-141,#PWR201-202,#PWR204,#PWR309,L1,L101,H1-4,H101-104,C1-11,C18-19,C104-107,C110,C112-113,C116,C119,C122,C125,C201-204,U1-9,U102-104,U201-203,U303,Y1,J1-14,J101-102,J105-108,J201,R1-32,R106-109,R120-128,R131,R134-135,R143,R201-208,R315,BZ1,BZ101,SW1-5",
     "variants": []
   },
   "sheets": [
